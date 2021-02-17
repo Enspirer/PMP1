@@ -3,11 +3,11 @@
 @endif
 
 @if (config('services.facebook.active'))
-    <a href='{{ route('frontend.auth.social.login', 'facebook') }}' class='btn btn-sm btn-outline-info m-1'><i class='fab fa-facebook'></i> @lang('labels.frontend.auth.login_with', ['social_media' => 'Facebook'])</a>
+    <a href='{{ route('frontend.auth.social.login', 'facebook') }}' class='button button--facebook'> @lang('labels.frontend.auth.login_with', ['social_media' => 'Facebook'])</a>
 @endif
 
 @if (config('services.google.active'))
-    <a href='{{ route('frontend.auth.social.login', 'google') }}' class='btn btn-sm btn-outline-info m-1'><i class='fab fa-google'></i> @lang('labels.frontend.auth.login_with', ['social_media' => 'Google'])</a>
+    <a href='{{ route('frontend.auth.social.login', 'google') }}' class='button button--google'> @lang('labels.frontend.auth.login_with', ['social_media' => 'Google'])</a>
 @endif
 
 @if (config('services.github.active'))
