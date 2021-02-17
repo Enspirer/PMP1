@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enspirer Project Marcketplace</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Theame Style  -->
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="stylesheet" href="plugin/dist/css/animtrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="full-height">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="ml-auto row">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign Up</a>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary">Post a Job</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="video_box">
+        <div id="video_overlays"></div>
+        <div>
+          <video
+            autoplay
+            loop
+            id="player"
+            src="assets/video.webm"
+            type="video/webm"
+            onclick="this.play();"
+          >
+            Your browser does not support this streaming content.
+          </video>
+        </div>
+      </div>
+
+      <!-- <div class="overrlay">
+        <video autoplay loop poster="polina.jpg" id="vid">
+          <source src="assets/video.webm" type="video/webm">
+          </video>
+      </div>
+      -->
+      <header>
+        <div class="content">
+          <h1>
+            BEST PLACE TO HIRE YOUR NEW <br />
+            TEAM FOR NEXT PROJECT
+          </h1>
+          <div class="wrapper">
+            <input class="search" type="text" id="search" />
+            <input class="submit" type="submit" value="Search" />
+          </div>
+          <div class="container">
+            <div class="row">
+              <p>Popular :</p>
+              <a href="">Web Design</a>
+              <a href="">Logo Design</a>
+              <a href="">App Development</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- </section>
+
+    <section> -->
+      <!-- <div id="how-to-work">
+        <div class="container">
+          <h1>How Lorem Ipsum works</h1>
+          <hr />
+          <div class="row">
+            <div class="col col-md-3">
+              <div class="card">
+                <h3>Hire the team</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet
+                </p>
+                <div class="arrow-card">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-3">
+              <div class="card">
+                <h3>Hire the team</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet
+                </p>
+                <div class="arrow-card">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-3">
+              <div class="card">
+                <h3>Hire the team</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet
+                </p>
+                <div class="arrow-card">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-3">
+              <div class="card">
+                <h3>Hire the team</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet
+                </p>
+                <div class="arrow-card">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    </section>
+
+    <div class="container">
+        <div class="heading-text"  style="margin-top: 129px;">
+            <h1 style="margin: auto; text-align: center;font: normal normal bold 48px/70px Poppins;">Projects <span style="color: red; border: 1px solid red; border-radius: 6px; padding: 0 12px;">Live</span></h1>
+            <br>
+            <p style="text-align: center;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, amet
+              in maiores provident quae dolores iusto reprehenderit quod tenetur
+              minus. Molestias quis corporis consequatur nihil facere rem sint cum.
+              Libero.
+            </p>
+          </div>
+      
+    </div>
+  
+    <div class="" style="width: 100%">
+      <div class="timeline">
+        <div class="swiper-container">
+          <div class="swiper-wrapper ol">
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/browser.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-green"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/screen.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-yellow"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/browser (1).png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-yellow"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/folder.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-red"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/folder.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-red"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/folder.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-red"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/folder.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-red"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/folder.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-red"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide li">
+              <div class="anim-hover-grow">
+                <div class="card">
+                  <div class="circle">
+                    <div class="inner">
+                      <img src="assets/image/icon/folder.png" alt="" />
+                    </div>
+                  </div>
+                  <title>Lorem Web Design</title>
+                  <div class="small-text">
+                    <p>
+                      Lorem brand is a startup clothing company we need perfect
+                      logo for our brand....
+                    </p>
+                  </div>
+                  <div class="arrow-inline">
+                    <p>45 Views</p>
+                    <span
+                      ><i class="color-red"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11.25"
+                          height="15"
+                          viewBox="0 0 11.25 15"
+                        >
+                          <path
+                            id="Icon_open-arrow-thick-top"
+                            data-name="Icon open-arrow-thick-top"
+                            d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"
+                          />
+                        </svg> </i
+                    ></span>
+                  </div>
+                  <div class="button">
+                    <button type="button" class="btn btn-outline-light">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // spaceBetween: -100,
+        autoplay: 3000,
+        loop: true,
+        slidesPerView: 10,
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 8,
+          },
+          1820: {
+            slidesPerView: 16,
+          },
+        },
+      });
+    </script>
+
+    <!-- hammer js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Theame JS  -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="plugin/dist/js/anim-trap.js"></script>
+    <script src="plugin/dist/js/anim-scroll.js"></script>
+    <script>
+      ANIMSCROLL.init({
+        easing: "ease-in-out-sine",
+      });
+
+      $(document).ready(function () {
+        $(".rain").makeitsRain();
+      });
+    </script>
+  </body>
+</html>
