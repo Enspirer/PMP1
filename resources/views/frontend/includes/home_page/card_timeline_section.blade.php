@@ -2,13 +2,13 @@
     <div class="container">
         <div class="heading-text">
             <h1 data-animscroll="fade-up">
-                Projects
-                <span>Live</span>
+                Pick your challenge & Get started
             </h1>
             <p data-animscroll="fade-up" data-animscroll-delay="100">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-                amet in maiores provident quae dolores iusto reprehenderit quod
-                tenetur minus. Molestias quis corporis consequatur
+                The easiest way to grab your next project… Select the project
+                matches your team profile and get hired immediately by companies
+                around the world. <b>It’s that Simple</b>
+
             </p>
         </div>
     </div>

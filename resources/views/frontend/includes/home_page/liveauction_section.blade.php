@@ -10,20 +10,18 @@
                         <h1><span>Live</span>Auction</h1>
                     </div>
                     <h3 data-animscroll="fade-up">
-                        World-class designer to make mock-up of stages of our process
-                        and a dashboard for landing page
+                        Development of eCommerce platform for a leading
+                        Fashion brand
                     </h3>
-                    <p data-animscroll="fade-up">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea
-                    </p>
+                        <h4 style="font-size: 18px;color: white;" data-animscroll="fade-up">Main requirements</h4><br>
+
+                        <ul style="color: white;" data-animscroll="fade-up">
+                            <li>An agency with minimum of 5 years experience and a team of 5 for the project</li>
+                            <li>Fully customized ecommerce platform with source code</li>
+                            <li>Latest Ui / UX components</li>
+                            <li>Payment gateway integration</li>
+                            <li>Full project scope available for review.</li>
+                        </ul>
                     <div class="auction-end" data-animscroll="fade-up">
                         <div class="row">
                             <h3>Auction ends in :</h3>

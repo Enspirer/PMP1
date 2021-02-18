@@ -6,8 +6,9 @@
     <div class="header-content">
         <div class="content">
             <h1 data-animscroll="fade-up" data-animscroll-delay="100">
-                BEST PLACE TO HIRE YOUR NEW <br/>
-                TEAM FOR NEXT PROJECT
+                THE PLACE WHERE THE TOP <br>
+                CHALLENGERS MEET THE BEST TALLENTS
+
             </h1>
             <div class="wrapper" data-animscroll="fade-up" data-animscroll-delay="200">
                 <input class="search" type="text" id="search" />
