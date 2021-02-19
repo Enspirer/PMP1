@@ -2,12 +2,10 @@
 <section class="nav-section">
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" style="position: absolute" href="{{url('/')}}"><img
-                    src="{{url('theme_light/assets/image/logotext.png')}}"
-                    alt=""
-                    width="160px"
-                    style="position: absolute; top: -13px"
-                /></a>
+            <a class="navbar-brand" style="position: absolute" href="{{url('/')}}">
+
+                <div class="" style="background-image:url('{{url('theme_light/assets/image/logotext.png')}}');height: 100px;background-size: contain;width: 130px;background-position: center;background-repeat: no-repeat;"></div>
+               </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
