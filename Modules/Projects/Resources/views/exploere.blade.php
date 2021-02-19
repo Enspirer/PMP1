@@ -435,18 +435,8 @@
 
                             <div class="icon-group row">
                                 <i>
-                                    <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="21.75"
-                                            height="29"
-                                            viewBox="0 0 21.75 29"
-                                    >
-                                        <path
-                                                id="Icon_awesome-map-marker-alt"
-                                                data-name="Icon awesome-map-marker-alt"
-                                                d="M9.757,28.415C1.528,16.484,0,15.26,0,10.875a10.875,10.875,0,0,1,21.75,0c0,4.385-1.528,5.609-9.757,17.54a1.36,1.36,0,0,1-2.235,0Zm1.118-13.009a4.531,4.531,0,1,0-4.531-4.531A4.531,4.531,0,0,0,10.875,15.406Z"
-                                                fill="#b7b7b7"
-                                        />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.75" height="29" viewBox="0 0 21.75 29">
+                                        <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M9.757,28.415C1.528,16.484,0,15.26,0,10.875a10.875,10.875,0,0,1,21.75,0c0,4.385-1.528,5.609-9.757,17.54a1.36,1.36,0,0,1-2.235,0Zm1.118-13.009a4.531,4.531,0,1,0-4.531-4.531A4.531,4.531,0,0,0,10.875,15.406Z" fill="#b7b7b7">
                                     </svg>
                                 </i>
                                 <p>Sri Lanka</p>
@@ -497,12 +487,8 @@
                     <div class="badge">
                         <div class="row">
                             <div class="icon-group row">
-                                <i
-                                ><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="26.817"
-                                            height="26.817"
-                                            viewBox="0 0 26.817 26.817"
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.817" height="26.817" viewBox="0 0 26.817 26.817"
                                     >
                                         <path
                                                 id="Icon_awesome-check-circle"
@@ -700,18 +686,11 @@
                                             <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
                                                 <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#b7b7b7">
                                             </g>
-                                            <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#b7b7b7"
-                                            />
+                                            <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#b7b7b7"></path>
                                             <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40">
                                             <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)"
                                             >
-                                                <path
-                                                        id="Path_38"
-                                                        data-name="Path 38"
-                                                        d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
-                                                        transform="translate(-200.395 -185.395)"
-                                                        fill="#f9f9f9"
-                                                />
+                                                <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#f9f9f9">
                                             </g>
                                         </g>
                                     </svg>
@@ -728,12 +707,7 @@
                                             viewBox="0 0 28.711 28.711"
                                     >
                                         <g id="Group_60" data-name="Group 60">
-                                            <path
-                                                    id="Path_42"
-                                                    data-name="Path 42"
-                                                    d="M25.72,0H18.132a5.351,5.351,0,0,0-3.808,1.577L1.02,14.882a3.486,3.486,0,0,0,0,4.929L8.9,27.692a3.486,3.486,0,0,0,4.928,0L27.134,14.385a5.346,5.346,0,0,0,1.577-3.807V2.991A2.993,2.993,0,0,0,25.72,0ZM22.131,9.57A2.991,2.991,0,1,1,25.122,6.58,2.993,2.993,0,0,1,22.131,9.57Z"
-                                                    fill="rgba(255,112,1,0.93)"
-                                            />
+                                            <path  id="Path_42"  data-name="Path 42"  d="M25.72,0H18.132a5.351,5.351,0,0,0-3.808,1.577L1.02,14.882a3.486,3.486,0,0,0,0,4.929L8.9,27.692a3.486,3.486,0,0,0,4.928,0L27.134,14.385a5.346,5.346,0,0,0,1.577-3.807V2.991A2.993,2.993,0,0,0,25.72,0ZM22.131,9.57A2.991,2.991,0,1,1,25.122,6.58,2.993,2.993,0,0,1,22.131,9.57Z"  fill="rgba(255,112,1,0.93)"></path>
                                         </g>
                                     </svg>
                                 </i>
@@ -741,18 +715,8 @@
                             </div>
                             <div class="icon-group row">
                                 <i>
-                                    <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="21.75"
-                                            height="29"
-                                            viewBox="0 0 21.75 29"
-                                    >
-                                        <path
-                                                id="Icon_awesome-map-marker-alt"
-                                                data-name="Icon awesome-map-marker-alt"
-                                                d="M9.757,28.415C1.528,16.484,0,15.26,0,10.875a10.875,10.875,0,0,1,21.75,0c0,4.385-1.528,5.609-9.757,17.54a1.36,1.36,0,0,1-2.235,0Zm1.118-13.009a4.531,4.531,0,1,0-4.531-4.531A4.531,4.531,0,0,0,10.875,15.406Z"
-                                                fill="#b7b7b7"
-                                        />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.75" height="29" viewBox="0 0 21.75 29" >
+                                        <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M9.757,28.415C1.528,16.484,0,15.26,0,10.875a10.875,10.875,0,0,1,21.75,0c0,4.385-1.528,5.609-9.757,17.54a1.36,1.36,0,0,1-2.235,0Zm1.118-13.009a4.531,4.531,0,1,0-4.531-4.531A4.531,4.531,0,0,0,10.875,15.406Z" fill="#b7b7b7"/>
                                     </svg>
                                 </i>
                                 <p>Sri Lanka</p>

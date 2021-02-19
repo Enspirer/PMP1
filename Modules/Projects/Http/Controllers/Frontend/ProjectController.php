@@ -26,6 +26,12 @@ class ProjectController extends Controller
         return view('projects::create');
     }
 
+
+    public function apply_project($project_id)
+    {
+        return view('projects::apply_project');
+    }
+
     /**
      * Store a newly created resource in storage.
      * @param Request $request
