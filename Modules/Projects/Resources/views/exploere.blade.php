@@ -4,42 +4,7 @@
 
 @section('content')
 
-    <nav class="navbar-explore navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="row">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Web Development</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Graphic & Design</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Digital Marketing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Photography</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Video and Animation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Programming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Content Writing</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="see-all ml-auto">
-                    <div class="row">
-                        <a href="">See All <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+   @include('projects::includes.explore_page.category_menu')
     <!-- body  -->
     <div id="explore-body">
         <div class="container">
@@ -259,58 +224,16 @@
                                         <g id="prize" transform="translate(-27.924)">
                                             <g id="Prize_2_" transform="translate(27.924 0)">
                                                 <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                    <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
-                                                            transform="translate(-27.924 0)"
-                                                            fill="#ffdf40"
-                                                    />
+                                                    <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40">
                                                 </g>
                                             </g>
-                                            <path
-                                                    id="Path_35"
-                                                    data-name="Path 35"
-                                                    d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
-                                                    transform="translate(-211.776 0)"
-                                                    fill="#ffdf40"
-                                            />
-                                            <g
-                                                    id="Group_50"
-                                                    data-name="Group 50"
-                                                    transform="translate(35.648 7.575)"
-                                            >
-                                                <path
-                                                        id="Path_36"
-                                                        data-name="Path 36"
-                                                        d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
-                                                        transform="translate(-136 -106)"
-                                                        fill="#ffbe40"
-                                                />
-                                            </g>
-                                            <path
-                                                    id="Path_37"
-                                                    data-name="Path 37"
-                                                    d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
-                                                    transform="translate(-211.776 -98.425)"
-                                                    fill="#ffbe40"
-                                            />
-                                            <path
-                                                    id="Path_39"
-                                                    data-name="Path 39"
-                                                    d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
-                                                    transform="translate(-211.776 -172.146)"
-                                                    fill="#ffbe40"
-                                            />
-                                            <g
-                                                    id="Group_51"
-                                                    data-name="Group 51"
-                                                    transform="translate(40.25 13.249)"
-                                            >
-                                                <path
-                                                        id="Path_38"
-                                                        data-name="Path 38"
-                                                        d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
-                                                        transform="translate(-200.395 -185.395)"
-                                                        fill="#ffdf40"
-                                                />
+                                            <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"></path>
+                                            <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
+                                                <path  id="Path_36"  data-name="Path 36"  d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"  transform="translate(-136 -106)"  fill="#ffbe40">
+                                            <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40">
+                                            <path  id="Path_39"  data-name="Path 39"  d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"  transform="translate(-211.776 -172.146)"  fill="#ffbe40">
+                                            <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
+                                                <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40">
                                             </g>
                                         </g>
                                     </svg>
@@ -404,28 +327,16 @@
                     <div class="badge">
                         <div class="row">
                             <div class="icon-group row">
-                                <i
-                                ><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="26.817"
-                                            height="26.817"
-                                            viewBox="0 0 26.817 26.817"
-                                    >
-                                        <path
-                                                id="Icon_awesome-check-circle"
-                                                data-name="Icon awesome-check-circle"
-                                                d="M27.379,13.971A13.408,13.408,0,1,1,13.971.563,13.408,13.408,0,0,1,27.379,13.971Zm-14.959,7.1,9.948-9.948a.865.865,0,0,0,0-1.223L21.145,8.676a.865.865,0,0,0-1.223,0l-8.113,8.113L8.02,13A.865.865,0,0,0,6.8,13L5.574,14.224a.865.865,0,0,0,0,1.223L11.2,21.071a.865.865,0,0,0,1.223,0Z"
-                                                transform="translate(-0.563 -0.563)"
-                                                fill="#d4d4d4"
-                                        />
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.817" height="26.817" viewBox="0 0 26.817 26.817">
+                                        <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M27.379,13.971A13.408,13.408,0,1,1,13.971.563,13.408,13.408,0,0,1,27.379,13.971Zm-14.959,7.1,9.948-9.948a.865.865,0,0,0,0-1.223L21.145,8.676a.865.865,0,0,0-1.223,0l-8.113,8.113L8.02,13A.865.865,0,0,0,6.8,13L5.574,14.224a.865.865,0,0,0,0,1.223L11.2,21.071a.865.865,0,0,0,1.223,0Z" transform="translate(-0.563 -0.563)" fill="#d4d4d4">
                                     </svg>
                                 </i>
                                 <p>Not Verified</p>
                             </div>
 
                             <div class="icon-group row">
-                                <i
-                                ><svg
+                                <i><svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="32.599"
                                             height="32.451"
@@ -765,31 +676,15 @@
                     <div class="badge">
                         <div class="row">
                             <div class="icon-group row">
-                                <i
-                                ><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="26.817"
-                                            height="26.817"
-                                            viewBox="0 0 26.817 26.817"
-                                    >
-                                        <path
-                                                id="Icon_awesome-check-circle"
-                                                data-name="Icon awesome-check-circle"
-                                                d="M27.379,13.971A13.408,13.408,0,1,1,13.971.563,13.408,13.408,0,0,1,27.379,13.971Zm-14.959,7.1,9.948-9.948a.865.865,0,0,0,0-1.223L21.145,8.676a.865.865,0,0,0-1.223,0l-8.113,8.113L8.02,13A.865.865,0,0,0,6.8,13L5.574,14.224a.865.865,0,0,0,0,1.223L11.2,21.071a.865.865,0,0,0,1.223,0Z"
-                                                transform="translate(-0.563 -0.563)"
-                                                fill="#d4d4d4"
-                                        />
+                                <i><svg xmlns="http://www.w3.org/2000/svg" width="26.817" height="26.817" viewBox="0 0 26.817 26.817">
+                                        <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M27.379,13.971A13.408,13.408,0,1,1,13.971.563,13.408,13.408,0,0,1,27.379,13.971Zm-14.959,7.1,9.948-9.948a.865.865,0,0,0,0-1.223L21.145,8.676a.865.865,0,0,0-1.223,0l-8.113,8.113L8.02,13A.865.865,0,0,0,6.8,13L5.574,14.224a.865.865,0,0,0,0,1.223L11.2,21.071a.865.865,0,0,0,1.223,0Z" transform="translate(-0.563 -0.563)" fill="#d4d4d4"></path>
                                     </svg>
                                 </i>
                                 <p>Not Verified</p>
                             </div>
                             <div class="icon-group row">
                                 <i
-                                ><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="32.599"
-                                            height="32.451"
-                                            viewBox="0 0 32.599 32.451"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="32.599" height="32.451" viewBox="0 0 32.599 32.451"
                                     >
                                         <g id="prize" transform="translate(-27.924)">
                                             <g id="Prize_2_" transform="translate(27.924 0)">
@@ -798,53 +693,17 @@
                                                         data-name="Group 49"
                                                         transform="translate(0 0)"
                                                 >
-                                                    <path
-                                                            id="Path_34"
-                                                            data-name="Path 34"
-                                                            d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
-                                                            transform="translate(-27.924 0)"
-                                                            fill="#d4d4d4"
-                                                    />
+                                                    <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#d4d4d4"/>
                                                 </g>
                                             </g>
-                                            <path
-                                                    id="Path_35"
-                                                    data-name="Path 35"
-                                                    d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
-                                                    transform="translate(-211.776 0)"
-                                                    fill="#d4d4d4"
-                                            />
-                                            <g
-                                                    id="Group_50"
-                                                    data-name="Group 50"
-                                                    transform="translate(35.648 7.575)"
-                                            >
-                                                <path
-                                                        id="Path_36"
-                                                        data-name="Path 36"
-                                                        d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
-                                                        transform="translate(-136 -106)"
-                                                        fill="#b7b7b7"
-                                                />
+                                            <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#d4d4d4"
+                                            <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
+                                                <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#b7b7b7">
                                             </g>
-                                            <path
-                                                    id="Path_37"
-                                                    data-name="Path 37"
-                                                    d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
-                                                    transform="translate(-211.776 -98.425)"
-                                                    fill="#b7b7b7"
+                                            <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#b7b7b7"
                                             />
-                                            <path
-                                                    id="Path_39"
-                                                    data-name="Path 39"
-                                                    d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
-                                                    transform="translate(-211.776 -172.146)"
-                                                    fill="#ffbe40"
-                                            />
-                                            <g
-                                                    id="Group_51"
-                                                    data-name="Group 51"
-                                                    transform="translate(40.25 13.249)"
+                                            <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40">
+                                            <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)"
                                             >
                                                 <path
                                                         id="Path_38"
