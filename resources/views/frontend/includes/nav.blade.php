@@ -57,7 +57,7 @@
                         @endauth
 
                     </ul>
-                    <button type="button" class="btn btn-primary">Post a Job</button>
+                    <button class="post_job" type="button" class="btn btn-primary">Post a Job</button>
                 </div>
             </div>
         </div>
