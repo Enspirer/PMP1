@@ -10,19 +10,22 @@
                 CHALLENGERS MEET THE BEST TALLENTS
 
             </h1>
-            <div class="row-search-post row" data-animscroll="fade-up" data-animscroll-delay="200">
-                <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
-                <h3>OR</h3>
-                <a href="">Post a Job</a>
-            </div>
+            <form action="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">
+                <div class="row-search-post row" data-animscroll="fade-up" data-animscroll-delay="200">
+                        <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
+                        <h3>OR</h3>
+                        <a href="">Post a Job</a>
+                        <button type="submit" style="display: none"></button>
+                </div>
+            </form>
             <div class="container" data-animscroll="fade-up" data-animscroll-delay="300">
                 <div class="row">
                     <p>Popular :</p>
-                    <a href="">Web Design</a>
-                    <a href="">Logo Design</a>
-                    <a href="">App Development</a>
-                    <a href="">Programming</a>
-                    <a href="">UI/UX</a>
+                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Web Design</a>
+                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Logo Design</a>
+                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">App Development</a>
+                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Programming</a>
+                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">UI/UX</a>
                 </div>
             </div>
         </div>

@@ -200,7 +200,7 @@
                     </div>
                 </div>
                 <div class="right col-md-4">
-                    <button class="apply-button">APPLY TO THIS PROJECT</button>
+                    <a href="{{route('frontend.apply_project',1)}}" class="apply-button">APPLY TO THIS PROJECT</a>
                     <button class="save-button">
                         <i class="fa fa-heart" aria-hidden="true"></i> SAVE PROJECT
                     </button>

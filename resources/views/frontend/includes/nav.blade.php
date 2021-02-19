@@ -37,7 +37,7 @@
                                 <li class='option'><a href="">settings</a></li>
                                 <li class='option'><a href="">Help</a></li>
                                 <li class='divider'></li>
-                                <li class='option'><a href="">Sign out</a></li>
+                                <li class='option'><a href="{{route('frontend.auth.logout')}}">Sign out</a></li>
                             </ul>
                         </div>
 
