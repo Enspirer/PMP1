@@ -10,12 +10,10 @@
                 CHALLENGERS MEET THE BEST TALLENTS
 
             </h1>
-            <div class="wrapper" data-animscroll="fade-up" data-animscroll-delay="200">
-                <form action="{{route('frontend.project_explore',[1,'null','null','null','null'])}}">
-                    <input class="search" type="text" id="search" />
-                    <input class="submit" type="submit" value="Search" />
-
-                </form>
+            <div class="row-search-post row" data-animscroll="fade-up" data-animscroll-delay="200">
+                <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
+                <h3>OR</h3>
+                <a href="">Post a Job</a>
             </div>
             <div class="container" data-animscroll="fade-up" data-animscroll-delay="300">
                 <div class="row">
