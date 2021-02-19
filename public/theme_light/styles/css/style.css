@@ -1829,29 +1829,51 @@ button {
     color: #000000;
 }
 
+#single-project-body .body-section-single-project .container .row .right {
+    display: -ms-grid;
+    display: grid;
+}
+
 #single-project-body .body-section-single-project .container .row .right .apply-button {
+    display: block;
     width: 100%;
+    height: 75px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 0;
     font: normal normal 600 22px/50px Poppins;
-    letter-spacing: 0px;
-    color: #ffffff;
     background: #0458ab 0% 0% no-repeat padding-box;
     border-radius: 54px;
-    padding: 13px 12px;
-    margin: 10px 0;
+}
+
+#single-project-body .body-section-single-project .container .row .right .apply-button:hover {
+    background: #033362 !important;
 }
 
 #single-project-body .body-section-single-project .container .row .right .save-button {
+    display: block;
     width: 100%;
-    font: normal normal 600 22px/50px Poppins;
-    letter-spacing: 0px;
+    height: 75px;
+    padding: 13px;
+    text-align: center;
+    border-radius: 5px;
     color: #0458ab;
-    border-radius: 54px;
-    padding: 13px 12px;
+    font-weight: bold;
+    line-height: 0;
+    font: normal normal 600 22px/50px Poppins;
     border: 1px solid #0458ab;
+    border-radius: 54px;
 }
 
 #single-project-body .body-section-single-project .container .row .right .save-button i {
     margin-right: 10px;
+}
+
+#single-project-body .body-section-single-project .container .row .right .save-button:hover {
+    color: #033362 !important;
 }
 
 #single-project-body .body-section-single-project .container .row .right .right-card {
