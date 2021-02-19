@@ -23,23 +23,23 @@
                         @auth()
 
 
-                            <div class='profile'>
-                                <div class='avatar'>
-                                    <img src='https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80' />
-                                </div>
-                                <p>sadsad</p>
-                                <i class="fa fa-caret-down"></i>
+                        <div class='profile'>
+                            <div class='avatar' style="margin-bottom: 0px;">
+                                <img src='{{ $logged_in_user->picture }}'>
                             </div>
+                            <p style="margin-bottom: 0px;text-transform: capitalize;">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</p>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
 
-                            <div class='profiledropdown'>
-                                <ul>
-                                    <li class='option'> <a href="">Profile</a></li>
-                                    <li class='option'><a href="">settings</a></li>
-                                    <li class='option'><a href="">Help</a></li>
-                                    <li class='divider'></li>
-                                    <li class='option'><a href="">Sign out</a></li>
-                                </ul>
-                            </div>
+                        <div class='profiledropdown'>
+                            <ul>
+                                <li class='option'> <a href="">Profile</a></li>
+                                <li class='option'><a href="">settings</a></li>
+                                <li class='option'><a href="">Help</a></li>
+                                <li class='divider'></li>
+                                <li class='option'><a href="">Sign out</a></li>
+                            </ul>
+                        </div>
 
 
                         @else
