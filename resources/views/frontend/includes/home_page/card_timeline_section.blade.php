@@ -39,10 +39,13 @@
                                                 <path id="Icon_open-arrow-thick-top" data-name="Icon open-arrow-thick-top" d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"></path>
 
                           </svg> </i></span></div>
+
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -73,9 +76,11 @@
                                         </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -106,9 +111,11 @@
                                         </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -139,9 +146,11 @@
                                     </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -172,9 +181,81 @@
                                     </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide li">
+                        <div class="anim-hover-grow">
+                            <div class="card">
+                                <div class="circle">
+                                    <div class="inner">
+                                        <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
+                                    </div>
+                                </div>
+                                <title>Lorem Web Design</title>
+                                <div class="small-text">
+                                    <p>
+                                        Lorem brand is a startup clothing company we need
+                                        perfect logo for our brand....
+                                    </p>
+                                </div>
+                                <div class="arrow-inline">
+                                    <p>45 Views</p>
+                                    <span>
+                                        <i class="color-red">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                <path id="Icon_open-arrow-thick-top" data-name="Icon open-arrow-thick-top" d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                </div>
+                                <div class="button">
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide li">
+                        <div class="anim-hover-grow">
+                            <div class="card">
+                                <div class="circle">
+                                    <div class="inner">
+                                        <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
+                                    </div>
+                                </div>
+                                <title>Lorem Web Design</title>
+                                <div class="small-text">
+                                    <p>
+                                        Lorem brand is a startup clothing company we need
+                                        perfect logo for our brand....
+                                    </p>
+                                </div>
+                                <div class="arrow-inline">
+                                    <p>45 Views</p>
+                                    <span>
+                                        <i class="color-red">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
+                                                <path id="Icon_open-arrow-thick-top" data-name="Icon open-arrow-thick-top" d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                </div>
+                                <div class="button">
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -238,75 +319,11 @@
                                     </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide li">
-                        <div class="anim-hover-grow">
-                            <div class="card">
-                                <div class="circle">
-                                    <div class="inner">
-                                        <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
-                                    </div>
-                                </div>
-                                <title>Lorem Web Design</title>
-                                <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
-                                </div>
-                                <div class="arrow-inline">
-                                    <p>45 Views</p>
-                                    <span>
-                                        <i class="color-red">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
-                                                <path id="Icon_open-arrow-thick-top" data-name="Icon open-arrow-thick-top" d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"></path>
-                                            </svg>
-                                        </i>
-                                    </span>
-                                </div>
-                                <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide li">
-                        <div class="anim-hover-grow">
-                            <div class="card">
-                                <div class="circle">
-                                    <div class="inner">
-                                        <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
-                                    </div>
-                                </div>
-                                <title>Lorem Web Design</title>
-                                <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
-                                </div>
-                                <div class="arrow-inline">
-                                    <p>45 Views</p>
-                                    <span>
-                                        <i class="color-red">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.25" height="15" viewBox="0 0 11.25 15">
-                                                <path id="Icon_open-arrow-thick-top" data-name="Icon open-arrow-thick-top" d="M5.569,0,0,5.625H3.75V15H7.5V5.625h3.75Z"></path>
-                                            </svg>
-                                        </i>
-                                    </span>
-                                </div>
-                                <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-light">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
