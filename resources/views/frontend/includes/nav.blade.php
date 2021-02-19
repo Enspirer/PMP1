@@ -3,7 +3,7 @@
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" style="position: absolute" href="{{url('/')}}"><img
-                    src="assets/image/logonew.png"
+                    src="{{url('theme_light/assets/image/logonew.png')}}"
                     alt=""
                     width="70px"
                     style="position: absolute; top: -11px"
