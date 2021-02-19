@@ -11,8 +11,11 @@
 
             </h1>
             <div class="wrapper" data-animscroll="fade-up" data-animscroll-delay="200">
-                <input class="search" type="text" id="search" />
-                <input class="submit" type="submit" value="Search" />
+                <form action="{{route('frontend.project_explore',[1,'null','null','null','null'])}}">
+                    <input class="search" type="text" id="search" />
+                    <input class="submit" type="submit" value="Search" />
+
+                </form>
             </div>
             <div class="container" data-animscroll="fade-up" data-animscroll-delay="300">
                 <div class="row">
