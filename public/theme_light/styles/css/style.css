@@ -98,11 +98,25 @@ body {
     background-color: #ff6347;
     border: transparent;
     height: 35px;
+    text-align: center center;
     padding: 0px 30px;
     border-radius: 9px;
 }
 
 .navbar-main .container .collapse button:hover {
+    background-color: #fa4a2b;
+}
+
+.navbar-main .container .collapse .post_job {
+    background-color: #ff6347;
+    border: transparent;
+    height: 35px;
+    text-align: center center;
+    padding: 8px 30px;
+    border-radius: 9px;
+}
+
+.navbar-main .container .collapse .post_job:hover {
     background-color: #fa4a2b;
 }
 
