@@ -5,8 +5,8 @@
             <a class="navbar-brand" style="position: absolute" href="{{url('/')}}"><img
                     src="assets/image/logonew.png"
                     alt=""
-                    width="70px"
-                    style="position: absolute; top: -11px"
+                    width="160px"
+                    style="position: absolute; top: -13px"
                 /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
