@@ -18,12 +18,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('frontend.auth.login')}}">Sign In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('frontend.auth.register')}}">Sign Up</a>
-                        </li>
+
+                        @auth()
+                            fdsdfasf
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('frontend.auth.login')}}">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('frontend.auth.register')}}">Sign Up</a>
+                            </li>
+                        @endauth
+
                     </ul>
                     <button type="button" class="btn btn-primary">Post a Job</button>
                 </div>
