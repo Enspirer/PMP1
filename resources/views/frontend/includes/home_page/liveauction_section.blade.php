@@ -12,7 +12,7 @@
                     <h3 data-animscroll="fade-up">
                         Development of eCommerce platform for a leading
                         Fashion brand
-                    </h3>
+                    </h3> <br>
                         <h4 style="font-size: 18px;color: white;" data-animscroll="fade-up">Main requirements</h4><br>
 
                         <ul style="color: white;" data-animscroll="fade-up">
