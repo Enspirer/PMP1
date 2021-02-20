@@ -49,6 +49,11 @@
             align-items: center;
         }
     </style>
+    <style>
+        a.link_element:hover {
+            color: black !important;
+        }
+    </style>
     @stack('after-styles')
 </head>
 

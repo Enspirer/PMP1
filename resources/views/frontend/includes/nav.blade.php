@@ -17,6 +17,9 @@
                             <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Explore</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Features</a>
                         </li>
                         <li class="nav-item">
@@ -55,7 +58,7 @@
                         @endauth
 
                     </ul>
-                    <button class="post_job" type="button" class="btn btn-primary">Post a Job</button>
+                    <a class="post_job" type="button" class="btn btn-primary">Post a Job</a>
                 </div>
             </div>
         </div>
