@@ -2046,7 +2046,7 @@ button {
     background: #0458ab 0% 0% no-repeat padding-box;
     border-radius: 15px;
     font-size: 29px;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 16px;
     margin-right: 14px;
@@ -2054,7 +2054,7 @@ button {
 
 #single-project-body .body-section-single-project .container .row .right .right-card-second .company-profile .row h3 {
     font: normal normal 600 32px/40px Poppins;
-    color: #0458ab;
+    color: black;
     line-height: 1;
 }
 
