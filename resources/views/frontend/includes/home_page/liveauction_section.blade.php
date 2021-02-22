@@ -1,21 +1,23 @@
 <section id="live-auction">
+    <div class="head-title">
+        <div class="row" data-animscroll="fade-up">
+            <div class="record-icon">
+                <img src="{{url('theme_light/assets/image/icon/rec_red.svg')}}">
+            </div>
+            <h1><span>Live</span>Auction</h1>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="left-live col-md-7">
                 <div class="top-title">
-                    <div class="row" data-animscroll="fade-up">
-                        <div class="record-icon">
-                            <img src="{{url('theme_light/assets/image/icon/rec_red.svg')}}" alt=""">
-                        </div>
-                        <h1><span>Live</span>Auction</h1>
-                    </div>
                     <h3 data-animscroll="fade-up">
                         Development of eCommerce platform for a leading
                         Fashion brand
                     </h3> <br>
-                        <h4 style="font-size: 18px;color: white;" data-animscroll="fade-up">Main requirements</h4><br>
+                        <h4 style="font-size: 18px;color: black;" data-animscroll="fade-up">Main requirements</h4><br>
 
-                        <ul style="color: white;" data-animscroll="fade-up">
+                        <ul style="color: black;" data-animscroll="fade-up">
                             <li>An agency with minimum of 5 years experience and a team of 5 for the project</li>
                             <li>Fully customized ecommerce platform with source code</li>
                             <li>Latest Ui / UX components</li>
