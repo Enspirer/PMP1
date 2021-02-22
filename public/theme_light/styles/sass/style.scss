@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+
 * {
     box-sizing: border-box;
 }
@@ -66,7 +68,7 @@ body {
                 }
             }
             button {
-                background-color: #ff6347;
+                background-color: #f83535;
                 border: transparent;
                 height: 35px;
                 text-align: center center;
@@ -77,7 +79,7 @@ body {
                 }
             }
             .post_job {
-                background-color: #361d44;
+                background-color: #f83535;
                 color: #fff !important;
                 border: transparent;
                 height: 35px;
@@ -213,35 +215,35 @@ body {
         animation-delay: 100ms, 0;
     }
 
-
     // ----------------------------------
     $nav-link-color: #666666;
-    $bg-color: #F3F5F4;
-    $navbar-color: #FFFFFF;
-    $border-gray: #E0E0E0;
-    $hover-gray: #F5F5F5;
-    $active-gray: #EBEBEB;
+    $bg-color: #f3f5f4;
+    $navbar-color: #ffffff;
+    $border-gray: #e0e0e0;
+    $hover-gray: #f5f5f5;
+    $active-gray: #ebebeb;
 
-    $at-blue-light: #00AFE9;
-    $at-blue-dark: #006AB8;
+    $at-blue-light: #00afe9;
+    $at-blue-dark: #006ab8;
 
-    $red: #F44336;
-
+    $red: #f44336;
 
     @mixin border-radius($radius) {
-        -moz-border-radius:$radius;
-        -webkit-border-radius:$radius;
-        -ms-border-radius:$radius;
-        border-radius:$radius;
+        -moz-border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -ms-border-radius: $radius;
+        border-radius: $radius;
     }
-
-
-
 
     .user-menu-wrap {
         position: relative;
         width: 36px;
         margin: 0 20px;
+    }
+    .mini-photo-wrapper {
+        img {
+            border-radius: 50%;
+        }
     }
 
     .menu-container {
@@ -251,17 +253,19 @@ body {
         &.active {
             visibility: visible;
             opacity: 1;
-            transition: all .2s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
     }
 
     .user-menu {
         position: absolute;
         right: -108px;
-        background-color: #FFFFFF;
+        list-style: none;
+        padding: 0;
+        background-color: #ffffff;
         width: 256px;
         border-radius: 2px;
-        border: 1px solid rgba(0,0,0,0.15);
+        border: 1px solid rgba(0, 0, 0, 0.15);
         padding-top: 5px;
         padding-bottom: 5px;
         margin-top: 20px;
@@ -277,6 +281,7 @@ body {
                 height: 48px;
                 border-radius: 25px;
                 object-fit: cover;
+                // border-radius: 50%;
             }
 
             .details {
@@ -287,7 +292,6 @@ body {
                 #profile-name {
                     font-weight: 600;
                     font-size: 16px;
-
                 }
 
                 #profile-footer {
@@ -296,7 +300,6 @@ body {
                     margin-top: 4px;
                 }
             }
-
         }
 
         .footer {
@@ -345,7 +348,7 @@ body {
             display: inline-block;
             content: "";
             border: 7px solid transparent;
-            border-bottom-color: #FFFFFF;
+            border-bottom-color: #ffffff;
         }
     }
 }
@@ -433,7 +436,7 @@ body {
                 vertical-align: top;
             }
             .row-search-post {
-                margin-top:20px;
+                margin-top: 20px;
                 .search {
                     padding-left: 30px;
                     padding: 0 10px;
@@ -447,21 +450,21 @@ body {
                         outline: none;
                     }
                 }
-                h3{
+                h3 {
                     font: normal normal 300 24px/17px Karla;
                     color: #fff;
                     padding-top: 12px;
                     margin: 0 20px;
                     text-align: center;
                 }
-                a{
+                a {
                     height: 42px;
-                    background: #ff6347;
+                    background: #f83535;
                     font: normal normal 600 24px/17px Karla;
                     padding: 11px 42px;
                     color: #fff;
                     border-radius: 9px;
-                    &:hover{
+                    &:hover {
                         background: #f03b1b;
                     }
                 }
@@ -487,14 +490,14 @@ body {
             //   }
             // }
             // .button-post-job{
-            //   background: #ff6347;
+            //   background: #f83535;
             //   width: 100%;
             // }
             // .top-button-post{
             //   font: normal normal 300 24px/17px Karla;
             //   color: #fff;
             //   text-align: center;
-            //   // background: #ff6347;
+            //   // background: #f83535;
             //   margin: auto;
             //   text-align: center;
             //   width: 100%;
@@ -517,7 +520,7 @@ body {
             // .submit {
             //   cursor: pointer;
             //   border: none;
-            //   background: #ff6347;
+            //   background: #f83535;
             //   color: #fff;
             //   font-size: 14px;
             //   background-size: 35px 35px;
@@ -554,6 +557,8 @@ body {
 
 #card-swipper {
     margin-top: 55px;
+    background: #F2F2F2;
+    padding: 63px 0;
     .container {
         .heading-text {
             h1 {
@@ -597,7 +602,7 @@ body {
                 list-style-type: none;
                 width: 160px;
                 height: 2px;
-                background: #71b7fd 0% 0% no-repeat padding-box;
+                background: #B52C51 0% 0% no-repeat padding-box;
                 &:last-child {
                     width: 160px;
                 }
@@ -611,7 +616,7 @@ body {
                     height: 12px;
                     transform: translateY(-50%);
                     border-radius: 50%;
-                    background: #71b7fd;
+                    background: #B52C51;
                 }
 
                 // &:not(:last-child):nth-child(odd)::after {
@@ -634,6 +639,7 @@ body {
                 // }
                 .card {
                     box-shadow: 0px 15px 30px 1px rgba(0, 0, 0, 0.23);
+                    // box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);
                     text-align: left;
                     border-radius: 9px;
                     position: absolute;
@@ -644,9 +650,9 @@ body {
                     font-size: 1rem;
                     white-space: normal;
                     color: #fff;
-                    background: #302b63;
+                    // background: #302b63;
                     background: transparent
-                    linear-gradient(135deg, #211e3a 0%, #5b54a3 100%, #0f0c29 100%) 0%
+                    linear-gradient(135deg, #F8F8F8 0%, #D4D4D4 100%, #F8F8F8 100%) 0%
                     0% no-repeat padding-box;
                     transform-origin: left top;
                     &::before {
@@ -661,20 +667,20 @@ body {
                     .circle {
                         width: 60px;
                         height: 60px !important;
-                        background-color: #0458ab;
+                        background-color: #909090;
                         border-radius: 50%;
                         z-index: 77;
                         position: absolute;
                         top: -30px;
                         right: -30px;
-                        border: 4px solid #302b63;
+                        border: 4px solid #F2F2F2;
                         margin: auto;
                         display: flex;
                         .inner {
                             margin: auto;
                             width: 45px;
                             height: 45px;
-                            background: #302b63;
+                            background: #D4D4D4;
                             padding: 20px;
                             border-radius: 50%;
                             img {
@@ -737,18 +743,21 @@ body {
                                 bottom: 17px !important;
                                 margin: auto;
                                 margin-left: 20px;
+                                &:hover{
+                                    color: #fff;
+                                }
                             }
                         }
                     }
                 }
                 &:nth-child(odd) .card::before {
                     margin-left: 18px;
-                    border-color: #302b63 transparent transparent transparent;
+                    border-color: #D4D4D4 transparent transparent transparent;
                     width: 0;
                     height: 0;
                     border-left: 9px solid transparent;
                     border-right: 9px solid transparent;
-                    border-top: 19px solid #302b63;
+                    border-top: 19px solid #D4D4D4;
                 }
                 &:nth-child(even) .card {
                     top: calc(100% + 39px);
@@ -804,14 +813,14 @@ body {
                     content: "";
                     top: -25px;
                     border-width: 8px 8px 8px 8px;
-                    border-color: transparent transparent transparent #0458ab;
+                    border-color: transparent transparent transparent #f8f8f8;
                     position: absolute;
                     margin-left: 18px;
                     width: 0;
                     height: 0;
                     border-left: 9px solid transparent;
                     border-right: 9px solid transparent;
-                    border-bottom: 19px solid #302b63;
+                    border-bottom: 19px solid #f8f8f8;
                 }
             }
         }
@@ -824,9 +833,11 @@ body {
             // font-size: 1.4rem;
             font-weight: bold;
             margin-bottom: 8px;
+            color: #181818;
         }
         .small-text {
             p {
+                color: #181818;
                 display: none;
                 font: normal normal 300 12px/19px Karla !important;
                 letter-spacing: 0px;
@@ -836,12 +847,14 @@ body {
             }
         }
         .arrow-inline {
+            color: #181818;
             margin-top: 38px;
             display: flex;
             position: absolute;
             bottom: 16px;
             p {
                 margin-top: 6px;
+                color: #181818;
                 font: normal normal 300 12px/19px Karla;
             }
             span {
@@ -866,6 +879,7 @@ body {
                 letter-spacing: 0px;
                 display: none;
                 position: absolute;
+                color: #181818;
                 bottom: 2;
             }
         }
@@ -954,48 +968,58 @@ button {
     outline: none;
 }
 #live-auction {
-    background: #0458ab 0% 0% no-repeat padding-box;
+    // background: #0458ab 0% 0% no-repeat padding-box;
     width: 100%;
-    padding: 63px 0;
+    // padding: 63px 0;
+    .head-title{
+        background: #F2F2F2;
+        padding: 22px 0 15px 0;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        .row {
+            margin: auto;
+            .record-icon {
+                img {
+                    padding-top: 5px;
+                    width: 40px;
+                    color: #fff;
+                    // background: #0458ab;
+                }
+            }
+            h1 {
+                margin-left: 13px;
+                font: normal normal bold 38px/56px Poppins;
+                letter-spacing: 0px;
+                color: #303030;
+                span {
+                    margin: 0 12px;
+                    background: #fd0e27 0% 0% no-repeat padding-box;
+                    border-radius: 10px;
+                    padding: 4px 24px;
+                    color: #fff;
+                }
+            }
+        }
+    }
     .container {
         .row {
             .left-live {
                 .top-title {
-                    .row {
-                        margin: 0;
-                        .record-icon {
-                            img {
-                                padding-top: 5px;
-                                width: 40px;
-                                color: #fff;
-                                background: #0458ab;
-                            }
-                        }
-                        h1 {
-                            margin-left: 13px;
-                            font: normal normal bold 38px/56px Poppins;
-                            letter-spacing: 0px;
-                            color: #ffffff;
-                            span {
-                                margin: 0 12px;
-                                background: #fd0e27 0% 0% no-repeat padding-box;
-                                border-radius: 10px;
-                                padding: 4px 24px;
-                            }
-                        }
-                    }
+                    margin-top: 70px;
+
                     h3 {
                         margin-top: 30px;
                         font: normal normal 600 21px/50px Poppins;
                         letter-spacing: -0.22px;
                         line-height: 1;
-                        color: #ffffff;
+                        color: #303030;
                     }
                     p {
                         margin-top: 30px;
                         font: normal normal normal 14px/25px Karla;
                         letter-spacing: 0px;
-                        color: #ffffff;
+                        color: #303030;
                     }
                     .auction-end {
                         margin-top: 53px;
@@ -1003,14 +1027,14 @@ button {
                             h3 {
                                 font: normal normal normal 24px/70px Poppins;
                                 letter-spacing: 0px;
-                                color: #ffffff;
+                                color: #303030;
                                 line-height: 0;
                                 margin: 0;
                             }
                             h2 {
                                 font: normal normal 600 30px/70px Poppins;
                                 letter-spacing: 0px;
-                                color: #ffffff;
+                                color: #303030;
                                 line-height: 0;
                                 margin: 0;
                             }
@@ -1029,13 +1053,16 @@ button {
                                 margin: 0 19px 0 0;
                             }
                             .outline-btn-auction {
-                                border: 2px solid #ffffff;
+                                border: 2px solid #303030;
                                 border-radius: 6px;
                                 font: normal normal normal 20px/23px Karla;
                                 letter-spacing: 0px;
-                                color: #efefef;
+                                color: #303030;
                                 padding: 12px 25px;
                                 margin: 0 19px 0 0;
+                                &:hover{
+                                    color: #303030 !important;
+                                }
                             }
                         }
                     }
@@ -1155,7 +1182,7 @@ button {
         hr {
             width: 330px;
             height: 7px;
-            background: #ff6347 0% 0% no-repeat padding-box;
+            background: #f83535 0% 0% no-repeat padding-box;
         }
         .row {
             margin-top: 105px;
@@ -1172,7 +1199,7 @@ button {
                     .arrow-card {
                         width: 80px;
                         height: 68px;
-                        background: #4d4879 0% 0% no-repeat padding-box;
+                        background: #361D44 0% 0% no-repeat padding-box;
                         border-radius: 0px 0px 9px 0px;
                         bottom: 0px;
                         position: absolute;
@@ -1201,9 +1228,9 @@ button {
                         transition: all 0.4s ease;
                     }
                     &:hover {
-                        background: #0458ab 0% 0% no-repeat padding-box;
+                        background: #FFB500 0% 0% no-repeat padding-box;
                         .arrow-card {
-                            background: #ff6347 0% 0% no-repeat padding-box;
+                            background: #F83535 0% 0% no-repeat padding-box;
                         }
                         h3 {
                             color: #fff !important;
@@ -1395,7 +1422,7 @@ button {
                             height: 55px;
                             width: 55px;
                             border-radius: 50%;
-                            background: #ff6347 0% 0% no-repeat padding-box;
+                            background: #f83535 0% 0% no-repeat padding-box;
                             box-shadow: 0px 5px 10px #00000029;
                             box-shadow: 0px 5px 10px #00000029;
                             z-index: 11;
@@ -1410,7 +1437,7 @@ button {
                         .ribbon-red {
                             width: 229px;
                             height: 32px;
-                            background: #ff6347 0% 0% no-repeat padding-box;
+                            background: #f83535 0% 0% no-repeat padding-box;
                             position: absolute;
                             top: 12px;
                             left: 30px;
@@ -1455,7 +1482,7 @@ button {
                                 background: #ebebeb 0% 0% no-repeat padding-box;
                                 box-shadow: 0px 0px 10px #00000029;
                                 i {
-                                    color: #ff6347;
+                                    color: #f83535;
                                     font-size: 26px;
                                     padding: 15px;
                                 }
@@ -1826,7 +1853,7 @@ button {
                         font: normal normal 600 22px/50px Poppins;
                         background: #0458ab 0% 0% no-repeat padding-box;
                         border-radius: 54px;
-                        &:hover{
+                        &:hover {
                             background: #033362 !important;
                         }
                     }
@@ -1846,7 +1873,7 @@ button {
                         i {
                             margin-right: 10px;
                         }
-                        &:hover{
+                        &:hover {
                             color: #033362 !important;
                         }
                     }
@@ -2112,7 +2139,7 @@ button {
                         color: #9f9f9f;
                     }
                     button {
-                        background: #ff6347 0% 0% no-repeat padding-box;
+                        background: #f83535 0% 0% no-repeat padding-box;
                         border-radius: 20px;
                         margin-top: 40px;
                         border: transparent;
@@ -2154,7 +2181,7 @@ button {
                             line-height: 1;
                             color: #4f4f4f;
                             a {
-                                color: #ff6347;
+                                color: #f83535;
                             }
                         }
                     }
@@ -2176,7 +2203,7 @@ button {
                         a {
                             font: normal normal 600 14px/25px Poppins;
                             letter-spacing: 0.24px;
-                            color: #ff6347;
+                            color: #f83535;
                             padding-top: 6px;
                         }
                     }
@@ -2192,7 +2219,7 @@ button {
                     p {
                         font: normal normal normal 13px/17px Karla;
                         letter-spacing: 0.2px;
-                        color: #ff6347;
+                        color: #f83535;
                     }
                 }
                 .bottumText {
@@ -2202,7 +2229,7 @@ button {
                         letter-spacing: 0.21px;
                         color: #333333;
                         a {
-                            color: #ff6347;
+                            color: #f83535;
                         }
                     }
                 }
@@ -2428,10 +2455,10 @@ button {
                             .btn-cancel {
                                 font: normal normal 600 22px/50px Poppins;
                                 letter-spacing: 0px;
-                                color: #ff6347;
+                                color: #f83535;
                             }
                             .btn-send-offer {
-                                background: #ff6347 0% 0% no-repeat padding-box;
+                                background: #f83535 0% 0% no-repeat padding-box;
                                 border-radius: 18px;
                                 text-align: left;
                                 font: normal normal 600 22px/50px Poppins;
