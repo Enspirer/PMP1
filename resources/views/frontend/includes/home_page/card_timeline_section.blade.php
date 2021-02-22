@@ -42,7 +42,7 @@
 
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -147,7 +147,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -217,7 +217,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -252,7 +252,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
@@ -286,7 +286,7 @@
                                     </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-light">
+                                    <button type="button" class="btn btn-outline-dark">
                                         View Project
                                     </button>
                                 </div>
@@ -320,7 +320,7 @@
                                 </div>
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
-                                        <button type="submit" class="btn btn-outline-light">
+                                        <button type="submit" class="btn btn-outline-dark">
                                             View Project
                                         </button>
                                     </form>
