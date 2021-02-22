@@ -48,14 +48,14 @@
                                             </div>
                                         </div>
                                         <li class="user-menu__item">
-                                            <a class="user-menu-link" href="#">
+                                            <a class="user-menu-link" href="{{route('frontend.user.dashboard')}}">
                                                 <img
                                                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png"
                                                     alt="trophy_icon"
                                                     width="20"
                                                     height="20"
                                                 />
-                                                <div>Achievements</div>
+                                                <div>Dashboard</div>
                                             </a>
                                         </li>
                                         <li class="user-menu__item">
