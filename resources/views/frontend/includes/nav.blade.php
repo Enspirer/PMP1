@@ -28,24 +28,92 @@
 
                         @auth()
 
+                            <div class="user-menu-wrap">
+                                <a class="mini-photo-wrapper" href="#">
+                                    <img class="mini-photo" src="{{ $logged_in_user->picture }}" width="36" height="36"/>
+                                </a>
 
-                        <div class='profile'>
-                            <div class='avatar' style="margin-bottom: 0px;">
-                                <img src='{{ $logged_in_user->picture }}'>
+                                <div class="menu-container">
+                                    <ul class="user-menu">
+                                        <div class="profile-highlight">
+                                            <img
+                                                src="{{ $logged_in_user->picture }}"
+                                                alt="profile-img"
+                                                width="36"
+                                                height="36"
+                                            />
+                                            <div class="details">
+                                                <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
+                                                <div id="profile-footer">Team Hallaway</div>
+                                            </div>
+                                        </div>
+                                        <li class="user-menu__item">
+                                            <a class="user-menu-link" href="#">
+                                                <img
+                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png"
+                                                    alt="trophy_icon"
+                                                    width="20"
+                                                    height="20"
+                                                />
+                                                <div>Achievements</div>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a class="user-menu-link" href="#">
+                                                <img
+                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/team.png"
+                                                    alt="team_icon"
+                                                    width="20"
+                                                    height="20"
+                                                />
+                                                <div>Team</div>
+                                            </a>
+                                        </li>
+                                        <li class="user-menu__item">
+                                            <a class="user-menu-link" href="#">
+                                                <img
+                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/book.png"
+                                                    alt="team_icon"
+                                                    width="20"
+                                                    height="20"
+                                                />
+                                                <div>Log History</div>
+                                            </a>
+                                        </li>
+                                        <div class="footer">
+                                            <li class="user-menu__item">
+                                                <a
+                                                    class="user-menu-link"
+                                                    href="#"
+                                                    style="color: #f44336"
+                                                >Logout</a
+                                                >
+                                            </li>
+                                            <li class="user-menu__item">
+                                                <a class="user-menu-link" href="#">Settings</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
                             </div>
-                            <p style="margin-bottom: 0px;text-transform: capitalize;">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</p>
-                            <i class="fa fa-caret-down"></i>
-                        </div>
 
-                        <div class='profiledropdown'>
-                            <ul>
-                                <li class='option'> <a href="">Profile</a></li>
-                                <li class='option'><a href="">settings</a></li>
-                                <li class='option'><a href="">Help</a></li>
-                                <li class='divider'></li>
-                                <li class='option'><a href="{{route('frontend.auth.logout')}}">Sign out</a></li>
-                            </ul>
-                        </div>
+{{--                        <div class='profile'>--}}
+{{--                            <div class='avatar' style="margin-bottom: 0px;">--}}
+{{--                                <img src='{{ $logged_in_user->picture }}'>--}}
+{{--                            </div>--}}
+{{--                            <p style="margin-bottom: 0px;text-transform: capitalize;">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</p>--}}
+{{--                            <i class="fa fa-caret-down"></i>--}}
+{{--                        </div>--}}
+
+{{--                        <div class='profiledropdown'>--}}
+{{--                            <ul>--}}
+{{--                                <li class='option'> <a href="">Profile</a></li>--}}
+{{--                                <li class='option'><a href="">settings</a></li>--}}
+{{--                                <li class='option'><a href="">Help</a></li>--}}
+{{--                                <li class='divider'></li>--}}
+{{--                                <li class='option'><a href="{{route('frontend.auth.logout')}}">Sign out</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
 
 
                         @else
