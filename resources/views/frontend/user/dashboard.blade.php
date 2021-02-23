@@ -35,8 +35,8 @@
         href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Theame Style  -->
-    <link rel="stylesheet" href="styles/css/style.css" />
-    <link rel="stylesheet" href="plugin/dist/css/animtrap.css" />
+    <link rel="stylesheet" href="{{url('theme_light/styles/css/style.css')}}" />
+    <link rel="stylesheet" href="{{url('theme_light/plugin/dist/css/animtrap.css')}}" />
     <link
         rel="stylesheet"
         href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -875,7 +875,7 @@
     crossorigin="anonymous"
 ></script>
 <!-- Theame JS  -->
-<script src="js/main.js"></script>
+<script src="{{url('theme_light/js/main.js')}}"></script>
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
