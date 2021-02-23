@@ -24,6 +24,18 @@ body {
     margin-top: 40px;
 }
 
+.progress-green {
+    color: #059b1e;
+}
+
+.paused {
+    color: #c47000;
+}
+
+.hold {
+    color: #EA0000;
+}
+
 .nav-section.sticky {
     top: 0px !important;
     opacity: 1 !important;
@@ -101,7 +113,7 @@ body {
     height: 35px;
     text-align: center center;
     padding: 0px 30px;
-    border-radius: 9px;
+    border-radius: 4px;
 }
 
 .navbar-main .container .collapse button:hover {
@@ -115,7 +127,7 @@ body {
     height: 35px;
     text-align: center center;
     padding: 8px 30px;
-    border-radius: 9px;
+    border-radius: 4px;
 }
 
 .navbar-main .container .collapse .post_job:hover {
@@ -168,7 +180,7 @@ body {
     padding: 8px 0;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    border-radius: 4px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -544,7 +556,7 @@ body {
     outline: none;
     font-size: 12px;
     border-style: solid;
-    border: 1px solid #FFBE40;
+    border: 1px solid #ffbe40;
     padding: 8px;
     color: #121212;
     background-color: rgba(255, 255, 255, 0.3);
@@ -657,9 +669,10 @@ body {
     padding: 0 10px;
     font-size: 18px;
     width: 60%;
+    font-size: 14px;
     height: 42px;
     border: 1px solid #b3b3b3;
-    border-radius: 9px;
+    border-radius: 4px;
 }
 
 #video_box .header-content .content .row-search-post .search:focus {
@@ -667,7 +680,7 @@ body {
 }
 
 #video_box .header-content .content .row-search-post h3 {
-    font: normal normal 300 24px/17px Karla;
+    font: normal normal 300 14px/17px Karla;
     color: #fff;
     padding-top: 12px;
     margin: 0 20px;
@@ -677,10 +690,10 @@ body {
 #video_box .header-content .content .row-search-post a {
     height: 42px;
     background: #f83535;
-    font: normal normal 600 24px/17px Karla;
+    font: normal normal 600 14px/17px Karla;
     padding: 11px 42px;
     color: #fff;
-    border-radius: 9px;
+    border-radius: 4px;
 }
 
 #video_box .header-content .content .row-search-post a:hover {
@@ -709,7 +722,7 @@ body {
     margin: 4px;
     font: normal normal 300 14px/17px Karla;
     border: 1px solid #fff;
-    border-radius: 9px;
+    border-radius: 4px;
 }
 
 #card-swipper {
@@ -729,7 +742,7 @@ body {
 #card-swipper .container .heading-text h1 span {
     color: red;
     border: 1px solid red;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 0 12px;
 }
 
@@ -792,7 +805,7 @@ body {
     -webkit-box-shadow: 0px 15px 30px 1px rgba(0, 0, 0, 0.23);
     box-shadow: 0px 15px 30px 1px rgba(0, 0, 0, 0.23);
     text-align: left;
-    border-radius: 9px;
+    border-radius: 4px;
     position: absolute;
     left: calc(100% + 7px);
     width: 150px;
@@ -1175,7 +1188,7 @@ button {
 
 #live-auction .head-title .row h1 {
     margin-left: 13px;
-    font: normal normal bold 38px/56px Poppins;
+    font: normal normal bold 28px/56px Poppins;
     letter-spacing: 0px;
     color: #303030;
 }
@@ -1183,7 +1196,7 @@ button {
 #live-auction .head-title .row h1 span {
     margin: 0 12px;
     background: #fd0e27 0% 0% no-repeat padding-box;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 4px 24px;
     color: #fff;
 }
@@ -1196,7 +1209,7 @@ button {
     margin-top: 30px;
     font: normal normal 600 21px/50px Poppins;
     letter-spacing: -0.22px;
-    line-height: 1;
+    line-height: 1.5;
     color: #303030;
 }
 
@@ -1220,7 +1233,7 @@ button {
 }
 
 #live-auction .container .row .left-live .top-title .auction-end .row h2 {
-    font: normal normal 600 30px/70px Poppins;
+    font: normal normal 600 24px/70px Poppins;
     letter-spacing: 0px;
     color: #303030;
     line-height: 0;
@@ -1233,7 +1246,7 @@ button {
 
 #live-auction .container .row .left-live .top-title .auction-button .row .fill-btn-auction {
     background: #f44738 0% 0% no-repeat padding-box;
-    border-radius: 6px;
+    border-radius: 4px;
     font: normal normal normal 20px/23px Karla;
     letter-spacing: 0px;
     color: #efefef;
@@ -1243,7 +1256,7 @@ button {
 
 #live-auction .container .row .left-live .top-title .auction-button .row .outline-btn-auction {
     border: 2px solid #303030;
-    border-radius: 6px;
+    border-radius: 4px;
     font: normal normal normal 20px/23px Karla;
     letter-spacing: 0px;
     color: #303030;
@@ -1396,7 +1409,7 @@ button {
     background: #ffffff 0% 0% no-repeat padding-box;
     -webkit-box-shadow: 0px 25px 50px #30303033;
     box-shadow: 0px 25px 50px #30303033;
-    border-radius: 9px;
+    border-radius: 4px;
     border: none;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -1406,7 +1419,7 @@ button {
     width: 80px;
     height: 68px;
     background: #361d44 0% 0% no-repeat padding-box;
-    border-radius: 0px 0px 9px 0px;
+    border-radius: 0px 0px 4px 0px;
     bottom: 0px;
     position: absolute;
     right: 0;
@@ -1541,7 +1554,7 @@ button {
     -webkit-box-shadow: 0px 5px 10px #00000029;
     box-shadow: 0px 5px 10px #00000029;
     border: transparent;
-    border-radius: 9px;
+    border-radius: 4px;
     padding: 30px 10px;
     -webkit-transition: 0.21s ease-in;
     transition: 0.21s ease-in;
@@ -2113,7 +2126,7 @@ button {
     height: 75px;
     padding: 13px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
     font-weight: bold;
     line-height: 0;
@@ -2132,7 +2145,7 @@ button {
     height: 75px;
     padding: 13px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #0458ab;
     font-weight: bold;
     line-height: 0;
@@ -2734,7 +2747,7 @@ button {
     letter-spacing: 0px;
     color: #0458ab;
     border: 1px solid #0458ab;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 9px 44px;
 }
 
@@ -3163,16 +3176,20 @@ button {
     top: 72px;
 }
 
-.dashboard-body .page-content .container .row .left-card {
-    padding: 0 12px;
-}
-
-.dashboard-body .page-content .container .row .left-card .dashboard-card {
+.dashboard-body .page-content .card-db {
     margin: 16px 0;
     background: #f9f9f9 0% 0% no-repeat padding-box;
     border: 0.30000001192092896px solid #dbdbdb;
-    border-radius: 12px;
+    border-radius: 4px;
     width: 100%;
+}
+
+.dashboard-body .page-content .container .row {
+    margin: 0;
+}
+
+.dashboard-body .page-content .container .row .left-card {
+    padding: 0 12px;
 }
 
 .dashboard-body .page-content .container .row .left-card .dashboard-card h1 {
@@ -3218,11 +3235,6 @@ button {
 }
 
 .dashboard-body .page-content .container .row .right-card .dashboard-card {
-    margin: 16px 0;
-    background: #f9f9f9 0% 0% no-repeat padding-box;
-    border: 0.30000001192092896px solid #dbdbdb;
-    border-radius: 12px;
-    width: 100%;
     padding-left: 22px;
 }
 
@@ -3306,6 +3318,105 @@ button {
     color: #0458ab;
 }
 
+.dashboard-body .page-content .container .row h5 {
+    margin-top: -5px;
+    font: normal normal 600 22px/50px Poppins;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+.dashboard-body .page-content .container .row .header-search-top .inputWithIcon input {
+    border: 1px solid #131313;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project {
+    padding: 23px 0;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .left-title-and-company h2 {
+    font-family: Poppins;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .left-title-and-company .row p {
+    font: normal normal normal 14px/25px Karla;
+    color: #6d6d6d;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .left-title-and-company .row .icon {
+    margin-left: 12px;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .status-bar {
+    font: normal normal normal 15px/25px Karla;
+    letter-spacing: 0px;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .status-bar .status {
+    padding: 0;
+    margin: 0;
+    font: normal normal normal 15px/25px Karla;
+    letter-spacing: 0px;
+    color: #6d6d6d;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .status-bar .status-type {
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .progress-bar-tal .progress-style {
+    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .progress-bar-tal .persantage-status {
+    text-align: center;
+    margin: auto;
+    font: normal normal medium 12px/22px Karla;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #0458ab;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .remain-time h6 {
+    font-family: "Karla", sans-serif;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .remain-time p {
+    font: normal normal normal 16px/25px Karla;
+    letter-spacing: 0px;
+    color: #6d6d6d;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .price h2 {
+    font: normal normal bold 20px/30px Poppins;
+    letter-spacing: 0px;
+    color: #303030;
+    text-align: right;
+}
+
+.dashboard-body .page-content .container .active-projects .single-project .row .price p {
+    font: normal normal normal 14px/25px Karla;
+    letter-spacing: 0px;
+    color: #6d6d6d;
+    line-height: 0;
+    text-align: right;
+}
+
 .dashboard-body .page-wrapper .sidebar-wrapper,
 .dashboard-body .sidebar-wrapper .sidebar-brand > a,
 .dashboard-body .sidebar-wrapper .sidebar-dropdown > a:after,
@@ -3345,7 +3456,7 @@ button {
 
 @media screen and (min-width: 768px) {
     .dashboard-body .page-wrapper.toggled .page-content {
-        padding-left: 300px;
+        padding-left: 260px;
     }
 }
 
@@ -3633,7 +3744,6 @@ a
     display: inline-block;
     width: 100%;
     padding-left: 0px;
-    padding-top: 20px;
 }
 
 .dashboard-body .page-wrapper .page-content > div {

@@ -1,7 +1,7 @@
-<section> -->
+<section>
     <div id="how-to-work">
         <div class="container">
-            <h1 data-animscroll="fade-up">How Lorem Ipsum works</h1>
+            <h1 data-animscroll="fade-up" style="font-size: 42px; color: #361d47">How Lorem Ipsum works</h1>
             <hr data-animscroll="fade-up" />
             <div class="row">
                 <div class="col col-md-3" data-animscroll="fade-up" data-animscroll-delay="100">

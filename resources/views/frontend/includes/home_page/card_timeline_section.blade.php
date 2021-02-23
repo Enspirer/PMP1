@@ -1,10 +1,10 @@
 <section id="card-swipper">
     <div class="container">
         <div class="heading-text">
-            <h1 data-animscroll="fade-up">
+            <h1 data-animscroll="fade-up" style="font-size: 42px;color: #361d41">
                 Pick your challenge & Get started
             </h1>
-            <p data-animscroll="fade-up" data-animscroll-delay="100">
+            <p data-animscroll="fade-up" data-animscroll-delay="100" style="font-size: 18px">
                 The easiest way to grab your next project… Select the project
                 matches your team profile and get hired immediately by companies
                 around the world. <b>It’s that Simple</b>

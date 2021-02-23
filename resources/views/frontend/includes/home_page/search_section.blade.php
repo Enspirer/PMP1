@@ -5,7 +5,7 @@
     </div>
     <div class="header-content">
         <div class="content">
-            <h1 data-animscroll="fade-up" data-animscroll-delay="100">
+            <h1 data-animscroll="fade-up" data-animscroll-delay="100" style="font-size: 40px">
                 THE PLACE WHERE THE TOP <br>
                 CHALLENGERS MEET THE BEST TALLENTS
 
