@@ -9,17 +9,3 @@
 @push('after-scripts')
 
 @endpush
-
-
-
-
-
-
-
-
-
-
-
-
-
-

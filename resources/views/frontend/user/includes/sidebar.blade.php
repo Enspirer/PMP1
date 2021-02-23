@@ -1,7 +1,7 @@
 <nav id="sidebar" class="sidebar-wrapper" style="margin-top: -7px;!important;">
     <div class="sidebar-content">
         <div class="sidebar-brand">
-            <a href="#">USER DASHBOARD</a>
+            <a href="#">DASHBOARD</a>
             <div id="close-sidebar">
                 <i class="fas fa-times"></i>
             </div>
@@ -11,12 +11,17 @@
                 <div
                         class="user-avatar -medium -online-bubble"
                         style="
-                    background-image: url('https://source.unsplash.com/random/100x100/?nature');
+                    background-image: url('{{ $logged_in_user->picture }}');
                   "
                 ></div>
             </div>
             <div class="user-info">
-                <span class="user-name">Enspire (pvt) Ltd </span>
+                @if(auth()->user()->company_name)
+                    <span class="user-name">{{auth()->user()->company_name}} </span>
+                @else
+                    <span class="user-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}} </span>
+                @endif
+
                 <span class="user-role"
                 ><i class="fa fa-star" aria-hidden="true"></i>4.7 Star</span
                 >
@@ -39,7 +44,7 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="{{route('frontend.user.dashboard')}}">
                         <i class="fa fa-id-card-o" aria-hidden="true"></i>
                         <span>Summary</span>
                     </a>
@@ -53,7 +58,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('frontend.user.my_projects')}}">
                         <i class="fa fa-file-o" aria-hidden="true"></i>
                         <span>My Projects</span>
                     </a>
@@ -88,7 +93,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('frontend.auth.logout')}}">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                         <span>Log out</span>
                     </a>

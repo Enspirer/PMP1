@@ -83,7 +83,7 @@
                             <a class="mini-photo-wrapper" href="#">
                                 <img
                                         class="mini-photo"
-                                        src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                        src="{{ $logged_in_user->picture}}"
                                         width="36"
                                         height="36"
                                 />
@@ -93,25 +93,28 @@
                                 <ul class="user-menu">
                                     <div class="profile-highlight">
                                         <img
-                                                src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                                src="{{ $logged_in_user->picture}}"
                                                 alt="profile-img"
                                                 width="36"
                                                 height="36"
                                         />
                                         <div class="details">
-                                            <div id="profile-name">Kenny Lee</div>
-                                            <div id="profile-footer">Team Hallaway</div>
+                                            <a href="{{route('frontend.user.account')}}">
+                                                <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
+                                                <div id="profile-footer">{{auth()->user()->company_name}}</div>
+                                            </a>
+
                                         </div>
                                     </div>
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="#">
+                                        <a class="user-menu-link" href="{{route('frontend.user.my_projects')}}">
                                             <img
                                                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png"
                                                     alt="trophy_icon"
                                                     width="20"
                                                     height="20"
                                             />
-                                            <div>Achievements</div>
+                                            <div>My Projects</div>
                                         </a>
                                     </li>
                                     <li class="user-menu__item">
