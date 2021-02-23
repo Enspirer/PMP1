@@ -38,7 +38,7 @@ option = {
             name: 'Bid Range',
             min: 0,
             max: 100000,
-            interval: 10000,
+            interval: 20000,
             splitLine: {
                 show: false
             },
