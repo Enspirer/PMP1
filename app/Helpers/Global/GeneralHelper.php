@@ -1,4 +1,5 @@
 <?php
+use App\Models\Settings;
 
 if (! function_exists('app_name')) {
     /**
@@ -39,5 +40,16 @@ if (! function_exists('home_route')) {
         }
 
         return 'frontend.index';
+    }
+}
+
+
+
+if (! function_exists('getSetting'))
+{
+    function getSetting($key)
+    {
+      $getSettings = Settings::getSettings($key);
+      return $getSettings;
     }
 }
