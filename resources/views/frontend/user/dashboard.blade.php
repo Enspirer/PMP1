@@ -35,8 +35,8 @@
         href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Theame Style  -->
-    <link rel="stylesheet" href="{{url('theme_light/styles/css/style.css')}}" />
-    <link rel="stylesheet" href="{{url('theme_light/plugin/dist/css/animtrap.css')}}" />
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="stylesheet" href="plugin/dist/css/animtrap.css" />
     <link
         rel="stylesheet"
         href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -389,10 +389,10 @@
             <div class="container">
                 <div class="row">
                     <div class="left-card col-md-7">
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <h1>Project updates feed</h1>
                         </div>
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -413,7 +413,7 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -434,7 +434,7 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -455,7 +455,7 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -476,7 +476,7 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -497,7 +497,7 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -518,7 +518,7 @@
                             </div>
                         </div>
 
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
@@ -540,7 +540,7 @@
                         </div>
                     </div>
                     <div class="right-card col-md-5">
-                        <div class="dashboard-card">
+                        <div class="dashboard-card card-db">
                             <h1>Project Summary</h1>
                             <div class="pending-projects">
                                 <div class="row">
@@ -875,7 +875,7 @@
     crossorigin="anonymous"
 ></script>
 <!-- Theame JS  -->
-<script src="{{url('theme_light/js/main.js')}}"></script>
+<script src="js/main.js"></script>
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
