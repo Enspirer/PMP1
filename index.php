@@ -1,4 +1,4 @@
 <?php
-header("Location: http://pmp1.thechaptersrilanka.com/public/");
+header("Location: http://alpha.tallentor.com/public");
 die();
 ?>
