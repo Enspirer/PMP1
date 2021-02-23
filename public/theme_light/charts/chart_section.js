@@ -3,6 +3,12 @@ var myChart = echarts.init(dom);
 var app = {};
 var option;
 option = {
+    grid: {
+        top:    100,
+        bottom: 60,
+        left:   '10%',
+        right:  '10%',
+    },
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -14,14 +20,16 @@ option = {
     },
     toolbox: {
         feature: {
-            dataView: {show: true, readOnly: false},
             magicType: {show: true, type: ['line', 'bar']},
-            restore: {show: true},
-            saveAsImage: {show: true},
+            restore: {show: false},
+            saveAsImage: {show: false},
         }
     },
     legend: {
-        data: ['Price', 'Bid Count', '平均温度']
+        data: ['Price', 'Bid Count', '平均温度'],
+        marginBottom:{
+
+        }
     },
     xAxis: [
         {
