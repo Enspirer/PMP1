@@ -73,13 +73,17 @@
 <section class="nav-section">
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#" style="position: absolute"
-            ><img
-                    src="assets/image/logotext.png"
-                    alt=""
-                    width="160px"
-                    style="position: absolute; top: -13px"
+            <a class="navbar-brand" href="#"
+            ><img src="assets/image/logotext.png" alt="" width="160px"
                 /></a>
+
+            <div class="header-search-top">
+                <div class="inputWithIcon">
+                    <input type="text" placeholder="Search projects" />
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+
             <button
                 class="navbar-toggler"
                 type="button"
@@ -94,6 +98,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="ml-auto row">
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#"
                             >Home <span class="sr-only">(current)</span></a
@@ -105,6 +112,71 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
+
+                        <div class="user-menu-wrap">
+                            <a class="mini-photo-wrapper-notification" href="#">
+
+                                <i
+                                    class="fa fa-bell"
+                                    aria-hidden="true"
+                                    style="
+                        font-size: 22px;
+                        color: #131313;
+                        top: 12px;
+                        margin-top: 8px;
+                        margin-left: 32px;
+                      "
+                                ></i>
+                            </a>
+
+                            <div class="menu-container-notofication">
+                                <ul class="user-menu-notifiaction">
+
+
+                                    <div class="profile-highlight">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                            alt="profile-img"
+                                            width="36"
+                                            height="36"
+                                        />
+                                        <div class="details">
+                                            <div id="profile-name">Kenny Lee</div>
+                                            <div id="profile-footer">Team Hallaway</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-highlight">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                            alt="profile-img"
+                                            width="36"
+                                            height="36"
+                                        />
+                                        <div class="details">
+                                            <div id="profile-name">Kenny Lee</div>
+                                            <div id="profile-footer">Team Hallaway</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-highlight">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                            alt="profile-img"
+                                            width="36"
+                                            height="36"
+                                        />
+                                        <div class="details">
+                                            <div id="profile-name">Kenny Lee</div>
+                                            <div id="profile-footer">Team Hallaway</div>
+                                        </div>
+                                    </div>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
 
                         <div class="user-menu-wrap">
                             <a class="mini-photo-wrapper" href="#">
@@ -324,11 +396,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -340,11 +417,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -356,11 +438,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -372,11 +459,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -388,11 +480,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -404,11 +501,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -420,11 +522,16 @@
                             <div class="row">
                                 <div class="left-profile col-md-2">
                                     <div class="card-profile-image">
-                                        <img src="https://source.unsplash.com/random/100x100/?nature" alt="">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100/?nature"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                                 <div class="right-details col-md-10">
-                                    <h5 class="title">Wordpress responsive website development</h5>
+                                    <h5 class="title">
+                                        Wordpress responsive website development
+                                    </h5>
                                     <p class="company">Enspirer (pvt) Ltd.</p>
                                     <h4 class="project-name">Back end development started</h4>
                                     <p class="company">08:34 02/02/21</p>
@@ -438,30 +545,87 @@
                             <div class="pending-projects">
                                 <div class="row">
                                     <div class="icon col-md-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32.599" height="22.451" viewBox="0 0 22.599 32.451">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="32.599"
+                                            height="22.451"
+                                            viewBox="0 0 22.599 32.451"
+                                        >
                                             <g id="prize" transform="translate(-27.924)">
                                                 <g id="Prize_2_" transform="translate(27.924 0)">
-                                                    <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                        <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40"/>
+                                                    <g
+                                                        id="Group_49"
+                                                        data-name="Group 49"
+                                                        transform="translate(0 0)"
+                                                    >
+                                                        <path
+                                                            id="Path_34"
+                                                            data-name="Path 34"
+                                                            d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
+                                                            transform="translate(-27.924 0)"
+                                                            fill="#ffdf40"
+                                                        />
                                                     </g>
                                                 </g>
-                                                <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"/>
-                                                <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
-                                                    <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#ffbe40"/>
+                                                <path
+                                                    id="Path_35"
+                                                    data-name="Path 35"
+                                                    d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
+                                                    transform="translate(-211.776 0)"
+                                                    fill="#ffdf40"
+                                                />
+                                                <g
+                                                    id="Group_50"
+                                                    data-name="Group 50"
+                                                    transform="translate(35.648 7.575)"
+                                                >
+                                                    <path
+                                                        id="Path_36"
+                                                        data-name="Path 36"
+                                                        d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
+                                                        transform="translate(-136 -106)"
+                                                        fill="#ffbe40"
+                                                    />
                                                 </g>
-                                                <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40"/>
-                                                <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40"/>
-                                                <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
-                                                    <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40"/>
+                                                <path
+                                                    id="Path_37"
+                                                    data-name="Path 37"
+                                                    d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
+                                                    transform="translate(-211.776 -98.425)"
+                                                    fill="#ffbe40"
+                                                />
+                                                <path
+                                                    id="Path_39"
+                                                    data-name="Path 39"
+                                                    d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
+                                                    transform="translate(-211.776 -172.146)"
+                                                    fill="#ffbe40"
+                                                />
+                                                <g
+                                                    id="Group_51"
+                                                    data-name="Group 51"
+                                                    transform="translate(40.25 13.249)"
+                                                >
+                                                    <path
+                                                        id="Path_38"
+                                                        data-name="Path 38"
+                                                        d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
+                                                        transform="translate(-200.395 -185.395)"
+                                                        fill="#ffdf40"
+                                                    />
                                                 </g>
                                             </g>
                                         </svg>
                                     </div>
                                     <div class="text-middle col-md-9">
-                                        <h3 class="heading-title">Wordpress responsive website development</h3>
+                                        <h3 class="heading-title">
+                                            Wordpress responsive website development
+                                        </h3>
                                         <div class="row">
                                             <p class="left-company">Enspirer (pvt) Ltd.</p>
-                                            <p class="right-status ml-auto progress-green">In Progress</p>
+                                            <p class="right-status ml-auto progress-green">
+                                                In Progress
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="right-chart col-md-2">
@@ -472,27 +636,82 @@
 
                                 <div class="row">
                                     <div class="icon col-md-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32.599" height="22.451" viewBox="0 0 22.599 32.451">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="32.599"
+                                            height="22.451"
+                                            viewBox="0 0 22.599 32.451"
+                                        >
                                             <g id="prize" transform="translate(-27.924)">
                                                 <g id="Prize_2_" transform="translate(27.924 0)">
-                                                    <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                        <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40"/>
+                                                    <g
+                                                        id="Group_49"
+                                                        data-name="Group 49"
+                                                        transform="translate(0 0)"
+                                                    >
+                                                        <path
+                                                            id="Path_34"
+                                                            data-name="Path 34"
+                                                            d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
+                                                            transform="translate(-27.924 0)"
+                                                            fill="#ffdf40"
+                                                        />
                                                     </g>
                                                 </g>
-                                                <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"/>
-                                                <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
-                                                    <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#ffbe40"/>
+                                                <path
+                                                    id="Path_35"
+                                                    data-name="Path 35"
+                                                    d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
+                                                    transform="translate(-211.776 0)"
+                                                    fill="#ffdf40"
+                                                />
+                                                <g
+                                                    id="Group_50"
+                                                    data-name="Group 50"
+                                                    transform="translate(35.648 7.575)"
+                                                >
+                                                    <path
+                                                        id="Path_36"
+                                                        data-name="Path 36"
+                                                        d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
+                                                        transform="translate(-136 -106)"
+                                                        fill="#ffbe40"
+                                                    />
                                                 </g>
-                                                <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40"/>
-                                                <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40"/>
-                                                <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
-                                                    <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40"/>
+                                                <path
+                                                    id="Path_37"
+                                                    data-name="Path 37"
+                                                    d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
+                                                    transform="translate(-211.776 -98.425)"
+                                                    fill="#ffbe40"
+                                                />
+                                                <path
+                                                    id="Path_39"
+                                                    data-name="Path 39"
+                                                    d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
+                                                    transform="translate(-211.776 -172.146)"
+                                                    fill="#ffbe40"
+                                                />
+                                                <g
+                                                    id="Group_51"
+                                                    data-name="Group 51"
+                                                    transform="translate(40.25 13.249)"
+                                                >
+                                                    <path
+                                                        id="Path_38"
+                                                        data-name="Path 38"
+                                                        d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
+                                                        transform="translate(-200.395 -185.395)"
+                                                        fill="#ffdf40"
+                                                    />
                                                 </g>
                                             </g>
                                         </svg>
                                     </div>
                                     <div class="text-middle col-md-9">
-                                        <h3 class="heading-title">Wordpress responsive website development</h3>
+                                        <h3 class="heading-title">
+                                            Wordpress responsive website development
+                                        </h3>
                                         <div class="row">
                                             <p class="left-company">Enspirer (pvt) Ltd.</p>
                                             <p class="right-status ml-auto paused">Paused</p>
@@ -506,27 +725,82 @@
 
                                 <div class="row">
                                     <div class="icon col-md-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32.599" height="22.451" viewBox="0 0 22.599 32.451">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="32.599"
+                                            height="22.451"
+                                            viewBox="0 0 22.599 32.451"
+                                        >
                                             <g id="prize" transform="translate(-27.924)">
                                                 <g id="Prize_2_" transform="translate(27.924 0)">
-                                                    <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                        <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40"/>
+                                                    <g
+                                                        id="Group_49"
+                                                        data-name="Group 49"
+                                                        transform="translate(0 0)"
+                                                    >
+                                                        <path
+                                                            id="Path_34"
+                                                            data-name="Path 34"
+                                                            d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
+                                                            transform="translate(-27.924 0)"
+                                                            fill="#ffdf40"
+                                                        />
                                                     </g>
                                                 </g>
-                                                <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"/>
-                                                <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
-                                                    <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#ffbe40"/>
+                                                <path
+                                                    id="Path_35"
+                                                    data-name="Path 35"
+                                                    d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
+                                                    transform="translate(-211.776 0)"
+                                                    fill="#ffdf40"
+                                                />
+                                                <g
+                                                    id="Group_50"
+                                                    data-name="Group 50"
+                                                    transform="translate(35.648 7.575)"
+                                                >
+                                                    <path
+                                                        id="Path_36"
+                                                        data-name="Path 36"
+                                                        d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
+                                                        transform="translate(-136 -106)"
+                                                        fill="#ffbe40"
+                                                    />
                                                 </g>
-                                                <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40"/>
-                                                <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40"/>
-                                                <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
-                                                    <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40"/>
+                                                <path
+                                                    id="Path_37"
+                                                    data-name="Path 37"
+                                                    d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
+                                                    transform="translate(-211.776 -98.425)"
+                                                    fill="#ffbe40"
+                                                />
+                                                <path
+                                                    id="Path_39"
+                                                    data-name="Path 39"
+                                                    d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
+                                                    transform="translate(-211.776 -172.146)"
+                                                    fill="#ffbe40"
+                                                />
+                                                <g
+                                                    id="Group_51"
+                                                    data-name="Group 51"
+                                                    transform="translate(40.25 13.249)"
+                                                >
+                                                    <path
+                                                        id="Path_38"
+                                                        data-name="Path 38"
+                                                        d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
+                                                        transform="translate(-200.395 -185.395)"
+                                                        fill="#ffdf40"
+                                                    />
                                                 </g>
                                             </g>
                                         </svg>
                                     </div>
                                     <div class="text-middle col-md-9">
-                                        <h3 class="heading-title">Wordpress responsive website development</h3>
+                                        <h3 class="heading-title">
+                                            Wordpress responsive website development
+                                        </h3>
                                         <div class="row">
                                             <p class="left-company">Enspirer (pvt) Ltd.</p>
                                             <p class="right-status ml-auto hold">On Hold</p>
@@ -548,7 +822,7 @@
     <!-- page-wrapper -->
 </section>
 
-<script src='https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js'></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

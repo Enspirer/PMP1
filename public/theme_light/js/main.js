@@ -28,6 +28,11 @@ $(document).ready(function () {
         document.querySelector('.menu-container').classList.toggle('active');
     });
 
+    document.querySelector('.mini-photo-wrapper-notification').addEventListener('click', function() {
+        document.querySelector('.menu-container-notofication').classList.toggle('active');
+    });
+
+
 
     // ------------- dashboard-----------
     $(".sidebar-dropdown > a").click(function() {
