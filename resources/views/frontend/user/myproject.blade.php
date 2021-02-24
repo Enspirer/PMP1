@@ -6,174 +6,628 @@
 
     <br>
 
+
     <section class="dashboard-body">
         <div class="page-wrapper chiller-theme toggled">
-            <!-- sidebar-wrapper  -->
-            <main class="page-content">
-                <div class="dashboard-nav container-fluid" style="width: 100%; height: 50px; background: #F0F0F0;">
-                    <div class="row">
-                        <div class="col-md-2"><p>Active Projects</p></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
+            <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    <div class="sidebar-brand">
+                        <a href="#">USER DASHBOARD</a>
+                        <div id="close-sidebar">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="sidebar-header">
+                        <div class="user-pic">
+                            <div
+                                class="user-avatar -medium -online-bubble"
+                                style="
+                    background-image: url('https://source.unsplash.com/random/100x100/?nature');
+                  "
+                            ></div>
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Enspire (pvt) Ltd </span>
+                            <span class="user-role"
+                            ><i class="fa fa-star" aria-hidden="true"></i>4.7 Star</span
+                            >
+                        </div>
+                    </div>
+                    <!-- sidebar-header  -->
+                    <!-- <div class="sidebar-search">
+                          <div>
+                            <div class="input-group">
+                              <input type="text" class="form-control search-menu" placeholder="Search...">
+                              <div class="input-group-append">
+                                <span class="input-group-text">
+                                  <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+                    <!-- sidebar-search  -->
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                    <span>Summary</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                    <span>Post a Project</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-file-o" aria-hidden="true"></i>
+                                    <span>My Projects</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                    <span>Payments</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    <span>Invite Co-workers</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    <span>Account Settings</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                    <span>Project Cancellations</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <h5>Active Projects - <span>3 (LKR 120,000)</span></h5>
-                        <div class="header-search-top ml-auto">
-                            <div class="inputWithIcon">
-                                <input type="text" placeholder="Search projects" />
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                <!-- sidebar-content  -->
+                <!-- <div class="sidebar-footer">
+                      <a href="#">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">3</span>
+                      </a>
+                      <a href="#">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge badge-pill badge-success notification">7</span>
+                      </a>
+                      <a href="#">
+                        <i class="fa fa-cog"></i>
+                        <span class="badge-sonar"></span>
+                      </a>
+                      <a href="#">
+                        <i class="fa fa-power-off"></i>
+                      </a>
+                    </div> -->
+            </nav>
+            <!-- sidebar-wrapper  -->
+            <main class="page-content">
+                <div class="dashboard-nav container-fluid">
+                    <ul class="nav nav-pill" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <p
+                                class="nav-link active"
+                                id="pills-home-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-home"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-home"
+                                aria-selected="true"
+                            >
+                                Active Projects
+                            </p>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <p
+                                class="nav-link"
+                                id="pills-profile-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-profile"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-profile"
+                                aria-selected="false"
+                            >
+                                Bids and Proposals
+                            </p>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <p
+                                class="nav-link"
+                                id="pills-contact-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-contact"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-contact"
+                                aria-selected="false"
+                            >
+                                Waiting to Review
+                            </p>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <p
+                                class="nav-link"
+                                id="pills-contact2-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-contact2"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-contact"
+                                aria-selected="false"
+                            >
+                                Completed Projects
+                            </p>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <p
+                                class="nav-link"
+                                id="pills-contact3-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-contact3"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-contact"
+                                aria-selected="false"
+                            >
+                                Draft Projects
+                            </p>
+                        </li>
+                    </ul>
+
+                    <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                      </div> -->
+
+                    <!-- <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">..sd.</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">.er..</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">.fdf..</div>
+                        <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">.fdf..</div>
+                        <div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact3-tab">.fdf..</div>
+                      </div> -->
+                </div>
+
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="pills-home"
+                        role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="container">
+                            <div class="row">
+                                <h5>Active Projects - <span>3 (LKR 120,000)</span></h5>
+                                <div class="header-search-top ml-auto">
+                                    <div class="inputWithIcon">
+                                        <input type="text" placeholder="Search projects" />
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="active-projects">
+                                <div class="single-project card-db">
+                                    <div class="row">
+                                        <div class="left-title-and-company col-md-5">
+                                            <h2>Wordpress website development</h2>
+                                            <div class="row">
+                                                <p>Enspirer (pvt) Ltd.</p>
+                                                <div class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="22.599"
+                                                        height="22.451"
+                                                        viewBox="0 0 32.599 32.451"
+                                                    >
+                                                        <g id="prize" transform="translate(-27.924)">
+                                                            <g
+                                                                id="Prize_2_"
+                                                                transform="translate(27.924 0)"
+                                                            >
+                                                                <g
+                                                                    id="Group_49"
+                                                                    data-name="Group 49"
+                                                                    transform="translate(0 0)"
+                                                                >
+                                                                    <path
+                                                                        id="Path_34"
+                                                                        data-name="Path 34"
+                                                                        d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
+                                                                        transform="translate(-27.924 0)"
+                                                                        fill="#ffdf40"
+                                                                    />
+                                                                </g>
+                                                            </g>
+                                                            <path
+                                                                id="Path_35"
+                                                                data-name="Path 35"
+                                                                d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
+                                                                transform="translate(-211.776 0)"
+                                                                fill="#ffdf40"
+                                                            />
+                                                            <g
+                                                                id="Group_50"
+                                                                data-name="Group 50"
+                                                                transform="translate(35.648 7.575)"
+                                                            >
+                                                                <path
+                                                                    id="Path_36"
+                                                                    data-name="Path 36"
+                                                                    d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
+                                                                    transform="translate(-136 -106)"
+                                                                    fill="#ffbe40"
+                                                                />
+                                                            </g>
+                                                            <path
+                                                                id="Path_37"
+                                                                data-name="Path 37"
+                                                                d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
+                                                                transform="translate(-211.776 -98.425)"
+                                                                fill="#ffbe40"
+                                                            />
+                                                            <path
+                                                                id="Path_39"
+                                                                data-name="Path 39"
+                                                                d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
+                                                                transform="translate(-211.776 -172.146)"
+                                                                fill="#ffbe40"
+                                                            />
+                                                            <g
+                                                                id="Group_51"
+                                                                data-name="Group 51"
+                                                                transform="translate(40.25 13.249)"
+                                                            >
+                                                                <path
+                                                                    id="Path_38"
+                                                                    data-name="Path 38"
+                                                                    d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
+                                                                    transform="translate(-200.395 -185.395)"
+                                                                    fill="#ffdf40"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status-bar col-md-2">
+                                            <p class="status">Status:</p>
+                                            <p class="status-type progress-green">In progress</p>
+                                        </div>
+                                        <div class="progress-bar-tal col-md-1">
+                                            <div class="progress-style" id="progress1"></div>
+                                            <p class="persantage-status">64%</p>
+                                        </div>
+                                        <div class="remain-time col-md-2">
+                                            <h6>18 <small>D</small> 12 <small>h</small></h6>
+                                            <p>Remaining</p>
+                                        </div>
+                                        <div class="price col-md-2">
+                                            <h2>50,00000</h2>
+                                            <p>LKR</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-project card-db">
+                                    <div class="row">
+                                        <div class="left-title-and-company col-md-5">
+                                            <h2>Wordpress website development</h2>
+                                            <div class="row">
+                                                <p>Enspirer (pvt) Ltd.</p>
+                                                <div class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="22.599"
+                                                        height="22.451"
+                                                        viewBox="0 0 32.599 32.451"
+                                                    >
+                                                        <g id="prize" transform="translate(-27.924)">
+                                                            <g
+                                                                id="Prize_2_"
+                                                                transform="translate(27.924 0)"
+                                                            >
+                                                                <g
+                                                                    id="Group_49"
+                                                                    data-name="Group 49"
+                                                                    transform="translate(0 0)"
+                                                                >
+                                                                    <path
+                                                                        id="Path_34"
+                                                                        data-name="Path 34"
+                                                                        d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
+                                                                        transform="translate(-27.924 0)"
+                                                                        fill="#ffdf40"
+                                                                    />
+                                                                </g>
+                                                            </g>
+                                                            <path
+                                                                id="Path_35"
+                                                                data-name="Path 35"
+                                                                d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
+                                                                transform="translate(-211.776 0)"
+                                                                fill="#ffdf40"
+                                                            />
+                                                            <g
+                                                                id="Group_50"
+                                                                data-name="Group 50"
+                                                                transform="translate(35.648 7.575)"
+                                                            >
+                                                                <path
+                                                                    id="Path_36"
+                                                                    data-name="Path 36"
+                                                                    d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
+                                                                    transform="translate(-136 -106)"
+                                                                    fill="#ffbe40"
+                                                                />
+                                                            </g>
+                                                            <path
+                                                                id="Path_37"
+                                                                data-name="Path 37"
+                                                                d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
+                                                                transform="translate(-211.776 -98.425)"
+                                                                fill="#ffbe40"
+                                                            />
+                                                            <path
+                                                                id="Path_39"
+                                                                data-name="Path 39"
+                                                                d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
+                                                                transform="translate(-211.776 -172.146)"
+                                                                fill="#ffbe40"
+                                                            />
+                                                            <g
+                                                                id="Group_51"
+                                                                data-name="Group 51"
+                                                                transform="translate(40.25 13.249)"
+                                                            >
+                                                                <path
+                                                                    id="Path_38"
+                                                                    data-name="Path 38"
+                                                                    d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
+                                                                    transform="translate(-200.395 -185.395)"
+                                                                    fill="#ffdf40"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status-bar col-md-2">
+                                            <p class="status">Status:</p>
+                                            <p class="status-type hold">On hold</p>
+                                        </div>
+                                        <div class="progress-bar-tal col-md-1">
+                                            <div class="progress-style" id="progress2"></div>
+                                            <p class="persantage-status">64%</p>
+                                        </div>
+                                        <div class="remain-time col-md-2">
+                                            <h6>18 <small>D</small> 12 <small>h</small></h6>
+                                            <p>Remaining</p>
+                                        </div>
+                                        <div class="price col-md-2">
+                                            <h2>50,00000</h2>
+                                            <p>LKR</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-project card-db">
+                                    <div class="row">
+                                        <div class="left-title-and-company col-md-5">
+                                            <h2>Wordpress website development</h2>
+                                            <div class="row">
+                                                <p>Enspirer (pvt) Ltd.</p>
+                                                <div class="icon">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="22.599"
+                                                        height="22.451"
+                                                        viewBox="0 0 32.599 32.451"
+                                                    >
+                                                        <g id="prize" transform="translate(-27.924)">
+                                                            <g
+                                                                id="Prize_2_"
+                                                                transform="translate(27.924 0)"
+                                                            >
+                                                                <g
+                                                                    id="Group_49"
+                                                                    data-name="Group 49"
+                                                                    transform="translate(0 0)"
+                                                                >
+                                                                    <path
+                                                                        id="Path_34"
+                                                                        data-name="Path 34"
+                                                                        d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z"
+                                                                        transform="translate(-27.924 0)"
+                                                                        fill="#ffdf40"
+                                                                    />
+                                                                </g>
+                                                            </g>
+                                                            <path
+                                                                id="Path_35"
+                                                                data-name="Path 35"
+                                                                d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z"
+                                                                transform="translate(-211.776 0)"
+                                                                fill="#ffdf40"
+                                                            />
+                                                            <g
+                                                                id="Group_50"
+                                                                data-name="Group 50"
+                                                                transform="translate(35.648 7.575)"
+                                                            >
+                                                                <path
+                                                                    id="Path_36"
+                                                                    data-name="Path 36"
+                                                                    d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z"
+                                                                    transform="translate(-136 -106)"
+                                                                    fill="#ffbe40"
+                                                                />
+                                                            </g>
+                                                            <path
+                                                                id="Path_37"
+                                                                data-name="Path 37"
+                                                                d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z"
+                                                                transform="translate(-211.776 -98.425)"
+                                                                fill="#ffbe40"
+                                                            />
+                                                            <path
+                                                                id="Path_39"
+                                                                data-name="Path 39"
+                                                                d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z"
+                                                                transform="translate(-211.776 -172.146)"
+                                                                fill="#ffbe40"
+                                                            />
+                                                            <g
+                                                                id="Group_51"
+                                                                data-name="Group 51"
+                                                                transform="translate(40.25 13.249)"
+                                                            >
+                                                                <path
+                                                                    id="Path_38"
+                                                                    data-name="Path 38"
+                                                                    d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z"
+                                                                    transform="translate(-200.395 -185.395)"
+                                                                    fill="#ffdf40"
+                                                                />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status-bar col-md-2">
+                                            <p class="status">Status:</p>
+                                            <p class="status-type progress-green">In progress</p>
+                                        </div>
+                                        <div class="progress-bar-tal col-md-1">
+                                            <div class="progress-style" id="progress3"></div>
+                                            <p class="persantage-status">64%</p>
+                                        </div>
+                                        <div class="remain-time col-md-2">
+                                            <h6>18 <small>D</small> 12 <small>h</small></h6>
+                                            <p>Remaining</p>
+                                        </div>
+                                        <div class="price col-md-2">
+                                            <h2>50,00000</h2>
+                                            <p>LKR</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="active-projects">
-                        <div class="single-project card-db">
+
+                    <div
+                        class="tab-pane fade show"
+                        id="pills-profile"
+                        role="tabpanel"
+                        aria-labelledby="pills-profile-tab">
+                        <div class="container">
                             <div class="row">
-                                <div class="left-title-and-company col-md-5">
-                                    <h2>Wordpress website development</h2>
-                                    <div class="row">
-                                        <p>Enspirer (pvt) Ltd.</p>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.599" height="22.451" viewBox="0 0 32.599 32.451">
-                                                <g id="prize" transform="translate(-27.924)">
-                                                    <g id="Prize_2_" transform="translate(27.924 0)">
-                                                        <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                            <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40"/>
-                                                        </g>
-                                                    </g>
-                                                    <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"/>
-                                                    <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
-                                                        <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#ffbe40"/>
-                                                    </g>
-                                                    <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40"/>
-                                                    <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40"/>
-                                                    <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
-                                                        <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40"/>
-                                                    </g>
-                                                </g>
-                                            </svg>
-
-                                        </div>
+                                <h5>Bids and Proposals</h5>
+                                <div class="header-search-top ml-auto">
+                                    <div class="inputWithIcon">
+                                        <input type="text" placeholder="Search projects" />
+                                        <i class="fa fa-search" aria-hidden="true"></i>
                                     </div>
-
-                                </div>
-                                <div class="status-bar col-md-2">
-                                    <p class="status">Status:</p>
-                                    <p class="status-type progress-green">In progress</p>
-                                </div>
-                                <div class="progress-bar-tal col-md-1">
-                                    <div class="progress-style" id="progress1"></div>
-                                    <p class="persantage-status">64%</p>
-                                </div>
-                                <div class="remain-time col-md-2">
-                                    <h6>18 <small>D</small> 12 <small>h</small></h6>
-                                    <p>Remaining</p>
-                                </div>
-                                <div class="price col-md-2">
-                                    <h2>50,00000</h2>
-                                    <p>LKR</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="single-project card-db">
+                    <div
+                        class="tab-pane fade show"
+                        id="pills-contact"
+                        role="tabpanel"
+                        aria-labelledby="pills-contact-tab">
+                        <div class="container">
                             <div class="row">
-                                <div class="left-title-and-company col-md-5">
-                                    <h2>Wordpress website development</h2>
-                                    <div class="row">
-                                        <p>Enspirer (pvt) Ltd.</p>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.599" height="22.451" viewBox="0 0 32.599 32.451">
-                                                <g id="prize" transform="translate(-27.924)">
-                                                    <g id="Prize_2_" transform="translate(27.924 0)">
-                                                        <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                            <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40"/>
-                                                        </g>
-                                                    </g>
-                                                    <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"/>
-                                                    <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
-                                                        <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#ffbe40"/>
-                                                    </g>
-                                                    <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40"/>
-                                                    <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40"/>
-                                                    <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
-                                                        <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40"/>
-                                                    </g>
-                                                </g>
-                                            </svg>
-
-                                        </div>
+                                <h5>Waiting to Review</h5>
+                                <div class="header-search-top ml-auto">
+                                    <div class="inputWithIcon">
+                                        <input type="text" placeholder="Search projects" />
+                                        <i class="fa fa-search" aria-hidden="true"></i>
                                     </div>
-
-                                </div>
-                                <div class="status-bar col-md-2">
-                                    <p class="status">Status:</p>
-                                    <p class="status-type hold">On hold</p>
-                                </div>
-                                <div class="progress-bar-tal col-md-1">
-                                    <div class="progress-style" id="progress2"></div>
-                                    <p class="persantage-status">64%</p>
-                                </div>
-                                <div class="remain-time col-md-2">
-                                    <h6>18 <small>D</small> 12 <small>h</small></h6>
-                                    <p>Remaining</p>
-                                </div>
-                                <div class="price col-md-2">
-                                    <h2>50,00000</h2>
-                                    <p>LKR</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="single-project card-db">
+                    <div
+                        class="tab-pane fade show"
+                        id="pills-contact2"
+                        role="tabpanel"
+                        aria-labelledby="pills-contact2-tab">
+                        <div class="container">
                             <div class="row">
-                                <div class="left-title-and-company col-md-5">
-                                    <h2>Wordpress website development</h2>
-                                    <div class="row">
-                                        <p>Enspirer (pvt) Ltd.</p>
-                                        <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22.599" height="22.451" viewBox="0 0 32.599 32.451">
-                                                <g id="prize" transform="translate(-27.924)">
-                                                    <g id="Prize_2_" transform="translate(27.924 0)">
-                                                        <g id="Group_49" data-name="Group 49" transform="translate(0 0)">
-                                                            <path id="Path_34" data-name="Path 34" d="M44.224,32.451l-2.538-3.5-3.691,2.273-1.013-4.227-4.231.669.63-4.267L29.157,22.38l2.27-3.692-3.5-2.537,3.5-2.537-2.27-3.692,4.227-1.014L32.71,4.636l4.271.675,1.013-4.225,3.693,2.269L44.224,0l2.536,3.354,3.693-2.269,1.013,4.225,4.271-.675-.674,4.272L59.29,9.922l-2.27,3.692,3.5,2.537-3.5,2.537,2.27,3.692-4.223,1.013.63,4.267-4.231-.669-1.013,4.227-3.691-2.273Z" transform="translate(-27.924 0)" fill="#ffdf40"/>
-                                                        </g>
-                                                    </g>
-                                                    <path id="Path_35" data-name="Path 35" d="M258.538,28.946l3.691,2.273,1.013-4.227,4.231.669-.63-4.267,4.223-1.013-2.27-3.692,3.5-2.537-3.5-2.537,2.27-3.692-4.227-1.014.674-4.272-4.271.675-1.013-4.225-3.693,2.269L256,0V32.451Z" transform="translate(-211.776 0)" fill="#ffdf40"/>
-                                                    <g id="Group_50" data-name="Group 50" transform="translate(35.648 7.575)">
-                                                        <path id="Path_36" data-name="Path 36" d="M144.576,123.152a8.576,8.576,0,1,1,8.576-8.576A8.585,8.585,0,0,1,144.576,123.152Z" transform="translate(-136 -106)" fill="#ffbe40"/>
-                                                    </g>
-                                                    <path id="Path_37" data-name="Path 37" d="M264.576,114.576A8.585,8.585,0,0,0,256,106v17.152A8.585,8.585,0,0,0,264.576,114.576Z" transform="translate(-211.776 -98.425)" fill="#ffbe40"/>
-                                                    <path id="Path_39" data-name="Path 39" d="M256,190.885l3.974-3.974-1.516-1.516L256,187.853Z" transform="translate(-211.776 -172.146)" fill="#ffbe40"/>
-                                                    <g id="Group_51" data-name="Group 51" transform="translate(40.25 13.249)">
-                                                        <path id="Path_38" data-name="Path 38" d="M203.3,191.957l-2.9-2.9,1.516-1.516,1.386,1.386,3.53-3.53,1.516,1.516Z" transform="translate(-200.395 -185.395)" fill="#ffdf40"/>
-                                                    </g>
-                                                </g>
-                                            </svg>
-
-                                        </div>
+                                <h5>Completed Projects</h5>
+                                <div class="header-search-top ml-auto">
+                                    <div class="inputWithIcon">
+                                        <input type="text" placeholder="Search projects" />
+                                        <i class="fa fa-search" aria-hidden="true"></i>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="status-bar col-md-2">
-                                    <p class="status">Status:</p>
-                                    <p class="status-type progress-green">In progress</p>
-                                </div>
-                                <div class="progress-bar-tal col-md-1">
-                                    <div class="progress-style" id="progress3"></div>
-                                    <p class="persantage-status">64%</p>
-                                </div>
-                                <div class="remain-time col-md-2">
-                                    <h6>18 <small>D</small> 12 <small>h</small></h6>
-                                    <p>Remaining</p>
-                                </div>
-                                <div class="price col-md-2">
-                                    <h2>50,00000</h2>
-                                    <p>LKR</p>
+                    <div
+                        class="tab-pane fade show"
+                        id="pills-contact3"
+                        role="tabpanel"
+                        aria-labelledby="pills-contact3-tab">
+                        <div class="container">
+                            <div class="row">
+                                <h5>Draft Projects</h5>
+                                <div class="header-search-top ml-auto">
+                                    <div class="inputWithIcon">
+                                        <input type="text" placeholder="Search projects" />
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
