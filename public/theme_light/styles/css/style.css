@@ -1843,6 +1843,53 @@ button {
     margin-bottom: 100px;
 }
 
+#single-project-body .head-title {
+    padding: 22px 0 15px 0;
+    margin: auto;
+}
+
+#single-project-body .head-title .row {
+    margin: auto;
+}
+
+#single-project-body .head-title .row .record-icon img {
+    padding-top: 5px;
+    width: 40px;
+    color: #fff;
+}
+
+#single-project-body .head-title .row h1 {
+    margin-left: 13px;
+    font: normal normal bold 28px/56px Poppins;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+#single-project-body .head-title .row h1 span {
+    margin: 0 12px;
+    background: #fd0e27 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 4px 24px;
+    color: #fff;
+}
+
+#single-project-body .head-title .row .time-count-down p {
+    font: normal normal normal 15px/30px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 0;
+}
+
+#single-project-body .head-title .row .time-count-down h3 {
+    font: normal normal 600 23px/48px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin: 0;
+}
+
 #single-project-body .header-section {
     position: relative;
     width: 100%;
@@ -1866,9 +1913,6 @@ button {
     height: 323px;
     background: transparent -webkit-gradient(linear, left top, left bottom, from(#0f0c29), color-stop(51%, #302b63), to(#0f0c29)) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(180deg, #0f0c29 0%, #302b63 51%, #0f0c29 100%) 0% 0% no-repeat padding-box;
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    -webkit-transform: scaleX(1.9);
-    transform: scaleX(1.9);
 }
 
 #single-project-body .header-section .container {
@@ -2135,12 +2179,12 @@ button {
     font-weight: bold;
     line-height: 0;
     font: normal normal 600 22px/50px Poppins;
-    background: #0458ab 0% 0% no-repeat padding-box;
-    border-radius: 54px;
+    background: #F83535 0% 0% no-repeat padding-box;
+    border-radius: 4px;
 }
 
 #single-project-body .body-section-single-project .container .row .right .apply-button:hover {
-    background: #033362 !important;
+    background: #F83535 !important;
 }
 
 #single-project-body .body-section-single-project .container .row .right .save-button {
@@ -2151,11 +2195,12 @@ button {
     text-align: center;
     border-radius: 4px;
     color: #0458ab;
+    margin-top: -30px;
     font-weight: bold;
     line-height: 0;
     font: normal normal 600 22px/50px Poppins;
     border: 1px solid #0458ab;
-    border-radius: 54px;
+    border-radius: 4px;
 }
 
 #single-project-body .body-section-single-project .container .row .right .save-button i {
@@ -2167,7 +2212,6 @@ button {
 }
 
 #single-project-body .body-section-single-project .container .row .right .right-card {
-    margin-top: 60px;
     background: #f9f9f9 0% 0% no-repeat padding-box;
     border: 0.10000001192092896px solid #e9e9e9;
     -webkit-box-shadow: 10px 11px 50px -26px rgba(0, 0, 0, 0.75);
@@ -2647,9 +2691,6 @@ button {
     height: 223px;
     background: transparent -webkit-gradient(linear, left top, left bottom, from(#0f0c29), color-stop(51%, #302b63), to(#0f0c29)) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(180deg, #0f0c29 0%, #302b63 51%, #0f0c29 100%) 0% 0% no-repeat padding-box;
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    -webkit-transform: scaleX(1.9);
-    transform: scaleX(1.9);
 }
 
 #apply-project-body .header-section .container {
@@ -3425,7 +3466,7 @@ button {
     text-align: right;
 }
 
-.dashboard-body .page-content .container-fluid {
+.dashboard-body .page-content .dashboard-nav {
     width: 100%;
     height: 50px;
     background: #f0f0f0;
@@ -3433,11 +3474,11 @@ button {
     padding: 15px !important;
 }
 
-.dashboard-body .page-content .container-fluid ul li {
+.dashboard-body .page-content .dashboard-nav ul li {
     margin: auto;
 }
 
-.dashboard-body .page-content .container-fluid ul li p {
+.dashboard-body .page-content .dashboard-nav ul li a {
     margin: 0;
     padding: 0;
     font: normal normal normal 18px/26px Karla;
@@ -3447,14 +3488,28 @@ button {
     transition: all 0.2s;
 }
 
-.dashboard-body .page-content .container-fluid ul li p:hover {
-    color: #303030;
+.dashboard-body .page-content .dashboard-nav ul li a:hover {
+    color: #303030 !important;
     font-weight: 700;
 }
 
-.dashboard-body .page-content .container-fluid ul li .active {
+.dashboard-body .page-content .dashboard-nav ul li .active {
     color: #303030 !important;
     font-weight: 700 !important;
+}
+
+.dashboard-body .page-content .dashboard-nav-second {
+    padding: 0 !important;
+    padding: 5px !important;
+}
+
+.dashboard-body .page-content .dashboard-nav-second .row {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.dashboard-body .page-content hr {
+    margin: 0;
 }
 
 .dashboard-body .page-wrapper .sidebar-wrapper,
