@@ -4244,9 +4244,9 @@ input.search-menu:focus
 
 footer {
     width: 100%;
-    background-color: #000;
+    background-color: #0f0c29;
     min-height: 250px;
-    padding: 10px 0px 160px 0px;
+    padding: 10px 0px 50px 0px;
 }
 
 .pt2 {

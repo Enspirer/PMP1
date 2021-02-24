@@ -218,10 +218,9 @@
                         <div class="right-card-second">
                             <div class="company-profile">
                                 <div class="row">
-                                    <i class="fas fa-user"></i>
-                                    <h3>
-                                        ABC <br />
-                                        Company
+                                    <img src="{{url("theme_light/assets/image/icon/browser.png")}}" alt="" style="width: 50px;">
+                                    <h3 style="font-size: 22px; margin-left: 10px;">
+                                        Web Application <br> Development
                                     </h3>
                                 </div>
                             </div>
