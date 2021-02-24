@@ -169,9 +169,10 @@
         <script>
             var swiper = new Swiper(".swiper-container", {
                 // spaceBetween: -100,
-                autoplay: 3000,
+                autoplay: {
+                    delay: 1000,
+                },
                 loop: true,
-                slidesPerView: 10,
                 breakpoints: {
                     // when window width is >= 320px
                     320: {

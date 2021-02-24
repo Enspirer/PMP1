@@ -6,6 +6,8 @@ var option;
 var bidsData = [1234,9933,2990,4888,20000,40000,50000,30000,20000,10000];
 var time_range = [];
 var bidcount = [];
+var zoom_start;
+var zoom_end;
 option = {
     grid: {
         top:    100,
@@ -27,8 +29,21 @@ option = {
             magicType: {show: true, type: ['line', 'bar']},
             restore: {show: false},
             saveAsImage: {show: false},
+            dataZoom: {
+                yAxisIndex: false
+            },
         }
     },
+    dataZoom: [{
+        type: 'inside'
+    }, {
+        type: 'slider',
+        realtime : true,
+        minValueSpan: 3600 * 24 * 1000 * 7,
+        start : 1,
+        end : 2,
+        rangeMode: 'value'
+    }],
     legend: {
         data: ['Price', 'Bid Count', '平均温度'],
         marginBottom:{
@@ -42,7 +57,11 @@ option = {
             data:time_range,
             axisPointer: {
                 type: 'shadow'
-            }
+            },
+            boundaryGap: true,
+            axisTick: {
+            show: true,
+        },
         }
     ],
     yAxis: [
@@ -109,6 +128,9 @@ function removeOLDTime() {
 function erverysectound() {
     var today = new Date();
 
+    zoom_start = formatAMPMMiniteR(today);
+    zoom_end = formatAMPM(today);
+
     bidsData.push(Math.floor(Math.random() * 100000));
     time_range.push(formatAMPM(today));
     bidcount.push(Math.floor(Math.random() * 100));
@@ -118,11 +140,24 @@ function erverysectound() {
 function formatAMPM(date) {
     var hours = date.getHours();
     var minutes = date.getMinutes();
+    var secounds = date.getSeconds();
     var ampm = hours >= 12 ? 'pm' : 'am';
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
-    var strTime = hours + ':' + minutes + ' ' + ampm;
+    var strTime = hours + ':' + minutes + ':' + secounds + ' ' + ampm;
+    return strTime;
+}
+
+function formatAMPMMiniteR(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var rminutes = minutes - 1;
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    rminutes = rminutes < 10 ? '0'+rminutes : rminutes;
+    var strTime = hours + ':' + rminutes + ' ' + ampm;
     return strTime;
 }
 
