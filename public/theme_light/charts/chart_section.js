@@ -101,6 +101,10 @@ if (option && typeof option === 'object') {
     myChart.setOption(option);
 }
 
+function removeOLDTime() {
+    time_range.shift();
+    bidsData.shift();
+}
 
 function erverysectound() {
     var today = new Date();
@@ -122,5 +126,6 @@ function formatAMPM(date) {
     return strTime;
 }
 
-setInterval(erverysectound, 1000)
+setInterval(erverysectound, 1000);
+setInterval(removeOLDTime, 2000);
 
