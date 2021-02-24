@@ -327,9 +327,13 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
+            <a type="button" class="btn btn-primary" style="margin: 0;background: #f44738;border: none;color: #fff;padding: 12px 25px">VIEW ALL PROJECTS</a>
         </div>
+
     </div>
 </section>

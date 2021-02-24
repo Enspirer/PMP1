@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="left-live col-md-4" style="padding: 0">
-                <div class="top-title" style="box-shadow: 3px -3px 36px 0px rgba(0,0,0,0.48);padding: 20px; border-radius: 4px">
+                <div class="top-title" style="box-shadow: 3px 3px 36px 0px rgba(0,0,0,0.48);padding: 20px; border-radius: 4px">
                     <h3 data-animscroll="fade-up" style="margin: 0">
                         Development of eCommerce platform for a leading
                         Fashion brand
@@ -32,10 +32,10 @@
                     </div>
                     <div class="auction-button" data-animscroll="fade-up">
                         <div class="row" style="margin: 0;display: grid">
-                            <a class="fill-btn-auction" href="#" style="font-size: 18px">SIGN IN TO BID</a>
-{{--                            <a class="outline-btn-auction" href="#" style="margin-top: 5px">VIEW SCOPE</a>--}}
-                            <a class="fill-btn-auction" href="#" style="margin-top: 5px;font-size: 18px">VIEW SCOPE</a>
-                            <a class="fill-btn-auction" href="#" style="margin-top: 5px;font-size: 18px">The Breaf</a>
+                            <a class="outline-btn-auction" href="#" style="font-size: 16px;background: transparent;color: #f44738;text-align: center;font-weight: 500;margin: 0;border: none">PROJECT BRIEF</a>
+                            {{--<a class="outline-btn-auction" href="#" style="margin-top: 5px">VIEW SCOPE</a>--}}
+                            <a class="outline-btn-auction" href="#" style="margin: 5px 0 0 0;font-size: 16px; background: transparent;color: #f44738;text-align: center;font-weight: 500;border: none">VIEW SCOPE</a>
+                            <a class="fill-btn-auction" href="#" style="margin: 5px 0 0 0;font-size: 16px;text-align: center;font-weight: 500">SIGN IN TO BID</a>
                         </div>
                     </div>
                 </div>

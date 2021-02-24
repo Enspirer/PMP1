@@ -7,7 +7,7 @@
         <div class="row">
             <div class="left-text col-md-6">
                 <h3 data-animscroll="fade-up">Plan Your Project with <br> our experts</h3>
-                <p style="font-size: 18px;color: #f44738">Plan it precisely, Save money and time</p>
+                <p style="font-size: 22px;color: #f44738;font-weight: 700">Plan it precisely, Save money and time</p>
 {{--                <ul>--}}
 {{--                    <li data-animscroll="fade-up">--}}
 {{--                    </li>--}}
@@ -20,15 +20,15 @@
                 <hr>
 {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
-                        Step 01 – Register as a company and request for a consultation
+                <span style="font-weight: bold">Step 01</span> – Register as a company and request for a consultation
                 <hr>
 {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
-                        Step 02 – One of our members will arrange time for virtual meeting.
+                <span style="font-weight: bold">Step 02</span> – One of our members will arrange time for virtual meeting.
                 <hr>
 {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
-                        Step 03 – Brief your requirements
+                <span style="font-weight: bold">Step 03</span> – Brief your requirements
                 <hr>
 {{--                    </li>--}}
 {{--                </ul>--}}
