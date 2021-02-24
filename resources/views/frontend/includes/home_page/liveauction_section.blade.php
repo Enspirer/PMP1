@@ -37,7 +37,7 @@
                             <a class="outline-btn-auction" href="" style="margin: 5px 0 0 0;font-size: 16px; background: transparent;color: #f44738;text-align: center;font-weight: 500;border: none">VIEW SCOPE</a>
 
                             @auth()
-                                <a class="fill-btn-auction" href="{{route('frontend.project_auction',1)}}" style="margin: 5px 0 0 0;font-size: 16px;text-align: center;font-weight: 500">APPLY BIDS</a>
+                                <a class="fill-btn-auction" href="{{route('frontend.project_auction',1)}}" style="margin: 5px 0 0 0;font-size: 16px;text-align: center;font-weight: 500">PLACE A BID</a>
                             @else
                                 <a class="fill-btn-auction" href="{{route('frontend.auth.login')}}" style="margin: 5px 0 0 0;font-size: 16px;text-align: center;font-weight: 500">SIGN IN TO BID</a>
                             @endauth
