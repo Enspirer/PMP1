@@ -10,7 +10,7 @@
                 <div class="dashboard-nav container-fluid">
                     <ul class="nav nav-pill" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <p
+                            <a
                                 class="nav-link active"
                                 id="pills-home-tab"
                                 data-bs-toggle="pill"
@@ -21,10 +21,10 @@
                                 aria-selected="true"
                             >
                                 Active Projects
-                            </p>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <p
+                            <a
                                 class="nav-link"
                                 id="pills-profile-tab"
                                 data-bs-toggle="pill"
@@ -35,10 +35,10 @@
                                 aria-selected="false"
                             >
                                 Bids and Proposals
-                            </p>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <p
+                            <a
                                 class="nav-link"
                                 id="pills-contact-tab"
                                 data-bs-toggle="pill"
@@ -49,10 +49,10 @@
                                 aria-selected="false"
                             >
                                 Waiting to Review
-                            </p>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <p
+                            <a
                                 class="nav-link"
                                 id="pills-contact2-tab"
                                 data-bs-toggle="pill"
@@ -63,10 +63,10 @@
                                 aria-selected="false"
                             >
                                 Completed Projects
-                            </p>
+                            </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <p
+                            <a
                                 class="nav-link"
                                 id="pills-contact3-tab"
                                 data-bs-toggle="pill"
@@ -77,7 +77,7 @@
                                 aria-selected="false"
                             >
                                 Draft Projects
-                            </p>
+                            </a>
                         </li>
                     </ul>
 
