@@ -23,6 +23,7 @@
     @stack('before-styles')
     <!-- Theame Style  -->
     <link rel="stylesheet" href="{{url('theme_light/styles/css/style.css')}}"/>
+    <link rel="stylesheet" href="{{url('theme_light/styles/css/timeline.css')}}"/>
     <link rel="stylesheet" href="{{url('theme_light/plugin/dist/css/animtrap.css')}}"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <style>
