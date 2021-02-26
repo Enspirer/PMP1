@@ -1,0 +1,13 @@
+{
+    "name": "SupportCenter",
+    "alias": "supportcenter",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SupportCenter\\Providers\\SupportCenterServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
