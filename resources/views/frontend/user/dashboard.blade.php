@@ -5,7 +5,7 @@
 @section('content')
 
     @include('frontend.user.includes.project_summery')
-x
+
 @endsection
 
 @push('after-scripts')
