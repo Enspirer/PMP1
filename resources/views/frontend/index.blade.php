@@ -3,6 +3,7 @@
 @section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
 
 @section('content')
+
     @include('frontend.includes.home_page.search_section')
     @include('frontend.includes.home_page.liveauction_section')
     @include('frontend.includes.home_page.card_timeline_section')
