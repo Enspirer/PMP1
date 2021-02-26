@@ -3,7 +3,9 @@
 @section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
 
 @section('content')
+
     @include('frontend.user.includes.project_summery')
+x
 @endsection
 
 @push('after-scripts')

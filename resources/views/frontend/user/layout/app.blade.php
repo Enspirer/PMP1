@@ -16,8 +16,17 @@
     <link rel="stylesheet" href="{{url('theme_light/plugin/dist/css/animtrap.css')}}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="{{url('theme_light/styles/sweeper.css')}}">
+    <style>
+        body.modal-open .supreme-container{
+            -webkit-filter: blur(1px);
+            -moz-filter: blur(1px);
+            -o-filter: blur(1px);
+            -ms-filter: blur(1px);
+            filter: blur(1px);
+        }
+    </style>
 </head>
-<body>
+<body class="supreme-container">
 @include('frontend.user.includes.navbar')
 
 <section class="dashboard-body">
