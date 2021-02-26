@@ -4593,6 +4593,322 @@ input.search-menu:focus
     padding: 12px 44px;
 }
 
+.contact-body .top-map-contact {
+    position: relative;
+}
+
+.contact-body .top-map-contact .map {
+    height: calc(100vh - 72px);
+    background-repeat: no-repeat;
+    background-position: 50% 78%;
+    z-index: 2222;
+}
+
+.contact-body .top-map-contact .gradient-contact-map {
+    z-index: 1;
+    width: 100%;
+    mix-blend-mode: multiply;
+    height: 100%;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#D4D4D4)) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #F8F8F8 0%, #D4D4D4 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-body .top-map-contact .title-underline {
+    z-index: 9999999;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.contact-body .top-map-contact .title-underline h1 {
+    font: normal normal bold 40px/70px Poppins;
+    letter-spacing: 0px;
+    color: #0f0c29;
+    text-align: center;
+}
+
+.contact-body .top-map-contact .title-underline hr {
+    height: 4px;
+    width: 200px;
+    border-width: 0;
+    margin-top: -10px;
+    color: #f44738;
+    background-color: #f44738;
+}
+
+.contact-body .coparate-office-contact {
+    padding: 180px 0 100px 0;
+}
+
+.contact-body .coparate-office-contact .container {
+    padding: 0 30px;
+}
+
+.contact-body .coparate-office-contact .container .yellow-card-contact {
+    background: #ffb500 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 10px 20px #2323004d;
+    box-shadow: 0px 10px 20px #2323004d;
+    width: 100%;
+    padding: 87px 70px;
+}
+
+.contact-body .coparate-office-contact .container .yellow-card-contact .row .left-text-contact h1 {
+    font: normal normal bold 35px/55px Poppins;
+    letter-spacing: 1.68px;
+    color: #000000;
+    line-height: 1;
+}
+
+.contact-body .coparate-office-contact .container .yellow-card-contact .row .left-text-contact .contact-details {
+    padding-left: 25px;
+    margin-top: 46px;
+    position: relative;
+}
+
+.contact-body .coparate-office-contact .container .yellow-card-contact .row .left-text-contact .contact-details .row {
+    font: normal normal normal 16px/25px Karla;
+    letter-spacing: 0px;
+    color: #303030;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.contact-body .coparate-office-contact .container .yellow-card-contact .row .left-text-contact .contact-details .line {
+    border-left: 2px solid #361d44;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact-body .coparate-office-contact .container .yellow-card-contact .row .map-contact iframe {
+    position: absolute;
+    top: -160px;
+    right: 15px;
+    -webkit-box-shadow: 10px 10px 56px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 56px -12px rgba(0, 0, 0, 0.75);
+}
+
+.contact-body .gray-background-contact {
+    background: #f2f2f2 0% 0% no-repeat padding-box;
+    width: 100%;
+}
+
+.contact-body .gray-background-contact .container {
+    padding: 114px 0;
+}
+
+.contact-body .gray-background-contact .container .row .col .content img {
+    width: 150px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contact-body .gray-background-contact .container .row .col .content h6 {
+    font-size: 20px;
+    margin-top: 20px;
+    font: normal normal bold 22px/40px Poppins;
+    letter-spacing: 0.64px;
+    color: #242424;
+    text-align: center;
+}
+
+.contact-body .gray-background-contact .container .row .col .content .card-link-contact {
+    font: normal normal normal 18px/25px Karla;
+    letter-spacing: 0px;
+    color: #f83535;
+    text-align: center;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact {
+    margin-top: 200px;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .left-section {
+    position: relative;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .left-section h3 {
+    font: normal normal 600 48px/135px Poppins;
+    letter-spacing: 0px;
+    color: #0f0c29;
+    line-height: 1;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .left-section p {
+    margin-top: 22px;
+    font: normal normal normal 20px/46px Karla;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: #666666;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .left-section img {
+    width: 80%;
+    position: absolute;
+    bottom: -200px;
+    right: 40px;
+    -webkit-box-shadow: 10px 10px 41px -14px rgba(0, 0, 0, 0.52);
+    box-shadow: 10px 10px 41px -14px rgba(0, 0, 0, 0.52);
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section {
+    padding-left: 55px;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form label {
+    text-align: left;
+    font-size: 18px;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #4f4f4f;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 0.5px solid #6d6d6d50;
+    border-radius: 4px;
+    height: 55px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #9f9f9f;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form input::-webkit-input-placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form input:-ms-input-placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form input::-ms-input-placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form input::placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form textarea {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 0.5px solid #6d6d6d50;
+    border-radius: 4px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #9f9f9f;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form textarea::-webkit-input-placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form textarea:-ms-input-placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form textarea::-ms-input-placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form textarea::placeholder {
+    color: #9f9f9fad;
+}
+
+.contact-body .gray-background-contact .container .contact-form-section-contact .row .right-section form button {
+    float: right;
+    background: #ff6347 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    border: none;
+    padding: 14px 70px;
+}
+
+.contact-body .partner-section-contact {
+    padding: 350px 0 100px 0;
+}
+
+.contact-body .partner-section-contact .title-underline h1 {
+    font: normal normal bold 40px/70px Poppins;
+    letter-spacing: 0px;
+    color: #0f0c29;
+    text-align: center;
+}
+
+.contact-body .partner-section-contact .title-underline hr {
+    height: 4px;
+    width: 200px;
+    border-width: 0;
+    margin-top: -10px;
+    color: #f44738;
+    background-color: #f44738;
+}
+
+.contact-body .partner-section-contact .office-list-contact {
+    padding-top: 100px;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact {
+    padding: 15px;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact {
+    background: #f9f9f9 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 10px 20px #00000029;
+    box-shadow: 0px 10px 20px #00000029;
+    border-radius: 4px;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .map-part-top {
+    position: relative;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .map-part-top .map {
+    width: 100%;
+    height: 257px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .map-part-top .flag {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .content-part {
+    padding: 23px 30px;
+    text-align: left;
+    font: normal normal normal 16px/25px Karla;
+    letter-spacing: 0px;
+    color: #8f8f8f;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .content-part h3 {
+    font: normal normal 700 22px/42px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+
+.contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .content-part .row {
+    margin-top: 12px;
+}
+
 /*footer*/
 .col_white_amrc {
     color: #fff;

@@ -4256,6 +4256,271 @@ button {
         }
     }
 }
+
+// ------------------ contact-body -------------------
+.contact-body {
+    .top-map-contact {
+        position: relative;
+        .map {
+            height: calc(100vh - 72px);
+            background-image: url(../../assets/Group700.png);
+            background-repeat: no-repeat;
+            background-position: 50% 78%;
+            z-index: 2222;
+        }
+        .gradient-contact-map {
+            z-index: 1;
+            width: 100%;
+            mix-blend-mode: multiply;
+            height: 100%;
+            background: transparent linear-gradient(180deg, #F8F8F8 0%, #D4D4D4 100%) 0% 0% no-repeat padding-box;
+            opacity: 0.8;
+            position: absolute;
+            bottom: 0;
+        }
+        .title-underline {
+            z-index: 9999999;
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            h1 {
+                font: normal normal bold 40px/70px Poppins;
+                letter-spacing: 0px;
+                color: #0f0c29;
+                text-align: center;
+            }
+            hr {
+                height: 4px;
+                width: 200px;
+                border-width: 0;
+                margin-top: -10px;
+                color: #f44738;
+                background-color: #f44738;
+            }
+        }
+    }
+    .coparate-office-contact {
+        padding: 180px 0 100px 0;
+        .container {
+            padding: 0 30px;
+            .yellow-card-contact {
+                background: #ffb500 0% 0% no-repeat padding-box;
+                box-shadow: 0px 10px 20px #2323004d;
+                width: 100%;
+                padding: 87px 70px;
+                .row {
+                    .left-text-contact {
+                        h1 {
+                            font: normal normal bold 35px/55px Poppins;
+                            letter-spacing: 1.68px;
+                            color: #000000;
+                            line-height: 1;
+                        }
+                        .contact-details {
+                            padding-left: 25px;
+                            margin-top: 46px;
+                            position: relative;
+                            .row {
+                                font: normal normal normal 16px/25px Karla;
+                                letter-spacing: 0px;
+                                color: #303030;
+                                line-height: 1;
+                                margin-top: 15px;
+                            }
+                            .line {
+                                border-left: 2px solid #361d44;
+                                height: 110px;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                    .map-contact {
+                        iframe {
+                            position: absolute;
+                            top: -160px;
+                            right: 15px;
+                            box-shadow: 10px 10px 56px -12px rgba(0, 0, 0, 0.75);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .gray-background-contact {
+        background: #f2f2f2 0% 0% no-repeat padding-box;
+        width: 100%;
+        .container {
+            padding: 114px 0;
+            .row {
+                .col {
+                    .content {
+                        img {
+                            width: 150px;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        h6 {
+                            font-size: 20px;
+                            margin-top: 20px;
+                            font: normal normal bold 22px/40px Poppins;
+                            letter-spacing: 0.64px;
+                            color: #242424;
+                            text-align: center;
+                        }
+                        .card-link-contact {
+                            font: normal normal normal 18px/25px Karla;
+                            letter-spacing: 0px;
+                            color: #f83535;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .contact-form-section-contact {
+                margin-top: 200px;
+                .row {
+                    .left-section {
+                        position: relative;
+                        h3 {
+                            font: normal normal 600 48px/135px Poppins;
+                            letter-spacing: 0px;
+                            color: #0f0c29;
+                            line-height: 1;
+                        }
+                        p {
+                            margin-top: 22px;
+                            font: normal normal normal 20px/46px Karla;
+                            letter-spacing: 0px;
+                            line-height: 1;
+                            color: #666666;
+                        }
+                        img {
+                            width: 80%;
+                            position: absolute;
+                            bottom: -200px;
+                            right: 40px;
+                            box-shadow: 10px 10px 41px -14px rgba(0, 0, 0, 0.52);
+                        }
+                    }
+                    .right-section {
+                        padding-left: 55px;
+                        form {
+                            label {
+                                text-align: left;
+                                font-size: 18px;
+                                font-family: Poppins;
+                                letter-spacing: 0px;
+                                color: #4f4f4f;
+                            }
+                            input {
+                                background: #ffffff 0% 0% no-repeat padding-box;
+                                border: 0.5px solid #6d6d6d50;
+                                border-radius: 4px;
+                                height: 55px;
+                                letter-spacing: 0px;
+                                font-size: 18px;
+                                font-family: Poppins;
+                                color: #9f9f9f;
+                                &::placeholder {
+                                    color: #9f9f9fad;
+                                }
+                            }
+                            textarea {
+                                background: #ffffff 0% 0% no-repeat padding-box;
+                                border: 0.5px solid #6d6d6d50;
+                                border-radius: 4px;
+                                letter-spacing: 0px;
+                                font-size: 18px;
+                                font-family: Poppins;
+                                color: #9f9f9f;
+                                &::placeholder {
+                                    color: #9f9f9fad;
+                                }
+                            }
+                            button {
+                                float: right;
+                                background: #ff6347 0% 0% no-repeat padding-box;
+                                border-radius: 4px;
+                                font-size: 18px;
+                                font-family: Poppins;
+                                color: #fff;
+                                border: none;
+                                padding: 14px 70px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .partner-section-contact {
+        padding: 350px 0 100px 0;
+        .title-underline {
+            h1 {
+                font: normal normal bold 40px/70px Poppins;
+                letter-spacing: 0px;
+                color: #0f0c29;
+                text-align: center;
+            }
+            hr {
+                height: 4px;
+                width: 200px;
+                border-width: 0;
+                margin-top: -10px;
+                color: #f44738;
+                background-color: #f44738;
+            }
+        }
+        .office-list-contact {
+            padding-top: 100px;
+            .row {
+                .list-item-contact {
+                    padding: 15px;
+                    .card-contact {
+                        background: #f9f9f9 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 10px 20px #00000029;
+                        border-radius: 4px;
+                        .map-part-top {
+                            position: relative;
+                            .map {
+                                width: 100%;
+                                height: 257px;
+                                object-fit: cover;
+                            }
+                            .flag {
+                                width: 50px;
+                                height: auto;
+                                position: absolute;
+                                left: 14px;
+                                bottom: 14px;
+                            }
+                        }
+                        .content-part {
+                            padding: 23px 30px;
+                            text-align: left;
+                            font: normal normal normal 16px/25px Karla;
+                            letter-spacing: 0px;
+                            color: #8f8f8f;
+                            h3 {
+                                font: normal normal 700 22px/42px Poppins;
+                                letter-spacing: 0px;
+                                color: #000000;
+                                text-align: center;
+                            }
+                            .row {
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // /* ------------------- Footer --------------------------------  */
 
 /*footer*/

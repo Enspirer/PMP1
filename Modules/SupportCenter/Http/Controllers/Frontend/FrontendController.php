@@ -14,7 +14,7 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        return view('supportcenter::index');
+        return view('supportcenter::frontend.contact_us');
     }
 
     /**
