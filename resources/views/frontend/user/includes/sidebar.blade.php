@@ -58,7 +58,7 @@
                 </li>
 
                 <li>
-                    <a href="{{route('frontend.user.my_projects')}}">
+                    <a href="{{route('frontend.user.my_projects','active_projects')}}">
                         <i class="fa fa-file-o" aria-hidden="true"></i>
                         <span>My Projects</span>
                     </a>

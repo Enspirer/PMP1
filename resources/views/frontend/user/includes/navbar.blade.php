@@ -107,7 +107,7 @@
                                         </div>
                                     </div>
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="{{route('frontend.user.my_projects')}}">
+                                        <a class="user-menu-link" href="{{route('frontend.user.my_projects','active_projects')}}">
                                             <img
                                                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png"
                                                     alt="trophy_icon"
