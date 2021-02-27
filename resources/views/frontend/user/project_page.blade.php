@@ -67,7 +67,7 @@
                         </ul>
                     </div>
                 </div>
-                <hr />
+                <hr/>
 
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -202,12 +202,7 @@
                         </div>
                     </div>
 
-                    <div
-                            class="tab-pane fade show"
-                            id="pills-task"
-                            role="tabpanel"
-                            aria-labelledby="pills-task-tab"
-                    >
+                    <div class="tab-pane fade show" id="pills-task" role="tabpanel" aria-labelledby="pills-task-tab">
                         <div class="container">
                             <div class="row">
                                 <h5>Task List</h5>
@@ -221,12 +216,7 @@
                         </div>
                     </div>
 
-                    <div
-                            class="tab-pane fade show"
-                            id="pills-message"
-                            role="tabpanel"
-                            aria-labelledby="pills-message-tab"
-                    >
+                    <div class="tab-pane fade show" id="pills-message" role="tabpanel" aria-labelledby="pills-message-tab">
                         <div class="container">
                             <div class="row">
                                 <h5>Messages</h5>
@@ -240,12 +230,7 @@
                         </div>
                     </div>
 
-                    <div
-                            class="tab-pane fade show"
-                            id="pills-attachment"
-                            role="tabpanel"
-                            aria-labelledby="pills-attachment-tab"
-                    >
+                    <div class="tab-pane fade show" id="pills-attachment" role="tabpanel" aria-labelledby="pills-attachment-tab">
                         <div class="container">
                             <div class="row">
                                 <h5>Attachments</h5>
@@ -259,12 +244,7 @@
                         </div>
                     </div>
 
-                    <div
-                            class="tab-pane fade show"
-                            id="pills-note"
-                            role="tabpanel"
-                            aria-labelledby="pills-note-tab"
-                    >
+                    <div class="tab-pane fade show" id="pills-note" role="tabpanel" aria-labelledby="pills-note-tab">
                         <div class="container">
                             <div class="row">
                                 <h5>Personal Notes</h5>
@@ -350,12 +330,7 @@
                         </div>
                     </div>
 
-                    <div
-                            class="tab-pane fade show"
-                            id="pills-log"
-                            role="tabpanel"
-                            aria-labelledby="pills-log-tab"
-                    >
+                    <div class="tab-pane fade show" id="pills-log" role="tabpanel" aria-labelledby="pills-log-tab">
                         <div class="container">
                             <div class="row">
                                 <h5>Activity Log</h5>
@@ -434,12 +409,7 @@
                         </div>
                     </div>
 
-                    <div
-                            class="tab-pane fade show"
-                            id="pills-brief"
-                            role="tabpanel"
-                            aria-labelledby="pills-brief-tab"
-                    >
+                    <div class="tab-pane fade show" id="pills-brief" role="tabpanel" aria-labelledby="pills-brief-tab">
                         <div class="container container-brief">
                             <div class="row">
                                 <h5>Project Brief</h5>
@@ -524,4 +494,27 @@
             </main>
         </div>
     </section>
+
+    @push('after-scripts')
+    <script
+            type="text/javascript"
+            charset="utf8"
+            src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    <script>
+        tinymce.init({
+            selector: "#mytextarea",
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#table_id").DataTable();
+        });
+    </script>
+    @endpush
+
+
 @endsection
+
+@push('after-script')
+
+@endpush

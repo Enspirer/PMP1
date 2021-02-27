@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="{{url('theme_light/plugin/dist/css/animtrap.css')}}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="{{url('theme_light/styles/sweeper.css')}}">
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css"
+    />
+    <script src="https://cdn.tiny.cloud/1/2ga1455ee2likjyvki76whwe68dglnmvhm3xidu8izmhozt0/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <style>
         body.modal-open .supreme-container{
             -webkit-filter: blur(1px);
@@ -59,6 +65,9 @@
 <script src="{{url('theme_light/plugin/dist/js/anim-trap.js')}}"></script>
 <script src="{{url('theme_light/plugin/dist/js/anim-scroll.js')}}"></script>
 <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
+
+@stack('after-scripts')
+
 <script>
     ANIMSCROLL.init({
         easing: "ease-in-out-sine",
