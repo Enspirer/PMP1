@@ -143,7 +143,7 @@
                                         <li class="user-menu__item">
                                             <a
                                                     class="user-menu-link"
-                                                    href="#"
+                                                    href="{{route('frontend.auth.logout')}}"
                                                     style="color: #f44336"
                                             >Logout</a
                                             >
