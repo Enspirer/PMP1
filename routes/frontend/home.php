@@ -7,6 +7,7 @@ use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\User\MyProjectController;
+use App\Http\Controllers\Frontend\User\ViewProjectController;
 
 /*
  * Frontend Controllers
@@ -29,7 +30,9 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-        Route::get('my_projects', [MyProjectController::class, 'index'])->name('my_projects');
+        Route::get('my_projects/{section}', [MyProjectController::class, 'index'])->name('my_projects');
+
+        Route::get('view_project/{project_id}/open_project', [ViewProjectController::class, 'index'])->name('view_project');
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');
