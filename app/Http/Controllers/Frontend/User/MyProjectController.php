@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 
 class MyProjectController extends Controller
 {
-    public function index()
+    public function index($section)
     {
-        return view('frontend.user.myproject');
+        return view('frontend.user.myproject',[
+            'section' => $section
+        ]);
     }
 }
