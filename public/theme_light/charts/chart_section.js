@@ -3,9 +3,9 @@ var myChart = echarts.init(dom);
 var app = {};
 var option;
 
-var bidsData = [1234,9933,2990,4888,20000,40000,50000,30000,20000,10000];
-var time_range = [];
-var bidcount = [];
+var bidsData = [12343,99233,29190,48588,20000,40000,50000,30000,20000];
+var time_range = ['12.00 PM','01.00 AM','02.00 AM','03.00 AM','04.00 AM','05.00 AM'];
+var bidcount = [13,22,75,33,44,20,90];
 var zoom_start;
 var zoom_end;
 option = {
@@ -161,6 +161,6 @@ function formatAMPMMiniteR(date) {
     return strTime;
 }
 
-setInterval(erverysectound, 1000);
-setInterval(removeOLDTime, 2000);
+setInterval(erverysectound, 1000 * 60);
+setInterval(removeOLDTime, 2000 * 60);
 
