@@ -5,6 +5,7 @@ namespace Modules\SupportCenter\Http\Controllers\Frontend;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\SupportCenter\Entities\ContactUs;
 
 class FrontendController extends Controller
 {
@@ -33,7 +34,13 @@ class FrontendController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contactUsDetails = new ContactUs;
+        $contactUsDetails->first_name = $request->first_name;
+        $contactUsDetails->last_name = $request->last_name;
+        $contactUsDetails->email_address = $request->email;
+        $contactUsDetails->message = $request->message;
+        $contactUsDetails->save();
+        return back();
     }
 
     /**

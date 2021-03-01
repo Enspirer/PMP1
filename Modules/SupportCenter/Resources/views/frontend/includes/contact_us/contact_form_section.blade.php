@@ -61,24 +61,25 @@
                     <img src="{{url('theme_light/assets/MaskGroup16.png')}}" alt="" data-animscroll="fade-up">
                 </div>
                 <div class="right-section col-md-6" data-animscroll="fade-left">
-                    <form>
+                    <form action="{{route('frontend.contact_us.store')}}" method="post">
+                        {{csrf_field()}}
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" placeholder="John">
+                                <input type="text" name="first_name" class="form-control" placeholder="John" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Last Name</label>
-                                <input class="form-control" placeholder="Macclister">
+                                <input class="form-control" name="last_name" placeholder="Macclister" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="johnmacclister94@gmail.com">
+                            <input type="email" class="form-control" name="email" placeholder="johnmacclister94@gmail.com" required>
                         </div>
                         <div class="form-group">
                             <label>Your Message</label>
-                            <textarea class="form-control" rows="6" placeholder="lorem ipsum messege"></textarea>
+                            <textarea class="form-control" name="message" rows="6" placeholder="lorem ipsum messege" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Sign in</button>
