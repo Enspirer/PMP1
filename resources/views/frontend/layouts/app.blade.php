@@ -84,12 +84,10 @@
                         class="col-sm-4 col-md col-sm-4 col-12 col"
                         data-animscroll="fade-up"
                     >
-                        <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                        <h5 class="headin5_amrc col_white_amrc pt2"></h5>
                         <!--headin5_amrc-->
                         <p class="mb10">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s
+                            <img src="{{url('theme_light/assets/image/logolight.png')}}" alt="" width="190px">
                         </p>
                         <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
                         <p><i class="fa fa-phone"></i> +91-9999878398</p>
@@ -100,12 +98,12 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">Image Rectoucing</a></li>
-                            <li><a href="http://webenlance.com">Clipping Path</a></li>
-                            <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
-                            <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
-                            <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                            <li><a href="http://webenlance.com">Image Cropping</a></li>
+                            <li><a href="http://webenlance.com">Expert Centre</a></li>
+                            <li><a href="http://webenlance.com">Live Auction</a></li>
+                            <li><a href="http://webenlance.com">Explore</a></li>
+                            <li><a href="http://webenlance.com">Terms & Conditions</a></li>
+                            <li><a href="http://webenlance.com">Privacy Policy</a></li>
+                            <li><a href="http://webenlance.com">Contact us</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -114,56 +112,34 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">Remove Background</a></li>
+                            <li><a href="http://webenlance.com">Help & Support</a></li>
                             <li>
-                                <a href="http://webenlance.com">Shadows & Mirror Reflection</a>
+                                <a href="http://webenlance.com">Partner with us</a>
                             </li>
-                            <li><a href="http://webenlance.com">Logo Design</a></li>
-                            <li><a href="http://webenlance.com">Vectorization</a></li>
-                            <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                            <li><a href="http://webenlance.com">Image Cropping</a></li>
+                            <li><a href="http://webenlance.com">Events</a></li>
+                            <li><a href="http://webenlance.com">Blog</a></li>
+                            <li><a href="http://webenlance.com">Sitemap</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
 
-                    <div class="col-sm-4 col-md col-12 col" data-animscroll="fade-up">
-                        <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-                        <!--headin5_amrc ends here-->
-
-                        <ul class="footer_ul2_amrc">
+                    <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <!--headin5_amrc-->
+                        <ul class="footer_ul_amrc">
+                            <li><a href="http://webenlance.com">Mobile app development</a></li>
                             <li>
-                                <a href="#"
-                                ><i class="fab fa-twitter fleft padding-right"></i>
-                                </a>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing...<a href="#"
-                                    >https://www.lipsum.com/</a
-                                    >
-                                </p>
+                                <a href="http://webenlance.com">ERP Solutions</a>
                             </li>
-                            <li>
-                                <a href="#"
-                                ><i class="fab fa-twitter fleft padding-right"></i>
-                                </a>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing...<a href="#"
-                                    >https://www.lipsum.com/</a
-                                    >
-                                </p>
-                            </li>
-                            <li>
-                                <a href="#"
-                                ><i class="fab fa-twitter fleft padding-right"></i>
-                                </a>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing...<a href="#"
-                                    >https://www.lipsum.com/</a
-                                    >
-                                </p>
-                            </li>
+                            <li><a href="http://webenlance.com">Web applications</a></li>
+                            <li><a href="http://webenlance.com">Digital Marketing</a></li>
+                            <li><a href="http://webenlance.com">Architecture</a></li>
+                            <li><a href="http://webenlance.com">Video animations</a></li>
                         </ul>
-                        <!--footer_ul2_amrc ends here-->
+                        <!--footer_ul_amrc ends here-->
                     </div>
+
+
                 </div>
             </div>
 
@@ -178,12 +154,12 @@
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
                 <p class="text-center">
-                    Copyright @2021 | Designed With by <a href="#">Enspirer</a>
+                    Copyright @2021 | Designed With by <a href="#">Enspirer (PVT) LTD</a>
                 </p>
 
-                <ul class="social_footer_ul">
+                <ul class="social_footer_ul" style="padding-left: 0;">
                     <li>
-                        <a href="http://webenlance.com"
+                        <a href="https://www.facebook.com/tallentor"
                         ><i class="fab fa-facebook-f"></i
                             ></a>
                     </li>
@@ -200,7 +176,6 @@
                 <!--social_footer_ul ends here-->
             </div>
         </footer>
-
 
 
 
