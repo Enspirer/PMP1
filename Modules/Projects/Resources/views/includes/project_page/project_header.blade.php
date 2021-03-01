@@ -8,7 +8,7 @@
                         <p class="job-id">Job Id: mktplz10001</p>
                     </div>
                     <div class="row">
-                        <h1>Wordpress Responsive Website Development</h1>
+                        <h1>Customized ERP Solution </h1>
                     </div>
                     <div class="row">
                         <p class="post-time">WordPress Development</p>
