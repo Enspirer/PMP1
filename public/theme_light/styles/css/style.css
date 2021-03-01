@@ -780,7 +780,7 @@ body {
     background: #f2f2f2;
     padding: 63px 0;
     /* GENERAL MEDIA QUERIES
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 }
 
 #card-swipper .container .heading-text h1 {
@@ -4107,6 +4107,182 @@ button {
         color: #34ace0;
         font-size: 15px;
     }
+}
+
+.dashboard-body .page-content .account-information {
+    margin-top: 44px;
+}
+
+.dashboard-body .page-content .account-information .single-information {
+    margin: 20px 0;
+}
+
+.dashboard-body .page-content .account-information .single-information .left-account p {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #4f4f4f;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-body .page-content .account-information .single-information .right-account {
+    padding: 0;
+}
+
+.dashboard-body .page-content .account-information .single-information .right-account input,
+.dashboard-body .page-content .account-information .single-information .right-account select {
+    padding: 5px 20px;
+    letter-spacing: 0.66px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #8f8f8f;
+}
+
+.dashboard-body .page-content .account-information .single-information .right-account select {
+    width: 50%;
+}
+
+.dashboard-body .page-content .account-information .single-information .right-account .no-border {
+    border: none;
+    background: #fff !important;
+    background-color: transparent !important;
+}
+
+.dashboard-body .page-content .account-information .single-information .right-account .no-border:focus {
+    border: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.dashboard-body .page-content .account-deactivation {
+    margin-top: 55px;
+    border: 1px solid #f83535;
+    background: transparent;
+}
+
+.dashboard-body .page-content .account-deactivation h6 {
+    font: normal normal 600 24px/50px Poppins;
+    letter-spacing: 0px;
+    color: #f83535;
+}
+
+.dashboard-body .page-content .account-deactivation .what-happen {
+    margin-top: 34px;
+}
+
+.dashboard-body .page-content .account-deactivation .what-happen h5 {
+    font: normal normal medium 22px/35px Poppins;
+    letter-spacing: 0px;
+    color: #4f4f4f;
+}
+
+.dashboard-body .page-content .account-deactivation .what-happen ul li {
+    font: normal normal normal 18px/33px Karla;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+.dashboard-body .page-content .account-deactivation .what-happen ul li .red-terms {
+    color: #f83535;
+}
+
+.dashboard-body .page-content .account-deactivation .deactivate-form {
+    margin-top: 52px;
+}
+
+.dashboard-body .page-content .account-deactivation .deactivate-form .row {
+    margin-top: 12px;
+}
+
+.dashboard-body .page-content .account-deactivation .deactivate-form .row select {
+    padding: 5px 20px;
+    letter-spacing: 0.66px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    width: 60% !important;
+    color: #8f8f8f;
+}
+
+.dashboard-body .page-content .account-deactivation .deactivate-form p {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #4f4f4f;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-body .page-content .account-deactivation .deactivate-form .col-md-10 {
+    padding: 0;
+}
+
+.dashboard-body .page-content .account-deactivation .deactivate-form .btn-diactivate {
+    padding: 9px 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #f83535 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: none;
+}
+
+.dashboard-body .page-content .password-reset .btn-diactivate {
+    padding: 9px 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #f83535 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: none;
+}
+
+.dashboard-body .page-content .password-reset .two-step-verification {
+    margin-top: 34px;
+}
+
+.dashboard-body .page-content .password-reset .two-step-verification h4 {
+    font: normal normal 600 22px/50px Poppins;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+.dashboard-body .page-content .password-reset .two-step-verification p {
+    font: normal normal normal 18px/33px Karla;
+    letter-spacing: 0px;
+    color: #303030;
+    margin-bottom: 33px;
+}
+
+.dashboard-body .page-content .password-reset .two-step-verification .security-question {
+    width: 100% !important;
+}
+
+.dashboard-body .page-content .password-reset .check-enabled {
+    margin: auto;
+    color: #f83535;
+    font-size: 22px;
+    font: normal normal medium 22px/30px Poppins;
+}
+
+.dashboard-body .page-content .password-reset .check-enabled i {
+    margin: auto !important;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-body .page-content .password-reset .check-enabled p {
+    color: #f83535;
+    margin: 0;
+    padding: 0;
 }
 
 .dashboard-body .page-wrapper .sidebar-wrapper,
