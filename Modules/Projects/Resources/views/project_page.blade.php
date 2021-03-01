@@ -12,12 +12,9 @@
 
                         <h2 class="title-skill">Skill Set</h2>
                         <div class="row-skill row">
-                            <button>Wordpress</button>
-                            <button>Vector Graphics</button>
-                            <button>Figma</button>
-                            <button>HTML/CSS</button>
-                            <button>SASS/SCSS</button>
-                            <button>Java Script</button>
+                            <button>Ui / UX expertise</button>
+                            <button>PHP </button>
+                            <button>HTML / CSS</button>
                         </div>
 
                         @auth

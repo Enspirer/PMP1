@@ -1,7 +1,7 @@
 <style>
     #card-swipper .timeline title{
-        font-size: 14px;
-        max-width: 90px;
+        font-size: 17px;
+        /*max-width: 90px;*/
     }
 </style>
 
@@ -77,7 +77,7 @@
                                         </span>
                                 </div>
 
-                                <title>Mobile app for delivery company.</title>
+                                <title>Multivendor ecommerce solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -103,7 +103,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/browserspaceone.png')}}" alt=""/>
                                     </div>
                                 </div>
-                                <title>Multivendor ecommerce solution</title>
+                                <title>Dynamic web solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -138,7 +138,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>CRM solution</title>
+                                <title>Customized CRM solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need

@@ -84,7 +84,7 @@
                         class="col-sm-4 col-md col-sm-4 col-12 col"
                         data-animscroll="fade-up"
                     >
-                        <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                        <h5 class="headin5_amrc col_white_amrc pt2"></h5>
                         <!--headin5_amrc-->
                         <p class="mb10">
                             <img src="{{url('theme_light/assets/image/logolight.png')}}" alt="" width="190px">
@@ -159,7 +159,7 @@
 
                 <ul class="social_footer_ul" style="padding-left: 0;">
                     <li>
-                        <a href="http://webenlance.com"
+                        <a href="https://www.facebook.com/tallentor"
                         ><i class="fab fa-facebook-f"></i
                             ></a>
                     </li>
