@@ -9,6 +9,7 @@
                 <div class="row">
                     <div class="left col-md-8">
                        @include('projects::includes.project_page.project_description')
+
                         <h2 class="title-skill">Skill Set</h2>
                         <div class="row-skill row">
                             <button>Wordpress</button>

@@ -61,6 +61,7 @@ class ProjectController extends Controller
         {
             $output = [
                 'project_name' => 'ERP Solutions',
+                'description' => ''
 
             ];
 

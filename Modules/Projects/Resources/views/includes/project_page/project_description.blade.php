@@ -1,4 +1,4 @@
-<h2 class="title-about">About Project</h2>
+<h2 class="title-about">Project Brief</h2>
 <p>
     We're looking for an experienced wordpress developer to work
     with our team to deliver an excellent responsive website.The

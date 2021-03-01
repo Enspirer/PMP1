@@ -5,7 +5,7 @@
         </div>
         <div class="details-right">
             <h6>Estimated Budjet</h6>
-            <h4>Rs. 25,000 - 40,000</h4>
+            <h4>USD 7,000 - 1,000</h4>
         </div>
     </div>
 </div>
