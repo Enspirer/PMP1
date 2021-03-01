@@ -5,6 +5,8 @@ namespace Modules\SupportCenter\Http\Controllers\Backend;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use DataTables;
+use Modules\SupportCenter\Entities\ContactUs;
 
 class ContactUsController extends Controller
 {
@@ -15,6 +17,22 @@ class ContactUsController extends Controller
     public function index()
     {
         return view('supportcenter::backend.contact_us.index');
+    }
+
+
+    public function GetTableDetails()
+    {
+        $users = ContactUs::select(['id', 'first_name', 'last_name', 'email_address', 'message','created_at']);
+        return Datatables::of($users)
+            ->editColumn('name',function ($row){
+                return $row->first_name.' '.$row->last_name;
+            })
+            ->addColumn('action', function($row){
+                $btn = '<a href="" class="edit btn btn-primary btn-sm"><i class="fa fa-eye"></i> View </a>';
+                return $btn;
+            })
+            ->rawColumns(['action'])
+            ->make();
     }
 
     /**
