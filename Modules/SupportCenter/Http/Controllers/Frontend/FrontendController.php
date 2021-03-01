@@ -6,7 +6,8 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\SupportCenter\Entities\ContactUs;
-
+use Mail;
+use App\Mail\Frontend\Contact\SendContact;
 class FrontendController extends Controller
 {
     /**
@@ -40,6 +41,10 @@ class FrontendController extends Controller
         $contactUsDetails->email_address = $request->email;
         $contactUsDetails->message = $request->message;
         $contactUsDetails->save();
+
+
+        Mail::send(new SendContact($request));
+
         return back();
     }
 
