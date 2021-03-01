@@ -3,7 +3,7 @@
         <div class="yellow-card-contact" data-animscroll="fade-up">
             <div class="row">
                 <div class="left-text-contact col-md-5" data-animscroll="fade-right">
-                    <h1>Corporate Office Canada</h1>
+                    <h1>Corporate Office Australia </h1>
                     <div class="contact-details">
                         <div class="row">
                             <div class="col-md-3">Address</div>
