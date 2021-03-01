@@ -14,7 +14,7 @@ class ContactUsController extends Controller
      */
     public function index()
     {
-        return view('supportcenter::index');
+        return view('supportcenter::backend.contact_us.index');
     }
 
     /**

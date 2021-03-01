@@ -7,8 +7,8 @@
                     <div class="contact-details">
                         <div class="row">
                             <div class="col-md-3">Address</div>
-                            <div class="col-md-9">
-                                19 Koombahla Court, Rowville, Victoria 3178
+                            <div class="col-md-9" style="line-height: 19px;">
+                                19 Koombahla Court, Rowville, Victoria 3178,<br>
                                 Australia
                             </div>
                         </div>

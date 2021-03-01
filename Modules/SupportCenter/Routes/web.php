@@ -38,3 +38,8 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      */
     include_route_files(__DIR__.'/backend/');
 });
+
+Breadcrumbs::for('admin.contact_us.index', function ($trail) {
+    $trail->push('Contact Us', route('admin.contact_us.index'));
+});
+

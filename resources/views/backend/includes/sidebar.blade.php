@@ -13,6 +13,15 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{
+                    active_class(Route::is('admin/contact-us/leads'))
+                }}" href="{{ route('admin.contact_us.index') }}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Contact Us Leads
+                </a>
+            </li>
+
 
             <li class="nav-item">
                 <a class="nav-link {{
