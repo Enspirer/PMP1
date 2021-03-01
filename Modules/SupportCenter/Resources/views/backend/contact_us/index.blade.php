@@ -7,19 +7,19 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    <strong>Villa List</strong>
+                    <strong>Contact us Lead</strong>
                 </div><!--card-header-->
 
                 <div class="card-body">
                     <table class="table table-striped table-bordered" id="villadatatable" style="width:100%">
                         <thead>
-                        <tr>
-                            <th scope="col">#ID</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Created At</th>
-                            <th scope="col">Option</th>
-                        </tr>
+                            <tr>
+                                <th scope="col">#ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Created At</th>
+                                <th scope="col">Option</th>
+                            </tr>
                         </thead>
                         <tbody>
 

@@ -28,7 +28,7 @@ class ContactUsController extends Controller
                 return $row->first_name.' '.$row->last_name;
             })
             ->addColumn('action', function($row){
-                $btn = '<a href="" class="edit btn btn-primary btn-sm"><i class="fa fa-eye"></i> View </a>';
+                $btn = '<a href="'.route("admin.contact_us.show",$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-eye"></i> View </a>';
                 return $btn;
             })
             ->rawColumns(['action'])
