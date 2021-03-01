@@ -236,7 +236,7 @@
                     1200: {
                         slidesPerView: 8,
                     },
-                   
+
                 },
             });
         </script>

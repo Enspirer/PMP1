@@ -7,7 +7,7 @@
     <section class="dashboard-body">
         <div class="page-wrapper chiller-theme toggled">
             <main class="page-content">
-                <div class="dashboard-nav container-fluid">
+                <div class="dashboard-nav container-fluid" style="top: 65px;!important;">
                     @include('frontend.user.my_projects.main_tab')
                 </div>
 
