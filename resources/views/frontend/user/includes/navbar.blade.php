@@ -149,7 +149,7 @@
                                             >
                                         </li>
                                         <li class="user-menu__item">
-                                            <a class="user-menu-link" href="#">Settings</a>
+                                            <a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a>
                                         </li>
                                     </div>
                                 </ul>

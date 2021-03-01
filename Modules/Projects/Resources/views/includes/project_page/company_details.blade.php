@@ -36,7 +36,7 @@
         <div class="card-item">
             <div class="row">
                 <i class="fas fa-dollar-sign"></i>
-                <p>Rs. 90k total spend</p>
+                <p>USD. 900 total spend</p>
             </div>
         </div>
         <div class="card-item">
