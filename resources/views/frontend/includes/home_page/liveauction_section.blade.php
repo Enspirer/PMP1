@@ -32,9 +32,9 @@
                     </div>
                     <div class="auction-button" data-animscroll="fade-up">
                         <div class="row" style="margin: 0;display: grid">
-                            <a class="outline-btn-auction" href="#" style="font-size: 16px;background: transparent;color: #f44738;text-align: center;font-weight: 500;margin: 0;border: none">PROJECT BRIEF</a>
+                            <a class="outline-btn-auction" href="#" style="font-size: 16px;background: transparent;color: #0F9D58;text-align: center;font-weight: 500;margin: 0;border: none">PROJECT BRIEF</a>
                             {{--<a class="outline-btn-auction" href="#" style="margin-top: 5px">VIEW SCOPE</a>--}}
-                            <a class="outline-btn-auction" href="" style="margin: 5px 0 0 0;font-size: 16px; background: transparent;color: #f44738;text-align: center;font-weight: 500;border: none">VIEW SCOPE</a>
+                            <a class="outline-btn-auction" href="" style="margin: 5px 0 0 0;font-size: 16px; background: transparent;color: #0F9D58;text-align: center;font-weight: 500;border: none">VIEW SCOPE</a>
 
                             @auth()
                                 <a class="fill-btn-auction" href="{{route('frontend.project_auction',1)}}" style="margin: 5px 0 0 0;font-size: 16px;text-align: center;font-weight: 500">PLACE A BID</a>
