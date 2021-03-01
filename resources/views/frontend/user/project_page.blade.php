@@ -10,7 +10,7 @@
                 </div>
                 <div class="dashboard-nav-second container-fluid">
                     <div class="row row-full">
-                        <a href="">
+                        <a href="{{route('frontend.user.my_projects','active_projects')}}">
                             <div class="row">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                                 <p>Back</p>
