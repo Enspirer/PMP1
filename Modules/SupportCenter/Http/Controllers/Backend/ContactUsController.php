@@ -62,7 +62,12 @@ class ContactUsController extends Controller
      */
     public function show($id)
     {
-        return view('supportcenter::show');
+        $contactUsDetails = ContactUs::where('id',$id)
+            ->first();
+
+        return view('supportcenter::backend.contact_us.show',[
+            'contactUsDetails' => $contactUsDetails
+        ]);
     }
 
     /**

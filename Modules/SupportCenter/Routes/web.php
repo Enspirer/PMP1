@@ -41,5 +41,12 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 
 Breadcrumbs::for('admin.contact_us.index', function ($trail) {
     $trail->push('Contact Us', route('admin.contact_us.index'));
+
 });
+
+Breadcrumbs::for('admin.contact_us.show', function ($trail) {
+    $trail->parent('admin.contact_us.index');
+    $trail->push('View Contact Details', route('admin.contact_us.show',1));
+});
+
 

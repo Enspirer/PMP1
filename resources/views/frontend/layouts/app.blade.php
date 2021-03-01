@@ -219,6 +219,7 @@
                     delay: 1000,
                 },
                 loop: true,
+                loopedSlides: 50,
                 breakpoints: {
                     // when window width is >= 320px
                     320: {
@@ -235,9 +236,7 @@
                     1200: {
                         slidesPerView: 8,
                     },
-                    1820: {
-                        slidesPerView: 13,
-                    },
+                   
                 },
             });
         </script>
