@@ -6,8 +6,8 @@
     <div class="header-content">
         <div class="content">
             <h1 data-animscroll="fade-up" data-animscroll-delay="100" style="font-size: 36px">
-                THE PLACE WHERE<br> THE <span style="color: orangered;"> TOP
-                    CHALLENGERS</span> MEET THE<span style="color: orangered;"> BEST TALENT</span>
+                THE PLACE WHERE<br> THE <span style="color: #0F9D58;"> TOP
+                    CHALLENGERS</span> MEET THE<span style="color: #0F9D58;"> BEST TALENT</span>
 
             </h1>
             <form action="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">
