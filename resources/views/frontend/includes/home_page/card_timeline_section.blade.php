@@ -1,3 +1,10 @@
+<style>
+    #card-swipper .timeline title{
+        font-size: 14px;
+        max-width: 90px;
+    }
+</style>
+
 <section id="card-swipper">
     <div class="container">
         <div class="heading-text">
@@ -25,7 +32,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/browser.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Mobile app Development</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -53,18 +60,12 @@
 
                     <div class="swiper-slide li">
                         <div class="anim-hover-grow">
+
                             <div class="card">
                                 <div class="circle">
                                     <div class="inner">
                                         <img src="{{url('theme_light/assets/image/icon/screen.png')}}" alt="" />
                                     </div>
-                                </div>
-                                <title>Lorem Web Design</title>
-                                <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -75,6 +76,15 @@
                                             </i>
                                         </span>
                                 </div>
+
+                                <title>Mobile app for delivery company.</title>
+                                <div class="small-text">
+                                    <p>
+                                        Lorem brand is a startup clothing company we need
+                                        perfect logo for our brand....
+                                    </p>
+                                </div>
+
                                 <div class="button">
                                     <form action="{{route('frontend.project_page',1)}}" method="get">
                                         <button type="submit" class="btn btn-outline-dark">
@@ -93,7 +103,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/browserspaceone.png')}}" alt=""/>
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Multivendor ecommerce solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -128,7 +138,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>CRM solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -163,7 +173,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt=""/>
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Customize CRM solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -198,7 +208,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Dynamic web site solution</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -233,7 +243,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Digital Marketing campaign</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -268,7 +278,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Organic Search Engine Optimisation</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need
@@ -301,7 +311,7 @@
                                         <img src="{{url('theme_light/assets/image/icon/folder.png')}}" alt="" />
                                     </div>
                                 </div>
-                                <title>Lorem Web Design</title>
+                                <title>Audio Visual production</title>
                                 <div class="small-text">
                                     <p>
                                         Lorem brand is a startup clothing company we need

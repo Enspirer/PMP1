@@ -49,7 +49,22 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
+
         return view('projects::project_page');
+    }
+
+
+    public static function temproydummpy($id)
+    {
+        $output = [];
+        if ($id == 1)
+        {
+            $output = [
+                'project_name' => 'ERP Solutions',
+
+            ];
+
+        }
     }
 
     /**
