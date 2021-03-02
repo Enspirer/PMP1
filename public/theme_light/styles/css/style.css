@@ -2098,15 +2098,15 @@ button {
 }
 
 #tallentor-acadamy .row .col .card-acadamy .yellow-bg {
-    background: #FFB500 0% 0% no-repeat padding-box;
+    background: #ffb500 0% 0% no-repeat padding-box;
 }
 
 #tallentor-acadamy .row .col .card-acadamy .green-bg {
-    background: #0F9D58 0% 0% no-repeat padding-box;
+    background: #0f9d58 0% 0% no-repeat padding-box;
 }
 
 #tallentor-acadamy .row .col .card-acadamy .red-bg {
-    background: #F83535 0% 0% no-repeat padding-box;
+    background: #f83535 0% 0% no-repeat padding-box;
 }
 
 #single-project-body {
@@ -3492,7 +3492,7 @@ button {
 }
 
 .dashboard-body .page-content .tab-content {
-    margin-top: 170px;
+    margin-top: 120px;
 }
 
 .dashboard-body .page-content .card-db {
@@ -3954,7 +3954,7 @@ button {
     background: #f0f0f0;
     margin: 0;
     position: fixed;
-    top: 72px;
+    top: 64px;
     z-index: 9999999;
     padding: 15px !important;
     width: calc(100% - 240px);
@@ -3992,7 +3992,7 @@ button {
     padding: 5px !important;
     width: calc(100% - 240px);
     position: fixed;
-    top: 122px;
+    top: 114px;
     z-index: 999999;
     -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
@@ -4394,6 +4394,468 @@ button {
     color: #f83535;
     margin: 0;
     padding: 0;
+}
+
+.dashboard-body .page-content .multi_step_form #msform {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    min-height: 820px;
+    margin: 0 auto;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card {
+    width: 100%;
+    height: 100%;
+    padding: 50px 15px 100px 15px;
+    background: transparent linear-gradient(149deg, #0458ab 0%, #022c56 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card img {
+    width: 150px;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card h4 {
+    margin-top: 22px;
+    font: normal normal 600 22px/50px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card .single-item-type {
+    font: normal normal bold 15px/22px Karla;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card .single-item-type .col-md-10 {
+    padding: 0;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card .button-section-project-type {
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - 60px);
+    margin-top: 12px;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .left-card .blue-card .button-section-project-type button {
+    text-decoration: none;
+    background: #ff6347 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 7px 80px;
+    font: normal normal 500 14px/30px Poppins;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card {
+    width: 100%;
+    height: 100%;
+    padding: 50px 15px;
+    border: 2px solid #0458ab;
+    border-radius: 4px;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card img {
+    width: 150px;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card h4 {
+    margin-top: 22px;
+    font: normal normal 600 22px/50px Poppins;
+    letter-spacing: 0px;
+    color: #303030;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card .single-item-type {
+    font: normal normal bold 15px/22px Karla;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #303030;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card .single-item-type .col-md-10 {
+    padding: 0;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card .button-section-project-type {
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - 60px);
+    margin-top: 12px;
+}
+
+.dashboard-body .page-content .post-project-type .project-type-card-section .container .row .right-card .blue-card .button-section-project-type button {
+    text-decoration: none;
+    background: #ff6347 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 7px 80px;
+    font: normal normal 500 14px/30px Poppins;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.dashboard-body .page-content .post-about-project {
+    margin-top: 33px;
+    margin-bottom: 33px;
+    padding-bottom: 100px;
+}
+
+.dashboard-body .page-content .post-about-project .form-group label {
+    font: normal normal medium 15px/35px Poppins;
+    font-size: 18px;
+    text-align: left;
+    float: left;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #4f4f4f;
+}
+
+.dashboard-body .page-content .post-about-project .form-group input {
+    font: normal normal normal 20px/23px Karla;
+    letter-spacing: 0px;
+    color: #9f9f9f;
+}
+
+.dashboard-body .page-content .post-about-project .form-group small {
+    text-align: end;
+    font: normal normal normal 15px/22px Karla;
+    letter-spacing: 0px;
+    color: #ff6347 !important;
+}
+
+.dashboard-body .page-content .post-about-project .category {
+    margin-top: 55px;
+}
+
+.dashboard-body .page-content .post-about-project .post-project-breaf {
+    margin-top: 55px;
+}
+
+.dashboard-body .page-content .post-about-project .post-project-breaf small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset {
+    border: 0;
+    padding: 20px 105px 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset h3 {
+    font: normal normal 600 32px/50px Poppins;
+    letter-spacing: 0px;
+    color: #0f0c29;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset h6 {
+    font: 400 15px/28px "Roboto", sans-serif;
+    color: #5f6771;
+    padding-bottom: 30px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .intl-tel-input {
+    display: block;
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.dashboard-body .page-content .multi_step_form
+#msform
+fieldset
+.intl-tel-input
+.flag-container
+.selected-flag {
+    padding: 0 20px;
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    width: 65px;
+}
+
+.dashboard-body .page-content .multi_step_form
+#msform
+fieldset
+.intl-tel-input
+.flag-container
+.selected-flag
+.iti-arrow {
+    border: 0;
+}
+
+.dashboard-body .page-content .multi_step_form
+#msform
+fieldset
+.intl-tel-input
+.flag-container
+.selected-flag
+.iti-arrow:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font: normal normal normal 24px/7px Ionicons;
+    color: #5f6771;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset #phone {
+    padding-left: 80px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-group {
+    padding: 0 10px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .fg_2,
+.dashboard-body .page-content .multi_step_form #msform fieldset .fg_3 {
+    padding-top: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .fg_3 {
+    padding-bottom: 70px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select {
+    border-radius: 3px;
+    border: 1px solid #d8e1e7;
+    padding: 0 20px;
+    height: auto;
+    font: 400 15px/48px "Roboto", sans-serif;
+    color: #5f6771;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control.placeholder,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select.placeholder {
+    color: #5f6771;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control:-moz-placeholder,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:-moz-placeholder {
+    color: #5f6771;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control::-moz-placeholder,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select::-moz-placeholder {
+    color: #5f6771;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control::-webkit-input-placeholder,
+.dashboard-body .page-content .multi_step_form
+#msform
+fieldset
+.product_select::-webkit-input-placeholder {
+    color: #5f6771;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control:hover,
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control:focus,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:hover,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:focus {
+    border-color: #0458ab;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control:focus.placeholder,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:focus.placeholder {
+    color: transparent;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control:focus:-moz-placeholder,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .form-control:focus::-moz-placeholder,
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.dashboard-body .page-content .multi_step_form
+#msform
+fieldset
+.form-control:focus::-webkit-input-placeholder,
+.dashboard-body .page-content .multi_step_form
+#msform
+fieldset
+.product_select:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:after {
+    display: none;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font: normal normal normal 24px/48px Ionicons;
+    color: #5f6771;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .product_select .list {
+    width: 100%;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .done_text {
+    padding-top: 40px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .done_text .don_icon {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    background: #0458ab;
+    display: inline-block;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .done_text h6 {
+    line-height: 23px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .code_group {
+    margin-bottom: 60px;
+}
+
+.dashboard-body .page-content .multi_step_form #msform fieldset .code_group .form-control {
+    border: 0;
+    border-bottom: 1px solid #a1a7ac;
+    border-radius: 0;
+    display: inline-block;
+    width: 30px;
+    font-size: 30px;
+    color: #5f6771;
+    padding: 0;
+    margin-right: 7px;
+    text-align: center;
+    line-height: 1;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li {
+    list-style-type: none;
+    color: #99a2a8;
+    font-size: 9px;
+    width: calc(100% / 6);
+    float: left;
+    position: relative;
+    font: 500 13px/1 "Roboto", sans-serif;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li:nth-child(2):before {
+    content: "";
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li:nth-child(3):before {
+    content: "";
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li:before {
+    content: "";
+    font: normal normal normal 30px/50px Ionicons;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background: #eaf0f4;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #eaf0f4;
+    position: absolute;
+    left: -50%;
+    top: 21px;
+    z-index: -1;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li:last-child:after {
+    width: 150%;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li.active {
+    color: #0458ab;
+}
+
+.dashboard-body .page-content .multi_step_form #msform #progressbar li.active:before,
+.dashboard-body .page-content .multi_step_form #msform #progressbar li.active:after {
+    background: #0458ab;
+    color: white;
+}
+
+.dashboard-body .page-content .multi_step_form #msform .action-button {
+    background: #0458ab;
+    color: white;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 130px;
+    font: 700 14px/40px "Roboto", sans-serif;
+    border: 1px solid #0458ab;
+    margin: 0 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.dashboard-body .page-content .multi_step_form #msform .action-button:hover,
+.dashboard-body .page-content .multi_step_form #msform .action-button:focus {
+    background: #405867;
+    border-color: #405867;
+}
+
+.dashboard-body .page-content .multi_step_form #msform .previous_button {
+    background: transparent;
+    color: #99a2a8;
+    border-color: #99a2a8;
+}
+
+.dashboard-body .page-content .multi_step_form #msform .previous_button:hover,
+.dashboard-body .page-content .multi_step_form #msform .previous_button:focus {
+    background: #405867;
+    border-color: #405867;
+    color: #fff;
 }
 
 .dashboard-body .page-wrapper .sidebar-wrapper,
