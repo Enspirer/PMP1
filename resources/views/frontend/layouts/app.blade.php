@@ -91,16 +91,16 @@
                         </p>
                         <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
                         <p><i class="fa fa-phone"></i> +91-9999878398</p>
-                        <p><i class="fa fa fa-envelope"></i> info@example.com</p>
+                        <p><i class="fa fa fa-envelope"></i> info@tallentor.com</p>
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
-                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
+                            <li><a href="http://webenlance.com">About Us</a></li>
                             <li><a href="http://webenlance.com">Expert Centre</a></li>
                             <li><a href="http://webenlance.com">Live Auction</a></li>
-                            <li><a href="http://webenlance.com">Explore</a></li>
                             <li><a href="http://webenlance.com">Terms & Conditions</a></li>
                             <li><a href="http://webenlance.com">Privacy Policy</a></li>
                             <li><a href="http://webenlance.com">Contact us</a></li>
@@ -109,7 +109,7 @@
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
-                        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                        <h5 class="headin5_amrc col_white_amrc pt2">Resources</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
                             <li><a href="http://webenlance.com">Help & Support</a></li>
@@ -154,7 +154,7 @@
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
                 <p class="text-center">
-                    Copyright @2021 | Designed With by <a href="#">Enspirer (PVT) LTD</a>
+                    Copyright @2021 | Designed With by <a href="#">Tallentor Global Ltd</a>
                 </p>
 
                 <ul class="social_footer_ul" style="padding-left: 0;">
@@ -170,7 +170,7 @@
                         <a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="http://webenlance.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/tallentor/"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
                 <!--social_footer_ul ends here-->

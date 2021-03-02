@@ -7,7 +7,7 @@
         <div class="row">
             <div class="left-text col-md-6">
                 <h3 data-animscroll="fade-up">Plan Your Project with <br> our experts</h3>
-                <p style="font-size: 22px;color: #f44738;font-weight: 700">Plan it precisely, Save money and time</p>
+                <p style="font-size: 22px;color: #0F9D58 ;font-weight: 700;font-family: 'Noto Serif', serif;font-style: italic;font-weight: 300">Plan it precisely, Save money and time</p>
 {{--                <ul>--}}
 {{--                    <li data-animscroll="fade-up">--}}
 {{--                    </li>--}}
