@@ -82,7 +82,7 @@
                             <textarea class="form-control" name="message" rows="6" placeholder="lorem ipsum messege" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>

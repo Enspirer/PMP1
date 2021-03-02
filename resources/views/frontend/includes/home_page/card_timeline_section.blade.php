@@ -296,9 +296,11 @@
                                     </span>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-outline-dark">
-                                        View Project
-                                    </button>
+                                    <form action="{{route('frontend.project_page',1)}}" method="get">
+                                        <button type="submit" class="btn btn-outline-dark">
+                                            View Project
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -337,12 +339,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-            <a type="button" class="btn btn-primary" style="margin: 0;background: #0F9D58;border: none;color: #fff;padding: 12px 25px">VIEW ALL PROJECTS</a>
+            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}" class="btn btn-primary" style="margin: 0;background: #0F9D58;border: none;color: #fff;padding: 12px 25px">VIEW ALL PROJECTS</a>
         </div>
 
     </div>

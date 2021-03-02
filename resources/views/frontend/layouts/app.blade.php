@@ -89,21 +89,19 @@
                         <p class="mb10">
                             <img src="{{url('theme_light/assets/image/logolight.png')}}" alt="" width="190px">
                         </p>
-                        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
-                        <p><i class="fa fa-phone"></i> +91-9999878398</p>
-                        <p><i class="fa fa fa-envelope"></i> info@tallentor.com</p>
+                        <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p>
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
                         <h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">About Us</a></li>
-                            <li><a href="http://webenlance.com">Expert Centre</a></li>
-                            <li><a href="http://webenlance.com">Live Auction</a></li>
-                            <li><a href="http://webenlance.com">Terms & Conditions</a></li>
-                            <li><a href="http://webenlance.com">Privacy Policy</a></li>
-                            <li><a href="http://webenlance.com">Contact us</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Expert Centre</a></li>
+                            <li><a href="">Live Auction</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Contact us</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -112,13 +110,13 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Resources</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">Help & Support</a></li>
+                            <li><a href="">Help & Support</a></li>
                             <li>
-                                <a href="http://webenlance.com">Partner with us</a>
+                                <a href="">Partner with us</a>
                             </li>
-                            <li><a href="http://webenlance.com">Events</a></li>
-                            <li><a href="http://webenlance.com">Blog</a></li>
-                            <li><a href="http://webenlance.com">Sitemap</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Sitemap</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -127,14 +125,14 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="http://webenlance.com">Mobile app development</a></li>
+                            <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Mobile app development</a></li>
                             <li>
-                                <a href="http://webenlance.com">ERP Solutions</a>
+                                <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">ERP Solutions</a>
                             </li>
-                            <li><a href="http://webenlance.com">Web applications</a></li>
-                            <li><a href="http://webenlance.com">Digital Marketing</a></li>
-                            <li><a href="http://webenlance.com">Architecture</a></li>
-                            <li><a href="http://webenlance.com">Video animations</a></li>
+                            <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Web applications</a></li>
+                            <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Digital Marketing</a></li>
+                            <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Architecture</a></li>
+                            <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Video animations</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -154,7 +152,7 @@
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
                 <p class="text-center">
-                    Copyright @2021 | Designed With by <a href="#">Tallentor Global Ltd</a>
+                    Copyright @2021 | <a style="color: #c2c2c2;font-weight: 400;font-size: 15px;">Tallentor Global Ltd</a>
                 </p>
 
                 <ul class="social_footer_ul" style="padding-left: 0;">
