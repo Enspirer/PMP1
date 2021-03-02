@@ -20,7 +20,7 @@
                             <a class="nav-link" href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Explore</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="{{route("frontend.expert_center")}}">Features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('frontend.contact_us')}}">Contact Us</a>

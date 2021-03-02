@@ -162,10 +162,10 @@
                             ></a>
                     </li>
                     <li>
-                        <a href="http://webenlance.com"><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/tallentor/"><i class="fab fa-instagram"></i></a>
