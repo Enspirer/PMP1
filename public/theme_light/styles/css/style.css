@@ -2023,6 +2023,8 @@ button {
 }
 
 #tallentor-acadamy .row .col .card-acadamy {
+    margin-top: 33px;
+    position: relative;
     width: 100%;
     background: #f9f9f9 0% 0% no-repeat padding-box;
     -webkit-box-shadow: 0px 10px 25px #00000040;
@@ -2039,6 +2041,7 @@ button {
 }
 
 #tallentor-acadamy .row .col .card-acadamy .label-acadamy {
+    margin-bottom: 20px;
     width: 150px;
     height: 20px;
     position: relative;
@@ -2069,7 +2072,6 @@ button {
 
 #tallentor-acadamy .row .col .card-acadamy .acadamy-details {
     margin: 0;
-    padding: 15px 0;
     font: normal normal normal 16px/25px Karla;
     letter-spacing: 0px;
     color: #8f8f8f;
@@ -2082,7 +2084,29 @@ button {
 
 #tallentor-acadamy .row .col .card-acadamy .acadamy-details hr {
     border-left: 1px solid #8f8f8f;
-    height: 10px;
+    height: 15px;
+    padding: 0 5px;
+    margin-top: 1px;
+}
+
+#tallentor-acadamy .row .col .card-acadamy .color-card {
+    width: 9px;
+    height: 57px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+#tallentor-acadamy .row .col .card-acadamy .yellow-bg {
+    background: #FFB500 0% 0% no-repeat padding-box;
+}
+
+#tallentor-acadamy .row .col .card-acadamy .green-bg {
+    background: #0F9D58 0% 0% no-repeat padding-box;
+}
+
+#tallentor-acadamy .row .col .card-acadamy .red-bg {
+    background: #F83535 0% 0% no-repeat padding-box;
 }
 
 #single-project-body {
