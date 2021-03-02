@@ -45,7 +45,9 @@ class FrontendController extends Controller
 
         Mail::send(new SendContact($request));
 
-        return back();
+
+
+        return back()->withFlashSuccess(__('alerts.frontend.contact.sent'));;
     }
 
     /**
