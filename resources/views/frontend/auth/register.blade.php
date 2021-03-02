@@ -81,7 +81,7 @@
                 <img src="{{url('theme_light/assets/image/MaskGroup8.png')}}" alt=""/>
                 <div class="gradient-layer-dark"></div>
                 <div class="top-text-layer" data-animscroll="fade-up" data-animscroll-delay="100" >
-                    <h1>Welcome to marketplace</h1>
+                    <h1>Welcome to Tallentor</h1>
                     <p>
                         Work with us and go beyond ,<br />
                         from your imaginations
