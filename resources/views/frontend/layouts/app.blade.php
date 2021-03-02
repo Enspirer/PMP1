@@ -89,9 +89,7 @@
                         <p class="mb10">
                             <img src="{{url('theme_light/assets/image/logolight.png')}}" alt="" width="190px">
                         </p>
-                        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
-                        <p><i class="fa fa-phone"></i> +91-9999878398</p>
-                        <p><i class="fa fa fa-envelope"></i> info@tallentor.com</p>
+                        <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p>
                     </div>
 
                     <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
@@ -154,7 +152,7 @@
                 </ul>
                 <!--foote_bottom_ul_amrc ends here-->
                 <p class="text-center">
-                    Copyright @2021 | Designed With by <a href="#">Tallentor Global Ltd</a>
+                    Copyright @2021 | <a style="color: #c2c2c2;font-weight: 400;font-size: 15px;">Tallentor Global Ltd</a>
                 </p>
 
                 <ul class="social_footer_ul" style="padding-left: 0;">
