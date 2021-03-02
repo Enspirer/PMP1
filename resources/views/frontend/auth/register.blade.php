@@ -15,10 +15,8 @@
                         <div class="form-group">
                             <label>I'm looking...</label>
                             <select class="form-select" aria-label="Default select example" name="user_type">
-                                <option selected>Someone to hire</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1" selected>Someone to hire</option>
+                                <option value="2">Project</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -54,11 +52,18 @@
                         </div>
                         <div class="form-group">
                             <label>Location</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Sri Lanka</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select class="form-select" aria-label="Default select example" name="location">
+                                <option value="USA" selected>USA</option>
+                                <option value="England">England</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Japan">Japan</option>
+                                <option value="China">China</option>
+                                <option value="Canada">Canada</option>
+                                <option value="France">France</option>
+                                <option value="Australia">Australia</option>
                             </select>
                         </div>
                         <div class="form-check">
