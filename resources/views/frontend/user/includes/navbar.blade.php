@@ -1,6 +1,6 @@
 <section class="nav-section sticky">
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="" alt="" width="160px"></a>
 
             <div class="header-search-top">
