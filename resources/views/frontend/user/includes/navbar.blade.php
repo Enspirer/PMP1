@@ -108,50 +108,53 @@
                                     </div>
                                     <li class="user-menu__item">
                                         <a class="user-menu-link" href="{{route('frontend.user.my_projects','active_projects')}}">
-                                            <img
-                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/trophy.png"
-                                                    alt="trophy_icon"
-                                                    width="20"
-                                                    height="20"
-                                            />
+                                            <i class="fa fa-list-alt" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
+                                            <div>Dashboard</div>
+                                        </a>
+                                    </li>
+
+                                    <li class="user-menu__item">
+                                        <a class="user-menu-link" href="{{route('frontend.user.my_projects','active_projects')}}">
+                                            <i class="fa fa-tachometer" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
                                             <div>My Projects</div>
                                         </a>
                                     </li>
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="#">
-                                            <img
-                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/team.png"
-                                                    alt="team_icon"
-                                                    width="20"
-                                                    height="20"
-                                            />
-                                            <div>Team</div>
+                                        <a class="user-menu-link" href="{{route('frontend.user.my_projects','active_projects')}}">
+                                            <i class="fa fa-cog" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
+                                            <div>Account Settings</div>
                                         </a>
                                     </li>
+{{--                                    <li class="user-menu__item">--}}
+{{--                                        <a class="user-menu-link" href="#">--}}
+{{--                                            <img--}}
+{{--                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/team.png"--}}
+{{--                                                    alt="team_icon"--}}
+{{--                                                    width="20"--}}
+{{--                                                    height="20"--}}
+{{--                                            />--}}
+{{--                                            <div>Logout</div>--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="#">
-                                            <img
-                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/book.png"
-                                                    alt="team_icon"
-                                                    width="20"
-                                                    height="20"
-                                            />
-                                            <div>Log History</div>
+                                        <a class="user-menu-link"  href="{{route('frontend.auth.logout')}}">
+                                            <i class="fa fa-sign-out" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
+                                            <div>Logout</div>
                                         </a>
                                     </li>
-                                    <div class="footer">
-                                        <li class="user-menu__item">
-                                            <a
-                                                    class="user-menu-link"
-                                                    href="{{route('frontend.auth.logout')}}"
-                                                    style="color: #f44336"
-                                            >Logout</a
-                                            >
-                                        </li>
-                                        <li class="user-menu__item">
-                                            <a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a>
-                                        </li>
-                                    </div>
+{{--                                    <div class="footer">--}}
+{{--                                        <li class="user-menu__item">--}}
+{{--                                            <a--}}
+{{--                                                    class="user-menu-link"--}}
+{{--                                                    href="{{route('frontend.auth.logout')}}"--}}
+{{--                                                    style="color: #f44336"--}}
+{{--                                            >Logout</a--}}
+{{--                                            >--}}
+{{--                                        </li>--}}
+{{--                                        <li class="user-menu__item">--}}
+{{--                                            <a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a>--}}
+{{--                                        </li>--}}
+{{--                                    </div>--}}
                                 </ul>
                             </div>
                         </div>
