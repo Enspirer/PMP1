@@ -2704,7 +2704,8 @@ button {
     font: normal normal normal 20px/50px Poppins;
     letter-spacing: 0px;
     color: #303030;
-    line-height: 0;
+    line-height: 1;
+    padding: 0 20px;
 }
 
 #login-body .row .left-form-login .register-paragraph {
@@ -2741,7 +2742,7 @@ button {
 #login-body .row .left-form-login .login-buttons-section .button--facebook {
     background: #4267b2 0% 0% no-repeat padding-box;
     opacity: 1;
-    border-radius: 20px;
+    border-radius: 4px;
 }
 
 #login-body .row .left-form-login .login-buttons-section .button--facebook:hover {
@@ -2758,7 +2759,7 @@ button {
     background-color: #fff;
     border: 1px solid #9f9f9f;
     opacity: 1;
-    border-radius: 20px;
+    border-radius: 4px;
     color: #4f4f4f;
     margin-top: 6px;
 }
@@ -2822,7 +2823,7 @@ button {
 #login-body .row .left-form-login .form-login form input {
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 0.1px solid #9f9f9f;
-    border-radius: 20px;
+    border-radius: 4px;
     font: normal normal normal 13px/18px Karla;
     letter-spacing: 0px;
     color: #9f9f9f;
@@ -2830,7 +2831,7 @@ button {
 
 #login-body .row .left-form-login .form-login form button {
     background: #0f9d58 0% 0% no-repeat padding-box;
-    border-radius: 20px;
+    border-radius: 4px;
     margin-top: 40px;
     border: transparent;
     font: normal normal 400 15px/25px Poppins;
@@ -2855,7 +2856,7 @@ button {
     width: 100%;
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 0.1px solid #9f9f9f;
-    border-radius: 20px;
+    border-radius: 4px;
     padding: 6px 0;
     padding-left: 12px;
     color: #9f9f9f;
@@ -3184,7 +3185,7 @@ button {
 
 #apply-project-body .body-section-single-project .container .row .left form .button-section-form .btn-send-offer {
     background: #0f9d58 0% 0% no-repeat padding-box;
-    border-radius: 18px;
+    border-radius: 4px;
     text-align: left;
     font: normal normal 600 22px/50px Poppins;
     letter-spacing: 0px;
