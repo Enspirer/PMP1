@@ -5,19 +5,19 @@
                 <div class="col col-md-3">
                     <div class="content">
                         <img src="{{url('theme_light/assets/call.png')}}" alt="" />
-                        <h6>Customer Support</h6>
+                        <h6>Support</h6>
                     </div>
                 </div>
                 <div class="col col-md-3">
                     <div class="content">
                         <img src="{{url('theme_light/assets/Group695.png')}}" alt="" />
-                        <h6>Sales Inquiries</h6>
+                        <h6>Sales</h6>
                     </div>
                 </div>
                 <div class="col col-md-3">
                     <div class="content">
                         <img src="{{url('theme_light/assets/credit-card.png')}}" alt="" />
-                        <h6>Accounts and Finance</h6>
+                        <h6>Accounts</h6>
                     </div>
                 </div>
                 <div class="col col-md-3">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="col col-md-3">
                     <div class="content">
-                        <p class="card-link-contact">accountsf@tallantor.com</p>
+                        <p class="card-link-contact">accounts@tallantor.com</p>
                     </div>
                 </div>
                 <div class="col col-md-3">

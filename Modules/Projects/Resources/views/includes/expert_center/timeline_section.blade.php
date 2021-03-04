@@ -20,7 +20,7 @@
                 <h2>01</h2>
                 <h6 class="text-secondry-timeline">Free Consultation</h6>
                 <p class="color-contrast-medium">
-                    A brief brief consultation to analyse the scale of the project
+                    Brief consultation to analyse the scale of the project
                 </p>
 
                 <div class="flex justify-between items-center">
@@ -51,12 +51,22 @@
                 <h2 class="right">02</h2>
                 <h6 class="text-secondry-timeline right">Project Planing</h6>
                 <p class="color-contrast-medium f-right">
-                    A brief brief consultation to analyse the scale of the project
+                    Comprehensive evaluation of the project with all necessary documentation.
                 </p>
-                <div class="flex justify-between items-center">
-                    <!-- <span class="cd-timeline__date">Jan 18</span> -->
-                    <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+                <div class="flex items-center">
+                    <!-- <span class="cd-timeline__date">Jan 14</span> -->
+                    <div class="button-left" style="float: right">
+                        <a href="#0" class="btn btn--subtle"
+                        >Book your Consultation</a
+                        >
+                    </div>
+
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
                 <hr style="margin-top: 50px" />
             </div>
             <!-- cd-timeline__content -->
@@ -187,8 +197,7 @@
                     Submit The Documents On Tallentor
                 </h6>
                 <p class="color-contrast-medium">
-                    Submit all the documents and attachments on tallentor project
-                    post
+                    Submit all the documents and attachments on Tallentor
                 </p>
 
                 <div class="flex justify-between items-center">
@@ -218,10 +227,7 @@
                     Receive Bids or Project Quotes
                 </h6>
                 <p class="color-contrast-medium f-right">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-                    optio, dolorum provident rerum aut hic quasi placeat iure
-                    tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus
-                    veritatis qui ut.
+                    Qualified agencies will submit their bids for the Live Auction and Project quotes for the projects submitted by Companies.
                 </p>
 
                 <div class="flex justify-between items-center">
@@ -252,8 +258,7 @@
                     Evaluation Process by Tallentor experts
                 </h6>
                 <p class="color-contrast-medium">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-                    optio, dolorum provident rerum.
+                    The Tallentor Expert team will help the companies to evaluate the quotations.
                 </p>
 
                 <div class="flex justify-between items-center">
@@ -271,7 +276,7 @@
                 class="cd-timeline__img cd-timeline__img--movie"
                 data-animscroll="fade-up"
             >
-                <img src="{{url("theme_light/assets/image/timeline/bid-1.svg")}}" alt="Movie" />
+                <img src="{{url("theme_light/assets/image/timeline/sharing-content.svg")}}" alt="Movie" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -281,7 +286,7 @@
             >
                 <h2 class="right">06</h2>
                 <h6 class="text-secondry-timeline right">
-                    Evaluation Process by Tallentor experts
+                    Award the project to the selected agency
                 </h6>
                 <p class="color-contrast-medium f-right">
                     This is the content of the last section
@@ -301,7 +306,7 @@
                 class="cd-timeline__img cd-timeline__img--location"
                 data-animscroll="fade-up"
             >
-                <img src="{{url("theme_light/assets/image/timeline/diagram.svg")}}" alt="Location" />
+                <img src="{{url("theme_light/assets/image/timeline/statistics (1).svg")}}" alt="Location" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -314,8 +319,7 @@
                     Monitor the Progress of the Project
                 </h6>
                 <p class="color-contrast-medium">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-                    optio, dolorum provident rerum.
+                    Comprehensive Project Management tool monitor and manage the entire process of the project lifecycle.
                 </p>
 
                 <div class="flex justify-between items-center">
@@ -333,7 +337,7 @@
                 class="cd-timeline__img cd-timeline__img--movie"
                 data-animscroll="fade-up"
             >
-                <img src="{{url("theme_light/assets/image/timeline/bid-1.svg")}}" alt="Movie" />
+                <img src="{{url("theme_light/assets/image/timeline/online-learning.svg")}}" alt="Movie" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -346,8 +350,7 @@
                     Q&A and Testing of the final Project by Tallentor Experts
                 </h6>
                 <p class="color-contrast-medium f-right">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et
+                    Making sure the standards of the project are met, our panel of experts  overview of the project
                 </p>
 
                 <div class="flex justify-between items-center">
