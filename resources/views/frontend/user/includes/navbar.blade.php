@@ -1,14 +1,22 @@
 <section class="nav-section sticky">
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="" alt="" width="160px"></a>
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="navbar-brand" href="#"><img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" width="160px" style="width: 110px;"></a>
 
-            <div class="header-search-top">
-                <div class="inputWithIcon">
-                    <input type="text" placeholder="Search projects" />
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-8">
+                    <div class="header-search-top">
+                        <div class="inputWithIcon">
+                            <input type="text" placeholder="Search projects" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
 
             <button
                     class="navbar-toggler"
