@@ -24,7 +24,7 @@
                     </form>
 
 
-                   
+
                 </div>
             </div>
             <div class="right-image col-md-8">

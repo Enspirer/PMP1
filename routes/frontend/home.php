@@ -8,6 +8,7 @@ use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
 use App\Http\Controllers\Frontend\User\MyProjectController;
 use App\Http\Controllers\Frontend\User\ViewProjectController;
+use App\Http\Controllers\Frontend\User\PostProjectController;
 
 /*
  * Frontend Controllers
@@ -39,5 +40,8 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Profile Specific
         Route::patch('profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
+        // User Profile Specific
+        Route::get('post_project', [PostProjectController::class, 'index'])->name('post_project');
     });
 });

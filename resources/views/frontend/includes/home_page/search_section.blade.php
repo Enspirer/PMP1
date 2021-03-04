@@ -1,7 +1,8 @@
 <div id="video_box">
     <div id="video_overlays"></div>
     <div class="video">
-        <video autoplay loop muted id="player" src="{{url('theme_light/assets/video.webm')}}" type="video/webm"></video>
+        <img  id="player" src="{{url('theme_light/assets/studio-republic-fotKKqWNMQ4-unsplash.jpg')}}" alt="">
+{{--        <video autoplay loop muted id="player" src="{{url('theme_light/assets/video.webm')}}" type="video/webm"></video>--}}
     </div>
     <div class="header-content">
         <div class="content">

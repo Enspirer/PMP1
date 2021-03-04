@@ -51,7 +51,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('frontend.user.post_project')}}">
                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
                         <span>Post a Project</span>
                     </a>
