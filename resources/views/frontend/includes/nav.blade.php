@@ -110,9 +110,9 @@
 
                     </ul>
                     @auth
-                         <a class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                         <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary">Post a Job</a>
                     @else
-                        <a class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                        <a href="{{route('frontend.auth.login')}}" class="post_job" type="button" class="btn btn-primary">Post a Job</a>
                    @endauth
                 </div>
             </div>
