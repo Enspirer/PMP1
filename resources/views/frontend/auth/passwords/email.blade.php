@@ -22,23 +22,9 @@
                             Continue
                         </button>
                     </form>
-                    <div class="row d-flex justify-content-between">
-                        <div class="form-check">
-                            <input
-                                type="checkbox"
-                                class="form-check-input"
-                                id="exampleCheck1"
-                            />
-                            <label class="form-check-label" for="exampleCheck1"
-                            >Remember Me</label
-                            >
-                        </div>
-                        <p class="text-right">Forget Password?</p>
-                    </div>
 
-                    <div class="bottumText">
-                        <p>Not a member yet? <a href="#">Create an account</a></p>
-                    </div>
+
+                   
                 </div>
             </div>
             <div class="right-image col-md-8">
