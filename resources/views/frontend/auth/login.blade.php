@@ -32,7 +32,7 @@
                             <input type="checkbox" class="form-check-input" name="remember" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                         </div>
-                        <a href="{{ route('frontend.auth.password.reset') }}" style="font-size: 13px;color: #ff6347;" class="text-right">Forget Password?</a>
+                        <a href="{{ route('frontend.auth.password.reset') }}" style="font-size: 13px;color: #0f9d58;" class="text-right">Forget Password?</a>
                     </div>
 
                     <div class="bottumText">
