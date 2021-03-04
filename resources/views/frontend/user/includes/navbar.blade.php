@@ -53,7 +53,7 @@
                         </li>
 
                         <div class="user-menu-wrap">
-                            <a class="mini-photo-wrapper-notification" href="#">
+                            <a class="mini-photo-wrapper-notification" href="#" onclick="myFunction1(event)">
 
                                 <i
                                         class="fa fa-bell"
@@ -68,7 +68,7 @@
                                 ></i>
                             </a>
 
-                            <div class="menu-container-notofication">
+                            <div class="menu-container-notofication" id="menu-container-notofication">
                                 <ul class="user-menu-notifiaction">
                                     <div class="profile-highlight">
                                         <img
@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="user-menu-wrap">
-                            <a class="mini-photo-wrapper" href="#">
+                            <a class="mini-photo-wrapper" href="#" onclick="myFunction2(event)">
                                 <img
                                         class="mini-photo"
                                         src="{{ $logged_in_user->picture}}"
@@ -96,7 +96,7 @@
                                 />
                             </a>
 
-                            <div class="menu-container">
+                            <div class="menu-container" id="menu-container">
                                 <ul class="user-menu">
                                     <div class="profile-highlight">
                                         <img

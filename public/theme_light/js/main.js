@@ -24,13 +24,6 @@ $(document).ready(function () {
     });
 
 
-    document.querySelector('.mini-photo-wrapper').addEventListener('click', function() {
-        document.querySelector('.menu-container').classList.toggle('active');
-    });
-
-    document.querySelector('.mini-photo-wrapper-notification').addEventListener('click', function() {
-        document.querySelector('.menu-container-notofication').classList.toggle('active');
-    });
 
 
 
@@ -102,8 +95,26 @@ $(document).ready(function () {
     bar3.svg.insertAdjacentHTML('afterbegin', Gradient);
     bar3.animate(1.0);
 
-});
 
+    window.onclick = function () {
+        document.getElementById("menu-container").classList.remove("active");
+        document.getElementById("menu-container-notofication").classList.remove("active");
+    };
+
+
+
+});
+// ---------------- Drop Down menu ---------------
+function myFunction1(event) {
+    event.stopPropagation();
+    document.getElementById("menu-container-notofication").classList.toggle("active");
+    document.getElementById("menu-container").classList.remove("active");
+}
+function myFunction2(event) {
+    event.stopPropagation();
+    document.getElementById("menu-container").classList.toggle("active");
+    document.getElementById("menu-container-notofication").classList.remove("active");
+}
 
 
 (function () {

@@ -29,11 +29,11 @@
                         @auth()
 
                             <div class="user-menu-wrap">
-                                <a class="mini-photo-wrapper" href="#">
+                                <a class="mini-photo-wrapper" href="#" onclick="myFunction2(event)">
                                     <img class="mini-photo" src="{{ $logged_in_user->picture }}" width="36" height="36"/>
                                 </a>
 
-                                <div class="menu-container">
+                                <div class="menu-container" id="menu-container">
                                     <ul class="user-menu">
                                         <div class="profile-highlight">
                                             <img
