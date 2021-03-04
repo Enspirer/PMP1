@@ -10,11 +10,11 @@
                 <p style="max-width: 500px;margin: auto; margin-top: 24px;">Don't worry! Resetting your password is easy. Just type the email that you used to register with Tallantor</p>
 
                 <div class="form-login" style="margin-top: 80px; max-width: 350px;">
-                    <form>
+                    <form method="post" action="{{route('frontend.auth.password.email.post')}}">
+                        {{csrf_field()}}
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-
+                            <input type="email" class="form-control" name="email" placeholder="Enter email">
                         </div>
 
 
