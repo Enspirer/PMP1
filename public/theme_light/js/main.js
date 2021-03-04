@@ -97,24 +97,23 @@ $(document).ready(function () {
 
 
     window.onclick = function () {
+        alert("sdf");
         document.getElementById("menu-container").classList.remove("active");
-        document.getElementById("menu-container-notofication").classList.remove("active");
     };
 
 
 
 });
 // ---------------- Drop Down menu ---------------
-function myFunction1(event) {
-    event.stopPropagation();
-    document.getElementById("menu-container-notofication").classList.toggle("active");
-    document.getElementById("menu-container").classList.remove("active");
-}
+
 function myFunction2(event) {
     event.stopPropagation();
     document.getElementById("menu-container").classList.toggle("active");
-    document.getElementById("menu-container-notofication").classList.remove("active");
 }
+
+window.onclick = function () {
+    document.getElementById("menu-container").classList.remove("active");
+};
 
 
 (function () {
