@@ -104,12 +104,16 @@
                                 <a class="nav-link" href="{{route('frontend.auth.login')}}">Sign In</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('frontend.auth.register')}}">Sign Up</a>
+                                <a class="nav-link" href="{{route('frontend.auth.register')}}">Join</a>
                             </li>
                         @endauth
 
                     </ul>
-                    <a class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                    @auth
+                         <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                    @else
+                        <a href="{{route('frontend.auth.login')}}" class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                   @endauth
                 </div>
             </div>
         </div>

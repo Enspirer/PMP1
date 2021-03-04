@@ -34,10 +34,10 @@
                                 </div>
                                 <title>Mobile app Development</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -79,10 +79,10 @@
 
                                 <title>Multivendor ecommerce solution</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
 
                                 <div class="button">
@@ -105,10 +105,10 @@
                                 </div>
                                 <title>Dynamic web solution</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -140,10 +140,10 @@
                                 </div>
                                 <title>Customized CRM solution</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -175,10 +175,10 @@
                                 </div>
                                 <title>Customize CRM solution</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -210,10 +210,10 @@
                                 </div>
                                 <title>Dynamic web site solution</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -245,10 +245,10 @@
                                 </div>
                                 <title>Digital Marketing campaign</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -280,10 +280,10 @@
                                 </div>
                                 <title>Organic Search Engine Optimisation</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
@@ -315,10 +315,10 @@
                                 </div>
                                 <title>Audio Visual production</title>
                                 <div class="small-text">
-                                    <p>
-                                        Lorem brand is a startup clothing company we need
-                                        perfect logo for our brand....
-                                    </p>
+                                    {{--<p>--}}
+                                        {{--Lorem brand is a startup clothing company we need--}}
+                                        {{--perfect logo for our brand....--}}
+                                    {{--</p>--}}
                                 </div>
                                 <div class="arrow-inline">
                                     <p>45 Views</p>
