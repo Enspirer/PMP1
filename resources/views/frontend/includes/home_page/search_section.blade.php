@@ -11,14 +11,23 @@
                     CHALLENGERS </span> MEET THE<span style="color: #fff;font-family: 'Noto Serif', serif;text-transform: lowercase;font-style: italic;font-size: 44px; font-weight: 100;"> BEST TALENT </span>
 
             </h1>
+
             <form action="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">
                 <div class="row-search-post row" data-animscroll="fade-up" data-animscroll-delay="200">
-                        <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
-                        <h3>OR</h3>
-                        <a href="">Post a Job</a>
-                        <button type="submit" style="display: none"></button>
+                    <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
+                    <h3>OR</h3>
+                    @auth
+                        <a href="{{route('frontend.user.post_project')}}">Post a Job</a>
+                    @else
+                        <a href="{{route('frontend.auth.login')}}">Post a Job</a>
+                    @endauth
+                    <button type="submit" style="display: none"></button>
                 </div>
             </form>
+
+
+
+
             <div class="container" data-animscroll="fade-up" data-animscroll-delay="300">
                 <div class="row">
                     <p>Popular :</p>
