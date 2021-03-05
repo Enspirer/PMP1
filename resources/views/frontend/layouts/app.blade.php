@@ -157,18 +157,18 @@
 
                 <ul class="social_footer_ul" style="padding-left: 0;">
                     <li>
-                        <a href="https://www.facebook.com/tallentor"
+                        <a href="https://www.facebook.com/tallentor" target="_blank"
                         ><i class="fab fa-facebook-f"></i
                             ></a>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/tallentor/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/tallentor/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
                 <!--social_footer_ul ends here-->
