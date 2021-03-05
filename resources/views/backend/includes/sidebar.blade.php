@@ -12,7 +12,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link {{active_class(Route::is('admin/consulting_requests'))}}" href="{{ route('admin.consulting_request_list') }}">
+                <a class="nav-link {{active_class(Route::is('admin/consulting_requests'))}}" href="{{ route('admin.consulting_request.list') }}">
                     <i class="nav-icon fas fa-bars"></i>
                     Consulting Request
                 </a>
