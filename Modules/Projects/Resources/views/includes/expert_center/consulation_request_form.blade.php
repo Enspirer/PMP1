@@ -9,39 +9,39 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="post" action="">
+                <form method="post" action="{{route('frontend.consulting_request')}}">
                     {{csrf_field()}}
                     <div class="form-group">
                         <label>Name:</label>
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="" name="name">
                     </div>
                     <div class="form-group">
                         <label>Company name:</label>
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="" name="company_name">
                     </div>
                     <div class="form-group">
                         <label>Email:</label>
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="" name="email">
                     </div>
                     <div class="form-group">
                         <label>Telephone:</label>
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="" name="telephone">
                     </div>
                     <div class="form-group">
                         <label>Project Brief:</label>
-                        <textarea type="text" class="form-control" rows="5"></textarea>
+                        <textarea type="text" class="form-control" rows="5" name="project_brief"></textarea>
                     </div>
                     <div class="form-group">
                         <label>Appoint date and time:</label>
-                        <input type="text" class="form-control" value="">
+                        <input type="text" class="form-control" value="" name="appoiment_date_time">
                     </div>
                     <div class="form-group">
                         <label>Additional notes :</label>
-                        <textarea type="text" class="form-control" rows="5"></textarea>
+                        <textarea type="text" class="form-control" rows="5" name="additional_note"></textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>

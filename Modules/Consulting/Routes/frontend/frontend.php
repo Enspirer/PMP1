@@ -1,4 +1,3 @@
 <?php
 
-Route::get('/', 'BlogController@index');
-
+Route::post('/consulting_request', 'ConsultingController@store')->name('consulting_request');

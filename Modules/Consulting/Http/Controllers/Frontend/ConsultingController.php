@@ -2,9 +2,12 @@
 
 namespace Modules\Consulting\Http\Controllers\Frontend;
 
+use foo\bar;
+use function GuzzleHttp\Psr7\_parse_request_uri;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Consulting\Entities\ConsultingRequest;
 
 class ConsultingController extends Controller
 {
@@ -33,7 +36,22 @@ class ConsultingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $consulting = new ConsultingRequest;
+        if (auth()->user()){
+            $consulting->name = auth()->user()->first_name.' '.auth()->user()->last_name;
+            $consulting->company_name = auth()->user()->company_name;
+            $consulting->email = auth()->user()->email;
+        }else{
+            $consulting->name = $request->name;
+            $consulting->company_name = $request->company_name;
+            $consulting->email = $request->email;
+        }
+        $consulting->telephone = $request->telephone;
+        $consulting->project_brief = $request->project_brief;
+        $consulting->appointment_date_time = $request->appoiment_date_time;
+        $consulting->additional_notes = $request->additional_note;
+        $consulting->save();
+        return back();
     }
 
     /**
