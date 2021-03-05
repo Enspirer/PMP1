@@ -1,0 +1,13 @@
+{
+    "name": "Consulting",
+    "alias": "consulting",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Consulting\\Providers\\ConsultingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

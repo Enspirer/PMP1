@@ -26,7 +26,7 @@
                 <div class="flex justify-between items-center">
                     <!-- <span class="cd-timeline__date">Jan 14</span> -->
                     <a href="#0" class="btn btn--subtle"
-                    >Request For 15 min free consultation</a
+                       data-toggle="modal" data-target="#exampleModal" >Request For 15 min free consultation</a
                     >
                 </div>
                 <hr />
@@ -56,7 +56,7 @@
                 <div class="flex items-center">
                     <!-- <span class="cd-timeline__date">Jan 14</span> -->
                     <div class="button-left" style="float: right">
-                        <a href="#0" class="btn btn--subtle"
+                        <a href="#0"  data-toggle="modal" data-target="#exampleModal" class="btn btn--subtle"
                         >Book your Consultation</a
                         >
                     </div>
@@ -367,7 +367,9 @@
 <div class="expert-bottom-text" data-animscroll="fade-up">
     <h1>Book your Tallentor expert team today</h1>
     <div class="row">
-        <a class="fill" href="#">Book Tallentor expert team</a>
-        <a class="outline" href="#">Request For 15 min free consultation</a>
+        <a class="fill" href="#"  data-toggle="modal" data-target="#exampleModal">Book Tallentor expert team</a>
+        <a class="outline" href="#"  data-toggle="modal" data-target="#exampleModal">Request For 15 min free consultation</a>
     </div>
 </div>
+
+@include('projects::includes.expert_center.consulation_request_form')

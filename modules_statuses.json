@@ -1,5 +1,6 @@
 {
     "Blog": true,
     "Projects": true,
-    "SupportCenter": true
+    "SupportCenter": true,
+    "Consulting": true
 }
