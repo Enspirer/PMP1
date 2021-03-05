@@ -21,12 +21,15 @@
                     <fieldset>
                         <div class="post-project-type">
                             <h3>Please select your project type</h3>
+
+
+
                             <div class="project-type-card-section">
                                 <div class="container">
                                     <div class="row">
                                         <div class="left-card col-md-6">
                                             <div class="blue-card">
-                                                <img src="{{url('theme_light/assets/Mask Group 9.png')}}" alt="" />
+                                                <img src="assets/Mask Group 9.png" alt="" />
                                                 <h4>Premium Project</h4>
                                                 <div class="single-item-type row">
                                                     <div class="col-md-2">
@@ -82,7 +85,7 @@
                                         </div>
                                         <div class="right-card col-md-6">
                                             <div class="blue-card">
-                                                <img src="{{url('theme_light/assets/Layer 2.png')}}" alt="" />
+                                                <img src="assets/Layer 2.png" alt="" />
                                                 <h4>Standard Project</h4>
                                                 <div class="single-item-type row">
                                                     <div class="col-md-2">
@@ -510,27 +513,283 @@
                         <h3>Select your pricing plan</h3>
 
                         <div class="post-price-plan">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="button-column col col-md-4">
+                                        <div
+                                            class="button-post-project button-post-project-active"
+                                            id="button-post-project-fixed"
+                                        >
+                                            <div class="row">
+                                                <i
+                                                    class="fa fa-id-card-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <h6>Fixed Price</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-column col col-md-4">
+                                        <div
+                                            class="button-post-project"
+                                            id="button-post-project-hourly"
+                                        >
+                                            <div class="row">
+                                                <i
+                                                    class="fa fa-id-card-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <h6>Hourly</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-column col col-md-4">
+                                        <div
+                                            class="button-post-project"
+                                            id="button-post-project-not-sure"
+                                        >
+                                            <div class="row">
+                                                <i
+                                                    class="fa fa-id-card-o"
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <h6>Not sure</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-                                </li>
-                            </ul>
+                                <br />
+                                <div class="row row-bottum-full-card">
+                                    <div class="full-card">
+                                        <div class="full-card-content fixed">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                Under 10,000 LKR
+                                                            </label>
+                                                        </div>
 
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                10,000 - 30,000 LKR
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                30,000 - 80,000 LKR
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                80,000 - 150,000 LKR
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                150,000 - 500,000 LKR
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                500,000 - 1,000,000 LKR
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check">
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="radio"
+                                                                name="flexRadioDefault"
+                                                                id="flexRadioDefault1"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="flexRadioDefault1"
+                                                            >
+                                                                over 1,000,000 LKR
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="full-card-content hourly d-none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput"
+                                                            >Project duration</label
+                                                            >
+                                                            <select
+                                                                class="form-control"
+                                                                id="exampleFormControlSelect1"
+                                                            >
+                                                                <option>Less than a week</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput"
+                                                            >Hours per week</label
+                                                            >
+                                                            <select
+                                                                class="form-control"
+                                                                id="exampleFormControlSelect1"
+                                                            >
+                                                                <option>10-30</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+
+                                                <div class="row">
+                                                    <label
+                                                        for="exampleFormControlSelect1"
+                                                        style="margin-left: 30px"
+                                                    >Hourly Rate</label
+                                                    >
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                placeholder="Minimum amount"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                placeholder="Maximum amount"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="full-card-content not-sure d-none">
+                                            <p>Ask from agency to give a better option.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-post-project">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked"
+                                        checked
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked"
+                                    >
+                                        Read and agree with terms and conditions of
+                                        marketplce
+                                    </label>
+                                </div>
                             </div>
 
+                            <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                            </li>
+                          </ul>
 
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                          </div> -->
                         </div>
+
+                        <br><br><br>
 
                         <button
                             type="button"
@@ -545,19 +804,22 @@
                         >
                             Continue
                         </button>
-                        <button
-                            type="button"
-                            class="action-button previous previous_button"
-                            style="
-                      float: right;
-                      background: transparent;
-                      border: 1px solid #0458ab;
-                      padding: 1px 90px;
-                      color: #0458ab;
-                    "
-                        >
-                            Back
-                        </button>
+                        <!-- <br><br><br>
+                                    <button
+                                      type="button"
+                                      class="action-button previous previous_button"
+                                      style="
+                                        float: right;
+                                        background: transparent;
+                                        border: 1px solid #0458ab;
+                                        padding: 1px 90px;
+                                        color: #0458ab;
+                                      "
+                                    >
+                                      Back
+                                    </button> -->
+
+
                     </fieldset>
 
                     <fieldset>
