@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </ul>
-                    <a class="post_job" type="button" class="btn btn-primary"
+                    <a href="{{route('frontend.user.post_project')}}" class="post_job"  class="btn btn-primary"
                     >Post a Job</a
                     >
                     <!-- <button type="button" class="btn btn-primary">Post a Job</button> -->
