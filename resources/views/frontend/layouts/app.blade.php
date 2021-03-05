@@ -97,7 +97,7 @@
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
                             <li><a href="">About Us</a></li>
-                            <li><a href="">Expert Centre</a></li>
+                            <li><a href="{{route("frontend.expert_center")}}">Expert Centre</a></li>
                             <li><a href="">Live Auction</a></li>
                             <li><a href="">Terms & Conditions</a></li>
                             <li><a href="">Privacy Policy</a></li>
