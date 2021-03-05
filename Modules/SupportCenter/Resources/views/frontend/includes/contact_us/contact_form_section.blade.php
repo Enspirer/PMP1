@@ -58,7 +58,7 @@
                         <p data-animscroll="fade-right">
                             For any enquiries, please submit your details.  A member of Tallentor team will get back to you shortly.
                         </p>
-                        <img src="{{url('theme_light/assets/MaskGroup16.png')}}" style="width: 100%" alt="" data-animscroll="fade-up">
+                        <img src="{{url('theme_light/assets/MaskGroup16.png')}}" style="width: 100%" alt="">
                     </div>
                     <div class="right-section col-md-6" data-animscroll="fade-left">
                         <form action="{{route('frontend.contact_us.store')}}" method="post">
