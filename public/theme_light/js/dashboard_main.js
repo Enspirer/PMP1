@@ -97,6 +97,40 @@ $(document).ready(function () {
 
 
 });
+
+// ---------------- Post Project -------------------
+$('#button-post-project-fixed').click(function(event) {
+    $(".fixed").removeClass("d-none");
+    $(".hourly").addClass("d-none");
+    $(".not-sure").addClass("d-none");
+
+    $("#button-post-project-fixed").addClass("button-post-project-active");
+    $("#button-post-project-hourly").removeClass("button-post-project-active");
+    $("#button-post-project-not-sure").removeClass("button-post-project-active");
+});
+
+$('#button-post-project-hourly').click(function(event) {
+    $(".fixed").addClass("d-none");
+    $(".hourly").removeClass("d-none");
+    $(".not-sure").addClass("d-none");
+
+    $("#button-post-project-fixed").removeClass("button-post-project-active");
+    $("#button-post-project-hourly").addClass("button-post-project-active");
+    $("#button-post-project-not-sure").removeClass("button-post-project-active");
+});
+
+$('#button-post-project-not-sure').click(function(event) {
+    $(".fixed").addClass("d-none");
+    $(".hourly").addClass("d-none");
+    $(".not-sure").removeClass("d-none");
+
+    $("#button-post-project-fixed").removeClass("button-post-project-active");
+    $("#button-post-project-hourly").removeClass("button-post-project-active");
+    $("#button-post-project-not-sure").addClass("button-post-project-active");
+});
+
+
+
 // ---------------- Drop Down menu ---------------
 function myFunction1(event) {
     event.stopPropagation();
