@@ -14,8 +14,8 @@
 {{--                    <li data-animscroll="fade-up">--}}
                         The biggest challenge for any company is to define the scale and the specifications of a projects.
 {{--                <hr>--}}
-                <br>    <br>
-{{--                    </li>--}}
+                <br>       <br>
+                {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
                         Our professional team will take care of the end to end planning of your project to take the load off your mind.
                 <br>    <br>
