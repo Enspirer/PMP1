@@ -34,6 +34,8 @@
                                 <div class="col-md-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                                 <div class="col-md-10">uae@tallentor.com</div>
                             </div>
+                            <br>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -250,35 +252,6 @@
 {{--                </div>--}}
 
 
-                <div class="list-item-contact col-md-4" data-animscroll="fade-up">
-                    <div class="card-contact">
-                        <div class="map-part-top">
-                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
-                            <img class="flag" src="{{url('theme_light/assets/Image 51.png')}}" alt="">
-                        </div>
-                        <div class="content-part">
-                            <h3>Malasia</h3>
-                            <div class="row">
-                                <div class="col-md-2"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                                <div class="col-md-10">A 15-03 Tropicana Avenue, NO.12 Persiaran Tropicana,
-                                    Tropicana Golf & Country resort,
-                                    PJU3 Petaling Jaya 47410,
-                                    Selangor,
-                                    Malaysia.
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                                <div class="col-md-10">+60 135203792</div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                <div class="col-md-10">malaysia@tallentor.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
 {{--                <div class="list-item-contact col-md-4" data-animscroll="fade-up">--}}
@@ -330,6 +303,39 @@
                             <div class="row">
                                 <div class="col-md-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                                 <div class="col-md-10">info@tallentor.com</div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-item-contact col-md-4" data-animscroll="fade-up">
+                    <div class="card-contact">
+                        <div class="map-part-top">
+                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
+                            <img class="flag" src="{{url('theme_light/assets/Image 51.png')}}" alt="">
+                        </div>
+                        <div class="content-part">
+                            <h3>Malaysia</h3>
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <div class="col-md-10">A 15-03 Tropicana Avenue, NO.12 Persiaran Tropicana,
+                                    Tropicana Golf & Country resort,
+                                    PJU3 Petaling Jaya 47410,
+                                    Selangor,
+                                    Malaysia.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                <div class="col-md-10">+60 135203792</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                <div class="col-md-10">malaysia@tallentor.com</div>
                             </div>
                         </div>
                     </div>
