@@ -31,12 +31,12 @@
             <div class="row">
                 <div class="col col-md-3">
                     <div class="content">
-                        <p class="card-link-contact">Visit Support Centre</p>
+                        <p class="card-link-contact">support@tallantor.com</p>
                     </div>
                 </div>
                 <div class="col col-md-3">
                     <div class="content">
-                        <p class="card-link-contact">salesinquiries@tallantor.com</p>
+                        <p class="card-link-contact">sales@tallantor.com</p>
                     </div>
                 </div>
                 <div class="col col-md-3">
@@ -56,10 +56,9 @@
                     <div class="left-section col-md-6">
                         <h3 data-animscroll="fade-right" >How can we help</h3>
                         <p data-animscroll="fade-right">
-                            Have an inquiry or some feedback for us ? Fill out the form
-                            below to contact our team.
+                            For any enquiries, please submit your details.  A member of Tallentor team will get back to you shortly.
                         </p>
-                        <img src="{{url('theme_light/assets/MaskGroup16.png')}}" alt="" data-animscroll="fade-up">
+                        <img src="{{url('theme_light/assets/MaskGroup16.png')}}" style="width: 100%" alt="" data-animscroll="fade-up">
                     </div>
                     <div class="right-section col-md-6" data-animscroll="fade-left">
                         <form action="{{route('frontend.contact_us.store')}}" method="post">
@@ -77,6 +76,10 @@
                             <div class="form-group">
                                 <label>Email Address</label>
                                 <input type="email" class="form-control" name="email" placeholder="johnmacclister94@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Tell No</label>
+                                <input type="text" class="form-control" name="phone" placeholder="+94 70 123876" required>
                             </div>
                             <div class="form-group">
                                 <label>Your Message</label>

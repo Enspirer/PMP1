@@ -5,7 +5,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="left-text col-md-6">
+            <div class="left-text col-md-6" data-animscroll="fade-up">
                 <h3 data-animscroll="fade-up">Plan Your Project with <br> our experts</h3>
                 <p style="font-size: 22px;color: #0F9D58 ;font-weight: 700;font-family: 'Noto Serif', serif;font-style: italic;font-weight: 300">Plan it precisely, Save money and time</p>
 {{--                <ul>--}}
@@ -13,11 +13,12 @@
 {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
                         The biggest challenge for any company is to define the scale and the specifications of a projects.
-                <hr>
+{{--                <hr>--}}
+                <br>    <br>
 {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
                         Our professional team will take care of the end to end planning of your project to take the load off your mind.
-                <hr>
+                <br>    <br>
 {{--                    </li>--}}
 {{--                    <li data-animscroll="fade-up">--}}
                 <span style="font-weight: bold">Step 01</span> – Register as a company and request for a consultation
