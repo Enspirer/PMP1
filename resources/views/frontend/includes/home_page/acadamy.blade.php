@@ -14,16 +14,16 @@
                     <div class="acadamy-details row">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                         <p>6 months</p>
-                        <hr>
-                        <i class="fa fa-align-justify" aria-hidden="true"></i>
-                        <p>course list Lor</p>
+{{--                        <hr>--}}
+{{--                        <i class="fa fa-align-justify" aria-hidden="true"></i>--}}
+{{--                        <p>course list Lor</p>--}}
                     </div>
                     <div class="acadamy-details row">
                         <div class="col-md-1">
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" style="float: right" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-10">
-                        <p>Project Based Learning with industrial Training</p>
+                        <p style="margin-left: -20px">Project Based Learning with industrial Training</p>
                         </div>
                     </div>
                     <div class="color-card yellow-bg"></div>
@@ -38,16 +38,16 @@
                     <div class="acadamy-details row">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                         <p>3 Months</p>
-                        <hr>
-                        <i class="fa fa-align-justify" aria-hidden="true"></i>
-                        <p>course list Lor</p>
+{{--                        <hr>--}}
+{{--                        <i class="fa fa-align-justify" aria-hidden="true"></i>--}}
+{{--                        <p>course list Lor</p>--}}
                     </div>
                     <div class="acadamy-details row">
                         <div class="col-md-1">
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true" style="float: right"></i>
                         </div>
                         <div class="col-md-10">
-                            <p>Industrial Training with Realtime campaigns</p>
+                            <p style="margin-left: -20px">Industrial Training with Realtime campaigns</p>
                         </div>
                     </div>
                     <div class="color-card green-bg"></div>
@@ -62,21 +62,25 @@
                     <div class="acadamy-details row">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                         <p>3 Months</p>
-                        <hr>
-                        <i class="fa fa-align-justify" aria-hidden="true"></i>
-                        <p>course list Lor</p>
+{{--                        <hr>--}}
+{{--                        <i class="fa fa-align-justify" aria-hidden="true"></i>--}}
+{{--                        <p>course list Lor</p>--}}
                     </div>
                     <div class="acadamy-details row">
                         <div class="col-md-1">
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i class="fa fa-check" aria-hidden="true" style="float: right"></i>
                         </div>
                         <div class="col-md-10">
-                            <p>Industrial Training with Job placement options</p>
+                            <p style="margin-left: -20px">Industrial Training with Job placement options</p>
                         </div>
                     </div>
                     <div class="color-card red-bg"></div>
                 </div>
             </div>
         </div>
+        <div style="margin-top: 40px;display: flex;justify-content: center">
+            <a href="{{route("frontend.expert_center")}}" data-animscroll="fade-up" style="margin: 0;background: #0F9D58 ;border: none;color: #fff;padding: 12px 25px">Register Now</a>
+        </div>
+
     </div>
 </section>
