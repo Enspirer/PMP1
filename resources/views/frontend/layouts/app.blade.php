@@ -97,11 +97,11 @@
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
                             <li><a href="">About Us</a></li>
-                            <li><a href="">Expert Centre</a></li>
-                            <li><a href="">Live Auction</a></li>
+                            <li><a href="{{route("frontend.expert_center")}}">Expert Centre</a></li>
+                            <li><a href="{{route('frontend.project_auction',1)}}">Live Auction</a></li>
                             <li><a href="">Terms & Conditions</a></li>
                             <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Contact us</a></li>
+                            <li><a href="{{route('frontend.contact_us')}}">Contact us</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
                     </div>
@@ -227,6 +227,20 @@
         <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
         <script src="{{url('theme_light/charts/chart_section.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/6043128b385de407571d2421/1f0300t1e';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
 
         <script type="text/javascript">
 

@@ -127,7 +127,7 @@
                                         </a>
                                     </li>
                                     <li class="user-menu__item">
-                                        <a class="user-menu-link" href="{{route('frontend.user.my_projects','active_projects')}}">
+                                        <a class="user-menu-link" href="{{route('frontend.user.account','active_projects')}}">
                                             <i class="fa fa-cog" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
                                             <div>Account Settings</div>
                                         </a>
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </ul>
-                    <a class="post_job" type="button" class="btn btn-primary"
+                    <a href="{{route('frontend.user.post_project')}}" class="post_job"  class="btn btn-primary"
                     >Post a Job</a
                     >
                     <!-- <button type="button" class="btn btn-primary">Post a Job</button> -->

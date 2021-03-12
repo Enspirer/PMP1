@@ -37,15 +37,17 @@ class ConsultingController extends Controller
     public function store(Request $request)
     {
         $consulting = new ConsultingRequest;
+
+        $consulting->name = $request->name;
+        $consulting->company_name = $request->company_name;
+        $consulting->email = $request->email;
+
         if (auth()->user()){
-            $consulting->name = auth()->user()->first_name.' '.auth()->user()->last_name;
-            $consulting->company_name = auth()->user()->company_name;
-            $consulting->email = auth()->user()->email;
+
         }else{
-            $consulting->name = $request->name;
-            $consulting->company_name = $request->company_name;
-            $consulting->email = $request->email;
+
         }
+
         $consulting->telephone = $request->telephone;
         $consulting->project_brief = $request->project_brief;
         $consulting->appointment_date_time = $request->appoiment_date_time;

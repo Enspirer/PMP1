@@ -58,13 +58,13 @@
 
 
                                         <li class="user-menu__item">
-                                            <a class="user-menu-link" href="#">
+                                            <a class="user-menu-link" href="{{route('frontend.user.my_projects','active_projects')}}">
                                                 <i class="fa fa-tachometer" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
                                                 <div>My Projects</div>
                                             </a>
                                         </li>
                                         <li class="user-menu__item">
-                                            <a class="user-menu-link" href="#">
+                                            <a class="user-menu-link" href="{{route('frontend.user.account')}}">
                                                 <i class="fa fa-cog" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
                                                 <div>Account Settings</div>
                                             </a>
