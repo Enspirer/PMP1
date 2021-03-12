@@ -12,26 +12,26 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Marketplace</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        Web Development
+                        Explore
                     </li>
                 </ol>
             </nav>
-            <h1>Web Development</h1>
+            <h1>Projects Marketplace </h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.erunt
-                reprehenderit et explicabo sed minus doloribus commodi at, aliquam
-                tempora earum magnam perferendis asperiores. Culpa?
+                Find the projects matches the skill set of your team on the largest Marketplace for global talents.
+                Pick from the hotlist or search through your favorite categories or skillset
+
             </p>
             <div class="popular">
-                <h3>Popular Picks</h3>
+                <h3>Trending Projects</h3>
                 <div class="row">
                     <div class="card">
                         <div class="circle">
                             <div class="inner">
-                                <img src="{{url('/theme_light/assets/image/icon/browser.png')}}" alt="">
+                                <img src="{{url('/theme_light/assets/image/icon/explore/mobile-app.svg')}}" style="width: 40px;height: 40px;margin: auto;display: flex;" alt="">
                             </div>
                         </div>
-                        <h3>Front End Development</h3>
+                        <h3>Mobile app Development</h3>
                     </div>
 
                     <div class="card">
@@ -46,37 +46,37 @@
                     <div class="card">
                         <div class="circle">
                             <div class="inner">
-                                <img src="{{url('/theme_light/assets/image/icon/browser.png')}}" alt="">
+                                <img src="{{url('/theme_light/assets/image/icon/explore/online-shop.svg')}}" style="width: 40px;height: 40px;margin: auto;display: flex;" alt="">
                             </div>
                         </div>
-                        <h3>Front End Development</h3>
+                        <h3>E-Commerce application </h3>
                     </div>
 
                     <div class="card">
                         <div class="circle">
                             <div class="inner">
-                                <img src="{{url('/theme_light/assets/image/icon/browser.png')}}" alt="">
+                                <img src="{{url('/theme_light/assets/image/icon/explore/organization.svg')}}" style="width: 40px;height: 40px;margin: auto;display: flex;" alt="">
                             </div>
                         </div>
-                        <h3>Front End Development</h3>
+                        <h3>ERP solution</h3>
                     </div>
 
                     <div class="card">
                         <div class="circle">
                             <div class="inner">
-                                <img src="{{url('/theme_light/assets/image/icon/browser.png')}}" alt="">
+                                <img src="{{url('/theme_light/assets/image/icon/explore/communicate.svg')}}" style="width: 40px;height: 40px;margin: auto;display: flex;" alt="">
                             </div>
                         </div>
-                        <h3>Front End Development</h3>
+                        <h3>Digital Marketing campaign</h3>
                     </div>
 
                     <div class="card">
                         <div class="circle">
                             <div class="inner">
-                                <img src="{{url('/theme_light/assets/image/icon/browser.png')}}" alt="">
+                                <img src="{{url('/theme_light/assets/image/icon/explore/payroll.svg')}}" style="width: 40px;height: 40px;margin: auto;display: flex;" alt="">
                             </div>
                         </div>
-                        <h3>Front End Development</h3>
+                        <h3>Payroll Management System</h3>
                     </div>
                 </div>
             </div>
@@ -167,9 +167,9 @@
             <div class="pagination-explore">
                 <div class="pagination d-flex justify-content-center flex-wrap">
                     <a href="#"><i class="fa fa-angle-left"></i></a>
-                    <a href="#">1</a>
+                    <a href="#" class="active">1</a>
                     <a href="#">2</a>
-                    <a href="#" class="active">3</a>
+                    <a href="#">3</a>
                     <a href="#">4</a>
                     <a href="#">5</a>
                     <a href="#">6</a>

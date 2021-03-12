@@ -13,8 +13,7 @@
                     </div>
                     <h1>
                         <a href="{{route('frontend.project_page',1)}}" class="link_element" style="color: #0f0c29;font-size: 22px;">
-                            World-class designer to make mock-up of stages of our
-                            process and a dashboard for landing page
+                            Mobile app Development
                         </a>
 
                     </h1>
@@ -33,18 +32,15 @@
         </div>
         <div class="description">
             <h6>
-                We need support making icons for our website. E.g a mock-up of
-                what one of our screens will look like on our landing page.
-                Ideally, we'd do this as a working session where I'd talk
-                through what we need.
+                A customized mobile application for an insurance company to manage Client accounts.  Users can register their accounts and manage monthly activities through a user friendly interface.
+                The application should be available on Android and iOs
             </h6>
             <div class="skill row">
                 <p>Skill set:</p>
-                <p>Wordpress</p>
-                <p>Vector Graphics</p>
-                <p>Figma</p>
-                <p>Adobe XD</p>
-                <p>UI Design</p>
+                <p>Native Mobile app development</p>
+                <p>UI / UX design</p>
+                <p>API Integration</p>
+                <p>IPG integration</p>
             </div>
         </div>
     </div>
@@ -112,8 +108,7 @@
                 <div class="text col-md-11">
                     <h1>
                         <a href="{{route('frontend.project_page',1)}}" class="link_element" style="color: #0f0c29;font-size: 22px;">
-                            World-class designer to make mock-up of stages of our
-                            process and a dashboard for landing page
+                            E-Commerce application
                         </a>
                     </h1>
                 </div>
@@ -131,18 +126,14 @@
         </div>
         <div class="description">
             <h6>
-                We need support making icons for our website. E.g a mock-up of
-                what one of our screens will look like on our landing page.
-                Ideally, we'd do this as a working session where I'd talk
-                through what we need.
+                A leading fashion brand is planning to upgrade their ecommerce application with the latest trends and features. The application enables the users to manage their account with ease and register for the loyalty program.
             </h6>
             <div class="skill row">
                 <p>Skill set:</p>
-                <p>Wordpress</p>
-                <p>Vector Graphics</p>
-                <p>Figma</p>
-                <p>Adobe XD</p>
-                <p>UI Design</p>
+                <p>Magento</p>
+                <p>PHP</p>
+                <p>UI/ UX development</p>
+                <p>IPG integration</p>
             </div>
         </div>
     </div>
@@ -210,8 +201,7 @@
                 <div class="text col-md-11">
                     <h1>
                         <a href="{{route('frontend.project_page',1)}}" class="link_element" style="color: #0f0c29;font-size: 22px;">
-                            World-class designer to make mock-up of stages of our
-                            process and a dashboard for landing page
+                            ERP solution
                         </a>
                     </h1>
                 </div>
@@ -229,18 +219,12 @@
         </div>
         <div class="description">
             <h6>
-                We need support making icons for our website. E.g a mock-up of
-                what one of our screens will look like on our landing page.
-                Ideally, we'd do this as a working session where I'd talk
-                through what we need.
+                Pharmaceutical company requires an ERP solution to streamline their operations with separate modules for HR, sales, Distributions and Accounts.
             </h6>
             <div class="skill row">
                 <p>Skill set:</p>
-                <p>Wordpress</p>
-                <p>Vector Graphics</p>
-                <p>Figma</p>
-                <p>Adobe XD</p>
-                <p>UI Design</p>
+                <p>JAVA</p>
+                <p>UI/ UX development</p>
             </div>
         </div>
     </div>
@@ -305,8 +289,7 @@
                 <div class="text col-md-11">
                     <h1>
                         <a href="{{route('frontend.project_page',1)}}" class="link_element" style="color: #0f0c29;font-size: 22px;">
-                            World-class designer to make mock-up of stages of our
-                            process and a dashboard for landing page
+                            Digital Marketing campaign
                         </a>
                     </h1>
                 </div>
@@ -324,18 +307,15 @@
         </div>
         <div class="description">
             <h6>
-                We need support making icons for our website. E.g a mock-up of
-                what one of our screens will look like on our landing page.
-                Ideally, we'd do this as a working session where I'd talk
-                through what we need.
+                Online store for Kiddies books publisher is planning for a Digital Marketing campaign covering all main social media channels and Search Engine Optimisation. Comprehensive breakdown of the plan for 1 year.
             </h6>
             <div class="skill row">
                 <p>Skill set:</p>
-                <p>Wordpress</p>
-                <p>Vector Graphics</p>
-                <p>Figma</p>
-                <p>Adobe XD</p>
-                <p>UI Design</p>
+                <p>Keyword research</p>
+                <p>Social media marketing</p>
+                <p>PPC</p>
+                <p>Search engine optimization SEO</p>
+                <p>Google analytics</p>
             </div>
         </div>
     </div>
