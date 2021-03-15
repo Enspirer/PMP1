@@ -96,7 +96,7 @@
                         <h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
                         <!--headin5_amrc-->
                         <ul class="footer_ul_amrc">
-                            <li><a href="">About Us</a></li>
+                            <li><a href="{{route("frontend.about")}}">About Us</a></li>
                             <li><a href="{{route("frontend.expert_center")}}">Expert Centre</a></li>
                             <li><a href="{{route('frontend.project_auction',1)}}">Live Auction</a></li>
                             <li><a href="">Terms & Conditions</a></li>
@@ -227,7 +227,7 @@
         <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
         <script src="{{url('theme_light/charts/chart_section.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-        
+
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
