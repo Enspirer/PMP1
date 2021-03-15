@@ -17,6 +17,7 @@ class BlogController extends Controller
         return view('blog::index');
     }
 
+
     /**
      * Show the form for creating a new resource.
      * @return Renderable

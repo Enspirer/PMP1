@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Blog\Http\Controllers\Frontend;
+namespace Modules\Career\Http\Controllers\Frontend;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class BlogController extends Controller
+class CareerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,13 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog::frontend.blog');
+        return view('career::frontend.index');
     }
-    public function blog_post()
-    {
-        return view('blog::frontend.blog_post');
-    }
-
 
     /**
      * Show the form for creating a new resource.
@@ -28,7 +23,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('blog::create');
+        return view('career::create');
     }
 
     /**
@@ -48,7 +43,7 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        return view('blog::show');
+        return view('career::show');
     }
 
     /**
@@ -58,7 +53,7 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        return view('blog::edit');
+        return view('career::edit');
     }
 
     /**

@@ -8,3 +8,4 @@
 
 
     Route::get('/', 'BlogController@index');
+    Route::get('blog_post', 'BlogController@blog_post')->name('blog_post');

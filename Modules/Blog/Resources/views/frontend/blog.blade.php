@@ -175,7 +175,7 @@
                                 </h6>
 
                                 <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
+                                    <a href="{{route("frontend.blog_post")}}" class="row m-0">
                                         <p>Read More</p>
                                         <i class="fa fa-angle-right" aria-hidden="true"></i
                                         ></a>
