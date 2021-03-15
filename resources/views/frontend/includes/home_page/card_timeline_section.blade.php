@@ -22,7 +22,7 @@
 
     <div class="">
         <div class="timeline" data-animscroll="fade-up" data-animscroll-delay="100">
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container1">
                 <div class="swiper-wrapper ol">
                     <div class="swiper-slide li">
                         <div class="anim-hover-grow">

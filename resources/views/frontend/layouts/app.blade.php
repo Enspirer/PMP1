@@ -186,7 +186,20 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
         <script>
-            var swiper = new Swiper(".swiper-container", {
+            var swiper = new Swiper('.swiper-container2', {
+                pagination: {
+                    el: '.swiper-pagination2',
+                    clickable: true,
+                },
+                // autoplay: {
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // },
+            });
+        </script>
+
+        <script>
+            var swiper = new Swiper(".swiper-container1", {
                 // spaceBetween: -100,
                 autoplay: {
                     delay: 1000,
@@ -251,6 +264,9 @@
             });
 
         </script>
+
+
+
         @stack('after-scripts')
 
         @include('includes.partials.ga')
