@@ -25,6 +25,20 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/blog_category'))}}" href="{{ route('admin.blog_category.index') }}">
+                    <i class="nav-icon fas fa-list-alt"></i>
+                    Blog Category
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/blog_post'))}}" href="{{ route('admin.blog_post.index') }}">
+                    <i class="nav-icon fas fa-book"></i>
+                    Blog Post
+                </a>
+            </li>
+
 
             <li class="nav-item">
                 <a class="nav-link {{active_class(Route::is('admin/settigs'))}}" href="{{ route('admin.settings') }}">

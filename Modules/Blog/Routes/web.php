@@ -40,3 +40,23 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      */
     include_route_files(__DIR__.'/backend/');
 });
+
+Breadcrumbs::for('admin.blog_category.index', function ($trail) {
+    $trail->push('Blog Category', route('admin.blog_category.index'));
+});
+
+Breadcrumbs::for('admin.blog_category.create', function ($trail) {
+    $trail->push('Blog Category Create', route('admin.blog_category.create'));
+});
+
+Breadcrumbs::for('admin.blog_category.show', function ($trail) {
+    $trail->push('Blog Category Edit', route('admin.blog_category.show',1));
+});
+
+Breadcrumbs::for('admin.blog_post.index', function ($trail) {
+    $trail->push('Blog Post', route('admin.blog_post.index'));
+});
+
+Breadcrumbs::for('admin.blog_post.create', function ($trail) {
+    $trail->push('Blog Post Create', route('admin.blog_post.create'));
+});

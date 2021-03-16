@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
 
-
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
     <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <!-- Check if the language is set to RTL, so apply the RTL layouts -->
