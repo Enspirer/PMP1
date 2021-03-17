@@ -79,7 +79,11 @@ class BlogPostController extends Controller
      */
     public function show($id)
     {
-        return view('blog::show');
+        $BlogCategory = BlogCategory::get();
+        $blog_post = BlogPost::where('id',$id)->first();
+        return view('blog::backend.blog_post.edit',[
+            'blog_post'=> $blog_post,'BlogCategory'=>$BlogCategory
+        ]);
     }
 
     /**
@@ -98,9 +102,39 @@ class BlogPostController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $id=$request->id;
+        $BlogPost = new BlogPost();
+        $BlogPost->title = $request->title;
+        $BlogPost->slug = $request->slug;
+        $BlogPost->category_id = $request->category;
+        $BlogPost->user_id = Auth::id();
+        $BlogPost->body = $request->body;
+        $BlogPost->short_description = $request->short_description;
+        if ($request->hasFile('feature_image')) {
+            $file = $request->file('feature_image');
+            $destinationPath = 'upload/blog/files/'; // upload path
+            $file_parth = 'upload/blog/files/' . date('YmdHis') . "." . $file->getClientOriginalExtension();
+            $file->move($destinationPath, $file_parth);
+            $BlogPost->feature_image = "$file_parth";
+        }
+        else{
+            $img= BlogPost::where('id',$id)->first();
+            $BlogPost->feature_image =$img->feature_image;
+        }
+        $data=array(
+            'title' => $BlogPost->title,
+            'slug'=>$BlogPost->slug,
+            'category_id'=>$BlogPost->category_id,
+            'user_id'=>$BlogPost->user_id,
+            'body'=>$BlogPost->body,
+            'short_description'=>$BlogPost->short_description,
+            'feature_image'=>$BlogPost->feature_image,
+        );
+        BlogPost::where('id',$id)->update($data);
+
+        return back()->withFlashSuccess('Post Is Update Successfully');;
     }
 
     /**

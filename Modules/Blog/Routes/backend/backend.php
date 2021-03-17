@@ -21,4 +21,5 @@ Route::get('blog_post/create', 'BlogPostController@create')->name('blog_post.cre
 Route::get('blog_post/post_details', 'BlogPostController@GetTableDetails')->name('blog_post.get_post_details');
 Route::post('blog_post/store', 'BlogPostController@store')->name('blog_post.store');
 Route::get('blog_post/show/{id}', 'BlogPostController@show')->name('blog_post.show');
+Route::post('blog_post/update', 'BlogPostController@update')->name('blog_post.update');
 Route::get('blog_post/destroy/{id}', 'BlogPostController@destroy')->name('blog_post.destroy');

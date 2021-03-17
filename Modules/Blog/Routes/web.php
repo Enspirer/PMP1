@@ -60,3 +60,8 @@ Breadcrumbs::for('admin.blog_post.index', function ($trail) {
 Breadcrumbs::for('admin.blog_post.create', function ($trail) {
     $trail->push('Blog Post Create', route('admin.blog_post.create'));
 });
+
+Breadcrumbs::for('admin.blog_post.show', function ($trail) {
+    $trail->push('Blog Post Edit', route('admin.blog_post.show',1));
+});
+
