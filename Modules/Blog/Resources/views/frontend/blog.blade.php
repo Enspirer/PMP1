@@ -80,7 +80,7 @@
                                         <p>{{$blogpost->created_at}}</p><br>
 
                                         <h5>{{$blogpost->title}}</h5>
-                                        <h6 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
+                                        <h6 style="height: 190px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
                                             {{$blogpost->short_description}}
                                         </h6>
 
