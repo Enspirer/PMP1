@@ -61,6 +61,7 @@ class BlogCategoryController extends Controller
         $blogCategory = new BlogCategory;
         $blogCategory->name = $request->name;
         $blogCategory->description = $request->description;
+        $blogCategory->color = $request->color;
         $blogCategory->status = $request->status;
         $blogCategory->save();
 
@@ -103,12 +104,14 @@ class BlogCategoryController extends Controller
         $blogCategory = new BlogCategory;
         $blogCategory->name = $request->name;
         $blogCategory->description = $request->description;
+        $blogCategory->color = $request->color;
         $blogCategory->status = $request->status;
 
         $data=array(
             'name' => $blogCategory->name,
             'description'=>$blogCategory->description,
             'status'=>$blogCategory->status,
+            'color'=>$blogCategory->color,
         );
         BlogCategory::where('id',$id)->update($data);
 

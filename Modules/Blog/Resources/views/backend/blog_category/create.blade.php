@@ -18,6 +18,18 @@
                             <input name="name" type="text" class="form-control">
                         </div>
 
+                        <div class="form-group">
+                          <label>Color</label>
+                             <select class="form-control" name="color">
+                               <option value="blue">Blue</option>
+                               <option value="purple">Purple</option>
+                               <option value="light-blue">Light Blue</option>
+                               <option value="red">Red</option>
+                               <option value="yellow">Yellow</option>
+                               <option value="green">Green</option>
+                             </select>
+                        </div>
+
 
                         <div class="form-group">
                             <label >Description</label>

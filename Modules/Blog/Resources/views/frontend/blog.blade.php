@@ -78,84 +78,26 @@
             </div>
 
             <div class="type-row row">
-                <div class="single-type col-md-2">
-                    <div class="card-type">
-                        <div class="text-block">
-                            <p>About</p>
-                            <h5>Companies</h5>
+
+                @foreach($blog_category as $blog_cat)
+                    <div class="single-type col-md-2">
+                        <div class="card-type">
+                            <div class="text-block">
+                                <p>About</p>
+                                <h5>{{$blog_cat->name}}</h5>
+                            </div>
+                        </div>
+                        <div class="card-round-outer">
+                            <div class="card-circle-inner {{$blog_cat->color}}">
+                                <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-round-outer">
-                        <div class="card-circle-inner red">
-                            <h3>C</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-type col-md-2">
-                    <div class="card-type">
-                        <div class="text-block">
-                            <p>About</p>
-                            <h5>Agencies</h5>
-                        </div>
-                    </div>
-                    <div class="card-round-outer">
-                        <div class="card-circle-inner blue">
-                            <h3>A</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-type col-md-2">
-                    <div class="card-type">
-                        <div class="text-block">
-                            <p>About</p>
-                            <h5>Freelancers</h5>
-                        </div>
-                    </div>
-                    <div class="card-round-outer">
-                        <div class="card-circle-inner purple">
-                            <h3>F</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-type col-md-2">
-                    <div class="card-type">
-                        <div class="text-block">
-                            <p>About</p>
-                            <h5>Brands</h5>
-                        </div>
-                    </div>
-                    <div class="card-round-outer">
-                        <div class="card-circle-inner light-blue">
-                            <h3>B</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-type col-md-2">
-                    <div class="card-type">
-                        <div class="text-block">
-                            <p>About</p>
-                            <h5>News</h5>
-                        </div>
-                    </div>
-                    <div class="card-round-outer">
-                        <div class="card-circle-inner yellow">
-                            <h3>N</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-type col-md-2">
-                    <div class="card-type">
-                        <div class="text-block">
-                            <p>About</p>
-                            <h5>Blogs</h5>
-                        </div>
-                    </div>
-                    <div class="card-round-outer">
-                        <div class="card-circle-inner green">
-                            <h3>B</h3>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
+
+
+
             </div>
 
             <div class="all-blog-post">

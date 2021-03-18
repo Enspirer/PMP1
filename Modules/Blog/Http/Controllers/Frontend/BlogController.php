@@ -5,6 +5,7 @@ namespace Modules\Blog\Http\Controllers\Frontend;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Blog\Entities\BlogCategory;
 
 class BlogController extends Controller
 {
@@ -14,7 +15,10 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog::frontend.blog');
+        $blogCategory = BlogCategory::where('status', 1)->get();
+        return view('blog::frontend.blog',[
+            'blog_category' => $blogCategory
+        ]);
     }
     public function blog_post()
     {

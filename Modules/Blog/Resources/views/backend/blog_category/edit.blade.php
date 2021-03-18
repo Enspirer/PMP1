@@ -19,6 +19,18 @@
                             <input name="name" type="text" class="form-control" value="{{$blog_category->name}}">
                         </div>
 
+                        <div class="form-group">
+                            <label>Color</label>
+                            <select class="form-control" name="color">
+                                <option value="blue" {{ $blog_category->color == "blue" ? "selected" : "" }} >Blue</option>
+                                <option value="purple" {{ $blog_category->color == "purple" ? "selected" : "" }} >Purple</option>
+                                <option value="light-blue" {{ $blog_category->color == "light-blue" ? "selected" : "" }} >Light Blue</option>
+                                <option value="red" {{ $blog_category->color == "red" ? "selected" : "" }} >Red</option>
+                                <option value="yellow" {{ $blog_category->color == "yellow" ? "selected" : "" }} >Yellow</option>
+                                <option value="green" {{ $blog_category->color == "green" ? "selected" : "" }} >Green</option>
+                            </select>
+                        </div>
+
 
                         <div class="form-group">
                             <label >Description</label>
