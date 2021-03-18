@@ -2,6 +2,7 @@
 
 namespace Modules\Blog\Http\Controllers\Frontend;
 
+use App\Models\Auth\User;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -24,8 +25,14 @@ class BlogController extends Controller
             $blogDetail = BlogPost::all();
         }else{
             $get_blog_category_selected = BlogCategory::where('name', $category_name)->first();
-            $blogDetail = BlogPost::where('category_id',$get_blog_category_selected->id)
-                ->get();
+            if($get_blog_category_selected)
+            {
+                $blogDetail = BlogPost::where('category_id',$get_blog_category_selected->id)
+                    ->get();
+            }else{
+                $blogDetail = BlogPost::all();
+            }
+
 
 
         }
@@ -37,9 +44,17 @@ class BlogController extends Controller
             'featuresBlog'=>$featuresBlog
         ]);
     }
-    public function blog_post()
+    public function blog_post($slug)
     {
-        return view('blog::frontend.blog_post');
+        $getPost = BlogPost::where('slug',$slug)->first();
+        $getUser = User::where('id',$getPost->user_id)->first();
+
+
+
+        return view('blog::frontend.blog_post',[
+            'get_post' => $getPost,
+            'author_details' => $getUser
+        ]);
     }
 
 

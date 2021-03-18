@@ -67,31 +67,34 @@
             <div class="all-blog-post">
                 <div class="row">
                     @foreach($blog_posts as $blogpost)
-                        <div class="col-md-4">
-                            <div class="card-blog-item">
-                                <div class="" style="background-image: url('{{url($blogpost->feature_image)}}');height: 210px;background-size: cover;background-repeat: no-repeat;"></div>
+                        <a href="{{route("frontend.blog_post",$blogpost->slug)}}">
+                            <div class="col-md-4">
+                                <div class="card-blog-item">
+                                    <div class="" style="background-image: url('{{url($blogpost->feature_image)}}');height: 210px;background-size: cover;background-repeat: no-repeat;"></div>
 
-                                <img
-                                        src=""
-                                        alt=""
-                                />
-                                <div class="card-blog-item-bottum">
-                                    <p>{{$blogpost->created_at}}</p><br>
+                                    <img
+                                            src=""
+                                            alt=""
+                                    />
+                                    <div class="card-blog-item-bottum">
+                                        <p>{{$blogpost->created_at}}</p><br>
 
-                                    <h5>{{$blogpost->title}}</h5>
-                                    <h6 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
-                                        {{$blogpost->short_description}}
-                                    </h6>
+                                        <h5>{{$blogpost->title}}</h5>
+                                        <h6 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
+                                            {{$blogpost->short_description}}
+                                        </h6>
 
-                                    <div class="read-more-card row m-0 mt-3">
-                                        <a href="{{route("frontend.blog_post")}}" class="row m-0">
-                                            <p>Read More</p>
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i
-                                            ></a>
+                                        <div class="read-more-card row m-0 mt-3">
+                                            <a href="{{route("frontend.blog_post",$blogpost->slug)}}" class="row m-0">
+                                                <p>Read More</p>
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i
+                                                ></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+
                     @endforeach
                 </div>
             </div>

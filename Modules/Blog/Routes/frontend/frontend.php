@@ -8,4 +8,4 @@
 
 
     Route::get('/{category_name}', 'BlogController@index')->name('blog');
-    Route::get('blog_post', 'BlogController@blog_post')->name('blog_post');
+    Route::get('blog_post/{slug}', 'BlogController@blog_post')->name('blog_post');
