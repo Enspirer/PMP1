@@ -115,7 +115,7 @@
                                 <a href="">Partner with us</a>
                             </li>
                             <li><a href="">Events</a></li>
-                            <li><a href="">Blog</a></li>
+                            <li><a href="{{route('frontend.blog','all')}}">Blog</a></li>
                             <li><a href="">Sitemap</a></li>
                         </ul>
                         <!--footer_ul_amrc ends here-->
