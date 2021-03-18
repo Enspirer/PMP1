@@ -80,19 +80,24 @@
             <div class="type-row row">
 
                 @foreach($blog_category as $blog_cat)
-                    <div class="single-type col-md-2">
-                        <div class="card-type">
-                            <div class="text-block">
-                                <p>About</p>
-                                <h5>{{$blog_cat->name}}</h5>
+
+                        <div class="single-type col-md-2">
+                            <div class="card-type">
+                                <div class="text-block">
+                                    <p>About</p>
+                                    <a href="{{route('frontend.blog',$blog_cat->name)}}">
+                                         <h5>{{$blog_cat->name}}</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-round-outer">
+                                <div class="card-circle-inner {{$blog_cat->color}}">
+                                    <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-round-outer">
-                            <div class="card-circle-inner {{$blog_cat->color}}">
-                                <h3>{{substr($blog_cat->name,0,1)}}</h3>
-                            </div>
-                        </div>
-                    </div>
+
+
                 @endforeach
 
 
@@ -102,207 +107,34 @@
 
             <div class="all-blog-post">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
+                    @foreach($blog_posts as $blogpost)
+                        <div class="col-md-4">
+                            <div class="card-blog-item">
+                                <div class="" style="background-image: url('{{url($blogpost->feature_image)}}');height: 210px;background-size: cover;background-repeat: no-repeat;"></div>
 
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="{{route("frontend.blog_post")}}" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i
-                                        ></a>
+                                <img
+                                        src=""
+                                        alt=""
+                                />
+                                <div class="card-blog-item-bottum">
+                                    <p>{{$blogpost->created_at}}</p><br>
+
+                                    <h5>{{$blogpost->title}}</h5>
+                                    <h6 style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
+                                        {{$blogpost->short_description}}
+                                    </h6>
+
+                                    <div class="read-more-card row m-0 mt-3">
+                                        <a href="{{route("frontend.blog_post")}}" class="row m-0">
+                                            <p>Read More</p>
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i
+                                            ></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
+                    @endforeach
 
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i
-                                        ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i
-                                        ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-blog-item">
-                            <img
-                                src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                                alt=""
-                            />
-                            <div class="card-blog-item-bottum">
-                                <p>02 Feb 2021</p>
-                                <h5>Lorem ipsum title</h5>
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                </h6>
-
-                                <div class="read-more-card row m-0 mt-3">
-                                    <a href="#" class="row m-0">
-                                        <p>Read More</p>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
