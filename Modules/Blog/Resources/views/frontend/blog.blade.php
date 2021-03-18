@@ -69,7 +69,7 @@
                     @foreach($blog_posts as $blogpost)
                         <a href="{{route("frontend.blog_post",$blogpost->slug)}}">
                             <div class="col-md-4">
-                                <div class="card-blog-item">
+                                <div class="card-blog-item" style="height: 600px;">
                                     <div class="" style="background-image: url('{{url($blogpost->feature_image)}}');height: 210px;background-size: cover;background-repeat: no-repeat;"></div>
 
                                     <img
