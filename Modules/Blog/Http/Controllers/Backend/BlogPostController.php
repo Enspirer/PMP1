@@ -27,7 +27,7 @@ class BlogPostController extends Controller
         return Datatables::of($category)
 
             ->addColumn('action', function($row){
-                $btn = '<a href="'.route("admin.blog_post.show",$row->id).'" class="edit btn btn-primary btn-sm" style="margin-right: 10px"><i class="fa fa-eye"></i> View </a>';
+                $btn = '<a href="'.route("admin.blog_post.show",$row->id).'" class="edit btn btn-primary btn-sm" style="margin-right: 10px"><i class="fa fa-edit"></i> Edit </a>';
                 $btn2 = '<a href="'.route("admin.blog_post.destroy",$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete </a>';
                 return  $btn.$btn2;
             })
@@ -68,8 +68,7 @@ class BlogPostController extends Controller
             $BlogPost->feature_image = "$file_parth";
         }
         $BlogPost->save();
-
-        return back()->withFlashSuccess('Post Is Saved Successfully');;
+        return redirect()->route('admin.blog_post.index')->withFlashSuccess('Post Is Saved Successfully');
     }
 
     /**
@@ -134,7 +133,8 @@ class BlogPostController extends Controller
         );
         BlogPost::where('id',$id)->update($data);
 
-        return back()->withFlashSuccess('Post Is Update Successfully');;
+        return redirect()->route('admin.blog_post.index')->withFlashSuccess('Post Is Update Successfully');
+
     }
 
     /**

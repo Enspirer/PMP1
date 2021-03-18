@@ -24,9 +24,17 @@ class BlogCategoryController extends Controller
     {
         $category = BlogCategory::select(['id', 'name', 'description','status','created_at']);
         return Datatables::of($category)
+            ->editColumn('status',function ($row){
+                if ($row->status == 1)
+                {
+                    return 'enabled';
+                }else{
+                    return 'disabled';
+                }
+            })
 
             ->addColumn('action', function($row){
-                $btn = '<a href="'.route("admin.blog_category.show",$row->id).'" class="edit btn btn-primary btn-sm" style="margin-right: 10px"><i class="fa fa-eye"></i> View </a>';
+                $btn = '<a href="'.route("admin.blog_category.show",$row->id).'" class="edit btn btn-primary btn-sm" style="margin-right: 10px"><i class="fa fa-edit"></i> Edit </a>';
                 $btn2 = '<a href="'.route("admin.blog_category.destroy",$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete </a>';
                 return  $btn.$btn2;
             })
@@ -56,7 +64,8 @@ class BlogCategoryController extends Controller
         $blogCategory->status = $request->status;
         $blogCategory->save();
 
-        return back()->withFlashSuccess('Category Is Saved Successfully');;
+        return redirect()->route('admin.blog_category.index')->withFlashSuccess('Category Is Saved Successfully');
+
     }
 
     /**
@@ -103,7 +112,7 @@ class BlogCategoryController extends Controller
         );
         BlogCategory::where('id',$id)->update($data);
 
-        return back()->withFlashSuccess('Category Is Update Successfully');;
+        return redirect()->route('admin.blog_category.index')->withFlashSuccess('Category Is Update Successfully');
     }
 
     /**

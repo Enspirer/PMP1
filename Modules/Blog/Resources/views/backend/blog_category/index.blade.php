@@ -17,7 +17,6 @@
                         <tr>
                             <th scope="col">#ID</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Description</th>
                             <th scope="col">Status</th>
                             <th scope="col">Created At</th>
                             <th scope="col">Option</th>
@@ -41,7 +40,6 @@
                 columns: [
                     {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
-                    {data: 'description', name: 'description'},
                     {data: 'status', name: 'status'},
                     {data: 'created_at', name: 'created_at'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
