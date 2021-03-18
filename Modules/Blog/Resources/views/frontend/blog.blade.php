@@ -6,60 +6,26 @@
     <section class="expert-section">
         <div class="swiper-container swiper-container2">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">  <div class="expert-image">
-                        <img
-                            src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                            style="object-position: center"
-                        />
-                        <div class="expert-gradient"></div>
-                        <div class="expert-text-head">
-                            <div class="container">
 
-                                <div class="header-title-swipper">
-                                    <p>Post 10h ago</p>
-                                    <h1>
-                                        Introducing Tallentor live <br /> Auctions
-                                    </h1>
+                @foreach($featuresBlog as $featureblog)
+                    <div class="swiper-slide">
+                        <div class="expert-image">
+                            <img src="{{url($featureblog->feature_image)}}" style="object-position: center">
+                            <div class="expert-gradient"></div>
+                            <div class="expert-text-head">
+                                <div class="container">
+
+                                    <div class="header-title-swipper">
+                                        <p>Post 10h ago</p>
+                                        <h1>
+                                            {{$featureblog->title}}
+                                        </h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div></div>
-                <div class="swiper-slide">  <div class="expert-image">
-                        <img
-                            src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                            style="object-position: center"
-                        />
-                        <div class="expert-gradient"></div>
-                        <div class="expert-text-head">
-                            <div class="container">
-
-                                <div class="header-title-swipper">
-                                    <p>Post 10h ago</p>
-                                    <h1>
-                                        Introducing Tallentor live <br /> Auctions
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div>
-                <div class="swiper-slide">  <div class="expert-image">
-                        <img
-                            src="{{url('theme_light/assets/pexels-fauxels-3184291.jpg')}}"
-                            style="object-position: center"
-                        />
-                        <div class="expert-gradient"></div>
-                        <div class="expert-text-head">
-                            <div class="container">
-
-                                <div class="header-title-swipper">
-                                    <p>Post 10h ago</p>
-                                    <h1>
-                                        Introducing Tallentor live <br /> Auctions
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div></div>
+                    </div>
+                @endforeach
 
             </div>
             <!-- Add Pagination -->
@@ -78,7 +44,6 @@
             </div>
 
             <div class="type-row row">
-
                 @foreach($blog_category as $blog_cat)
 
                         <div class="single-type col-md-2">
@@ -96,13 +61,7 @@
                                 </div>
                             </div>
                         </div>
-
-
                 @endforeach
-
-
-
-
             </div>
 
             <div class="all-blog-post">
@@ -134,7 +93,6 @@
                             </div>
                         </div>
                     @endforeach
-
                 </div>
             </div>
         </div>

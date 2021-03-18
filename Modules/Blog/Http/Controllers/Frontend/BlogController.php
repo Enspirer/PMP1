@@ -17,6 +17,7 @@ class BlogController extends Controller
     public function index($category_name)
     {
         $blogCategory = BlogCategory::where('status', 1)->get();
+        $featuresBlog = BlogPost::all()->take(4);
 
         if ($category_name == 'all')
         {
@@ -32,7 +33,8 @@ class BlogController extends Controller
         return view('blog::frontend.blog',[
             'blog_category' => $blogCategory,
             'category_name' => $category_name,
-            'blog_posts' => $blogDetail
+            'blog_posts' => $blogDetail,
+            'featuresBlog'=>$featuresBlog
         ]);
     }
     public function blog_post()
