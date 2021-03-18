@@ -186,36 +186,59 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
         <script>
+            var galleryThumbs = new Swiper(".gallery-thumbs", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            var galleryTop = new Swiper(".gallery-top", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: galleryThumbs,
+                },
+            });
+        </script>
+
+        <script>
+            var swiper = new Swiper(".col-swiper-container", {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <script>
             var swiper = new Swiper('.swiper-container2', {
                 pagination: {
                     el: '.swiper-pagination2',
                     clickable: true,
                 },
-                // autoplay: {
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // },
             });
         </script>
 
         <script>
             var swiper = new Swiper(".swiper-container1", {
-                // spaceBetween: -100,
                 autoplay: {
                     delay: 1000,
                 },
                 loop: true,
                 loopedSlides: 50,
                 breakpoints: {
-                    // when window width is >= 320px
                     320: {
                         slidesPerView: 2,
                     },
-                    // when window width is >= 480px
                     480: {
                         slidesPerView: 3,
                     },
-                    // when window width is >= 640px
                     640: {
                         slidesPerView: 4,
                     },
