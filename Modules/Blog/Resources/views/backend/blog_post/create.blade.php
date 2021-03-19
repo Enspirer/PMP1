@@ -39,7 +39,7 @@
 
                         <div class="form-group">
                             <label>Short Description</label>
-                            <input name="short_description" type="text" class="form-control">
+                            <textarea name="short_description" class="form-control" rows="10"></textarea>
                         </div>
 
 

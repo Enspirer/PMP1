@@ -22,6 +22,7 @@ class CreateBlogPostsTable extends Migration
             $table->text('body');
             $table->text('feature_image');
             $table->text('short_description');
+            $table->text('reference_post_ids')->nullable();
             $table->timestamps();
         });
     }
