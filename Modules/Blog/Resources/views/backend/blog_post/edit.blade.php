@@ -54,13 +54,16 @@
                                 <div class="">
                                     <label>Title</label>
                                         <div class="row" id="reference_links">
-
                                             @foreach($get_references as $get_reference)
-
+                                                <div class="col-md-12" id="{{$get_reference->id}}">
+                                                    <select class="form-control" name="reference_post_id[]" required>
+                                                        @foreach($blog_posts as $blogpost_r)
+                                                             <option value="{{$blogpost_r->id}}" {{ $get_reference->id == "$blogpost_r->id" ? "selected" : "" }}>{{$blogpost_r->title}}</option>
+                                                        @endforeach
+                                                        </select>
+                                                    <a onclick="delete_reference({{$get_reference->id}})" class="btn btn-primary">X</a><br><br>
+                                                </div>
                                             @endforeach
-
-
-
                                         </div>
                                         <div class="">
                                             <div onclick="add_reference()" class="" style="border-style: dashed;border-width: 2px;padding: 10px;color: grey;">
