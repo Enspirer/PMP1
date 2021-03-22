@@ -80,8 +80,18 @@ class BlogPostController extends Controller
     {
         $BlogCategory = BlogCategory::get();
         $blog_post = BlogPost::where('id',$id)->first();
+        $blogPorstes = BlogPost::all();
+
+        $getPostDetails =  json_decode($blog_post->reference_post_ids);
+
+        $gerReferenceData = BlogPost::whereIn('id',$getPostDetails)->get();
+
+
         return view('blog::backend.blog_post.edit',[
-            'blog_post'=> $blog_post,'BlogCategory'=>$BlogCategory
+            'blog_post'=> $blog_post,
+            'BlogCategory'=>$BlogCategory,
+            'blog_posts' => $blogPorstes,
+            'get_references' => $gerReferenceData,
         ]);
     }
 
@@ -111,6 +121,7 @@ class BlogPostController extends Controller
         $BlogPost->user_id = Auth::id();
         $BlogPost->body = $request->body;
         $BlogPost->short_description = $request->short_description;
+        $BlogPost->reference_post_ids = json_encode($request->reference_post_id);
         if ($request->hasFile('feature_image')) {
             $file = $request->file('feature_image');
             $destinationPath = 'upload/blog/files/'; // upload path
@@ -130,6 +141,7 @@ class BlogPostController extends Controller
             'body'=>$BlogPost->body,
             'short_description'=>$BlogPost->short_description,
             'feature_image'=>$BlogPost->feature_image,
+            'reference_post_ids'=>$BlogPost->reference_post_ids,
         );
         BlogPost::where('id',$id)->update($data);
 

@@ -4,15 +4,45 @@
 
 @section('content')
     <div class="row">
-        <div class="col">
+        <div class="col-md-3">
+            <div class="card" style="height: 100px;padding-top: 10px">
+                <div class="container">
+                    <h3>Blog Posts</h3>
+                    <h1>20</h1><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="height: 100px;padding-top: 10px">
+                <div class="container">
+                    <h3>Invoices</h3>
+                    <h1>0</h1><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="height: 100px;padding-top: 10px">
+                <div class="container">
+                    <h3>Invoice Count</h3>
+                    <h1>0</h1><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="height: 100px;padding-top: 10px">
+                <div class="container">
+                    <h3>Projects</h3>
+                    <h1>0</h1><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="row" style="padding: 10px;">
             <div class="card">
-                <div class="card-header">
-                    <strong>@lang('strings.backend.dashboard.welcome') {{ $logged_in_user->name }}!</strong>
-                </div><!--card-header-->
-                <div class="card-body">
-                    {!! __('strings.backend.welcome') !!}
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--col-->
-    </div><!--row-->
+
+            </div>
+        </div>
+    </div>
 @endsection
