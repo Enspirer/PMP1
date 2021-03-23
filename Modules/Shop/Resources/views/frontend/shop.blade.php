@@ -6,7 +6,7 @@
 
     <section class="expert-section">
         <div class="expert-image">
-            <img src="assets/news.png" style="object-position: top" alt="" />
+            <img src="{{url('theme_light/assets/cosmo-consult_crm_resco-mobile-crm_shutterstock_1030116061.jpg')}}" style="object-position: top; object-fit: cover;" alt="" />
             <div class="expert-gradient"></div>
             <div class="expert-text-head">
                 <div class="container">
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-4 mt-5">
                     <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                    <img  src="{{url('theme_light/assets/pos.jpg')}}" alt="">
                         <div class="card-shop-bottum">
                             <div class="row m-0">
                                 <p><a href="#"> POS System</a></p>
@@ -49,16 +49,16 @@
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                    <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
                         <div class="card-shop-bottum">
                             <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
+                            <p><a href="#">E-Commerce Solution</a></p>
                                 <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                             </div>
                             <div class="row m-0 mt-1">
                                 <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
+                                <h3>From $50</h3>
+                                                    <h6>per month</h6>
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -67,16 +67,16 @@
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                    <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
                         <div class="card-shop-bottum">
                             <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
+                            <p><a href="#">Payroll management s..</a></p>
                                 <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                             </div>
                             <div class="row m-0 mt-1">
                                 <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
+                                <h3>From $1500</h3>
+                                                    <h6>per month</h6>
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -85,16 +85,16 @@
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                    <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
                         <div class="card-shop-bottum">
                             <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
+                            <p><a href="#">Multi vendor ecommerce..</a></p>
                                 <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                             </div>
                             <div class="row m-0 mt-1">
                                 <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
+                                <h3>From $100</h3>
+                                                    <h6>per month</h6>
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -103,16 +103,16 @@
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                    <img src="{{url('theme_light/assets/erp.jpg')}}" alt="">
                         <div class="card-shop-bottum">
                             <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
+                            <p><a href="#">ERP Hospital Manage..</a></p>
                                 <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                             </div>
                             <div class="row m-0 mt-1">
                                 <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
+                                <h3>From $3000</h3>
+                                                    <h6>per month</h6>
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -121,76 +121,23 @@
                 </div>
                 <div class="col-md-4 mt-5">
                     <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                    <img src="{{url('theme_light/assets/crm.jpg')}}" alt="">
                         <div class="card-shop-bottum">
                             <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
+                            <p><a href="#">CRM System</a></p>
                                 <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                             </div>
                             <div class="row m-0 mt-1">
                                 <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
+                                <h3>From $2000</h3>
+                                                    <h6>per month</h6>
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5">
-                    <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
-                        <div class="card-shop-bottum">
-                            <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
-                                <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
-                            </div>
-                            <div class="row m-0 mt-1">
-                                <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
-                                </div>
-                                <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5">
-                    <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
-                        <div class="card-shop-bottum">
-                            <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
-                                <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
-                            </div>
-                            <div class="row m-0 mt-1">
-                                <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
-                                </div>
-                                <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5">
-                    <div class="card-shop">
-                        <img src="assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
-                        <div class="card-shop-bottum">
-                            <div class="row m-0">
-                                <p><a href="#"> POS System</a></p>
-                                <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
-                            </div>
-                            <div class="row m-0 mt-1">
-                                <div class="price">
-                                    <h3>From $1800</h3>
-                                    <h6>per month</h6>
-                                </div>
-                                <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          
             </div>
 
             <div class="pagination-explore">

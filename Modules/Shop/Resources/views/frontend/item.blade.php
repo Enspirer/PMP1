@@ -28,21 +28,21 @@
                             </div>
                             <div class="swiper-slide">
                                 <img
-                                    src="{{url('theme_light/assets/HR-Leave_Management.png')}}"
+                                src="{{url('theme_light/assets/HR-Dashboard.png')}}"
                                     style="width: 100%"
                                     alt=""
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
-                                    src="{{url('theme_light/assets/UI-UX-keywealth.png')}}"
+                                src="{{url('theme_light/assets/Payroll-Management-System.jpg')}}"
                                     style="width: 100%"
                                     alt=""
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
-                                    src="{{url('theme_light/assets/erp_1.png')}}"
+                                src="{{url('theme_light/assets/HR-Dashboard.png')}}"
                                     style="width: 100%"
                                     alt=""
                                 />
@@ -52,7 +52,7 @@
                         <div class="swiper-button-next swiper-button-white"></div>
                         <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
-                    <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-container gallery-thumbs d-none" > 
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img
