@@ -138,7 +138,7 @@
 
     <div class="shop-button">
         <div class="container d-flex justify-content-center">
-            <a href="#">View all products</a>
+            <a href="{{route('frontend.shop.index')}}">View all products</a>
         </div>
 
     </div>

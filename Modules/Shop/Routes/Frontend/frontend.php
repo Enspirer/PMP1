@@ -7,5 +7,5 @@
 */
 
 
-Route::get('/', 'ShopController@index');
-Route::get('item', 'ShopController@item')->name('item');
+Route::get('/', 'ShopController@index')->name('shop.index');
+Route::get('item', 'ShopController@item')->name('shop.item');

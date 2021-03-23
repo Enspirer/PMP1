@@ -42,7 +42,7 @@
                                     <h3>From $1800</h3>
                                     <h6>per month</h6>
                                 </div>
-                                <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
