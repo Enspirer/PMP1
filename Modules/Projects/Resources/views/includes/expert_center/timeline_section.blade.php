@@ -368,8 +368,71 @@
     <h1>Book your Tallentor expert team today</h1>
     <div class="row">
         <a class="fill" href="#"  data-toggle="modal" data-target="#exampleModal">Book Tallentor expert team</a>
-        <a class="outline" href="#"  data-toggle="modal" data-target="#exampleModal">Request For 15 min free consultation</a>
+        <a class="outline" href="#"  data-toggle="modal" data-target="#exampleModalLong">Request For 15 min free consultation</a>
     </div>
 </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index: 9999999;">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Request 15min free consultation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="form-group">
+                <label>Your name*</label>
+                <input type="text" class="form-control" > 
+              </div>
+              <div class="form-group">
+                  <label>Company name</label>
+                  <input type="text" class="form-control"> 
+                </div>
+
+                <div class="form-group">
+                  <label>Email)</label>
+                  <input type="text" class="form-control"> 
+                </div>
+
+                <div class="form-group">
+                  <label>Telephone*</label>
+                  <input type="text" class="form-control"> 
+                </div>
+
+                <div class="form-group">
+                  <label>Project brief*</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Appointment date and time</label>
+                  <input type="datetime-local" class="form-control"> 
+                </div>
+
+
+                <div class="form-group">
+                  <label>Additional notes</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+
+              
+
+
+              <div class="row m-0 d-flex justify-content-center">
+                  <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-submit ml-4">SUBMIT</button>
+              </div>
+            </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 @include('projects::includes.expert_center.consulation_request_form')
