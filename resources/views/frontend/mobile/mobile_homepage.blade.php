@@ -411,7 +411,7 @@
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
-            <p>Project Based Learning with industrial Training</p>
+            <p>Project Based Learning with industri...</p>
         </div>
         <div class="color-card yellow-bg"></div>
     </div>
@@ -431,7 +431,7 @@
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
             <p>
-Industrial Training with Realtime campaigns</p>
+Industrial Training with Realti...</p>
         </div>
         <div class="color-card green-bg"></div>
     </div>
@@ -450,7 +450,7 @@ Industrial Training with Realtime campaigns</p>
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
-            <p>Industrial Training with Job placement options</p>
+            <p>Industrial Training with Job placeme...</p>
         </div>
         <div class="color-card red-bg"></div>
     </div>
