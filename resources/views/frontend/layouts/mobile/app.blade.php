@@ -2,38 +2,42 @@
 @langrtl
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl">
 @else
-    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    @endlangrtl
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>@yield('title', app_name())</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="icon" type="image/png" href="{{url('theme_light/assets/image/favicon.png')}}" />
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@endlangrtl
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>@yield('title', app_name())</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="{{url('theme_light/assets/image/favicon.png')}}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{url('theme_light/styles/css/stylemob.css')}}" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     @yield('meta')
     @stack('before-styles')
+    <!-- Theame Style  -->
 
     @stack('after-styles')
-    </head>
+</head>
 
-    <body>
+<body>
     @include('includes.partials.read-only')
 
     <div id="app">
         @include('includes.partials.logged-in-as')
-        @include('frontend.includes.nav')
+
         <div class="">
             @include('includes.partials.messages')
             @yield('content')
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" style="padding: 10px 0px 20px 0px;">
         <div class="container bottom_border">
             <div class="row">
                 <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
@@ -115,63 +119,228 @@
     <!-- Scripts -->
     @stack('before-scripts')
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Initialize Swiper -->
+
     <!-- hammer js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Theame JS  -->
     <script src="{{url('theme_light/js/main.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="{{url('theme_light/plugin/dist/js/anim-trap.js')}}"></script>
     <script src="{{url('theme_light/plugin/dist/js/anim-scroll.js')}}"></script>
     <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
 
-    <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
-    <script src="{{url('theme_light/charts/chart_section.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/6043128b385de407571d2421/1f0300t1e';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
+
+    <script>
+        var swiper = new Swiper(".swiper-container-mob2", {
+            pagination: {
+                el: ".swiper-pagination-mob2",
+            },
+        });
     </script>
-    <!--End of Tawk.to Script-->
 
-    <script type="text/javascript">
-
+    <script>
+        var swiper = new Swiper(".swiper-container-mob", {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination-mob",
+            },
+        });
     </script>
+
     <script>
         ANIMSCROLL.init({
             easing: "ease-in-out-sine",
         });
-
     </script>
 
-
-
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KR2WKTS');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR2WKTS"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        var option;
+        option = {
+            tooltip: {
+                trigger: "axis",
+                axisPointer: {
+                    type: "cross",
+                    crossStyle: {
+                        color: "#999",
+                    },
+                },
+            },
+            toolbox: {
+                feature: {
+                    dataView: {
+                        show: false,
+                        readOnly: false
+                    },
+                    magicType: {
+                        show: false,
+                        type: ["line", "bar"]
+                    },
+                    restore: {
+                        show: false
+                    },
+                    saveAsImage: {
+                        show: false
+                    },
+                },
+            },
+            legend: {
+                data: ["Price", "Bid Count", "平均温度"],
+            },
+            xAxis: [{
+                type: "category",
+                data: [
+                    "12:00 AM",
+                    "1:00 AM",
+                    "2:00 AM",
+                    "3:00 AM",
+                    "4:00 AM",
+                    "5:00 AM",
+                    "6:00 AM",
+                    "7:00 AM",
+                    "8:00 AM",
+                    "9:00 AM",
+                    "10:00 AM",
+                    "11:00 AM",
+                    "12:00 PM",
+                    "1:00 PM",
+                    "2:00 PM",
+                    "3:00 PM",
+                    "4:00 PM",
+                    "5:00 PM",
+                    "6:00 PM",
+                    "7:00 PM",
+                    "9:00 PM",
+                    "10:00 PM",
+                    "11:00 PM",
+                    "12:00 PM",
+                ],
+                axisPointer: {
+                    type: "shadow",
+                },
+            }, ],
+            yAxis: [{
+                    type: "value",
+                    name: "Bid Range",
+                    min: 0,
+                    max: 100000,
+                    interval: 10000,
+                    splitLine: {
+                        show: false,
+                    },
+                    axisLabel: {
+                        formatter: "{value}",
+                    },
+                },
+                {
+                    type: "value",
+                    name: "Bid Count",
+                    min: 0,
+                    max: 25,
+                    interval: 5,
+                    splitLine: {
+                        show: false,
+                    },
+                    axisLabel: {
+                        formatter: "{value}",
+                    },
+                },
+            ],
+            series: [{
+                    name: "Price",
+                    type: "line",
+                    fill: "true",
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: "#2F8FEB",
+                            },
+                            {
+                                offset: 1,
+                                color: "#fffF",
+                            },
+                        ]),
+                    },
+                    data: [
+                        10000,
+                        12000,
+                        13000,
+                        13050,
+                        13560,
+                        30000,
+                        50000,
+                        50000,
+                        60000,
+                        70000.6,
+                        750000,
+                        750000,
+                        80000,
+                        60000,
+                        70000,
+                        50000,
+                        40000,
+                        37000,
+                        70000,
+                        78000,
+                        78000,
+                        69999,
+                        40000,
+                        3.3,
+                    ],
+                },
+                {
+                    name: "Bid Count",
+                    type: "line",
+                    yAxisIndex: 1,
+                    data: [
+                        2.0,
+                        2.2,
+                        3.3,
+                        4.5,
+                        6.3,
+                        10.2,
+                        20.3,
+                        23.4,
+                        23.0,
+                        16.5,
+                        12.0,
+                        6.2,
+                        10,
+                        23,
+                        21,
+                        42,
+                        14,
+                        56,
+                        74,
+                        7,
+                        40,
+                        10,
+                        25,
+                    ],
+                },
+            ],
+        };
+        if (option && typeof option === "object") {
+            myChart.setOption(option);
+        }
+    </script>
 
     @stack('after-scripts')
     @include('includes.partials.ga')
-    </body>
-    </html>
+</body>
 
+</html>
