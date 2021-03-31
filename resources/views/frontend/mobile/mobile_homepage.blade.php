@@ -59,38 +59,51 @@
         </div>
     </div>
 </section>
+
 <section class="live-action-content">
-    <div class="container">
+      <div class="container">
         <h2>
-        Development of eCommerce platform for a leading Fashion brand
+          World class designer to make mock-up of stages of our process and a
+          dashboard for landing page
         </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam volu ptua. At vero eos et accusam et justo duo
-        </p>
+        <h6>Auction ends in : <span>12Hr 34Min</span></h6>
+    
+        <div class="row button-live-row">
+          <div class="button-live-single col">
+            <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
+          </div>
+
+          <div class="button-live-single col">
+            <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
+          </div>
+        </div>
+        <br>
         <br />
-        <div id="container" data-animscroll="fade-left" style="
+        <div
+          id="container"
+          data-animscroll="fade-left"
+          style="
             height: 300px;
             -webkit-tap-highlight-color: transparent;
             user-select: none;
             position: relative;
-          "></div>
+          "
+        ></div>
 
-        <p class="live-bidders">Live Bidders -38</p>
+        <!-- <p class="live-bidders">Live Bidders -38</p>
         <br />
         <h6>Auction ends in : <span>12Hr 34Min</span></h6>
         <div class="row button-live-row">
-            <div class="button-live-single col">
-                <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
-            </div>
+          <div class="button-live-single col">
+            <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
+          </div>
 
-            <div class="button-live-single col">
-                <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
-            </div>
-        </div>
-    </div>
-</section>
+          <div class="button-live-single col">
+            <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
+          </div>
+        </div> -->
+      </div>
+    </section>
 <section class="tender-section">
     <div class="dark-tender-layer"></div>
     <div class="tender-section-content">
@@ -396,7 +409,7 @@
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
-            <p>Lorem ipsum dolor sit amet, conse</p>
+            <p>Project Based Learning with industrial Training</p>
         </div>
         <div class="color-card yellow-bg"></div>
     </div>
@@ -415,7 +428,8 @@
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
-            <p>Lorem ipsum dolor sit amet, conse</p>
+            <p>
+Industrial Training with Realtime campaigns</p>
         </div>
         <div class="color-card green-bg"></div>
     </div>
@@ -434,7 +448,7 @@
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
-            <p>Lorem ipsum dolor sit amet, conse</p>
+            <p>Industrial Training with Job placement options</p>
         </div>
         <div class="color-card red-bg"></div>
     </div>
