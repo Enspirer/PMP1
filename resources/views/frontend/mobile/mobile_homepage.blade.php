@@ -76,7 +76,7 @@
           </div>
 
           <div class="button-live-single col">
-            <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
+            <a class="view-scope-fill" href="{{route('frontend.auth.login')}}" type="button">SIGN IN TO BIT</a>
           </div>
         </div>
         <br>
@@ -153,7 +153,7 @@
         </div>
         <br />
         <div class="trade-all-view">
-            <a href="#">View All Tenders</a>
+            <a href="{{route('frontend.tender.index')}}">View All Tenders</a>
         </div>
     </div>
 </section>
@@ -187,7 +187,7 @@
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
                     </div>
-                    <a href="#" class="pick-button" type="button">View Project</a>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -201,7 +201,7 @@
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
                     </div>
-                    <a href="#" class="pick-button" type="button">View Project</a>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -215,7 +215,7 @@
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
                     </div>
-                    <a href="#" class="pick-button" type="button">View Project</a>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -229,7 +229,7 @@
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
                     </div>
-                    <a href="#" class="pick-button" type="button">View Project</a>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -243,7 +243,7 @@
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
                     </div>
-                    <a href="#" class="pick-button" type="button">View Project</a>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
          
@@ -286,7 +286,7 @@
     <br />
     <br />
     <div class="button-expert">
-        <a href="#" type="button">Book your 15 Min FREE consultation</a>
+        <a href="{{route("frontend.expert_center")}}" type="button">Book your 15 Min FREE consultation</a>
     </div>
 </section>
 <section class="shop-section">
@@ -389,7 +389,7 @@
     </div>
     <br />
     <div class="button-shop">
-        <a href="#" type="button">View All Tenders</a>
+        <a  href="{{route('frontend.shop.index')}}" type="button">View All Products</a>
     </div>
 </section>
 <section class="acadamy-section-mobile">
