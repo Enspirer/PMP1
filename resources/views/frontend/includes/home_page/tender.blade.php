@@ -15,7 +15,7 @@
     <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</li>
   </ul>
   <br>
-  <a href="#">View All Tenders</a>
+  <a href="{{route('frontend.tender.index')}}">View All Tenders</a>
 </div>
 <div class="right-tender col-md-6">
   <div class="trade-box">
