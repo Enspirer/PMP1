@@ -17,8 +17,10 @@
         <div id="overlay">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sign In</a></li>
             </ul>
         </div>
     </nav>
@@ -177,10 +179,10 @@
             <div class="swiper-slide">
                 <div class="pick-card">
                     <h6>Mobile app Development</h6>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                         diam nonumy
-                    </p>
+                    </p> -->
                     <div class="row m-0">
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
@@ -191,10 +193,10 @@
             <div class="swiper-slide">
                 <div class="pick-card">
                     <h6>Multivendor ecommerce solution</h6>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                         diam nonumy
-                    </p>
+                    </p> -->
                     <div class="row m-0">
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
@@ -205,10 +207,10 @@
             <div class="swiper-slide">
                 <div class="pick-card">
                     <h6>Dynamic web solution</h6>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                         diam nonumy
-                    </p>
+                    </p> -->
                     <div class="row m-0">
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
@@ -219,10 +221,10 @@
             <div class="swiper-slide">
                 <div class="pick-card">
                     <h6>Digital Marketing campaign</h6>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                         diam nonumy
-                    </p>
+                    </p> -->
                     <div class="row m-0">
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
@@ -233,10 +235,10 @@
             <div class="swiper-slide">
                 <div class="pick-card">
                     <h6>Customized CRM solution</h6>
-                    <p>
+                    <!-- <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                         diam nonumy
-                    </p>
+                    </p> -->
                     <div class="row m-0">
                         <p class="views">45 Views</p>
                         <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
