@@ -62,8 +62,7 @@
 <section class="live-action-content">
     <div class="container">
         <h2>
-            World class designer to make mock-up of stages of our process and a
-            dashboard for landing page
+        Development of eCommerce platform for a leading Fashion brand
         </h2>
         <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -153,15 +152,60 @@
     </div>
     <br />
     <p class="pick-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    The easiest way to grab your next project… Select the project
+                matches your team profile and get hired immediately by companies
+                around the world. <b>It’s that Simple</b>
+
+
     </p>
     <br />
     <div class="swiper-container swiper-container-mob2">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="pick-card">
-                    <h6>Customized CRM solution</h6>
+                    <h6>Mobile app Development</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p>
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Multivendor ecommerce solution</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p>
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Dynamic web solution</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p>
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Digital Marketing campaign</h6>
                     <p>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                         diam nonumy
@@ -187,20 +231,8 @@
                     <a href="#" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="pick-card">
-                    <h6>Customized CRM solution</h6>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy
-                    </p>
-                    <div class="row m-0">
-                        <p class="views">45 Views</p>
-                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
-                    </div>
-                    <a href="#" class="pick-button" type="button">View Project</a>
-                </div>
-            </div>
+         
+    
         </div>
         <!-- Add Pagination -->
         <br />
@@ -230,10 +262,10 @@
         <p>Register as a company and request for a consultation</p>
 
         <h6>Step 02</h6>
-        <p>Register as a company and request for a consultation</p>
+        <p>One of our members will arrange time for virtual meeting</p>
 
         <h6>Step 03</h6>
-        <p>Register as a company and request for a consultation</p>
+        <p>Brief your requirements</p>
     </div>
     <img src="assets/Asset 2graphic1.png" alt="" />
     <br />
@@ -252,7 +284,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg')}}" alt="" />
+                <img  src="{{url('theme_light/assets/pos.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#"> POS System</a></p>
@@ -273,18 +305,18 @@
             </div>
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img src="{{url('theme_light/assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg')}}" alt="" />
+                <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                            <p><a href="#"> POS System</a></p>
+                        <p><a href="#">E-Commerce Solution</a></p>
                             <div class="rating ml-auto">
                                 <i class="fa fa-star" aria-hidden="true"></i>5.0
                             </div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                                <h3>From $1800</h3>
-                                <h6>per month</h6>
+                            <h3>From $50</h3>
+                                            <h6>per month</h6>
                             </div>
                             <a href="#" class="ml-auto">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -294,18 +326,18 @@
             </div>
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img src="{{url('theme_light/assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg')}}" alt="" />
+                <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                            <p><a href="#"> POS System</a></p>
+                        <p><a href="#">Payroll mana....</a></p>
                             <div class="rating ml-auto">
                                 <i class="fa fa-star" aria-hidden="true"></i>5.0
                             </div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                                <h3>From $1800</h3>
-                                <h6>per month</h6>
+                            <h3>From $1500</h3>
+                                            <h6>per month</h6>
                             </div>
                             <a href="#" class="ml-auto">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -315,18 +347,18 @@
             </div>
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img src="{{url('theme_light/assets/austin-distel-mpN7xjKQ_Ns-unsplash.jpg')}}" alt="" />
+                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                            <p><a href="#"> POS System</a></p>
+                        <p><a href="#">Multi vendor ec..</a></p>
                             <div class="rating ml-auto">
                                 <i class="fa fa-star" aria-hidden="true"></i>5.0
                             </div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                                <h3>From $1800</h3>
-                                <h6>per month</h6>
+                            <h3>From $100</h3>
+                                            <h6>per month</h6>
                             </div>
                             <a href="#" class="ml-auto">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -357,10 +389,10 @@
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>Duration lorem</p>
-            <hr />
+            <p>6 Months</p>
+            <!-- <hr />
             <i class="fa fa-align-justify" aria-hidden="true"></i>
-            <p>course list Lor</p>
+            <p>course list Lor</p> -->
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
@@ -370,16 +402,16 @@
     </div>
 
     <div class="card-acadamy">
-        <h3>Web Development</h3>
+    <h3>Digital Marketing</h3>
         <div class="label-acadamy">
             <p>Fundamental</p>
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>Duration lorem</p>
-            <hr />
+            <p>3 Months</p>
+            <!-- <hr />
             <i class="fa fa-align-justify" aria-hidden="true"></i>
-            <p>course list Lor</p>
+            <p>course list Lor</p> -->
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
@@ -389,16 +421,16 @@
     </div>
 
     <div class="card-acadamy">
-        <h3>Web Development</h3>
+    <h3>Graphic Designing</h3>
         <div class="label-acadamy">
             <p>Fundamental</p>
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>Duration lorem</p>
-            <hr />
+            <p>3 Months</p>
+            <!-- <hr />
             <i class="fa fa-align-justify" aria-hidden="true"></i>
-            <p>course list Lor</p>
+            <p>course list Lor</p> -->
         </div>
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
