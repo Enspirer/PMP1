@@ -106,7 +106,7 @@ body {
 }
 
 #exampleModalLong .modal-body {
-  background: #F2F2F2 0% 0% no-repeat padding-box;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
   padding: 0;
 }
 
@@ -146,8 +146,8 @@ body {
 
 #exampleModalLong .linkedin {
   font: normal normal 600 20px/50px Poppins;
-  border: 1px solid #0073B1;
-  background: #0073B1;
+  border: 1px solid #0073b1;
+  background: #0073b1;
   border-radius: 4px;
   line-height: 1;
   padding: 10px 30px;
@@ -228,6 +228,21 @@ body {
   position: relative;
   position: fixed;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav-section .navbar-main {
+    padding: 20px;
+  }
+  .nav-section .navbar-main .container {
+    padding: 0;
+  }
+  .nav-section .navbar-main .container .navbar-brand {
+    position: fixed;
+  }
+  .nav-section img {
+    width: 100px;
+  }
 }
 
 .navbar-main {
@@ -922,6 +937,12 @@ body {
   font: normal normal 300 14px/17px Karla;
   border: 1px solid #fff;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  #video_box .header-content h1 {
+    font-size: 20px !important;
+  }
 }
 
 #card-swipper {
@@ -2353,6 +2374,98 @@ button {
 
 #tallentor-acadamy .row .col .card-acadamy .red-bg {
   background: #f83535 0% 0% no-repeat padding-box;
+}
+
+#tender-section-home {
+  background-image: url(../../assets/inner/pedro-lastra-Nyvq2juw4_o-unsplash.jpg);
+  background-size: cover;
+  padding: 69px 0;
+  position: relative;
+}
+
+#tender-section-home .dark-layer-tender-home {
+  background: #000000 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#tender-section-home .title {
+  max-width: 380px;
+  margin: auto;
+}
+
+#tender-section-home .title h1 {
+  text-align: center;
+  font: normal normal bold 38px/70px Poppins;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
+#tender-section-home .title hr {
+  height: 4px;
+  width: 300px;
+  border-width: 0;
+  margin-top: -10px;
+  color: #0f9d58;
+  background-color: #0f9d58;
+}
+
+#tender-section-home .left-tender h1 {
+  text-align: left;
+  font: normal normal 600 32px/50px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-left: 35px;
+}
+
+#tender-section-home .left-tender ul li {
+  text-align: left;
+  font: normal normal normal 16px/25px Karla;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 14px;
+}
+
+#tender-section-home .left-tender a {
+  background: #0f9d58 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 13px 61px;
+  margin-left: 35px;
+  font: normal normal medium 20px/38px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#tender-section-home .right-tender .trade-box {
+  padding: 20px 33px;
+  border: 0.8px solid var(--unnamed-color-ffffff);
+  border: 0.800000011920929px solid #ffffff;
+  border-radius: 4px;
+  width: 80%;
+  float: right;
+  margin-bottom: 20px;
+}
+
+#tender-section-home .right-tender .trade-box h2 {
+  margin: 0;
+  line-height: 1;
+  text-align: left;
+  font: normal normal bold 32px/38px Karla;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+#tender-section-home .right-tender .trade-box h1 {
+  margin-left: auto;
+  margin-bottom: 0;
+  font: normal normal bold 42px/38px Karla;
+  letter-spacing: 0px;
+  color: #0F9D58;
+  line-height: 1;
 }
 
 #single-project-body {
@@ -5920,6 +6033,60 @@ input.search-menu:focus
   top: 0;
 }
 
+.expert-section .expert-image .expert-fill {
+  background: #000000 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.expert-section .expert-image .banner-black {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  width: 300px;
+  background: #171717 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 15px 49px #000000d9;
+          box-shadow: 0px 15px 49px #000000d9;
+  border-radius: 4px;
+  opacity: 0.89;
+  padding: 37px 29px 37px 29px;
+}
+
+.expert-section .expert-image .banner-black hr {
+  border-top: 1px solid #fff;
+  margin: 0;
+}
+
+.expert-section .expert-image .banner-black h1 {
+  text-align: left;
+  font-size: 29px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.expert-section .expert-image .banner-black h5 {
+  text-align: left;
+  font: normal normal normal 25px/29px Karla;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.expert-section .expert-image .banner-black h3 {
+  font: normal normal bold 49px/57px Karla;
+  letter-spacing: 0px;
+  color: #d2d2d2;
+  font-size: 39px;
+}
+
 .expert-section .expert-image .expert-text-head {
   width: 100%;
   position: absolute;
@@ -7273,6 +7440,174 @@ input.search-menu:focus
 #blog-tallentor .all-blog-post .col-md-4 .card-blog-item:hover h6,
 #blog-tallentor .all-blog-post .col-md-4 .card-blog-item:hover h5 {
   color: #0f9d58 !important;
+}
+
+#section-tenders {
+  padding: 50px 0;
+}
+
+#section-tenders .container .row .left-cols .card-tender-cols {
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  border: 0.5px solid silver;
+  margin-bottom: 20px;
+}
+
+#section-tenders .container .row .left-cols .card-tender-cols .card .card-header {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#section-tenders .container .row .left-cols .card-tender-cols .card .card-body {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 5px 25px 5px 35px !important;
+}
+
+#section-tenders .container .row .left-cols .card-tender-cols .card .card-body p {
+  font: normal normal normal 14px/25px Karla;
+  margin: 0;
+}
+
+#section-tenders .container .row .left-cols .card-tender-cols .card a {
+  text-decoration: none;
+  color: #000;
+}
+
+#section-tenders .container .row .left-cols .card-tender-cols .card a i {
+  margin-right: 10px;
+}
+
+#section-tenders .container .row .right-cols .right-body .row .nav-pills {
+  width: 100%;
+}
+
+#section-tenders .container .row .right-cols .right-body .row .nav-pills .nav-item {
+  padding: 0 5px;
+}
+
+#section-tenders .container .row .right-cols .right-body .row .nav-pills .nav-item .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: normal normal bold 12px/23px Karla;
+  letter-spacing: 0px;
+  color: #0f9d58;
+  padding: 4px 0px;
+  border: 1px solid #0f9d58;
+  border-radius: 5px;
+}
+
+#section-tenders .container .row .right-cols .right-body .row .nav-pills .nav-item .active {
+  background: #0f9d58 0% 0% no-repeat padding-box;
+  color: #fff;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender {
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  border: 0.5px solid silver;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender h1 {
+  text-align: left;
+  font: normal normal 600 20px/50px Poppins;
+  letter-spacing: 0px;
+  color: #0f0c29;
+  line-height: 1;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender hr {
+  margin: 0;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .row-detail p {
+  font: normal normal normal 11px/17px Karla;
+  letter-spacing: 0px;
+  color: #6d6d6d;
+  margin-right: 18px;
+  margin: 4px 0 0 0;
+  line-height: 1;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-list .card-detail-item {
+  font: normal normal normal 13px/25px Karla;
+  letter-spacing: 0px;
+  color: #303030;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-list .card-detail-item a {
+  color: #0f9d58;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-right h6 {
+  font: normal normal medium 26px/31px Karla;
+  letter-spacing: 0px;
+  color: #242424;
+  margin: 0;
+  line-height: 1;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-right h5 {
+  font: normal normal bold 26px/46px Karla;
+  letter-spacing: 0px;
+  color: #242424;
+  margin: 0;
+  line-height: 1;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-right .tender_button {
+  max-width: 80%;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-right .tender_button .outline_btn {
+  border: 1px solid #0f9d58;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font: normal normal normal 16px/23px Karla;
+  letter-spacing: 0px;
+  color: #0f9d58;
+  text-align: center;
+  width: 100%;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-right .tender_button .red {
+  border: 1px solid red;
+  color: red;
+}
+
+#section-tenders .container .row .right-cols .tab-content .tab-pane .card-left-tender .card-detail-right .tender_button .normal_btn {
+  border: 1px solid #0f9d58;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font: normal normal normal 16px/23px Karla;
+  letter-spacing: 0px;
+  color: #fff;
+  background: #0f9d58;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#section-tenders .container .row-selector .selector {
+  padding: 0px 10px;
+}
+
+#section-tenders .container .row-selector .selector select {
+  border: none;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+
+#section-tenders .container .row-selector .selector select:focus {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
 }
 
 #parner-with-us {
