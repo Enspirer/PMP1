@@ -152,7 +152,7 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN', null),
+    'domain' => env('SESSION_DOMAIN', 'http://tallentor.com/'),
 
     /*
     |--------------------------------------------------------------------------
