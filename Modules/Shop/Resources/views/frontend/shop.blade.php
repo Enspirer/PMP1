@@ -6,7 +6,7 @@
 
     <section class="expert-section">
         <div class="expert-image">
-            <img src="{{url('theme_light/assets/cosmo-consult_crm_resco-mobile-crm_shutterstock_1030116061.jpg')}}" style="object-position: top; object-fit: cover;" alt="" />
+            <img src="{{url('theme_light/assets/inner/hand-arrange-white-letters-as-crm.jpg')}}" style="object-position: 10% 20%; object-fit: cover;" alt="" />
             <div class="expert-gradient"></div>
             <div class="expert-text-head">
                 <div class="container">
