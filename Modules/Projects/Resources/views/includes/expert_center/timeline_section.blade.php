@@ -227,7 +227,7 @@
                     Receive Bids or Project Quotes
                 </h6>
                 <p class="color-contrast-medium f-right">
-                    Qualified agencies will submit their bids for the Live Auction and Project quotes for the projects submitted by Companies.
+                Qualified agencies will submit their bids / quotes,  for the projects submitted by Companies.
                 </p>
 
                 <div class="flex justify-between items-center">
@@ -289,7 +289,7 @@
                     Award the project to the selected agency
                 </h6>
                 <p class="color-contrast-medium f-right">
-                    This is the content of the last section
+                Followed by the evaluation process, the company will choose the agency based on their selection criteria 
                 </p>
 
                 <div class="flex justify-between items-center">
