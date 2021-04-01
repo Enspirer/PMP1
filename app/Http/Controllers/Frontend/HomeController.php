@@ -17,11 +17,7 @@ class HomeController extends Controller
     {
         $agent = new Agent();
 
-        if($agent->isMobile()){
-            return view('frontend.mobile.mobile_homepage');
-        }else{
             return view('frontend.index');
-        }
 
     }
 }
