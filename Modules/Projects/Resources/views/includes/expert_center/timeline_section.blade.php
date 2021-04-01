@@ -289,7 +289,7 @@
                     Award the project to the selected agency
                 </h6>
                 <p class="color-contrast-medium f-right">
-                    This is the content of the last section
+                Followed by the evaluation process, the company will choose the agency based on their selection criteria 
                 </p>
 
                 <div class="flex justify-between items-center">
