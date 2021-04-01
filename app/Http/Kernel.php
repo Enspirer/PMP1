@@ -38,7 +38,7 @@ class Kernel extends HttpKernel
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\Session\Middleware\AuthenticateSession::class, // Must be enabled for 'single login' to work
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
+//            \App\Http\Middleware\VerifyCsrfToken::class,
             \App\Http\Middleware\LocaleMiddleware::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\ToBeLoggedOut::class,
