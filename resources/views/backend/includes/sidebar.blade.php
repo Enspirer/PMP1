@@ -39,7 +39,7 @@
                 </a>
             </li>
 
-            
+
 
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
