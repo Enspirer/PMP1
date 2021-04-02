@@ -166,7 +166,6 @@ return [
     */
 
     'providers' => [
-        Jenssegers\Agent\AgentServiceProvider::class,
         // Laravel Framework Service Providers...
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -202,6 +201,7 @@ return [
         App\Providers\HelperServiceProvider::class,
         App\Providers\ObserverServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Jenssegers\Agent\AgentServiceProvider::class,
 
     ],
 
