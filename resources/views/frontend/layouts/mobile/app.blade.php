@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+@langrtl
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl">
+@else
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@endlangrtl
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>@yield('title', app_name())</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="{{url('theme_light/assets/image/favicon.png')}}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{url('theme_light/styles/css/stylemob.css')}}" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    @yield('meta')
+    @stack('before-styles')
+    <!-- Theame Style  -->
+
+    @stack('after-styles')
+</head>
+
+<body>
+    @include('includes.partials.read-only')
+
+    <div id="app">
+        @include('includes.partials.logged-in-as')
+
+        <div class="">
+            @include('includes.partials.messages')
+            @yield('content')
+        </div>
+    </div>
+    <footer class="footer" style="padding: 10px 0px 20px 0px;">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
+                    <h5 class="headin5_amrc col_white_amrc pt2"></h5>
+                    <p class="mb10">
+                        <img src="{{url('theme_light/assets/image/logolight.png')}}" alt="" width="190px">
+                    </p>
+                    <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p>
+                </div>
+
+                <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
+                    <ul class="footer_ul_amrc">
+                        <li><a href="{{route("frontend.about")}}">About Us</a></li>
+                        <li><a href="{{route("frontend.expert_center")}}">Expert Centre</a></li>
+                        <li><a href="{{route('frontend.project_auction',1)}}">Live Auction</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="{{route('frontend.contact_us')}}">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Resources</h5>
+                    <ul class="footer_ul_amrc">
+                        <li><a href="">Help & Support</a></li>
+                        <li>
+                            <a href="">Partner with us</a>
+                        </li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="{{route('frontend.blog','all')}}">Blog</a></li>
+                        <li><a href="">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Mobile app development</a></li>
+                        <li>
+                            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">ERP Solutions</a>
+                        </li>
+                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Web applications</a></li>
+                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Digital Marketing</a></li>
+                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Architecture</a></li>
+                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Video animations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc"></ul>
+            <p class="text-center">
+                Copyright @2021 | <a style="color: #c2c2c2;font-weight: 400;font-size: 15px;">Tallentor Global Ltd</a>
+            </p>
+
+            <ul class="social_footer_ul" style="padding-left: 0;">
+                <li>
+                    <a href="https://www.facebook.com/tallentor" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/tallentor/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Scripts -->
+    @stack('before-scripts')
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Initialize Swiper -->
+
+    <!-- hammer js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Theame JS  -->
+    <script src="{{url('theme_light/js/main.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="{{url('theme_light/plugin/dist/js/anim-trap.js')}}"></script>
+    <script src="{{url('theme_light/plugin/dist/js/anim-scroll.js')}}"></script>
+    <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
+
+
+
+    <script>
+        var swiper = new Swiper(".swiper-container-mob2", {
+            pagination: {
+                el: ".swiper-pagination-mob2",
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".swiper-container-mob", {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination-mob",
+            },
+        });
+    </script>
+
+    <script>
+        ANIMSCROLL.init({
+            easing: "ease-in-out-sine",
+        });
+    </script>
+
+    <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        var option;
+        option = {
+            tooltip: {
+                trigger: "axis",
+                axisPointer: {
+                    type: "cross",
+                    crossStyle: {
+                        color: "#999",
+                    },
+                },
+            },
+            toolbox: {
+                feature: {
+                    dataView: {
+                        show: false,
+                        readOnly: false
+                    },
+                    magicType: {
+                        show: false,
+                        type: ["line", "bar"]
+                    },
+                    restore: {
+                        show: false
+                    },
+                    saveAsImage: {
+                        show: false
+                    },
+                },
+            },
+            legend: {
+                data: ["Price", "Bid Count", "平均温度"],
+            },
+            xAxis: [{
+                type: "category",
+                data: [
+                    "12:00 AM",
+                    "1:00 AM",
+                    "2:00 AM",
+                    "3:00 AM",
+                    "4:00 AM",
+                    "5:00 AM",
+                    "6:00 AM",
+                    "7:00 AM",
+                    "8:00 AM",
+                    "9:00 AM",
+                    "10:00 AM",
+                    "11:00 AM",
+                    "12:00 PM",
+                    "1:00 PM",
+                    "2:00 PM",
+                    "3:00 PM",
+                    "4:00 PM",
+                    "5:00 PM",
+                    "6:00 PM",
+                    "7:00 PM",
+                    "9:00 PM",
+                    "10:00 PM",
+                    "11:00 PM",
+                    "12:00 PM",
+                ],
+                axisPointer: {
+                    type: "shadow",
+                },
+            }, ],
+            yAxis: [{
+                    type: "value",
+                    name: "Bid Range",
+                    min: 0,
+                    max: 100000,
+                    interval: 10000,
+                    splitLine: {
+                        show: false,
+                    },
+                    axisLabel: {
+                        formatter: "{value}",
+                    },
+                },
+                {
+                    type: "value",
+                    name: "Bid Count",
+                    min: 0,
+                    max: 25,
+                    interval: 5,
+                    splitLine: {
+                        show: false,
+                    },
+                    axisLabel: {
+                        formatter: "{value}",
+                    },
+                },
+            ],
+            series: [{
+                    name: "Price",
+                    type: "line",
+                    fill: "true",
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: "#2F8FEB",
+                            },
+                            {
+                                offset: 1,
+                                color: "#fffF",
+                            },
+                        ]),
+                    },
+                    data: [
+                        10000,
+                        12000,
+                        13000,
+                        13050,
+                        13560,
+                        30000,
+                        50000,
+                        50000,
+                        60000,
+                        70000.6,
+                        750000,
+                        750000,
+                        80000,
+                        60000,
+                        70000,
+                        50000,
+                        40000,
+                        37000,
+                        70000,
+                        78000,
+                        78000,
+                        69999,
+                        40000,
+                        3.3,
+                    ],
+                },
+                {
+                    name: "Bid Count",
+                    type: "line",
+                    yAxisIndex: 1,
+                    data: [
+                        2.0,
+                        2.2,
+                        3.3,
+                        4.5,
+                        6.3,
+                        10.2,
+                        20.3,
+                        23.4,
+                        23.0,
+                        16.5,
+                        12.0,
+                        6.2,
+                        10,
+                        23,
+                        21,
+                        42,
+                        14,
+                        56,
+                        74,
+                        7,
+                        40,
+                        10,
+                        25,
+                    ],
+                },
+            ],
+        };
+        if (option && typeof option === "object") {
+            myChart.setOption(option);
+        }
+    </script>
+
+    @stack('after-scripts')
+    @include('includes.partials.ga')
+</body>
+
+</html>
