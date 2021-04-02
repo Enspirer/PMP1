@@ -201,10 +201,7 @@ return [
         App\Providers\HelperServiceProvider::class,
         App\Providers\ObserverServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Jenssegers\Agent\AgentServiceProvider::class,
-        AlbertCht\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class,
-
-
+        AlbertCht\InvisibleReCaptcha\InvisibleReCaptchaServiceProvider::class
     ],
 
     /*
@@ -253,7 +250,6 @@ return [
         'Str' => Illuminate\Support\Str::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
-        'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'View' => Illuminate\Support\Facades\View::class
     ],
 ];
