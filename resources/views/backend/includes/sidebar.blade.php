@@ -39,30 +39,7 @@
                 </a>
             </li>
 
-            <li class="nav-item nav-dropdown {{active_class(Route::is('admin/shop*'), 'open')}}">
-                <a class="nav-link nav-dropdown-toggle {{active_class(Route::is('admin/shop*'))}}" href="#">
-                    <i class="nav-icon far fa-user"></i>
-                    Shop
-
-                    @if ($pending_approval > 0)
-                        <span class="badge badge-danger">{{ $pending_approval }}</span>
-                    @endif
-                </a>
-
-                <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                        <a class="nav-link {{active_class(Route::is('admin/product'))}}" href="{{ route('admin.product.index') }}">
-                            <i class="nav-icon fas fa-box"></i>
-                            Products
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{active_class(Route::is('admin/invoice'))}}" href="{{ route('admin.invoice.index') }}">
-                            <i class="nav-icon fas fa-file-invoice"></i>
-                            Invoice
-                        </a>
-                    </li>
-                </ul>
+            
 
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
