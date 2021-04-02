@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/', 'TendersController@index');
+Route::get('/', 'TendersController@index')->name('tenders.index');
