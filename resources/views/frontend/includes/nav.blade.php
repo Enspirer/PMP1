@@ -36,12 +36,7 @@
                                 <div class="menu-container" id="menu-container">
                                     <ul class="user-menu">
                                         <div class="profile-highlight">
-                                            <img
-                                                src="{{ $logged_in_user->picture }}"
-                                                alt="profile-img"
-                                                width="36"
-                                                height="36"
-                                            />
+                                            <img src="{{ $logged_in_user->picture }}" alt="profile-img" width="36" height="36"/>
                                             <div class="details">
                                                 <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
                                                 <div id="profile-footer">Team Hallaway</div>
@@ -80,25 +75,6 @@
                                 </div>
                             </div>
 
-{{--                        <div class='profile'>--}}
-{{--                            <div class='avatar' style="margin-bottom: 0px;">--}}
-{{--                                <img src='{{ $logged_in_user->picture }}'>--}}
-{{--                            </div>--}}
-{{--                            <p style="margin-bottom: 0px;text-transform: capitalize;">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</p>--}}
-{{--                            <i class="fa fa-caret-down"></i>--}}
-{{--                        </div>--}}
-
-{{--                        <div class='profiledropdown'>--}}
-{{--                            <ul>--}}
-{{--                                <li class='option'> <a href="">Profile</a></li>--}}
-{{--                                <li class='option'><a href="">settings</a></li>--}}
-{{--                                <li class='option'><a href="">Help</a></li>--}}
-{{--                                <li class='divider'></li>--}}
-{{--                                <li class='option'><a href="{{route('frontend.auth.logout')}}">Sign out</a></li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-
-
                         @else
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('frontend.auth.login')}}">Sign In</a>
@@ -118,4 +94,171 @@
             </div>
         </div>
     </nav>
+
+    <div class="menu-container">
+        <div class="container">
+            <div class="menu">
+                <ul class="clearfix">
+                    <li>
+                        <a class="main-menu-item" href="#">Explore</a>
+                        <ul style="padding: 0; background: #fff; box-shadow: inset 6px 36px 30px -30px #00000029;">
+                            <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,  inset -20px 7px 28px -20px #00000029;filter: drop-shadow(0px 10px 25px #00000029) drop-shadow(inset 6px 26px 30px 30px #00000029);">
+                                <ul>
+                                    <li id="li1" onclick="changecv('1')">
+                                        <a href="#"><div class="row m-0">
+                                                <h6 style="line-height: 1; margin: 0">
+                                                    Find a project
+                                                </h6>
+                                                <i id="icon01" class="fa fa-angle-right" style=" margin-left: auto; font-size: 22px; margin-top: -1px; "aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li id="li2" onclick="changecv('2')">
+                                        <a href="#">
+                                            <div class="row m-0">
+                                                <h6 style="line-height: 1; margin: 0">
+                                                    Post a project
+                                                </h6>
+                                                <i id="icon02" class="fa fa-angle-right" style=" margin-left: auto; font-size: 22px; margin-top: -1px; display: none;"aria-hidden="true"></i></div></a>
+                                    </li>
+                                    <li onclick="changecv('3')">
+                                        <a href="#"><div class="row m-0">
+                                                <h6 style="line-height: 1; margin: 0">
+                                                    How it works
+                                                </h6>
+                                                <i id="icon03" class="fa fa-angle-right" style="margin-left: auto;font-size: 22px;margin-top: -1px;display: none;"aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li onclick="changecv('4')">
+                                        <a href="#">
+                                            <div class="row m-0">
+                                                <h6 style="line-height: 1; margin: 0">
+                                                    Become a Partner
+                                                </h6>
+                                                <i id="icon04" class="fa fa-angle-right" style="margin-left: auto;font-size: 22px;margin-top: -1px;display: none;"aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="0101" style="width: 45%; padding: 30px 10px 30px 30px !important">
+                                <h3>Lorem Ipsum project</h3>
+                                <br>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                </p>
+                                <br>
+                                <div class="row m-0">
+                                    <p>Learn More</p>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li id="0102" style="padding: 30px 10px 30px 30px !important">
+                                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" style="width: 100%; height: 200px; object-fit: cover" alt="">
+                            </li>
+
+                            <li id="0103" style="display: none;width: 45%;padding: 30px 10px 30px 30px !important;">
+                                <h3>Lorem Ipsum project2</h3>
+                                <br />
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                </p>
+                                <br />
+                                <div class="row m-0">
+                                    <p>Learn More</p>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li id="0104" style=" display: none; padding: 30px 10px 30px 30px !important;">
+                                <img src="{{url('theme_light/assets/erp.jpg')}}" style="width: 100%; height: 200px; object-fit: cover" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="main-menu-item" href="#">Auctions</a>
+                    </li>
+                    <li>
+                        <a class="main-menu-item" href="#">Tenders</a>
+                        <ul>
+                            <li><a href="#">Today</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Sport</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="main-menu-item" href="#">e-Shop</a>
+                    </li>
+                    <li>
+                        <a class="main-menu-item" href="#">Academy</a>
+                        <ul style="padding: 0">
+                            <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,inset -20px 7px 28px -20px #00000029; filter: drop-shadow(0px 10px 25px #00000029)drop-shadow(inset 6px 26px 30px 30px #00000029);">
+                                <ul>
+                                    <li onclick="changecv2('1')">
+                                        <a href="#">Lidership</a>
+                                    </li>
+                                    <li onclick="changecv2('2')"><a href="#">History</a></li>
+                                    <li onclick="changecv2('3')">
+                                        <a href="#">Locations</a>
+                                    </li>
+                                    <li onclick="changecv2('4')"><a href="#">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li id="0201" style="width: 45%; padding: 30px 10px 30px 30px !important">
+                                <h3>Lorem Ipsum project</h3>
+                                <br>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                </p>
+                                <br>
+                                <div class="row m-0">
+                                    <p>Learn More</p>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li id="0202" style="padding: 30px 10px 30px 30px !important">
+                                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" style="width: 100%; height: 200px; object-fit: cover" alt="">
+                            </li>
+
+                            <li id="0203" style="display: none; width: 45%;padding: 30px 10px 30px 30px !important;">
+                                <h3>Lorem Ipsum project2</h3>
+                                <br>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                </p>
+                                <br>
+                                <div class="row m-0">
+                                    <p>Learn More</p>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                            <li id="0204" style="display: none;padding: 30px 10px 30px 30px !important;">
+                                <img src="{{url('theme_light/assets/erp.jpg')}}" style="width: 100%; height: 200px; object-fit: cover" alt=""/>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 </section>
+
+
