@@ -153,7 +153,7 @@
         </div>
         <br />
         <div class="trade-all-view">
-            <a href="{{route('frontend.tender.index')}}">View All Tenders</a>
+            <a href="{{route('frontend.tenders.index')}}">View All Tenders</a>
         </div>
     </div>
 </section>

@@ -8,7 +8,7 @@
         <div class="content">
             <h1 data-animscroll="fade-up" data-animscroll-delay="100" style="font-size: 36px;line-height: 1.5">
        THE PLACE WHERE<br>THE <span style="color: #fff;font-family: 'Noto Serif', serif;text-transform: lowercase;font-style: italic;font-size: 44px; font-weight: 100">TOP
-                    CHALLENGERS </span> MEET THE<span style="color: #fff;font-family: 'Noto Serif', serif;text-transform: lowercase;font-style: italic;font-size: 44px; font-weight: 100;"> BEST TALENT </span>
+                    CHALLENGERS </span> MEET THE<span style="color: #fff;font-family: 'Noto Serif', serif;text-transform: lowercase;font-style: italic;font-size: 44px; font-weight: 100;"> BEST TALENT  </span>
 
             </h1>
 

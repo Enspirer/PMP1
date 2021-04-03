@@ -20,6 +20,7 @@
 @if(config('access.captcha.contact'))
     @captchaScripts
 @endif
+
 @endpush
 
 
