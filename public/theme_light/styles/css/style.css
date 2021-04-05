@@ -1723,6 +1723,42 @@ button {
   padding: 40px;
 }
 
+#live-auction-new .head-title {
+  padding: 22px 0 15px 0;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#live-auction-new .head-title .row {
+  margin: auto;
+}
+
+#live-auction-new .head-title .row .record-icon img {
+  padding-top: 5px;
+  width: 40px;
+  color: #fff;
+}
+
+#live-auction-new .head-title .row h1 {
+  margin-left: 13px;
+  font: normal normal bold 28px/56px Poppins;
+  letter-spacing: 0px;
+  color: #303030;
+}
+
+#live-auction-new .head-title .row h1 span {
+  margin: 0 12px;
+  background: #fd0e27 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 4px 24px;
+  color: #fff;
+}
+
 #live-auction-new .auction-card-full {
   padding: 40px 80px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -1755,20 +1791,20 @@ button {
 #live-auction-new .auction-card-full .outline-auction {
   font: normal normal 600 15px/30px Poppins;
   letter-spacing: 0.3px;
-  border: 1px solid #0F9D58;
+  border: 1px solid #0f9d58;
   border-radius: 5px;
   text-align: center;
   width: 100%;
   padding: 5px;
   margin: 5px 0px;
-  color: #0F9D58;
+  color: #0f9d58;
 }
 
 #live-auction-new .auction-card-full .fill-auction {
   font: normal normal 600 15px/30px Poppins;
   letter-spacing: 0.3px;
-  border: 1px solid #0F9D58;
-  background: #0F9D58;
+  border: 1px solid #0f9d58;
+  background: #0f9d58;
   border-radius: 5px;
   text-align: center;
   width: 100%;
@@ -1777,12 +1813,33 @@ button {
   color: #ffffff;
 }
 
+#live-auction-new .auction-btn-center {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#live-auction-new .auction-btn-center .auction-all-inner-link-btn {
+  background: #F83535 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  font: normal normal 600 20px/30px Poppins;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 30px;
+}
+
 #live-auction {
   width: 100%;
 }
 
 #live-auction .head-title {
-  background: #f2f2f2;
   padding: 22px 0 15px 0;
   margin: auto;
   -webkit-box-pack: center;
@@ -8126,8 +8183,9 @@ input.search-menu:focus
 }
 
 #section-auction .right-body .auction-card-inner .card-auction-inner {
+  margin: 10px 0;
   padding: 20px 30px;
-  background: #F9F9F9 0% 0% no-repeat padding-box;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
   border: 0.5px solid #707070;
   border-radius: 4px;
 }
@@ -8138,7 +8196,7 @@ input.search-menu:focus
   margin: 0;
   line-height: 1;
   letter-spacing: 0px;
-  color: #0F0C29;
+  color: #0f0c29;
 }
 
 #section-auction .right-body .auction-card-inner .card-auction-inner hr {
@@ -8159,6 +8217,58 @@ input.search-menu:focus
   letter-spacing: 0px;
   color: #000000;
   line-height: 1;
+}
+
+#section-auction .right-body .auction-card-inner .card-auction-inner .red-button-auction {
+  border: 1px solid #f83535;
+  border-radius: 5px;
+  font: normal normal normal 18px/23px Karla;
+  letter-spacing: 0px;
+  color: #f83535;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px;
+}
+
+#section-auction .right-body .auction-card-inner .card-auction-inner .black-button-auction {
+  border: 1px solid #000;
+  border-radius: 5px;
+  font: normal normal normal 18px/23px Karla;
+  letter-spacing: 0px;
+  color: #000;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px;
+}
+
+#section-auction .right-body .auction-card-inner .card-auction-inner .green-button-auction-outline {
+  border: 1px solid #0f9d58;
+  border-radius: 5px;
+  font: normal normal normal 18px/23px Karla;
+  letter-spacing: 0px;
+  color: #0f9d58;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px;
+}
+
+#section-auction .right-body .auction-card-inner .card-auction-inner .green-button-auction-fill {
+  background: #0f9d58;
+  border-radius: 5px;
+  font: normal normal normal 18px/23px Karla;
+  letter-spacing: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px;
 }
 
 #section-tenders {
