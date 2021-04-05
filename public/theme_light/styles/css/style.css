@@ -309,10 +309,15 @@ body {
 }
 
 .navbar-main .container .collapse ul li a {
-  color: #000;
   font: normal normal normal 15px/23px Karla;
   line-height: 1;
   color: #000000;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+
+.navbar-main .container .collapse ul li a:hover {
+  font-weight: 700;
 }
 
 .navbar-main .container .collapse ul li .nav-link-join {
@@ -328,10 +333,12 @@ body {
   text-align: center center;
   padding: 0px 30px;
   border-radius: 4px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .navbar-main .container .collapse button:hover {
-  background-color: #0f9d58;
+  background-color: #076437;
 }
 
 .navbar-main .container .collapse .post_job {
