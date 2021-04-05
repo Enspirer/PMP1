@@ -14,13 +14,14 @@
                 <div class="ml-auto row">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Explore</a>
+                            <a class="nav-link" href="{{route("frontend.expert_center")}}">Expert Centre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route("frontend.expert_center")}}">Features</a>
+                            <a class="nav-link" href="#">Press</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('frontend.contact_us')}}">Contact Us</a>
@@ -76,9 +77,6 @@
                             </div>
 
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{route('frontend.auth.login')}}">Sign In</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('frontend.auth.register')}}">Join</a>
                             </li>
