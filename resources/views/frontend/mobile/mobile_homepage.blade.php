@@ -51,6 +51,104 @@
         <a href="#" type="button">Post a Project</a>
     </div>
 </div>
+<section class="pic-chalangers-section">
+    <div class="title-group">
+        <h4>
+            Pick your challenge <br />
+            & Get started
+        </h4>
+        <hr />
+    </div>
+    <br />
+    <p class="pick-text">
+    The easiest way to grab your next project… Select the project
+                matches your team profile and get hired immediately by companies
+                around the world. <b>It’s that Simple</b>
+
+
+    </p>
+    <br />
+    <div class="swiper-container swiper-container-mob2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Mobile app Development</h6>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p> -->
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Multivendor ecommerce solution</h6>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p> -->
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Dynamic web solution</h6>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p> -->
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Digital Marketing campaign</h6>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p> -->
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pick-card">
+                    <h6>Customized CRM solution</h6>
+                    <!-- <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy
+                    </p> -->
+                    <div class="row m-0">
+                        <p class="views">45 Views</p>
+                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
+                    </div>
+                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
+                </div>
+            </div>
+         
+    
+        </div>
+        <!-- Add Pagination -->
+        <br />
+        <br />
+        <div class="swiper-pagination swiper-pagination-mob2"></div>
+    </div>
+</section>
 <section class="live-action-gray">
     <div class="head-title">
         <div class="row" data-animscroll="fade-up">
@@ -157,104 +255,7 @@
         </div>
     </div>
 </section>
-<section class="pic-chalangers-section">
-    <div class="title-group">
-        <h4>
-            Pick your challenge <br />
-            & Get started
-        </h4>
-        <hr />
-    </div>
-    <br />
-    <p class="pick-text">
-    The easiest way to grab your next project… Select the project
-                matches your team profile and get hired immediately by companies
-                around the world. <b>It’s that Simple</b>
 
-
-    </p>
-    <br />
-    <div class="swiper-container swiper-container-mob2">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="pick-card">
-                    <h6>Mobile app Development</h6>
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy
-                    </p> -->
-                    <div class="row m-0">
-                        <p class="views">45 Views</p>
-                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
-                    </div>
-                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="pick-card">
-                    <h6>Multivendor ecommerce solution</h6>
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy
-                    </p> -->
-                    <div class="row m-0">
-                        <p class="views">45 Views</p>
-                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
-                    </div>
-                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="pick-card">
-                    <h6>Dynamic web solution</h6>
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy
-                    </p> -->
-                    <div class="row m-0">
-                        <p class="views">45 Views</p>
-                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
-                    </div>
-                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="pick-card">
-                    <h6>Digital Marketing campaign</h6>
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy
-                    </p> -->
-                    <div class="row m-0">
-                        <p class="views">45 Views</p>
-                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
-                    </div>
-                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="pick-card">
-                    <h6>Customized CRM solution</h6>
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam nonumy
-                    </p> -->
-                    <div class="row m-0">
-                        <p class="views">45 Views</p>
-                        <i class="fa fa-long-arrow-up ml-2 red" aria-hidden="true"></i>
-                    </div>
-                    <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
-                </div>
-            </div>
-         
-    
-        </div>
-        <!-- Add Pagination -->
-        <br />
-        <br />
-        <div class="swiper-pagination swiper-pagination-mob2"></div>
-    </div>
-</section>
 <section class="expert-center-section">
     <div class="title-group">
         <h4>Expert Centre</h4>

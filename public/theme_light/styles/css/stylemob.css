@@ -314,12 +314,10 @@ a {
 }
 
 .live-action-gray {
-  background: #f2f2f2 0% 0% no-repeat padding-box;
   width: 100%;
 }
 
 .live-action-gray .head-title {
-  background: #f2f2f2;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
