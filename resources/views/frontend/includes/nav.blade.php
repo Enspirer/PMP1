@@ -21,7 +21,7 @@
                             <a class="nav-link" href="{{route("frontend.expert_center")}}">Expert Centre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Press</a>
+                            <a class="nav-link" href="">Media</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('frontend.contact_us')}}">Contact Us</a>
@@ -78,15 +78,15 @@
 
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('frontend.auth.register')}}">Join</a>
+                                <a class="nav-link-join nav-link" href="{{route('frontend.auth.register')}}">Join</a>
                             </li>
                         @endauth
 
                     </ul>
                     @auth
-                         <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                         <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary">Post a Project</a>
                     @else
-                        <a href="{{route('frontend.auth.login')}}" class="post_job" type="button" class="btn btn-primary">Post a Job</a>
+                        <a href="{{route('frontend.auth.login')}}" class="post_job" type="button" class="btn btn-primary">Post a Project</a>
                    @endauth
                 </div>
             </div>

@@ -343,16 +343,18 @@ body {
 
 .navbar-main .container .collapse .post_job {
   background-color: #0f9d58;
-  color: #fff !important;
   border: transparent;
-  height: 35px;
   text-align: center center;
-  padding: 6px 30px;
+  padding: 0px 30px;
   border-radius: 4px;
+  color: #ffffff !important;
+  line-height: 2;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .navbar-main .container .collapse .post_job:hover {
-  background-color: #0f9d58;
+  background-color: #044123;
 }
 
 .navbar-main .profile {

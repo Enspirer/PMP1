@@ -3,6 +3,7 @@
     <div class="gradient-contact-map">
     </div>
     <div class="title-underline" data-animscroll="fade-up"><br>
+    <br><br>
         <h1>Tallentor Global Network</h1>
         <hr>
     </div>
