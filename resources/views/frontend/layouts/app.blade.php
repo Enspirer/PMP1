@@ -285,7 +285,78 @@
         <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
         <script src="{{url('theme_light/charts/chart_section.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+        <script>
+      $(document).ready(function () {
+        "use strict";
+        $(".menu > ul > li:has( > ul)").addClass("menu-dropdown-icon");
+        $(".menu > ul > li > ul:not(:has(ul))").addClass("normal-sub");
+        $(".menu > ul").before('<a href="#" class="menu-mobile">&nbsp;</a>');
+        $(".menu > ul > li").hover(function (e) {
+          if ($(window).width() > 943) {
+            $(this).children("ul").stop(true, false).fadeToggle(150);
+            e.preventDefault();
+          }
+        });
+        $(".menu > ul > li").click(function () {
+          if ($(window).width() <= 943) {
+            $(this).children("ul").fadeToggle(150);
+          }
+        });
+        $(".menu-mobile").click(function (e) {
+          $(".menu > ul").toggleClass("show-on-mobile");
+          e.preventDefault();
+        });
+      });
+      $(window).resize(function () {
+        $(".menu > ul > li").children("ul").hide();
+        $(".menu > ul").removeClass("show-on-mobile");
+      });
+    </script>
 
+<script language="javascript" type="text/javascript">
+      function changecv(id) {
+        if (id == 1) {
+          $("#0101").show();
+          $("#0102").show();
+          $("#icon01").show();
+          $("#li1").addClass("active-menu");
+          $("#li2").removeClass("active-menu");
+          $("#icon02").hide();
+          $("#0103").hide();
+          $("#0104").hide();
+        }
+        if (id == 2) {
+          $("#0103").show();
+          $("#0104").show();
+          $("#icon02").show();
+          $("#li2").addClass("active-menu");
+          $("#li1").removeClass("active-menu");
+          $("#icon01").hide();
+          $("#0101").hide();
+          $("#0102").hide();
+        }
+      }
+
+      function changecv2(id) {
+        if (id == 1) {
+          $("#0201").show();
+          $("#0202").show();
+          $("#0203").hide();
+          $("#0204").hide();
+        }
+        if (id == 2) {
+          $("#0203").show();
+          $("#0204").show();
+          $("#0201").hide();
+          $("#0202").hide();
+        }
+      }
+    </script>
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
