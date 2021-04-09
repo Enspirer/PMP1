@@ -322,40 +322,79 @@
       function changecv(id) {
         if (id == 1) {
           $("#0101").show();
-          $("#0102").show();
-          $("#icon01").show();
-          $("#li1").addClass("active-menu");
-          $("#li2").removeClass("active-menu");
-          $("#icon02").hide();
+          $("#0102").hide();
           $("#0103").hide();
           $("#0104").hide();
+          $("#icon01").show();
+          $("#icon02").hide();
+          $("#icon03").hide();
+          $("#icon04").hide();
+          $("#img0101").show();
+          $("#img0102").hide();
+          $("#img0103").hide();
+          $("#img0104").hide();
+          $("#li1").addClass("active-menu");
+          $("#li2").removeClass("active-menu");
+          $("#li3").removeClass("active-menu");
+          $("#li4").removeClass("active-menu");
         }
         if (id == 2) {
-          $("#0103").show();
-          $("#0104").show();
-          $("#icon02").show();
-          $("#li2").addClass("active-menu");
-          $("#li1").removeClass("active-menu");
+            $("#0101").hide();
+          $("#0102").show();
+          $("#0103").hide();
+          $("#0104").hide();
           $("#icon01").hide();
-          $("#0101").hide();
+          $("#icon02").show();
+          $("#icon03").hide();
+          $("#icon04").hide();
+          $("#img0101").hide();
+          $("#img0102").show();
+          $("#img0103").hide();
+          $("#img0104").hide();
+          $("#li1").removeClass("active-menu");
+          $("#li2").addClass("active-menu");
+          $("#li3").removeClass("active-menu");
+          $("#li4").removeClass("active-menu");
+        }
+        if (id == 3) {
+            $("#0101").hide();
           $("#0102").hide();
+          $("#0103").show();
+          $("#0104").hide();
+          $("#icon01").hide();
+          $("#icon02").hide();
+          $("#icon03").show();
+          $("#icon04").hide();
+          $("#img0101").hide();
+          $("#img0102").hide();
+          $("#img0103").show();
+          $("#img0104").hide();
+          $("#li1").removeClass("active-menu");
+          $("#li2").removeClass("active-menu");
+          $("#li3").addClass("active-menu");
+          $("#li4").removeClass("active-menu");
+        }
+        if (id == 4) {
+            $("#0101").hide();
+          $("#0102").hide();
+          $("#0103").hide();
+          $("#0104").show();
+          $("#icon01").hide();
+          $("#icon02").hide();
+          $("#icon03").hide();
+          $("#icon04").show();
+          $("#img0101").hide();
+          $("#img0102").hide();
+          $("#img0103").hide();
+          $("#img0104").show();
+          $("#li1").removeClass("active-menu");
+          $("#li2").removeClass("active-menu");
+          $("#li3").removeClass("active-menu");
+          $("#li4").addClass("active-menu");
         }
       }
 
-      function changecv2(id) {
-        if (id == 1) {
-          $("#0201").show();
-          $("#0202").show();
-          $("#0203").hide();
-          $("#0204").hide();
-        }
-        if (id == 2) {
-          $("#0203").show();
-          $("#0204").show();
-          $("#0201").hide();
-          $("#0202").hide();
-        }
-      }
+
     </script>
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">

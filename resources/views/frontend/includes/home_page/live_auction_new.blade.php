@@ -53,6 +53,7 @@
           
         </div>
        <div class="auction-btn-center">
+       
         <a class="auction-all-inner-link-btn" href="#" type="button">VIEW ALL AUCTIONS</a>
        </div>
 
