@@ -247,7 +247,7 @@
                             <a class="main-menu-item" href="{{route('frontend.shop.index')}}">e-Shop</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="#">Acadamy</a>
+                            <a class="main-menu-item" href="{{route('frontend.academy.index')}}">Acadamy</a>
                         </li>
                         <!-- <li>
                             <a class="main-menu-item" href="#">Tenders</a>
