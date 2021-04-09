@@ -102,16 +102,16 @@
                         <ul style="padding: 0; background: #fff; box-shadow: inset 6px 36px 30px -30px #00000029;">
                             <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,  inset -20px 7px 28px -20px #00000029;filter: drop-shadow(0px 10px 25px #00000029) drop-shadow(inset 6px 26px 30px 30px #00000029);">
                                 <ul>
-                                    <li id="li1" onclick="changecv('1')">
+                                    <li id="li1" onmouseover="changecv('1')">
                                         <a href="#"><div class="row m-0">
                                                 <h6 style="line-height: 1; margin: 0">
-                                                    Find a project
+                                                Find a Job
                                                 </h6>
                                                 <i id="icon01" class="fa fa-angle-right" style=" margin-left: auto; font-size: 22px; margin-top: -1px; "aria-hidden="true"></i>
                                             </div>
                                         </a>
                                     </li>
-                                    <li id="li2" onclick="changecv('2')">
+                                    <li id="li2" onmouseover="changecv('2')">
                                         <a href="#">
                                             <div class="row m-0">
                                                 <h6 style="line-height: 1; margin: 0">
@@ -119,7 +119,7 @@
                                                 </h6>
                                                 <i id="icon02" class="fa fa-angle-right" style=" margin-left: auto; font-size: 22px; margin-top: -1px; display: none;"aria-hidden="true"></i></div></a>
                                     </li>
-                                    <li onclick="changecv('3')">
+                                    <li onclick="onmouseover('3')">
                                         <a href="#"><div class="row m-0">
                                                 <h6 style="line-height: 1; margin: 0">
                                                     How it works
@@ -157,7 +157,7 @@
                                 </div>
                             </li>
                             <li id="0102" style="padding: 30px 10px 30px 30px !important">
-                                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" style="width: 100%; height: 200px; object-fit: cover" alt="">
+                                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="">
                             </li>
 
                             <li id="0103" style="display: none;width: 45%;padding: 30px 10px 30px 30px !important;">
@@ -177,7 +177,7 @@
                                 </div>
                             </li>
                             <li id="0104" style=" display: none; padding: 30px 10px 30px 30px !important;">
-                                <img src="{{url('theme_light/assets/erp.jpg')}}" style="width: 100%; height: 200px; object-fit: cover" alt="">
+                                <img src="{{url('theme_light/assets/erp.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="">
                             </li>
                         </ul>
                     </li>
