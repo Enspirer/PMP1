@@ -101,7 +101,7 @@
                                 <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,  inset -20px 7px 28px -20px #00000029;filter: drop-shadow(0px 10px 25px #00000029) drop-shadow(inset 6px 26px 30px 30px #00000029);">
                                     <ul>
                                         <li id="li1" onmouseover="changecv('1')">
-                                            <a href="#">
+                                            <a href="{{route('frontend.auth.login')}}">
                                                 <div class="row m-0">
                                                     <h6 style="line-height: 1; margin: 0">
                                                         Post a Job
@@ -111,7 +111,7 @@
                                             </a>
                                         </li>
                                         <li id="li2" onmouseover="changecv('2')">
-                                            <a href="#">
+                                            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">
                                                 <div class="row m-0">
                                                     <h6 style="line-height: 1; margin: 0">
                                                         Find a Project
@@ -121,7 +121,7 @@
                                             </a>
                                         </li>
                                         <li id="li3" onmouseover="changecv('3')">
-                                            <a href="#">
+                                            <a href="{{route("frontend.expert_center")}}">
                                                 <div class="row m-0">
                                                     <h6 style="line-height: 1; margin: 0">
                                                         How it works
@@ -131,7 +131,7 @@
                                             </a>
                                         </li>
                                         <li id="li4" onmouseover="changecv('4')">
-                                            <a href="#">
+                                            <a href="{{route('frontend.become_a_partner')}}">
                                                 <div class="row m-0">
                                                     <h6 style="line-height: 1; margin: 0">
                                                         Become a Partner
