@@ -79,7 +79,7 @@
             </div>
         </div>
         <div style="margin-top: 40px;display: flex;justify-content: center">
-            <a href="{{route('frontend.contact_us')}}" data-animscroll="fade-up" style="margin: 0;background: #0F9D58 ;border: none;color: #fff;padding: 12px 25px">View All</a>
+            <a href="{{route('frontend.academy.index')}}" data-animscroll="fade-up" style="margin: 0;background: #0F9D58 ;border: none;color: #fff;padding: 12px 25px">View All</a>
         </div>
 
     </div>
