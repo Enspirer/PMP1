@@ -19,7 +19,7 @@
                                 <a class="nav-link" href="{{route("frontend.expert_center")}}">Expert Centre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Media</a>
+                                <a class="nav-link" href="{{route('frontend.blog','all')}}">Media</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('frontend.contact_us')}}">Contact Us</a>
@@ -247,7 +247,7 @@
                             <a class="main-menu-item" href="{{route('frontend.shop.index')}}">e-Shop</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="#">Acadamy</a>
+                            <a class="main-menu-item" href="{{route('frontend.academy.index')}}">Acadamy</a>
                         </li>
                         <!-- <li>
                             <a class="main-menu-item" href="#">Tenders</a>
