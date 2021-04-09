@@ -23,7 +23,7 @@
                                     </div>
                                     <div class="row m-0 mt-1">
                                         <div class="price">
-                                            <h3>From $1800</h3>
+                                            <h3>From $2500</h3>
                                             <h6>per month</h6>
                                         </div>
                                         <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="row m-0 mt-1">
                                         <div class="price">
-                                            <h3>From $50</h3>
+                                            <h3>From $100</h3>
                                             <h6>per month</h6>
                                         </div>
                                         <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="row m-0 mt-1">
                                         <div class="price">
-                                            <h3>From $1500</h3>
+                                            <h3>From $3000</h3>
                                             <h6>per month</h6>
                                         </div>
                                         <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="row m-0 mt-1">
                                         <div class="price">
-                                            <h3>From $3000</h3>
+                                            <h3>From $4000</h3>
                                             <h6>per month</h6>
                                         </div>
                                         <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -118,7 +118,7 @@
                                     </div>
                                     <div class="row m-0 mt-1">
                                         <div class="price">
-                                            <h3>From $2000</h3>
+                                            <h3>From $3000</h3>
                                             <h6>per month</h6>
                                         </div>
                                         <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
