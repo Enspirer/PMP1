@@ -6,7 +6,7 @@
 
     <section class="expert-section">
         <div class="expert-image">
-            <img src="{{url('theme_light/assets/cosmo-consult_crm_resco-mobile-crm_shutterstock_1030116061.jpg')}}" style="object-position: top; object-fit: cover;" alt="" />
+            <img src="{{url('theme_light/assets/eshop-01.jpg')}}" style="object-position: top; object-fit: cover;" alt="" />
             <div class="expert-gradient"></div>
             <div class="expert-text-head">
                 <div class="container">
@@ -40,7 +40,7 @@
                             <div class="row m-0 mt-1">
                                 <div class="price">
                                     <h3>From $2500</h3>
-                                    <h6>per month</h6>
+                                    <!-- <h6>per month</h6> -->
                                 </div>
                                 <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="row m-0 mt-1">
                                 <div class="price">
-                                <h3>From $100</h3>
+                                <h3>From $50</h3>
                                                     <h6>per month</h6>
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -76,7 +76,7 @@
                             <div class="row m-0 mt-1">
                                 <div class="price">
                                 <h3>From $3000</h3>
-                                                    <h6>per month</h6>
+                                                    <!-- <h6>per month</h6> -->
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -112,7 +112,7 @@
                             <div class="row m-0 mt-1">
                                 <div class="price">
                                 <h3>From $4000</h3>
-                                                    <h6>per month</h6>
+                                                    <!-- <h6>per month</h6> -->
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>
@@ -130,7 +130,7 @@
                             <div class="row m-0 mt-1">
                                 <div class="price">
                                 <h3>From $3000</h3>
-                                                    <h6>per month</h6>
+                                                    <!-- <h6>per month</h6> -->
                                 </div>
                                 <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                             </div>

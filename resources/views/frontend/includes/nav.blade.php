@@ -1,5 +1,5 @@
 <body>
-    <section class="nav-section">
+    <section class="nav-section" style="z-index: 9999999999999999999999999999999999999999999999999999 !important;">
         <nav class="navbar-main navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" style="position: absolute" href="{{url('/')}}">
@@ -145,7 +145,7 @@
                                 <li id="0101" style="width: 45%; padding: 30px 10px 30px 30px !important">
                                     <h3>Find the Best Global Talent for your next Project</h3>
                                     <br>
-                                    <p class="desc">
+                                    <p class="desc" style="line-height: 1.5;">
                                         Prepare comprehensive project plan and post on Tallentor <br>
                                         You will receive instant quotes form agencies <br>
                                         Evaluate and Hire the best talent. <br>
@@ -168,7 +168,7 @@
                                     <h3>Stay tuned to Tallentor, you will never miss that project you desire.
                                     </h3>
                                     <br>
-                                    <p class="desc">
+                                    <p class="desc" style="line-height: 1.5;">
                                         Get registered as an agency under your expert category <br>
                                         Tallentor will notify the projects that matches your skill set <br>
                                         You may also browse through the categories that you are interested in.
@@ -189,19 +189,17 @@
 
                                 <li id="0103" style="display: none;width: 45%;padding: 30px 10px 30px 30px !important;">
 
-                                    <br />
-     
-                                    <br />
+                                
                                     <a href="#" style="padding: 0;">
                                         <div class="row m-0">
-                                            <p>a)  &nbsp;&nbsp;     Post a job as a Standard Project</p>
+                                            <p style="color: #000;">a)  &nbsp;&nbsp;     Post a job as a Standard Project</p>
                                         </div>
                                     </a>
 
 <br>
                                     <a href="#" style="padding: 0;">
                                         <div class="row m-0">
-                                            <p>b)  &nbsp;&nbsp;     Post a job with the Expert Project Plan (Hire the Expert Centre)</p>
+                                            <p style="color: #000;">b)  &nbsp;&nbsp;     Post a job with the Expert Project Plan (Hire the Expert Centre)</p>
                                         </div>
                                     </a>
 
