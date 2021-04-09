@@ -225,7 +225,7 @@
 
                                     </p>
                                     <br />
-                                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}" style="padding: 0;">
+                                    <a href="{{route('frontend.become_a_partner')}}" style="padding: 0;">
                                         <div class="row m-0">
                                             <p>Learn More</p>
                                             <i class="fa fa-angle-right" style="margin-top: -2px;color: #0f9d58;" aria-hidden="true"></i>
