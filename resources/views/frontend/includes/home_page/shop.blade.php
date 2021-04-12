@@ -24,6 +24,8 @@
                                     <div class="row m-0 mt-1">
                                         <div class="price">
                                             <h3>From $2500</h3>
+                                            <br>
+                                            <br>
                                             <!-- <h6>per month</h6> -->
                                         </div>
                                         <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>

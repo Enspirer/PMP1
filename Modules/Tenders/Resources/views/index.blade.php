@@ -16,7 +16,7 @@
                         <h5>&nbsp;Tenders</h5>
                     </div>
                     <div class="col-md-4">
-                        <h3>12</h3>
+                        <h3>6</h3>
                     </div>
                 </div>
                 <br>
@@ -29,7 +29,7 @@
 
                     </div>
                     <div class="col-md-4">
-                        <h3>123</h3>
+                        <h3>28</h3>
                     </div>
                 </div>
             </div>
@@ -70,13 +70,13 @@
                                         <a href="#">
                                             <div class="row">
                                                 <p>Government Tenders</p>
-                                                <p class="ml-auto">600</p>
+                                                <p class="ml-auto">29</p>
                                             </div>
                                         </a>
                                         <a href="#">
                                             <div class="row">
-                                                <p>Government Tenders</p>
-                                                <p class="ml-auto">600</p>
+                                                <p>Private Tenders</p>
+                                                <p class="ml-auto">11</p>
                                             </div>
                                         </a>
                                     </div>
@@ -105,62 +105,52 @@
                                         <a href="#">
                                             <div class="row">
                                                 <p>IT and Software</p>
-                                                <p class="ml-auto">600</p>
+                                                <p class="ml-auto">128</p>
                                             </div>
                                         </a>
                                         <a href="#">
                                             <div class="row">
                                                 <p>Architecture</p>
-                                                <p class="ml-auto">600</p>
+                                                <p class="ml-auto">23</p>
                                             </div>
                                         </a>
                                         <a href="#">
                                             <div class="row">
                                                 <p>Construction</p>
-                                                <p class="ml-auto">600</p>
+                                                <p class="ml-auto">4</p>
                                             </div>
                                         </a>
                                         <a href="#">
                                             <div class="row">
-                                                <p>Lorem ipsum</p>
-                                                <p class="ml-auto">600</p>
+                                                <p>Agriculture</p>
+                                                <p class="ml-auto">87</p>
                                             </div>
                                         </a>
 
                                         <a href="#">
                                             <div class="row">
-                                                <p>Lorem ipsum</p>
-                                                <p class="ml-auto">600</p>
+                                                <p>Services</p>
+                                                <p class="ml-auto">54</p>
                                             </div>
                                         </a>
 
                                         <a href="#">
                                             <div class="row">
-                                                <p>Lorem ipsum</p>
-                                                <p class="ml-auto">600</p>
+                                                <p>Furniture</p>
+                                                <p class="ml-auto">56</p>
                                             </div>
                                         </a>
 
                                         <a href="#">
                                             <div class="row">
-                                                <p>Lorem ipsum</p>
-                                                <p class="ml-auto">600</p>
+                                                <p>Electronics</p>
+                                                <p class="ml-auto">12</p>
                                             </div>
                                         </a>
 
-                                        <a href="#">
-                                            <div class="row">
-                                                <p>Lorem ipsum</p>
-                                                <p class="ml-auto">600</p>
-                                            </div>
-                                        </a>
+                                    
 
-                                        <a href="#">
-                                            <div class="row">
-                                                <p>Lorem ipsum</p>
-                                                <p class="ml-auto">600</p>
-                                            </div>
-                                        </a>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +205,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="row row-selector">
+                        <div class="row row-selector m-0">
                             <div class="selector">
                                 <div class="row m-0">
                                     <p>Sort by :</p>
@@ -252,13 +242,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="ml-10">Showing 1 - 10 of 1125 tenders</p>
+                        <p class="ml-10">Showing 1 - 4 of 225 tenders</p>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                
                                 <div class="card-left-tender">
                                     <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
+                                    Mobile app Development
                                     </h1>
                                     <hr />
                                     <div class="row row-detail m-0">
@@ -287,7 +277,7 @@
                                                     Location :
                                                 </div>
                                                 <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
+                                                    Sri lanka
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -300,71 +290,14 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
+                                            <!-- <h6>Tender expire in:</h6>
                                             <h5>24 Days 12 Hr</h5>
-                                            <br />
+                                            <br /> -->
                                             <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
+                                            <a type="button" class="outline_btn" href="{{route('frontend.contact_us')}}">Contact Us</a>
                                                 <br />
 
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-left-tender">
-                                    <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
-                                    </h1>
-                                    <hr />
-                                    <div class="row row-detail m-0">
-                                        <p>Posted 38 mins ago</p>
-                                        <p>Tender Id: mktplz10001</p>
-                                    </div>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-md-8 card-detail-list">
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">Company :</div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    <a href="#">Log in to view company</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Category :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    IT and Software
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Location :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Closing Date :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    28 April 2021
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
-                                            <h5>24 Days 12 Hr</h5>
-                                            <br />
-                                            <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
-                                                <br />
-
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
+                                                <a type="button" class="normal_btn" href="{{route('frontend.contact_us')}}">View Tender</a>
                                             </div>
                                         </div>
                                     </div>
@@ -372,8 +305,7 @@
 
                                 <div class="card-left-tender">
                                     <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
+                                    E-Commerce application
                                     </h1>
                                     <hr />
                                     <div class="row row-detail m-0">
@@ -402,7 +334,7 @@
                                                     Location :
                                                 </div>
                                                 <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
+                                                    Sri lanka
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -415,14 +347,14 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
+                                            <!-- <h6>Tender expire in:</h6>
                                             <h5>24 Days 12 Hr</h5>
-                                            <br />
+                                            <br /> -->
                                             <div class="tender_button">
                                                 <a type="button" class="outline_btn red" href="#">Live Tender</a>
                                                 <br />
 
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
+                                                <a type="button" class="normal_btn" href="{{route('frontend.contact_us')}}">View Tender</a>
                                             </div>
                                         </div>
                                     </div>
@@ -430,8 +362,7 @@
 
                                 <div class="card-left-tender">
                                     <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
+                                    ERP solution
                                     </h1>
                                     <hr />
                                     <div class="row row-detail m-0">
@@ -460,7 +391,7 @@
                                                     Location :
                                                 </div>
                                                 <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
+                                                    Sri lanka
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -473,14 +404,14 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
+                                            <!-- <h6>Tender expire in:</h6>
                                             <h5>24 Days 12 Hr</h5>
-                                            <br />
+                                            <br /> -->
                                             <div class="tender_button">
                                                 <a type="button" class="outline_btn red" href="#">Live Tender</a>
                                                 <br />
 
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
+                                                <a type="button" class="normal_btn" href="{{route('frontend.contact_us')}}">View Tender</a>
                                             </div>
                                         </div>
                                     </div>
@@ -488,8 +419,7 @@
 
                                 <div class="card-left-tender">
                                     <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
+                                    Digital Marketing campaign
                                     </h1>
                                     <hr />
                                     <div class="row row-detail m-0">
@@ -518,7 +448,7 @@
                                                     Location :
                                                 </div>
                                                 <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
+                                                    Sri lanka
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -531,310 +461,22 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
+                                            <!-- <h6>Tender expire in:</h6>
                                             <h5>24 Days 12 Hr</h5>
-                                            <br />
+                                            <br /> -->
                                             <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
+                                                <a type="button" class="outline_btn" href="{{route('frontend.contact_us')}}">Contact Us</a>
                                                 <br />
 
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
+                                                <a type="button" class="normal_btn" href="{{route('frontend.contact_us')}}">View Tender</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <div class="card-left-tender">
-                                    <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
-                                    </h1>
-                                    <hr />
-                                    <div class="row row-detail m-0">
-                                        <p>Posted 38 mins ago</p>
-                                        <p>Tender Id: mktplz10001</p>
-                                    </div>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-md-8 card-detail-list">
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">Company :</div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    <a href="#">Log in to view company</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Category :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    IT and Software
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Location :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Closing Date :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    28 April 2021
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
-                                            <h5>24 Days 12 Hr</h5>
-                                            <br />
-                                            <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
-                                                <br />
-
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                <div class="card-left-tender">
-                                    <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
-                                    </h1>
-                                    <hr />
-                                    <div class="row row-detail m-0">
-                                        <p>Posted 38 mins ago</p>
-                                        <p>Tender Id: mktplz10001</p>
-                                    </div>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-md-8 card-detail-list">
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">Company :</div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    <a href="#">Log in to view company</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Category :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    IT and Software
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Location :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Closing Date :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    28 April 2021
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
-                                            <h5>24 Days 12 Hr</h5>
-                                            <br />
-                                            <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
-                                                <br />
-
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-left-tender">
-                                    <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
-                                    </h1>
-                                    <hr />
-                                    <div class="row row-detail m-0">
-                                        <p>Posted 38 mins ago</p>
-                                        <p>Tender Id: mktplz10001</p>
-                                    </div>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-md-8 card-detail-list">
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">Company :</div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    <a href="#">Log in to view company</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Category :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    IT and Software
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Location :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Closing Date :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    28 April 2021
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
-                                            <h5>24 Days 12 Hr</h5>
-                                            <br />
-                                            <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
-                                                <br />
-
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-closed" role="tabpanel" aria-labelledby="pills-closed-tab">
-                                <div class="card-left-tender">
-                                    <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
-                                    </h1>
-                                    <hr />
-                                    <div class="row row-detail m-0">
-                                        <p>Posted 38 mins ago</p>
-                                        <p>Tender Id: mktplz10001</p>
-                                    </div>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-md-8 card-detail-list">
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">Company :</div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    <a href="#">Log in to view company</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Category :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    IT and Software
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Location :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Closing Date :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    28 April 2021
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
-                                            <h5>24 Days 12 Hr</h5>
-                                            <br />
-                                            <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
-                                                <br />
-
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-left-tender">
-                                    <h1>
-                                        Developing and maintenance of a software programme for
-                                        private insurance company
-                                    </h1>
-                                    <hr />
-                                    <div class="row row-detail m-0">
-                                        <p>Posted 38 mins ago</p>
-                                        <p>Tender Id: mktplz10001</p>
-                                    </div>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-md-8 card-detail-list">
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">Company :</div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    <a href="#">Log in to view company</a>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Category :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    IT and Software
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Location :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    Lorem ipsum, Sri lanka
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 card-detail-item">
-                                                    Closing Date :
-                                                </div>
-                                                <div class="col-md-7 card-detail-item">
-                                                    28 April 2021
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 card-detail-right">
-                                            <h6>Tender expire in:</h6>
-                                            <h5>24 Days 12 Hr</h5>
-                                            <br />
-                                            <div class="tender_button">
-                                                <a type="button" class="outline_btn" href="#">Today's Tender</a>
-                                                <br />
-
-                                                <a type="button" class="normal_btn" href="#">View Tender</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      
+                      
+                         
                         </div>
                     </div>
                     <div class="pagination-explore">

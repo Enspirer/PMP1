@@ -7926,6 +7926,10 @@ input.search-menu:focus
   padding: 40px 0;
 }
 
+#news-section .bottum-part-news .swiper-container {
+  padding: 40px 0;
+}
+
 #news-section .bottum-part-news .swiper-slide .card {
   border: none;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -8368,8 +8372,7 @@ input.search-menu:focus
   font: normal normal normal 11px/17px Karla;
   letter-spacing: 0px;
   color: #6d6d6d;
-  margin-right: 18px;
-  margin: 4px 0 0 0;
+  margin: 4px 20px 0 0;
   line-height: 1;
 }
 

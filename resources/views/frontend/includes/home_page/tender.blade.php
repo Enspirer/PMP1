@@ -11,8 +11,9 @@
   <h1>Global Tender Marketplace</h1>
 
   <ul>
-    <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</li>
-    <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</li>
+    <li>Digital platform connecting buyers and suppliers</li>
+    <li>Get notified of Government and Private sector tenders</li>
+    <li>Making the tender process accessible for businesses of every scale.</li>
   </ul>
   <br>
   <a href="{{route('frontend.tenders.index')}}">View All Tenders</a>
@@ -21,14 +22,14 @@
   <div class="trade-box">
     <div class="row">
       <h2>Today's Tenders</h2>
-      <h1>12</h1>
+      <h1>6</h1>
     </div>
   </div>
   <br>
   <div class="trade-box">
     <div class="row">
       <h2>Live Tenders</h2>
-      <h1>123</h1>
+      <h1>28</h1>
     </div>
   </div>
 </div> 
