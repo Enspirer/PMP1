@@ -244,7 +244,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const date = "7 march 2021";
+const date = "7 march 2022";
 function countdown() {
     const newYearsDate = new Date(date);
     const currentDate = new Date();

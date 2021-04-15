@@ -4,8 +4,8 @@
 
 @section('content')
     <section class="expert-section">
-        <div class="expert-image">
-            <img src="{{url('theme_light/assets/inner/partnerus-012.jpg')}}" style="object-position: center;object-fit: cover;" />
+        <div class="expert-image" style="padding-top: 60px;">
+            <img src="{{url('theme_light/assets/inner/globe-01.svg')}}" style="object-position: center;object-fit: cover;" />
             <div class="expert-gradient"></div>
             <div class="expert-text-head">
 

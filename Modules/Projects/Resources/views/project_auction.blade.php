@@ -3,7 +3,7 @@
 @section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
 
 @section('content')
-    <div id="single-project-body">
+    <div id="single-project-body" style="padding-top: 70px;">
         @include('projects::includes.project_auction.header')
         <div class="body-section-single-project">
             <div class="container">

@@ -6,7 +6,7 @@
 
    @include('projects::includes.explore_page.category_menu')
     <!-- body  -->
-    <div id="explore-body">
+    <div id="explore-body" class="mt-5">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
