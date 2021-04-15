@@ -15,7 +15,7 @@
         <nav class="navbar navbar-dark">
             <input type="checkbox" id="overlay-input" />
             <label for="overlay-input" aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg" id="overlay-button"><span></span></label>
-            <div class="center-circle">
+            <div class="center-circle" style="    box-shadow: 0px -1px 18px 1px #0000005c;">
                 <div class="img-center">
                     <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
                 </div>
@@ -89,7 +89,7 @@
         <form action="#" class="search-hero-mobile">
             <div class="input-group">
                 <i class="fa fa-search" aria-hidden="true"></i>
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <input type="text" class="form-control" placeholder="Projects you are looking for" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button">
                         Search
@@ -507,7 +507,7 @@
     <br />
     <br />
     <div class="button-acadamy">
-        <a href="#" type="button">Register Now</a>
+        <a href="{{route('frontend.academy.index')}}" type="button">Register Now</a>
     </div>
 </section>
 
