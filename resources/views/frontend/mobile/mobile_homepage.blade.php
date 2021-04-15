@@ -20,7 +20,7 @@
                     <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
                 </div>
             </div>
-            <div class="right-btn">Join</div>
+            <div class="right-btn"> <a style="padding: 0;color: #000;" href="{{route('frontend.auth.register')}}">Join</a> </div>
 
 
             <nav class="slide-content" style="background: #f2f2f2 !important;">
