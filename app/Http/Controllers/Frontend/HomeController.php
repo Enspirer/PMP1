@@ -15,11 +15,14 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $mobileRequest = $request->header('sec-ch-ua-mobile');
-        if($mobileRequest == "?1")
+
+        if (is_mobile(request()->header('user-agent')) != true)
         {
-            return view('frontend.mobile.mobile_homepage');
-        }else{
             return view('frontend.index');
+
+        }else{
+            return view('frontend.mobile.mobile_homepage');
         }
+
     }
 }
