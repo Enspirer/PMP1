@@ -6,10 +6,11 @@
     <section id="login-body">
         <div class="row">
             <div class="left-form-login col-md-4" data-animscroll="fade-up" data-animscroll-delay="100">
+            <br><br><br><br>
                 <h1>Forgot your password?</h1>
-                <p style="max-width: 500px;margin: auto; margin-top: 24px;">Don't worry! Resetting your password is easy. Just type the email that you used to register with Tallantor</p>
+                <p style="max-width: 500px;margin: auto; margin-top: 24px;font-size: 15px;">Don't worry! Resetting your password is easy. Just type the email that you used to register with Tallantor</p>
 
-                <div class="form-login" style="margin-top: 80px; max-width: 350px;">
+                <div class="form-login" style="margin-top: 50px; max-width: 350px;">
                     <form method="post" action="{{route('frontend.auth.password.email.post')}}">
                         {{csrf_field()}}
                         <div class="form-group">

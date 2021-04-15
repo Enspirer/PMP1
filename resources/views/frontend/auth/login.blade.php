@@ -7,12 +7,15 @@
     <section id="login-body">
         <div class="row">
             <div class="left-form-login col-md-4" data-animscroll="fade-up" data-animscroll-delay="100">
+            <br>
+            <br>
+            <br>
                 <h1>Hello there,</h1>
                 <p>Welcome back</p>
                 <div class="login-buttons-section">
                     @include('frontend.auth.includes.socialite')
                 </div>
-                <div class="separator">or</div>
+                <!-- <div class="separator">or</div> -->
                 <div class="form-login">
                     <form action="{{route('frontend.auth.login.post')}}" method="post">
                         {{csrf_field()}}

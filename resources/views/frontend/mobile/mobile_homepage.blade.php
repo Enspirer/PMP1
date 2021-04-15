@@ -222,7 +222,7 @@
 
         <div class="row button-live-row">
             <div class="button-live-single col">
-                <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
+                <a data-toggle="modal" data-target="#exampleModalCenter" class="view-scope-outline" href="#" type="button">VIEW BRIEF</a>
             </div>
 
             <div class="button-live-single col">
@@ -250,8 +250,80 @@
             <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
           </div>
         </div> -->
+        <div class="row">
+        <a style="    margin: auto;
+    justify-content: center;
+    font-family: Poppins;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: #F83535 ;" href="#">VIEW ALL AUCTIONS</a>
+        </div>
+       
     </div>
 </section>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Poppins;">Project Brief</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card" style="border: transparent;">
+          <div class="container"><br>
+            <b style="font-family: Poppins;">Development of eCommerce platform for a leading Fashion brand</b>
+            <br><br>
+            <p style="font-family: Poppins;">
+              We are a multinational Currier company who
+              is planning to get a customized ERP solution
+              with the following modules <br>
+              <br>
+            </p>
+
+            <ul style="font-family: Poppins;">
+              <li>
+                Accounting &amp; Financials
+              </li>
+              <li>Human Capital Management</li>
+              <li>Manufacturing &amp; Distribution</li>
+              <li>Manufacturing &amp; Distribution</li>
+              <li>Sales &amp; Inventory Management</li>
+              <li>Supply chain management</li>
+              <li>Customer relationship management</li>
+              <li>Support center management</li>
+              <li>Deployment</li>
+            </ul>
+            <br>
+            <p style="font-family: Poppins;">We have completed the initial project scope.
+              The team to undertake the process analysis
+              and define the sub task management with clear milestones
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" style="font-family: Poppins;    color: #000;
+    background: transparent;
+    border: 1px solid #000 !important;
+    border: transparent;" data-dismiss="modal">Close</button>
+        <button type="button" style="font-family: Poppins;color: #fff;
+    background: #0f9d58;
+    border: 1px solid #0f9d58 !important;
+    border: transparent;" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <section class="tender-section">
     <div class="dark-tender-layer"></div>
     <div class="tender-section-content">
@@ -265,13 +337,14 @@
         <br />
         <ul>
             <li>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                nonumy eirmod tempor invidunt ut labore et
+            Digital platform connecting buyers and suppliers
             </li>
 
             <li>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                nonumy eirmod tempor invidunt ut labore et
+            Get notified of Government and Private sector tenders
+            </li>
+            <li>
+            Making the tender process accessible for businesses of every scale.
             </li>
         </ul>
 
@@ -282,7 +355,7 @@
                         <h4>Today's Tenders</h4>
                     </div>
                     <div class="col-4 col">
-                        <h3>12</h3>
+                        <h3>6</h3>
                     </div>
                 </div>
             </div>
@@ -292,7 +365,7 @@
                         <h4>Live Tenders</h4>
                     </div>
                     <div class="col-4 col">
-                        <h3>123</h3>
+                        <h3>28</h3>
                     </div>
                 </div>
             </div>

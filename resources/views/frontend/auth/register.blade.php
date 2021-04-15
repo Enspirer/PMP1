@@ -6,7 +6,7 @@
 
     <section id="login-body">
         <div class="row">
-            <div class="left-form-login col-md-4" data-animscroll="fade-up" data-animscroll-delay="100"><br><br><br>
+            <div class="left-form-login col-md-4" data-animscroll="fade-up" data-animscroll-delay="100"><br><br><br><br><br>
                 <h1>Register Here</h1>
                 <p class="register-paragraph">Tell us what you are looking for</p>
                 <div class="form-login">
@@ -76,8 +76,8 @@
                             <button type="submit" class="btn btn-primary" disabled id="btn_submit">
                                 Sign Up
                             </button>
-                            <p>or</p>
-                            <a href="#">Sign In</a>
+                            <p style="margin: 0;">or</p>
+                            <a href="{{route('frontend.auth.login')}}">Sign In</a>
                         </div>
                     </form>
                 </div>
