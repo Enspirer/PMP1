@@ -4,27 +4,79 @@
 
 @section('content')
 
-<div class="pos-f-t">
-    <nav class="navbar navbar-dark">
-        <input type="checkbox" id="overlay-input" />
-        <label for="overlay-input" id="overlay-button"><span></span></label>
-        <div class="center-circle">
-            <div class="img-center">
-                <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" />
+
+
+
+
+
+
+<div class="header">
+    <header class="pos-f-t page-header">
+        <nav class="navbar navbar-dark">
+            <input type="checkbox" id="overlay-input" />
+            <label for="overlay-input" aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg" id="overlay-button"><span></span></label>
+            <div class="center-circle">
+                <div class="img-center">
+                    <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
+                </div>
             </div>
-        </div>
-        <div class="right-btn">Join</div>
-        <div id="overlay">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sign In</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="right-btn">Join</div>
+
+
+            <nav class="slide-content" style="background: #f2f2f2 !important;">
+                <div class="part-yellow-top-logo">
+                    <div class="row m-0">
+                        <div class="col-6 p-0">
+                        <a href="{{url('/')}}" style="padding: 0;">  <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
+                        </div>
+                        <div class="col-6 p-0">
+                            <a class="post-job-btn-mob" href="#">Post a Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part-yellow-top-menu">
+                    <a class="" href="{{url('/')}}">Home</a>
+                    <a href="{{route("frontend.expert_center")}}">Expert Centre</a>
+                    <a href="{{route('frontend.blog','all')}}">Media</a>
+                    <a href="{{route('frontend.contact_us')}}">Contact Us</a>
+                    <a href="{{route('frontend.auth.register')}}">Join</a>
+                </div>
+
+                <div class="part-gray-sub-menu">
+                    <a id="collapsbtnexplore" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Explore <i id="mobile-menu-icon-down" class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <a href="{{route('frontend.auth.login')}}">Post a Job</a>
+                            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Find a Project</a>
+                            <a href="{{route("frontend.expert_center")}}">How it works</a>
+                            <a href="{{route('frontend.become_a_partner')}}">Become a partner</a>
+                        </div>
+                    </div>
+                    <a href="{{route('frontend.project_auction',1)}}">Auctions</a>
+                    <a href="{{route('frontend.tenders.index')}}">Tenders</a>
+                    <a href="{{route('frontend.shop.index')}}">e-Shop</a>
+                    <a href="{{route('frontend.academy.index')}}">Academy</a>
+                </div>
+
+
+            </nav>
+
+            <div class="slide-fade"></div>
+
+    </header>
+
 </div>
+
+
+
+
+
+</nav>
+</div>
+
+
+
 
 <div class="hero-image">
     <div class="dark-layer-hero"></div>
@@ -61,9 +113,9 @@
     </div>
     <br />
     <p class="pick-text">
-    The easiest way to grab your next project… Select the project
-                matches your team profile and get hired immediately by companies
-                around the world. <b>It’s that Simple</b>
+        The easiest way to grab your next project… Select the project
+        matches your team profile and get hired immediately by companies
+        around the world. <b>It’s that Simple</b>
 
 
     </p>
@@ -140,8 +192,8 @@
                     <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
-         
-    
+
+
         </div>
         <!-- Add Pagination -->
         <br />
@@ -161,34 +213,30 @@
 </section>
 
 <section class="live-action-content">
-      <div class="container">
+    <div class="container">
         <h2>
-          World class designer to make mock-up of stages of our process and a
-          dashboard for landing page
+            World class designer to make mock-up of stages of our process and a
+            dashboard for landing page
         </h2>
         <h6>Auction ends in : <span>12Hr 34Min</span></h6>
-    
-        <div class="row button-live-row">
-          <div class="button-live-single col">
-            <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
-          </div>
 
-          <div class="button-live-single col">
-            <a class="view-scope-fill" href="{{route('frontend.auth.login')}}" type="button">SIGN IN TO BIT</a>
-          </div>
+        <div class="row button-live-row">
+            <div class="button-live-single col">
+                <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
+            </div>
+
+            <div class="button-live-single col">
+                <a class="view-scope-fill" href="{{route('frontend.auth.login')}}" type="button">SIGN IN TO BIT</a>
+            </div>
         </div>
         <br>
         <br />
-        <div
-          id="container"
-          data-animscroll="fade-left"
-          style="
+        <div id="container" data-animscroll="fade-left" style="
             height: 300px;
             -webkit-tap-highlight-color: transparent;
             user-select: none;
             position: relative;
-          "
-        ></div>
+          "></div>
 
         <!-- <p class="live-bidders">Live Bidders -38</p>
         <br />
@@ -202,8 +250,8 @@
             <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
           </div>
         </div> -->
-      </div>
-    </section>
+    </div>
+</section>
 <section class="tender-section">
     <div class="dark-tender-layer"></div>
     <div class="tender-section-content">
@@ -300,7 +348,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img  src="{{url('theme_light/assets/pos.jpg')}}" alt="">
+                    <img src="{{url('theme_light/assets/pos.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#"> POS System</a></p>
@@ -321,18 +369,18 @@
             </div>
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
+                    <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                        <p><a href="#">E-Commerce Solution</a></p>
+                            <p><a href="#">E-Commerce Solution</a></p>
                             <div class="rating ml-auto">
                                 <i class="fa fa-star" aria-hidden="true"></i>5.0
                             </div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                            <h3>From $50</h3>
-                                            <h6>per month</h6>
+                                <h3>From $50</h3>
+                                <h6>per month</h6>
                             </div>
                             <a href="#" class="ml-auto">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -342,18 +390,18 @@
             </div>
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
+                    <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                        <p><a href="#">Payroll mana....</a></p>
+                            <p><a href="#">Payroll mana....</a></p>
                             <div class="rating ml-auto">
                                 <i class="fa fa-star" aria-hidden="true"></i>5.0
                             </div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                            <h3>From $1500</h3>
-                                            <h6>per month</h6>
+                                <h3>From $1500</h3>
+                                <h6>per month</h6>
                             </div>
                             <a href="#" class="ml-auto">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -363,18 +411,18 @@
             </div>
             <div class="swiper-slide">
                 <div class="card-shop">
-                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
+                    <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                        <p><a href="#">Multi vendor ec..</a></p>
+                            <p><a href="#">Multi vendor ec..</a></p>
                             <div class="rating ml-auto">
                                 <i class="fa fa-star" aria-hidden="true"></i>5.0
                             </div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                            <h3>From $100</h3>
-                                            <h6>per month</h6>
+                                <h3>From $100</h3>
+                                <h6>per month</h6>
                             </div>
                             <a href="#" class="ml-auto">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -390,7 +438,7 @@
     </div>
     <br />
     <div class="button-shop">
-        <a  href="{{route('frontend.shop.index')}}" type="button">View All Products</a>
+        <a href="{{route('frontend.shop.index')}}" type="button">View All Products</a>
     </div>
 </section>
 <section class="acadamy-section-mobile">
@@ -418,7 +466,7 @@
     </div>
 
     <div class="card-acadamy">
-    <h3>Digital Marketing</h3>
+        <h3>Digital Marketing</h3>
         <div class="label-acadamy">
             <p>Fundamental</p>
         </div>
@@ -432,13 +480,13 @@
         <div class="acadamy-details row">
             <i class="fa fa-check" aria-hidden="true"></i>
             <p>
-Industrial Training with Realti...</p>
+                Industrial Training with Realti...</p>
         </div>
         <div class="color-card green-bg"></div>
     </div>
 
     <div class="card-acadamy">
-    <h3>Graphic Designing</h3>
+        <h3>Graphic Designing</h3>
         <div class="label-acadamy">
             <p>Fundamental</p>
         </div>
@@ -469,4 +517,27 @@ Industrial Training with Realti...</p>
 @if(config('access.captcha.contact'))
 @captchaScripts
 @endif
+<script>
+    $("#collapsbtnexplore").click(function() {
+        if ($(this).attr('aria-expanded') == 'false') {
+            $("#mobile-menu-icon-down").removeClass("fa-angle-down")
+            $("#mobile-menu-icon-down").addClass("fa-angle-up")
+            $(this).addClass("active");
+        } else {
+            $("#mobile-menu-icon-down").addClass("fa-angle-down")
+            $("#mobile-menu-icon-down").removeClass("fa-angle-up")
+            $(this).removeClass("active");
+        }
+    });
+
+
+    $(document).ready(function() {
+        $('.open-mobile-menu,.slide-fade,.sliding-panel-close').on('click touchstart', function(e) {
+            $('.slide-content,.slide-fade').toggleClass('is-visible');
+            $('#wrapper').toggleClass('is-obscured');
+            $('.slide-content').toggleClass('slide-content-display');
+            e.preventDefault();
+        });
+    });
+</script>
 @endpush
