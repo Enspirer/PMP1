@@ -12,7 +12,8 @@
             @include('frontend.auth.includes.socialite')
 
         </div>
-        <div class="separator">or</div>
+        <!-- <div class="separator">or</div> -->
+        <br>
         <div class="form-login">
             <form action="{{route('frontend.auth.login.post')}}" method="post">
                 {{csrf_field()}}
@@ -32,7 +33,7 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
                     <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                 </div>
-                <a href="{{ route('frontend.auth.password.reset') }}" class="text-right">Forget Password?</a>
+                <a href="{{ route('frontend.auth.password.reset') }}" class="text-right" style="color: #0f9d58; font-family: Poppins;font-size: 13px;">Forget Password?</a>
             </div>
             <hr>
             <div class="bottumText">
