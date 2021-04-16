@@ -53,7 +53,7 @@
                                         <a href="{{url('/')}}" style="padding: 0;">  <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
                                     </div>
                                     <div class="col-6 p-0">
-                                        <a class="post-job-btn-mob" href="#">Post a Project</a>
+                                        <a class="post-job-btn-mob" href="{{route('frontend.auth.login')}}">Post a Project</a>
                                     </div>
                                 </div>
                             </div>
