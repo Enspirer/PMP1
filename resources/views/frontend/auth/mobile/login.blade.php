@@ -6,7 +6,20 @@
 
 
     <br><br>
-    @include('includes.partials.messages')
+
+    <section class="login-mob">
+     
+          
+     <h1>Hello there,</h1>
+     <p>Welcome back</p>
+       
+     </section>
+
+
+   <div class="error" style="padding: 15px;">
+            @include('includes.partials.messages')
+            </div>
+            
     <section class="login-form-mob">
         <div class="login-buttons-section">
             @include('frontend.auth.includes.socialite')
