@@ -1,6 +1,12 @@
+
 <section id="login-body">
         <div class="row">
             <div class="left-form-login col-md-4" data-animscroll="fade-up" data-animscroll-delay="100"><br><br><br><br><br>
+            <div class="error" style="padding: 15px;">
+            @include('includes.partials.messages')
+            </div>
+            
+
                 <h1>Register Here</h1>
                 <p class="register-paragraph">Tell us what you are looking for</p>
                 <div class="form-login">

@@ -74,7 +74,7 @@
 
 
         <div class="">
-            @include('includes.partials.messages')
+            <!-- @include('includes.partials.messages') -->
             @yield('content')
         </div><!-- container -->
     </div><!-- #app -->
