@@ -4,16 +4,18 @@
 
 @section('content')
 
-    @include('frontend.includes.home_page.search_section')
-    @include('frontend.includes.home_page.card_timeline_section')
-    @include('frontend.includes.home_page.live_auction_new')
-    @include('frontend.includes.home_page.tender')
-    
-{{--    @include('frontend.includes.home_page.what_we_do_section')--}}
-    @include('frontend.includes.home_page.expert_center_section')
-{{--    @include('frontend.includes.home_page.how_to_work_section')--}}
-    @include('frontend.includes.home_page.shop')
-    @include('frontend.includes.home_page.acadamy')
+    @if(is_mobile(request()->header('user-agent')) != true)
+        @include('frontend.includes.home_page.search_section')
+        @include('frontend.includes.home_page.card_timeline_section')
+        @include('frontend.includes.home_page.live_auction_new')
+        @include('frontend.includes.home_page.tender')
+        @include('frontend.includes.home_page.expert_center_section')
+        @include('frontend.includes.home_page.shop')
+        @include('frontend.includes.home_page.acadamy')
+    @else
+        @include('frontend.mobile.mobile_homepage')
+    @endif
+
 @endsection
 
 @push('after-scripts')

@@ -33,8 +33,72 @@
         @include('includes.partials.logged-in-as')
 
         <div class="">
-            @include('includes.partials.messages')
-            @yield('content')
+            <div class="header">
+                <header class="pos-f-t page-header">
+                    <nav class="navbar navbar-dark">
+                        <input type="checkbox" id="overlay-input" />
+                        <label for="overlay-input" aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg" id="overlay-button"><span></span></label>
+                        <div class="center-circle" style="    box-shadow: 0px -1px 18px 1px #0000005c;">
+                            <div class="img-center">
+                                <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
+                            </div>
+                        </div>
+                        <div class="right-btn"> <a style="padding: 0;color: #000;" href="{{route('frontend.auth.register')}}">Join</a> </div>
+
+
+                        <nav class="slide-content" style="background: #f2f2f2 !important;">
+                            <div class="part-yellow-top-logo">
+                                <div class="row m-0">
+                                    <div class="col-6 p-0">
+                                        <a href="{{url('/')}}" style="padding: 0;">  <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
+                                    </div>
+                                    <div class="col-6 p-0">
+                                        <a class="post-job-btn-mob" href="#">Post a Project</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="part-yellow-top-menu">
+                                <a class="" href="{{url('/')}}">Home</a>
+                                <a href="{{route("frontend.expert_center")}}">Expert Centre</a>
+                                <a href="{{route('frontend.blog','all')}}">Media</a>
+                                <a href="{{route('frontend.contact_us')}}">Contact Us</a>
+                                <a href="{{route('frontend.auth.register')}}">Join</a>
+                            </div>
+
+                            <div class="part-gray-sub-menu">
+                                <a id="collapsbtnexplore" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Explore <i id="mobile-menu-icon-down" class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <a href="{{route('frontend.auth.login')}}">Post a Job</a>
+                                        <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Find a Project</a>
+                                        <a href="{{route("frontend.expert_center")}}">How it works</a>
+                                        <a href="{{route('frontend.become_a_partner')}}">Become a partner</a>
+                                    </div>
+                                </div>
+                                <a href="{{route('frontend.project_auction',1)}}">Auctions</a>
+                                <a href="{{route('frontend.tenders.index')}}">Tenders</a>
+                                <a href="{{route('frontend.shop.index')}}">e-Shop</a>
+                                <a href="{{route('frontend.academy.index')}}">Academy</a>
+                            </div>
+
+
+                        </nav>
+
+                        <div class="slide-fade"></div>
+
+                </header>
+
+            </div>
+
+
+
+
+
+            </nav>
+        </div>
+
+        @yield('content')
         </div>
     </div>
     <footer class="footer" style="padding: 10px 0px 20px 0px;">
@@ -146,6 +210,30 @@
             pagination: {
                 el: ".swiper-pagination-mob2",
             },
+        });
+    </script>
+
+    <script>
+        $("#collapsbtnexplore").click(function() {
+            if ($(this).attr('aria-expanded') == 'false') {
+                $("#mobile-menu-icon-down").removeClass("fa-angle-down")
+                $("#mobile-menu-icon-down").addClass("fa-angle-up")
+                $(this).addClass("active");
+            } else {
+                $("#mobile-menu-icon-down").addClass("fa-angle-down")
+                $("#mobile-menu-icon-down").removeClass("fa-angle-up")
+                $(this).removeClass("active");
+            }
+        });
+
+
+        $(document).ready(function() {
+            $('.open-mobile-menu,.slide-fade,.sliding-panel-close').on('click touchstart', function(e) {
+                $('.slide-content,.slide-fade').toggleClass('is-visible');
+                $('#wrapper').toggleClass('is-obscured');
+                $('.slide-content').toggleClass('slide-content-display');
+                e.preventDefault();
+            });
         });
     </script>
 
