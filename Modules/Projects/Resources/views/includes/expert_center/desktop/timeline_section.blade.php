@@ -43,7 +43,7 @@
                 <div class="flex items-center">
                     <!-- <span class="cd-timeline__date">Jan 14</span> -->
                     <div class="button-left" style="float: right">
-                        <a href="#0" class="btn btn--subtle">Book your Consultation</a>
+                        <a href="{{route('frontend.contact_us')}}" class="btn btn--subtle">Book your Consultation</a>
                     </div>
 
                 </div>
@@ -316,7 +316,7 @@
 <div class="expert-bottom-text" data-animscroll="fade-up">
     <h1>Book your Tallentor expert team today</h1>
     <div class="row">
-        <a class="fill" href="#">Book Tallentor expert team</a>
+        <a class="fill" href="{{route('frontend.contact_us')}}">Book Tallentor expert team</a>
         <a class="outline" href="#" data-toggle="modal" data-target="#exampleModalLong">Request For 15 min free consultation</a>
     </div>
 </div>

@@ -18,7 +18,7 @@
                                 <img  src="{{url('theme_light/assets/pos.jpg')}}" alt="">
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
-                                        <p><a href="#"> POS System</a></p>
+                                        <p><a href="{{route('frontend.shop.item')}}"> POS System</a></p>
                                         <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                                     </div>
                                     <div class="row m-0 mt-1">
@@ -28,7 +28,7 @@
                                             <br>
                                             <!-- <h6>per month</h6> -->
                                         </div>
-                                        <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                                 <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
-                                        <p><a href="#">E-Commerce Solution</a></p>
+                                        <p><a href="{{route('frontend.shop.item')}}">E-Commerce Solution</a></p>
                                         <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                                     </div>
                                     <div class="row m-0 mt-1">
@@ -47,7 +47,7 @@
                                             <h3>From $50</h3>
                                             <h6>per month</h6>
                                         </div>
-                                        <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                 <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
-                                        <p><a href="#">Payroll management s..</a></p>
+                                        <p><a href="{{route('frontend.shop.item')}}">Payroll management s..</a></p>
                                         <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                                     </div>
                                     <div class="row m-0 mt-1">
@@ -66,7 +66,7 @@
                                             <h3>From $3000</h3>
                                             <!-- <h6>per month</h6> -->
                                         </div>
-                                        <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                                 <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
-                                        <p><a href="#">Multi vendor ecommerce..</a></p>
+                                        <p><a href="{{route('frontend.shop.item')}}">Multi vendor ecommerce..</a></p>
                                         <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                                     </div>
                                     <div class="row m-0 mt-1">
@@ -85,7 +85,7 @@
                                             <h3>From $100</h3>
                                             <h6>per month</h6>
                                         </div>
-                                        <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                                 <img src="{{url('theme_light/assets/erp.jpg')}}" alt="">
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
-                                        <p><a href="#">ERP Hospital Manage..</a></p>
+                                        <p><a href="{{route('frontend.shop.item')}}">ERP Hospital Manage..</a></p>
                                         <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                                     </div>
                                     <div class="row m-0 mt-1">
@@ -104,7 +104,7 @@
                                             <h3>From $4000</h3>
                                             <!-- <h6>per month</h6> -->
                                         </div>
-                                        <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +115,7 @@
                                 <img src="{{url('theme_light/assets/crm.jpg')}}" alt="">
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
-                                        <p><a href="#">CRM System</a></p>
+                                        <p><a href="{{route('frontend.shop.item')}}">CRM System</a></p>
                                         <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                                     </div>
                                     <div class="row m-0 mt-1">
@@ -123,7 +123,7 @@
                                             <h3>From $3000</h3>
                                             <!-- <h6>per month</h6> -->
                                         </div>
-                                        <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>

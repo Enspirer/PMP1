@@ -75,7 +75,7 @@
                   </li>
               </ul>
 
-              <a href="#" type="button">Book your consultation</a>
+              <a href="{{route('frontend.contact_us')}}" type="button">Book your consultation</a>
             </div>
             <div class="col-2 text-center full">
               <img
@@ -275,7 +275,7 @@
       </div>
 <br>
       <div class="bottum-button-expert-mob">
-        <a class="fill" href="#" type="button">Book Tallentor expert team</a>
+        <a class="fill" href="{{route('frontend.contact_us')}}" type="button">Book Tallentor expert team</a>
         <a class="outline" href="#" type="button" data-toggle="modal" data-target="#exampleModalLong">Request For 15 min free consultation</a>
       </div>
     </section>
