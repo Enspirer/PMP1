@@ -23,6 +23,7 @@ Route::get('test', [TestController::class, 'index'])->name('test');
 
 
 
+
 /*
  * These frontend controllers require the user to be logged in
  * All route names are prefixed with 'frontend.'
