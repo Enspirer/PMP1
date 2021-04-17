@@ -4,6 +4,11 @@
             <br>
             <br>
             <br>
+            <div class="error" style="padding: 15px;">
+            @include('includes.partials.messages')
+            </div>
+            
+            
             <h1>Hello there,</h1>
             <p>Welcome back</p>
             <div class="login-buttons-section">

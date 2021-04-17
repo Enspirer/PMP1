@@ -26,12 +26,12 @@
                     <div class="right col-md-4">
 
                         @auth
-                             <a href="{{route('frontend.apply_project',1)}}" class="apply-button">APPLY TO THIS PROJECT</a><br><br>
+                             <a href="{{route('frontend.apply_project',1)}}" class="apply-button" style="margin: 10px 0;">APPLY TO THIS PROJECT</a><br><br>
                             <button class="save-button">
                                 <i class="fa fa-heart" aria-hidden="true"></i> SAVE PROJECT
                             </button>
                         @else
-                            <a href="{{route('frontend.auth.login')}}" class="apply-button">APPLY TO THIS PROJECT</a>
+                            <a href="{{route('frontend.auth.login')}}" class="apply-button" style="margin: 10px 0;">APPLY TO THIS PROJECT</a>
                         @endauth
 
 

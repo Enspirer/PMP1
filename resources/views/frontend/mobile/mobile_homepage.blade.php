@@ -12,12 +12,12 @@
             the <span>top challengers</span> meet the <span>best talent</span>
         </h4>
 
-        <form action="#" class="search-hero-mobile">
+        <form action="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}" class="search-hero-mobile">
             <div class="input-group">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" class="form-control" placeholder="Projects you are looking for" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">
+                    <button class="btn btn-outline-secondary" type="submit">
                         Search
                     </button>
                 </div>
@@ -26,7 +26,7 @@
 
         <h4>or</h4>
 
-        <a href="#" type="button">Post a Project</a>
+        <a href="{{route('frontend.auth.login')}}" type="button">Post a Project</a>
     </div>
 </div>
 <section class="pic-chalangers-section">
@@ -127,7 +127,7 @@
         <div class="swiper-pagination swiper-pagination-mob2"></div>
     </div>
 </section>
-<section class="live-action-gray">
+<section class="live-action-gray mt-5">
     <div class="head-title">
         <div class="row" data-animscroll="fade-up">
             <div class="record-icon">
@@ -138,11 +138,10 @@
     </div>
 </section>
 
-<section class="live-action-content">
+<section class="live-action-content mb-5">
     <div class="container">
         <h2>
-            World class designer to make mock-up of stages of our process and a
-            dashboard for landing page
+        Development of eCommerce platform for a leading Fashion brand
         </h2>
         <h6>Auction ends in : <span>12Hr 34Min</span></h6>
 
@@ -152,7 +151,12 @@
             </div>
 
             <div class="button-live-single col">
+                @auth()
+                <a class="view-scope-fill" href="{{route('frontend.project_auction',1)}}" type="button">VIEW BID PAGE</a>
+                @else
                 <a class="view-scope-fill" href="{{route('frontend.auth.login')}}" type="button">SIGN IN TO BIT</a>
+                @endauth
+
             </div>
         </div>
         <br>
@@ -177,7 +181,7 @@
           </div>
         </div> -->
         <div class="row">
-        <a style="    margin: auto;
+            <a style="    margin: auto;
     justify-content: center;
     font-family: Poppins;
     padding: 6px 20px;
@@ -185,68 +189,68 @@
     font-size: 12px;
     font-weight: 600;
     color: #fff;
-    background: #F83535 ;" href="#">VIEW ALL AUCTIONS</a>
+    background: #F83535 ;" href="{{route('frontend.project_auction',1)}}">VIEW ALL AUCTIONS</a>
         </div>
-       
+
     </div>
 </section>
 
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Poppins;">Project Brief</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="card" style="border: transparent;">
-          <div class="container"><br>
-            <b style="font-family: Poppins;">Development of eCommerce platform for a leading Fashion brand</b>
-            <br><br>
-            <p style="font-family: Poppins;">
-              We are a multinational Currier company who
-              is planning to get a customized ERP solution
-              with the following modules <br>
-              <br>
-            </p>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Poppins;">Project Brief</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card" style="border: transparent;">
+                    <div class="container"><br>
+                        <b style="font-family: Poppins;">Development of eCommerce platform for a leading Fashion brand</b>
+                        <br><br>
+                        <p style="font-family: Poppins;">
+                            We are a multinational Currier company who
+                            is planning to get a customized ERP solution
+                            with the following modules <br>
+                            <br>
+                        </p>
 
-            <ul style="font-family: Poppins;">
-              <li>
-                Accounting &amp; Financials
-              </li>
-              <li>Human Capital Management</li>
-              <li>Manufacturing &amp; Distribution</li>
-              <li>Manufacturing &amp; Distribution</li>
-              <li>Sales &amp; Inventory Management</li>
-              <li>Supply chain management</li>
-              <li>Customer relationship management</li>
-              <li>Support center management</li>
-              <li>Deployment</li>
-            </ul>
-            <br>
-            <p style="font-family: Poppins;">We have completed the initial project scope.
-              The team to undertake the process analysis
-              and define the sub task management with clear milestones
-            </p>
+                        <ul style="font-family: Poppins;">
+                            <li>
+                                Accounting &amp; Financials
+                            </li>
+                            <li>Human Capital Management</li>
+                            <li>Manufacturing &amp; Distribution</li>
+                            <li>Manufacturing &amp; Distribution</li>
+                            <li>Sales &amp; Inventory Management</li>
+                            <li>Supply chain management</li>
+                            <li>Customer relationship management</li>
+                            <li>Support center management</li>
+                            <li>Deployment</li>
+                        </ul>
+                        <br>
+                        <p style="font-family: Poppins;">We have completed the initial project scope.
+                            The team to undertake the process analysis
+                            and define the sub task management with clear milestones
+                        </p>
 
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" style="font-family: Poppins;    color: #000;
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" style="font-family: Poppins;    color: #000;
     background: transparent;
     border: 1px solid #000 !important;
     border: transparent;" data-dismiss="modal">Close</button>
-        <button type="button" style="font-family: Poppins;color: #fff;
+                <button type="button" style="font-family: Poppins;color: #fff;
     background: #0f9d58;
     border: 1px solid #0f9d58 !important;
     border: transparent;" class="btn btn-primary">Save changes</button>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
@@ -263,14 +267,14 @@
         <br />
         <ul>
             <li>
-            Digital platform connecting buyers and suppliers
+                Digital platform connecting buyers and suppliers
             </li>
 
             <li>
-            Get notified of Government and Private sector tenders
+                Get notified of Government and Private sector tenders
             </li>
             <li>
-            Making the tender process accessible for businesses of every scale.
+                Making the tender process accessible for businesses of every scale.
             </li>
         </ul>
 
@@ -344,92 +348,123 @@
     </div>
     <br />
     <div class="swiper-container swiper-container-mob">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="card-shop">
-                    <img src="{{url('theme_light/assets/pos.jpg')}}" alt="">
-                    <div class="card-shop-bottum">
-                        <div class="row m-0">
-                            <p><a href="#"> POS System</a></p>
-                            <div class="rating ml-auto">
-                                <i class="fa fa-star" aria-hidden="true"></i>5.0
+    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-shop">
+                            <a href="{{route('frontend.shop.item')}}">  <img  src="{{url('theme_light/assets/pos.jpg')}}" alt=""></a>  
+                                <div class="card-shop-bottum">
+                                    <div class="row m-0">
+                                        <p><a href="{{route('frontend.shop.item')}}"> POS System</a></p>
+                                        <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
+                                    </div>
+                                    <div class="row m-0 mt-1">
+                                        <div class="price">
+                                            <h3>From $2500</h3>
+                                            <br>
+                                         
+                                            <!-- <h6>per month</h6> -->
+                                        </div>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row m-0 mt-1">
-                            <div class="price">
-                                <h3>From $1800</h3>
-                                <h6>per month</h6>
+
+                        <div class="swiper-slide">
+                            <div class="card-shop">
+                            <a href="{{route('frontend.shop.item')}}" >  <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt=""></a>
+                                <div class="card-shop-bottum">
+                                    <div class="row m-0">
+                                        <p><a href="{{route('frontend.shop.item')}}">E-Commerce Solution</a></p>
+                                        <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
+                                    </div>
+                                    <div class="row m-0 mt-1">
+                                        <div class="price">
+                                            <h3>From $50</h3>
+                                            <h6>per month</h6>
+                                        </div>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#" class="ml-auto">
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-shop">
+                            <a href="{{route('frontend.shop.item')}}"> <img src="{{url('theme_light/assets/payroll.jpg')}}" alt=""> </a>
+                                <div class="card-shop-bottum">
+                                    <div class="row m-0">
+                                        <p><a href="{{route('frontend.shop.item')}}">Payroll managemen..</a></p>
+                                        <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
+                                    </div>
+                                    <div class="row m-0 mt-1">
+                                        <div class="price">
+                                            <h3>From $3000</h3>
+                                            <!-- <h6>per month</h6> -->
+                                        </div>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-shop">
+                            <a href="{{route('frontend.shop.item')}}">    <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt=""></a>
+                                <div class="card-shop-bottum">
+                                    <div class="row m-0">
+                                        <p><a href="{{route('frontend.shop.item')}}">Multi vendor ecom..</a></p>
+                                        <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
+                                    </div>
+                                    <div class="row m-0 mt-1">
+                                        <div class="price">
+                                            <h3>From $100</h3>
+                                            <h6>per month</h6>
+                                        </div>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-shop">
+                            <a href="{{route('frontend.shop.item')}}">  <img src="{{url('theme_light/assets/erp.jpg')}}" alt=""> </a>
+                                <div class="card-shop-bottum">
+                                    <div class="row m-0">
+                                        <p><a href="{{route('frontend.shop.item')}}">ERP Hospital Man..</a></p>
+                                        <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
+                                    </div>
+                                    <div class="row m-0 mt-1">
+                                        <div class="price">
+                                            <h3>From $4000</h3>
+                                            <!-- <h6>per month</h6> -->
+                                        </div>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-shop">
+                            <a href="{{route('frontend.shop.item')}}">    <img src="{{url('theme_light/assets/crm.jpg')}}" alt=""> </a>
+                                <div class="card-shop-bottum">
+                                    <div class="row m-0">
+                                        <p><a href="{{route('frontend.shop.item')}}">CRM System</a></p>
+                                        <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
+                                    </div>
+                                    <div class="row m-0 mt-1">
+                                        <div class="price">
+                                            <h3>From $3000</h3>
+                                            <!-- <h6>per month</h6> -->
+                                        </div>
+                                        <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-shop">
-                    <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
-                    <div class="card-shop-bottum">
-                        <div class="row m-0">
-                            <p><a href="#">E-Commerce Solution</a></p>
-                            <div class="rating ml-auto">
-                                <i class="fa fa-star" aria-hidden="true"></i>5.0
-                            </div>
-                        </div>
-                        <div class="row m-0 mt-1">
-                            <div class="price">
-                                <h3>From $50</h3>
-                                <h6>per month</h6>
-                            </div>
-                            <a href="#" class="ml-auto">
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-shop">
-                    <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
-                    <div class="card-shop-bottum">
-                        <div class="row m-0">
-                            <p><a href="#">Payroll mana....</a></p>
-                            <div class="rating ml-auto">
-                                <i class="fa fa-star" aria-hidden="true"></i>5.0
-                            </div>
-                        </div>
-                        <div class="row m-0 mt-1">
-                            <div class="price">
-                                <h3>From $1500</h3>
-                                <h6>per month</h6>
-                            </div>
-                            <a href="#" class="ml-auto">
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="card-shop">
-                    <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
-                    <div class="card-shop-bottum">
-                        <div class="row m-0">
-                            <p><a href="#">Multi vendor ec..</a></p>
-                            <div class="rating ml-auto">
-                                <i class="fa fa-star" aria-hidden="true"></i>5.0
-                            </div>
-                        </div>
-                        <div class="row m-0 mt-1">
-                            <div class="price">
-                                <h3>From $100</h3>
-                                <h6>per month</h6>
-                            </div>
-                            <a href="#" class="ml-auto">
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Add Pagination -->
         <br />
         <br />

@@ -4,7 +4,7 @@
 
 @section('content')
     @if(is_mobile(request()->header('user-agent')) != true)
-        @include('frontend.auth.dasktop.login')
+        @include('frontend.auth.desktop.login')
     @else
         @include('frontend.auth.mobile.login')
     @endif

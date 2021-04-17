@@ -1,5 +1,5 @@
 <div id="single-project-body">
-    <div class="header-section">
+    <div class="header-section" style="padding-top: 60px;">
         <div class="container">
             <div class="row">
                 <div class="title col-md-9">

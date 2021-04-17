@@ -24,7 +24,7 @@
               <br>
               <a data-toggle="modal" data-target="#exampleModalCenter" class="outline-auction" href="#" type="button">VIEW BRIEF</a>
               @auth()
-              <a class="fill-auction" href="{{route('frontend.project_auction',1)}}" type="button">SIGN IN TO BID</a>
+              <a class="fill-auction" href="{{route('frontend.project_auction',1)}}" type="button">VIEW BID PAGE</a>
               @else
               <a class="fill-auction" href="{{route('frontend.auth.login')}}" type="button">SIGN IN TO BID</a>
               @endauth
@@ -50,7 +50,7 @@
     </div>
     <div class="auction-btn-center">
 
-      <a class="auction-all-inner-link-btn" href="#" type="button">VIEW ALL AUCTIONS</a>
+      <a class="auction-all-inner-link-btn" href="{{route('frontend.project_auction',1)}}" type="button">VIEW ALL AUCTIONS</a>
     </div>
 
 
