@@ -12,7 +12,7 @@
 </section>
 <section class="shop-items-mob">
 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/pos.jpg')}}" alt="">
+<a href="{{route('frontend.shop.item')}}">       <img src="{{url('theme_light/assets/pos.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#"> POS System</a></p>
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
+                <a href="{{route('frontend.shop.item')}}">       <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#">E-Commerce Solution</a></p>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
+                <a href="{{route('frontend.shop.item')}}">      <img src="{{url('theme_light/assets/payroll.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#">Payroll management s..</a></p>
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
+                <a href="{{route('frontend.shop.item')}}">      <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#">Multi vendor ecommerce..</a></p>
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/erp.jpg')}}" alt="">
+                <a href="{{route('frontend.shop.item')}}">      <img src="{{url('theme_light/assets/erp.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#">ERP Hospital Manage..</a></p>
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="card-shop">
-                    <img src="{{url('theme_light/assets/crm.jpg')}}" alt="">
+                <a href="{{route('frontend.shop.item')}}">      <img src="{{url('theme_light/assets/crm.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
                             <p><a href="#">CRM System</a></p>

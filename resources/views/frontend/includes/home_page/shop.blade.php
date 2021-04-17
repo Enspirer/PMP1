@@ -15,7 +15,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card-shop">
-                                <img  src="{{url('theme_light/assets/pos.jpg')}}" alt="">
+                            <a href="{{route('frontend.shop.item')}}">   <img  src="{{url('theme_light/assets/pos.jpg')}}" alt=""> </a>
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
                                         <p><a href="{{route('frontend.shop.item')}}"> POS System</a></p>
@@ -36,7 +36,7 @@
 
                         <div class="swiper-slide">
                             <div class="card-shop">
-                                <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt="">
+                            <a href="{{route('frontend.shop.item')}}">    <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt=""> </a>
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
                                         <p><a href="{{route('frontend.shop.item')}}">E-Commerce Solution</a></p>
@@ -55,7 +55,7 @@
 
                         <div class="swiper-slide">
                             <div class="card-shop">
-                                <img src="{{url('theme_light/assets/payroll.jpg')}}" alt="">
+                            <a href="{{route('frontend.shop.item')}}">    <img src="{{url('theme_light/assets/payroll.jpg')}}" alt=""> </a>
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
                                         <p><a href="{{route('frontend.shop.item')}}">Payroll management s..</a></p>
@@ -74,7 +74,7 @@
 
                         <div class="swiper-slide">
                             <div class="card-shop">
-                                <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt="">
+                            <a href="{{route('frontend.shop.item')}}">   <img src="{{url('theme_light/assets/multivendorecommerce.jpg')}}" alt=""> </a>
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
                                         <p><a href="{{route('frontend.shop.item')}}">Multi vendor ecommerce..</a></p>
@@ -93,7 +93,7 @@
 
                         <div class="swiper-slide">
                             <div class="card-shop">
-                                <img src="{{url('theme_light/assets/erp.jpg')}}" alt="">
+                            <a href="{{route('frontend.shop.item')}}">    <img src="{{url('theme_light/assets/erp.jpg')}}" alt=""> </a>
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
                                         <p><a href="{{route('frontend.shop.item')}}">ERP Hospital Manage..</a></p>
@@ -112,7 +112,7 @@
 
                         <div class="swiper-slide">
                             <div class="card-shop">
-                                <img src="{{url('theme_light/assets/crm.jpg')}}" alt="">
+                            <a href="{{route('frontend.shop.item')}}">      <img src="{{url('theme_light/assets/crm.jpg')}}" alt=""> </a>
                                 <div class="card-shop-bottum">
                                     <div class="row m-0">
                                         <p><a href="{{route('frontend.shop.item')}}">CRM System</a></p>

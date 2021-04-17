@@ -83,7 +83,7 @@
         <div class="row">
           <div class="col-10">
             <h2>
-            Mobile app Development
+          <a href="{{route('frontend.project_page',1)}}" style="color: #000;">Mobile app Development</a>  
             </h2>
           </div>
           <div class="col-2">
@@ -157,7 +157,7 @@
         <div class="row">
           <div class="col-10">
             <h2>
-            E-Commerce application
+            <a href="{{route('frontend.project_page',1)}}" style="color: #000;"> E-Commerce application</a>
             </h2>
           </div>
           <div class="col-2">
@@ -229,7 +229,7 @@
         <div class="row">
           <div class="col-10">
             <h2>
-            ERP solution
+            <a href="{{route('frontend.project_page',1)}}" style="color: #000;">   ERP solution</a>
             </h2>
           </div>
           <div class="col-2">
@@ -291,7 +291,7 @@
         <div class="row">
           <div class="col-10">
             <h2>
-            Digital Marketing campaign
+            <a href="{{route('frontend.project_page',1)}}" style="color: #000;">  Digital Marketing campaign </a>
             </h2>
           </div>
           <div class="col-2">

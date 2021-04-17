@@ -36,7 +36,7 @@
             <div class="header">
                 <header class="pos-f-t page-header">
                     <nav class="navbar navbar-dark">
-                        <input type="checkbox" id="overlay-input" />
+                        <!-- <input type="checkbox" id="overlay-input" /> -->
                         <label for="overlay-input" aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg" id="overlay-button"><span></span></label>
                         <div class="center-circle" style="    box-shadow: 0px -1px 18px 1px #0000005c;">
                             <div class="img-center">
@@ -183,11 +183,11 @@
     <!-- Scripts -->
     @stack('before-scripts')
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
