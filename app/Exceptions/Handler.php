@@ -61,6 +61,13 @@ class Handler extends ExceptionHandler
                 ->withFlashDanger(__('auth.general_error'));
         }
 
+
+        if ($this->isHttpException($exception)) {
+            if ($exception->getStatusCode() == 404) {
+                return response()->view('error.404_found');
+            }
+        }
+
         return parent::render($request, $exception);
     }
 
