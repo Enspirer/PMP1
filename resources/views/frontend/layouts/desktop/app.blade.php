@@ -74,7 +74,6 @@
 
 
         <div class="">
-            <!-- @include('includes.partials.messages') -->
             @yield('content')
         </div><!-- container -->
     </div><!-- #app -->
@@ -87,8 +86,7 @@
             <div class="row">
                 <div
                         class="col-sm-4 col-md col-sm-4 col-12 col"
-                        data-animscroll="fade-up"
-                >
+                        data-animscroll="fade-up">
                     <h5 class="headin5_amrc col_white_amrc pt2"></h5>
                     <!--headin5_amrc-->
                     <p class="mb10">
