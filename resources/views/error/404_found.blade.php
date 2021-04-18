@@ -18,7 +18,7 @@
         <br>
 
 
-        <form class="example" action="/action_page.php" style="margin:auto;max-width:50%">
+        <form class="example" action="/action_page.php" style="">
             <input type="text" placeholder="Projects you are looking for.." name="search2">
             <button type="submit">Search</button>
         </form>

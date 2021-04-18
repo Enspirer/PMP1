@@ -1831,11 +1831,11 @@ button {
 }
 
 #live-auction-new .auction-btn-center .auction-all-inner-link-btn {
-  background: #F83535 0% 0% no-repeat padding-box;
+  background: #f83535 0% 0% no-repeat padding-box;
   border-radius: 4px;
   font: normal normal 600 20px/30px Poppins;
   letter-spacing: 0.3px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -8824,6 +8824,11 @@ input.search-menu:focus
   padding: 200px;
 }
 
+#error-page .example {
+  margin: auto;
+  max-width: 50%;
+}
+
 #error-page .image-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8840,7 +8845,7 @@ input.search-menu:focus
 #error-page h1 {
   font: normal normal bold 40px/60px Poppins;
   letter-spacing: 0px;
-  color: #0F0C29;
+  color: #0f0c29;
   text-align: center;
 }
 
@@ -8848,7 +8853,7 @@ input.search-menu:focus
   text-align: center;
   font: normal normal normal 20px/29px Karla;
   letter-spacing: 0px;
-  color: #6D6D6D;
+  color: #6d6d6d;
   max-width: 40%;
   margin: auto;
 }
@@ -8856,9 +8861,9 @@ input.search-menu:focus
 #error-page .fill-btn {
   font: normal normal normal 18px/30px Poppins;
   letter-spacing: 0.3px;
-  color: #FFFFFF;
-  background: #0F9D58 0% 0% no-repeat padding-box;
-  border: 1px solid #0F9D58;
+  color: #ffffff;
+  background: #0f9d58 0% 0% no-repeat padding-box;
+  border: 1px solid #0f9d58;
   border-radius: 5px;
   padding: 7px 30px;
   margin: 0 10px;
@@ -8867,14 +8872,14 @@ input.search-menu:focus
 #error-page .outer-btn {
   font: normal normal normal 18px/30px Poppins;
   letter-spacing: 0.3px;
-  color: #0F9D58;
-  border: 1px solid #0F9D58;
+  color: #0f9d58;
+  border: 1px solid #0f9d58;
   border-radius: 5px;
   padding: 7px 30px;
   margin: 0 10px;
 }
 
-#error-page form.example input[type=text] {
+#error-page form.example input[type="text"] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -8889,7 +8894,7 @@ input.search-menu:focus
   float: left;
   width: 20%;
   padding: 10px;
-  background: #0F9D58;
+  background: #0f9d58;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -8911,12 +8916,51 @@ input.search-menu:focus
 #error-page p {
   font: normal normal normal 18px/25px Karla;
   letter-spacing: 0px;
-  color: #6D6D6D;
+  color: #6d6d6d;
   text-align: center;
 }
 
 #error-page p a {
-  color: #0F9D58;
+  color: #0f9d58;
+}
+
+@media (max-width: 1120px) {
+  #error-page .example {
+    margin: auto;
+    max-width: 80%;
+  }
+  #error-page h1 {
+    font-size: 30px;
+  }
+  #error-page h3 {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 890px) {
+  #error-page {
+    padding: 150px 29px 29px 29px;
+  }
+  #error-page .example {
+    margin: auto;
+    max-width: 100%;
+  }
+  #error-page h1 {
+    font-size: 20px;
+  }
+  #error-page h3 {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  #error-page form.example input[type="text"] {
+    font-size: 13px;
+  }
+  #error-page form.example button {
+    font-size: 13px;
+  }
+  #error-page p {
+    font-size: 13px;
+  }
 }
 
 /*footer*/

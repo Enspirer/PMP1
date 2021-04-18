@@ -3482,6 +3482,178 @@ a {
   border: 0.5px solid #242424;
 }
 
+#error-page {
+  padding: 200px;
+}
+
+#error-page .example {
+  margin: auto;
+  max-width: 50%;
+}
+
+#error-page .image-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#error-page .image-center img {
+  width: 40% !important;
+}
+
+#error-page h1 {
+  font: normal normal bold 40px/60px Poppins;
+  letter-spacing: 0px;
+  color: #0f0c29;
+  text-align: center;
+}
+
+#error-page h3 {
+  text-align: center;
+  font: normal normal normal 20px/29px Karla;
+  letter-spacing: 0px;
+  color: #6d6d6d;
+  max-width: 40%;
+  margin: auto;
+}
+
+#error-page .fill-btn {
+  font: normal normal normal 18px/30px Poppins;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  background: #0f9d58 0% 0% no-repeat padding-box;
+  border: 1px solid #0f9d58;
+  border-radius: 5px;
+  padding: 7px 30px;
+  margin: 0 10px;
+}
+
+#error-page .outer-btn {
+  font: normal normal normal 18px/30px Poppins;
+  letter-spacing: 0.3px;
+  color: #0f9d58;
+  border: 1px solid #0f9d58;
+  border-radius: 5px;
+  padding: 7px 30px;
+  margin: 0 10px;
+}
+
+#error-page form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  padding-left: 20px;
+  background: #fff;
+  border-radius: 7px 0px 0px 7px;
+}
+
+#error-page form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #0f9d58;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 7px 7px 0px;
+}
+
+#error-page form.example button:hover {
+  background: #0b7dda;
+}
+
+#error-page form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#error-page p {
+  font: normal normal normal 18px/25px Karla;
+  letter-spacing: 0px;
+  color: #6d6d6d;
+  text-align: center;
+}
+
+#error-page p a {
+  color: #0f9d58;
+}
+
+@media (max-width: 1120px) {
+  #error-page .example {
+    margin: auto;
+    max-width: 80%;
+  }
+  #error-page h1 {
+    font-size: 30px;
+  }
+  #error-page h3 {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 890px) {
+  #error-page {
+    padding: 150px 29px 29px 29px;
+  }
+  #error-page .example {
+    margin: auto;
+    max-width: 100%;
+  }
+  #error-page h1 {
+    font-size: 20px;
+  }
+  #error-page h3 {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  #error-page form.example input[type="text"] {
+    font-size: 13px;
+  }
+  #error-page form.example button {
+    font-size: 13px;
+  }
+  #error-page p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  #error-page {
+    padding: 150px 29px 29px 29px;
+  }
+  #error-page .example {
+    margin: auto;
+    max-width: 100%;
+  }
+  #error-page h1 {
+    font-size: 20px;
+  }
+  #error-page h3 {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  #error-page form.example input[type="text"] {
+    border-radius: 7px 7px 7px 7px;
+    font-size: 13px;
+    width: 100%;
+  }
+  #error-page form.example button {
+    visibility: hidden;
+    font-size: 13px;
+  }
+  #error-page p {
+    font-size: 13px;
+  }
+}
+
 /*footer*/
 .col_white_amrc {
   color: #fff;
