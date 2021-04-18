@@ -6994,33 +6994,13 @@ input.search-menu:focus
 }
 
 .contact-body .top-map-contact {
-  position: relative;
-}
-
-.contact-body .top-map-contact .map {
-  height: calc(100vh - 72px);
-  background-image: url(../../assets/Group700.png);
-  background-repeat: no-repeat;
-  background-position: 50% 78%;
-  z-index: 2222;
-}
-
-.contact-body .top-map-contact .gradient-contact-map {
-  z-index: 1;
-  width: 100%;
-  mix-blend-mode: multiply;
-  height: 100%;
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d4d4d4)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(180deg, #f8f8f8 0%, #d4d4d4 100%) 0% 0% no-repeat padding-box;
-  opacity: 0.8;
-  position: absolute;
-  bottom: 0;
 }
 
 .contact-body .top-map-contact .title-underline {
   z-index: 9999999;
-  position: absolute;
-  top: 50px;
+  padding-top: 140px;
   width: 100%;
 }
 

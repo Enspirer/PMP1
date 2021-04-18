@@ -217,7 +217,15 @@
     <script src="{{url('theme_light/plugin/dist/js/anim-scroll.js')}}"></script>
     <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
 
-
+    <script>
+      var swiper = new Swiper(".swiper-container-mob5", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination-mob2",
+        },
+      });
+    </script>
 
     <script>
         var swiper = new Swiper(".swiper-container-mob2", {
