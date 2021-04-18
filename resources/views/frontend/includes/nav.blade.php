@@ -189,22 +189,22 @@
 
                                 <li id="0103" style="display: none;width: 45%;padding: 30px 10px 30px 30px !important;">
 
-                                
+
                                     <a href="#" style="padding: 0;">
                                         <div class="row m-0">
-                                            <p style="color: #000;">a)  &nbsp;&nbsp;     Post a job as a Standard Project</p>
+                                            <p style="color: #000;">a) &nbsp;&nbsp; Post a job as a Standard Project</p>
                                         </div>
                                     </a>
 
-<br>
+                                    <br>
                                     <a href="#" style="padding: 0;">
                                         <div class="row m-0">
-                                            <p style="color: #000;">b)  &nbsp;&nbsp;     Post a job with the Expert Project Plan (Hire the Expert Centre)</p>
+                                            <p style="color: #000;">b) &nbsp;&nbsp; Post a job with the Expert Project Plan (Hire the Expert Centre)</p>
                                         </div>
                                     </a>
 
-<br><br>
-<a href="{{route("frontend.expert_center")}}" style="padding: 0;">
+                                    <br><br>
+                                    <a href="{{route("frontend.expert_center")}}" style="padding: 0;">
                                         <div class="row m-0">
                                             <p>Learn More</p>
                                             <i class="fa fa-angle-right" style="margin-top: -2px;color: #0f9d58;" aria-hidden="true"></i>
@@ -257,7 +257,7 @@
 
                             
                         </li> -->
-                   
+
 
                         <!-- <li>
                             <a class="main-menu-item" href="#">Academy</a>

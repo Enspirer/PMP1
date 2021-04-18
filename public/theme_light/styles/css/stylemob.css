@@ -1860,11 +1860,11 @@ a {
 }
 
 #auction-inner .skill {
-  background: #EBEBEB 0% 0% no-repeat padding-box;
+  background: #ebebeb 0% 0% no-repeat padding-box;
   border-radius: 4px;
   font: normal normal normal 12px/14px Karla;
   letter-spacing: 0px;
-  color: #1F1F1F;
+  color: #1f1f1f;
   text-align: center;
   padding: 8px 0;
 }
@@ -3300,6 +3300,186 @@ a {
 #partner-mob-top .content-partner-mob button {
   width: 100%;
   background: #0f9d58;
+}
+
+.row-download {
+  padding: 20px;
+}
+
+.row-download button {
+  background: #ebebeb 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 8px 20px;
+  border: none;
+  margin: 5px 0;
+  font: normal normal normal 12px/14px Karla;
+  letter-spacing: 0px;
+  color: #0f9d58;
+}
+
+.row-download button img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+.details-auction-mob-row {
+  text-align: left;
+  font: normal normal normal 12px/46px Karla;
+  letter-spacing: 0px;
+  color: #8f8f8f;
+}
+
+.details-auction-mob-row p {
+  margin: 0 0 8px 0;
+}
+
+.details-auction-mob-row i {
+  color: #101010;
+  margin-right: 12px;
+}
+
+.green {
+  color: #0f9d58 !important;
+}
+
+#auction-btn-bottum-section-mob {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px -4px 25px #00000029;
+          box-shadow: 0px -4px 25px #00000029;
+  padding: 15px;
+}
+
+#auction-btn-bottum-section-mob .outline {
+  font: normal normal normal 14px/17px Karla;
+  letter-spacing: 0px;
+  color: #0f9d58;
+  border: 1px solid #0f9d58;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#auction-btn-bottum-section-mob .fill {
+  background: #0f9d58 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  text-align: left;
+  font: normal normal normal 14px/17px Karla;
+  letter-spacing: 0px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#live_auction_all_mob_body .filter-part {
+  padding: 20px;
+}
+
+#live_auction_all_mob_body .filter-part .button-live-row {
+  padding: 0 20px;
+}
+
+#live_auction_all_mob_body .filter-part .button-live-row .button-live-single {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#live_auction_all_mob_body .filter-part .button-live-row .button-live-single .view-scope-outline {
+  text-align: center;
+  font: normal normal normal 16px/55px Poppins;
+  letter-spacing: 0px;
+  border: 1px solid #0f9d58;
+  margin: 0;
+  line-height: 1;
+  padding: 15px 0;
+  width: 100%;
+  opacity: 1;
+  border-radius: 4px;
+  color: #0f9d58;
+}
+
+#live_auction_all_mob_body .filter-part .button-live-row .button-live-single .view-scope-fill {
+  text-align: center;
+  font: normal normal normal 16px/55px Poppins;
+  letter-spacing: 0px;
+  border: 1px solid #0f9d58;
+  margin: 0;
+  background: #0f9d58;
+  line-height: 1;
+  padding: 15px 0;
+  width: 100%;
+  opacity: 1;
+  border-radius: 4px;
+  color: #fff;
+}
+
+#live_auction_all_mob_body .filter-part p {
+  margin: 0;
+  font: normal normal normal 14px/14px Karla;
+  letter-spacing: 0px;
+  color: #303030;
+}
+
+#live_auction_all_mob_body .filter-part .filter-popup {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  z-index: 111112;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  position: fixed;
+}
+
+#live_auction_all_mob_body .filter-part p {
+  font: normal normal normal 12px/14px Karla;
+  letter-spacing: 0px;
+  color: #303030;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#live_auction_all_mob_body .auction-item .auction-body {
+  padding: 0 20px;
+}
+
+#live_auction_all_mob_body .auction-item .auction-body h1 {
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: 600;
+  font: normal normal medium 13px/19px Poppins;
+  letter-spacing: 0px;
+  color: #0f0c29;
+}
+
+#live_auction_all_mob_body .auction-item .auction-body p {
+  font: normal normal normal 10px/15px Karla;
+  letter-spacing: 0px;
+  color: #303030;
+  margin: 0 0 8px 0;
+  line-height: 1;
+}
+
+#live_auction_all_mob_body .auction-item .auction-body a {
+  border: 0.5px solid #f83535;
+  border-radius: 2px;
+  font: normal normal normal 12px/9px Karla;
+  letter-spacing: 0px;
+  padding: 6px 0;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#live_auction_all_mob_body .auction-item .auction-body .red {
+  color: #f83535;
+  border: 0.5px solid #f83535;
+}
+
+#live_auction_all_mob_body .auction-item .auction-body .black {
+  color: #242424;
+  border: 0.5px solid #242424;
 }
 
 /*footer*/
