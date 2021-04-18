@@ -16,7 +16,10 @@ class ProjectAuctionController extends Controller
     {
         return view('projects::project_auction');
     }
-
+    public function explore()
+    {
+        return view('projects::project_acution_explore');
+    }
     /**
      * Show the form for creating a new resource.
      * @return Renderable

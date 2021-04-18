@@ -236,7 +236,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="{{route('frontend.project_auction',1)}}">Auctions</a>
+                            <a class="main-menu-item" href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
                         </li>
                         <li>
                             <a class="main-menu-item" href="{{route('frontend.tenders.index')}}">Tenders</a>

@@ -17,6 +17,8 @@ class ProjectsController extends Controller
         return view('projects::index');
     }
 
+    
+
     /**
      * Show the form for creating a new resource.
      * @return Renderable
