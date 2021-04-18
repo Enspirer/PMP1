@@ -111,7 +111,7 @@
                                             </a>
                                         </li>
                                         <li id="li2" onmouseover="changecv('2')">
-                                            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">
+                                            <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">
                                                 <div class="row m-0">
                                                     <h6 style="line-height: 1; margin: 0">
                                                         Find a Project
@@ -176,7 +176,7 @@
 
                                     </p>
                                     <br>
-                                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}" style="padding: 0;">
+                                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" style="padding: 0;">
                                         <div class="row m-0">
                                             <p>Learn More</p>
                                             <i class="fa fa-angle-right" style="margin-top: -2px;color: #0f9d58;" aria-hidden="true"></i>

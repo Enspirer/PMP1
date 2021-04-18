@@ -12,7 +12,7 @@
             the <span>top challengers</span> meet the <span>best talent</span>
         </h4>
 
-        <form action="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}" class="search-hero-mobile">
+        <form action="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" class="search-hero-mobile">
             <div class="input-group">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" class="form-control" placeholder="Projects you are looking for" aria-label="Recipient's username" aria-describedby="basic-addon2" />
