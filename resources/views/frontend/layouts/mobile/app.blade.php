@@ -234,6 +234,15 @@
               spaceBetween: 10,
             });
           </script>
+             <script>
+      var swiper = new Swiper(".swiper-container-mob7", {
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination-mob2",
+        },
+      });
+    </script>
     <script>
       var swiper = new Swiper(".swiper-container6", {
         pagination: {
