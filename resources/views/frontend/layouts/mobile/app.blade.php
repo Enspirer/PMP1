@@ -43,7 +43,12 @@
                                 <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" srcset="" /></a>
                             </div>
                         </div>
+                        @auth()
+                        <div class="right-btn"> <a style="padding: 0;color: #000;" href="{{route('frontend.auth.register')}}"><i class="fa fa-user" style="font-size: 25px;" aria-hidden="true"></i></a> </div>
+                        @else
                         <div class="right-btn"> <a style="padding: 0;color: #000;" href="{{route('frontend.auth.register')}}">Join</a> </div>
+                        @endauth
+                        
 
 
                         <nav class="slide-content" style="background: #f2f2f2 !important;">
