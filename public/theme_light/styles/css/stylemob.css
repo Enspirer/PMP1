@@ -1859,6 +1859,14 @@ a {
   line-height: 1.3;
 }
 
+#auction-inner h4 {
+  font: normal normal normal 12px/20px Karla;
+  letter-spacing: 0px;
+  color: #000000;
+  line-height: 1.3;
+  margin: 0;
+}
+
 #auction-inner .skill {
   background: #ebebeb 0% 0% no-repeat padding-box;
   border-radius: 4px;
@@ -1867,6 +1875,46 @@ a {
   color: #1f1f1f;
   text-align: center;
   padding: 8px 0;
+}
+
+#auction-inner .skill2 {
+  background: #ebebeb 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  font: normal normal normal 12px/14px Karla;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  text-align: center;
+  padding: 8px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px;
+}
+
+#auction-inner .more {
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  border: 0.30000001192092896px solid #70707060;
+  padding: 20px;
+}
+
+#auction-inner .more h1 {
+  font: normal normal medium 14px/23px Poppins;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #0f0c29;
+  margin: 3px 0;
+}
+
+#auction-inner .more p {
+  font: normal normal normal 10px/46px Karla;
+  letter-spacing: 0px;
+  color: #8f8f8f;
+  margin: 0;
+  line-height: 1;
+  margin: 3px 0;
 }
 
 .tender-mob {
