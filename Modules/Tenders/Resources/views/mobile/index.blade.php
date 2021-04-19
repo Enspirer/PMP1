@@ -58,9 +58,11 @@
         <div class="card-mob-tender p-2">
           <div class="row">
             <div class="col-12">
+            <a href="{{route('frontend.contact_us')}}">
               <h2>
-                Developing and maintenance of a software programme for private insurance company
+              Developing and maintenance of a software programme for private insurance company
               </h2>
+              </a> 
             </div>
        
           </div>
@@ -93,9 +95,11 @@
         <div class="card-mob-tender p-2">
           <div class="row">
             <div class="col-12">
+            <a href="{{route('frontend.contact_us')}}">
               <h2>
                 Developing and maintenance of a software programme for private insurance company
               </h2>
+            </a>
             </div>
        
           </div>
@@ -128,9 +132,11 @@
         <div class="card-mob-tender p-2">
           <div class="row">
             <div class="col-12">
+            <a href="{{route('frontend.contact_us')}}">
               <h2>
                 Developing and maintenance of a software programme for private insurance company
               </h2>
+            </a>
             </div>
        
           </div>
@@ -163,9 +169,11 @@
         <div class="card-mob-tender p-2">
           <div class="row">
             <div class="col-12">
+            <a href="{{route('frontend.contact_us')}}">
               <h2>
                 Developing and maintenance of a software programme for private insurance company
               </h2>
+            </a>
             </div>
        
           </div>
@@ -198,9 +206,11 @@
         <div class="card-mob-tender p-2">
           <div class="row">
             <div class="col-12">
+            <a href="{{route('frontend.contact_us')}}">
               <h2>
                 Developing and maintenance of a software programme for private insurance company
               </h2>
+            </a>
             </div>
        
           </div>
