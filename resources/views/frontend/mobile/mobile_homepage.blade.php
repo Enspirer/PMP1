@@ -189,7 +189,7 @@
     font-size: 12px;
     font-weight: 600;
     color: #fff;
-    background: #F83535 ;" href="{{route('frontend.project_auction',1)}}">VIEW ALL AUCTIONS</a>
+    background: #F83535 ;" href="{{route('frontend.project_auctions_explore')}}">VIEW ALL AUCTIONS</a>
         </div>
 
     </div>

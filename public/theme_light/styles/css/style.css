@@ -320,6 +320,10 @@ body {
   font-weight: 700;
 }
 
+.navbar-main .container .collapse ul li .active {
+  font-weight: 700;
+}
+
 .navbar-main .container .collapse ul li .nav-link-join {
   border: 1px solid #242424;
   border-radius: 5px;

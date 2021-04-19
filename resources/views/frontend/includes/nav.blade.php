@@ -12,17 +12,17 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="ml-auto row">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route("frontend.expert_center")}}">Expert Centre</a>
+                                <a class="nav-link {{ Request::segment(1) === 'projects' ? 'active' : null }}" href="{{route("frontend.expert_center")}}">Expert Centre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('frontend.blog','all')}}">Media</a>
+                                <a class="nav-link {{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}">Media</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('frontend.contact_us')}}">Contact Us</a>
+                                <a class="nav-link {{ Request::segment(1) === 'supportcenter' ? 'active' : null }}" href="{{route('frontend.contact_us')}}">Contact Us</a>
                             </li>
 
                             @auth()

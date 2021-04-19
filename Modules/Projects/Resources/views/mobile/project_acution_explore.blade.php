@@ -50,9 +50,11 @@
       <div class="auction-item">
         <hr>
         <div class="auction-body">
+        <a href="{{route('frontend.project_auction',1)}}">
           <h1>
             Mobile app Development
           </h1>
+          </a>
           <div class="row mt-4">
             <div class="col-8">
               <div class="row">
@@ -65,7 +67,7 @@
               </div>
             </div>
             <div class="col-4">
-              <a type="button" href="#" class="red"><i class="fa fa-wifi" aria-hidden="true"></i> live NOW </a>
+              <a type="button" href="#" class="btnlive red"><i class="fa fa-wifi" aria-hidden="true"></i> live NOW </a>
             </div>
           </div>
         </div>
@@ -75,9 +77,11 @@
       <div class="auction-item">
         <hr>
         <div class="auction-body">
+        <a href="{{route('frontend.project_auction',1)}}">
           <h1>
             E-Commerce application
           </h1>
+        </a>
           <div class="row mt-4">
             <div class="col-8">
               <div class="row">
@@ -90,7 +94,7 @@
               </div>
             </div>
             <div class="col-4">
-              <a type="button" href="#" class="black"><i class="fa fa-clock-o" aria-hidden="true"></i> Timed </a>
+              <a type="button" href="#" class="btnlive black"><i class="fa fa-clock-o" aria-hidden="true"></i> Timed </a>
             </div>
           </div>
         </div>
@@ -100,9 +104,11 @@
       <div class="auction-item">
         <hr>
         <div class="auction-body">
+        <a href="{{route('frontend.project_auction',1)}}">
           <h1>
             ERP solution
           </h1>
+        </a>
           <div class="row mt-4">
             <div class="col-8">
               <div class="row">
@@ -115,7 +121,7 @@
               </div>
             </div>
             <div class="col-4">
-              <a type="button" href="#" class="red"><i class="fa fa-wifi" aria-hidden="true"></i> live NOW </a>
+              <a type="button" href="#" class="btnlive red"><i class="fa fa-wifi" aria-hidden="true"></i> live NOW </a>
             </div>
           </div>
         </div>
@@ -125,9 +131,11 @@
       <div class="auction-item">
         <hr>
         <div class="auction-body">
+        <a href="{{route('frontend.project_auction',1)}}">
           <h1>
             Digital Marketing campaign
           </h1>
+        </a>
           <div class="row mt-4">
             <div class="col-8">
               <div class="row">
@@ -140,7 +148,7 @@
               </div>
             </div>
             <div class="col-4">
-              <a type="button" href="#" class="black"><i class="fa fa-clock-o" aria-hidden="true"></i> Timed</a>
+              <a type="button" href="#" class="btnlive black"><i class="fa fa-clock-o" aria-hidden="true"></i> Timed</a>
             </div>
           </div>
         </div>

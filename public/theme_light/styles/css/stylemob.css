@@ -3509,7 +3509,7 @@ a {
   line-height: 1;
 }
 
-#live_auction_all_mob_body .auction-item .auction-body a {
+#live_auction_all_mob_body .auction-item .auction-body .btnlive {
   border: 0.5px solid #f83535;
   border-radius: 2px;
   font: normal normal normal 12px/9px Karla;
