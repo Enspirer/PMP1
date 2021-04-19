@@ -342,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}" class="btn btn-primary" style="margin: 0;background: #0F9D58;border: none;color: #fff;padding: 12px 25px">VIEW ALL PROJECTS</a>
+            <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" class="btn btn-primary" style="margin: 0;background: #0F9D58;border: none;color: #fff;padding: 12px 25px">VIEW ALL PROJECTS</a>
         </div>
 
     </div>

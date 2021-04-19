@@ -76,7 +76,7 @@
                                 <div class="collapse" id="collapseExample">
                                     <div class="card card-body">
                                         <a href="{{route('frontend.auth.login')}}">Post a Job</a>
-                                        <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Find a Project</a>
+                                        <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Find a Project</a>
                                         <a href="{{route("frontend.expert_center")}}">How it works</a>
                                         <a href="{{route('frontend.become_a_partner')}}">Become a partner</a>
                                     </div>
@@ -146,14 +146,14 @@
                     <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                     <!--headin5_amrc-->
                     <ul class="footer_ul_amrc">
-                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Mobile app development</a></li>
+                        <li><a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Mobile app development</a></li>
                         <li>
-                            <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">ERP Solutions</a>
+                            <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">ERP Solutions</a>
                         </li>
-                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Web applications</a></li>
-                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Digital Marketing</a></li>
-                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Architecture</a></li>
-                        <li><a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Video animations</a></li>
+                        <li><a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Web applications</a></li>
+                        <li><a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Digital Marketing</a></li>
+                        <li><a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Architecture</a></li>
+                        <li><a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Video animations</a></li>
                     </ul>
                 </div>
             </div>

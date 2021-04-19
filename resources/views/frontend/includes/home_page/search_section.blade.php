@@ -12,7 +12,7 @@
 
             </h1>
 
-            <form action="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">
+            <form action="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">
                 <div class="row-search-post row" data-animscroll="fade-up" data-animscroll-delay="200">
                     <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
                     <h3>OR</h3>
@@ -31,11 +31,11 @@
             <div class="container" data-animscroll="fade-up" data-animscroll-delay="300">
                 <div class="row">
                     <p>Popular :</p>
-                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Web Design</a>
-                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Logo Design</a>
-                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">App Development</a>
-                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">Programming</a>
-                    <a href="{{route('frontend.project_explore',['null','null','null','null','null','null'])}}">UI/UX</a>
+                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Web Design</a>
+                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Logo Design</a>
+                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">App Development</a>
+                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Programming</a>
+                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">UI/UX</a>
                 </div>
             </div>
         </div>
