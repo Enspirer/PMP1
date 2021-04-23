@@ -64,15 +64,15 @@
                             </div>
 
                             <div class="part-yellow-top-menu">
-                                <a class="" href="{{url('/')}}">Home</a>
-                                <a href="{{route("frontend.expert_center")}}">Expert Centre</a>
-                                <a href="{{route('frontend.blog','all')}}">Media</a>
-                                <a href="{{route('frontend.contact_us')}}">Contact Us</a>
-                                <a href="{{route('frontend.auth.register')}}">Join</a>
+                                <a class="{{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}">Home</a>
+                                <a class="{{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route("frontend.expert_center")}}">Expert Centre</a>
+                                <a class="{{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}">Media</a>
+                                <a class="{{ Request::segment(1) === 'supportcenter' ? 'active' : null }}" href="{{route('frontend.contact_us')}}">Contact Us</a>
+                                <a class="{{ Request::segment(1) === 'register' ? 'active' : null }}" href="{{route('frontend.auth.register')}}">Join</a>
                             </div>
 
                             <div class="part-gray-sub-menu">
-                                <a id="collapsbtnexplore" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Explore <i id="mobile-menu-icon-down" class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <a class="{{ Request::segment(2) === 'explore-project' ? 'active' : null }}" id="collapsbtnexplore" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Explore <i id="mobile-menu-icon-down" class="fa fa-angle-down" aria-hidden="true"></i></a>
                                 <div class="collapse" id="collapseExample">
                                     <div class="card card-body">
                                         <a href="{{route('frontend.auth.login')}}">Post a Job</a>
@@ -81,10 +81,10 @@
                                         <a href="{{route('frontend.become_a_partner')}}">Become a partner</a>
                                     </div>
                                 </div>
-                                <a href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
-                                <a href="{{route('frontend.tenders.index')}}">Tenders</a>
-                                <a href="{{route('frontend.shop.index')}}">e-Shop</a>
-                                <a href="{{route('frontend.academy.index')}}">Academy</a>
+                                <a class="{{ Request::segment(2) === 'auction-projects' ? 'active' : null }} " href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
+                                <a class="{{ Request::segment(1) === 'tender' ? 'active' : null }}" href="{{route('frontend.tenders.index')}}">Tenders</a>
+                                <a class="{{ Request::segment(1) === 'shop' ? 'active' : null }}" href="{{route('frontend.shop.index')}}">e-Shop</a>
+                                <a class="{{ Request::segment(1) === 'academy' ? 'active' : null }}" href="{{route('frontend.academy.index')}}">Academy</a>
                             </div>
 
 

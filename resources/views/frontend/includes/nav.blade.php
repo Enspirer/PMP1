@@ -16,7 +16,7 @@
                                 <a class="nav-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::segment(1) === 'projects' ? 'active' : null }}" href="{{route("frontend.expert_center")}}">Expert Centre</a>
+                                <a class="nav-link {{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route("frontend.expert_center")}}">Expert Centre</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}">Media</a>
@@ -96,7 +96,7 @@
                 <div class="menu">
                     <ul class="clearfix">
                         <li>
-                            <a class="main-menu-item" href="#">Explore</a>
+                            <a class="main-menu-item {{ Request::segment(2) === 'explore-project' ? 'active-second' : null }}" href="#">Explore</a>
                             <ul style="padding: 0; background: #fff; box-shadow: inset 6px 36px 30px -30px #00000029;">
                                 <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,  inset -20px 7px 28px -20px #00000029;filter: drop-shadow(0px 10px 25px #00000029) drop-shadow(inset 6px 26px 30px 30px #00000029);">
                                     <ul>
@@ -236,16 +236,16 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
+                            <a class="main-menu-item {{ Request::segment(2) === 'auction-projects' ? 'active-second' : null }} " href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="{{route('frontend.tenders.index')}}">Tenders</a>
+                            <a class="main-menu-item {{ Request::segment(1) === 'tender' ? 'active-second' : null }} " href="{{route('frontend.tenders.index')}}">Tenders</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="{{route('frontend.shop.index')}}">e-Shop</a>
+                            <a class="main-menu-item {{ Request::segment(1) === 'shop' ? 'active-second' : null }} " href="{{route('frontend.shop.index')}}">e-Shop</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="{{route('frontend.academy.index')}}">Acadamy</a>
+                            <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}">Acadamy</a>
                         </li>
                         <!-- <li>
                             <a class="main-menu-item" href="#">Tenders</a>
