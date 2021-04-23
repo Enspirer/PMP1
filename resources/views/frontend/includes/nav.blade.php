@@ -96,7 +96,7 @@
                 <div class="menu">
                     <ul class="clearfix">
                         <li>
-                            <a class="main-menu-item {{ Request::segment(2) === 'explore-project' ? 'active-second' : null }}" href="#">Explore</a>
+                            <a class="main-menu-item {{ Request::segment(2) === 'expert-center' ? 'active-second' : null }}" href="#">Explore</a>
                             <ul style="padding: 0; background: #fff; box-shadow: inset 6px 36px 30px -30px #00000029;">
                                 <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,  inset -20px 7px 28px -20px #00000029;filter: drop-shadow(0px 10px 25px #00000029) drop-shadow(inset 6px 26px 30px 30px #00000029);">
                                     <ul>

@@ -59,7 +59,7 @@
                                     </a>
                                 </div>
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <a href="#">
                                             <div class="row">
@@ -94,7 +94,7 @@
                                     </a>
                                 </div>
 
-                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <a href="#">
                                             <div class="row">
@@ -166,7 +166,7 @@
                                     </a>
                                 </div>
 
-                                <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <a href="#">
                                             <div class="row">

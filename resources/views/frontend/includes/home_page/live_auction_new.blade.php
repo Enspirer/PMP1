@@ -50,14 +50,14 @@
     </div>
     <div class="auction-btn-center">
 
-      <a class="auction-all-inner-link-btn" href="{{route('frontend.project_auction',1)}}" type="button">VIEW ALL AUCTIONS</a>
+      <a class="auction-all-inner-link-btn" href="{{route('frontend.project_auctions_explore')}}" type="button">VIEW ALL AUCTIONS</a>
     </div>
 
 
   </div>
 </section>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="z-index: 99999999999999;"> 
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -105,10 +105,13 @@
     background: transparent;
     border: 1px solid #000 !important;
     border: transparent;" data-dismiss="modal">Close</button>
+
         <button type="button" style="font-family: Poppins;color: #fff;
     background: #0f9d58;
     border: 1px solid #0f9d58 !important;
-    border: transparent;" class="btn btn-primary">Save changes</button>
+    border: transparent;" class="btn btn-primary">SIGN IN TO BID</button>
+     
+
       </div>
     </div>
   </div>

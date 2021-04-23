@@ -61,7 +61,7 @@
 
                   <div
                     id="collapseOne"
-                    class="collapse show"
+                    class="collapse"
                     aria-labelledby="headingOne"
                     data-parent="#accordionExample"
                   >
@@ -109,7 +109,7 @@
 
                   <div
                     id="collapseTwo"
-                    class="collapse show"
+                    class="collapse"
                     aria-labelledby="headingOne"
                     data-parent="#accordionExample"
                   >
@@ -176,7 +176,7 @@
 
                   <div
                     id="collapseThree"
-                    class="collapse show"
+                    class="collapse"
                     aria-labelledby="headingOne"
                     data-parent="#accordionExample"
                   >
