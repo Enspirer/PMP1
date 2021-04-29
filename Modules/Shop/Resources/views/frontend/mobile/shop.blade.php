@@ -21,6 +21,7 @@
                         <div class="row m-0 mt-1">
                             <div class="price">
                                 <h3>From $2500</h3>
+                                <h6>Fully Customizable</h6>
                                 <!-- <h6>per month</h6> -->
                             </div>
                             <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -55,6 +56,7 @@
                         <div class="row m-0 mt-1">
                             <div class="price">
                                 <h3>From $3000</h3>
+                                <h6>Fully Customizable</h6>
                                 <!-- <h6>per month</h6> -->
                             </div>
                             <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -89,6 +91,7 @@
                         <div class="row m-0 mt-1">
                             <div class="price">
                                 <h3>From $4000</h3>
+                                <h6>Fully Customizable</h6>
                                 <!-- <h6>per month</h6> -->
                             </div>
                             <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
@@ -106,6 +109,7 @@
                         <div class="row m-0 mt-1">
                             <div class="price">
                                 <h3>From $3000</h3>
+                                <h6>Fully Customizable</h6>
                                 <!-- <h6>per month</h6> -->
                             </div>
                             <a href="#" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>

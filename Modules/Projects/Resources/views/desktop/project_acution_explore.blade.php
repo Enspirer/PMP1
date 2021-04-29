@@ -26,7 +26,9 @@
               </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consetetur sadi</p>
+            <p>Receive bids from Global Experts <br>
+Ensuring the right price for your project
+</p>
           </div>
         </div>
       </div>

@@ -33,14 +33,14 @@
         <div class="container">
             <div class="tab-center">
                 <div class="title-tab">
+     
                 <br>
-                <br>
-                <br>
-                    <h1>Tallentor Press</h1>
+                    <h1>Tallentor Media Center</h1>
                     <hr />
                 </div>
             </div>
 
+<br><br><br><br>
             <div class="type-row row">
                 @foreach($blog_category as $blog_cat)
 

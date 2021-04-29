@@ -22,14 +22,15 @@
 
                 </div>
             </div>
-            <p style="font: normal normal normal 27px/35px Karla;
+            <p style="font: normal normal normal 20px/35px Karla;
         letter-spacing: 0px;
         color: #828282;
+        margin-top: 50px;
         max-width: 800px;">
                 We are delighted to invite Business Partners from around the world to join the fastest growing talent marketplace
             </p>
             <br>
-            <div class="form-section">
+            <div class="form-section" style="max-width: 800px;">
                 <form action="">
                     <div class="form-group">
                         <label >First Name</label>

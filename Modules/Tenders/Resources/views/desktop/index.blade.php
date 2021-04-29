@@ -34,7 +34,7 @@
                         <hr class="w-270" />
                     </div>
                     <h1 style="padding-bottom: 10px">Global Tender Marketplace</h1>
-                    <a href="#" data-toggle="modal" data-target="#exampleModalLong" class="btn-position">View All Tenders</a>
+                    <!-- <a href="#" data-toggle="modal" data-target="#exampleModalLong" class="btn-position">View All Tenders</a> -->
                 </div>
             </div>
         </div>

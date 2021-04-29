@@ -106,10 +106,10 @@
     border: 1px solid #000 !important;
     border: transparent;" data-dismiss="modal">Close</button>
 
-        <button type="button" style="font-family: Poppins;color: #fff;
+        <a href="{{route('frontend.auth.login')}}" type="button" style="font-family: Poppins;color: #fff;
     background: #0f9d58;
     border: 1px solid #0f9d58 !important;
-    border: transparent;" class="btn btn-primary">SIGN IN TO BID</button>
+    border: transparent;" class="btn btn-primary">SIGN IN TO BID</a>
      
 
       </div>

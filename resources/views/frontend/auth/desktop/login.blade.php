@@ -48,8 +48,8 @@
             <div class="top-text-layer" data-animscroll="fade-up" data-animscroll-delay="200">
                 <h1>Welcome to Tallentor</h1>
                 <p>
-                    Work with us and go beyond ,<br/>
-                    from your imaginations
+                    Work with us and,<br/>
+                    go beyond imaginations
                 </p>
             </div>
         </div>
