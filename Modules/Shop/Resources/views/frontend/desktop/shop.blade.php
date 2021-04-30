@@ -18,7 +18,7 @@
     <div class="container">
         <div class="tab-center">
             <div class="title-tab">
-                <h1>Tallantor Shop</h1>
+                <h1>Tallentor Shop</h1>
                 <hr />
             </div>
         </div>
