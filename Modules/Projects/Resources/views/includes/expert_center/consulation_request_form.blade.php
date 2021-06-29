@@ -13,27 +13,27 @@
                     {{csrf_field()}}
                     <div class="form-group">
                         <label>Name:</label>
-                        <input type="text" class="form-control" value="" name="name">
+                        <input type="text" class="form-control" value="" name="name" required>
                     </div>
                     <div class="form-group">
                         <label>Company name:</label>
-                        <input type="text" class="form-control" value="" name="company_name">
+                        <input type="text" class="form-control" value="" name="company_name" required>
                     </div>
                     <div class="form-group">
                         <label>Email:</label>
-                        <input type="text" class="form-control" value="" name="email">
+                        <input type="text" class="form-control" value="" name="email" required>
                     </div>
                     <div class="form-group">
                         <label>Telephone:</label>
-                        <input type="text" class="form-control" value="" name="telephone">
+                        <input type="text" class="form-control" value="" name="telephone" required>
                     </div>
                     <div class="form-group">
                         <label>Project Brief:</label>
-                        <textarea type="text" class="form-control" rows="5" name="project_brief"></textarea>
+                        <textarea type="text" class="form-control" rows="5" name="project_brief" required></textarea>
                     </div>
                     <div class="form-group">
                         <label>Appoint date and time:</label>
-                        <input type="text" class="form-control" value="" name="appoiment_date_time">
+                        <input type="datetime-local" class="form-control" value="" name="appoiment_date_time" required>
                     </div>
                     <div class="form-group">
                         <label>Additional notes :</label>
@@ -71,31 +71,31 @@
                 <form>
                     <div class="form-group">
                         <label>Your name*</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Company name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
 
                     <div class="form-group">
                         <label>Email)</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
 
                     <div class="form-group">
                         <label>Telephone*</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
 
                     <div class="form-group">
                         <label>Project brief*</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" rows="3" required></textarea>
                     </div>
 
                     <div class="form-group">
                         <label>Appointment date and time</label>
-                        <input type="datetime-local" class="form-control">
+                        <input type="datetime-local" class="form-control" required>
                     </div>
 
 

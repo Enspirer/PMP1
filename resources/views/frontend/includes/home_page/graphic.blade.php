@@ -89,30 +89,30 @@ button:focus {
 
                 <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
                     <div class="row">
-                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
+                        <div class="col-4">
                             <img src="{{url('theme_light/assets/graphic/business-card-design.svg')}}" alt="" class="img-fluid">
                             <p class="mt-3">Business card Design</p>
                         </div>
-                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="100">
+                        <div class="col-4">
                             <img src="{{url('theme_light/assets/graphic/font-design.svg')}}" alt="" class="img-fluid">
                             <p class="mt-3">Font Design</p>
                         </div>
-                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="200">
+                        <div class="col-4">
                             <img src="{{url('theme_light/assets/graphic/logo-design.svg')}}" alt="" class="img-fluid">
                             <p class="mt-3">Logo Design</p>
                         </div>
                     </div>
 
                     <div class="row mb-3">
-                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
+                        <div class="col-4">
                             <img src="{{url('theme_light/assets/graphic/graphic-design.svg')}}" alt="" class="img-fluid">
                             <p class="mt-3">Graphic Design</p>
                         </div>
-                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
+                        <div class="col-4">
                             <img src="{{url('theme_light/assets/graphic/ui-design.svg')}}" alt="" class="img-fluid">
                             <p class="mt-3">UI Design</p>
                         </div>
-                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
+                        <div class="col-4">
                             <img src="{{url('theme_light/assets/graphic/brochure-design.png')}}" alt="" class="img-fluid">
                             <p class="mt-3">Brochure Design</p>
                         </div>

@@ -128,71 +128,132 @@
     </div>
 </section>
 <section class="live-action-gray mt-5">
-    <div class="head-title">
-        <div class="row" data-animscroll="fade-up">
-            <div class="record-icon">
-                <img src="{{url('theme_light/assets/image/icon/rec_red.svg')}}" />
+<div class="container text-center" style="margin-top: 7rem; margin-bottom: 7rem">
+    <h2>Graphic Designing</h2>
+    <p>A single place, milliions of creative talents</p>
+
+    <div class="row justify-content-between mt-5">
+        <div class="col-md-3">
+            <nav class="navClass navbar-expand-lg">
+
+            <div class="dropdown graphic-design nav" id="nav-tab" role="tablist">
+                <button class="btn btn-secondary dropdown-toggle mb-5 bg-success" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Design
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <button class="nav-link active text-left border-0" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="true"><img src="{{url('theme_light/assets/graphic/graphic-icon.svg')}}" class="mr-3" alt="">Graphic Designing</button>
+
+                    <button class="nav-link text-left border-0" id="nav-web-tab" data-toggle="tab" data-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false"><img src="{{url('theme_light/assets/graphic/web-icon.svg')}}" class="mr-3" alt="">Web Designing</button>
+
+                    <button class="nav-link text-left border-0" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-icon.svg')}}" class="mr-3" alt="">Digital Marketing</button>
+
+                    <button class="nav-link text-left border-0" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-icon.svg')}}" class="mr-3" alt="">Digital Marketing</button>
+                </div>
             </div>
-            <h1><span>Live</span>Auction</h1>
+            </nav>
+        </div>
+
+        <div class="col-md-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-graphic" role="tabpanel" aria-labelledby="nav-graphic-tab">
+                    <div class="row mb-3">
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
+                            <img src="{{url('theme_light/assets/graphic/graphic-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Graphic Design</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="100">
+                            <img src="{{url('theme_light/assets/graphic/ui-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">UI Design</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="200">
+                            <img src="{{url('theme_light/assets/graphic/brochure-design.png')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Brochure Design</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
+                            <img src="{{url('theme_light/assets/graphic/business-card-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Business card Design</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
+                            <img src="{{url('theme_light/assets/graphic/font-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Font Design</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
+                            <img src="{{url('theme_light/assets/graphic/logo-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Logo Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/business-card-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Business card Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/font-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Font Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/logo-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Logo Design</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/graphic-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Graphic Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/ui-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">UI Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/brochure-design.png')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Brochure Design</p>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="tab-pane fade" id="nav-digital" role="tabpanel" aria-labelledby="nav-digital-tab">
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/logo-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Logo Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/brochure-design.png')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Brochure Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/graphic-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Graphic Design</p>
+                        </div>  
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/ui-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">UI Design</p>
+                        </div>
+                        <div class="col-4">   
+                            <img src="{{url('theme_light/assets/graphic/business-card-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Business card Design</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="{{url('theme_light/assets/graphic/font-design.svg')}}" alt="" class="img-fluid">
+                            <p class="mt-3">Font Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
-
-<section class="live-action-content mb-5">
-    <div class="container">
-        <h2>
-        Development of eCommerce platform for a leading Fashion brand
-        </h2>
-        <h6>Auction ends in : <span>12Hr 34Min</span></h6>
-
-        <div class="row button-live-row">
-            <div class="button-live-single col">
-                <a data-toggle="modal" data-target="#exampleModalCenter" class="view-scope-outline" href="#" type="button">VIEW BRIEF</a>
-            </div>
-
-            <div class="button-live-single col">
-                @auth()
-                <a class="view-scope-fill" href="{{route('frontend.project_auction',1)}}" type="button">VIEW BID PAGE</a>
-                @else
-                <a class="view-scope-fill" href="{{route('frontend.auth.login')}}" type="button">SIGN IN TO BIT</a>
-                @endauth
-
-            </div>
-        </div>
-        <br>
-        <br />
-        <div id="container" data-animscroll="fade-left" style="
-            height: 300px;
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
-            position: relative;
-          "></div>
-
-        <!-- <p class="live-bidders">Live Bidders -38</p>
-        <br />
-        <h6>Auction ends in : <span>12Hr 34Min</span></h6>
-        <div class="row button-live-row">
-          <div class="button-live-single col">
-            <a class="view-scope-outline" href="#" type="button">VIEW SCOPE</a>
-          </div>
-
-          <div class="button-live-single col">
-            <a class="view-scope-fill" href="#" type="button">VIEW SCOPE</a>
-          </div>
-        </div> -->
-        <div class="row">
-            <a style="    margin: auto;
-    justify-content: center;
-    font-family: Poppins;
-    padding: 6px 20px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #fff;
-    background: #F83535 ;" href="{{route('frontend.project_auctions_explore')}}">VIEW ALL AUCTIONS</a>
-        </div>
-
-    </div>
+</div>
 </section>
 
 
