@@ -23,7 +23,7 @@ class CreateConsultingRequestsTable extends Migration
             $table->text('appointment_date_time');
             $table->text('additional_notes')->nullable();
             $table->text('user_id')->nullable();
-            $table->text('status')->default(0)->comment('0 is unreaded');
+            $table->text('status')->nullable()->comment('0 is unreaded');
             $table->timestamps();
         });
     }
