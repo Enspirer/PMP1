@@ -4,6 +4,25 @@
 
 @section('content')
 
+<style>
+.navClass .dropdown-menu {
+  height: 300px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  border: 1px solid #d5d5d5;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eeeeee;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #b0b0b0;
+}
+</style>
+
 <div class="hero-image">
     <div class="dark-layer-hero"></div>
     <div class="hero-mobile-content">
@@ -142,6 +161,24 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     
+                    <button class="nav-link active text-left border-0 bg-light" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
+
+                    <button class="nav-link text-left border-0 bg-light" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
+
+                    <button class="nav-link text-left border-0 bg-light" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
+
+                    <button class="nav-link active text-left border-0 bg-light" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
+
+                    <button class="nav-link text-left border-0 bg-light" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
+
+                    <button class="nav-link text-left border-0 bg-light" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
+
+                    <button class="nav-link active text-left border-0 bg-light" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
+
+                    <button class="nav-link text-left border-0 bg-light" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
+
+                    <button class="nav-link text-left border-0 bg-light" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
+
                     <button class="nav-link active text-left border-0 bg-light" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
 
                     <button class="nav-link text-left border-0 bg-light" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
