@@ -7,15 +7,15 @@
             </div>
             
 
-                <h1>Register Here</h1>
-                <p class="register-paragraph">Tell us what you are looking for</p>
+                <!-- <h1>Register Here</h1>
+                <p class="register-paragraph">Tell us what you are looking for</p> -->
                 <div class="form-login">
                     <form class="m-t-40" action="{{route('frontend.auth.register.post')}}" method="post" id="register-form">
                         {{csrf_field()}}
 
                         <fieldset>
 
-                            <h2 class="fs-title">I'm looking...</h2>
+                            <h2 class="fs-title">Tell us what you are looking for</h2>
                             <div class="form-group">
                                 <label>I'm looking...</label>
                                 <select class="form-select" aria-label="Default select example" name="user_type">
@@ -26,11 +26,15 @@
 
                             <input type="button" name="next" class="next action-button" value="Next">
 
+                            <hr>
+
+                            <p style="font-size: 15px">Already a member? <a href="{{route('frontend.auth.login')}}" style="color: #27AE60">Sign in</a></p>
+
                         </fieldset>
 
                         <fieldset>
 
-                            <h2>Personal Details</h2>
+                            <h2 class="fs-title">Tell us your name</h2>
 
                                 <div class="form-group">
                                     <label>First Name</label>
@@ -42,11 +46,6 @@
                                     <input type="text" name="last_name" class="form-control" placeholder="duglas"/>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Contact number</label>
-                                    <input name="contact_number"  type="text" class="form-control"  placeholder="94-712975938"/>
-                                </div>
-
                                 <input type="button" name="previous" class="previous action-button" value="Previous">
                                 <input type="button" name="next" class="next action-button" value="Next">
 
@@ -54,11 +53,27 @@
 
                         <fieldset>
 
-                            <h2>Account Details</h2>
+                            <h2 class="fs-title">Tell us your contact details</h2>
+
                             <div class="form-group">
                                 <label>Email</label>
                                 <input type="email" name="email" class="form-control" placeholder="john@example.com"/>
                             </div>
+
+                            <div class="form-group">
+                                <label>Contact number</label>
+                                <input name="contact_number"  type="text" class="form-control"  placeholder="94-712975938"/>
+                            </div>
+
+                            <input type="button" name="previous" class="previous action-button" value="Previous">
+                            <input type="button" name="next" class="next action-button" value="Next">
+
+                        </fieldset>
+
+
+                        <fieldset>
+
+                            <h2 class="fs-title">Please enter your password</h2>
 
                             <div class="form-group">
                                 <label>Password</label>
@@ -77,7 +92,7 @@
 
                         <fieldset>
 
-                            <h2>Company Details</h2>
+                            <h2 class="fs-title">Tell us your company details</h2>
 
                             <div class="form-group">
                                 <label>Company name</label>
@@ -107,11 +122,12 @@
                         </fieldset>
 
                         <fieldset>
-                            <div class="form-check mb-5">
+                            <div class="form-check mb-4">
+
                                 <input type="checkbox" class="form-check-input" id="checkme"/>
-                                <label class="form-check-label" for="exampleCheck1">By signing up you are agree with our <br/>
-                                    <a href="">Terms and conditions.</a>
-                                </label>
+
+                                <label class="form-check-label" for="exampleCheck1" style="padding-top: 5px">By signing up you are agree with our <a href="">Terms and conditions.</a></label>
+
                             </div>
 
                             <input type="button" name="previous" class="previous action-button" value="Previous">
@@ -160,30 +176,20 @@
 
 @push('after-scripts')
 <script>
-        var current_fs, next_fs, previous_fs; //fieldsets
-        var left, opacity, scale; //fieldset properties which we will animate
-        var animating; //flag to prevent quick multi-click glitches
+
+        var current_fs, next_fs, previous_fs;
 
         $(".next").click(function(){
-            // if(animating) return false;
-            // animating = true;
-            
+
             current_fs = $(this).parent();
             next_fs = $(this).parent().next();
             
-            //activate next step on progressbar using the index of next_fs
-            // $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-            
-            //show the next fieldset
-            
-            //hide the current fieldset with style
-            // current_fs.hide("fast", function(){
-            //     next_fs.show(); 
-            // });
 
             current_fs.animate({
-                top: '100px'
+                top: '200px'
             }, 200, function(){
+                current_fs.css('top', '0');
+                
                 current_fs.hide();
 
                 next_fs.show();
@@ -191,19 +197,22 @@
         });
 
         $(".previous").click(function(){
-            // if(animating) return false;
-            // animating = true;
+
             
             current_fs = $(this).parent();
             previous_fs = $(this).parent().prev();
             
-            //de-activate current step on progressbar
-            // $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-            
-            //show the previous fieldset
-            previous_fs.show(); 
-            //hide the current fieldset with style
-            current_fs.hide();
+
+            current_fs.animate({
+                top: '200px'
+            }, 200, function(){
+
+                current_fs.css('top', '0');
+
+                current_fs.hide();
+
+                previous_fs.show();
+            });
         });
     </script>
 
