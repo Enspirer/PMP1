@@ -18,13 +18,14 @@
                             <h1>Tell us what you are looking for</h1>
                             <div class="form-group mt-3">
                                 <label>I'm looking...</label>
-                                <select class="form-select" aria-label="Default select example" name="user_type">
-                                    <option value="1" selected>Someone to hire</option>
+                                <select class="form-select" aria-label="Default select example" name="user_type" id="looking" value="" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Someone to hire</option>
                                     <option value="2">Project</option>
                                 </select>
                             </div>
 
-                            <input type="button" name="next" class="next action-button" value="Next">
+                            <input type="button" name="next" class="next action-button" value="Next" id="looking-next">
 
                             <hr>
 
@@ -38,16 +39,16 @@
 
                                 <div class="form-group mt-3">
                                     <label>First Name</label>
-                                    <input type="text" name="first_name" class="form-control" placeholder="john"/>
+                                    <input type="text" name="first_name" class="form-control" placeholder="john" id="first_name" required/>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Last Name</label>
-                                    <input type="text" name="last_name" class="form-control" placeholder="duglas"/>
+                                    <input type="text" name="last_name" class="form-control" placeholder="duglas" id="last_name" required/>
                                 </div>
 
                                 <input type="button" name="previous" class="previous action-button" value="Previous">
-                                <input type="button" name="next" class="next action-button" value="Next">
+                                <input type="button" name="next" class="next action-button" value="Next" id="name-next">
 
                         </fieldset>
 
@@ -57,16 +58,16 @@
 
                             <div class="form-group mt-3">
                                 <label>Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="john@example.com"/>
+                                <input type="email" name="email" class="form-control" placeholder="john@example.com" id="email" required/>
                             </div>
 
                             <div class="form-group">
                                 <label>Contact number</label>
-                                <input name="contact_number"  type="text" class="form-control"  placeholder="94-712975938"/>
+                                <input name="contact_number"  type="text" class="form-control"  placeholder="94-712975938" id="number" required/>
                             </div>
 
                             <input type="button" name="previous" class="previous action-button" value="Previous">
-                            <input type="button" name="next" class="next action-button" value="Next">
+                            <input type="button" name="next" class="next action-button" value="Next" id="contact-next">
 
                         </fieldset>
 
@@ -77,16 +78,20 @@
 
                             <div class="form-group mt-3">
                                 <label>Password</label>
-                                <input type="password" name="password" class="form-control" placeholder="●●●●●●●"/>
+                                <input type="password" name="password" class="form-control" placeholder="●●●●●●●" required id="pass"/>
                             </div>
 
                             <div class="form-group">
                                 <label>Re-Enter Password</label>
-                                <input type="password" name="password_confirmation" class="form-control" placeholder="●●●●●●●"/>
+                                <input type="password" name="password_confirmation" class="form-control" placeholder="●●●●●●●" required id="re-pass"/>
+                            </div>
+
+                            <div class="feedback">
+
                             </div>
 
                             <input type="button" name="previous" class="previous action-button" value="Previous">
-                            <input type="button" name="next" class="next action-button" value="Next">
+                            <input type="button" name="next" class="next action-button" value="Next" id="pass-next">
 
                         </fieldset>
 
@@ -96,13 +101,14 @@
 
                             <div class="form-group mt-3">
                                 <label>Company name</label>
-                                <input name="company_name" type="text" class="form-control" placeholder="ABC Company"/>
+                                <input name="company_name" type="text" class="form-control" placeholder="ABC Company" required id="company-name"/>
                             </div>
 
                             <div class="form-group">
                                 <label>Location</label>
-                                <select class="form-select" aria-label="Default select example" name="location">
-                                    <option value="USA" selected>USA</option>
+                                <select class="form-select" aria-label="Default select example" name="location" required id="location">
+                                    <option value="">Select</option>
+                                    <option value="USA">USA</option>
                                     <option value="England">England</option>
                                     <option value="India">India</option>
                                     <option value="USA">USA</option>
@@ -117,7 +123,7 @@
                             </div>
 
                             <input type="button" name="previous" class="previous action-button" value="Previous">
-                            <input type="button" name="next" class="next action-button" value="Next">
+                            <input type="button" name="next" class="next action-button" value="Next" id="company-next">
 
                         </fieldset>
 
@@ -176,22 +182,183 @@
 
         var current_fs, next_fs, previous_fs;
 
-        $(".next").click(function(){
+        $("#looking-next").click(function(){
 
-            current_fs = $(this).parent();
-            next_fs = $(this).parent().next();
+            if($('#looking').val() != '') {
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
             
 
-            current_fs.animate({
-                top: '200px'
-            }, 200, function(){
-                current_fs.css('top', '0');
-                
-                current_fs.hide();
+                current_fs.animate({
+                    top: '200px'
+                }, 200, function(){
+                    current_fs.css('top', '0');
+                    
+                    current_fs.hide();
 
-                next_fs.show();
-            });
+                    next_fs.show();
+                });
+            } else {
+
+                $('#looking').css('border', '1px solid red');
+            } 
         });
+
+
+
+        $("#name-next").click(function(){
+
+            if($('#first_name').val() != '' && $('#last_name').val() != '') {
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+
+                current_fs.animate({
+                    top: '200px'
+                }, 200, function(){
+                    current_fs.css('top', '0');
+                    
+                    current_fs.hide();
+
+                    next_fs.show();
+                });
+            } else {
+
+                if($('#first_name').val() != '') {
+                    $('#last_name').css('border', '1px solid red');
+                    $('#first_name').css('border', '0.1px solid #9f9f9f');
+                }
+
+                else if($('#last_name').val() != '') {
+                    $('#first_name').css('border', '1px solid red');
+                    $('#last_name').css('border', '0.1px solid #9f9f9f');
+                }
+                
+                else {
+                    $('#first_name').css('border', '1px solid red');
+                    $('#last_name').css('border', '1px solid red');
+                }
+            } 
+        });
+
+
+
+        $("#contact-next").click(function(){
+
+            if($('#email').val() != '' && $('#number').val() != '') {
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+
+                current_fs.animate({
+                    top: '200px'
+                }, 200, function(){
+                    current_fs.css('top', '0');
+                    
+                    current_fs.hide();
+
+                    next_fs.show();
+                });
+            } else {
+
+                if($('#email').val() != '') {
+                    $('#number').css('border', '1px solid red');
+                    $('#email').css('border', '0.1px solid #9f9f9f');
+                }
+
+                else if($('#number').val() != '') {
+                    $('#email').css('border', '1px solid red');
+                    $('#number').css('border', '0.1px solid #9f9f9f');
+                }
+                
+                else {
+                    $('#email').css('border', '1px solid red');
+                    $('#number').css('border', '1px solid red');
+                }
+            } 
+        });
+
+
+
+        $("#pass-next").click(function(){
+
+            if($('#pass').val() != '' && $('#re-pass').val() != '') {
+                if($('#pass').val() == $('#re-pass').val()) {
+
+                    current_fs = $(this).parent();
+                    next_fs = $(this).parent().next();
+
+
+                    current_fs.animate({
+                        top: '200px'
+                    }, 200, function(){
+                        current_fs.css('top', '0');
+                        
+                        current_fs.hide();
+
+                        next_fs.show();
+                    });
+                } else {
+                    let template = `<p style="color:red;">Passwords does not match</p>`;
+
+                    $('.feedback').html(template);
+                }
+                
+            } else {
+
+                if($('#pass').val() != '') {
+                    $('#re-pass').css('border', '1px solid red');
+                    $('#pass').css('border', '0.1px solid #9f9f9f');
+                }
+
+                else if($('#re-pass').val() != '') {
+                    $('#pass').css('border', '1px solid red');
+                    $('#re-pass').css('border', '0.1px solid #9f9f9f');
+                }
+                
+                else {
+                    $('#pass').css('border', '1px solid red');
+                    $('#re-pass').css('border', '1px solid red');
+                }
+            } 
+        });
+
+
+        $("#company-next").click(function(){
+
+            if($('#company-name').val() != '' && $('#location').val() != '') {
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+
+                current_fs.animate({
+                    top: '200px'
+                }, 200, function(){
+                    current_fs.css('top', '0');
+                    
+                    current_fs.hide();
+
+                    next_fs.show();
+                });
+            } else {
+
+                if($('#company-name').val() != '') {
+                    $('#location').css('border', '1px solid red');
+                    $('#company-name').css('border', '0.1px solid #9f9f9f');
+                }
+
+                else if($('#location').val() != '') {
+                    $('#company-name').css('border', '1px solid red');
+                    $('#location').css('border', '0.1px solid #9f9f9f');
+                }
+                
+                else {
+                    $('#company-name').css('border', '1px solid red');
+                    $('#location').css('border', '1px solid red');
+                }
+            } 
+        });
+
 
         $(".previous").click(function(){
 
