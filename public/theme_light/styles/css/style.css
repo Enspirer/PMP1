@@ -3657,7 +3657,7 @@ button {
 #login-body .row .left-form-login .form-login form .form-check label {
   float: left;
   text-align: left;
-  font: normal normal normal 11px/23px Karla;
+  font: normal normal normal 13px/23px Karla;
   letter-spacing: 0px;
   line-height: 1;
   color: #4f4f4f;
@@ -3672,8 +3672,9 @@ button {
   float: left;
 }
 
-#login-body .row .left-form-login .form-login form .row-button button {
-  padding: 4px 42px;
+#login-body .row .left-form-login .form-login form .signup-btn {
+  padding-left: 42px;
+  padding-right: 42px;
   margin: 0;
 }
 

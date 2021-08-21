@@ -15,8 +15,8 @@
 
                         <fieldset>
 
-                            <h2 class="fs-title">Tell us what you are looking for</h2>
-                            <div class="form-group">
+                            <h1>Tell us what you are looking for</h1>
+                            <div class="form-group mt-3">
                                 <label>I'm looking...</label>
                                 <select class="form-select" aria-label="Default select example" name="user_type">
                                     <option value="1" selected>Someone to hire</option>
@@ -34,9 +34,9 @@
 
                         <fieldset>
 
-                            <h2 class="fs-title">Tell us your name</h2>
+                            <h1>Tell us your name</h1>
 
-                                <div class="form-group">
+                                <div class="form-group mt-3">
                                     <label>First Name</label>
                                     <input type="text" name="first_name" class="form-control" placeholder="john"/>
                                 </div>
@@ -53,9 +53,9 @@
 
                         <fieldset>
 
-                            <h2 class="fs-title">Tell us your contact details</h2>
+                            <h1>Tell us your contact details</h1>
 
-                            <div class="form-group">
+                            <div class="form-group mt-3">
                                 <label>Email</label>
                                 <input type="email" name="email" class="form-control" placeholder="john@example.com"/>
                             </div>
@@ -73,9 +73,9 @@
 
                         <fieldset>
 
-                            <h2 class="fs-title">Please enter your password</h2>
+                            <h1>Please enter your password</h1>
 
-                            <div class="form-group">
+                            <div class="form-group mt-3">
                                 <label>Password</label>
                                 <input type="password" name="password" class="form-control" placeholder="●●●●●●●"/>
                             </div>
@@ -92,9 +92,9 @@
 
                         <fieldset>
 
-                            <h2 class="fs-title">Tell us your company details</h2>
+                            <h1>Tell us your company details</h1>
 
-                            <div class="form-group">
+                            <div class="form-group mt-3">
                                 <label>Company name</label>
                                 <input name="company_name" type="text" class="form-control" placeholder="ABC Company"/>
                             </div>
@@ -122,23 +122,20 @@
                         </fieldset>
 
                         <fieldset>
-                            <div class="form-check mb-4">
+
+                            <h1>Do you agree with us?</h1>
+
+                            <div class="form-check mb-5">
 
                                 <input type="checkbox" class="form-check-input" id="checkme"/>
 
                                 <label class="form-check-label" for="exampleCheck1" style="padding-top: 5px">By signing up you are agree with our <a href="">Terms and conditions.</a></label>
 
                             </div>
+   
 
-                            <input type="button" name="previous" class="previous action-button" value="Previous">
-
-                            <div class="row row-button">
-                                <button type="submit" class="btn btn-primary" disabled id="btn_submit">
-                                    Sign Up
-                                </button>
-                                <p style="margin: 0;">or</p>
-                                <a href="{{route('frontend.auth.login')}}">Sign In</a>
-                            </div>
+                            <input type="button" name="previous" class="previous action-button mr-3" value="Previous">
+                            <button type="submit" class="btn btn-primary ml-3 signup-btn" disabled id="btn_submit">Sign Up</button>
 
                         </fieldset> 
                     </form>
