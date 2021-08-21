@@ -250,9 +250,10 @@
                 1200: {
                     slidesPerView: 8,
                 },
-
             },
         });
+
+
     </script>
 
     <script>
@@ -403,7 +404,7 @@
         (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
             s1.async=true;
-            s1.src='https://embed.tawk.to/6043128b385de407571d2421/1f0300t1e';
+            s1.src='https://embed.tawk.to/611d250b649e0a0a5cd1c2bd/1fdcthdpc';
             s1.charset='UTF-8';
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
