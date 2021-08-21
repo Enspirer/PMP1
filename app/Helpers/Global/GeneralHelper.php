@@ -67,3 +67,20 @@ if (! function_exists('getSetting'))
       return $getSettings;
     }
 }
+
+if (! function_exists('account_type'))
+{
+    function account_type()
+    {
+       $userDetails = auth()->user();
+       if($userDetails->user_type == 1)
+       {
+           return 'buyer';
+       }else if($userDetails->user_type == 2){
+           return 'seller';
+       }else{
+           return 'not_set';
+       }
+    }
+}
+

@@ -2,30 +2,15 @@
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <div class="logo-left-side-bar" style="width: 250px;">
-
-                    <a class="navbar-brand" href="{{url('/')}}" style="display: flex;margin: auto;"><img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" width="160px" style="width: 110px;margin: auto;"></a>
+                <a class="navbar-brand" href="{{url('/')}}" style="display: flex;margin: auto;"><img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" width="160px" style="width: 110px;margin: auto;"></a>
             </div>
-
-
                     <div class="header-search-top">
                         <div class="inputWithIcon">
                             <input type="text" placeholder="Search projects" />
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                     </div>
-
-
-
-
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbaryNav">
@@ -54,29 +39,19 @@
 
                         <div class="user-menu-wrap">
                             <a class="mini-photo-wrapper-notification" href="#" onclick="myFunction1(event)">
-
-                                <i
-                                        class="fa fa-bell"
-                                        aria-hidden="true"
-                                        style="
+                                <i class="fa fa-bell" aria-hidden="true" style="
                         font-size: 22px;
                         color: #131313;
                         top: 12px;
                         margin-top: 8px;
                         margin-left: 32px;
-                      "
-                                ></i>
+                      "></i>
                             </a>
 
                             <div class="menu-container-notofication" id="menu-container-notofication">
                                 <ul class="user-menu-notifiaction">
                                     <div class="profile-highlight">
-                                        <img
-                                                src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                                                alt="profile-img"
-                                                width="36"
-                                                height="36"
-                                        />
+                                        <img src="https://images.unsplash.com/photo-1578976563986-fb8769ab695e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="profile-img" width="36" height="36"/>
                                         <div class="details">
                                             <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
                                             <div id="profile-footer">Team Hallaway</div>
@@ -88,23 +63,13 @@
 
                         <div class="user-menu-wrap">
                             <a class="mini-photo-wrapper" href="#" onclick="myFunction2(event)">
-                                <img
-                                        class="mini-photo"
-                                        src="{{ $logged_in_user->picture}}"
-                                        width="36"
-                                        height="36"
-                                />
+                                <img class="mini-photo" src="{{ $logged_in_user->picture}}" width="36" height="36"/>
                             </a>
 
                             <div class="menu-container" id="menu-container">
                                 <ul class="user-menu">
                                     <div class="profile-highlight">
-                                        <img
-                                                src="{{ $logged_in_user->picture}}"
-                                                alt="profile-img"
-                                                width="36"
-                                                height="36"
-                                        />
+                                        <img src="{{ $logged_in_user->picture}}" alt="profile-img" width="36" height="36"/>
                                         <div class="details">
                                             <a href="{{route('frontend.user.account')}}">
                                                 <div id="profile-name">{{auth()->user()->first_name}} {{auth()->user()->last_name}}</div>
@@ -132,36 +97,14 @@
                                             <div>Account Settings</div>
                                         </a>
                                     </li>
-{{--                                    <li class="user-menu__item">--}}
-{{--                                        <a class="user-menu-link" href="#">--}}
-{{--                                            <img--}}
-{{--                                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1604623/team.png"--}}
-{{--                                                    alt="team_icon"--}}
-{{--                                                    width="20"--}}
-{{--                                                    height="20"--}}
-{{--                                            />--}}
-{{--                                            <div>Logout</div>--}}
-{{--                                        </a>--}}
-{{--                                    </li>--}}
+
                                     <li class="user-menu__item">
                                         <a class="user-menu-link"  href="{{route('frontend.auth.logout')}}">
                                             <i class="fa fa-sign-out" aria-hidden="true" style="font-size: 20px;color: #4e555b"></i>
                                             <div>Logout</div>
                                         </a>
                                     </li>
-{{--                                    <div class="footer">--}}
-{{--                                        <li class="user-menu__item">--}}
-{{--                                            <a--}}
-{{--                                                    class="user-menu-link"--}}
-{{--                                                    href="{{route('frontend.auth.logout')}}"--}}
-{{--                                                    style="color: #f44336"--}}
-{{--                                            >Logout</a--}}
-{{--                                            >--}}
-{{--                                        </li>--}}
-{{--                                        <li class="user-menu__item">--}}
-{{--                                            <a class="user-menu-link" href="{{route('frontend.user.account')}}">Settings</a>--}}
-{{--                                        </li>--}}
-{{--                                    </div>--}}
+
                                 </ul>
                             </div>
                         </div>
