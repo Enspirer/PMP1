@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="logo-left-side-bar" style="width: 250px;">
 
-                    <a class="navbar-brand" href="#" style="display: flex;margin: auto;"><img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" width="160px" style="width: 110px;margin: auto;"></a>
+                    <a class="navbar-brand" href="{{url('/')}}" style="display: flex;margin: auto;"><img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" width="160px" style="width: 110px;margin: auto;"></a>
             </div>
 
 
