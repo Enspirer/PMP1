@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Frontend\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,3 +16,5 @@ use Illuminate\Http\Request;
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/
+
+Route::get('check_email', [LoginController::class, 'check_email'])->name('check_email');

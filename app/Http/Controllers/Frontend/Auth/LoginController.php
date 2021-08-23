@@ -6,6 +6,7 @@ use App\Events\Frontend\Auth\UserLoggedIn;
 use App\Events\Frontend\Auth\UserLoggedOut;
 use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
+use App\Models\Auth\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use LangleyFoxall\LaravelNISTPasswordRules\PasswordRules;
@@ -126,5 +127,16 @@ class LoginController extends Controller
         $request->session()->invalidate();
 
         return redirect()->route('frontend.index');
+    }
+
+    public function check_email(Request $request)
+    {
+        $getUserDetails = User::where('email',$request->email)->first();
+
+        if($getUserDetails){
+            return 'already_created';
+        }else{
+            return 'new_email';
+        }
     }
 }
