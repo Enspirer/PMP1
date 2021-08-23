@@ -310,7 +310,7 @@
                 form1.append("email", $('#email').val());
 
                 var settings1 = {
-                "url": "http://127.0.0.1:8000/api/check_email",
+                "url": "{{url('/')}}/api/check_email",
                 "method": "POST",
                 "timeout": 0,
                 "processData": false,
@@ -325,7 +325,7 @@
                 form2.append("contact_number", $('#number').val());
 
                 var settings2 = {
-                "url": "http://127.0.0.1:8000/api/check_phone_no",
+                "url": "{{url('/')}}/api/check_phone_no",
                 "method": "POST",
                 "timeout": 0,
                 "processData": false,

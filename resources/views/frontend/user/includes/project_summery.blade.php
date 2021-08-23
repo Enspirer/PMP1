@@ -1,7 +1,7 @@
 <main class="page-content">
     <div class="container">
         <div class="row">
-            <div class="left-card col-md-7">
+            <div class="left-card col-md-7" id="projec_summery_details">
                 <div class="dashboard-card card-db">
                     <h1>Project updates feed</h1>
                 </div>
