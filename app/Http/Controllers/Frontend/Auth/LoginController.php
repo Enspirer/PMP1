@@ -131,12 +131,30 @@ class LoginController extends Controller
 
     public function check_email(Request $request)
     {
+
+        // dd($request);
+
         $getUserDetails = User::where('email',$request->email)->first();
 
         if($getUserDetails){
             return 'already_created';
         }else{
             return 'new_email';
+        }
+    }
+
+
+    public function check_phone_no(Request $request)
+    {
+
+        // dd($request);
+
+        $getUserPhone = User::where('contact_number',$request->contact_number)->first();
+
+        if($getUserPhone){
+            return 'already_created';
+        }else{
+            return 'new_phone';
         }
     }
 }

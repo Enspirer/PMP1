@@ -17,4 +17,6 @@ use App\Http\Controllers\Frontend\Auth\LoginController;
     return $request->user();
 });*/
 
-Route::get('check_email', [LoginController::class, 'check_email'])->name('check_email');
+Route::post('check_email', [LoginController::class, 'check_email'])->name('check_email');
+
+Route::post('check_phone_no', [LoginController::class, 'check_phone_no'])->name('check_phone_no');

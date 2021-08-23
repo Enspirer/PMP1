@@ -1,3 +1,27 @@
+@push('after-styles')
+    <style>
+        .form-login .strength {
+            height:0px;
+            width:100%;
+            background:#ccc;
+            margin-top: -7px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            overflow: hidden;
+            transition: height 0.3s;
+        }
+        .form-login .strength span{
+            width:0px;
+            height: 7px;
+            display: block;
+            transition: width 0.3s;
+        }
+        .warning {
+            color:red!important;
+        }
+    </style>
+@endpush
+
 
 <section id="login-body">
         <div class="row">
@@ -59,11 +83,13 @@
                             <div class="form-group mt-3">
                                 <label>Email</label>
                                 <input type="email" name="email" class="form-control" placeholder="john@example.com" id="email" required/>
+                                <p class="email-check mt-2 d-none" style="font-size: 15px; color:red">Email already exists</p>
                             </div>
 
                             <div class="form-group">
                                 <label>Contact number</label>
                                 <input name="contact_number"  type="text" class="form-control"  placeholder="94-712975938" id="number" required/>
+                                <p class="phone-check mt-2 d-none" style="font-size: 15px; color:red">Phone number already exists</p>
                             </div>
 
                             <input type="button" name="previous" class="previous action-button" value="Previous">
@@ -76,9 +102,11 @@
 
                             <h1>Please enter your password</h1>
 
+                            <p class="text-info strong-info" style="font-size: 14px;">Please use strong password</p>
+
                             <div class="form-group mt-3">
                                 <label>Password</label>
-                                <input type="password" name="password" class="form-control" placeholder="●●●●●●●" required id="pass"/>
+                                <input type="password" name="password" data-strength class="form-control" placeholder="●●●●●●●" required id="pass"/>
                             </div>
 
                             <div class="form-group">
@@ -87,7 +115,7 @@
                             </div>
 
                             <div class="feedback">
-
+                                
                             </div>
 
                             <input type="button" name="previous" class="previous action-button" value="Previous">
@@ -182,6 +210,36 @@
 
         var current_fs, next_fs, previous_fs;
 
+        const patterns = {
+            email : /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/,
+            contact_number : /^\d{10,12}$/
+        }
+
+        let strength = 0;
+
+
+        function validate(field, regex) {
+            if(regex.test(field.val())) {
+                field.css('border', '1px solid green');
+                field.addClass('valid');
+
+            } else {
+                field.css('border', '1px solid red');
+                field.removeClass('valid');
+
+            }
+        }
+
+        $('#email').keyup(function() {
+            validate($(this), patterns[$(this).attr('name')]);
+        });
+
+        $('#number').keyup(function() {
+            validate($(this), patterns[$(this).attr('name')]);
+        });
+
+
+
         $("#looking-next").click(function(){
 
             if($('#looking').val() != '') {
@@ -244,29 +302,89 @@
 
 
         $("#contact-next").click(function(){
+            
 
-            if($('#email').val() != '' && $('#number').val() != '') {
-                current_fs = $(this).parent();
-                next_fs = $(this).parent().next();
+            if($('#email').hasClass('valid') && $('#number').hasClass('valid')) {
+
+                var form1 = new FormData();
+                form1.append("email", $('#email').val());
+
+                var settings1 = {
+                "url": "http://127.0.0.1:8000/api/check_email",
+                "method": "POST",
+                "timeout": 0,
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                "data": form1
+                };
 
 
-                current_fs.animate({
-                    top: '200px'
-                }, 200, function(){
-                    current_fs.css('top', '0');
-                    
-                    current_fs.hide();
 
-                    next_fs.show();
+                var form2 = new FormData();
+                form2.append("contact_number", $('#number').val());
+
+                var settings2 = {
+                "url": "http://127.0.0.1:8000/api/check_phone_no",
+                "method": "POST",
+                "timeout": 0,
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                "data": form2
+                };
+
+
+                $.ajax(settings1).done(function (response1) {
+
+                    $.ajax(settings2).done(function (response2) {
+
+                        if(response1 == 'new_email' && response2 == 'new_phone') {
+                            current_fs = $('#contact-next').parent();
+                            next_fs = $('#contact-next').parent().next();
+
+                            current_fs.animate({
+                                top: '200px'
+                            }, 200, function(){
+                                current_fs.css('top', '0');
+                                
+                                current_fs.hide();
+
+                                next_fs.show();
+                            });
+
+                        }
+                        else {
+                                if(response1 == 'new_email') {
+                                    $('.phone-check').removeClass('d-none');
+                                    $('.email-check').addClass('d-none');
+                                }
+
+                                else if(response2 == 'new_phone') {
+                                    $('.email-check').removeClass('d-none');
+                                    $('.phone-check').addClass('d-none');
+                                }
+                                
+                                else {
+                                    $('.phone-check').removeClass('d-none');
+                                    $('.email-check').removeClass('d-none');
+                                }
+                            
+                        }
+
+                    });  
                 });
-            } else {
 
-                if($('#email').val() != '') {
+            }
+            
+            else {
+
+                if($('#email').hasClass('valid')) {
                     $('#number').css('border', '1px solid red');
                     $('#email').css('border', '0.1px solid #9f9f9f');
                 }
 
-                else if($('#number').val() != '') {
+                else if($('#number').hasClass('valid')) {
                     $('#email').css('border', '1px solid red');
                     $('#number').css('border', '0.1px solid #9f9f9f');
                 }
@@ -282,7 +400,7 @@
 
         $("#pass-next").click(function(){
 
-            if($('#pass').val() != '' && $('#re-pass').val() != '') {
+            if($('#pass').val() != '' && $('#re-pass').val() != '' && strength == 5) {
                 if($('#pass').val() == $('#re-pass').val()) {
 
                     current_fs = $(this).parent();
@@ -299,29 +417,35 @@
                         next_fs.show();
                     });
                 } else {
-                    let template = `<p style="color:red;">Passwords does not match</p>`;
+                    let template = `<p style="color:red; font-size: 15px;">Passwords does not match</p>`;
 
                     $('.feedback').html(template);
                 }
                 
             } else {
 
+                if(strength != 5) {
+                    $('.strong-info').addClass('warning');
+                }
+
                 if($('#pass').val() != '') {
                     $('#re-pass').css('border', '1px solid red');
                     $('#pass').css('border', '0.1px solid #9f9f9f');
                 }
 
-                else if($('#re-pass').val() != '') {
+                if($('#re-pass').val() != '') {
                     $('#pass').css('border', '1px solid red');
                     $('#re-pass').css('border', '0.1px solid #9f9f9f');
                 }
-                
-                else {
+
+            
+                if($('#pass').val() == '' && $('#re-pass').val() == '') {
                     $('#pass').css('border', '1px solid red');
                     $('#re-pass').css('border', '1px solid red');
                 }
             } 
         });
+
 
 
         $("#company-next").click(function(){
@@ -360,6 +484,7 @@
         });
 
 
+
         $(".previous").click(function(){
 
             
@@ -378,6 +503,102 @@
                 previous_fs.show();
             });
         });
+
+
+
+
+
+
+    //password strength bar
+        $(function() {
+
+            function passwordCheck(password) {
+                if (password.length >= 8)
+                    strength += 1;
+
+                if (password.match(/(?=.*[0-9])/))
+                    strength += 1;
+
+                if (password.match(/(?=.*[!,%,&,@,#,$,^,*,?,_,~,<,>,])/))
+                    strength += 1;
+
+                if (password.match(/(?=.*[a-z])/))
+                    strength += 1;
+
+                if (password.match(/(?=.*[A-Z])/))
+                    strength += 1;
+
+                displayBar(strength);
+            }
+
+            function displayBar(strength) {
+                switch (strength) {
+                    case 1:
+                    $("#password-strength span").css({
+                        "width": "20%",
+                        "background": "#de1616"
+                    });
+                    break;
+
+                    case 2:
+                    $("#password-strength span").css({
+                        "width": "40%",
+                        "background": "#de1616"
+                    });
+                    break;
+
+                    case 3:
+                    $("#password-strength span").css({
+                        "width": "60%",
+                        "background": "#de1616"
+                    });
+                    break;
+
+                    case 4:
+                    $("#password-strength span").css({
+                        "width": "80%",
+                        "background": "#FFA200"
+                    });
+                    break;
+
+                    case 5:
+                    $("#password-strength span").css({
+                        "width": "100%",
+                        "background": "#06bf06"
+                    });
+                    break;
+
+                    default:
+                    $("#password-strength span").css({
+                        "width": "0",
+                        "background": "#de1616"
+                    });
+                }
+            }
+
+            $("[data-strength]").after("<div id=\"password-strength\" class=\"strength\"><span></span></div>");
+
+            $("[data-strength]").focus(function() {
+                $("#password-strength").css({
+                    "height": "7px"
+                });
+            })
+            
+            .blur(function() {
+                $("#password-strength").css({
+                    "height": "0px"
+                });
+            });
+
+            $("[data-strength]").keyup(function() {
+
+                var password = $(this).val();
+                passwordCheck(password);
+
+            });
+
+        });
+
     </script>
 
 @endpush
