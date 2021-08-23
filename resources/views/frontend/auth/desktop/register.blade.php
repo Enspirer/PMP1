@@ -509,24 +509,34 @@
 
 
 
-    //password strength bar
+        //password strength bar
         $(function() {
 
             function passwordCheck(password) {
-                if (password.length >= 8)
+                if (password.length >= 8) {
                     strength += 1;
+                }
 
-                if (password.match(/(?=.*[0-9])/))
+                if (password.match(/(?=.*[0-9])/)) {
                     strength += 1;
+                }
+                    
 
-                if (password.match(/(?=.*[!,%,&,@,#,$,^,*,?,_,~,<,>,])/))
+                if (password.match(/(?=.*[!,%,&,@,#,$,^,*,?,_,~,<,>,])/)) {
                     strength += 1;
+                }
+                    
 
-                if (password.match(/(?=.*[a-z])/))
+                if (password.match(/(?=.*[a-z])/)) {
                     strength += 1;
+                }
+                    
 
-                if (password.match(/(?=.*[A-Z])/))
+                if (password.match(/(?=.*[A-Z])/)) {
                     strength += 1;
+                }
+                    
+                    
 
                 displayBar(strength);
             }
@@ -576,26 +586,25 @@
                 }
             }
 
-            $("[data-strength]").after("<div id=\"password-strength\" class=\"strength\"><span></span></div>");
+                $("[data-strength]").after("<div id=\"password-strength\" class=\"strength\"><span></span></div>")
 
-            $("[data-strength]").focus(function() {
-                $("#password-strength").css({
-                    "height": "7px"
-                });
-            })
+                $("[data-strength]").focus(function() {
+                    $("#password-strength").css({
+                        "height": "7px"
+                    });
+                })
             
-            .blur(function() {
-                $("#password-strength").css({
-                    "height": "0px"
+                .blur(function() {
+                    $("#password-strength").css({
+                        "height": "0px"
+                    });
                 });
-            });
 
-            $("[data-strength]").keyup(function() {
-
-                var password = $(this).val();
-                passwordCheck(password);
-
-            });
+                $("[data-strength]").keyup(function() {
+                    strength = 0;
+                    var password = $(this).val();
+                    passwordCheck(password);
+                });
 
         });
 
