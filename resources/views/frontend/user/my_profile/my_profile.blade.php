@@ -103,16 +103,23 @@
                             </div>
 
 
-                            <div class="row border rounded py-4 card-db mt-4">
+                            <div class="row border rounded py-3 card-db mt-4 mb-3">
                                 <div class="col-12">
                                     <div class="accordion" id="accordionPanelsStayOpenExample">
                                         <div class="accordion-item">
                                             <h6 class="accordion-header" id="panelsStayOpen-headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                                    Web application Development
-                                                </button>
+                                                <div class="row align-items-center">
+                                                    <div class="col-11 p-0">
+                                                        <h6 class="mb-0">Mobile app development / IOS</h6>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <i class="fas fa-plus rounded-pill text-muted ml-3" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </h6>
-                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                                             <div class="accordion-body">
                                                 <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
@@ -122,25 +129,25 @@
                                 </div>
                             </div>
 
-                            <div class="row border rounded py-4 card-db mt-4">
+                            <div class="row border rounded py-3 card-db mb-3">
                                 <div class="col-12">
                                     <div class="accordion" id="accordionPanelsStayOpenExample">
                                         <div class="accordion-item">
-                                            <h6 class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <h6 class="accordion-header" id="headingTwo">
 
-                                            <div class="row">
-                                                <div class="col-11">
-                                                    <h4>Mobile app development / IOS</h4>
+                                            <div class="row align-items-center">
+                                                <div class="col-11 p-0">
+                                                    <h6 class="mb-0">Mobile app development / IOS</h6>
                                                 </div>
                                                 <div class="col-1">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                                        Mobile app development / IOS
-                                                    </button>
+                                                    <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <i class="fas fa-plus rounded-pill text-muted ml-3" style="background-color:#e3dfde; padding:13px;"></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                                 
                                             </h6>
-                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                                             <div class="accordion-body">
                                                 <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
@@ -150,16 +157,23 @@
                                 </div>
                             </div>
 
-                            <div class="row border rounded py-4 card-db mt-4">
+                            <div class="row border rounded py-3 card-db">
                                 <div class="col-12">
                                     <div class="accordion" id="accordionPanelsStayOpenExample">
                                         <div class="accordion-item">
-                                            <h6 class="accordion-header" id="panelsStayOpen-headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                                    Web application Development
-                                                </button>
+                                            <h6 class="accordion-header" id="headingThree">
+                                                <div class="row align-items-center">
+                                                    <div class="col-11 p-0">
+                                                        <h6 class="mb-0">ERP system design</h6>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                        <i class="fas fa-plus rounded-pill text-muted ml-3" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </h6>
-                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
                                             <div class="accordion-body">
                                                 <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>

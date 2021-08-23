@@ -104,8 +104,11 @@
                         <textarea class="form-control" rows="3"></textarea>
                     </div>
 
-
-
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-5 text-center">
+                            <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                        </div>
+                    </div>
 
                     <div class="row m-0 d-flex justify-content-center">
                         <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>

@@ -86,13 +86,21 @@
                                 <textarea class="form-control" name="message" rows="6" placeholder="lorem ipsum messege" required></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
