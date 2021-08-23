@@ -34,7 +34,7 @@
                 @if(account_type() == 'buyer')
 
                     <li>
-                        <a href="">
+                        <a href="{{route('frontend.user.my_profile')}}">
                             <i class="fa fa-id-card-o" aria-hidden="true"></i>
                             <span>My Profile</span>
                         </a>

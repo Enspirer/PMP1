@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\User\MyProjectController;
 use App\Http\Controllers\Frontend\User\ViewProjectController;
 use App\Http\Controllers\Frontend\User\PostProjectController;
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\User\MyProfileController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -34,8 +35,11 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('my_projects/{section}', [MyProjectController::class, 'index'])->name('my_projects');
-
         Route::get('view_project/{project_id}/open_project', [ViewProjectController::class, 'index'])->name('view_project');
+
+        //Profile Maintain
+        Route::get('my_profile',[MyProfileController::class,'index'])->name('my_profile');
+
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');
