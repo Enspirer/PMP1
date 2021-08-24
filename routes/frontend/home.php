@@ -39,6 +39,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         //Profile Maintain
         Route::get('my_profile',[MyProfileController::class,'index'])->name('my_profile');
+        Route::post('my_profile/portfolio/update',[MyProfileController::class,'portfolioUpdate'])->name('portfolio_update');
 
 
         // User Account Specific
