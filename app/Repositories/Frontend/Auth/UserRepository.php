@@ -105,6 +105,7 @@ class UserRepository extends BaseRepository
                 'user_type' => $data['user_type'],
                 'location' => $data['location'],
                 'user_type' => $data['user_type'],
+                'first_time_use' => 'yes',
                 // If users require approval or needs to confirm email
                 'confirmed' => ! (config('access.users.requires_approval') || config('access.users.confirm_email')),
             ]);
