@@ -161,15 +161,20 @@
 
                             <div class="form-check mb-5">
 
-                                <input type="checkbox" class="form-check-input" id="checkme"/>
+                                <input type="checkbox" class="form-check-input" id="checkme" required/>
 
                                 <label class="form-check-label" for="exampleCheck1" style="padding-top: 5px">By signing up you are agree with our <a href="">Terms and conditions.</a></label>
 
                             </div>
+
+                            <div class="text-center">
+                                <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                            </div>
+                            
    
 
                             <input type="button" name="previous" class="previous action-button mr-3" value="Previous">
-                            <button type="submit" class="btn btn-primary ml-3 signup-btn" disabled id="btn_submit">Sign Up</button>
+                            <button type="submit" class="btn btn-primary ml-3 signup-btn" disabled id="submit_btn">Sign Up</button>
 
                         </fieldset> 
                     </form>
@@ -189,7 +194,7 @@
         </div>
     </section>
 
-    <script>
+    <!-- <script>
         var checker = document.getElementById("checkme");
         var btn_submit = document.getElementById("btn_submit");
         // when unchecked or checked, run the function
@@ -200,7 +205,7 @@
                 btn_submit.disabled = true;
             }
         };
-    </script>
+    </script> -->
 
 
 
@@ -608,6 +613,15 @@
 
         });
 
+    </script>
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        function checked() {
+        $('#submit_btn').removeAttr('disabled');
+    };
     </script>
 
 @endpush

@@ -106,13 +106,13 @@
 
                     <div class="row justify-content-center mb-4">
                         <div class="col-5 text-center">
-                            <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                            <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                         </div>
                     </div>
 
                     <div class="row m-0 d-flex justify-content-center">
                         <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-submit ml-4">SUBMIT</button>
+                        <button type="submit" class="btn btn-submit ml-4" disabled id="submit_btn">SUBMIT</button>
                     </div>
                 </form>
             </div>
