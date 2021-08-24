@@ -23,6 +23,7 @@ class CreateMyProfileDetailsTable extends Migration
             $table->text('awards_badges')->nullable();
             $table->text('other_experties')->nullable();
             $table->text('client_reviews')->nullable();
+            $table->text('user_id');
             $table->timestamps();
         });
     }

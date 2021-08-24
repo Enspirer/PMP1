@@ -68,40 +68,41 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form method="post" action="{{route('frontend.consulting_request')}}">
+                    {{csrf_field()}}
                     <div class="form-group">
                         <label>Your name*</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" class="form-control" name="name" required>
                     </div>
                     <div class="form-group">
                         <label>Company name</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" class="form-control" name="company_name" required>
                     </div>
 
                     <div class="form-group">
-                        <label>Email)</label>
-                        <input type="text" class="form-control" required>
+                        <label>Email</label>
+                        <input type="text" class="form-control" name="email" required>
                     </div>
 
                     <div class="form-group">
                         <label>Telephone*</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" class="form-control" name="telephone" required>
                     </div>
 
                     <div class="form-group">
                         <label>Project brief*</label>
-                        <textarea class="form-control" rows="3" required></textarea>
+                        <textarea class="form-control" rows="3" name="project_brief" required></textarea>
                     </div>
 
                     <div class="form-group">
                         <label>Appointment date and time</label>
-                        <input type="datetime-local" class="form-control" required>
+                        <input type="datetime-local" class="form-control" name="appoiment_date_time" required>
                     </div>
 
 
                     <div class="form-group">
                         <label>Additional notes</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <textarea class="form-control" name="additional_note" rows="3"></textarea>
                     </div>
 
                     <div class="row justify-content-center mb-4">
