@@ -1,5 +1,6 @@
 <?php
 use App\Models\Settings;
+use App\Models\MyProfileDetails;
 
 if (! function_exists('app_name')) {
     /**
@@ -84,3 +85,18 @@ if (! function_exists('account_type'))
     }
 }
 
+
+if (! function_exists('have_my_profile'))
+{
+    function have_my_profile()
+    {
+        $userDetails = auth()->user();
+
+        $myProfile = MyProfileDetails::where('user_id',$userDetails->id)->first();
+
+
+       
+
+
+    }
+}
