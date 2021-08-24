@@ -40,6 +40,7 @@ class FrontendController extends Controller
         $contactUsDetails->last_name = $request->last_name;
         $contactUsDetails->email_address = $request->email;
         $contactUsDetails->message = $request->message;
+        $contactUsDetails->status = 'Unread';
         $contactUsDetails->save();
 
 
