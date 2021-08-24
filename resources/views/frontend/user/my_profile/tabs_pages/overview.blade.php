@@ -1,17 +1,28 @@
 <div class="container">
-    <div class="row border rounded py-3 align-items-center card-db mb-5">
-        <div class="col-3 text-center">
-            <img src="{{ url('img/user-image.jpg') }}" alt="" class="img-fluid" style="height: 130px">
-        </div>
-        <div class="col-5">
-            <h4 class="font-weight-bold">Enspirer (pvt) Ltd</h4>
-            <p class="text-secondary"><i class="fas fa-map-marker-alt mr-3"></i>Nugegoda, Sri Lanka</p>
+    <div class="border rounded pb-3 card-db mb-5">
+        <div class="row justify-content-end mt-1 mr-1">
+            <div class="col-2 text-right p-0">
+                <i class="fas fa-pen rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#overview_info" style="background-color:#e3dfde; padding:13px;"></i>
+            </div>
         </div>
 
-        <div class="col-4 text-right">
-            <button class="btn text-light" style="background-color: #FF6347">VIEW AS PUBLIC</button>
+        <div class="row align-items-center">
+            <div class="col-3 text-center">
+                <img src="{{ url('img/user-image.jpg') }}" alt="" class="img-fluid" style="height: 130px">
+            </div>
+            <div class="col-5">
+                <h4 class="font-weight-bold">Enspirer (pvt) Ltd</h4>
+                <p class="text-secondary mb-0"><i class="fas fa-map-marker-alt mr-3"></i>Nugegoda, Sri Lanka</p>
+            </div>
+
+            <div class="col-4 text-right">
+                <button class="btn text-light" style="background-color: #FF6347">VIEW AS PUBLIC</button>
+            </div>
         </div>
     </div>
+
+
+    @include('frontend.user.my_profile.edit_dialogs.overview_info')
 
 
     <div class="row border rounded py-3 align-items-center card-db text-center">
