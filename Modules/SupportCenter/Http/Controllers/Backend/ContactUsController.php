@@ -86,9 +86,12 @@ class ContactUsController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        ContactUs::where('id',$request->id)->update([
+            'status' => 'Unread'
+        ]);
+       return back();
     }
 
     /**

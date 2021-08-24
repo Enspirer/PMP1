@@ -43,3 +43,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 Breadcrumbs::for('admin.consulting_request.list', function ($trail) {
     $trail->push('Consulting Requests', route('admin.consulting_request.list'));
 });
+
+Breadcrumbs::for('admin.consulting_request.show', function ($trail) {
+    $trail->push('Consulting Request Show', route('admin.consulting_request.show',1));
+});
