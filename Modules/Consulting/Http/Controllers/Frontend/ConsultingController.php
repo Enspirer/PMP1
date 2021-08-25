@@ -8,6 +8,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Consulting\Entities\ConsultingRequest;
+use Mail;
 
 class ConsultingController extends Controller
 {
@@ -53,6 +54,10 @@ class ConsultingController extends Controller
         $consulting->appointment_date_time = $request->appoiment_date_time;
         $consulting->additional_notes = $request->additional_note;
         $consulting->save();
+
+        // Mail::to('Cloudways@Cloudways.com')->send(new SendMailable($name));
+        // Mail::send(new ConsultingRequest($request));
+        
         return back();
     }
 

@@ -19,8 +19,10 @@ class ConsultingRequest extends Mailable
      *
      * @return void
      */
+
     public function __construct(Request $request)
     {
+        dd($request);
         $this->request = $request;
     }
 
@@ -31,10 +33,11 @@ class ConsultingRequest extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name')
-            ->text('frontend.mail.contact-text')
-            ->subject(__('strings.emails.contact.subject', ['app_name' => app_name()]))
-            ->from($this->request->email, $this->request->first_name.' '.$this->request->last_name)
-            ->replyTo($this->request->email, $this->request->first_name.' '.$this->request->last_name);
+        return $this->to([config('mail.from.address'),'dm@tallentor.com', 'zajjith@yopmail.com'], config('mail.from.name'))
+            ->view('frontend.mail.consulting_request')
+            ->text('frontend.mail.consulting_request')
+            ->subject('Consulting Requests', ['app_name' => app_name()])
+            ->from($this->request->email, $this->request->name)
+            ->replyTo($this->request->email, $this->request->name);
     }
 }
