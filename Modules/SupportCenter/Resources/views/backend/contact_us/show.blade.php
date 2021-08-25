@@ -23,6 +23,23 @@
         </div>
     </div>
     <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <form action="{{route('admin.contact_us.update')}}" method="post">
+                    {{csrf_field()}}
+                    <div class="form-group">
+                        <input type="hidden" name="id" value="{{$contactUsDetails->id}}">
+                        <label>Status</label>
+                        <select class="form-control" name="status">
+                            <option value="Unread">Unread</option>
+                            <option value="Read">Read</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+
+                </form>
+            </div>
+        </div>
 
     </div>
 </div>

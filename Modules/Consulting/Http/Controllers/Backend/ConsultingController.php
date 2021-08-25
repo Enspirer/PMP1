@@ -28,7 +28,7 @@ class ConsultingController extends Controller
                 return $row->name;
             })
             ->addColumn('action', function($row){
-                $btn = '<a href="" class="edit btn btn-primary btn-sm"><i class="fa fa-eye"></i> View </a>';
+                $btn = '<a href="'.route('admin.consulting_request.show',$row->id).'" class="edit btn btn-primary btn-sm"><i class="fa fa-eye"></i> View </a>';
                 return $btn;
             })
             ->rawColumns(['action'])
@@ -61,7 +61,12 @@ class ConsultingController extends Controller
      */
     public function show($id)
     {
-        return view('consulting::show');
+        $consuletinfReq = ConsultingRequest::where('id',$id)->first();
+
+
+        return view('consulting::backend.consluting_request.show',[
+            'consuleting_req' => $consuletinfReq
+        ]);
     }
 
     /**
@@ -80,9 +85,12 @@ class ConsultingController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        ConsultingRequest::where('id',$request->id)->update([
+            'status' => $request->status
+        ]);
+       return back();
     }
 
     /**
@@ -92,6 +100,6 @@ class ConsultingController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }
