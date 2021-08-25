@@ -1,4 +1,4 @@
-#contact img {
+/* #contact img {
     cursor: pointer;
     object-fit: cover;
     -webkit-transition: all 1s ease;
@@ -17,5 +17,48 @@
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+} */
+
+.portfolio .carousel-caption {
+    bottom: -37px;
+    transition: all 0.7s ease;
+}
+
+.portfolio .carousel-caption .icons {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.portfolio .carousel-caption .icons i {
+    background-color:#e3dfde;
+    padding:10px;
+}
+
+.portfolio img {
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.img-hover {
+    -webkit-filter: none;
+    filter: none;
+    -webkit-filter: brightness(40%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.icons-show {
+    opacity: 1!important;
+}
+
+.carousel-move {
+    bottom: 7px!important;
 }
 

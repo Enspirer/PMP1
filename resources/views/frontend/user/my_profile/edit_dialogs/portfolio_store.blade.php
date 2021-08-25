@@ -1,12 +1,14 @@
 <!-- profile_info -->
-<form action="{{ route('frontend.user.portfolio_update') }}" method="POST" enctype="multipart/form-data">
+<form action="{{ route('frontend.user.portfolio_store') }}" method="POST" enctype="multipart/form-data">
   {{ csrf_field() }}
-  <div class="modal fade" id="add_portfolio" tabindex="-1" aria-labelledby="add_portfolio_Label" aria-hidden="true">
+  <div class="modal fade" id="portfolio_store" tabindex="-1" aria-labelledby="portfolio_store_Label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="add_portfolio_Label">Add Portfolio</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="portfolio_store_Label">Add Portfolio</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
               <div class="form-group">
