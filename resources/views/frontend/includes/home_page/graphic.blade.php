@@ -16,13 +16,13 @@
   border-radius: 0;
   background: #b0b0b0;
 } */
-.navClass .active {
+.navClass .nav .active {
     background-color : #0f9d58;
     color : white;
 }
 
-.navClass .active img {
-    filter : invert(1);
+.navClass .nav .active img {
+    filter : brightness(50);
 }
 button:focus {
     outline: none;
@@ -33,14 +33,18 @@ button:focus {
 @endpush
 
 <div class="container text-center" style="margin-top: 7rem; margin-bottom: 7rem">
-    <h2>Top Categories at Tallentor</h2>
-    <p>one place with thousands of creative talents,</p>
+
+<div class="heading-text">
+    <h1 style="font-size: 42px; color: #361d41; margin: auto; text-align: center; font: normal normal bold 48px/70px Poppins;">Top Categories at Tallentor</h1>
+    <p style="margin-top: 19px !important; max-width: 700px; text-align: center; margin: auto;font-size: 18px;">one place with thousands of creative talents</p>
+</div>
+    
 
     <div class="row justify-content-between mt-5">
         <div class="col-3">
             <nav class="navClass">
                 <div class="nav flex-column graphic-design border-0" id="nav-tab" role="tablist" style="overflow-x: auto;">
-                    <button class="nav-link active text-left border shadow py-3 mb-3" id="nav-programming-tab" data-toggle="tab" data-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="true">
+                    <button class="nav-link text-left border shadow py-3 mb-3 active" id="nav-programming-tab" data-toggle="tab" data-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="true">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/programing_development.svg')}}" alt="" style="height: 40px;">
@@ -54,7 +58,7 @@ button:focus {
                     <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" alt="" style="height: 40px">
+                                <img src="{{url('theme_light/assets/graphic/digital_marketing.svg')}}" alt="" style="height: 40px">
                             </div>
                             <div class="col-8 text-center">
                                 <p class="mb-0">Digital Marketing</p>
@@ -73,7 +77,7 @@ button:focus {
                         </div>
                     </button>
 
-                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-education-tab" data-toggle="tab" data-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-education-tab" data-toggle="tab" data-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/education_training.svg')}}" alt="" style="height: 40px">
@@ -84,7 +88,7 @@ button:focus {
                         </div>
                     </button>
 
-                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-digital" aria-selected="false" disabled>
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/writing_translation.svg')}}" alt="" style="height: 40px">
@@ -95,7 +99,7 @@ button:focus {
                         </div>
                     </button>
 
-                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false" disabled>
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/video_photography.svg')}}" alt="" style="height: 40px">
@@ -106,7 +110,7 @@ button:focus {
                         </div>
                     </button>
 
-                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-online-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-online" aria-selected="true">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-online-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-online" aria-selected="false" disabled>
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/music_audio.svg')}}" alt="" style="height: 40px">
@@ -117,7 +121,7 @@ button:focus {
                         </div>
                     </button>
 
-                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-digital" aria-selected="false" disabled>
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/business_sales.svg')}}" alt="" style="height: 40px">
@@ -128,7 +132,7 @@ button:focus {
                         </div>
                     </button>
 
-                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false" disabled>
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/art_craft.svg')}}" alt="" style="height: 40px">
@@ -347,16 +351,5 @@ button:focus {
 
 
 <script>
-    $(document).ready(function(){
-        $('.navClass div').children('button').hover(function(){
-            
-            $(this).css({'background-color' : '#0f9d58', 'color' : 'white'});
-            $(this).find('img').css('filter', 'invert(1)');
-            
-        },
-        function(){
-            $(this).css({'background-color' : '', 'color' : 'black'});
-            $(this).find('img').css('filter', 'invert(0)');
-        });
-    });
+
 </script>
