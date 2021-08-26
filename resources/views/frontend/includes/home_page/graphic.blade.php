@@ -16,6 +16,14 @@
   border-radius: 0;
   background: #b0b0b0;
 } */
+.selected {
+    background-color : #0f9d58;
+    color : white;
+}
+
+.selected img {
+    filter : invert(1);
+}
 button:focus {
     outline: none;
 }
@@ -31,41 +39,105 @@ button:focus {
     <div class="row justify-content-between mt-5">
         <div class="col-3">
             <nav class="navClass">
-                <div class="nav flex-column graphic-design border-0" id="nav-tab" role="tablist">
-                    <div class="row align-items-center border shadow mb-3 py-2">
-                        <div class="col-4 text-center p-0">
-                            <img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" alt="" style="height: 40px">
+                <div class="nav flex-column graphic-design border-0" id="nav-tab" role="tablist" style="overflow-x: auto;">
+                    <button class="nav-link active text-left border shadow py-3 mb-3 selected" id="nav-programming-tab" data-toggle="tab" data-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="true">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/programing_development.svg')}}" alt="" style="height: 40px;">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Programming & Development</p>
+                            </div>
                         </div>
-                        <div class="col-8 text-center p-0">
-                            <button class="nav-link active" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true">Programming & Development</button>
+                    </button>
+
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Digital Marketing</p>
+                            </div>
                         </div>
-                    </div>
+                    </button>
 
-                    <div class="row align-items-center border shadow mb-2 py-2">
-                        <div class="col-4 text-center p-0">
-                            <img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" alt="" style="height: 40px">
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/graphic_designing.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Graphic Designing</p>
+                            </div>
                         </div>
-                        <div class="col-8 text-center p-0">
-                            <button class="nav-link" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">Digital Marketing</button>
+                    </button>
+
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-education-tab" data-toggle="tab" data-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/education_training.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Education & Training</p>
+                            </div>
                         </div>
-                    </div>
-                    
+                    </button>
 
-                    
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/writing_translation.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Writing & Translation</p>
+                            </div>
+                        </div>
+                    </button>
 
-                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/video_photography.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Video & Photography</p>
+                            </div>
+                        </div>
+                    </button>
 
-                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Education & Training</button>
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-online-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-online" aria-selected="true">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/music_audio.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Music & Audio</p>
+                            </div>
+                        </div>
+                    </button>
 
-                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Writing & Translation</button>
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-digital-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/business_sales.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Business & Sales</p>
+                            </div>
+                        </div>
+                    </button>
 
-                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Video & Photography</button>
-
-                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Music & Audio</button>
-
-                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Business & Sales</button>
-
-                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Art & Craft</button>
+                    <button class="nav-link text-left border shadow py-3 mb-3" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{url('theme_light/assets/graphic/art_craft.svg')}}" alt="" style="height: 40px">
+                            </div>
+                            <div class="col-8 text-center">
+                                <p class="mb-0">Art & Craft</p>
+                            </div>
+                        </div>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -73,45 +145,45 @@ button:focus {
         <div class="col-8">
             <div class="tab-content" id="nav-tabContent">
 
-                <div class="tab-pane fade show active" id="nav-online" role="tabpanel" aria-labelledby="nav-online-tab">
+                <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
                     <div class="row mb-3">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                            <img src="{{url('theme_light/assets/graphic/digital-marketing.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">Digital Marketing</p>
+                            <img src="{{url('theme_light/assets/graphic/basic_website.png')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">Basic Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="100">
-                            <img src="{{url('theme_light/assets/graphic/graphic-designing-1.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">Graphic Designing</p>
+                            <img src="{{url('theme_light/assets/graphic/dynamic_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">Dynamic Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="200">
-                            <img src="{{url('theme_light/assets/graphic/mobile-apps.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">Mobile Apps</p>
+                            <img src="{{url('theme_light/assets/graphic/ecommerce_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">E-commerce Website</p>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
-                            <img src="{{url('theme_light/assets/graphic/web-programming.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">Web Programming</p>
+                            <img src="{{url('theme_light/assets/graphic/wordpress.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">WordPress Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
-                            <img src="{{url('theme_light/assets/graphic/seo-1.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">Search Engine Optimization</p>
+                            <img src="{{url('theme_light/assets/graphic/landing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">Landing Page Design</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/graphic/shopify.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">Shopify Integration</p>
+                            <img src="{{url('theme_light/assets/graphic/web_banner.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">Web Banners</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/graphic/php-laravel.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">PHP Laravel</p>
+                            <img src="{{url('theme_light/assets/graphic/icon.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">Icon Pack Design</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/graphic/wordpress.jpg')}}" alt="" class="img-fluid rounded">
-                            <p class="mt-3">WordPress</p>
+                            <img src="{{url('theme_light/assets/graphic/wireframe.png')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <p class="mt-3">Website Wireframes</p>
                         </div>
                     </div>
                 </div>
@@ -119,45 +191,45 @@ button:focus {
                 <div class="tab-pane fade" id="nav-digital" role="tabpanel" aria-labelledby="nav-digital-tab">
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/social-media-marketing.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/social-media-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Social Media Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/seo-2.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/seo-2.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Search Engine Optimization</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/search-engine-marketing.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/search-engine-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Search Engine Marketing</p>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/video-marketing.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/video-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Video Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/e-commerce-marketing-1.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/e-commerce-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">E-Commerce Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/sms-marketing.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/sms-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">SMS Marketing</p>
                         </div>
                     </div>  
 
                     <div class="row">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/email-marketing.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/email-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Email Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/mobile-app-marketing-1.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/mobile-app-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Mobile App Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/web-analytics-1.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/web-analytics-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
                             <p class="mt-3">Web Analytics</p>
                         </div>
                     </div>    
@@ -166,61 +238,104 @@ button:focus {
                 <div class="tab-pane fade" id="nav-graphic" role="tabpanel" aria-labelledby="nav-graphic-tab">
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/logo-design-1.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/coffee.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Logo Design</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/company-branding.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/company-branding.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Company Branding</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/company-stationary.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/company-stationary.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Company Stationary</p>
                         </div>  
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/package-design.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/package-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Package Design</p>
                         </div>
                         <div class="col-4">   
-                            <img src="{{url('theme_light/assets/graphic/brochure-design.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/brochure-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Brochure Design</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/flyer-design.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/flyer-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Flyer Design</p>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/website-design.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/website-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Website Design</p>
                         </div>
                         <div class="col-4">   
-                            <img src="{{url('theme_light/assets/graphic/app-ui-design.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/app-ui-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">App UI Design</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/presentation-design.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/presentation-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Presentation Design</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/web-banners.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/web-banners.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Web Banners</p>
                         </div>
                         <div class="col-4">   
-                            <img src="{{url('theme_light/assets/graphic/ux-design-1.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/ux.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">UX Designs</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/photoshop-editing.jpg')}}" alt="" class="img-fluid rounded">
+                            <img src="{{url('theme_light/assets/graphic/photoshop-editing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
                             <p class="mt-3">Photoshop Editing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+                    <div class="row mb-3">
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
+                            <img src="{{url('theme_light/assets/graphic/digital-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">Digital Marketing</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="100">
+                            <img src="{{url('theme_light/assets/graphic/graphic-designing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">Graphic Designing</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="200">
+                            <img src="{{url('theme_light/assets/graphic/mobile-apps.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">Mobile Apps</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
+                            <img src="{{url('theme_light/assets/graphic/web-programming.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">Web Programming</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
+                            <img src="{{url('theme_light/assets/graphic/seo-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">Search Engine Optimization</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
+                            <img src="{{url('theme_light/assets/graphic/shopify.png')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">Shopify Integration</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
+                            <img src="{{url('theme_light/assets/graphic/php-laravel.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">PHP Laravel</p>
+                        </div>
+                        <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
+                            <img src="{{url('theme_light/assets/graphic/wordpress.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 170px;">
+                            <p class="mt-3">WordPress</p>
                         </div>
                     </div>
                 </div>
@@ -233,13 +348,20 @@ button:focus {
 
 <script>
     $(document).ready(function(){
-        $('.navClass nav div').hover(function(){
-            $(this).css({'background-color' : '#0f9d58', 'color' : 'white', 'border-right' : '3px solid white'});
-            $(this).children('img').css('filter', 'invert(1)');
+        $('.navClass div').children('button').hover(function(){
+            if($(this).hasClass('selected')) {
+                $(this).css({'background-color' : '', 'color' : 'black'});
+                $(this).find('img').css('filter', 'invert(0)');
+            }
+            else {
+                $(this).css({'background-color' : '#0f9d58', 'color' : 'white'});
+                $(this).find('img').css('filter', 'invert(1)');
+            }
+            
         },
         function(){
-            $(this).css({'background-color' : '', 'color' : 'black', 'border-right' : 'none'});
-            $(this).children('img').css('filter', 'invert(0)');
+            $(this).css({'background-color' : '', 'color' : 'black'});
+            $(this).find('img').css('filter', 'invert(0)');
         });
     });
 </script>
