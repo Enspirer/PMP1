@@ -16,12 +16,12 @@
   border-radius: 0;
   background: #b0b0b0;
 } */
-.selected {
+.navClass .active {
     background-color : #0f9d58;
     color : white;
 }
 
-.selected img {
+.navClass .active img {
     filter : invert(1);
 }
 button:focus {
@@ -40,7 +40,7 @@ button:focus {
         <div class="col-3">
             <nav class="navClass">
                 <div class="nav flex-column graphic-design border-0" id="nav-tab" role="tablist" style="overflow-x: auto;">
-                    <button class="nav-link active text-left border shadow py-3 mb-3 selected" id="nav-programming-tab" data-toggle="tab" data-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="true">
+                    <button class="nav-link active text-left border shadow py-3 mb-3" id="nav-programming-tab" data-toggle="tab" data-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="true">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <img src="{{url('theme_light/assets/graphic/programing_development.svg')}}" alt="" style="height: 40px;">
@@ -349,14 +349,9 @@ button:focus {
 <script>
     $(document).ready(function(){
         $('.navClass div').children('button').hover(function(){
-            if($(this).hasClass('selected')) {
-                $(this).css({'background-color' : '', 'color' : 'black'});
-                $(this).find('img').css('filter', 'invert(0)');
-            }
-            else {
-                $(this).css({'background-color' : '#0f9d58', 'color' : 'white'});
-                $(this).find('img').css('filter', 'invert(1)');
-            }
+            
+            $(this).css({'background-color' : '#0f9d58', 'color' : 'white'});
+            $(this).find('img').css('filter', 'invert(1)');
             
         },
         function(){
