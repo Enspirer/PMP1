@@ -25,8 +25,8 @@ button:focus {
 @endpush
 
 <div class="container text-center" style="margin-top: 7rem; margin-bottom: 7rem">
-    <h2>Graphic Designing</h2>
-    <p>A single place, milliions of creative talents</p>
+    <h2>Top Categories at Tallentor</h2>
+    <p>one place with thousands of creative talents,</p>
 
     <div class="row justify-content-between mt-5">
         <div class="col-3">
