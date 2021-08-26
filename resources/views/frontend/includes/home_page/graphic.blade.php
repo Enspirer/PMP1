@@ -1,6 +1,6 @@
 @push('before-styles')
 <style>
-.navClass {
+/* .navClass {
   height: 500px;
   overflow-y: scroll;
 }
@@ -15,7 +15,7 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
   background: #b0b0b0;
-}
+} */
 button:focus {
     outline: none;
 }
@@ -31,30 +31,41 @@ button:focus {
     <div class="row justify-content-between mt-5">
         <div class="col-3">
             <nav class="navClass">
-                <div class="nav flex-column graphic-design border-0" id="nav-tab" role="tablist" style="overflow-x: auto;">
-                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
+                <div class="nav flex-column graphic-design border-0" id="nav-tab" role="tablist">
+                    <div class="row align-items-center border shadow mb-3 py-2">
+                        <div class="col-4 text-center p-0">
+                            <img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" alt="" style="height: 40px">
+                        </div>
+                        <div class="col-8 text-center p-0">
+                            <button class="nav-link active" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true">Programming & Development</button>
+                        </div>
+                    </div>
 
-                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
+                    <div class="row align-items-center border shadow mb-2 py-2">
+                        <div class="col-4 text-center p-0">
+                            <img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" alt="" style="height: 40px">
+                        </div>
+                        <div class="col-8 text-center p-0">
+                            <button class="nav-link" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">Digital Marketing</button>
+                        </div>
+                    </div>
+                    
+
+                    
 
                     <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
 
-                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
+                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Education & Training</button>
 
-                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
+                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Writing & Translation</button>
 
-                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
+                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Video & Photography</button>
 
-                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
+                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Music & Audio</button>
 
-                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
+                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Business & Sales</button>
 
-                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
-
-                    <button class="nav-link active text-left" id="nav-online-tab" data-toggle="tab" data-target="#nav-online" type="button" role="tab" aria-controls="nav-online" aria-selected="true"><img src="{{url('theme_light/assets/graphic/online-course-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Online Courses</button>
-
-                    <button class="nav-link text-left" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false"><img src="{{url('theme_light/assets/graphic/digital-marketing-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Digital Marketing</button>
-
-                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Graphic Designing</button>
+                    <button class="nav-link text-left" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false"><img src="{{url('theme_light/assets/graphic/graphic-design-icon.svg')}}" class="mr-3" alt="" style="height: 40px">Art & Craft</button>
                 </div>
             </nav>
         </div>
@@ -222,7 +233,7 @@ button:focus {
 
 <script>
     $(document).ready(function(){
-        $('.navClass div').children('button').hover(function(){
+        $('.navClass nav div').hover(function(){
             $(this).css({'background-color' : '#0f9d58', 'color' : 'white', 'border-right' : '3px solid white'});
             $(this).children('img').css('filter', 'invert(1)');
         },
