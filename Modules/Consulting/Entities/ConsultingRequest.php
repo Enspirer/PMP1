@@ -12,6 +12,6 @@ class ConsultingRequest extends Model
     
     protected static function newFactory()
     {
-        return \Modules\Consulting\Database\factories\ConsultingRequestFactory::new();
+
     }
 }

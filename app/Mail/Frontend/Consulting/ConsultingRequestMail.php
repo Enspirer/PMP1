@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Http\Request;
 
-class ConsultingRequest extends Mailable
+class ConsultingRequestMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -22,7 +22,6 @@ class ConsultingRequest extends Mailable
 
     public function __construct(Request $request)
     {
-        dd($request);
         $this->request = $request;
     }
 
