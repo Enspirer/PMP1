@@ -3,12 +3,12 @@
 namespace Modules\Consulting\Http\Controllers\Frontend;
 
 use foo\bar;
-use function GuzzleHttp\Psr7\_parse_request_uri;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Consulting\Entities\ConsultingRequest;
 use Mail;
+use App\Mail\Frontend\Consulting\ConsultingRequestMail;
 
 class ConsultingController extends Controller
 {
@@ -56,7 +56,7 @@ class ConsultingController extends Controller
         $consulting->save();
 
         // Mail::to('Cloudways@Cloudways.com')->send(new SendMailable($name));
-        // Mail::send(new ConsultingRequest($request));
+         Mail::send(new ConsultingRequestMail($request));
         
         return back();
     }
