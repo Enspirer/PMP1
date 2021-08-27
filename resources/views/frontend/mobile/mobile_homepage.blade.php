@@ -299,7 +299,7 @@
 
                         <div class="row justify-content-center">
                             <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/icon_pack.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
+                                <img src="{{url('theme_light/assets/categories/packs.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
                                 <p class="mt-2 mb-0" style="font-size: 0.8rem">Icon Pack Design</p>
                             </div>
                             <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">

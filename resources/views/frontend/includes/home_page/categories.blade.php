@@ -182,7 +182,7 @@ button:focus {
 
                     <div class="row">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/categories/icon_pack.jpg')}}" alt="" class="img-fluid rounded w-100">
+                            <img src="{{url('theme_light/assets/categories/packs.jpg')}}" alt="" class="img-fluid rounded w-100">
                             <p class="mt-3">Icon Pack Design</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
