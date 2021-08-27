@@ -1,3 +1,17 @@
+@if(session()->get('flash_success'))
+        <div class="card" style="padding: 50px 15px">
+            <div class="card-body" style="text-align: center;">
+                <div class="" style="background-image: url('{{url('/theme_light/assets/paper-plane.png')}}');height: 50px;background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+                <br>
+                <h3 style="text-align: center;">Your message has been successfully sent,<br> one of our members will get in touch with you shortly.</h3>
+                <br>
+                <a href="{{ route('frontend.expert_center') }}" class="btn btn-primary" style="background-color: green;color: white">Refresh</a>
+
+            </div>
+</div>
+
+@else
+
 <section class="expert-mob" data-animscroll="fade-up">
       <div class="dark-layer-mob-tender"></div>
       <div class="title-group">
@@ -273,11 +287,14 @@
           </div>
         </div>
       </div>
-<br>
+  <br>
       <div class="bottum-button-expert-mob">
         <a class="fill" href="{{route('frontend.contact_us')}}" type="button">Book Tallentor expert team</a>
         <a class="outline" href="#" type="button" data-toggle="modal" data-target="#exampleModalLong">Request For 15 min free consultation</a>
       </div>
-    </section>
+</section>
 
-    @include('projects::includes.expert_center.consulation_request_form')
+@include('projects::includes.expert_center.consulation_request_form')
+
+
+@endif

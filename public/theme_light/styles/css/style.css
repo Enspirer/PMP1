@@ -834,7 +834,7 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: flex-end;
   list-style: none;
   padding: 0;
   position: relative;
@@ -844,7 +844,7 @@ body {
   clear: right;
 }
 
-.menu > ul .main-menu-item::before {
+.menu > ul :not(:last-child) .main-menu-item::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -885,12 +885,14 @@ body {
   float: left;
   background: #fff;
   padding: 0;
-  margin: 0;
+  margin-top: auto!important;
+  margin-bottom: auto!important;
 }
 
 .menu > ul > li a {
   text-decoration: none;
   padding: 0.8em 3em;
+  padding-top: auto!important;
   display: block;
   text-align: left;
   font: normal normal medium 20px/23px Karla;

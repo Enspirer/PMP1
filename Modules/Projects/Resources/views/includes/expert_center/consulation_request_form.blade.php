@@ -40,14 +40,9 @@
                         <textarea type="text" class="form-control" rows="5" name="additional_note"></textarea>
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" style="font-family: Poppins;    color: #000;
-    background: transparent;
-    border: 1px solid #000 !important;
-    border: transparent;" data-dismiss="modal">Close</button>
-    <button type="submit" style="font-family: Poppins;color: #fff;
-    background: #0f9d58;
-    border: 1px solid #0f9d58 !important;
-    border: transparent;" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" style="font-family: Poppins; color: #000; background: transparent; border: 1px solid #000 !important; border: transparent;" data-dismiss="modal">Close</button>
+                        
+                    <button type="submit" style="font-family: Poppins;color: #fff; background: #0f9d58; border: 1px solid #0f9d58!important; border: transparent;" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
@@ -105,11 +100,19 @@
                         <textarea class="form-control" name="additional_note" rows="3"></textarea>
                     </div>
 
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-5 text-center">
-                            <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                    @if(is_mobile(request()->header('user-agent')) == true)
+                        <div class="row mb-4">
+                            <div class="col-5">
+                                <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                            </div>
                         </div>
-                    </div>
+                    @else
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-5 text-center">
+                                <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                            </div>
+                        </div>
+                    @endif
 
                     <div class="row m-0 d-flex justify-content-center">
                         <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>

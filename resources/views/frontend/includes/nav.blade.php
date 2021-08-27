@@ -247,6 +247,9 @@
                         <li>
                             <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}">Acadamy</a>
                         </li>
+                        <li>
+                            <a class="main-menu-item" href=""><img src="{{ url('theme_light/assets/image/tallentor_mall_logo.png') }}" alt="" class="img-fluid" style="height: 40px"></a>
+                        </li>
                         <!-- <li>
                             <a class="main-menu-item" href="#">Tenders</a>
                             <ul>

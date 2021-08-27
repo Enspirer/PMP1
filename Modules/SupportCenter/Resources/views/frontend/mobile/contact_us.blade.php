@@ -1,3 +1,18 @@
+@if(session()->get('flash_success'))
+        <div class="card" style="padding: 50px 15px">
+            <div class="card-body" style="text-align: center;">
+                <div class="" style="background-image: url('{{url('/theme_light/assets/paper-plane.png')}}');height: 50px;background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+                <br>
+                <h3 style="text-align: center;">Your message has been successfully sent,<br> one of our members will get in touch with you shortly.</h3>
+                <br>
+                <a href="{{ route('frontend.contact_us') }}" class="btn btn-primary" style="background-color: green;color: white">Refresh</a>
+
+            </div>
+</div>
+
+@else
+
+
 <section id="mobile-contact-hero">
       <h1>Tallentor Global Network</h1>
       <hr />
@@ -88,34 +103,41 @@
         <p>For any enquiries, please submit your details. A member of Tallentor team will get back to you shortly.</p>
 
 
-        <form class="mt-4">
+        <form class="mt-4" action="{{route('frontend.contact_us.store')}}" method="post">
+          {{csrf_field()}}
             <div class="form-group">
               <label>First Name</label>
-              <input type="text" class="form-control" placeholder="John">
+              <input type="text" class="form-control" name="first_name" placeholder="John" required>
             </div>
 
             <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" class="form-control" placeholder="Macclister">
+                <input type="text" class="form-control" name="last_name" placeholder="Macclister" required>
               </div>
 
               <div class="form-group">
                 <label>Email</label>
-                <input type="text" class="form-control" placeholder="johnmacclister94@gmail.com">
+                <input type="text" class="form-control" name="email" placeholder="johnmacclister94@gmail.com" required>
               </div>
 
               <div class="form-group">
                 <label>Tell No</label>
-                <input type="text" class="form-control" placeholder="+94 70 123876">
+                <input type="text" class="form-control" name="phone" placeholder="+94 70 123876" required>
               </div>
 
               <div class="form-group">
                 <label>Your Messege</label>
-                <textarea rows="6" type="text" class="form-control">lorem ipsum messege</textarea>
+                <textarea rows="6" type="text" class="form-control" name="message" required>lorem ipsum messege</textarea>
 
               </div>
   
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="row align-items-center mb-3">
+                <div class="col-12">
+                    <div class="g-recaptcha w-100" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" disabled id="submit_btn">Submit</button>
           </form>
 
     </section>
@@ -249,4 +271,17 @@
           </div>
 
 
-    </section>
+</section>
+
+@endif
+
+
+@push('after-scripts')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+    function checked() {
+    $('#submit_btn').removeAttr('disabled');
+};
+</script>
+@endpush

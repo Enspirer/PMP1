@@ -58,7 +58,7 @@ class ConsultingController extends Controller
         // Mail::to('Cloudways@Cloudways.com')->send(new SendMailable($name));
          Mail::send(new ConsultingRequestMail($request));
         
-        return back();
+        return back()->withFlashSuccess(__('alerts.frontend.contact.sent'));
     }
 
     /**

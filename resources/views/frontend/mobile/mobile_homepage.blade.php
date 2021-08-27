@@ -486,6 +486,55 @@
     </div>
 </section>
 
+<!-- <section class="tallentor_mall">
+    <div class="container text-center" style="margin-bottom: 7rem">
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-6 align-items-center">
+                <img src="{{ url('theme_light/assets/tallentor_mall/tallentor_mall_logo.jpg') }}" alt="" class="img-fluid" style="height: 40px;">
+                <h4 class="d-inline-block my-auto" style="font: normal normal bold 18px/56px Poppins; letter-spacing: 0px; line-height: 1; color: #000000; text-align: center;">Tallentor Mall</h4>
+            </div>
+        </div>
+
+
+        <div class="row mb-4">
+            <div class="col-4 px-2">
+                <img src="{{ url('theme_light/assets/tallentor_mall/traditional_modern_musk.jpg') }}" alt="" class="img-fluid w-100">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem">Traditional Modern Mask</p>
+            </div>
+
+            <div class="col-4 px-2">
+                <img src="{{ url('theme_light/assets/tallentor_mall/stone_statues.jpg') }}" alt="" class="img-fluid w-100">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem">Stone Statues</p>
+            </div>
+
+            <div class="col-4 px-2">
+                <img src="{{ url('theme_light/assets/tallentor_mall/traditional_srilanka _painting.jpg') }}" alt="" class="img-fluid w-100">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem">Traditional Sri Lanka Painting</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-4 px-2">
+                <img src="{{ url('theme_light/assets/tallentor_mall/wooden_elephant_statue.jpg') }}" alt="" class="img-fluid w-100">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem">Wooden Elephant Statue</p>
+            </div>
+
+            <div class="col-4 px-2">
+                <img src="{{ url('theme_light/assets/tallentor_mall/cane_furniture.jpg') }}" alt="" class="img-fluid w-100">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem">Cane Furniture</p>
+            </div>
+
+            <div class="col-4 px-2">
+                <img src="{{ url('theme_light/assets/tallentor_mall/srilanka-batik_saree.jpg') }}" alt="" class="img-fluid w-100">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem">Sri Lanka Batik Saree</p>
+            </div>
+            
+        </div>
+    </div>
+</section> -->
+
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
