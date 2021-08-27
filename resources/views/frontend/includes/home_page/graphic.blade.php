@@ -34,10 +34,10 @@ button:focus {
 
 <div class="container text-center" style="margin-top: 7rem; margin-bottom: 7rem">
 
-<div class="heading-text">
-    <h1 style="font-size: 42px; color: #361d41; margin: auto; text-align: center; font: normal normal bold 48px/70px Poppins;">Top Categories at Tallentor</h1>
-    <p style="margin-top: 19px !important; max-width: 700px; text-align: center; margin: auto;font-size: 18px;">one place with thousands of creative talents</p>
-</div>
+    <div class="heading-text">
+        <h1 style="font-size: 42px; color: #361d41; margin: auto; text-align: center; font: normal normal bold 48px/70px Poppins;">Top Categories at Tallentor</h1>
+        <p style="margin-top: 19px !important; max-width: 700px; text-align: center; margin: auto;font-size: 18px;">one place with thousands of creative talents</p>
+    </div>
     
 
     <div class="row justify-content-between mt-5">
@@ -152,41 +152,41 @@ button:focus {
                 <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
                     <div class="row mb-3">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                            <img src="{{url('theme_light/assets/graphic/basic_website.png')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/basic_website.png')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Basic Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="100">
-                            <img src="{{url('theme_light/assets/graphic/dynamic_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/dynamic_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Dynamic Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="200">
-                            <img src="{{url('theme_light/assets/graphic/ecommerce_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/ecommerce_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">E-commerce Website</p>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
-                            <img src="{{url('theme_light/assets/graphic/wordpress.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/wordpress_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">WordPress Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
-                            <img src="{{url('theme_light/assets/graphic/landing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/landing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Landing Page Design</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/graphic/web_banner.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/web_banner.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Web Banners</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/graphic/icon.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/icon.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Icon Pack Design</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                            <img src="{{url('theme_light/assets/graphic/wireframe.png')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/wireframe.png')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Website Wireframes</p>
                         </div>
                     </div>
@@ -195,45 +195,45 @@ button:focus {
                 <div class="tab-pane fade" id="nav-digital" role="tabpanel" aria-labelledby="nav-digital-tab">
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/social-media-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/social-media-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Social Media Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/seo-2.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/seo-2.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Search Engine Optimization</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/search-engine-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/search-engine-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Search Engine Marketing</p>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/video-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/video-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Video Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/e-commerce-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/e-commerce-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">E-Commerce Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/sms-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/sms-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">SMS Marketing</p>
                         </div>
                     </div>  
 
                     <div class="row">
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/email-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/email-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Email Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/mobile-app-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/mobile-app-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Mobile App Marketing</p>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('theme_light/assets/graphic/web-analytics-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit:cover; height:170px;">
+                            <img src="{{url('theme_light/assets/graphic/web-analytics-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:170px;">
                             <p class="mt-3">Web Analytics</p>
                         </div>
                     </div>    
