@@ -65,7 +65,7 @@
 
     </p>
     <br />
-    <div class="swiper-container swiper-container-mob2">
+    <div class="swiper-container swiper-container-mob2" style="max-width: 100%; overflow-x: hidden;">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="pick-card">
@@ -137,17 +137,14 @@
                     <a href="{{route('frontend.project_page',1)}}" class="pick-button" type="button">View Project</a>
                 </div>
             </div>
-
-
         </div>
         <!-- Add Pagination -->
-        <br />
-        <br />
-        <div class="swiper-pagination swiper-pagination-mob2"></div>
+        <div class="swiper-pagination-mob2 text-center"></div>
     </div>
 </section>
+
 <section class="categories">
-    <div class="container text-center" style="margin-top: 5rem; margin-bottom: 5rem">
+    <div class="container text-center" style="margin-top: 3rem; margin-bottom: 5rem">
         <h4 style = "font: normal normal bold 18px/56px Poppins; letter-spacing: 0px; line-height: 1; color: #000000; text-align: center;">Top Categories at Tallentor</h4>
         <p style="max-width: 90%; margin: auto; text-align: center; font: normal normal normal 12px/20px Karla; letter-spacing: 0px; color: #000000; line-height: 1.5;">one place with thousands of creative talents</p>
 
@@ -622,7 +619,7 @@
         <hr />
     </div>
     <br />
-    <div class="swiper-container swiper-container-mob">
+    <div class="swiper-container swiper-container-mob" style="max-width: 100%; overflow-x: hidden;">
     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card-shop">
@@ -744,9 +741,7 @@
                         </div>
                     </div>
         <!-- Add Pagination -->
-        <br />
-        <br />
-        <div class="swiper-pagination-mob swiper-pagination"></div>
+        <div class="swiper-pagination-mob text-center"></div>
     </div>
     <br />
     <div class="button-shop">

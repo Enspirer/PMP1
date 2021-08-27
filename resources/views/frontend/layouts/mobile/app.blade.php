@@ -269,8 +269,11 @@
 
     <script>
         var swiper = new Swiper(".swiper-container-mob2", {
+            slidesPerView: 1,
+            centeredSlides: true,
             pagination: {
                 el: ".swiper-pagination-mob2",
+                clickable: true,
             },
         });
     </script>
@@ -301,10 +304,11 @@
 
     <script>
         var swiper = new Swiper(".swiper-container-mob", {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 20,
             pagination: {
                 el: ".swiper-pagination-mob",
+                clickable: true,
             },
         });
     </script>
