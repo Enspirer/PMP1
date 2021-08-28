@@ -2917,6 +2917,27 @@ a {
   color: #0f9d58;
 }
 
+#we-help-mob {
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+#we-help-mob h1 {
+  font: normal normal 600 18px/30px Poppins;
+  letter-spacing: -0.13px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#we-help-mob p {
+  text-align: left;
+  font: normal normal normal 12px/18px Poppins;
+  letter-spacing: 0px;
+  color: #242424;
+  margin-bottom: 0;
+}
+
 #how-we-help-mob {
   padding: 20px;
 }
@@ -2960,14 +2981,16 @@ a {
 
 #partner-office-mob {
   padding: 20px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 #partner-office-mob h1 {
-  font: normal normal 600 14px/30px Poppins;
+  font: normal normal 600 18px/30px Poppins;
   letter-spacing: -0.13px;
   color: #2a2a2a;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #partner-office-mob .card-contact {

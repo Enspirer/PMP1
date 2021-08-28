@@ -65,6 +65,32 @@
         let link = $(this).attr('href');
         $('.modal-footer a').attr('href', link);
     })
+
+
+    $(".add_new").click(function () {
+        $("#image_store").click();
+    });
+
+    $(".edit_port").click(function () {
+        $("#image_edit").click();
+    });
+
+    $(document).ready(function() {
+        $('#image_store[type="file"]').change(function() {
+            let name = $("#image_store").val();
+
+            $("#image_new_name").val(name);
+        });
+    });
+
+    $(document).ready(function() {
+        $('#image_edit[type="file"]').change(function() {
+            let name = $("#image_edit").val();
+
+            $("#image_edit_name").val(name);
+        });
+    });
+
 </script>
 
 @endpush

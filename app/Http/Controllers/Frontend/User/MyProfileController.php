@@ -21,11 +21,12 @@ class MyProfileController extends Controller
 
     public function portfolioStore(Request $request)
     {
-
+        
         $user_id = Auth::id();
 
         $image = $request->file('image');
         $imageName = time().'_'.rand(1000,10000).'.'.$image->getClientOriginalExtension();
+
 
         $image->move(public_path('files'),$imageName);
 
@@ -36,6 +37,7 @@ class MyProfileController extends Controller
         $addportfolio->description = $request->description;
         $addportfolio->user_id = $user_id;
         $addportfolio->link = $request->link;
+        $addportfolio->client_name = $request->client_name;
 
         
         $addportfolio->save();

@@ -20,6 +20,7 @@ class CreatePortfoliosTable extends Migration
             $table->text('description')->nullable();
             $table->text('user_id');
             $table->text('link')->nullable();
+            $table->text('client_name');
             $table->timestamps();
         });
     }

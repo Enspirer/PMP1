@@ -9,23 +9,23 @@
           </button>
         </div>
         <div class="modal-body">
-              <div class="row align-items-center">
+              <div class="row">
                 <div class="col-6">
-                  <img src="{{ url('files', $portfolio->image) }}" alt="" class="img-fluid w-100" style="height:340px; object-fit: cover;">
+                  <img src="{{ url('files', $portfolio->image) }}" alt="" class="img-fluid w-100" style="height:290px; object-fit: cover;">
                 </div>
 
                 <div class="col-6">
                   <h5 class="text-left" style="line-height: 30px;">{{ $portfolio->title }}</h5>
 
-                  <p class="" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical; text-align: justify;">{{ $portfolio->description }}</p>
+                  <p class="" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 9; -webkit-box-orient: vertical; text-align: justify;">{{ $portfolio->description }}</p>
 
-                  <a href="{{ url($portfolio->link) }}" type="button" class="btn text-light" style="background-color: #FF6347;">View more</a>
-
+                  <p class="text-left font-weight-bold">Client Name : {{ $portfolio->client_name }}</p>
                 </div>
               </div>
         </div>
 
         <div class="modal-footer">
+          <a href="{{ url($portfolio->link) }}" type="button" class="btn text-light" style="background-color: #FF6347;">View more</a>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
         

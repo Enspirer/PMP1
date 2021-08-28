@@ -12,9 +12,10 @@
         </div>
 
         @else
-            @include('supportcenter::frontend.desktop.contact_us.includes.partner_office_section')
-            @include('supportcenter::frontend.desktop.contact_us.includes.partner_office_canada')
+            <!-- @include('supportcenter::frontend.desktop.contact_us.includes.partner_office_section') -->
+            <!-- @include('supportcenter::frontend.desktop.contact_us.includes.partner_office_canada') -->
             @include('supportcenter::frontend.desktop.contact_us.includes.contact_form_section')
+            <!-- @include('supportcenter::frontend.desktop.contact_us.includes.customer_centre') -->
             @include('supportcenter::frontend.desktop.contact_us.includes.partner_office_list')
         @endif
 

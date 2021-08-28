@@ -789,7 +789,7 @@ body {
 }
 
 .menu a.logo {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 1.5em 3em;
   width: 19%;
   float: left;
@@ -4196,7 +4196,7 @@ button {
   color: #303030;
 }
 
-.dashboard-body {
+/* .dashboard-body { */
   /*----------------page-wrapper----------------*/
   /*----------------toggeled sidebar----------------*/
   /*----------------show sidebar button----------------*/
@@ -4210,7 +4210,7 @@ button {
   /*--------------------------page-content-----------------------------*/
   /*------scroll bar---------------------*/
   /*-----------------------------chiller-theme-------------------------------------------------*/
-}
+/* } */
 
 @-webkit-keyframes swing {
   0% {
@@ -7087,6 +7087,7 @@ input.search-menu:focus
           box-shadow: 10px 10px 56px -12px rgba(0, 0, 0, 0.75);
 }
 
+
 .contact-body .gray-background-contact {
   background: #f2f2f2 0% 0% no-repeat padding-box;
   width: 100%;
@@ -7231,8 +7232,71 @@ input.search-menu:focus
   padding: 14px 70px;
 }
 
+.contact form button {
+  background: #ff6347 0% 0% no-repeat padding-box !important;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #fff;
+  border: none;
+  padding: 14px 70px;
+}
+
+
+
+.contact-body .contact {
+  /* padding: 350px 0 100px 0; */
+  margin-top: 8rem;
+}
+
+.contact-body .contact .box{
+  box-sizing: border-box;
+  border: 25px solid transparent;
+  background-clip:padding-box;
+}
+
+.contact-body .contact .title-underline h1 {
+  font: normal normal bold 40px/70px Poppins;
+  letter-spacing: 0px;
+  color: #0f0c29;
+  text-align: center;
+}
+
+.contact-body .contact .title-underline hr {
+  height: 4px;
+  width: 200px;
+  border-width: 0;
+  margin-top: -10px;
+  color: #0f9d58;
+  background-color: #0f9d58;
+}
+
+
+.contact-body .customer_centre {
+  /* padding: 350px 0 100px 0; */
+  margin-top: 8rem;
+}
+
+.contact-body .customer_centre .title-underline h1 {
+  font: normal normal bold 40px/70px Poppins;
+  letter-spacing: 0px;
+  color: #0f0c29;
+  text-align: center;
+}
+
+.contact-body .customer_centre .title-underline hr {
+  height: 4px;
+  width: 200px;
+  border-width: 0;
+  margin-top: -10px;
+  color: #0f9d58;
+  background-color: #0f9d58;
+}
+
 .contact-body .partner-section-contact {
-  padding: 350px 0 100px 0;
+  /* padding: 350px 0 100px 0; */
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .contact-body .partner-section-contact .title-underline h1 {
@@ -7252,7 +7316,8 @@ input.search-menu:focus
 }
 
 .contact-body .partner-section-contact .office-list-contact {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  margin-top: 4rem;
 }
 
 .contact-body .partner-section-contact .office-list-contact .row .list-item-contact {

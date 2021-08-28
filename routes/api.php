@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Frontend\Auth\LoginController;
+use App\Http\Controllers\Frontend\User\MyProfileController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
