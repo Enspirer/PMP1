@@ -2710,7 +2710,7 @@ a {
 .login-form-mob .form-login form button {
   background: #0f9d58 0% 0% no-repeat padding-box;
   border-radius: 4px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   border: transparent;
   font: normal normal 400 15px/25px Poppins;
   letter-spacing: 0.24px;
@@ -2977,6 +2977,18 @@ a {
   font: normal normal 600 12px/18px Poppins;
   letter-spacing: 0.18px;
   color: #ffffff;
+}
+
+#customer-centre {
+  padding: 20px;
+}
+
+#customer-centre h1{
+  font: normal normal 600 18px/30px Poppins;
+  letter-spacing: -0.13px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #partner-office-mob {
@@ -4100,3 +4112,46 @@ footer p {
   text-align: center;
 }
 /*# sourceMappingURL=stylemob.css.map */
+
+
+
+.login-form-mob {
+  text-align: center;
+}
+
+.login-form-mob fieldset:not(:first-of-type) {
+  display: none;
+}
+.login-form-mob fieldset {
+	/* background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 20px;
+	box-sizing: border-box;
+	width: 100%; */
+  /* height: 350px; */
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+.login-form-mob .action-button {
+	width: 80px;
+	background: #27AE60!important;
+	font-weight: bold!important;
+	color: white!important;
+	border: 0 none!important;
+	border-radius: 1px!important;
+	cursor: pointer;
+	padding: 4px 0px;
+	margin: 10px 0px;
+}
+.login-form-mob .action-button:hover, .login-form-mob .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+.login-form-mob .fs-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}

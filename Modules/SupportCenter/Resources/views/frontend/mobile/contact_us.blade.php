@@ -161,6 +161,26 @@
 
 </section>
 
+
+<section id="customer-centre" class="mt-4">
+    <h1>Customer Center 24/7</h1>
+
+    <div class="row justify-content-center text-center" style="margin-top: 2rem;">
+      <div class="col-12 p-0 mb-2">
+        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/cc_1.png') }}" alt="" class="img-fluid" style="height: 200px;"></a>
+      </div>
+
+      <div class="col-12 p-0 mb-2">
+        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/cc_2.png') }}" alt="" class="img-fluid" style="height: 200px;"></a>
+      </div>
+
+      <div class="col-12 p-0 mb-2">
+        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/cc_3.png') }}" alt="" class="img-fluid" style="height: 200px;"></a>
+      </div>
+    </div>
+
+</section>
+
 <section id="partner-office-mob">
 
 
