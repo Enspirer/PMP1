@@ -29,7 +29,7 @@
 
     </section>
 
-    <section id="blog-tallentor">
+    <section id="blog-tallentor" style="margin-top: 5rem;">
         <div class="container">
             <div class="tab-center">
                 <div class="title-tab">
