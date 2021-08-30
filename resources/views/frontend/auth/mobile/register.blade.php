@@ -162,7 +162,7 @@
               </div>
 
               <div class="text-center mt-4 mb-3">
-                  <div class="g-recaptcha" data-callback="checked1" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                  <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
               </div>
 
               <input type="button" name="previous" class="previous action-button mr-3" value="Previous">

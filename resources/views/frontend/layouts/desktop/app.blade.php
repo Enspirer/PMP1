@@ -197,14 +197,19 @@
             watchSlidesProgress: true,
         });
         var galleryTop = new Swiper(".gallery-top", {
-            spaceBetween: 10,
+            initialSlide: 0,
+            // loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            thumbs: {
-                swiper: galleryThumbs,
-            },
+            // observer: true,
+            // observeParents: true,
+            // parallax:true,
+
+            // thumbs: {
+            //     swiper: galleryThumbs,
+            // },
         });
     </script>
 

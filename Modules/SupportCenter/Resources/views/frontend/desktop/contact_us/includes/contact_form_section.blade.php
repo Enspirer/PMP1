@@ -14,9 +14,29 @@
                     <div class="col-8 border p-4 shadow" style="background-color: white">
                         <h4 class="mb-3" style="font-weight: 800">Contact Us</h4>
 
-                        <h5 style="font-weight: 500">Call / WhatsApp: +94 778669990</h5>
+                        <div class="row align-items-center">
+                            <div class="col-3 text-center p-0">
+                                <i class="fas fa-phone-alt mr-2" style="color: #0F9D58; font-size: 23px"></i> <i class="fab fa-whatsapp ml-2" style="color: #0F9D58; font-size: 23px"></i>
+                            </div>
+                            <div class="col-9 p-0">
+                                <h5 class="mb-0" style="font-weight: 500; font-size: 18px;"> : &nbsp;&nbsp;+94 778669990</h5>
+                            </div>
+                        </div>
 
-                        <h5 style="font-weight: 500">Email: hello@tallentor.com</h5>
+                        <!-- <h5 style="font-weight: 500"><i class="fas fa-phone-alt" style="color: #0F9D58; font-weight: 600"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp" style="color: #0F9D58; font-weight: 600"></i> : +94 778669990</h5> -->
+
+                        <div class="row mt-2 align-items-center justify-content-between">
+                            <div class="col-2">
+                                <!-- <img src="{{ url('theme_light/assets/contact/mail.png') }}" alt="" style="height: 22px"> -->
+                                <i class="fas fa-envelope" style="color: #0F9D58; font-size: 23px"></i>
+                            </div>
+
+                            <div class="col-9 p-0">
+                                <h5 class="mb-1" style="font-weight: 500; font-size: 18px;"> : &nbsp;&nbsp;hello@tallentor.com</h5>
+                            </div>
+                        </div>
+
+                        <!-- <h5 style="font-weight: 500"><img src="{{ url('theme_light/assets/contact/mail.png') }}" alt="" style="height: 22px"> : hello@tallentor.com</h5> -->
                     </div>
                 </div>
 
@@ -85,7 +105,7 @@
                             <input type="email" class="form-control" name="email" placeholder="johnmacclister94@gmail.com" required>
                         </div>
                         <div class="form-group">
-                            <label>Tell No</label>
+                            <label>Tel No</label>
                             <input type="text" class="form-control" name="phone" placeholder="+94 70 123876" required>
                         </div>
                         <div class="form-group">
