@@ -160,12 +160,12 @@
 
               <div class="form-group">
                 <label>Tel No</label>
-                <input type="text" class="form-control" name="phone" placeholder="+94 70 123876" required>
+                <input type="text" class="form-control" name="phone" placeholder="+94 11x xxxxxx" required>
               </div>
 
               <div class="form-group">
-                <label>Your Messege</label>
-                <textarea rows="6" type="text" class="form-control" name="message" required>lorem ipsum messege</textarea>
+                <label>Your Message</label>
+                <textarea rows="6" type="text" class="form-control" name="message" placeholder="Hello there..." required></textarea>
 
               </div>
   

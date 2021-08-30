@@ -106,11 +106,11 @@
                         </div>
                         <div class="form-group">
                             <label>Tel No</label>
-                            <input type="text" class="form-control" name="phone" placeholder="+94 70 123876" required>
+                            <input type="text" class="form-control" name="phone" placeholder="+94 11x xxxxxx" required>
                         </div>
                         <div class="form-group">
                             <label>Your Message</label>
-                            <textarea class="form-control" name="message" rows="6" placeholder="lorem ipsum messege" required></textarea>
+                            <textarea class="form-control" name="message" rows="6" placeholder="Hello there..." required></textarea>
                         </div>
 
                         <div class="row align-items-center justify-content-between">
