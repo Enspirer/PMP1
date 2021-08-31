@@ -130,6 +130,12 @@
         <a class="d-block open border bg-primary ml-auto" type="button"><i class="fas fa-plus"></i></a>
     </div>
 
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
 
 
         <!-- Modal -->
@@ -512,12 +518,6 @@
     </script>
     <!--End of Tawk.to Script-->
 
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
 
     <script>
         var chatbox = document.getElementById('fb-customer-chat');

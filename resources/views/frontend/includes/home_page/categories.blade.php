@@ -152,7 +152,7 @@ button:focus {
                 <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
                     <div class="row mb-3">
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                            <img src="{{url('theme_light/assets/categories/basic_website.jpg')}}" alt="" class="img-fluid rounded w-100">
+                            <a href="{{ route('frontend.post_a_job') }}"><img src="{{url('theme_light/assets/categories/basic_website.jpg')}}" alt="" class="img-fluid rounded w-100"></a>
                             <p class="mt-3">Basic Website</p>
                         </div>
                         <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="100">
