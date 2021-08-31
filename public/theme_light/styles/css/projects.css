@@ -1,0 +1,26 @@
+.dropzone {
+    border: 1px dashed black;
+}
+
+.dropzone .dz-default {
+    display: none;
+}
+
+.feature-buttons .btn {
+    color: #6c757d!important;
+    font-size: 25px;
+    width: 300px;
+}
+
+.tox-tinymce {
+    height: 300px!important;
+}
+
+.uppy-Dashboard-inner {
+    width: 100%!important;
+    height: 350px!important;
+}
+
+.uppy-Dashboard-AddFiles {
+    margin: 0px!important;
+}

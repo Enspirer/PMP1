@@ -98,4 +98,8 @@ class ProjectController extends Controller
     {
         //
     }
+
+    public function postAJob() {
+        return view('projects::post_a_job');
+    }
 }
