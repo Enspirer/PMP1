@@ -61,11 +61,30 @@
         <div class="col-12 border p-3 shadow" style="background-color: white">
             <h5 class="mb-3 text-center" style="font-weight: 800">Contact Us</h5>
 
-            <p style="font-weight: 500; text-align:center">Call / WhatsApp: +94 778669990</p>
+            <div class="row align-items-center">
+                <div class="col-3 text-center p-0">
+                    <i class="fas fa-phone-alt mr-2" style="color: #0F9D58; font-size: 19px"></i> <i class="fab fa-whatsapp ml-2" style="color: #0F9D58; font-size: 19px"></i>
+                </div>
+                <div class="col-9 p-0">
+                    <h5 class="mb-0" style="font-weight: 500; font-size: 18px;"> : &nbsp;&nbsp;+94 778669990</h5>
+                </div>
+            </div>
 
-            <p style="font-weight: 500; text-align:center">Email: hello@tallentor.com</p>
+            <!-- <h5 style="font-weight: 500"><i class="fas fa-phone-alt" style="color: #0F9D58; font-weight: 600"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp" style="color: #0F9D58; font-weight: 600"></i> : +94 778669990</h5> -->
+
+            <div class="row mt-2 align-items-center justify-content-between">
+                <div class="col-2">
+                    <!-- <img src="{{ url('theme_light/assets/contact/mail.png') }}" alt="" style="height: 22px"> -->
+                    <i class="fas fa-envelope" style="color: #0F9D58; font-size: 23px"></i>
+                </div>
+
+                <div class="col-9 p-0">
+                    <h5 class="mb-1" style="font-weight: 500; font-size: 18px;"> : &nbsp;&nbsp;hello@tallentor.com</h5>
+                </div>
+            </div>
         </div>
     </div>
+    
 
     <div class="row mt-3" style="padding:20px">
         <div class="col-12">
@@ -140,13 +159,13 @@
               </div>
 
               <div class="form-group">
-                <label>Tell No</label>
-                <input type="text" class="form-control" name="phone" placeholder="+94 70 123876" required>
+                <label>Tel No</label>
+                <input type="text" class="form-control" name="phone" placeholder="+94 11x xxxxxx" required>
               </div>
 
               <div class="form-group">
-                <label>Your Messege</label>
-                <textarea rows="6" type="text" class="form-control" name="message" required>lorem ipsum messege</textarea>
+                <label>Your Message</label>
+                <textarea rows="6" type="text" class="form-control" name="message" placeholder="Hello there..." required></textarea>
 
               </div>
   
@@ -163,19 +182,19 @@
 
 
 <section id="customer-centre" class="mt-4">
-    <h1>Customer Center 24/7</h1>
+    <h1>Customer Centre 24/7</h1>
 
     <div class="row justify-content-center text-center" style="margin-top: 2rem;">
       <div class="col-12 p-0 mb-2">
-        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/cc_1.png') }}" alt="" class="img-fluid" style="height: 200px;"></a>
+        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/mcc_1.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <div class="col-12 p-0 mb-2">
-        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/cc_2.png') }}" alt="" class="img-fluid" style="height: 200px;"></a>
+        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/mcc_2.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <div class="col-12 p-0 mb-2">
-        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/cc_3.png') }}" alt="" class="img-fluid" style="height: 200px;"></a>
+        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/mcc_3.png') }}" alt="" class="img-fluid"></a>
       </div>
     </div>
 

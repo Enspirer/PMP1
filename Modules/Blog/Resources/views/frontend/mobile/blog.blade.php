@@ -24,8 +24,8 @@
     </div>
 </section>
 
-<section id="media-bottum-section-mob">
-    <h1>Tallentor Press</h1>
+<section id="media-bottum-section-mob" class="mt-5">
+    <h1>Tallentor Media Center</h1>
     <hr>
 
     <div class="filter-part">

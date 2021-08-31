@@ -245,7 +245,7 @@
                             <a class="main-menu-item {{ Request::segment(1) === 'shop' ? 'active-second' : null }} " href="{{route('frontend.shop.index')}}">e-Shop</a>
                         </li>
                         <li>
-                            <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}">Acadamy</a>
+                            <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}">Academy</a>
                         </li>
                         <li>
                             <a class="main-menu-item" href=""><img src="{{ url('theme_light/assets/image/tallentor_mall_logo.png') }}" alt="" class="img-fluid" style="height: 40px"></a>
