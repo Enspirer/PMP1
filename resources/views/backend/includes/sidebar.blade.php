@@ -39,6 +39,13 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/eshop_products'))}}" href="{{ route('admin.eshop_products.index') }}">
+                    <i class="nav-icon fab fa-shopify"></i>
+                    E-shop Products
+                </a>
+            </li>
+
 
 
             @if ($logged_in_user->isAdmin())
