@@ -23,30 +23,26 @@
             </div>
         </div>
         <div class="row">
-
-        @foreach($eshop_products as $key=> $eshop)
             <div class="col-md-4 mt-5">
                 <div class="card-shop">
-                    <a href="{{route('frontend.shop.item')}}"> <img src="{{url('upload/shop',$eshop->feature_image)}}" alt=""> </a>
+                    <a href="{{route('frontend.shop.item')}}"> <img src="{{url('theme_light/assets/pos.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
                         <div class="row m-0">
-                            <p><a href="{{route('frontend.shop.item')}}"> {{ $eshop->product_name }}</a></p>
+                            <p><a href="{{route('frontend.shop.item')}}"> POS System</a></p>
                             <div class="rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i>5.0</div>
                         </div>
                         <div class="row m-0 mt-1">
                             <div class="price">
-                                <h3>From ${{ $eshop->price }}</h3>
+                                <h3>From $2500</h3>
                                 <h6>Fully Customizable</h6>
+                                <!-- <h6>per month</h6> -->
                             </div>
                             <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        @endforeach    
-
-            
-            <!-- <div class="col-md-4 mt-5">
+            <div class="col-md-4 mt-5">
                 <div class="card-shop">
                     <a href="{{route('frontend.shop.item')}}"> <img src="{{url('theme_light/assets/ecommerce.jpg')}}" alt=""> </a>
                     <div class="card-shop-bottum">
@@ -76,6 +72,7 @@
                             <div class="price">
                                 <h3>From $3000</h3>
                                 <h6>Fully Customizable</h6>
+                                <!-- <h6>per month</h6> -->
                             </div>
                             <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                         </div>
@@ -112,6 +109,7 @@
                             <div class="price">
                                 <h3>From $4000</h3>
                                 <h6>Fully Customizable</h6>
+                                <!-- <h6>per month</h6> -->
                             </div>
                             <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                         </div>
@@ -130,12 +128,13 @@
                             <div class="price">
                                 <h3>From $3000</h3>
                                 <h6>Fully Customizable</h6>
+                                <!-- <h6>per month</h6> -->
                             </div>
                             <a href="{{route('frontend.shop.item')}}" class="ml-auto"> <i class="fa fa-arrow-right " aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
         </div>
 

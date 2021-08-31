@@ -5,8 +5,6 @@ namespace Modules\Shop\Http\Controllers\Frontend;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Modules\Shop\Entities\EshopProduct;
-use Auth;
 
 class ShopController extends Controller
 {
@@ -16,12 +14,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        $eshop_products = EshopProduct::where('status','=','Enabled')->get();
-        // dd($eshop_products);
-
-        return view('shop::frontend.shop',[
-            'eshop_products' => $eshop_products
-        ]);
+        return view('shop::frontend.shop');
     }
 
     public function item()
