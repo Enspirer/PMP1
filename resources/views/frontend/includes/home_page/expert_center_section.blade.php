@@ -37,7 +37,7 @@
                 <a href="{{route("frontend.expert_center")}}" data-animscroll="fade-up" style="margin: 0;background: #0F9D58 ;border: none;color: #fff;padding: 12px 25px">Book your 15 Min FREE consultation</a>
             </div>
             <div class="right-image col-md-6">
-                <img src="{{url('theme_light/assets/image/expert.png')}}" alt="" data-animscroll="fade-left">
+                <img src="{{url('theme_light/assets/expert_center/expert_center.png')}}" alt="" data-animscroll="fade-left">
             </div>
         </div>
     </div>

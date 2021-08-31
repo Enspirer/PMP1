@@ -107,7 +107,7 @@
     </div><!-- #app -->
 
 
-    <div class="text-right mr-3" style="position:fixed; bottom: 5rem; right:0">
+    <div class="text-right" style="position:fixed; bottom: 0.8rem; right:0.8rem">
 
         <div class="d-inline-block bg-light hide p-2 mr-1" style="box-shadow: 0 2px 4px rgb(0 0 0 / 40%); border-radius: 40px; position">
 
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="col-12">
-                    <a class="mb-3" type="button" style="color: #344955"><i class="fab fa-whatsapp" style="font-size: 30px;"></i></a> 
+                    <a class="mb-3" type="button" data-toggle="modal" data-target="#chat" style="color: #344955"><i class="fab fa-whatsapp" style="font-size: 30px;"></i></a> 
                 </div>
 
                 <div class="col-12">
@@ -129,6 +129,37 @@
         
         <a class="d-block open border bg-primary ml-auto" type="button"><i class="fas fa-plus"></i></a>
     </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="chat" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 60%;">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chatLabel">WhatsApp Team</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" id="message" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary border-0 text-light" data-dismiss="modal">Close</button>
+                <a href="https://api.whatsapp.com/send/?phone=94777009990&text=" type="button" class="btn border-0 text-light" style="background: #0f9d58">Send</a>
+            </div>
+            </div>
+        </div>
+        </div>
 
 
 
@@ -466,7 +497,17 @@
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
         })();
+
+        Tawk_API.onLoad = function(){
+            Tawk_API.hideWidget();
+        };
         
+
+        function chat() {
+            Tawk_API.onLoad = function(){
+                Tawk_API.hideWidget();
+            };
+        }
     </script>
     <!--End of Tawk.to Script-->
 
