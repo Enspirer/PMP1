@@ -38,3 +38,12 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      */
     include_route_files(__DIR__.'/backend/');
 });
+
+
+Breadcrumbs::for('admin.project_category.index', function ($trail) {
+    $trail->push('Project Category', route('admin.project_category.index'));
+});
+
+Breadcrumbs::for('admin.project_category.edit', function ($trail) {
+    $trail->push('Project Category Edit', route('admin.project_category.edit',1));
+});

@@ -25,26 +25,68 @@
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link {{active_class(Route::is('admin/blog_category'))}}" href="{{ route('admin.blog_category.index') }}">
-                    <i class="nav-icon fas fa-list-alt"></i>
-                    Blog Category
-                </a>
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link {{active_class(Route::is('admin/blog_post'))}}" href="{{ route('admin.blog_post.index') }}">
+
+            <li class="nav-item nav-dropdown ">
+                <a class="nav-link nav-dropdown-toggle " href="#">
+                    <i class="nav-icon fas fa-tasks"></i>
+                    Projects
+                </a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/project_category'))}}" href="{{ route('admin.project_category.index') }}">  
+                            Category
+                        </a>
+                    </li>
+                </ul>
+            </li> 
+
+
+
+
+            <li class="nav-item nav-dropdown ">
+                <a class="nav-link nav-dropdown-toggle " href="#">
                     <i class="nav-icon fas fa-book"></i>
-                    Blog Post
+                    Blog
                 </a>
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link {{active_class(Route::is('admin/eshop_products'))}}" href="{{ route('admin.eshop_products.index') }}">
-                    <i class="nav-icon fab fa-shopify"></i>
-                    E-shop Products
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/blog_category'))}}" href="{{ route('admin.blog_category.index') }}">  
+                            Blog Category
+                        </a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/blog_post'))}}" href="{{ route('admin.blog_post.index') }}">                       
+                            Blog Post
+                        </a>
+                    </li>
+                        
+                </ul>
+            </li>  
+
+            <li class="nav-item nav-dropdown ">
+                <a class="nav-link nav-dropdown-toggle " href="#">
+                <i class="nav-icon fab fa-shopify"></i>
+                    E-shop
                 </a>
-            </li>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/eshop_products'))}}" href="{{ route('admin.eshop_products.index') }}">
+                            Products
+                        </a>
+                    </li>                        
+                </ul>
+            </li>  
+
+
+            
+
+            
+
+            
 
 
 
