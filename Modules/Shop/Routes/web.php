@@ -40,3 +40,15 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      */
     include_route_files(__DIR__.'/backend/');
 });
+
+Breadcrumbs::for('admin.eshop_products.index', function ($trail) {
+    $trail->push('Eshop Products', route('admin.eshop_products.index'));
+});
+
+Breadcrumbs::for('admin.eshop_products.create', function ($trail) {
+    $trail->push('Eshop Products Create', route('admin.eshop_products.create'));
+});
+
+Breadcrumbs::for('admin.eshop_products.edit', function ($trail) {
+    $trail->push('Eshop Products Edit', route('admin.eshop_products.edit',1));
+});
