@@ -57,6 +57,26 @@
         <style>
             a.link_element:hover {
                 color: black !important;
+                font-size: 40px;
+            }
+        </style>
+
+        <style>
+            .open {
+                border-radius: 80px;
+                padding: 21px 25px;
+            }
+            .open i {
+                font-size: 25px;
+                color: white;
+            }
+            .imp {
+                opacity: 100!important;
+                transition : opacity 1s;
+            }
+            .hide {
+                opacity : 0;
+                transition : opacity 1s;
             }
         </style>
         @stack('after-styles')
@@ -77,6 +97,30 @@
             @yield('content')
         </div><!-- container -->
     </div><!-- #app -->
+
+
+    <div class="text-right mr-3">
+
+        <div class="d-inline-block bg-light hide p-2 mr-1" style="box-shadow: 0 2px 4px rgb(0 0 0 / 40%); border-radius: 40px">
+
+            <div class="row align-items-center text-center" style="width: 80px">
+                <div class="col-12">
+                    <button class="mt-3 mb-3" style="color: #344955"><i class="fas fa-suitcase"></i></button> 
+                </div>
+
+                <div class="col-12">
+                    <button class="mb-3" style="color: #344955"><i class="far fa-file-alt"></i></button> 
+                </div>
+
+                <div class="col-12">
+                    <button class="mb-3" style="color: #344955"><i class="fas fa-wallet"></i></button> 
+                </div>
+
+            </div>
+        </div>
+        
+        <button class="d-block open border bg-primary ml-auto"><i class="fas fa-plus"></i></button>
+    </div>
 
 
 
@@ -426,6 +470,14 @@
         });
 
     </script>
+
+
+
+<script>
+    $('.open').on('click', function() {
+        $(this).siblings().toggleClass('imp');
+    })
+</script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
