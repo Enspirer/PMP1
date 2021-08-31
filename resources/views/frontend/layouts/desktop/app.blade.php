@@ -78,6 +78,14 @@
                 opacity : 0;
                 transition : opacity 1s;
             }
+            .open i {
+                transform: (0deg);
+                transition: transform 1s;
+            }
+            .plus-rotate {
+                transform: rotate(45deg)!important;
+                transition: transform 1s!important;
+            }
         </style>
         @stack('after-styles')
     </head>
@@ -99,27 +107,27 @@
     </div><!-- #app -->
 
 
-    <div class="text-right mr-3">
+    <div class="text-right mr-3" style="position:fixed; bottom: 5rem; right:0">
 
-        <div class="d-inline-block bg-light hide p-2 mr-1" style="box-shadow: 0 2px 4px rgb(0 0 0 / 40%); border-radius: 40px">
+        <div class="d-inline-block bg-light hide p-2 mr-1" style="box-shadow: 0 2px 4px rgb(0 0 0 / 40%); border-radius: 40px; position">
 
             <div class="row align-items-center text-center" style="width: 80px">
                 <div class="col-12">
-                    <button class="mt-3 mb-3" style="color: #344955"><i class="fas fa-suitcase"></i></button> 
+                    <a href="javascript:void(Tawk_API.toggle())" class="mt-3 mb-3" type="button" style="color: #344955" onclick="chat()"><i class="fas fa-headset" style="font-size: 30px;"></i></a> 
                 </div>
 
                 <div class="col-12">
-                    <button class="mb-3" style="color: #344955"><i class="far fa-file-alt"></i></button> 
+                    <a class="mb-3" type="button" style="color: #344955"><i class="fab fa-whatsapp" style="font-size: 30px;"></i></a> 
                 </div>
 
                 <div class="col-12">
-                    <button class="mb-3" style="color: #344955"><i class="fas fa-wallet"></i></button> 
+                    <a href="https://m.me/tallentor" class="mb-3" type="button" style="color: #344955"><i class="fab fa-facebook-messenger" style="font-size: 30px;"></i></a> 
                 </div>
 
             </div>
         </div>
         
-        <button class="d-block open border bg-primary ml-auto"><i class="fas fa-plus"></i></button>
+        <a class="d-block open border bg-primary ml-auto" type="button"><i class="fas fa-plus"></i></a>
     </div>
 
 
@@ -458,6 +466,7 @@
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
         })();
+        
     </script>
     <!--End of Tawk.to Script-->
 
@@ -476,6 +485,7 @@
 <script>
     $('.open').on('click', function() {
         $(this).siblings().toggleClass('imp');
+        $(this).find('i').toggleClass('plus-rotate');
     })
 </script>
 

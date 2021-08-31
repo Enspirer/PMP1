@@ -12,8 +12,8 @@
                 <div class="list-item-contact col-md-4" data-animscroll="fade-up">
                     <div class="card-contact">
                         <div class="map-part-top">
-                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
-                            <img class="flag" src="{{url('theme_light/assets/Image 64.png')}}" alt="">
+                            <img class="map" src="{{url('theme_light/assets/contact/sri_lanka.png')}}" alt="">
+                            <img class="flag" src="https://www.countryflags.io/lk/flat/64.png">
                         </div>
                         <div class="content-part">
                             <h3>Sri Lanka</h3>
@@ -40,8 +40,8 @@
                 <div class="list-item-contact col-md-4" data-animscroll="fade-up">
                     <div class="card-contact">
                         <div class="map-part-top">
-                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
-                            <img class="flag" src="{{url('theme_light/assets/Image 52.png')}}" alt="">
+                            <img class="map" src="{{url('theme_light/assets/contact/australia.png')}}" alt="">
+                            <img class="flag" src="https://www.countryflags.io/au/flat/64.png">
                         </div>
                         <div class="content-part">
                             <h3>Australia</h3>
@@ -68,8 +68,8 @@
                 <div class="list-item-contact col-md-4" data-animscroll="fade-up">
                     <div class="card-contact">
                         <div class="map-part-top">
-                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
-                            <img class="flag" src="{{url('theme_light/assets/Image 45.png')}}" alt="">
+                            <img class="map" src="{{url('theme_light/assets/contact/uae.png')}}" alt="">
+                            <img class="flag" src="https://www.countryflags.io/ae/flat/64.png">
                         </div>
                         <div class="content-part">
                             <h3>United Arab Emirates</h3>
@@ -96,6 +96,8 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
 
 {{--                <div class="list-item-contact col-md-4" data-animscroll="fade-up">--}}
 {{--                    <div class="card-contact">--}}
@@ -148,12 +150,12 @@
 {{--                    </div>--}}
 {{--                </div>--}}
 
-
+            <div class="row">
                 <div class="list-item-contact col-md-4" data-animscroll="fade-up">
                     <div class="card-contact">
                         <div class="map-part-top">
-                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
-                            <img class="flag" src="{{url('theme_light/assets/Image 41.png')}}" alt="">
+                            <img class="map" src="{{url('theme_light/assets/contact/uk.png')}}" alt="">
+                            <img class="flag" src="https://www.countryflags.io/gb/flat/64.png">
                         </div>
                         <div class="content-part">
                             <h3>United Kingdom</h3>
@@ -314,7 +316,7 @@
 {{--                <div class="list-item-contact col-md-4" data-animscroll="fade-up">--}}
 {{--                    <div class="card-contact">--}}
 {{--                        <div class="map-part-top">--}}
-{{--                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">--}}
+{{--                            <img class="map" src="{{url('theme_light/assets/contact/australia.png')}}" alt="">--}}
 {{--                            <img class="flag" src="{{url('theme_light/assets/Image 52.png')}}" alt="">--}}
 {{--                        </div>--}}
 {{--                        <div class="content-part">--}}
@@ -343,8 +345,8 @@
                 <div class="list-item-contact col-md-4" data-animscroll="fade-up">
                     <div class="card-contact">
                         <div class="map-part-top">
-                            <img class="map" src="{{url('theme_light/assets/map.png')}}" alt="">
-                            <img class="flag" src="{{url('theme_light/assets/Image 51.png')}}" alt="">
+                            <img class="map" src="{{url('theme_light/assets/contact/malaysia.png')}}" alt="">
+                            <img class="flag" src="https://www.countryflags.io/my/flat/64.png">
                         </div>
                         <div class="content-part">
                             <h3>Malaysia</h3>
@@ -372,7 +374,33 @@
 
 
 
+                <div class="list-item-contact col-md-4" data-animscroll="fade-up">
+                    <div class="card-contact" style="height:100%">
+                        <div class="map-part-top">
+                            <img class="map" src="{{url('theme_light/assets/contact/france.png')}}" alt="">
+                            <img class="flag" src="https://www.countryflags.io/fr/flat/64.png">
+                        </div>
+                        <div class="content-part">
+                            <h3>France</h3>
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <div class="col-md-10">61 Rue Saint Blaise 75020 Paris</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                <div class="col-md-10">+33 6 52 30 02 55</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                <div class="col-md-10">france@tallentor.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
 
     </div>

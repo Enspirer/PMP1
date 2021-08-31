@@ -7348,7 +7348,7 @@ input.search-menu:focus
   height: auto;
   position: absolute;
   left: 14px;
-  bottom: 14px;
+  bottom: 1px;
 }
 
 .contact-body .partner-section-contact .office-list-contact .row .list-item-contact .card-contact .content-part {
