@@ -278,7 +278,7 @@
 
     <!-- Scripts -->
     @stack('before-scripts')
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{{url('js/core/swiper-bundle.min.js')}}"></script>
 
     <script>
         var galleryThumbs = new Swiper(".gallery-thumbs", {
@@ -373,8 +373,8 @@
 
     <!-- hammer js  -->
     <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{url('js/core/popper.min.js')}}"></script>
+    <script src="{{url('js/core/bootstrap.min.js')}}"></script>
     <!-- Theame JS  -->
     <script src="{{url('theme_light/js/main.js')}}"></script>
     <script src="{{url('theme_light/plugin/dist/js/anim-trap.js')}}"></script>
@@ -383,16 +383,13 @@
 
     <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
     <script src="{{url('theme_light/charts/chart_section.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"
-    ></script>
+    <script src="{{url('js/core/hammer.min.js')}}"></script>
+    <script src="{{url('js/core/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url('js/core/dropzone.js')}}"></script>
+    <script src="{{url('js/core/uppy.min.js')}}"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/dropzone.js" integrity="sha512-4p9OjnfBk18Aavg91853yEZCA7ywJYcZpFt+YB+p+gLNPFIAlt2zMBGzTxREYh+sHFsttK0CTYephWaY7I3Wbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://releases.transloadit.com/uppy/v2.0.2/uppy.min.js"></script>
+
 
 
     
