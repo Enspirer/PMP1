@@ -6,6 +6,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Projects\Entities\ProjectCategory;
+use Modules\Projects\Entities\Tallents;
 use DataTables;
 use Auth;
 
@@ -162,6 +163,8 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
+        $tallents = Tallents::where('category_id',$id)->update(array('category_id' => null));
+
         ProjectCategory::where('id',$id)->delete();
         return back();
     }
