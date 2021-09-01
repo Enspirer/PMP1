@@ -47,3 +47,15 @@ Breadcrumbs::for('admin.project_category.index', function ($trail) {
 Breadcrumbs::for('admin.project_category.edit', function ($trail) {
     $trail->push('Project Category Edit', route('admin.project_category.edit',1));
 });
+
+Breadcrumbs::for('admin.tallents.index', function ($trail) {
+    $trail->push('Tallents', route('admin.tallents.index'));
+});
+
+Breadcrumbs::for('admin.tallents.create', function ($trail) {
+    $trail->push('Tallents Create', route('admin.tallents.create'));
+});
+
+Breadcrumbs::for('admin.tallents.edit', function ($trail) {
+    $trail->push('Tallents Edit', route('admin.tallents.edit',1));
+});

@@ -39,6 +39,11 @@
                             Category
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/tallents'))}}" href="{{ route('admin.tallents.index') }}">  
+                            Tallents
+                        </a>
+                    </li>
                 </ul>
             </li> 
 
