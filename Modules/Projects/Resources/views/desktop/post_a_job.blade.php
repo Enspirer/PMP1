@@ -122,11 +122,28 @@
 </script> -->
 
 <script>
+    const { Instagram } = Uppy;
+    const { Facebook } = Uppy;
+    const { Url } = Uppy;
+    const { Dropbox } = Uppy;
+    const { OneDrive } = Uppy;
+    const { Zoom } = Uppy;
+    const { GoogleDrive } = Uppy
+
+
       var uppy = new Uppy.Core()
         .use(Uppy.Dashboard, {
           inline: true,
           target: '#drag-drop-area'
         })
+        uppy.use(Facebook, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        uppy.use(Instagram, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        uppy.use(Url, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/', locale: {} })
+        uppy.use(Dropbox, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        uppy.use(OneDrive, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        // uppy.use(Zoom, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        uppy.use(GoogleDrive, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+
         .use(Uppy.Tus, {endpoint: 'https://tusd.tusdemo.net/files/'})
 
       uppy.on('complete', (result) => {

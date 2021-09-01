@@ -396,6 +396,9 @@
 
     <script src="https://releases.transloadit.com/uppy/v2.0.2/uppy.min.js"></script>
 
+
+    
+
     <script>
         $(document).ready(function () {
             "use strict";
