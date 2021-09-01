@@ -1,15 +1,3 @@
-
-
-
-<!DOCTYPE html>
-@langrtl
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl">
-@else
-    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    @endlangrtl
-
-
-
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -240,7 +228,7 @@
 
         <div class="container">
             <ul class="foote_bottom_ul_amrc">
-            
+
             </ul>
             <!--foote_bottom_ul_amrc ends here-->
             <p class="text-center">
