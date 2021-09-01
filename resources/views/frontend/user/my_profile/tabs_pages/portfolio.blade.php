@@ -18,28 +18,24 @@
 
         @foreach($portfolios as $portfolio)
             <div class="col-3 position-relative port" style="margin-bottom:30px!important;">
-                <a type="button" data-bs-toggle="modal" data-bs-target="#portfolio_view{{ $portfolio->id }}"><img src="{{ url('files', $portfolio->image) }}" alt="" class="img-fluid w-100" style="height:225px; object-fit: cover;"></a>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#portfolio_view" onclick="view({{ $portfolio->id }})"><img src="{{ url('files', $portfolio->image) }}" alt="" class="img-fluid w-100" style="height:225px; object-fit: cover;"></a>
 
                 <div class="carousel-caption p-0">
                     <p class="font-weight-bold mb-0">{{ $portfolio->title }}</p>
 
                     <div class="icons mt-2">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#portfolio_edit{{ $portfolio->id }}"><i class="fas fa-pen rounded-pill text-muted mr-2"></i></a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#portfolio_edit" onclick="edit({{ $portfolio->id }})"><i class="fas fa-pen rounded-pill text-muted mr-2"></i></a>
                         <a class="delete" href="{{ route('frontend.user.portfolio_delete', $portfolio->id) }}" type="button" data-bs-toggle="modal" data-bs-target="#portfolio_delete"><i class="fas fa-trash rounded-pill text-muted ml-2"></i></a>
                     </div>
-                    
                 </div>
-
-                @include('frontend.user.my_profile.edit_dialogs.portfolio_view')
-                @include('frontend.user.my_profile.edit_dialogs.portfolio_edit')
-                
             </div>
         @endforeach
     </div>
 </div>
 
-
+@include('frontend.user.my_profile.edit_dialogs.portfolio_view')
 @include('frontend.user.my_profile.edit_dialogs.portfolio_store')
+@include('frontend.user.my_profile.edit_dialogs.portfolio_edit')
 @include('frontend.user.my_profile.edit_dialogs.portfolio_delete')
 
 
@@ -90,6 +86,48 @@
             $("#image_edit_name").val(name);
         });
     });
+
+
+
+    //view function
+    function view(id) {
+        var settings = {
+            "url": "{{url('/')}}/api/portfolio/" + id,
+            "method": "GET",
+            "timeout": 0,
+            "dataType": "json",
+            };
+
+        $.ajax(settings).done(function (response) {
+            $('#view_image').attr('src', "files/" + response['image']);
+            $('#view_title').val(response['title']);
+            $('#view_description').val(response['description']);
+            $('#view_link').val(response['client_name']);
+            $('#portfolio_view .modal-footer').find(a).attr('href', response['link']);
+        });
+    }
+
+
+    //edit function
+    function edit(id) {
+        var settings = {
+            "url": "{{url('/')}}/api/portfolio/" + id,
+            "method": "GET",
+            "timeout": 0,
+            "dataType": "json",
+            };
+
+        $.ajax(settings).done(function (response) {
+            $('.edit_image').attr('src', "files/" + response['image']);
+            $('#edit_title').val(response['title']);
+            $('#edit_description').val(response['description']);
+            $('#edit_link').val(response['link']);
+            $('#edit_client_name').val(response['client_name']);
+
+            $('#old_image').val(response['image']);
+            $('#hid_id').val(response['id']);
+        });
+    }
 
 </script>
 

@@ -110,6 +110,8 @@
           inline: true,
           target: '#drag-drop-area'
         })
+
+
         uppy.use(Facebook, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         uppy.use(Instagram, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         uppy.use(Url, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/', locale: {} })
@@ -118,7 +120,7 @@
         // uppy.use(Zoom, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         uppy.use(GoogleDrive, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
 
-        .use(Uppy.Tus, {endpoint: 'https://tusd.tusdemo.net/files/'})
+        .use(Uppy.Tus, {endpoint: 'https://www.tallentor.com/files/'})
 
       uppy.on('complete', (result) => {
         console.log('Upload complete! We’ve uploaded these files:', result.successful)

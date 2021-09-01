@@ -60,6 +60,7 @@ class MyProfileController extends Controller
 
     public function portfolioUpdate(Request $request) {
 
+
         $user_id = Auth::id();
 
         $image = $request->file('new_image');
@@ -74,13 +75,13 @@ class MyProfileController extends Controller
             $imageName = $request->old_image;
         }
 
-        
         $portfolio = DB::table('portfolios')->where('id', $request->hid_id)->where('user_id', $user_id)->update([
             'title' => $request->title,
             'image' => $imageName,
             'description' => $request->description,
             'user_id' => $user_id,
-            'link' => $request->link
+            'link' => $request->link,
+            'client_name' => $request->client_name
         ]);
 
         return back();
@@ -94,4 +95,13 @@ class MyProfileController extends Controller
     }
 
 
+
+    public function getPortfolio($id) {
+
+        $portfolio = Portfolio::where('id', $id)->first();
+
+        $port = json_encode($portfolio);
+
+        return $port;
+    }
 }

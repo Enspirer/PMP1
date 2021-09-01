@@ -21,3 +21,5 @@ use App\Http\Controllers\Frontend\User\MyProfileController;
 Route::post('check_email', [LoginController::class, 'check_email'])->name('check_email');
 
 Route::post('check_phone_no', [LoginController::class, 'check_phone_no'])->name('check_phone_no');
+
+Route::get('portfolio/{id}', [MyProfileController::class, 'getPortfolio'])->name('get_portfolio');
