@@ -384,7 +384,7 @@
     <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
     <script src="{{url('theme_light/charts/chart_section.js')}}"></script>
     <script src="{{url('js/core/hammer.min.js')}}"></script>
-    <script src="{{url('js/core/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url('js/core/jquery-3.6.0.min.js')}}"></script>
     <script src="{{url('js/core/dropzone.js')}}"></script>
     <script src="{{url('js/core/uppy.min.js')}}"></script>
 
