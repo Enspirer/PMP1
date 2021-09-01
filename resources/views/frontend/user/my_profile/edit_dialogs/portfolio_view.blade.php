@@ -15,11 +15,11 @@
                 </div>
 
                 <div class="col-6">
-                  <h5 class="text-left" style="line-height: 30px;" id="view_image">{{ $portfolio->title }}</h5>
+                  <h5 class="text-left" style="line-height: 30px;" id="view_title"></h5>
 
-                  <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 9; -webkit-box-orient: vertical; text-align: justify;" id="view_description">{{ $portfolio->description }}</p>
+                  <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 9; -webkit-box-orient: vertical; text-align: justify;" id="view_description"></p>
 
-                  <p class="text-left font-weight-bold" id="view_client_name">Client Name : {{ $portfolio->client_name }}</p>
+                  <p class="text-left font-weight-bold" id="view_client_name"></p>
                 </div>
               </div>
         </div>

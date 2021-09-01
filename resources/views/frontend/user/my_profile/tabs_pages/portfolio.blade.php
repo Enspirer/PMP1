@@ -100,10 +100,10 @@
 
         $.ajax(settings).done(function (response) {
             $('#view_image').attr('src', "files/" + response['image']);
-            $('#view_title').val(response['title']);
-            $('#view_description').val(response['description']);
-            $('#view_link').val(response['client_name']);
-            $('#portfolio_view .modal-footer').find(a).attr('href', response['link']);
+            $('#view_title').text(response['title']);
+            $('#view_description').text(response['description']);
+            $('#view_client_name').text('Client Name : ' + response['client_name']);
+            $('#portfolio_view .modal-footer').find('a').attr('href', response['link']);
         });
     }
 
