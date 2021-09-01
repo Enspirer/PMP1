@@ -110,11 +110,11 @@
           inline: true,
           target: '#drag-drop-area'
         })
-        uppy.use(Facebook, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        uppy.use(Facebook, { target: Uppy.Dashboard, companionUrl: 'http://localhost/' })
         uppy.use(Instagram, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         uppy.use(Url, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/', locale: {} })
         uppy.use(Dropbox, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
-        uppy.use(OneDrive, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
+        uppy.use(OneDrive, { target: Uppy.Dashboard, companionUrl: 'https://www.tallentor.com/' })
         // uppy.use(Zoom, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         uppy.use(GoogleDrive, { target: Uppy.Dashboard, companionUrl: 'https://www.tallentor.com/' })
 
