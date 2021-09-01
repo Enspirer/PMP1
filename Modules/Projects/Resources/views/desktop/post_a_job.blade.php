@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="col-11">
-                    <h5 class="mb-0" style="color: #0F9D58">Programming & Development&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;Basic Website</h5>
+                    <p class="mb-0" style="color: #0F9D58; font-size:0.9rem;">Programming & Development&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;Basic Website</p>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
             </div>
 
             <div class="col-11">
-                <h5 class="mb-0 text-secondary">Give your job a title</h5>
+                <h5 class="mb-0 text-secondary" style="font-size: 18px;">Give your job a title</h5>
             </div>
 
             <input type="text" class="form-control mt-3 w-100" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="margin-left: 1.8rem;">
@@ -36,53 +36,27 @@
             </div>
 
             <div class="col-11">
-                <h5 class="mb-0 text-secondary">Describe the job in details</h5>
+                <h5 class="mb-0 text-secondary" style="font-size: 18px;">Describe the job in details</h5>
                 
             </div>
 
-            <p class="mt-2" style="margin-left: 1.8rem;">Include expected deliverables, requirements and time frame for delivery</p>
+            <p class="mt-2 text-secondary" style="margin-left: 1.8rem; font-size: 0.9rem;">Include expected deliverables, requirements and time frame for delivery</p>
 
             
         </div>
 
-        <div class="form-group w-100" style="margin-left: 1rem;">
-            <textarea id="editor"></textarea>
-        </div>
 
-
-        <div class="form-group w-100 position-relative" style="margin-left: 1rem;">
-            <!-- <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
-                <div class="row align-items-center w-100" style="position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
-                    <div class="col-6">
-                        <div class="row align-items-center">
-                            <div class="col-1 text-center">
-                                <img src="{{ url('theme_light/assets/projects/upload.png') }}" class="img-fluid">
-                            </div>
-                            <div class="col-11">
-                                <h5 class="mb-0">Drag and drop a file here</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1">
-                        <h5 class="mb-0">OR</h5>
-                    </div>
-
-                    <div class="col-5 text-right">
-                        <button type="file" class="btn bg-light text-primary border-success class="dropzone"">Upload Files</button>
-                    </div>
-                </div>
-            </form> -->
+        <div class="form-group w-100 position-relative mb-0" style="margin-left: 1rem;">
             <div class="w-100" id="drag-drop-area"></div>
         </div>
 
         <div class="row" style="margin-left: 1rem;">
             <div class="col-6 p-0">
-                <p>Supported file types <img src="{{ url('theme_light/assets/projects/info-circle.svg') }}" alt="" class="img-fluid ml-2"></p>
+                <p style="font-size: 0.9rem;">Supported file types <img src="{{ url('theme_light/assets/projects/info-circle.svg') }}" alt="" class="img-fluid ml-2" style="height: 0.8rem"></p>
             </div>
 
             <div class="col-6 text-right p-0">
-                <p>Using 0/10MB</p>
+                <p style="font-size: 0.9rem;">Using 0/10MB</p>
             </div>
         </div>
 
