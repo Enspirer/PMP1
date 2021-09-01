@@ -116,7 +116,7 @@
         uppy.use(Dropbox, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         uppy.use(OneDrive, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
         // uppy.use(Zoom, { target: Uppy.Dashboard, companionUrl: 'https://companion.uppy.io/' })
-        uppy.use(GoogleDrive, { target: Uppy.Dashboard, companionUrl: 'https://ww.tallentor.com/' })
+        uppy.use(GoogleDrive, { target: Uppy.Dashboard, companionUrl: 'https://www.tallentor.com/' })
 
         .use(Uppy.Tus, {endpoint: 'https://tusd.tusdemo.net/files/'})
 
