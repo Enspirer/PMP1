@@ -157,105 +157,52 @@
 
                     <div class="dropdown-menu w-75" aria-labelledby="dropdownMenuButton">
                         <div class="nav nav-tabs">
+
+                            @foreach($categories as $category)
+                                @if($category->status == 'Enabled')
+                                    @if($loop->first)
                     
-                            <button class="nav-link active text-left border-0 bg-light w-100" id="nav-programming-tab" data-toggle="tab" data-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="true">
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/programming_development.svg')}}" alt="" style="height: 30px;">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Programming & Development</p>
-                                    </div>
-                                </div>
-                            </button>
+                                        <button class="nav-link active text-left border-0 bg-light w-100" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true">
+                                            <div class="row align-items-center text-center">
+                                                <div class="col-4">
+                                                    <img src="{{url('upload/projects', $category->icon)}}" alt="" style="height: 30px;">
+                                                </div>
+                                                <div class="col-8">
+                                                    <p class="mb-0" style="font-size: 0.9rem">{{ $category->name}}</p>
+                                                </div>
+                                            </div>
+                                        </button>
 
-                            <button class="nav-link text-left border-0 bg-light w-100" id="nav-digital-tab" data-toggle="tab" data-target="#nav-digital" type="button" role="tab" aria-controls="nav-digital" aria-selected="false">
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/digital_marketing.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Digital Marketing</p>
-                                    </div>
-                                </div>
-                            </button>
+                                    @else
 
-                            <button class="nav-link text-left border-0 bg-light w-100" id="nav-graphic-tab" data-toggle="tab" data-target="#nav-graphic" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false">
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/graphic_designing.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Graphic Designing</p>
-                                    </div>
-                                </div>
-                            </button>
+                                        <button class="nav-link text-left border-0 bg-light w-100" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true">
+                                            <div class="row align-items-center text-center">
+                                                <div class="col-4">
+                                                    <img src="{{url('upload/projects', $category->icon)}}" alt="" style="height: 30px;">
+                                                </div>
+                                                <div class="col-8">
+                                                    <p class="mb-0" style="font-size: 0.9rem">{{ $category->name}}</p>
+                                                </div>
+                                            </div>
+                                        </button>
 
-                            <button class="nav-link text-left border-0 bg-light w-100" id="nav-education-tab" data-toggle="tab" data-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/education_training.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Education & Training</p>
-                                    </div>
-                                </div>
-                            </button>
+                                    @endif
+ 
+                                @else
 
-                            <button class="nav-link text-left border-0 bg-light w-100" id="" data-toggle="tab" data-target="#" type="button" role="tab" aria-controls="nav-digital" aria-selected="false" disabled>
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/writing_translation.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Writing & Translation</p>
-                                    </div>
-                                </div>
-                            </button>
+                                    <button class="nav-link text-left border-0 bg-light w-100" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true" disabled>
+                                        <div class="row align-items-center text-center">
+                                            <div class="col-4">
+                                                <img src="{{url('upload/projects', $category->icon)}}" alt="" style="height: 30px;">
+                                            </div>
+                                            <div class="col-8">
+                                                <p class="mb-0" style="font-size: 0.9rem">{{ $category->name}}</p>
+                                            </div>
+                                        </div>
+                                    </button>
 
-                            <button class="nav-link text-left border-0 bg-light w-100" id="" data-toggle="tab" data-target="#" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false" disabled>
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/video_photography.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Video & Photography</p>
-                                    </div>
-                                </div>
-                            </button>
-
-                            <button class="nav-link text-left border-0 bg-light w-100" id="" data-toggle="tab" data-target="#" type="button" role="tab" aria-controls="nav-online" aria-selected="true" disabled>
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/graphic/music_audio.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Music & Audio</p>
-                                    </div>
-                                </div>
-                            </button>
-
-                            <button class="nav-link text-left border-0 bg-light w-100" id="" data-toggle="tab" data-target="#" type="button" role="tab" aria-controls="nav-digital" aria-selected="false" disabled>
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/business_sales.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Business & Sales</p>
-                                    </div>
-                                </div>
-                            </button>
-
-                            <button class="nav-link text-left border-0 bg-light w-100" id="" data-toggle="tab" data-target="#" type="button" role="tab" aria-controls="nav-graphic" aria-selected="false" disabled>
-                                <div class="row align-items-center text-center">
-                                    <div class="col-4">
-                                        <img src="{{url('theme_light/assets/categories/art_craft.svg')}}" alt="" style="height: 30px">
-                                    </div>
-                                    <div class="col-8">
-                                        <p class="mb-0" style="font-size: 0.9rem">Art & Craft</p>
-                                    </div>
-                                </div>
-                            </button>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -264,222 +211,37 @@
             <div class="col-md-12">
                 <div class="tab-content" id="nav-tabContent">
 
-                    <h6 class="mb-4 category_title"></h6>
+                    <!-- <h6 class="mb-4 category_title"></h6> -->
 
-                    <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/basic_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Basic Website</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/dynamic_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Dynamic Website</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/ecommerce_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">E-commerce Website</p>
-                            </div>
-                        </div>
+                    @foreach($categories as $category)
+                        @if($loop->first)
 
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
-                                <img src="{{url('theme_light/assets/categories/wordpress_website.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">WordPress Website</p>
+                            <div class="tab-pane fade show active" id="category-{{ $category->id }}" role="tabpanel" aria-labelledby="tab-{{$category->id}}">
+                                <div class="row mb-3 justify-content-center">
+                                    @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
+                                        <div class="col-4 p-2">
+                                            <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="" class="img-fluid rounded w-100" style="height:80px;">
+                                            <p class="mt-2 mb-0" style="font-size: 0.8rem">{{ $talent->title }}</p>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
-                                <img src="{{url('theme_light/assets/categories/landing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Landing Page Design</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/web_banner.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Web Banners</p>
-                            </div>
-                        </div>
 
-                        <div class="row justify-content-center">
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/packs.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Icon Pack Design</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/wireframe.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Website Wireframes</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/erp.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">ERP Solutions</p>
-                            </div>
-                        </div>
+                        @else
 
-                        <div class="row justify-content-center">
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/pms.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">PMS Solutions</p>
+                            <div class="tab-pane fade show" id="category-{{ $category->id }}" role="tabpanel" aria-labelledby="tab-{{$category->id}}">
+                                <div class="row mb-3 justify-content-center">
+                                    @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
+                                        <div class="col-4 p-2">
+                                            <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="" class="img-fluid rounded w-100" style="height:80px;">
+                                            <p class="mt-2 mb-0" style="font-size: 0.8rem">{{ $talent->title }}</p>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/payroll.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Payroll Management</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/pos.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">POS Systems</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="nav-digital" role="tabpanel" aria-labelledby="nav-digital-tab">
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/social-media-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Social Media Marketing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/seo-2.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Search Engine Optimization</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/search-engine-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Search Engine Marketing</p>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/video-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Video Marketing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/e-commerce-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">E-Commerce Marketing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/sms-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">SMS Marketing</p>
-                            </div>
-                        </div>  
-
-                        <div class="row justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/email-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Email Marketing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/mobile-app-marketing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Mobile App Marketing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/web-analytics-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="height:70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Web Analytics</p>
-                            </div>
-                        </div>    
-                    </div>
-
-                    <div class="tab-pane fade" id="nav-graphic" role="tabpanel" aria-labelledby="nav-graphic-tab">
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/coffee.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Logo Design</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/company-branding.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Company Branding</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/company-stationary.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Company Stationary</p>
-                            </div>  
-                        </div>
-
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/package-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Package Design</p>
-                            </div>
-                            <div class="col-3 p-1">   
-                                <img src="{{url('theme_light/assets/categories/brochure-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Brochure Design</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/flyer-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Flyer Design</p>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/website-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Website Design</p>
-                            </div>
-                            <div class="col-3 p-1">   
-                                <img src="{{url('theme_light/assets/categories/app-ui-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">App UI Design</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/presentation-design.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Presentation Design</p>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/web-banners.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Web Banners</p>
-                            </div>
-                            <div class="col-3 p-1">   
-                                <img src="{{url('theme_light/assets/categories/ux.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">UX Designs</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/photoshop-editing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Photoshop Editing</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/digital-marketing.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Digital Marketing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/graphic-designing-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Graphic Designing</p>
-                            </div>
-                            <div class="col-3 p-1">
-                                <img src="{{url('theme_light/assets/categories/mobile-apps.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Mobile Apps</p>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="300">
-                                <img src="{{url('theme_light/assets/categories/web-programming.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Web Programming</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="400">
-                                <img src="{{url('theme_light/assets/categories/seo-1.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Search Engine Optimization</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/shopify.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">Shopify Integration</p>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/php-laravel.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">PHP Laravel</p>
-                            </div>
-                            <div class="col-3 p-1" data-animscroll="zoom-in" data-animscroll-duration="500" data-animscroll-delay="500">
-                                <img src="{{url('theme_light/assets/categories/wordpress.jpg')}}" alt="" class="img-fluid rounded w-100" style="object-fit: cover; height: 70px;">
-                                <p class="mt-2 mb-0" style="font-size: 0.8rem">WordPress</p>
-                            </div>
-                        </div>
-                    </div>
-
+                        
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
