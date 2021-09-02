@@ -106,11 +106,11 @@
 
 
 
-<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+<!-- <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
+
 <script>
     var swiper = new Swiper(".swiper-container", {
         pagination: {
@@ -133,4 +133,4 @@
         $(this).siblings(".panel-heading").removeClass("active");
     });
 </script>
-</body>
+</body> -->

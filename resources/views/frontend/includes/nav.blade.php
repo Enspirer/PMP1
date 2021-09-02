@@ -325,3 +325,19 @@
 
 
     </section>
+
+
+@push('after-scripts')
+    <script>
+        // ---------------- Drop Down menu ---------------
+
+        function myFunction2(event) {
+            event.stopPropagation();
+            document.getElementById("menu-container").classList.toggle("active");
+        }
+
+        // window.onclick = function () {
+        //     document.getElementById("menu-container").classList.remove("active");
+        // };
+    </script>
+@endpush
