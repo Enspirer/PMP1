@@ -35,7 +35,7 @@
         <div class="col">
             <div class="pie" data-pie='{ "percent": 100, "round": true, "number": false, "colorCircle": "#e6e6e6", "size": "130", "lineargradient": ["#0e9031","#00ff22"] }' ></div>
 
-            <h6 class="font-weight-bold mt-5">100% Response Rate</h6>
+            <h6 class="font-weight-bold mt-3">100% Response Rate</h6>
         </div>
 
         <div class="col">
@@ -99,44 +99,39 @@
 
 @push('after-scripts')
 
+<script src="{{ url('theme_light/js/circularProgressBar.min.js') }}"></script>
 <script>
+
       window.addEventListener('DOMContentLoaded', () => {
         const circle = new CircularProgressBar('pie');
 
-        const pie = document.querySelectorAll('.pie');
-        const range = document.querySelector('[type="range"]');
+        // const pie = document.querySelectorAll('.pie');
+        // const range = document.querySelector('[type="range"]');
 
-        range.addEventListener('input', (e) => {
-          pie.forEach((el, index) => {
-            const options = {
-              index: index + 1,
-              percent: e.target.value
-            }
-            circle.animationTo(options);
-          })
-        })
+        
+        //   pie.forEach((el, index) => {
 
-        setInterval(() => {
-          const options = {
-            index: 14,
-            percent: Math.floor((Math.random() * 100) + 1),
-          }
-          circle.animationTo(options);
-        }, 3000);
-
-        // document.querySelectorAll('pre code').forEach((el) => {
-        //   hljs.highlightElement(el);
-        // });
-
-        // const infoCode = document.querySelectorAll('.info-code');
-        // infoCode.forEach(info => {
-        //   info.addEventListener('click', (e) => {
-        //     e.target.closest('section').classList.toggle('show-code');
+        //     const options = {
+        //       index: index + 1,
+        //       percent: el.target.data-pie
+        //     }
+        //     circle.animationTo(options);
         //   })
-        // })
+        
+
+        // setInterval(() => {
+        //   const options = {
+        //     index: 14,
+        //     percent: Math.floor((Math.random() * 100) + 1),
+        //   }
+        //   circle.animationTo(options);
+        // }, 3000);
+
+
 
       });
     </script>
-<script src="{{ url('theme_light/js/circularProgressBar.min.js') }}"></script>
+
+
 
 @endpush
