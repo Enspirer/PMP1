@@ -95,7 +95,12 @@ if (! function_exists('have_my_profile'))
         $myProfile = MyProfileDetails::where('user_id',$userDetails->id)->first();
 
 
-       
+        if($myProfile)
+        {
+            return $myProfile;
+        }else{
+            return null;
+        }
 
 
     }

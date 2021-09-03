@@ -15,6 +15,7 @@ class CreateMyProfileDetailsTable extends Migration
     {
         Schema::create('my_profile_details', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('profile_name')->nullable();
             $table->text('profile_description')->nullable();
             $table->text('specialized_on')->nullable();
             $table->text('company_size')->nullable();

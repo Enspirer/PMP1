@@ -39,6 +39,14 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         //Profile Maintain
         Route::get('my_profile',[MyProfileController::class,'index'])->name('my_profile');
+        Route::post('my_profile/store',[MyProfileController::class,'profileStore'])->name('profile_store');
+        Route::post('my_profile/update/profile-info',[MyProfileController::class,'profileInfoUpdate'])->name('profile_info_update');
+        Route::post('my_profile/update/specialized',[MyProfileController::class,'profileSpecializedUpdate'])->name('profile_specialized_update');
+        Route::post('my_profile/update/company-size',[MyProfileController::class,'profileCompanySizeUpdate'])->name('profile_company_size_update');
+        Route::post('my_profile/update/skills',[MyProfileController::class,'profileSkillsUpdate'])->name('profile_skills_update');
+        Route::post('my_profile/update/license',[MyProfileController::class,'profileLicenseUpdate'])->name('profile_license_update');
+        Route::post('my_profile/update/awards',[MyProfileController::class,'profileAwardsUpdate'])->name('profile_awards_update');
+        Route::post('my_profile/update.others',[MyProfileController::class,'profileOthersUpdate'])->name('profile_others_update');
 
         Route::post('my_profile/portfolio/store',[MyProfileController::class,'portfolioStore'])->name('portfolio_store');
         // Route::get('my_profile/portfolio/edit/{id}',[MyProfileController::class,'portfolioEdit'])->name('portfolio_edit');
