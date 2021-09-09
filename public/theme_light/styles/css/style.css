@@ -246,7 +246,7 @@ body {
 }
 
 .navbar-main {
-  background: #ffb500;
+  background: #FFFFFF;
   -webkit-box-shadow: 0px 5px 15px #0f0c2940;
           box-shadow: 0px 5px 15px #0f0c2940;
   z-index: 98;
@@ -785,7 +785,7 @@ body {
   -webkit-box-shadow: 0px 10px 25px #00000040;
           box-shadow: 0px 10px 25px #00000040;
   margin: 0 auto;
-  background: #fff;
+  background: #FFB500;
 }
 
 .menu a.logo {
@@ -844,7 +844,8 @@ body {
   clear: right;
 }
 
-.menu > ul :not(:last-child) .main-menu-item::before {
+/* .menu > ul :not(:last-child) .main-menu-item::before */
+.menu > ul .main-menu-item::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -883,7 +884,7 @@ body {
 
 .menu > ul > li {
   float: left;
-  background: #fff;
+  background: #FFB500;
   padding: 0;
   margin-top: auto!important;
   margin-bottom: auto!important;
@@ -9068,7 +9069,7 @@ footer p {
 }
 
 .mb10 {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .footer_ul_amrc {

@@ -4,7 +4,7 @@
             <div class="container">
                 <a class="navbar-brand" style="position: absolute" href="{{url('/')}}">
 
-                    <div class="" style="background-image:url('{{url('theme_light/assets/image/logotext.png')}}');height: 100px;background-size: contain;width: 130px;background-position: center;background-repeat: no-repeat;"></div>
+                    <div class="" style="background-image:url('{{url('theme_light/assets/image/logo.png')}}');height: 100px;background-size: contain;width: 155px; background-position: center;background-repeat: no-repeat;"></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -247,9 +247,9 @@
                         <li>
                             <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}">Academy</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="main-menu-item" href=""><img src="{{ url('theme_light/assets/image/tallentor_mall_logo.png') }}" alt="" class="img-fluid" style="height: 40px"></a>
-                        </li>
+                        </li> -->
                         <!-- <li>
                             <a class="main-menu-item" href="#">Tenders</a>
                             <ul>
