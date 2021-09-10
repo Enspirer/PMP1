@@ -48,9 +48,9 @@
                             </div>
                         </div>
                         @auth()
-                        <div class="right-btn"> <a style="padding: 0;color: #000;" href="{{route('frontend.auth.register')}}"><i class="fa fa-user" style="font-size: 25px;" aria-hidden="true"></i></a> </div>
+                        <div class="right-btn"> <a style="padding: 0;color: white;" href="{{route('frontend.auth.register')}}"><i class="fa fa-user" style="font-size: 25px;" aria-hidden="true"></i></a> </div>
                         @else
-                        <div class="right-btn"> <a style="padding: 0;color: #000;" href="{{route('frontend.auth.register')}}">Join</a> </div>
+                        <div class="right-btn"> <a style="padding: 0;color: white;" href="{{route('frontend.auth.register')}}">Join</a> </div>
                         @endauth
                         
 
