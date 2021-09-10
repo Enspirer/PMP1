@@ -2,15 +2,11 @@
     <section class="nav-section" style="z-index: 9999999999999999999999999999999999999999999999999999 !important;">
         <nav class="navbar-main navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" style="position: absolute" href="{{url('/')}}">
-
-                    <div class="" style="background-image:url('{{url('theme_light/assets/image/logo.png')}}');height: 100px;background-size: contain;width: 155px; background-position: center;background-repeat: no-repeat;"></div>
-                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="ml-auto row">
+                <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                    <div class="row m-auto">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
@@ -18,9 +14,15 @@
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route("frontend.expert_center")}}">Expert Centre</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item media-nav" style="margin-right: 20rem;">
                                 <a class="nav-link {{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}">Media</a>
                             </li>
+
+                            <a class="navbar-brand" style="position: absolute; left: 27rem;" href="{{url('/')}}">
+
+                                <div class="" style="background-image:url('{{url('theme_light/assets/image/Tallentor.png')}}');height: 100px;background-size: contain;width: 155px; background-position: center;background-repeat: no-repeat;"></div>
+                            </a>
+
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::segment(1) === 'supportcenter' ? 'active' : null }}" href="{{route('frontend.contact_us')}}">Contact Us</a>
                             </li>
@@ -96,7 +98,7 @@
                 <div class="menu">
                     <ul class="clearfix">
                         <li>
-                            <a class="main-menu-item {{ Request::segment(2) === 'expert-center' ? 'active-second' : null }}" href="#">Explore</a>
+                            <a class="main-menu-item explore-nav {{ Request::segment(2) === 'expert-center' ? 'active-second' : null }}" href="#">Explore</a>
                             <ul style="padding: 0; background: #fff; box-shadow: inset 6px 36px 30px -30px #00000029;">
                                 <li style="background: #f1f1f1;box-shadow: inset 6px 36px 30px -30px #00000029,  inset -20px 7px 28px -20px #00000029;filter: drop-shadow(0px 10px 25px #00000029) drop-shadow(inset 6px 26px 30px 30px #00000029);">
                                     <ul>
@@ -236,7 +238,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="main-menu-item {{ Request::segment(2) === 'auction-projects' ? 'active-second' : null }} " href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
+                            <a class="main-menu-item auction-nav {{ Request::segment(2) === 'auction-projects' ? 'active-second' : null }} " href="{{route('frontend.project_auctions_explore')}}" style="margin-right: 20.8rem;">Auctions</a>
                         </li>
                         <li>
                             <a class="main-menu-item {{ Request::segment(1) === 'tender' ? 'active-second' : null }} " href="{{route('frontend.tenders.index')}}">Tenders</a>
@@ -245,7 +247,7 @@
                             <a class="main-menu-item {{ Request::segment(1) === 'shop' ? 'active-second' : null }} " href="{{route('frontend.shop.index')}}">e-Shop</a>
                         </li>
                         <li>
-                            <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}">Academy</a>
+                            <a class="main-menu-item academy-nav {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}" style="margin-right: -0.8rem;">Academy</a>
                         </li>
                         <!-- <li>
                             <a class="main-menu-item" href=""><img src="{{ url('theme_light/assets/image/tallentor_mall_logo.png') }}" alt="" class="img-fluid" style="height: 40px"></a>

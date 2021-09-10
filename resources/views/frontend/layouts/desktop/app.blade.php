@@ -174,7 +174,7 @@
                     <h5 class="headin5_amrc col_white_amrc pt2"></h5>
                     <!--headin5_amrc-->
                     <p class="mb10">
-                        <img src="{{url('theme_light/assets/image/logo_footer.png')}}" alt="" width="190px">
+                        <img src="{{url('theme_light/assets/image/footer_logo.png')}}" alt="" width="190px">
                     </p>
                     <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p>
                 </div>

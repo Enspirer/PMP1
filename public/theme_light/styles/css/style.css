@@ -785,7 +785,7 @@ body {
   -webkit-box-shadow: 0px 10px 25px #00000040;
           box-shadow: 0px 10px 25px #00000040;
   margin: 0 auto;
-  background: #FFB500;
+  background: #0F9D58;
 }
 
 .menu a.logo {
@@ -852,7 +852,7 @@ body {
   height: 2px;
   bottom: 5px;
   left: 0;
-  background-color: #0f9d58;
+  background-color: #FFB500;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -884,7 +884,7 @@ body {
 
 .menu > ul > li {
   float: left;
-  background: #FFB500;
+  background: #0F9D58;
   padding: 0;
   margin-top: auto!important;
   margin-bottom: auto!important;
@@ -892,7 +892,7 @@ body {
 
 .menu > ul > li a {
   text-decoration: none;
-  padding: 0.8em 3em;
+  padding: 0.8em 3.09em;
   padding-top: auto!important;
   display: block;
   text-align: left;
@@ -9207,4 +9207,26 @@ footer p {
 	text-transform: uppercase;
 	color: #2C3E50;
 	margin-bottom: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .media-nav {
+    margin-right: 10rem!important;
+  }
+  .navbar-brand {
+    left: 20.5rem!important;
+  }
+  .auction-nav {
+    margin-right: 10rem!important;
+  }
+  .academy-nav {
+    margin-right: -1.4rem!important;
+  }
+  .explore-nav {
+    margin-right: 3.9rem!important;
+    padding: 0!important;
+  }
 }

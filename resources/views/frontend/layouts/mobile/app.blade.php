@@ -44,7 +44,7 @@
                         <label for="overlay-input" aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg" id="overlay-button"><span></span></label>
                         <div class="center-circle" style="box-shadow: 0px -1px 18px 1px #0000005c;">
                             <div class="img-center">
-                                <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/logo.png')}}" alt="" srcset="" /></a>
+                                <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/new.png')}}" alt="" srcset="" /></a>
                             </div>
                         </div>
                         @auth()
@@ -59,7 +59,7 @@
                             <div class="part-yellow-top-logo">
                                 <div class="row m-0 align-items-center">
                                     <div class="col-6 p-0">
-                                        <a href="{{url('/')}}" style="padding: 0;">  <img src="{{url('theme_light/assets/image/logo.png')}}" alt="" srcset="" /></a>
+                                        <a href="{{url('/')}}" style="padding: 0;">  <img src="{{url('theme_light/assets/image/new.png')}}" alt="" srcset="" /></a>
                                     </div>
                                     <div class="col-6 p-0">
                                         <a class="post-job-btn-mob" href="{{route('frontend.auth.login')}}">Post a Project</a>
@@ -116,7 +116,7 @@
                 <div class="col-sm-4 col-md col-sm-4 col-12 col" data-animscroll="fade-up">
                     <h5 class="headin5_amrc col_white_amrc pt2"></h5>
                     <p class="mb10">
-                        <img src="{{url('theme_light/assets/image/logo_footer.png')}}" alt="" width="190px">
+                        <img src="{{url('theme_light/assets/image/footer_logo.png')}}" alt="" width="190px">
                     </p>
                     <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p>
                 </div>
