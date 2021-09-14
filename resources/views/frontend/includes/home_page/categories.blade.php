@@ -97,7 +97,7 @@ button:focus {
                                 @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                 
                                     <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                                        <a href="{{ route('frontend.post_a_job') }}"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="" class="img-fluid rounded w-100"></a>
+                                        <a href="{{ route('frontend.post_a_job') }}"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100"></a>
                                         <p class="mt-3">{{ $talent->title }}</p>
                                     </div>
                                 @endforeach
@@ -111,7 +111,7 @@ button:focus {
                                 @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                 
                                     <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                                        <a href="{{ route('frontend.post_a_job') }}"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="" class="img-fluid rounded w-100"></a>
+                                        <a href="{{ route('frontend.post_a_job') }}"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100"></a>
                                         <p class="mt-3">{{ $talent->title }}</p>
                                     </div>
                                 @endforeach
