@@ -104,7 +104,9 @@ class TallentsController extends Controller
         $add->category_id = $request->category;
         $add->user_id = Auth::id();
         $add->status = $request->status;
-        $add->order = $request->order;        
+        $add->order = $request->order;       
+        $add->category_slug = $request->category_slug;       
+        $add->talent_slug = $request->talent_slug;       
         $add->image = $image_url;        
        
         $add->save();
@@ -163,7 +165,9 @@ class TallentsController extends Controller
         $update->category_id = $request->category;
         $update->user_id = Auth::id();
         $update->status = $request->status;
-        $update->order = $request->order;        
+        $update->order = $request->order;  
+        $update->category_slug = $request->category_slug;       
+        $update->talent_slug = $request->talent_slug;         
         $update->image = $image_url;   
 
         Tallents::whereId($request->hidden_id)->update($update->toArray());

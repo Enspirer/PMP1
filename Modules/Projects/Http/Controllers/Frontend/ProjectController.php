@@ -5,6 +5,7 @@ namespace Modules\Projects\Http\Controllers\Frontend;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Projects\Entities\ProjectCategory;
 
 class ProjectController extends Controller
 {
@@ -99,7 +100,8 @@ class ProjectController extends Controller
         //
     }
 
-    public function postAJob() {
+    public function postAJob($category_slug, $talent_slug) {
+
         return view('projects::post_a_job');
     }
 }

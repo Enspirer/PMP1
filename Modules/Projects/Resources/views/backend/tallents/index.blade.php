@@ -22,6 +22,8 @@
                             <th scope="col">Category</th>
                             <th scope="col">Status</th>
                             <th scope="col">Order</th>
+                            <th scope="col">Category Slug</th>
+                            <th scope="col">Talent Slug</th>
                             <th scope="col">Option</th>
                         </tr>
                         </thead>
@@ -79,6 +81,8 @@
                     {data: 'category', name: 'category'},
                     {data: 'status', name: 'status'},
                     {data: 'order', name: 'order'},
+                    {data: 'category_slug', name: 'category_slug'},
+                    {data: 'talent_slug', name: 'talent_slug'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
             });

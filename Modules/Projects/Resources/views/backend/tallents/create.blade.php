@@ -15,11 +15,11 @@
                         {{csrf_field()}}
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" name="title" class="form-control" required>
+                            <input type="text" name="title" class="form-control" id="title" required>
                         </div>
                         <div class="form-group">
                             <label>Category</label>
-                            <select name="category" class="form-control" required>
+                            <select name="category" class="form-control" id="category" required>
                                 <option value="" selected disabled>Select...</option>
                                 @foreach($category as $cat)
                                     <option value="{{ $cat->id }}">{{ $cat->name }}</option>
@@ -46,6 +46,16 @@
                             <input type="number" name="order" class="form-control" required>
                         </div>
 
+                        <div class="form-group">
+                            <label>Category Slug</label>
+                            <input type="text" name="category_slug" class="form-control" id="category_slug" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Talent Slug</label>
+                            <input type="text" name="talent_slug" class="form-control" id="talent_slug" readonly>
+                        </div>
+
                         <button type="submit" class="btn btn-success">Submit</button>
                     </form>
                 </div>
@@ -55,3 +65,23 @@
 
 
 @endsection
+
+@push('after-scripts')
+    <script>
+        $('#title').keyup(function() {
+            let val = $(this).val();
+
+            val = val.replace(/\s+/g, '-').toLowerCase();
+
+            $('#talent_slug').val(val);
+        });
+
+        $('#category').on('change', function() {
+            let slug = $(this).find("option:selected").text();
+
+            slug = slug.replace(/\s+/g, '-').toLowerCase();
+
+            $('#category_slug').val(slug);
+        });
+    </script>
+@endpush

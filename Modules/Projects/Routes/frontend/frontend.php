@@ -8,4 +8,4 @@ Route::get('/auction-projects', 'ProjectAuctionController@explore')->name('proje
 Route::get('/auction-project/{project_id}', 'ProjectAuctionController@index')->name('project_auction');
 Route::get('/expert-center', 'ExpertCenterController@index')->name('expert_center');
 
-Route::get('/post-a-job', 'ProjectController@postAJob')->name('post_a_job');
+Route::get('/post-a-job/{category_slug}/{talent_slug}', 'ProjectController@postAJob')->name('post_a_job');

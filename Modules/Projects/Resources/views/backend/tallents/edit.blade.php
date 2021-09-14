@@ -15,11 +15,11 @@
                         {{csrf_field()}}
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" name="title" value="{{ $tallents->title }}" class="form-control" required>
+                            <input type="text" name="title" value="{{ $tallents->title }}" class="form-control" id="title" required>
                         </div>
                         <div class="form-group">
                             <label>Category</label>
-                            <select name="category" class="form-control" required>
+                            <select name="category" class="form-control" id="category" required>
                                 <option value="" selected disabled>Select...</option>
                                 @foreach($category as $cat)
                                     <option value="{{ $cat->id }}" {{ $tallents->category_id == $cat->id ? "selected" : "" }}>{{ $cat->name }}</option>
@@ -50,6 +50,16 @@
                             <input type="number" name="order" value="{{ $tallents->order }}" class="form-control" required>
                         </div>
 
+                        <div class="form-group">
+                            <label>Category Slug</label>
+                            <input type="text" name="category_slug" value="{{ $tallents->category_slug }}" class="form-control" id="category_slug" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Talent Slug</label>
+                            <input type="text" name="talent_slug" value="{{ $tallents->talent_slug }}" class="form-control" id="talent_slug" readonly>
+                        </div>
+
                         <input type="hidden" name="hidden_id" value="{{ $tallents->id }}"/>
                         <button type="submit" class="btn btn-success mt-2">Update</button>
                     </form>
@@ -64,3 +74,23 @@
     </script>
 
 @endsection
+
+@push('after-scripts')
+    <script>
+        $('#title').keyup(function() {
+            let val = $(this).val();
+
+            val = val.replace(/\s+/g, '-').toLowerCase();
+
+            $('#talent_slug').val(val);
+        });
+
+        $('#category').on('change', function() {
+            let slug = $(this).find("option:selected").text();
+
+            slug = slug.replace(/\s+/g, '-').toLowerCase();
+
+            $('#category_slug').val(slug);
+        });
+    </script>
+@endpush
