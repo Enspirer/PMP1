@@ -86,10 +86,11 @@
                                         <a href="{{route('frontend.become_a_partner')}}">Become a partner</a>
                                     </div>
                                 </div>
-                                <a class="{{ Request::segment(2) === 'auction-projects' ? 'active' : null }} " href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
-                                <a class="{{ Request::segment(1) === 'tender' ? 'active' : null }}" href="{{route('frontend.tenders.index')}}">Tenders</a>
+                                <a class="{{ Request::segment(2) === 'talents' ? 'active' : null }} " href="{{route('frontend.talents')}}">Talents</a>
                                 <a class="{{ Request::segment(1) === 'shop' ? 'active' : null }}" href="{{route('frontend.shop.index')}}">e-Shop</a>
+                                <a class="{{ Request::segment(1) === 'tender' ? 'active' : null }}" href="{{route('frontend.tenders.index')}}">Tenders</a>
                                 <a class="{{ Request::segment(1) === 'academy' ? 'active' : null }}" href="{{route('frontend.academy.index')}}">Academy</a>
+                                <a class="{{ Request::segment(2) === 'auction-projects' ? 'active' : null }} " href="{{route('frontend.project_auctions_explore')}}">Auctions</a>
                             </div>
 
 

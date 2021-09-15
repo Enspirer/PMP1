@@ -314,7 +314,6 @@ body {
   color: #000000;
   -webkit-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
-  color: white!important;
 }
 
 .navbar-main .container .collapse ul li a:hover {
@@ -326,12 +325,11 @@ body {
 }
 
 .navbar-main .container .collapse ul li .nav-link-join {
-  /* border: 1px solid #242424; */
+  border: 1px solid white;
   border-radius: 5px;
   padding-left: 40px;
   padding-right: 40px;
-  background-color: white;
-  color: black!important;
+  color: white!important;
 }
 
 .navbar-main .container .collapse button {
@@ -349,12 +347,11 @@ body {
 }
 
 .navbar-main .container .collapse .post_job {
-  background-color: white;
-  border: transparent;
+  border: 1px solid white;
   text-align: center center;
   padding: 0px 30px;
   border-radius: 4px;
-  color: black !important;
+  color: white !important;
   line-height: 2;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
@@ -896,7 +893,7 @@ body {
 
 .menu > ul > li a {
   text-decoration: none;
-  padding: 0.8em 3.09em;
+  padding: 0.8em 1.72em;
   padding-top: auto!important;
   display: block;
   text-align: left;
@@ -9221,16 +9218,24 @@ footer p {
     margin-right: 10rem!important;
   }
   .navbar-brand {
-    left: 20.5rem!important;
+    left: 20.3rem!important;
   }
   .auction-nav {
-    margin-right: 10rem!important;
+    margin-right: 7.2rem!important;
   }
-  .academy-nav {
-    margin-right: -1.4rem!important;
+  .eshop-nav {
+    margin-right: 7.8rem!important;
   }
-  .explore-nav {
-    margin-right: 3.9rem!important;
-    padding: 0!important;
+  .menu > ul > li a {
+    padding: 0.8rem 1.8rem!important;
+  }
+
+  .navbar-main .container .collapse ul li .nav-link-join {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+
+.navbar-main .container-fluid .collapse .post_job {
+  padding: 6px 15px!important;
   }
 }

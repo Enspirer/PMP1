@@ -31,7 +31,7 @@ button:focus {
 
 @endpush
 
-<div class="container text-center" style="margin-top: 7rem; margin-bottom: 10rem">
+<div class="container text-center" style="{{$padding_top}} margin-bottom: 10rem">
 
     <div class="heading-text">
         <h1 style="font-size: 42px; color: #361d41; margin: auto; text-align: center; font: normal normal bold 48px/70px Poppins;">Top Categories at Tallentor</h1>

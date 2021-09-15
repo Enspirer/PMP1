@@ -9,22 +9,22 @@
                     <div class="row m-auto">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}" style=" color: white!important;">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route("frontend.expert_center")}}">Expert Centre</a>
+                                <a class="nav-link {{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route("frontend.expert_center")}}" style=" color: white!important;">Expert Centre</a>
                             </li>
                             <li class="nav-item media-nav" style="margin-right: 20rem;">
-                                <a class="nav-link {{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}">Media</a>
+                                <a class="nav-link {{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}" style=" color: white!important;">Media</a>
                             </li>
 
-                            <a class="navbar-brand" style="position: absolute; left: 27rem;" href="{{url('/')}}">
+                            <a class="navbar-brand" style="position: absolute; left: 26rem;" href="{{url('/')}}">
 
                                 <div class="" style="background-image:url('{{url('theme_light/assets/image/Tallentor.png')}}');height: 100px;background-size: contain;width: 155px; background-position: center;background-repeat: no-repeat;"></div>
                             </a>
 
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::segment(1) === 'supportcenter' ? 'active' : null }}" href="{{route('frontend.contact_us')}}">Contact Us</a>
+                                <a class="nav-link {{ Request::segment(1) === 'supportcenter' ? 'active' : null }}" href="{{route('frontend.contact_us')}}" style=" color: white!important;">Contact Us</a>
                             </li>
 
                             @auth()
@@ -78,15 +78,15 @@
 
                             @else
                             <li class="nav-item">
-                                <a class="nav-link-join nav-link" href="{{route('frontend.auth.register')}}">Join</a>
+                                <a class="nav-link-join nav-link" href="{{route('frontend.auth.register')}}"><img src="{{ url('theme_light/assets/image/login.svg') }}" alt="" class="mr-2" style="height:18px; filter: invert(1);">Join</a>
                             </li>
                             @endauth
 
                         </ul>
                         @auth
-                        <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary">Post a Project</a>
+                        <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary"><img src="{{ url('theme_light/assets/image/post.svg') }}" alt="" class="mr-2" style="height:18px; filter: invert(1);">Post a Project</a>
                         @else
-                        <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary">Post a Project</a>
+                        <a href="{{route('frontend.user.post_project')}}" class="post_job" type="button" class="btn btn-primary"><img src="{{ url('theme_light/assets/image/post.svg') }}" alt="" class="mr-2" style="height:18px; filter: invert(1);">Post a Project</a>
                         @endauth
                     </div>
                 </div>
@@ -94,7 +94,7 @@
         </nav>
 
         <div class="menu-container">
-            <div class="container">
+            <div class="container p-0">
                 <div class="menu">
                     <ul class="clearfix">
                         <li>
@@ -238,16 +238,21 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="main-menu-item auction-nav {{ Request::segment(2) === 'auction-projects' ? 'active-second' : null }} " href="{{route('frontend.project_auctions_explore')}}" style="margin-right: 20.8rem;">Auctions</a>
+                            <a class="main-menu-item {{ Request::segment(1) === 'talents' ? 'active-second' : null }} " href="{{route('frontend.talents')}}">Talents</a>
                         </li>
+
+                        <li>
+                            <a class="main-menu-item eshop-nav {{ Request::segment(1) === 'shop' ? 'active-second' : null }} " href="{{route('frontend.shop.index')}}" style="margin-right: 18.1rem;">e-Shop</a>
+                        </li>
+                        
                         <li>
                             <a class="main-menu-item {{ Request::segment(1) === 'tender' ? 'active-second' : null }} " href="{{route('frontend.tenders.index')}}">Tenders</a>
                         </li>
                         <li>
-                            <a class="main-menu-item {{ Request::segment(1) === 'shop' ? 'active-second' : null }} " href="{{route('frontend.shop.index')}}">e-Shop</a>
+                            <a class="main-menu-item {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}" >Academy</a>
                         </li>
                         <li>
-                            <a class="main-menu-item academy-nav {{ Request::segment(1) === 'academy' ? 'active-second' : null }} " href="{{route('frontend.academy.index')}}" style="margin-right: -0.8rem;">Academy</a>
+                            <a class="main-menu-item auction-nav {{ Request::segment(2) === 'auction-projects' ? 'active-second' : null }} " href="{{route('frontend.project_auctions_explore')}}" style="margin-right: 10.2rem;">Auctions</a>
                         </li>
                         <!-- <li>
                             <a class="main-menu-item" href=""><img src="{{ url('theme_light/assets/image/tallentor_mall_logo.png') }}" alt="" class="img-fluid" style="height: 40px"></a>

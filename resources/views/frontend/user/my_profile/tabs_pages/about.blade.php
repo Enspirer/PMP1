@@ -34,55 +34,58 @@
             </div>
         </div>
 
-        <div class="specialized">
-            @if(json_decode($profile_details->specialized_on) != null)
-                @foreach(json_decode($profile_details->specialized_on) as $special)
-                    <div class="row border rounded py-3 card-db mt-4 mb-3">
-                        <div class="col-12">
-                        
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                    <div class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <div class="row align-items-center">
-                                            <div class="col-10 p-0">
-                                                <input type="text" class="form-control border-0 font-weight-bold" name="specialization[]" value="{{ $special->name }}" disabled>
-                                            </div>
+        <form action="{{ route('frontend.user.profile_specialized_update') }}" method="POST">
+        {{csrf_field()}}
+            <div class="specialized">
+                @if(json_decode($profile_details->specialized_on) != null)
+                    @foreach(json_decode($profile_details->specialized_on) as $special)
+                        <div class="row border rounded py-3 card-db mt-4 mb-3">
+                            <div class="col-12">
+                            
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <div class="row align-items-center">
+                                                <div class="col-10 p-0">
+                                                    <input type="text" class="form-control border-0 font-weight-bold" name="specialization[]" value="{{ $special->name }}" disabled>
+                                                </div>
 
-                                            <div class="col-2 p-0">
-                                                <div class="row">
-                                                    <div class="col-4 p-0 text-right">
-                                                        <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#specialized_edit" style="background-color:#e3dfde; padding:13px;"></i>
-                                                    </div>
-                                                    <div class="col-4 p-0 text-right">
-                                                        <i class="fas fa-trash-alt rounded-pill text-muted deleteSpecial" type="button" style="background-color:#e3dfde; padding:13px;"></i>
-                                                    </div>
-                                                    <div class="col-4 p-0 text-right">
-                                                        <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $special->name) }}" aria-expanded="true" aria-controls="collapseOne">
-                                                        <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
-                                                        </a>
+                                                <div class="col-2 p-0">
+                                                    <div class="row">
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#specialized_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-trash-alt rounded-pill text-muted deleteSpecial" type="button" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $special->name) }}" aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div id="collapse{{ str_replace(' ', '', $special->name) }}" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                                        <div class="accordion-body">
-                                            <input type="text" class="form-control border-0" name="specialization_description" id="specialization_description" value="{{ $special->description }}" disabled></input>
+                                        <div id="collapse{{ str_replace(' ', '', $special->name) }}" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                            <div class="accordion-body">
+                                                <input type="text" class="form-control border-0" name="specialization_description[]" id="specialization_description" value="{{ $special->description }}" disabled></input>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-            @endif
-        </div>
-
-        <div class="row justify-content-end">
-            <div class="col-4 text-right">
-                <button type="submit" class="btn btn-primary px-5">Save</button>
+                    @endforeach
+                @endif
             </div>
-        </div>
+
+            <div class="row justify-content-end">
+                <div class="col-4 text-right">
+                    <button type="submit" class="btn btn-primary px-5">Save</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     @include('frontend.user.my_profile.edit_dialogs.specialized_on')

@@ -62,7 +62,7 @@
                     @else
                         <div class="container-fluid" style="top: 65px;!important;">
 
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#myModal" id="modal-btn">
                                 Launch demo modal
                             </button>
 
@@ -259,6 +259,12 @@
 
 
 @push('after-scripts')
+
+<script>
+    if(document.getElementById("modal-btn")){
+        $('#modal-btn').click();
+    }
+</script>
 <!-- <script type="text/javascript">
     let special = 2;
     function addSpecial() {

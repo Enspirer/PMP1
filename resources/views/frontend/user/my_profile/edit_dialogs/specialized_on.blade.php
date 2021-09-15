@@ -8,6 +8,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <form>
           <div class="form-group">
               <label for="specialization">Specialization</label>
               <input type="text" class="form-control" id="specialization" aria-describedby="specialization" name="specialization">
@@ -17,6 +18,7 @@
               <label for="description">Description</label>
               <textarea class="form-control" name="description" id="description" rows="7"></textarea>
           </div>
+          </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -43,7 +45,7 @@
                   <div class="accordion-header">
                       <div class="row align-items-center">
                           <div class="col-10 p-0">
-                              <h6 class="mb-0">${name}</h6>
+                              <input class="h6 mb-0 border-0" value="${name}" name="specialization[]">
                           </div>
 
                           <div class="col-2 p-0">
@@ -65,7 +67,7 @@
                   </div>
                   <div id="special${special}" class="accordion-collapse collapse" aria-labelledby="headingOne">
                       <div class="accordion-body">
-                          <textarea class="form-control" name="special_description[]" rows="4">${description}</textarea>
+                          <textarea class="form-control" name="specialization_description[]" rows="4">${description}</textarea>
                       </div>
                   </div>
               </div>
@@ -83,5 +85,9 @@
             $(this).parents('.row').remove();
     });
       
+
+    $('#specialized_on').on('hidden.bs.modal', function () {
+        $(this).find('form').trigger('reset');
+    })
   </script>
 @endpush

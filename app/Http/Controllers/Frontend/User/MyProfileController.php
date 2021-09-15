@@ -18,6 +18,9 @@ class MyProfileController extends Controller
 
         $profile_details = MyProfileDetails::where('user_id', $user_id)->first();
 
+        // $special = json_decode($profile_details->specialized_on)[0]->name;
+        // $special_description = json_decode($profile_details->specialized_on)[0]->description;
+
         return view('frontend.user.my_profile.my_profile', ['portfolios' => $portfolios, 'profile_details' => $profile_details]);
     }
 
@@ -135,14 +138,28 @@ class MyProfileController extends Controller
 
     public function profileSpecializedUpdate(Request $request) {
 
+        // dd($request);
+
         $user_id = Auth::id();
 
         $profile = MyProfileDetails::where('user_id', $user_id)->first();
 
         $name = $request->specialization;
-        $description = $request->description;
 
-        
+        $description = $request->specialization_description;
+
+        $output_json = [];
+
+        foreach($name as $key=>$name_item) {
+            $data = [
+                'name' => $name_item,
+                'description' => $description[$key]
+            ];
+
+            array_push($output_json, $data);
+        }
+
+
         if($profile->specialized_on != null) {
 
             $array1 = json_decode($profile->specialized_on);

@@ -8,6 +8,8 @@ use Illuminate\Routing\Controller;
 use Modules\Projects\Entities\ProjectCategory;
 use Modules\Projects\Entities\Tallents;
 
+use App\Models\ProjectCategories;
+
 class ProjectController extends Controller
 {
     /**
@@ -108,5 +110,13 @@ class ProjectController extends Controller
         $talent = Tallents::where('talent_slug', $talent_slug)->first()->title;
 
         return view('projects::post_a_job', ['category' => $category, 'talent' => $talent]);
+    }
+
+    public function talents() {
+
+        $categories = ProjectCategories::all();
+
+
+        return view('projects::talents', ['categories' => $categories]);
     }
 }
