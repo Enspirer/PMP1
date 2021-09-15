@@ -24,3 +24,10 @@
 .uppy-Dashboard-AddFiles {
     margin: 0px!important;
 }
+
+
+.feature-buttons-mobile .btn {
+    color: #6c757d!important;
+    font-size: 20px;
+    width: 300px;
+}

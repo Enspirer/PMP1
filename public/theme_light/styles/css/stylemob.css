@@ -367,7 +367,7 @@ a {
 }
 
 .header .part-yellow-top-menu {
-  background: #ffffff;
+  background: #0f9d58!important;
   display: -ms-grid;
   display: grid;
   padding: 20px 0;
@@ -376,7 +376,7 @@ a {
 .header .part-yellow-top-menu a {
   font: normal normal medium 10px/15px Karla;
   letter-spacing: 0px;
-  color: #151515;
+  color: white;
   line-height: 1;
   margin: 0;
   padding: 15px;
@@ -391,12 +391,13 @@ a {
   display: -ms-grid;
   display: grid;
   padding: 0 0 20px 0;
+  b
 }
 
 .header .part-gray-sub-menu a {
   font: normal normal medium 10px/15px Karla;
   letter-spacing: 0px;
-  color: white;
+  color: black;
   line-height: 1;
   margin: 0;
   padding: 15px;
@@ -455,6 +456,7 @@ a {
 .header .slide-content.is-visible {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  background-color: white!important;
 }
 
 .header #wrapper {

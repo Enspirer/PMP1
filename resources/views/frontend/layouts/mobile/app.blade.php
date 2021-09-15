@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{url('theme_light/styles/css/stylemob.css')}}" />
     
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://releases.transloadit.com/uppy/v2.0.2/uppy.min.css" rel="stylesheet">
     @yield('meta')
     @stack('before-styles')
     <!-- Theame Style  -->
@@ -224,6 +225,7 @@
     <script src="{{url('theme_light/plugin/dist/js/anim-trap.js')}}"></script>
     <script src="{{url('theme_light/plugin/dist/js/anim-scroll.js')}}"></script>
     <script src="{{url('theme_light/plugin/chart/echarts.min.js')}}"></script>
+    <script src="{{url('js/core/uppy.min.js')}}"></script>
 
     <script>
       var swiper = new Swiper(".swiper-container-mob9", {

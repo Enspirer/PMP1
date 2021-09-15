@@ -220,7 +220,8 @@
                                 <div class="row mb-3 justify-content-center">
                                     @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                         <div class="col-4 p-2">
-                                            <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="" class="img-fluid rounded w-100" style="height:80px;">
+                                        <a href="{{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}">
+                                            <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100" style="height:80px;"></a>
                                             <p class="mt-2 mb-0" style="font-size: 0.8rem">{{ $talent->title }}</p>
                                         </div>
                                     @endforeach
@@ -233,7 +234,8 @@
                                 <div class="row mb-3 justify-content-center">
                                     @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                         <div class="col-4 p-2">
-                                            <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="" class="img-fluid rounded w-100" style="height:80px;">
+                                        <a href="{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}">
+                                            <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100" style="height:80px;"></a>
                                             <p class="mt-2 mb-0" style="font-size: 0.8rem">{{ $talent->title }}</p>
                                         </div>
                                     @endforeach
