@@ -314,6 +314,7 @@ body {
   color: #000000;
   -webkit-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
+  color: white!important;
 }
 
 .navbar-main .container .collapse ul li a:hover {
@@ -330,6 +331,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   background-color: white;
+  color: black!important;
 }
 
 .navbar-main .container .collapse button {
