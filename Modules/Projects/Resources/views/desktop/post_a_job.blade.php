@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="col-11">
-                    <p class="mb-0" style="color: #0F9D58; font-size:0.9rem;">Programming & Development&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;Basic Website</p>
+                    <p class="mb-0" style="color: #0F9D58; font-size:0.9rem;">{{ $category }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;{{ $talent }}</p>
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Projects\Entities\ProjectCategory;
+use Modules\Projects\Entities\Tallents;
 
 class ProjectController extends Controller
 {
@@ -102,6 +103,10 @@ class ProjectController extends Controller
 
     public function postAJob($category_slug, $talent_slug) {
 
-        return view('projects::post_a_job');
+        $category = ProjectCategory::where('slug', $category_slug)->first()->name;
+
+        $talent = Tallents::where('talent_slug', $talent_slug)->first()->title;
+
+        return view('projects::post_a_job', ['category' => $category, 'talent' => $talent]);
     }
 }
