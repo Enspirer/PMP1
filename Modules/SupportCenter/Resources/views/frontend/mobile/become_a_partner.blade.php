@@ -1,6 +1,6 @@
 <section id="partner-mob-top">
         <div class="top-image">
-            <img src="{{url('theme_light/assets/inner/partnerus-012.jpg')}}" alt="">
+            <img src="{{url('theme_light/assets/inner/partnerus-012.jpg')}}" alt="Become a Partner">
         </div>
 <div class="content-partner-mob">
     <h1>Become a Partner..</h1>

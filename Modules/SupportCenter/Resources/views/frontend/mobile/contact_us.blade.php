@@ -90,7 +90,7 @@
         <div class="col-12">
             <div class="row align-items-center mb-3">
                 <div class="col-5 text-center">
-                  <img src="{{url('theme_light/assets/call.png')}}" alt="" style="height: 60px;"/>
+                  <img src="{{url('theme_light/assets/call.png')}}" alt="Support" style="height: 60px;"/>
                 </div>
 
                 <div class="col-7">
@@ -101,7 +101,7 @@
 
             <div class="row align-items-center mb-3">
                 <div class="col-5 text-center">
-                  <img src="{{url('theme_light/assets/Group695.png')}}" alt="" style="height: 60px;"/>
+                  <img src="{{url('theme_light/assets/Group695.png')}}" alt="Sales" style="height: 60px;"/>
                 </div>
 
                 <div class="col-7">
@@ -112,7 +112,7 @@
 
             <div class="row align-items-center mb-3">
                 <div class="col-5 text-center">
-                  <img src="{{url('theme_light/assets/credit-card.png')}}" alt="" style="height: 60px;"/>
+                  <img src="{{url('theme_light/assets/credit-card.png')}}" alt="Accounts" style="height: 60px;"/>
                 </div>
 
                 <div class="col-7">
@@ -123,11 +123,11 @@
 
             <div class="row align-items-center mb-3">
                 <div class="col-5 text-center">
-                  <img src="{{url('theme_light/assets/Group694.png')}}" alt="" style="height: 60px;"/>
+                  <img src="{{url('theme_light/assets/Group694.png')}}" alt="Partners" style="height: 60px;"/>
                 </div>
 
                 <div class="col-7">
-                  <h6 style="font-size:1rem">Support</h6>
+                  <h6 style="font-size:1rem">Partner with us</h6>
                   <p class="card-link-contact" style="color:darkgreen">partners@tallentor.com</p>
                 </div>
             </div>
@@ -186,15 +186,15 @@
 
     <div class="row justify-content-center text-center" style="margin-top: 2rem;">
       <div class="col-12 p-0 mb-2">
-        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/mcc_1.png') }}" alt="" class="img-fluid"></a>
+        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/mcc_1.png') }}" alt="Live Support" class="img-fluid"></a>
       </div>
 
       <div class="col-12 p-0 mb-2">
-        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/mcc_2.png') }}" alt="" class="img-fluid"></a>
+        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/mcc_2.png') }}" alt="Whatsapp" class="img-fluid"></a>
       </div>
 
       <div class="col-12 p-0 mb-2">
-        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/mcc_3.png') }}" alt="" class="img-fluid"></a>
+        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/mcc_3.png') }}" alt="Messenger" class="img-fluid"></a>
       </div>
     </div>
 

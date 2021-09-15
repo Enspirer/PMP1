@@ -163,7 +163,7 @@
                                     </a>
                                 </li>
                                 <li id="img0101" style=" display: none; padding: 30px 10px 30px 30px !important;">
-                                    <img src="{{url('theme_light/assets/inner/post a project.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="">
+                                    <img src="{{url('theme_light/assets/inner/post a project.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="Post a Job">
                                 </li>
 
                                 <li id="0102" style="display: none;width: 45%; padding: 30px 10px 30px 30px !important">
@@ -186,7 +186,7 @@
                                     </a>
                                 </li>
                                 <li id="img0102" style=" display: none; padding: 30px 10px 30px 30px !important;">
-                                    <img src="{{url('theme_light/assets/inner/find a job.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="">
+                                    <img src="{{url('theme_light/assets/inner/find a job.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="Find a Project">
                                 </li>
 
                                 <li id="0103" style="display: none;width: 45%;padding: 30px 10px 30px 30px !important;">
@@ -215,7 +215,7 @@
 
                                 </li>
                                 <li id="img0103" style=" display: none; padding: 30px 10px 30px 30px !important;">
-                                    <img src="{{url('theme_light/assets/inner/how it works.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="">
+                                    <img src="{{url('theme_light/assets/inner/how it works.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="How it Works">
                                 </li>
                                 <li id="0104" style="display: none;width: 45%;padding: 30px 10px 30px 30px !important;">
                                     <h3>Tallentor Global Partner Program</h3>
@@ -233,7 +233,7 @@
                                     </a>
                                 </li>
                                 <li id="img0104" style=" display: none; padding: 30px 10px 30px 30px !important;">
-                                    <img src="{{url('theme_light/assets/inner/partnerus-01.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="">
+                                    <img src="{{url('theme_light/assets/inner/partnerus-01.jpg')}}" style="width: 100%; height: 180px; object-fit: cover" alt="Become a Partner">
                                 </li>
                             </ul>
                         </li>

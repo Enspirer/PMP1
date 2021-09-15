@@ -32,7 +32,7 @@
           <!--first section-->
           <div class="row align-items-center how-it-works">
             <div class="col-2 text-center bottom">
-              <img src="{{url("theme_light/assets/call.png")}}" class="circle" alt="" srcset="" />
+              <img src="{{url("theme_light/assets/call.png")}}" class="circle" alt="Free Consultation" srcset="" />
             </div>
             <div class="col-10">
               <br />
@@ -95,7 +95,7 @@
               <img
                 src="{{url("theme_light/assets/image/timeline/cogwheel.svg")}}"
                 class="circle"
-                alt=""
+                alt="Project Planning"
                 srcset=""
               />
             </div>
@@ -118,7 +118,7 @@
               <img
                 src="{{url("theme_light/assets/image/timeline/document.svg")}}"
                 class="circle"
-                alt=""
+                alt="Document Submission"
                 srcset=""
               />
             </div>
@@ -152,7 +152,7 @@
               <img
                 src="{{url("theme_light/assets/image/timeline/bid.svg")}}"
                 class="circle"
-                alt=""
+                alt="Project Quotes"
                 srcset=""
               />
             </div>
@@ -175,7 +175,7 @@
               <img
                 src="{{url("theme_light/assets/image/timeline/diagram.svg")}}"
                 class="circle"
-                alt=""
+                alt="Evaluation Process"
                 srcset=""
               />
             </div>
@@ -215,9 +215,9 @@
             </div>
             <div class="col-2 text-center full">
               <img
-                src="{{url("theme_light/assets/image/timeline/bid.svg")}}"
+                src="{{url("theme_light/assets/image/timeline/sharing-content.svg")}}"
                 class="circle"
-                alt=""
+                alt="Award the Project"
                 srcset=""
               />
             </div>
@@ -240,7 +240,7 @@
               <img
                 src="{{url("theme_light/assets/image/timeline/statistics (1).svg")}}"
                 class="circle"
-                alt=""
+                alt="Progress Monitor"
                 srcset=""
               />
             </div>
@@ -278,9 +278,9 @@
             </div>
             <div class="col-2 text-center top2">
               <img
-                src="{{url("theme_light/assets/image/timeline/bid.svg")}}"
+                src="{{url("theme_light/assets/image/timeline/online-learning.svg")}}"
                 class="circle"
-                alt=""
+                alt="Testing the Project"
                 srcset=""
               />
             </div>

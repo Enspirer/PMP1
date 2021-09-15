@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="right-image col-md-8">
-                <img src="{{url('theme_light/assets/image/MaskGroup8.png')}}" alt=""/>
+                <img src="{{url('theme_light/assets/image/MaskGroup8.png')}}" alt="Welcome to Tallentor"/>
                 <div class="gradient-layer-dark"></div>
                 <div class="top-text-layer" data-animscroll="fade-up" data-animscroll-delay="100" >
                     <h1>Welcome to Tallentor</h1>

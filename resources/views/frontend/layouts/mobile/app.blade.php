@@ -45,7 +45,7 @@
                         <label for="overlay-input" aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg" id="overlay-button"><span></span></label>
                         <div class="center-circle" style="box-shadow: 0px -1px 18px 1px #0000005c;">
                             <div class="img-center">
-                                <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/new.png')}}" alt="" srcset="" /></a>
+                                <a style="padding: 3px 0 0 9px;" href="{{url('/')}}"> <img src="{{url('theme_light/assets/image/new.png')}}" alt="Tallentor Logo" srcset="" /></a>
                             </div>
                         </div>
                         @auth()

@@ -42,7 +42,7 @@
 
                 <div class="row align-items-center mb-4 justify-content-center">
                     <div class="col-3 text-center">
-                        <img src="{{url('theme_light/assets/call.png')}}" alt="" style="height: 80px;"/>
+                        <img src="{{url('theme_light/assets/call.png')}}" alt="Support" style="height: 80px;"/>
                     </div>
 
                     <div class="col-5">
@@ -53,7 +53,7 @@
 
                 <div class="row align-items-center mb-4 justify-content-center">
                     <div class="col-3 text-center">
-                        <img src="{{url('theme_light/assets/Group695.png')}}" alt="" style="height: 80px;"/>
+                        <img src="{{url('theme_light/assets/Group695.png')}}" alt="Sales" style="height: 80px;"/>
                     </div>
 
                     <div class="col-5">
@@ -64,7 +64,7 @@
 
                 <div class="row align-items-center mb-4 justify-content-center">
                     <div class="col-3 text-center">
-                        <img src="{{url('theme_light/assets/credit-card.png')}}" alt="" style="height: 80px;"/>
+                        <img src="{{url('theme_light/assets/credit-card.png')}}" alt="Accounts" style="height: 80px;"/>
                     </div>
 
                     <div class="col-5">
@@ -76,7 +76,7 @@
 
                 <div class="row align-items-center mb-4 justify-content-center">
                     <div class="col-3 text-center">
-                        <img src="{{url('theme_light/assets/Group694.png')}}" alt="" style="height: 80px;"/>
+                        <img src="{{url('theme_light/assets/Group694.png')}}" alt="Partners" style="height: 80px;"/>
                     </div>
 
                     <div class="col-5">

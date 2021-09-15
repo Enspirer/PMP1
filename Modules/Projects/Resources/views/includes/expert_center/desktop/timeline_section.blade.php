@@ -7,7 +7,7 @@
     <div class="container max-width-lg cd-timeline__container">
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--picture" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/call.svg")}}" alt="Picture" />
+                <img src="{{url("theme_light/assets/image/timeline/call.svg")}}" alt="Free Consultation" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -30,7 +30,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--movie" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/cogwheel.svg")}}" alt="Movie" />
+                <img src="{{url("theme_light/assets/image/timeline/cogwheel.svg")}}" alt="Project Planning" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -166,7 +166,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--picture" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/document.svg")}}" alt="Picture" />
+                <img src="{{url("theme_light/assets/image/timeline/document.svg")}}" alt="Document Submission" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -190,7 +190,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--location" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/bid.svg")}}" alt="Location" />
+                <img src="{{url("theme_light/assets/image/timeline/bid.svg")}}" alt="Project Quotes" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -215,7 +215,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--location" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/diagram.svg")}}" alt="Location" />
+                <img src="{{url("theme_light/assets/image/timeline/diagram.svg")}}" alt="Evaluation Process" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -240,7 +240,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--movie" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/sharing-content.svg")}}" alt="Movie" />
+                <img src="{{url("theme_light/assets/image/timeline/sharing-content.svg")}}" alt="Award the Project" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -264,7 +264,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--location" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/statistics (1).svg")}}" alt="Location" />
+                <img src="{{url("theme_light/assets/image/timeline/statistics (1).svg")}}" alt="Progress Monitor" />
             </div>
             <!-- cd-timeline__img -->
 
@@ -289,7 +289,7 @@
 
         <div class="cd-timeline__block">
             <div class="cd-timeline__img cd-timeline__img--movie" data-animscroll="fade-up">
-                <img src="{{url("theme_light/assets/image/timeline/online-learning.svg")}}" alt="Movie" />
+                <img src="{{url("theme_light/assets/image/timeline/online-learning.svg")}}" alt="Testing the Project" />
             </div>
             <!-- cd-timeline__img -->
 

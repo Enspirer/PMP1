@@ -7,15 +7,15 @@
 
     <div class="row justify-content-center text-center" style="margin-top: 4rem;">
       <div class="col-4">
-        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/cc_1.png') }}" alt="" class="img-fluid"></a>
+        <a href="javascript:void(Tawk_API.toggle())"><img src="{{ url('theme_light/assets/contact/cc_1.png') }}" alt="Live Support" class="img-fluid"></a>
       </div>
 
       <div class="col-4">
-        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/cc_2.png') }}" alt="" class="img-fluid"></a>
+        <a href="https://api.whatsapp.com/send/?phone=94777009990&text="><img src="{{ url('theme_light/assets/contact/cc_2.png') }}" alt="Whatsapp" class="img-fluid"></a>
       </div>
 
       <div class="col-4">
-        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/cc_3.png') }}" alt="" class="img-fluid"></a>
+        <a href="https://m.me/tallentor"><img src="{{ url('theme_light/assets/contact/cc_3.png') }}" alt="Messenger" class="img-fluid"></a>
       </div>
     </div>
   </div>
