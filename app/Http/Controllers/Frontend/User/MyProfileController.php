@@ -120,11 +120,12 @@ class MyProfileController extends Controller
         $addprofile->save();
         
 
-        return back();
+        return redirect()->route('frontend.user.my_profile');
     }
 
 
     public function profileInfoUpdate(Request $request) {
+
         $user_id = Auth::id();
 
         $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
@@ -138,7 +139,6 @@ class MyProfileController extends Controller
 
     public function profileSpecializedUpdate(Request $request) {
 
-        // dd($request);
 
         $user_id = Auth::id();
 
@@ -150,44 +150,24 @@ class MyProfileController extends Controller
 
         $output_json = [];
 
-        foreach($name as $key=>$name_item) {
-            $data = [
-                'name' => $name_item,
-                'description' => $description[$key]
-            ];
 
-            array_push($output_json, $data);
-        }
-
-
-        if($profile->specialized_on != null) {
-
-            $array1 = json_decode($profile->specialized_on);
-
-            $array2 = [
-                'name' => $name,
-                'description' => $description
-            ];
-    
-            array_push($array1, $array2);
-    
-    
+        if($name == null) {
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'specialized_on' => json_encode($array1)
+                'specialized_on' => null
             ]);
         }
-
         else {
-            $array = [
-                'name' => $name,
-                'description' => $description
-            ];
+            foreach($name as $key=>$name_item) {
+                $data = [
+                    'name' => $name_item,
+                    'description' => $description[$key]
+                ];
     
-            $final = [$array];
-    
-    
+                array_push($output_json, $data);
+            }
+
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'specialized_on' => json_encode($final)
+                'specialized_on' => json_encode($output_json)
             ]);
         }
         
@@ -210,13 +190,22 @@ class MyProfileController extends Controller
 
         $user_id = Auth::id();
 
-        $array = json_encode($request->skills);
+        $array = $request->skills;
 
 
-        $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-            'skills' => $array
-        ]);
-        
+        if($array == null) {
+            $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
+                'skills' => null
+            ]);
+        }
+
+        else {
+
+            $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
+                'skills' => $array
+            ]);
+        }
+
         return back();
     }
 
@@ -227,41 +216,32 @@ class MyProfileController extends Controller
         $profile = MyProfileDetails::where('user_id', $user_id)->first();
 
         $name = $request->license;
-        $description = $request->description;
 
-        
-        if($profile->license_and_certification != null) {
+        $description = $request->license_description;
 
-            $array1 = json_decode($profile->license_and_certification);
+        $output_json = [];
 
-            $array2 = [
-                'name' => $name,
-                'description' => $description
-            ];
-    
-            array_push($array1, $array2);
-    
-    
+
+        if($name == null) {
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'license_and_certification' => json_encode($array1)
+                'license_and_certification' => null
             ]);
         }
-
         else {
-            $array = [
-                'name' => $name,
-                'description' => $description
-            ];
+            foreach($name as $key=>$name_item) {
+                $data = [
+                    'name' => $name_item,
+                    'description' => $description[$key]
+                ];
     
-            $final = [$array];
-    
-    
+                array_push($output_json, $data);
+            }
+
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'license_and_certification' => json_encode($final)
+                'license_and_certification' => json_encode($output_json)
             ]);
         }
         
-
         return back();
     }
 
@@ -272,85 +252,72 @@ class MyProfileController extends Controller
         $profile = MyProfileDetails::where('user_id', $user_id)->first();
 
         $name = $request->awards;
-        $description = $request->description;
+
+        $description = $request->awards_description;
+
+        $output_json = [];
 
         
-        if($profile->awards_badges != null) {
-
-            $array1 = json_decode($profile->awards_badges);
-
-            $array2 = [
-                'name' => $name,
-                'description' => $description
-            ];
-    
-            array_push($array1, $array2);
-    
-    
+        if($name == null) {
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'awards_badges' => json_encode($array1)
+                'awards_badges' => null
             ]);
         }
-
         else {
-            $array = [
-                'name' => $name,
-                'description' => $description
-            ];
+            foreach($name as $key=>$name_item) {
+                $data = [
+                    'name' => $name_item,
+                    'description' => $description[$key]
+                ];
     
-            $final = [$array];
-    
-    
+                array_push($output_json, $data);
+            }
+
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'awards_badges' => json_encode($final)
+                'awards_badges' => json_encode($output_json)
             ]);
         }
-        
 
+        
+        
         return back();
     }
 
     public function profileOthersUpdate(Request $request) {
+        
         $user_id = Auth::id();
 
         $profile = MyProfileDetails::where('user_id', $user_id)->first();
 
         $name = $request->others;
-        $description = $request->description;
+
+        $description = $request->others_description;
+
+        $output_json = [];
 
         
-        if($profile->other_experties != null) {
-
-            $array1 = json_decode($profile->other_experties);
-
-            $array2 = [
-                'name' => $name,
-                'description' => $description
-            ];
-    
-            array_push($array1, $array2);
-    
-    
+        if($name == null) {
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'other_experties' => json_encode($array1)
+                'other_experties' => null
             ]);
         }
-
         else {
-            $array = [
-                'name' => $name,
-                'description' => $description
-            ];
+            foreach($name as $key=>$name_item) {
+                $data = [
+                    'name' => $name_item,
+                    'description' => $description[$key]
+                ];
     
-            $final = [$array];
-    
-    
+                array_push($output_json, $data);
+            }
+
             $profile = DB::table('my_profile_details')->where('user_id', $user_id)->update([
-                'other_experties' => json_encode($final)
+                'other_experties' => json_encode($output_json)
             ]);
         }
-        
 
+        
+        
         return back();
     }
 

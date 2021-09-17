@@ -53,6 +53,50 @@
     <!-- sidebar-wrapper  --> <br><br>
     @yield('content')
     <!-- page-content" -->
+
+
+    <div class="container-fluid" style="top: 65px;!important;">
+
+        <button type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#myModal" id="modal-btn">
+            Launch demo modal
+        </button>
+
+            <!-- Modal -->
+        <form action="{{ route('frontend.user.profile_store') }}" method="POST">
+            {{csrf_field()}}
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+                <div class="modal-dialog" style="max-width: 50%;">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">My Profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="profile_name">Profile Name</label>
+                            <input type="text" class="form-control" id="profile_name" aria-describedby="profile_name" name="profile_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="profile_description">Profile Description</label>
+                            <textarea class="form-control" name="profile_description" id="profile_description" rows="7"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                        <button type="submit" class="btn btn-primary">Agree</button>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+                        
     </div>
     <!-- page-wrapper -->
 </section>

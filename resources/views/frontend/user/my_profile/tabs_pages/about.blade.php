@@ -47,7 +47,7 @@
                                         <div class="accordion-header" id="panelsStayOpen-headingOne">
                                             <div class="row align-items-center">
                                                 <div class="col-10 p-0">
-                                                    <input type="text" class="form-control border-0 font-weight-bold" name="specialization[]" value="{{ $special->name }}" disabled>
+                                                    <input type="text" class="form-control border-0 font-weight-bold" name="specialization[]" value="{{ $special->name }}">
                                                 </div>
 
                                                 <div class="col-2 p-0">
@@ -69,7 +69,7 @@
                                         </div>
                                         <div id="collapse{{ str_replace(' ', '', $special->name) }}" class="accordion-collapse collapse" aria-labelledby="headingOne">
                                             <div class="accordion-body">
-                                                <input type="text" class="form-control border-0" name="specialization_description[]" id="specialization_description" value="{{ $special->description }}" disabled></input>
+                                                <input type="text" class="form-control border-0" name="specialization_description[]" id="specialization_des" value="{{ $special->description }}"></input>
                                             </div>
                                         </div>
                                     </div>
@@ -111,10 +111,12 @@
     @include('frontend.user.my_profile.edit_dialogs.company_size')
 
 
+    
     <div class="mb-5">
         <div class="row justify-content-between">
             <div class="col-5">
                 <h4 class="d-inline-block mr-3">Skill set</h4>
+                <!-- <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#skills_on" style="background-color:#e3dfde; padding:13px;"></i> -->
                 <i class="fas fa-pen rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#skill_set" style="background-color:#e3dfde; padding:13px;"></i>
             </div>
         </div>
@@ -142,41 +144,60 @@
         <div class="row justify-content-between">
             <div class="col-5">
                 <h4 class="d-inline-block mr-3">License and Certifications</h4>
-                <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#license" style="background-color:#e3dfde; padding:13px;"></i>
+                <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#license_on" style="background-color:#e3dfde; padding:13px;"></i>
             </div>
         </div>
-        @if(json_decode($profile_details->license_and_certification) != null)
-            @foreach(json_decode($profile_details->license_and_certification) as $license)
-                <div class="row border rounded py-3 card-db mt-4 mb-3">
-                    <div class="col-12">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item">
-                                <h6 class="accordion-header" id="panelsStayOpen-headingFour">
-                                    <div class="row align-items-center">
-                                        <div class="col-10 p-0">
-                                            <h6 class="mb-0">{{ $license->name }}</h6>
+
+        <form action="{{ route('frontend.user.profile_license_update') }}" method="POST">
+        {{csrf_field()}}
+            <div class="licenses">
+                @if(json_decode($profile_details->license_and_certification) != null)
+                    @foreach(json_decode($profile_details->license_and_certification) as $license)
+                        <div class="row border rounded py-3 card-db mt-4 mb-3">
+                            <div class="col-12">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <div class="row align-items-center">
+                                                <div class="col-10 p-0">
+                                                    <input type="text" class="form-control border-0 font-weight-bold" name="license[]" value="{{ $license->name }}">
+                                                </div>
+
+                                                <div class="col-2 p-0">
+                                                    <div class="row">
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#specialized_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-trash-alt rounded-pill text-muted deleteLicense" type="button" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $license->name) }}" aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-1 p-0 text-right">
-                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#license_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                        <div id="collapse{{ str_replace(' ', '', $license->name) }}" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                            <div class="accordion-body">
+                                                <input type="text" class="form-control border-0" name="license_description[]" id="license_des" value="{{ $license->description }}"></input>
+                                            </div>
                                         </div>
-                                        <div class="col-1 p-0 text-right">
-                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $license->name) }}" aria-expanded="true" aria-controls="collapseFour">
-                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </h6>
-                                <div id="collapse{{ str_replace(' ', '', $license->name) }}" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                                    <div class="accordion-body">
-                                        {{ $license->description }}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
+                @endif
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-4 text-right">
+                    <button type="submit" class="btn btn-primary px-5">Save</button>
                 </div>
-            @endforeach
-        @endif
+            </div>
+        </form>
 
     </div>
 
@@ -188,42 +209,61 @@
         <div class="row justify-content-between">
             <div class="col-5">
                 <h4 class="d-inline-block mr-3">Awards and Badges</h4>
-                <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#awards" style="background-color:#e3dfde; padding:13px;"></i>
+                <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#awards_on" style="background-color:#e3dfde; padding:13px;"></i>
             </div>
         </div>
+        <form action="{{ route('frontend.user.profile_awards_update') }}" method="POST">
+        {{csrf_field()}}
+            <div class="awards">
+                @if(json_decode($profile_details->awards_badges) != null)
+                    @foreach(json_decode($profile_details->awards_badges) as $awards)
+                        <div class="row border rounded py-3 card-db mt-4 mb-3">
+                            <div class="col-12">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <div class="row align-items-center">
+                                                <div class="col-10 p-0">
+                                                    <input type="text" class="form-control border-0 font-weight-bold" name="awards[]" value="{{ $awards->name }}">
+                                                </div>
 
-        @if(json_decode($profile_details->awards_badges) != null)
-            @foreach(json_decode($profile_details->awards_badges) as $awards)
-                <div class="row border rounded py-3 card-db mt-4 mb-3">
-                    <div class="col-12">
-                        <div class="accordion">
-                            <div class="accordion-item">
-                                <h6 class="accordion-header">
-                                    <div class="row align-items-center">
-                                        <div class="col-10 p-0">
-                                            <h6 class="mb-0">{{ $awards->name }}</h6>
+                                                <div class="col-2 p-0">
+                                                    <div class="row">
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#awards_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-trash-alt rounded-pill text-muted deleteAwards" type="button" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $awards->name) }}" aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-1 p-0 text-right">
-                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#awards_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                        <div id="collapse{{ str_replace(' ', '', $awards->name) }}" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                            <div class="accordion-body">
+                                                <input type="text" class="form-control border-0" name="awards_description[]" id="awards_des" value="{{ $awards->description }}"></input>
+                                            </div>
                                         </div>
-                                        <div class="col-1 p-0 text-right">
-                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $awards->name) }}" aria-expanded="true" aria-controls="collapseFive">
-                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </h6>
-                                <div id="collapse{{ str_replace(' ', '', $awards->name) }}" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                                    <div class="accordion-body">
-                                        {{ $awards->description }}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
+                @endif
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-4 text-right">
+                    <button type="submit" class="btn btn-primary px-5">Save</button>
                 </div>
-            @endforeach
-        @endif
+            </div>
+        </form>
+
     </div>
 
     @include('frontend.user.my_profile.edit_dialogs.awards')
@@ -234,41 +274,61 @@
         <div class="row justify-content-between">
             <div class="col-5">
                 <h4 class="d-inline-block mr-3">Other Experties</h4>
-                <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#other_expertise" style="background-color:#e3dfde; padding:13px;"></i>
+                <i class="fas fa-plus rounded-pill text-muted ml-3" type="button" data-bs-toggle="modal" data-bs-target="#other_expertise_on" style="background-color:#e3dfde; padding:13px;"></i>
             </div>
         </div>
-        @if(json_decode($profile_details->other_experties) != null)
-            @foreach(json_decode($profile_details->other_experties) as $others)
-                <div class="row border rounded py-3 card-db mt-4 mb-3">
-                    <div class="col-12">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item">
-                                <h6 class="accordion-header" id="panelsStayOpen-headingSix">
-                                    <div class="row align-items-center">
-                                        <div class="col-10 p-0">
-                                            <h6 class="mb-0">{{ $others->name }}</h6>
+
+        <form action="{{ route('frontend.user.profile_others_update') }}" method="POST">
+        {{csrf_field()}}
+            <div class="others">
+                @if(json_decode($profile_details->other_experties) != null)
+                    @foreach(json_decode($profile_details->other_experties) as $others)
+                        <div class="row border rounded py-3 card-db mt-4 mb-3">
+                            <div class="col-12">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                    <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <div class="row align-items-center">
+                                                <div class="col-10 p-0">
+                                                    <input type="text" class="form-control border-0 font-weight-bold" name="others[]" value="{{ $others->name }}">
+                                                </div>
+
+                                                <div class="col-2 p-0">
+                                                    <div class="row">
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#others_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <i class="fas fa-trash-alt rounded-pill text-muted deleteOthers" type="button" style="background-color:#e3dfde; padding:13px;"></i>
+                                                        </div>
+                                                        <div class="col-4 p-0 text-right">
+                                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $others->name) }}" aria-expanded="true" aria-controls="collapseOne">
+                                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-1 p-0 text-right">
-                                            <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#other_expertise_edit" style="background-color:#e3dfde; padding:13px;"></i>
+                                        <div id="collapse{{ str_replace(' ', '', $others->name) }}" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                            <div class="accordion-body">
+                                                <input type="text" class="form-control border-0" name="others_description[]" id="others_des" value="{{ $others->description }}"></input>
+                                            </div>
                                         </div>
-                                        <div class="col-1 p-0 text-right">
-                                            <a class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ str_replace(' ', '', $others->name) }}" aria-expanded="true" aria-controls="collapseSix">
-                                            <i class="fas fa-plus rounded-pill text-muted" style="background-color:#e3dfde; padding:13px;"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </h6>
-                                <div id="collapse{{ str_replace(' ', '', $others->name) }}" class="accordion-collapse collapse" aria-labelledby="headingSix">
-                                    <div class="accordion-body">
-                                        {{ $others->description }}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
+                @endif
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-4 text-right">
+                    <button type="submit" class="btn btn-primary px-5">Save</button>
                 </div>
-            @endforeach
-        @endif
+            </div>
+        </form>
 
     </div>
 
