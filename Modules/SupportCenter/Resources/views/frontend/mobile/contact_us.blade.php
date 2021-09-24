@@ -324,8 +324,7 @@
                 <div class="col-md-10 col-10">A 15-03 Tropicana Avenue, NO.12 Persiaran Tropicana, Tropicana Golf & Country resort, PJU3 Petaling Jaya 47410, Selangor, Malaysia.</div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="col-md-10 col-10">+60 135203792</div>
+
             </div>
 
             <div class="row">
