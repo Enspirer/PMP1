@@ -359,9 +359,9 @@
                                     Malaysia.
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-2"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                                <div class="col-md-10">+60 135203792</div>
+                            <div class="row"><br>
+                                {{--<div class="col-md-2"><i class="fa fa-phone" aria-hidden="true"></i></div>--}}
+                                {{--<div class="col-md-10">+60 135203792</div>--}}
                             </div>
 
                             <div class="row">
