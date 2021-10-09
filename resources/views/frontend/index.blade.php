@@ -14,6 +14,7 @@
         @include('frontend.includes.home_page.expert_center_section')
         @include('frontend.includes.home_page.shop')
         @include('frontend.includes.home_page.acadamy')
+        @include('frontend.includes.home_page.social')
     @else
         @include('frontend.mobile.mobile_homepage')
     @endif

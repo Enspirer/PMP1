@@ -1239,7 +1239,7 @@ Mobile style's
   padding-left: 30px;
   padding: 0 10px;
   font-size: 18px;
-  width: 60%;
+  width: 85%;
   font-size: 14px;
   height: 42px;
   border: 1px solid #b3b3b3;
@@ -1280,7 +1280,7 @@ Mobile style's
 
 #video_box .header-content .content .container .row {
   padding: 12px 9px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 #video_box .header-content .content .container .row p {
@@ -9211,6 +9211,34 @@ footer p {
 }
 
 
+.search-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #0F9D58;
+  font-size: 1.2rem;
+  padding: 0.5rem 2.5rem;
+}
+
+.search-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 0.9rem!important;
+}
+
+.social-banner {
+  background-image: url(../../assets/footer/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: 4rem;
+}
+
+.social-banner .card-body {
+  padding: 0.8rem!important;
+  font-size: 0.8rem!important;
+}
 
 
 @media screen and (max-width: 1200px) {

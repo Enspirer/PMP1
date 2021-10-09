@@ -120,7 +120,7 @@
                     <p class="mb10">
                         <img src="{{url('theme_light/assets/image/footer_logo.png')}}" alt="" width="190px">
                     </p>
-                    <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p>
+                    <!-- <p><i class="fa fa fa-envelope"></i> hello@tallentor.com</p> -->
                 </div>
 
                 <div class="col-sm-4 col-md col-6 col" data-animscroll="fade-up">
@@ -163,7 +163,49 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="row mx-2 mt-3">
+                <div class="col-12 py-2" style="background-color: #0F9D58">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <img src="{{ url('theme_light/assets/footer/talk.png') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                            <h4 class="col_white_amrc mb-0">Let's Talk</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12" data-animscroll="fade-up" style="background-color: rgb(255, 254, 252, 0.1)">
+                    <div class="row mt-4 align-items-center">
+                        <div class="col-3">
+                            <img src="{{ url('theme_light/assets/footer/email.png') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                            <h6 class="col_white_amrc font-weight-normal mb-0">Business Inquiries</h6>
+                            <p class="mb-0">hello@tallentor.com</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 align-items-center bottom_border">
+                        <div class="col-3">
+                            <img src="{{ url('theme_light/assets/footer/tele.png') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                            <h6 class="col_white_amrc font-weight-normal mb-0">PR or Media</h6>
+                            <p class="mb-0">hello@tallentor.com</p>
+                        </div>
+                    </div>
+
+                    <div class="input-group mt-4 mb-3 p-1" style="background-color: rgb(255, 254, 252, 0.1); border: 1px solid white; border-radius: 50px">
+                        <input type="text" class="form-control border-0" placeholder="Enter your Email" aria-label="email" aria-describedby="email" style="background: border-box; border-radius: 50px; color: white">
+                        <button class="btn rounded-0 text-light border-0" type="button" style="background-color: #0F9D58; border-radius: 50px!important; font-size: 0.7rem;">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+            
         <div class="container">
             <ul class="foote_bottom_ul_amrc"></ul>
             <p class="text-center">
