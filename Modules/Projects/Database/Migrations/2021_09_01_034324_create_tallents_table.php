@@ -22,6 +22,8 @@ class CreateTallentsTable extends Migration
             $table->text('user_id');
             $table->text('status');            
             $table->integer('order')->nullable();
+            $table->text('talent_slug')->nullable();
+            $table->text('category_slug')->nullable();
             $table->timestamps();
         });
     }

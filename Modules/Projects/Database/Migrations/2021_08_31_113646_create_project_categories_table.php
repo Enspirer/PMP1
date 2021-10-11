@@ -19,6 +19,7 @@ class CreateProjectCategoriesTable extends Migration
             $table->text('user_id');
             $table->text('icon')->nullable();
             $table->text('description')->nullable();
+            $table->text('slug')->nullable();
             $table->text('status');            
             $table->integer('order')->nullable();
             $table->timestamps();

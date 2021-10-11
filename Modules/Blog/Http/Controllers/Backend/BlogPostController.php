@@ -79,12 +79,21 @@ class BlogPostController extends Controller
     public function show($id)
     {
         $BlogCategory = BlogCategory::get();
+
         $blog_post = BlogPost::where('id',$id)->first();
+
         $blogPorstes = BlogPost::all();
 
         $getPostDetails =  json_decode($blog_post->reference_post_ids);
+        // dd($getPostDetails);
+        
+        if($getPostDetails == null){
+            $gerReferenceData = null;
+        }else{
+            $gerReferenceData = BlogPost::whereIn('id',$getPostDetails)->get();
+        }
 
-        $gerReferenceData = BlogPost::whereIn('id',$getPostDetails)->get();
+        // dd($gerReferenceData);
 
 
         return view('blog::backend.blog_post.edit',[

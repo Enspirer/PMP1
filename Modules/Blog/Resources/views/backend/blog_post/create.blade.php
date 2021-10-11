@@ -26,7 +26,7 @@
                             <label>Category</label>
                             <select name="category" class="form-control">
                                 @foreach($BlogCategory as $blogCategorys)
-                                    <option value="1">{{$blogCategorys->name}}</option>
+                                    <option value="{{$blogCategorys->id}}">{{$blogCategorys->name}}</option>
                                 @endforeach
 
                             </select>
