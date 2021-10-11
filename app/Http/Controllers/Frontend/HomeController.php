@@ -76,7 +76,7 @@ class HomeController extends Controller
         {
             array_push($fb_news,$itemr);
         }
-        dd($fb_news);
+        // dd($fb_news);
         $last_fb_news = $fb_news[0];
         $doc = new \DOMDocument();
         $doc->loadHTML($last_fb_news->description);

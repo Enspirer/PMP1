@@ -22,12 +22,12 @@
             <div class="col-3 fb">
                 <a href="asdasd" style="color:black" target="_blank" id="stack_panel">
                     <div class="card" style="height: 25rem;">
-                        <img id="facebook_src" src="dsfsdfsd" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
+                        <img id="facebook_src" src="" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text mb-1" id="description_fb">sdfsdfs</p>
+                            <p class="card-text mb-1" id="description_fb"></p>
                             
                             <div class="text-right">
-                                <img src="dasdasdad" alt="" class="img-fluid">
+                                <img src="{{ url('theme_light/assets/footer/fb_color.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -35,12 +35,12 @@
             </div>
 
          
-            <div class="col-3">
-                <a href="sadasd" style="color:black" target="_blank">
+            <div class="col-3 twitter">
+                <a href="" style="color:black" target="_blank" class="twitter-link">
                     <div class="card" style="height: 25rem;">
-                        <img src="{{ url('theme_light/assets/footer/2.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
+                        <img src="{{ url('theme_light/assets/footer/twitter_large.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text mb-1">{{ 'ggg' }}</p>
+                            <p class="card-text mb-1" id="description_twitter"></p>
                             
                             <div class="text-right">
                                 <img src="{{ url('theme_light/assets/footer/twitter_color.png') }}" alt="" class="img-fluid">
@@ -103,7 +103,12 @@
 
 
     $.get("{{route('twitter_news')}}", function(data, status){
-
+        var data = JSON.parse(data);
+        $(".twitter-link").attr("href", data.link);
+        $("#description_twitter").text(data.title);
+    }).
+    fail(function(jqXHR, textStatus, errorThrown) {
+        $('.twitter').addClass('d-none');
     });
 
 </script>

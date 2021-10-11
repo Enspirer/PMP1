@@ -689,12 +689,12 @@
             </div>
 
             <div class="row">
-                <div class="col-12 mb-4">
-                    <a href="{{url($last_fb_news->link)}}" style="color:black" target="_blank">
+                <div class="col-12 mb-4 fb">
+                    <a href="" style="color:black" target="_blank" id="stack_panel">
                         <div class="card" style="height: 26rem;">
-                            <img src="{{ $last_fb_news->image }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
+                            <img src="" id="facebook_src" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                             <div class="card-body">
-                                <p class="card-text mb-1">{{$last_fb_news->title}}</p>
+                                <p class="card-text mb-1" id="description_fb"></p>
                                 
                                 <div class="text-right">
                                     <img src="{{ url('theme_light/assets/footer/fb_color.png') }}" alt="" class="img-fluid">
@@ -704,15 +704,15 @@
                     </a>
                 </div>
 
-                <div class="col-12 mb-4">
-                    <a href="#" style="color:black" target="_blank">
+                <div class="col-12 mb-4 twitter">
+                    <a href="" style="color:black" target="_blank" class="twitter-link">
                         <div class="card" style="height: 26rem;">
-                            <img src="{{ url('theme_light/assets/footer/2.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
+                            <img src="{{ url('theme_light/assets/footer/twitter_large.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                             <div class="card-body">
-                                <p class="card-text mb-1">We're giving away 100,000,000 $Shib to 5 random people (20,000,000 each)Money bag RocketFollow Me! Gem stoneRetweet and Like. Open handsComment #SHIBARMY  ⚠followers only giveaway⚠ #BTC  #ETH #Giveaway #ADA</p>
+                                <p class="card-text mb-1" id="description_twitter"></p>
                                 
                                 <div class="text-right">
-                                    <a href="#" class=""><img src="{{ url('theme_light/assets/footer/twitter_color.png') }}" alt="" class="img-fluid"></a>
+                                    <img src="{{ url('theme_light/assets/footer/twitter_color.png') }}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -765,4 +765,27 @@
 @if(config('access.captcha.contact'))
 @captchaScripts
 @endif
+
+<script>
+    $.get("{{route('facebook_news')}}", function(data, status){
+        var backimage_f = JSON.parse(data);
+        $("#facebook_src").attr("src",backimage_f.image);
+        $("#description_fb").html(backimage_f.title);
+        $("#stack_panel").attr("href",backimage_f.link);
+    }).
+    fail(function(jqXHR, textStatus, errorThrown) {
+        $('.fb').addClass('d-none');
+    });
+
+
+    $.get("{{route('twitter_news')}}", function(data, status){
+        var data = JSON.parse(data);
+        $(".twitter-link").attr("href", data.link);
+        $("#description_twitter").text(data.title);
+    }).
+    fail(function(jqXHR, textStatus, errorThrown) {
+        $('.twitter').addClass('d-none');
+    });
+
+</script>
 @endpush
