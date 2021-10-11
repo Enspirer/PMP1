@@ -70,12 +70,13 @@ class HomeController extends Controller
 
     public function twitter_news()
     {
-        $xml=simplexml_load_file("http://fetchrss.com/rss/6163bb4465c6a34d4a4a1b536163bc498abc1b7e6a0d97d2.xml") or die("Error: Cannot create object");
+        $xml=simplexml_load_file("http://fetchrss.com/rss/6163bb4465c6a34d4a4a1b5361641714308e6f15f55a46a2.xml") or die("Error: Cannot create object");
         $fb_news = [];
         foreach ($xml->channel->item as $key => $itemr)
         {
             array_push($fb_news,$itemr);
         }
+        dd($fb_news);
         $last_fb_news = $fb_news[0];
         $doc = new \DOMDocument();
         $doc->loadHTML($last_fb_news->description);
