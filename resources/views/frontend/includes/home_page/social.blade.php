@@ -19,7 +19,7 @@
         </div>
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 fb">
                 <a href="asdasd" style="color:black" target="_blank" id="stack_panel">
                     <div class="card" style="height: 25rem;">
                         <img id="facebook_src" src="dsfsdfsd" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
@@ -96,10 +96,16 @@
         $("#facebook_src").attr("src",backimage_f.image);
         $("#description_fb").html(backimage_f.title);
         $("#stack_panel").attr("href",backimage_f.link);
+    }).
+    fail(function(jqXHR, textStatus, errorThrown) {
+        $('.fb').addClass('d-none');
     });
+
+
     $.get("{{route('twitter_news')}}", function(data, status){
 
     });
+
 </script>
 
 
