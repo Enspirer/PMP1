@@ -20,14 +20,14 @@
 
         <div class="row">
             <div class="col-3">
-                <a href="{{url($last_fb_news->link)}}" style="color:black" target="_blank">
+                <a href="asdasd" style="color:black" target="_blank" id="stack_panel">
                     <div class="card" style="height: 25rem;">
-                        <img src="{{ $last_fb_news->image }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
+                        <img id="facebook_src" src="dsfsdfsd" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text mb-1">{{$last_fb_news->title}}</p>
+                            <p class="card-text mb-1" id="description_fb">sdfsdfs</p>
                             
                             <div class="text-right">
-                                <img src="{{ url('theme_light/assets/footer/fb_color.png') }}" alt="" class="img-fluid">
+                                <img src="dasdasdad" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
 
          
             <div class="col-3">
-                <a href="{{url($last_twitter_news->link)}}" style="color:black" target="_blank">
+                <a href="sadasd" style="color:black" target="_blank">
                     <div class="card" style="height: 25rem;">
                         <img src="{{ url('theme_light/assets/footer/2.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                         <div class="card-body">
@@ -89,5 +89,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    $.get("{{route('facebook_news')}}", function(data, status){
+        var backimage_f = JSON.parse(data);
+        $("#facebook_src").attr("src",backimage_f.image);
+        $("#description_fb").html(backimage_f.title);
+        $("#stack_panel").attr("href",backimage_f.link);
+    });
+    $.get("{{route('twitter_news')}}", function(data, status){
+
+    });
+</script>
 
 
