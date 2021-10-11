@@ -34,12 +34,13 @@
                 </a>
             </div>
 
+         
             <div class="col-3">
-                <a href="#" style="color:black" target="_blank">
+                <a href="{{url($last_twitter_news->link)}}" style="color:black" target="_blank">
                     <div class="card" style="height: 25rem;">
                         <img src="{{ url('theme_light/assets/footer/2.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                         <div class="card-body">
-                            <p class="card-text mb-1">We're giving away 100,000,000 $Shib to 5 random people (20,000,000 each)Money bag RocketFollow Me! Gem stoneRetweet and Like. Open handsComment #SHIBARMY  ⚠followers only giveaway⚠ #BTC  #ETH #Giveaway #ADA</p>
+                            <p class="card-text mb-1">{{ 'ggg' }}</p>
                             
                             <div class="text-right">
                                 <img src="{{ url('theme_light/assets/footer/twitter_color.png') }}" alt="" class="img-fluid">
