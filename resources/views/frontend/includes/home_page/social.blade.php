@@ -62,7 +62,7 @@
                                         @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first() != null)
                                             <a href="{{url('blog/all')}}" style="color: {{Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->color}}; font-size: 1.1rem;">{{ Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name }}</a>
                                         @else
-                                        <p style="color: Red; font-size: 1.1rem;">Category Deleted</p>   
+                                            <p style="color: Red; font-size: 1.1rem;">Category Deleted</p>   
                                         @endif
                                     
                                     </div>
