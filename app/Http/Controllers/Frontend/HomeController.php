@@ -19,7 +19,6 @@ class HomeController extends Controller
     {
         $categories = ProjectCategories::all();
 
-
         $mobileRequest = $request->header('sec-ch-ua-mobile');
         // dd($mobileRequest);
 
@@ -49,10 +48,7 @@ class HomeController extends Controller
 
         $last_fb_news->image = $src;
 
-        // dd($last_fb_news);
-
-            
-
+        // dd($last_fb_news);   
 
         $mobileRequest = $request->header('sec-ch-ua-mobile');
 
