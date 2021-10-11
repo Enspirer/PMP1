@@ -57,7 +57,7 @@
                             <div class="card" style="height: 25rem;">
                                 <img src="{{ url($blog_posts->feature_image) }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                                 <div class="card-body">
-                                    <p class="card-text mb-1">{{$blog_posts->short_description}}</p>
+                                    <p class="card-text mb-1" style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">{{$blog_posts->short_description}}</p>
                                     
                                     <div class="text-right">
                                         @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first() != null)
