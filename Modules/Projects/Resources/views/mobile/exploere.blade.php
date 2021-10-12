@@ -20,7 +20,7 @@
       <br />
       <h2>Trending Projects</h2>
       <br />
-      <div class="swiper-container swiper-container-trending-mob">
+      <div class="swiper-container swiper-container-trending-mob" style="max-width: 100%; overflow-x: hidden;">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="project-card-mob">
@@ -48,6 +48,7 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination-swiper-container-trending-mob text-center"></div>
       </div>
 
       <br />
@@ -367,8 +368,13 @@
 @push('after-scripts')
 <script>
       var swiper = new Swiper(".swiper-container-trending-mob", {
-        slidesPerView: 2.5,
-        spaceBetween: 10,
-      });
-    </script>
-    @endpush
+        slidesPerView: 1,
+          // spaceBetween: 20,
+          centeredSlides: true,
+          pagination: {
+            el: '.swiper-pagination-swiper-container-trending-mob',
+            clickable: true,
+          },
+        });
+</script>
+@endpush

@@ -326,6 +326,19 @@
         });
     </script>
 
+    <!-- <script>
+        var swiper = new Swiper(".swiper-container-acadamy-mob", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination-mob2",
+                clickable: true,
+            },
+        });
+    </script> -->
+
+
+
     <script>
         $("#collapsbtnexplore").click(function() {
             if ($(this).attr('aria-expanded') == 'false') {

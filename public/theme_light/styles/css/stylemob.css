@@ -2448,7 +2448,7 @@ a {
 
 .acadamy-body-mob .card-acadamy {
   margin-bottom: 30px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   position: relative;
   overflow: visible;
   width: 100%;
