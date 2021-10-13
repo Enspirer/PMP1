@@ -2,19 +2,20 @@
     <div class="container social">
         <div class="row justify-content-center align-items-center mb-5">
             <div class="col-1 text-center">
-                <img src="{{ url('theme_light/assets/footer/fb.png') }}" alt="" class="img-fluid">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
             </div>
             <div class="col-1 text-center">
-                <img src="{{ url('theme_light/assets/footer/twitter.png') }}" alt="" class="img-fluid">
+                <a href=""><i class="fab fa-twitter"></i></a>
             </div>
             <div class="col-1 text-center">
-                <img src="{{ url('theme_light/assets/footer/youtube.png') }}" alt="" class="img-fluid">
+                <!-- <a href=""><img src="{{ url('theme_light/assets/footer/youtube.png') }}" alt="" class="img-fluid"></a> -->
+                <a href=""><i class="fab fa-youtube"></i></a>
             </div>
             <div class="col-1 text-center">
-                <img src="{{ url('theme_light/assets/footer/instagram.png') }}" alt="" class="img-fluid">
+                <a href=""><i class="fab fa-instagram"></i></a>
             </div>
             <div class="col-1 text-center">
-                <img src="{{ url('theme_light/assets/footer/linked.png') }}" alt="" class="img-fluid">
+                <a href=""><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
 

@@ -26,9 +26,9 @@
 <div class="hero-image">
     <div class="dark-layer-hero"></div>
     <div class="hero-mobile-content">
-        <h4>The place where</h4>
-        <h4>
-            the <span>top challengers</span> meet the <span>best talent</span>
+        <h4 style="line-height: 20px;">The place where</h4>
+        <h4 style="line-height: 22px">
+            the <span>top challengers</span> meet the <span><br> best talent</span>
         </h4>
 
         <form action="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" class="search-hero-mobile">
@@ -427,6 +427,10 @@
         <h4>Expert Centre</h4>
         <hr />
     </div>
+
+    <div class="text-center">
+        <img src="{{url('theme_light/assets/expert_center/expert_center.png')}}" alt="Expert Center" data-animscroll="fade-left">
+    </div>
     <br />
     <h6>Plan Your Project with our experts</h6>
     <h5>Plan it precisely, Save money and time</h5>
@@ -667,19 +671,20 @@
         <div class="container social">
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col text-center">
-                    <img src="{{ url('theme_light/assets/footer/fb.png') }}" alt="" class="img-fluid">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
                 </div>
                 <div class="col text-center">
-                    <img src="{{ url('theme_light/assets/footer/twitter.png') }}" alt="" class="img-fluid">
+                    <a href=""><i class="fab fa-twitter"></i></a>
                 </div>
                 <div class="col text-center">
-                    <img src="{{ url('theme_light/assets/footer/youtube.png') }}" alt="" class="img-fluid">
+                    <!-- <img src="{{ url('theme_light/assets/footer/youtube.png') }}" alt="" class="img-fluid"> -->
+                    <a href=""><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="col text-center">
-                    <img src="{{ url('theme_light/assets/footer/instagram.png') }}" alt="" class="img-fluid">
+                    <a href=""><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="col text-center">
-                    <img src="{{ url('theme_light/assets/footer/linked.png') }}" alt="" class="img-fluid">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
 

@@ -212,7 +212,7 @@
                 Copyright @2021 | <a style="color: #c2c2c2;font-weight: 400;font-size: 15px;">Tallentor Global Ltd</a>
             </p>
 
-            <ul class="social_footer_ul" style="padding-left: 0;">
+            <!-- <ul class="social_footer_ul" style="padding-left: 0;">
                 <li>
                     <a href="https://www.facebook.com/tallentor" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
@@ -225,7 +225,7 @@
                 <li>
                     <a href="https://www.instagram.com/tallentor/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </footer>
 

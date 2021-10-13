@@ -27,11 +27,16 @@
 button:focus {
     outline: none;
 }
+
+.vertical-hover {
+    background-color : #0f9d58;
+    color : white;
+}
 </style>
 
 @endpush
 
-<div class="container text-center" style="{{$padding_top}} margin-bottom: 10rem">
+<div class="container text-center top-categories" style="{{$padding_top}} margin-bottom: 10rem">
 
     <div class="heading-text">
         <h1 style="font-size: 42px; color: #361d41; margin: auto; text-align: center; font: normal normal bold 48px/70px Poppins;">Top Categories at Tallentor</h1>
@@ -85,7 +90,7 @@ button:focus {
             </nav>
         </div>
 
-        <div class="col-8">
+        <div class="col-8 images">
             <div class="tab-content" id="nav-tabContent">
 
                 @foreach($categories as $category)
@@ -124,3 +129,24 @@ button:focus {
     </div>
 </div>
 
+
+
+@push('after-scripts')
+    <script>
+        $('.top-categories .images .col-4').hover(function(){
+            $(this).addClass('dark');
+        }, function() {
+            $(this).removeClass('dark');
+        });
+    </script>
+
+
+<script>
+    $('.navClass .nav-link').hover(function() {
+        $(this).addClass('vertical-hover');
+    }, function() {
+        $(this).removeClass('vertical-hover');
+    });
+</script>
+
+@endpush

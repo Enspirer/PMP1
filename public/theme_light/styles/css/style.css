@@ -9251,6 +9251,24 @@ footer p {
   font-size: 0.8rem!important;
 }
 
+.social-banner .social a i {
+    color: black;
+    font-size: 3rem;
+}
+
+.social-banner .social a:hover i {
+  color: #007bff;
+}
+
+.top-categories .images .col-4 {
+  transition: all 1s!important;
+}
+
+.dark {
+  filter: brightness(40%)!important;
+  transition: filter 1s!important;
+}
+
 
 @media screen and (max-width: 1200px) {
   .media-nav {
