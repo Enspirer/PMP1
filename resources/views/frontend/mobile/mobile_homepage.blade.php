@@ -44,17 +44,17 @@
 
             <div class="row justify-content-center mt-4">
                     <!-- <p>Popular :</p>
-                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Web Design</a>
+                    <a href="{{routSue('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Web Design</a>
                     <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Logo Design</a>
                     <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">App Development</a>
                     <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Programming</a>
                     <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">UI/UX</a> -->
 
                     <div class="col-6 text-right">
-                        <button class="search-button">Find Talent</button>
+                        <a href="{{route('frontend.talents')}}" type="button" class="search-button">Find Talent</a>
                     </div>
                     <div class="col-6 text-left">
-                        <button class="search-button">Find Work</button>
+                        <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" type="button" class="search-button">Find Work</a>
                     </div>
                 </div>
         </form>

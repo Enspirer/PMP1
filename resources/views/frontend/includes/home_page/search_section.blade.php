@@ -38,10 +38,10 @@
                     <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">UI/UX</a> -->
 
                     <div class="col-3 text-right">
-                        <button class="search-button">Find Talent</button>
+                        <a href="{{route('frontend.talents')}}" type="button" class="search-button">Find Talent</a>
                     </div>
                     <div class="col-3 text-left">
-                        <button class="search-button">Find Work</button>
+                        <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" type="button" class="search-button">Find Work</a>
                     </div>
                 </div>
             </div>

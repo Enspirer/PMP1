@@ -26,7 +26,7 @@
                                 <i class="fa fa-heart" aria-hidden="true"></i> SAVE PROJECT
                             </button>
                         @else
-                            <a href="{{route('frontend.auth.login')}}" class="apply-button" style="margin: 10px 0;">APPLY TO THIS PROJECT</a>
+                            <a href="{{route('frontend.auth.login')}}" class="apply-button" style="margin: 10px 0;">APPLY NOW</a>
                         @endauth
 
 
@@ -41,7 +41,7 @@
                         @endauth
 
                         <div class="bottum-buttons">
-                            <button class="button">
+                            <button class="button mb-4">
                                 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Report this project
                             </button>
                             <button class="button">

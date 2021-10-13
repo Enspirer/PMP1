@@ -22,6 +22,8 @@ Route::post('contact/send', [ContactController::class, 'send'])->name('contact.s
 Route::get('test', [TestController::class, 'index'])->name('test');
 
 
+Route::post('email-subscription/store', [HomeController::class, 'emailSubscriptionStore'])->name('email_subscription_store');
+
 
 
 

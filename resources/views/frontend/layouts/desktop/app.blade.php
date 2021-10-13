@@ -256,11 +256,13 @@
                             <p class="mb-0">hello@tallentor.com</p>
                         </div>
                     </div>
-
-                    <div class="input-group mt-4 mb-3 p-1" style="background-color: rgb(255, 254, 252, 0.1); border: 1px solid white; border-radius: 50px">
-                        <input type="text" class="form-control border-0" placeholder="Enter your Email" aria-label="email" aria-describedby="email" style="background: border-box; border-radius: 50px; color: white">
-                        <button class="btn rounded-0 text-light border-0" type="button" style="background-color: #0F9D58; border-radius: 50px!important; font-size: 0.7rem;">SUBSCRIBE</button>
-                    </div>
+                    <form action="{{ route('frontend.email_subscription_store') }}" method="POST">
+                        {{csrf_field()}}
+                        <div class="input-group mt-4 mb-3 p-1" style="background-color: rgb(255, 254, 252, 0.1); border: 1px solid white; border-radius: 50px">
+                            <input type="text" class="form-control border-0" placeholder="Enter your Email" aria-label="email" aria-describedby="email" name="email" style="background: border-box; border-radius: 50px; color: white">
+                            <button class="btn rounded-0 text-light border-0" type="submit" style="background-color: #0F9D58; border-radius: 50px!important; font-size: 0.7rem;">SUBSCRIBE</button>
+                        </div>
+                    </form>
                 </div>
 
 

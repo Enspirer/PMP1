@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="budget-more-project col-md-3">
-                <h5>Estimated Budjet</h5>
+                <h5>Estimated Budget</h5>
                 <h3>USD 700 - 1,000</h3>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="budget-more-project col-md-3">
-                    <h5>Estimated Budjet</h5>
+                    <h5>Estimated Budget</h5>
                     <h3>USD 3,000 - 4,000</h3>
                 </div>
             </div>

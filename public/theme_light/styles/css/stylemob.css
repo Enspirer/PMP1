@@ -4164,7 +4164,9 @@ footer p {
   color: white!important;
   border: 1px solid #0F9D58!important;
   font-size: 1rem!important;
-  padding: 0.5rem 1rem!important;
+  padding: 0.3rem 1rem!important;
+  margin-top: 0px!important;
+  border-radius: 0!important;
 }
 
 .search-button:hover {

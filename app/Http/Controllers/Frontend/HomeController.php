@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\ProjectCategories;
 use App\Models\Tallents;
+use Modules\SupportCenter\Entities\SubscriptionEmail;
 
 /**
  * Class HomeController.
@@ -27,25 +28,25 @@ class HomeController extends Controller
         $mobileRequest = $request->header('sec-ch-ua-mobile');
         // dd($mobileRequest);
 
-        $xml=simplexml_load_file("https://rss.app/feeds/LFinv3T4E3n1dzHx.xml") or die("Error: Cannot create object");
+        // $xml=simplexml_load_file("https://rss.app/feeds/LFinv3T4E3n1dzHx.xml") or die("Error: Cannot create object");
             
         $twitter_news = [];
 
-        foreach ($xml->channel->item as $key => $itemr)
-        {
-        array_push($twitter_news,$itemr);
-        }
+        // foreach ($xml->channel->item as $key => $itemr)
+        // {
+        // array_push($twitter_news,$itemr);
+        // }
 
         // dd($twitter_news);
         
-        $last_twitter_news = $twitter_news[0];
+        // $last_twitter_news = $twitter_news[0];
         // dd($last_twitter_news->description);
 
         $mobileRequest = $request->header('sec-ch-ua-mobile');
 
         return view('frontend.index',[
-            'categories' => $categories,
-            'last_twitter_news' =>$last_twitter_news
+            'categories' => $categories
+            // 'last_twitter_news' =>$last_twitter_news
         ]);
     }
 
@@ -85,5 +86,23 @@ class HomeController extends Controller
         $last_fb_news->image = $src;
 
         return json_encode($last_fb_news);
+    }
+
+
+    public function emailSubscriptionStore(Request $request)
+    {
+        $user_id = auth()->user()->id;
+
+        $subscription = new SubscriptionEmail;
+
+        $subscription->user_id = $user_id;
+        $subscription->email = $request->email;
+        $subscription->description = $request->description;
+
+
+        $subscription->save();
+
+        
+        return redirect()->route('frontend.index');                      
     }
 }

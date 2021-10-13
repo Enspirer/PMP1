@@ -50,3 +50,9 @@ Breadcrumbs::for('admin.contact_us.show', function ($trail) {
 });
 
 
+Breadcrumbs::for('admin.email_subscription.index', function ($trail) {
+    $trail->push('Email Subscription', route('admin.email_subscription.index'));
+
+});
+
+

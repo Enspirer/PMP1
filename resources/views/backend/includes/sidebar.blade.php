@@ -86,6 +86,13 @@
                 </ul>
             </li>  
 
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/email_subscription.index'))}}" href="{{ route('admin.email_subscription.index') }}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Email Subscriptions
+                </a>
+            </li>
+
 
             
 
