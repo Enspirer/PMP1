@@ -43,12 +43,7 @@
             </div>
 
             <div class="row justify-content-center mt-4">
-                    <!-- <p>Popular :</p>
-                    <a href="{{routSue('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Web Design</a>
-                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Logo Design</a>
-                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">App Development</a>
-                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Programming</a>
-                    <a href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">UI/UX</a> -->
+               
 
                     <div class="col-6 text-right">
                         <a href="{{route('frontend.talents')}}" type="button" class="search-button">Find Talent</a>

@@ -38,9 +38,19 @@ class EmailSubscriptionController extends Controller
                 })
 
                 ->addColumn('name', function($data){
-                    $name = User::where('id', $data->user_id)->first();
+                    if($data->user_id != null) {
+
+                        $name = User::where('id', $data->user_id)->first();
                  
-                    return $name->name;
+                        return $name->name;
+                    }
+                    else {
+
+                        $name = '-';
+
+                        return $name;
+                    }
+                    
                 })
 
                 ->rawColumns(['action','name'])

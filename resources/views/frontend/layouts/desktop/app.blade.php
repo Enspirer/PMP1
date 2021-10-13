@@ -98,6 +98,9 @@
 
         <div class="">
             @yield('content')
+
+            <!-- Swal.fire('Any fool can use a computer') -->
+            
         </div><!-- container -->
     </div><!-- #app -->
 
@@ -298,13 +301,23 @@
         </div>
     </footer>
 
-
-
+    
 
 
     <!-- Scripts -->
     @stack('before-scripts')
     <script src="{{url('js/core/swiper-bundle.min.js')}}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
+
+    @if(\Session::has('success'))
+
+        <script>
+            Swal.fire('Thank you for the subscription')
+        </script>
+    @endif
+
+    
 
     <script>
         var galleryThumbs = new Swiper(".gallery-thumbs", {

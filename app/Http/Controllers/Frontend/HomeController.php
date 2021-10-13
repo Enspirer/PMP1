@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\ProjectCategories;
 use App\Models\Tallents;
 use Modules\SupportCenter\Entities\SubscriptionEmail;
+use Auth;
 
 /**
  * Class HomeController.
@@ -91,11 +92,18 @@ class HomeController extends Controller
 
     public function emailSubscriptionStore(Request $request)
     {
-        $user_id = auth()->user()->id;
-
         $subscription = new SubscriptionEmail;
 
-        $subscription->user_id = $user_id;
+        if($user = Auth::user()){
+
+            $subscription->user_id = auth()->user()->id;
+        }
+
+        else {
+            $subscription->user_id = null;
+        }
+
+        
         $subscription->email = $request->email;
         $subscription->description = $request->description;
 
@@ -103,6 +111,6 @@ class HomeController extends Controller
         $subscription->save();
 
         
-        return redirect()->route('frontend.index');                      
+        return back()->with('success', 'success');                 
     }
 }
