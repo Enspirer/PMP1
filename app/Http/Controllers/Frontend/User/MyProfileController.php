@@ -8,6 +8,8 @@ use Auth;
 use DB;
 use App\Models\Portfolio;
 use App\Models\MyProfileDetails;
+use App\Models\Auth\User;
+use Hash;
 
 class MyProfileController extends Controller
 {
@@ -18,10 +20,15 @@ class MyProfileController extends Controller
 
         $profile_details = MyProfileDetails::where('user_id', $user_id)->first();
 
+
+        $user = User::where('id', $user_id)->first();
+
+
+
         // $special = json_decode($profile_details->specialized_on)[0]->name;
         // $special_description = json_decode($profile_details->specialized_on)[0]->description;
 
-        return view('frontend.user.my_profile.my_profile', ['portfolios' => $portfolios, 'profile_details' => $profile_details]);
+        return view('frontend.user.my_profile.my_profile', ['portfolios' => $portfolios, 'profile_details' => $profile_details, 'user' => $user]);
     }
 
 
@@ -319,6 +326,63 @@ class MyProfileController extends Controller
         
         
         return back();
+    }
+
+
+
+
+    public function accountInformationUpdate(Request $request)
+    {
+        $first_name = request('first_name');
+        $last_name = request('last_name');
+        $email = request('email');
+        $address = request('address');
+        $location = request('location');
+        $contact_number = request('phone');
+        $company_name = request('company_name');
+
+        
+        $users = DB::table('users') ->where('id', request('hidden_id'))->update(
+            [
+                'first_name' => $first_name,
+                'last_name' => $last_name,
+                'email' => $email,
+                'address' => $address,
+                'location' => $location,
+                'contact_number' => $contact_number,
+                'company_name' => $company_name,
+
+            ]
+        );
+
+        return redirect()->route('frontend.user.my_profile')->with('success', 'success');
+    }
+
+
+
+    public function accountPasswordUpdate(Request $request)
+    {
+        $request->validate([
+            'old_password' => 'required|min:6|max:100',
+            'new_password' => 'required|min:6|max:100',
+            'confirm_password' => 'required|same:new_password'
+        ]);
+
+        $user = auth()->user();
+
+        if(Hash::check($request->old_password, $user->password)) {
+
+            $user->update([
+                'password'=> bcrypt($request->new_password)
+            ]);
+
+            return back()->with('success', 'success');
+
+        } else {
+
+            return back()->with('error', 'error');
+        }
+
     }
 
 

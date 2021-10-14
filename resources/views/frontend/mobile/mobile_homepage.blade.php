@@ -671,7 +671,7 @@
         <div class="container social">
             <div class="row justify-content-center align-items-center mb-5">
                 <div class="col text-center">
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.facebook.com/tallentor" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 </div>
                 <div class="col text-center">
                     <a href=""><i class="fab fa-twitter"></i></a>
@@ -690,7 +690,7 @@
 
             <div class="row">
                 <div class="col-12 mb-4 fb">
-                    <a href="" style="color:black" target="_blank" id="stack_panel">
+                    <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                         <div class="card" style="height: 26rem;">
                             <img src="" id="facebook_src" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                             <div class="card-body">
@@ -771,7 +771,7 @@
         var backimage_f = JSON.parse(data);
         $("#facebook_src").attr("src",backimage_f.image);
         $("#description_fb").html(backimage_f.title);
-        $("#stack_panel").attr("href",backimage_f.link);
+        // $("#stack_panel").attr("href",backimage_f.link);
     }).
     fail(function(jqXHR, textStatus, errorThrown) {
         $('.fb').addClass('d-none');

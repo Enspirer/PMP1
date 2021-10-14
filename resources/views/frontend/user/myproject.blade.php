@@ -20,11 +20,11 @@
                         @include('frontend.user.my_projects.tabs_pages.bids_and_proposals')
                     </div>
 
-                    <div class="tab-pane fade show  {{ $section == "waiting_to_review" ? "active" : "" }}" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade show {{ $section == "waiting_to_review" ? "active" : "" }}" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         @include('frontend.user.my_projects.tabs_pages.waiting_to_review')
                     </div>
 
-                    <div class="tab-pane fade show  {{ $section == "completed_projects" ? "active" : "" }}" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">
+                    <div class="tab-pane fade show {{ $section == "completed_projects" ? "active" : "" }}" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">
                         @include('frontend.user.my_projects.tabs_pages.completed_projects')
                     </div>
 

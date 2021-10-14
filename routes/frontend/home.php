@@ -64,5 +64,12 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Profile Specific
         Route::get('post_project', [PostProjectController::class, 'index'])->name('post_project');
+
+
+
+        Route::post('user/project-search',[DashboardController::class,'projectSearch'])->name('project_search');
+
+        Route::post('my-profile/account-information/update', [MyProfileController::class, 'accountInformationUpdate'])->name('account_information_update');
+        Route::post('my-profile/password/update', [MyProfileController::class, 'accountPasswordUpdate'])->name('account_password_update');
     });
 });

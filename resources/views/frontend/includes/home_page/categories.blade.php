@@ -135,6 +135,7 @@ button:focus {
     <script>
         $('.top-categories .images .col-4').hover(function(){
             $(this).addClass('dark');
+
         }, function() {
             $(this).removeClass('dark');
         });
@@ -144,8 +145,19 @@ button:focus {
 <script>
     $('.navClass .nav-link').hover(function() {
         $(this).addClass('vertical-hover');
+
+        $(this).find('img').css('filter', 'brightness(100)');
+        
     }, function() {
+
         $(this).removeClass('vertical-hover');
+
+        if($(this).hasClass('active')) {
+            $(this).find('img').css('filter', 'brightness(100)');
+        }
+        else {
+            $(this).find('img').css('filter', 'brightness(1)');
+        }
     });
 </script>
 

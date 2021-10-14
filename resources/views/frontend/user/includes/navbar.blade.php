@@ -2,12 +2,16 @@
     <nav class="navbar-main navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <div class="logo-left-side-bar" style="width: 250px;">
-                <a class="navbar-brand" href="{{url('/')}}" style="display: flex;margin: auto;"><img src="{{url('theme_light/assets/image/logotext.png')}}" alt="" width="160px" style="width: 110px;margin: auto;"></a>
+                <a class="navbar-brand" href="{{url('/')}}" style="display: flex;margin: auto;"><img src="{{url('theme_light/assets/image/footer_logo.png')}}" alt="" width="160px" style="width: 110px;margin: auto;"></a>
             </div>
                     <div class="header-search-top">
                         <div class="inputWithIcon">
-                            <input type="text" placeholder="Search projects" />
-                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <form action="{{ route('frontend.user.project_search') }}" method="POST">
+                                {{csrf_field()}}
+                                <input type="text" name="keyword" placeholder="Search projects" />
+                                <i class="fa fa-search" type="submit" aria-hidden="true" style="color: white"></i>
+                                <!-- <input type="submit" class="invisible"> -->
+                            </form>
                         </div>
                     </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
@@ -17,31 +21,31 @@
                 <div class="ml-auto row">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{url('/')}}">
+                            <a class="nav-link" href="{{url('/')}}" style="color:white!important">
                                 Home <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">Explore</a>
+                            <a class="nav-link" href="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}" style="color:white!important">Explore</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('frontend.user.dashboard')}}">Dashboard</a>
+                            <a class="nav-link" href="{{route('frontend.user.dashboard')}}" style="color:white!important">Dashboard</a>
                         </li>
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#" style="color:white!important">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#" style="color:white!important">Pricing</a>
                         </li>
 
                         <div class="user-menu-wrap">
                             <a class="mini-photo-wrapper-notification" href="#" onclick="myFunction1(event)">
                                 <i class="fa fa-bell" aria-hidden="true" style="
                         font-size: 22px;
-                        color: #131313;
+                        color: white;
                         top: 12px;
                         margin-top: 8px;
                         margin-left: 32px;

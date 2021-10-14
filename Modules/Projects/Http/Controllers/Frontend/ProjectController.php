@@ -16,7 +16,7 @@ class ProjectController extends Controller
      * Display a listing of the resource.
      * @return Renderable
      */
-    public function index()
+    public function index($category, $search_keyword, $county, $bids_range, $sort_by)
     {
         return view('projects::exploere');
     }

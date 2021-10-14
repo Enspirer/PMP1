@@ -28,6 +28,10 @@
                                         <li class="nav-item" role="presentation">
                                             <a class="nav-link" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio" type="button" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
                                         </li>
+
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="portfolio" aria-selected="false">Settings</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -55,6 +59,12 @@
 
                                 </div>
 
+                                <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+
+                                    @include('frontend.user.my_profile.tabs_pages.settings')
+
+                                </div>
+
 
                             </div>
                         </div>
@@ -69,8 +79,38 @@
         </section>
 
 
+    @if(\Session::has('success'))
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary invisible" id="info-btn" data-toggle="modal" data-target="#exampleModal"></button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body" style="padding: 5rem 1rem;">
+                        <h4 class="mb-0 text-center">Your information updated successfully.</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
+
 
 @endsection
+
+
+@push('after-scripts')
+    <script>
+        if(document.getElementById("info-btn")){
+            $('#info-btn').click();
+        }
+    </script>
+@endpush
 
 
 

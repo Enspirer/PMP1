@@ -9269,6 +9269,10 @@ footer p {
   transition: filter 1s!important;
 }
 
+.inputWithIcon input::placeholder {
+  color: white!important;
+}
+
 
 @media screen and (max-width: 1200px) {
   .media-nav {
