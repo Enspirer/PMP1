@@ -60,17 +60,29 @@
             </div>
         </div>
 
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <textarea name="project_brief" rows="5" class="form-control" placeholder="Project Brief"></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+            <div class="col-12 text-center">
+                <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR" style="display: inline-block;"></div>
+            </div>
+        </div>
+
 
         <div class="row justify-content-center mt-5 feature-buttons-mobile" style="margin-bottom: 4rem;">
-            <div class="col-sm-4 text-center mb-2">
+            <div class="col-sm-12 text-center mb-3">
                 <button class="btn py-3 bg-light shadow border-0">Talk to Expert Center</button>
             </div>
 
-            <div class="col-sm-4 text-center mb-2">
+            <div class="col-sm-12 text-center mb-3">
                 <button class="btn py-3 bg-light shadow border-0">Log In</button>
             </div>
 
-            <div class="col-sm-4 text-center mb-2">
+            <div class="col-sm-12 text-center mb-3">
                 <button class="btn py-3 bg-light shadow border-0">Post Job & Hire Now</button>
             </div>
         </div>
@@ -81,6 +93,14 @@
 
 @push('after-scripts')
 <script src="https://cdn.tiny.cloud/1/osu7g9y3krl6vramg8kqtncs4mbrx946rbehu781ysn5jo7e/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        function checked() {
+            $('#submit_btn').removeAttr('disabled');
+        };
+    </script>
 
 <script>
   tinymce.init({
