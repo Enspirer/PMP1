@@ -86,8 +86,6 @@
                 <button class="btn py-3 bg-light shadow border-0">Post Job & Hire Now</button>
             </div>
         </div>
-
-        
     </div>
 
 

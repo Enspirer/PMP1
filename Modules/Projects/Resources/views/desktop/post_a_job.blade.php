@@ -75,7 +75,7 @@
         </div>
 
 
-        <div class="row justify-content-center mt-5 feature-buttons" style="margin-bottom: 8rem; margin-left: 1rem;">
+        <div class="row justify-content-center mt-5 feature-buttons" style="margin-bottom: 8rem;">
             <div class="col-3 text-center">
                 <button class="btn py-3 bg-light shadow border-0">Talk to Expert Center</button>
             </div>
