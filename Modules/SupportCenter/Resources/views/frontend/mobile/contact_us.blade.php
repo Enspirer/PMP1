@@ -205,6 +205,38 @@
 
     <h1 class="mb-4">Partner Offices</h1>
 
+
+    <div class="card-contact mb-5">
+        <div class="map-part-top">
+            <img class="map" src="{{url('theme_light/assets/contact/uk.png')}}" alt="">
+            <img class="flag" src="https://www.countryflags.io/gb/flat/64.png">
+        </div>
+
+        <div class="content-part">
+            <h3>United Kingdom</h3>
+            
+            <div class="row">
+                <div class="col-md-2 col-1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="col-md-10 col-10">Enspirer International,
+                                    35, Melbourne Avenue,
+                                    London,
+                                    W13 9BX,
+                                    United Kingdom
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="col-md-10 col-10">+44 7741 025138</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="col-md-10 col-10">uk@enspirer.com</div>
+            </div>
+        </div>
+    </div>
+
     <div class="card-contact mb-5">
         <div class="map-part-top">
             <img class="map" src="{{url('theme_light/assets/contact/sri_lanka.png')}}" alt="">
@@ -257,6 +289,31 @@
         </div>
     </div>
 
+    <div class="card-contact">
+        <div class="map-part-top">
+            <img class="map" src="{{url('theme_light/assets/contact/france.png')}}" alt="">
+            <img class="flag" src="https://www.countryflags.io/fr/flat/64.png">
+        </div>
+
+        <div class="content-part">
+            <h3>France</h3>
+
+            <div class="row">
+                <div class="col-md-2 col-1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="col-md-10 col-10">61 Rue Saint Blaise 75020 Paris</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="col-md-10 col-10">+33 6 52 30 02 55</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="col-md-10 col-10">france@tallentor.com</div>
+            </div>
+        </div>
+    </div>
+
     <div class="card-contact mb-5">
         <div class="map-part-top">
             <img class="map" src="{{url('theme_light/assets/contact/uae.png')}}" alt="">
@@ -283,32 +340,7 @@
         </div>
     </div>
 
-    <div class="card-contact mb-5">
-        <div class="map-part-top">
-            <img class="map" src="{{url('theme_light/assets/contact/uk.png')}}" alt="">
-            <img class="flag" src="https://www.countryflags.io/gb/flat/64.png">
-        </div>
-
-        <div class="content-part">
-            <h3>United Kingdom</h3>
-            
-            <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                    <div class="col-md-10 col-10">Unit 134 Lomeshaye Business Village, Turner road, Nelson, Lancashire, BB9 7DR United Kingdom
-                    </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="col-md-10 col-10">+44 7908 337092</div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div class="col-md-10 col-10">uk@tallentor.com</div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="card-contact">
         <div class="map-part-top">
@@ -333,33 +365,6 @@
             </div>
         </div>
     </div>
-
-    <div class="card-contact">
-        <div class="map-part-top">
-            <img class="map" src="{{url('theme_light/assets/contact/france.png')}}" alt="">
-            <img class="flag" src="https://www.countryflags.io/fr/flat/64.png">
-        </div>
-
-        <div class="content-part">
-            <h3>France</h3>
-
-            <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                <div class="col-md-10 col-10">61 Rue Saint Blaise 75020 Paris</div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                <div class="col-md-10 col-10">+33 6 52 30 02 55</div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-2 col-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div class="col-md-10 col-10">france@tallentor.com</div>
-            </div>
-        </div>
-    </div>
-
-
 </section>
 
 @endif
