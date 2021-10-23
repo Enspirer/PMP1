@@ -12,7 +12,7 @@
                                 <a class="nav-link {{ Request::segment(1) === null ? 'active' : null }}" href="{{url('/')}}" style=" color: white!important;">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route("frontend.expert_center")}}" style=" color: white!important;">Expert Centre</a>
+                                <a class="nav-link {{ Request::segment(2) === 'expert-center' ? 'active' : null }}" href="{{route('frontend.expert_center')}}" style=" color: white!important;">Expert Centre</a>
                             </li>
                             <li class="nav-item media-nav" style="margin-right: 20rem;">
                                 <a class="nav-link {{ Request::segment(1) === 'blog' ? 'active' : null }}" href="{{route('frontend.blog','all')}}" style=" color: white!important;">Media</a>

@@ -140,15 +140,15 @@
                 <div class="col-9" style="padding-left: 5rem;">
                     <div class="row justify-content-center feature-buttons">
                         <div class="col-4 text-center">
-                            <button class="btn py-3 bg-light shadow border-0 rounded-0">Talk to an Advisor</button>
+                            <a href="{{ route('frontend.contact_us') }}" class="btn py-3 bg-light shadow border-0 rounded-0">Talk to an Advisor</a>
                         </div>
 
                         <div class="col-4 text-center">
-                            <button class="btn py-3 bg-light shadow border-0 rounded-0">Expert Centre</button>
+                            <a href="{{ route('frontend.expert_center') }}" class="btn py-3 bg-light shadow border-0 rounded-0">Expert Centre</a>
                         </div>
 
                         <div class="col-4 text-center">
-                            <button class="btn py-3 bg-light shadow border-0 rounded-0">Post a Job</button>
+                            <a href="{{route('frontend.user.post_project')}}" class="btn py-3 bg-light shadow border-0 rounded-0">Post a Job</a>
                         </div>
                     </div>
                 </div>
