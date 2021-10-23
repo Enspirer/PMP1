@@ -25,7 +25,7 @@
 
     </style>
 @endpush
-    <div class="container" style="padding-top: 200px;">
+    <div class="container mb-4" style="padding-top: 200px;">
 
         <div class="row">
             <div class="col-3">
@@ -121,28 +121,42 @@
                         <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR" style="display: inline-block;"></div>
                     </div>
                     <div class="col-6 text-center">
-                        <button type="submit" class="btn text-light py-3 rounded-0 w-75 fw-bold" style="background-color: #0f9d58; border:none; font-size: 1.2rem; position: relative; top: -0.4rem;">Submit</button>
-                    </div>
-                </div>
-
-
-                <div class="row justify-content-center mt-5 feature-buttons p-4" style="margin-bottom: 8rem; background-color: #0f9d58;">
-                    <div class="col-4 text-center">
-                        <button class="btn py-3 bg-light shadow border-0 rounded-0">Talk to an Advisor</button>
-                    </div>
-
-                    <div class="col-4 text-center">
-                        <button class="btn py-3 bg-light shadow border-0 rounded-0">Expert Centre</button>
-                    </div>
-
-                    <div class="col-4 text-center">
-                        <button class="btn py-3 bg-light shadow border-0 rounded-0">Post a Job</button>
+                        <button type="submit" class="btn text-light py-3 rounded-0 w-75 fw-bold" style="background-color: #d78713; border:none; font-size: 1.2rem; position: relative; top: -0.4rem;">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
         
     </div>
+
+
+    <div class="container-fluid" style="background-color: #0f9d58; padding: 2.5rem 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+
+                </div>
+
+                <div class="col-9" style="padding-left: 5rem;">
+                    <div class="row justify-content-center feature-buttons">
+                        <div class="col-4 text-center">
+                            <button class="btn py-3 bg-light shadow border-0 rounded-0">Talk to an Advisor</button>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <button class="btn py-3 bg-light shadow border-0 rounded-0">Expert Centre</button>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <button class="btn py-3 bg-light shadow border-0 rounded-0">Post a Job</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 
 @push('after-scripts')
