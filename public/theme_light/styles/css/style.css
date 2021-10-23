@@ -1243,7 +1243,8 @@ Mobile style's
   font-size: 14px;
   height: 42px;
   border: 1px solid #b3b3b3;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 #video_box .header-content .content .row-search-post .search:focus {
@@ -3505,7 +3506,7 @@ button {
   letter-spacing: 0px;
   color: #303030;
   line-height: 1;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 #login-body .row .left-form-login .register-paragraph {

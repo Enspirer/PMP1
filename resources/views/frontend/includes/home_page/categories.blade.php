@@ -16,6 +16,9 @@
   border-radius: 0;
   background: #b0b0b0;
 } */
+.navClass .nav a {
+            color : black;
+        }
 .navClass .nav .active {
     background-color : #0f9d58;
     color : white;
@@ -30,7 +33,10 @@ button:focus {
 
 .vertical-hover {
     background-color : #0f9d58;
-    color : white;
+    color : white!important;
+}
+:focus-visible {
+    outline: none!important;
 }
 </style>
 
@@ -51,7 +57,7 @@ button:focus {
                 @foreach($categories as $category)
                     @if($category->status == 'Enabled')
                         @if($loop->first)
-                            <button class="nav-link text-left border shadow py-3 mb-3 active" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true">
+                            <a href="#tab-{{ $category->id }}" class="nav-link text-left border shadow py-3 mb-3 active" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true">
                                 <div class="row align-items-center">
                                     <div class="col-4">
                                         <img src="{{url('upload/projects', $category->icon)}}" alt="" style="height: 40px;">
@@ -60,9 +66,9 @@ button:focus {
                                         <p class="mb-0">{{ $category->name}}</p>
                                     </div>
                                 </div>
-                            </button>
+                            </a>
                         @else
-                            <button class="nav-link text-left border shadow py-3 mb-3" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true">
+                            <a href="#tab-{{ $category->id }}" class="nav-link text-left border shadow py-3 mb-3" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true">
                                 <div class="row align-items-center">
                                     <div class="col-4">
                                         <img src="{{url('upload/projects', $category->icon)}}" alt="" style="height: 40px;">
@@ -71,7 +77,7 @@ button:focus {
                                         <p class="mb-0">{{ $category->name}}</p>
                                     </div>
                                 </div>
-                            </button>
+                            </a>
                         @endif
                     @else
                         <button class="nav-link text-left border shadow py-3 mb-3" id="tab-{{$category->id}}" data-toggle="tab" data-target="#category-{{ $category->id}}" type="button" role="tab" aria-controls="{{ $category->name}}" aria-selected="true" disabled>
@@ -159,6 +165,29 @@ button:focus {
             $(this).find('img').css('filter', 'brightness(1)');
         }
     });
+</script>
+
+
+<script type='text/javascript'>
+    // Javascript to enable link to tab
+    var hash = location.hash.replace(/^#/, '');  // ^ means starting, meaning only match the first hash
+    if (hash) {
+        $('.nav a[href="#' + hash + '"]').tab('show');
+    } 
+
+    // Change hash for page-reload
+    $('.nav a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+
+
+        // var scrollTo = $('top-categories');
+  
+       
+        let scrollTop = $(".top-categories").offset().top;
+
+        window.scrollTo(scrollTop, scrollTop);
+        
+    })
 </script>
 
 @endpush
