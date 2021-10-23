@@ -107,10 +107,16 @@ class ProjectController extends Controller
 
         $category = ProjectCategory::where('slug', $category_slug)->first()->name;
 
+
         $talent = Tallents::where('talent_slug', $talent_slug)->first()->title;
 
         return view('projects::post_a_job', ['category' => $category, 'talent' => $talent]);
     }
+
+    public function submitData(Request $request){
+
+    }
+
 
     public function talents() {
 
@@ -118,5 +124,20 @@ class ProjectController extends Controller
 
 
         return view('projects::talents', ['categories' => $categories]);
+    }
+
+
+    public function api_function(Request $request)
+    {
+       dd($request);
+        $file = $request->file('fotografije');
+
+        //Display File Name just for check or do a dd
+        echo 'File Name: '.$file[0]->getClientOriginalName();
+
+
+        //Move Uploaded File
+        $destinationPath = 'uploads';
+        $file->move($destinationPath,$file->getClientOriginalName());
     }
 }
