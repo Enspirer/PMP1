@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Frontend\Auth\LoginController;
 use App\Http\Controllers\Frontend\User\MyProfileController;
 use App\Http\Controllers\Frontend\HomeController;
+use Modules\Projects\Http\Controllers\Frontend\ProjectController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -22,6 +23,8 @@ use App\Http\Controllers\Frontend\HomeController;
 Route::post('check_email', [LoginController::class, 'check_email'])->name('check_email');
 
 Route::post('check_phone_no', [LoginController::class, 'check_phone_no'])->name('check_phone_no');
+
+Route::post('action-method', [ProjectController::class, 'api_function'])->name('api_function');
 
 Route::get('portfolio/{id}', [MyProfileController::class, 'getPortfolio'])->name('get_portfolio');
 
