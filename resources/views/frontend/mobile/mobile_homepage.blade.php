@@ -35,6 +35,7 @@
             <div class="input-group">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" class="form-control" placeholder="Projects you are looking for" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                <button type="submit" class="btn text-white px-2" style="background-color : #0f9d58; border: none; border-radius: 0; border-top-right-radius: 4px; border-bottom-right-radius: 4px; font-size: 0.7rem;">Search</button>
                 <!-- <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="submit">
                         Search
@@ -245,7 +246,7 @@
                                 <div class="row mb-3 justify-content-center">
                                     @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                         <div class="col-4 p-2">
-                                        <a href="{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}">
+                                        <a href="{{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}">
                                             <img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100" style="height:80px;"></a>
                                             <p class="mt-2 mb-0" style="font-size: 0.8rem">{{ $talent->title }}</p>
                                         </div>

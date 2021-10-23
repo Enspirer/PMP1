@@ -105,12 +105,14 @@ class ProjectController extends Controller
 
     public function postAJob($category_slug, $talent_slug) {
 
+        $side_categories = ProjectCategories::all();
+
         $category = ProjectCategory::where('slug', $category_slug)->first()->name;
 
 
         $talent = Tallents::where('talent_slug', $talent_slug)->first()->title;
 
-        return view('projects::post_a_job', ['category' => $category, 'talent' => $talent]);
+        return view('projects::post_a_job', ['category' => $category, 'talent' => $talent, 'side_categories' => $side_categories]);
     }
 
     public function submitData(Request $request){

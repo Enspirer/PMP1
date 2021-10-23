@@ -14,7 +14,12 @@
 
             <form action="{{route('frontend.project_explore',['category','search_keyword','country','bids_range','sort_by','infrack'])}}">
                 <div class="row-search-post row" data-animscroll="fade-up" data-animscroll-delay="200">
-                    <input class="search" type="text" id="search" placeholder="Projects you are looking for" />
+                
+                    <div class="input-group">
+                        <input class="search" type="text" id="search" placeholder="Projects you are looking for"/>
+
+                        <button type="submit" class="btn text-white px-4" style="background-color : #0f9d58; border: none; border-radius: 0; border-top-right-radius: 4px; border-bottom-right-radius: 4px;">Search</button>
+                    </div>
                     <!-- <h3>OR</h3>
                     @auth
                         <a href="{{route('frontend.user.post_project')}}">Post a Job</a>

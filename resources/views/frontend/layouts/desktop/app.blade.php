@@ -262,8 +262,8 @@
                     <form action="{{ route('frontend.email_subscription_store') }}" method="POST">
                         {{csrf_field()}}
                         <div class="input-group mt-4 mb-3 p-1" style="background-color: rgb(255, 254, 252, 0.1); border: 1px solid white; border-radius: 50px">
-                            <input type="text" class="form-control border-0" placeholder="Enter your Email" aria-label="email" aria-describedby="email" name="email" style="background: border-box; border-radius: 50px; color: white">
-                            <button class="btn rounded-0 text-light border-0" type="submit" style="background-color: #0F9D58; border-radius: 50px!important; font-size: 0.7rem;">SUBSCRIBE</button>
+                            <input type="email" class="form-control border-0" placeholder="Enter your Email" aria-label="email" aria-describedby="email" name="email" id="email" style="background: border-box; border-radius: 50px; color: white" onkeyup="check()">
+                            <button class="btn rounded-0 text-light border-0" type="submit" style="background-color: #0F9D58; border-radius: 50px!important; font-size: 0.7rem;" id="subscribe-btn" disabled>SUBSCRIBE</button>
                         </div>
                     </form>
                 </div>
@@ -276,28 +276,10 @@
             <ul class="foote_bottom_ul_amrc">
 
             </ul>
-            <!--foote_bottom_ul_amrc ends here-->
+
             <p class="text-center">
                 Copyright @2021 | <a style="color: #c2c2c2;font-weight: 400;font-size: 15px;">Tallentor Global Ltd</a>
             </p>
-
-            <!-- <ul class="social_footer_ul" style="padding-left: 0;">
-                <li>
-                    <a href="https://www.facebook.com/tallentor" target="_blank"
-                    ><i class="fab fa-facebook-f"></i
-                        ></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/tallentor/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul> -->
-            <!--social_footer_ul ends here-->
         </div>
     </footer>
 
@@ -316,6 +298,14 @@
             Swal.fire('Thank you for the subscription')
         </script>
     @endif
+
+
+    <script>
+
+        function check() {
+            $('#subscribe-btn').removeAttr('disabled');
+        }
+    </script>
 
     
 

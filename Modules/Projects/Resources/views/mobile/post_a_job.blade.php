@@ -4,10 +4,22 @@
     <link rel="stylesheet" href="{{ url('theme_light/styles/css/projects.css') }}">
 @endpush
     <div class="container-fluid" style="padding-top: 60px;">
+
+        <div class="row justify-content-between mb-3">
+            <div class="col-12">
+                <div class="categories text-center" id="nav-tab" role="tablist">
+                    <a href="{{ route('frontend.talents') }}" class="btn btn-secondary mb-3 w-75" type="button" style="background-color: #0f9d58;">
+                        Top Categories
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
         <div class="bread-crumb">
             <div class="row align-items-center">
                 <div class="col-2 text-center">
-                    <img src="{{url('theme_light/assets/categories/programming_development.svg')}}" alt="" style="height: 2rem;">
+                    <img src="{{url('upload/projects', Modules\Projects\Entities\ProjectCategory::where('name', $category)->first()->icon)}}" alt="" style="height: 2rem;">
                 </div>
 
                 <div class="col-10">
