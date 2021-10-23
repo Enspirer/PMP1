@@ -121,22 +121,22 @@
                         <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR" style="display: inline-block;"></div>
                     </div>
                     <div class="col-6 text-center">
-                        <button type="submit" class="btn text-light px-4 py-2 ms-2 rounded-0 fw-bold" style="background-color: #35495E;">Save</button>
+                        <button type="submit" class="btn text-light py-3 rounded-0 w-75 fw-bold" style="background-color: #0f9d58; border:none; font-size: 1.2rem; position: relative; top: -0.4rem;">Submit</button>
                     </div>
                 </div>
 
 
-                <div class="row justify-content-center mt-5 feature-buttons" style="margin-bottom: 8rem;">
+                <div class="row justify-content-center mt-5 feature-buttons p-4" style="margin-bottom: 8rem; background-color: #0f9d58;">
                     <div class="col-4 text-center">
-                        <button class="btn py-3 bg-light shadow border-0">Talk to Expert Center</button>
+                        <button class="btn py-3 bg-light shadow border-0 rounded-0">Talk to an Advisor</button>
                     </div>
 
                     <div class="col-4 text-center">
-                        <button class="btn py-3 bg-light shadow border-0">Log In</button>
+                        <button class="btn py-3 bg-light shadow border-0 rounded-0">Expert Centre</button>
                     </div>
 
                     <div class="col-4 text-center">
-                        <button class="btn py-3 bg-light shadow border-0">Post Job & Hire Now</button>
+                        <button class="btn py-3 bg-light shadow border-0 rounded-0">Post a Job</button>
                     </div>
                 </div>
             </div>
