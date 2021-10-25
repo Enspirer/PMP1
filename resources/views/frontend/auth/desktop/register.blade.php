@@ -47,7 +47,7 @@
                     
 
                         
-                        <h1 style="font-size: 2.5rem;">Join Tallentor</h1>
+                        <h1 style="font-size: 2.5rem; font-weight: 700">Join Tallentor</h1>
                         <!-- <p class="register-paragraph">Tell us what you are looking for</p> -->
                         <div class="form-login">
                             <form action="{{route('frontend.auth.register.post')}}" method="post" id="register-form" style="margin-top: 20px;">

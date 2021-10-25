@@ -23,7 +23,7 @@ box-shadow: 0px 0px 3px -1px rgb(0 0 0 / 75%)">
                     @include('includes.partials.messages')
                 </div>
                 
-                <h1 class="mb-2" style="font-size: 2.4rem;">Login</h1>
+                <h1 class="mb-2" style="font-size: 2.4rem; font-weight: 700">Login</h1>
                 
                 <h1>Hello there,</h1>
                 <p>Welcome back</p>
