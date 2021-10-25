@@ -7,7 +7,8 @@
     <main class="page-content" style="padding-top: 5px">
         <div class="container">
             <section class="multi_step_form">
-                <form id="msform">
+                <form id="msform" action="{{route('frontend.user.post_project.store')}}" method="post" enctype="multipart/form-data">
+                {{csrf_field()}}
                     <!-- progressbar -->
                     <ul id="progressbar">
                         <li class="active">Project Type</li>
@@ -22,101 +23,144 @@
                         <div class="post-project-type">
                             <h3>Please select your project type</h3>
 
-
-
                             <div class="project-type-card-section">
                                 <div class="container">
                                     <div class="row">
                                         <div class="left-card col-md-6">
-                                            <div class="blue-card">
-                                                <img src="assets/Mask Group 9.png" alt="" />
-                                                <h4>Premium Project</h4>
-                                                <div class="single-item-type row">
-                                                    <div class="col-md-2">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                            
+                                            <label class="big" for="premium" style="cursor: pointer;">                                        
+                                                <div class="blue-card">
+                                                <input class="form-check-input" value="Premium" type="radio" name="project_type" id="premium">
+                                                    
+                                                    <img src="assets/Mask Group 9.png" alt="" />
+                                                    <h4>Premium Project</h4>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                24/7 h Lorem ipsum dolor sit amet, consetetur
+                                                                sadipscing elitr, sed diam nonumy eirmod
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-10">
-                                                        <p>
-                                                            24/7 h Lorem ipsum dolor sit amet, consetetur
-                                                            sadipscing elitr, sed diam nonumy eirmod
-                                                        </p>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                Expert project scope building Lorem ipsum
+                                                                dolor sit amet, consetetur sadipscing elitr,
+                                                                sed diam nonumy eirmod
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="single-item-type row">
-                                                    <div class="col-md-2">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                Work and money guarantee Lorem ipsum dolor sit
+                                                                amet, consetetur sadipscing elitr, sed
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-10">
-                                                        <p>
-                                                            Expert project scope building Lorem ipsum
-                                                            dolor sit amet, consetetur sadipscing elitr,
-                                                            sed diam nonumy eirmod
-                                                        </p>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                vip care Lorem ipsum dolor sit amet,
+                                                                consetetur sadipscing elitr, sed diam nonumy
+                                                                eirmod
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="single-item-type row">
-                                                    <div class="col-md-2">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <p>
-                                                            Work and money guarantee Lorem ipsum dolor sit
-                                                            amet, consetetur sadipscing elitr, sed
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="single-item-type row">
-                                                    <div class="col-md-2">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <p>
-                                                            vip care Lorem ipsum dolor sit amet,
-                                                            consetetur sadipscing elitr, sed diam nonumy
-                                                            eirmod
-                                                        </p>
-                                                    </div>
-                                                </div>
 
-                                                <div class="button-section-project-type">
-                                                    <button href="#">CONTINUE</button>
+                                                    <!-- <div class="button-section-project-type">
+                                                        <button href="#">CONTINUE</button>
+                                                    </div> -->
                                                 </div>
-                                            </div>
+                                            </label>
                                         </div>
                                         <div class="right-card col-md-6">
-                                            <div class="blue-card">
-                                                <img src="assets/Layer 2.png" alt="" />
-                                                <h4>Standard Project</h4>
-                                                <div class="single-item-type row">
-                                                    <div class="col-md-2">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <p>
-                                                            Work and money guarantee Lorem ipsum dolor sit
-                                                            amet, consetetur sadipscing elitr, sed
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="single-item-type row">
-                                                    <div class="col-md-2">
-                                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <p>
-                                                            vip care Lorem ipsum dolor sit amet,
-                                                            consetetur sadipscing elitr, sed diam nonumy
-                                                            eirmod
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                            <label class="big" for="standard" style="cursor: pointer;">                                      
 
-                                                <div class="button-section-project-type">
-                                                    <button type="button" href="#" class="">
-                                                        CONTINUE
-                                                    </button>
+                                                <div class="blue-card">
+                                                <input class="form-check-input" value="Standard" type="radio" name="project_type" id="standard">
+
+                                                    <img src="assets/Layer 2.png" alt="" />
+                                                    <h4>Standard Project</h4>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                Work and money guarantee Lorem ipsum dolor sit
+                                                                amet, consetetur sadipscing elitr, sed
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                vip care Lorem ipsum dolor sit amet,
+                                                                consetetur sadipscing elitr, sed diam nonumy
+                                                                eirmod
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                vip care Lorem ipsum dolor sit amet,
+                                                                consetetur sadipscing elitr, sed diam nonumy
+                                                                eirmod
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                vip care Lorem ipsum dolor sit amet,
+                                                                consetetur sadipscing elitr, sed diam nonumy
+                                                                eirmod
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-item-type row">
+                                                        <div class="col-md-2">
+                                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <p>
+                                                                vip care Lorem ipsum dolor sit amet,
+                                                                consetetur sadipscing elitr,
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- <div class="button-section-project-type">
+                                                        <button type="button" href="#" class="">
+                                                            CONTINUE
+                                                        </button>
+                                                    </div> -->
                                                 </div>
-                                            </div>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -155,21 +199,14 @@
                         <div class="post-about-project">
                             <div class="form-group">
                                 <label>Project Title</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    placeholder="eg: Wordpress web development"
-                                />
+                                <input type="text" name="project_title" class="form-control" placeholder="eg: Wordpress web development" />
                                 <small id="emailHelp" class="form-text text-muted"
                                 >Need at least 50 characters</small
                                 >
                             </div>
                             <div class="category row">
                                 <div class="col-md-5">
-                                    <select
-                                        class="form-control"
-                                        id="exampleFormControlSelect1"
-                                    >
+                                    <select class="form-control" name="category" id="exampleFormControlSelect1">
                                         <option>Select category</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -178,10 +215,7 @@
                                     </select>
                                 </div>
                                 <div class="col-md-5">
-                                    <select
-                                        class="form-control"
-                                        id="exampleFormControlSelect1"
-                                    >
+                                    <select class="form-control" name="sub_category" id="exampleFormControlSelect1">
                                         <option>Select sub category</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -192,23 +226,14 @@
                             </div>
                             <div class="post-project-breaf">
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1"
-                                    >Describe your project in brief</label
-                                    >
-                                    <textarea
-                                        class="form-control"
-                                        id="exampleFormControlTextarea1"
-                                        rows="3"
-                                    ></textarea>
+                                    <label for="exampleFormControlTextarea1">Describe your project in brief</label>
+                                    <textarea class="form-control" name="project_brief" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     <small>Need at least 200 characters</small>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Project Title</label>
-                                <select
-                                    class="form-control product_select"
-                                    id="exampleFormControlSelect1"
-                                >
+                                <label>Skill set Keywords</label>
+                                <select name="skill_set_keywords" class="form-control product_select" id="exampleFormControlSelect1">
                                     <option>Skill set keywords</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -252,26 +277,13 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1"
-                                        >Describe your project scope</label
-                                        >
-                                        <textarea
-                                            class="form-control"
-                                            id="exampleFormControlTextarea1"
-                                            rows="3"
-                                            placeholder="Mention your project scope"
-                                        ></textarea>
+                                        <label for="exampleFormControlTextarea1">Describe your project scope</label>
+                                        <textarea class="form-control" name="scope" id="exampleFormControlTextarea1" rows="3" placeholder="Mention your project scope"></textarea>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1"
-                                        >Attachments</label
-                                        >
-                                        <textarea
-                                            class="form-control"
-                                            id="exampleFormControlTextarea1"
-                                            rows="2"
-                                        ></textarea>
+                                        <label for="exampleFormControlTextarea1">Attachments</label>
+                                        <textarea name="attachment" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -286,17 +298,7 @@
                             </div>
                         </div>
 
-                        <button
-                            type="button"
-                            class="next action-button"
-                            style="
-                      float: right;
-                      margin-right: 20px;
-                      background: #ff6347;
-                      border: none;
-                      padding: 1px 90px;
-                    "
-                        >
+                        <button type="button" class="next action-button" style="float: right;margin-right: 20px;background: #ff6347;border: none;padding: 1px 90px;">
                             Continue
                         </button>
                         <button
@@ -321,13 +323,8 @@
                             <div class="row-margin row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1"
-                                        >Project duration</label
-                                        >
-                                        <select
-                                            class="form-control"
-                                            id="exampleFormControlSelect1"
-                                        >
+                                        <label for="exampleFormControlSelect1">Project duration</label>
+                                        <select class="form-control" name="duration" id="exampleFormControlSelect1" >
                                             <option>Less than two weeks</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -338,13 +335,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1"
-                                        >Project duration</label
-                                        >
-                                        <select
-                                            class="form-control"
-                                            id="exampleFormControlSelect1"
-                                        >
+                                        <label for="exampleFormControlSelect1">Project duration</label>
+                                        <select class="form-control" name="skill_set_keywords" id="exampleFormControlSelect1">
                                             <option>Intermediate</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -358,13 +350,8 @@
                             <div class="row-margin row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1"
-                                        >Agency level</label
-                                        >
-                                        <select
-                                            class="form-control"
-                                            id="exampleFormControlSelect1"
-                                        >
+                                        <label for="exampleFormControlSelect1">Agency level</label>
+                                        <select class="form-control" name="agency_level" id="exampleFormControlSelect1">
                                             <option>Level 1 or higher</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -375,14 +362,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1"
-                                        >Job completion rate</label
-                                        >
+                                        <label for="exampleFormControlSelect1">Job completion rate</label>
                                         <br />
-                                        <select
-                                            class="form-control"
-                                            id="exampleFormControlSelect1"
-                                        >
+                                        <select class="form-control" name="completion_rate" id="exampleFormControlSelect1">
                                             <option>80% or higher</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -398,44 +380,21 @@
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input
-                                                    type="checkbox"
-                                                    class="form-check-input"
-                                                    id="exampleCheck1"
-                                                />
-                                                <label
-                                                    class="form-check-label"
-                                                    for="exampleCheck1"
-                                                >Startup or small</label
-                                                >
+                                            <input type="radio" class="form-check-input" id="exampleCheck1"/>
+                                                <label class="form-check-label" for="exampleCheck1" >Startup or small</label>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-check">
-                                                <input
-                                                    type="checkbox"
-                                                    class="form-check-input"
-                                                    id="exampleCheck1"
-                                                />
-                                                <label
-                                                    class="form-check-label"
-                                                    for="exampleCheck1"
-                                                >Medium size company</label
+                                                <input type="radio" class="form-check-input" id="exampleCheck1"/>
+                                                <label class="form-check-label" for="exampleCheck1" >Medium size company</label
                                                 >
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-check">
-                                                <input
-                                                    type="checkbox"
-                                                    class="form-check-input"
-                                                    id="exampleCheck1"
-                                                />
-                                                <label
-                                                    class="form-check-label"
-                                                    for="exampleCheck1"
-                                                >Large company</label
-                                                >
+                                            <input type="radio" class="form-check-input" id="exampleCheck1"/>
+                                                <label class="form-check-label" for="exampleCheck1" >Large company</label >
                                             </div>
                                         </div>
                                     </div>
@@ -445,13 +404,8 @@
                             <div class="row-margin row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1"
-                                        >Location</label
-                                        >
-                                        <select
-                                            class="form-control"
-                                            id="exampleFormControlSelect1"
-                                        >
+                                        <label for="exampleFormControlSelect1">Location</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
                                             <option>Sri lanka</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -462,14 +416,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1"
-                                        >Get quotes till</label
-                                        >
+                                        <label for="exampleFormControlSelect1">Get quotes till</label>
                                         <br />
-                                        <select
-                                            class="form-control"
-                                            id="exampleFormControlSelect1"
-                                        >
+                                        <select class="form-control" id="exampleFormControlSelect1">
                                             <option>March 03</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -868,7 +817,7 @@
 
                         <br /><br />
                         <button
-                            type="button"
+                            type="submit"
                             class="next action-button"
                             style="
                       float: right;
