@@ -156,9 +156,12 @@
                     <div class="col-md-4">
                         <div class="card-about">
                             <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <img src="{{url('theme_light/assets/image/icon/flag.svg')}}" alt="" />
-                                    <div class="card-title-name">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-2">
+                                        <img src="{{url('theme_light/assets/image/icon/flag.svg')}}" alt="" />
+                                    </div>
+                                    
+                                    <div class="col-5 card-title-name">
                                         <h6>Our</h6>
                                         <h5>Mission</h5>
                                     </div>
@@ -181,9 +184,11 @@
                     <div class="col-md-4">
                         <div class="card-about">
                             <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <img src="{{url('theme_light/assets/image/icon/investigate.svg')}}" alt="" />
-                                    <div class="card-title-name">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-2">
+                                        <img src="{{url('theme_light/assets/image/icon/investigate.svg')}}" alt="" />
+                                    </div>
+                                    <div class="col-5 card-title-name">
                                         <h6>Our</h6>
                                         <h5>Vission</h5>
                                     </div>
@@ -206,9 +211,12 @@
                     <div class="col-md-4">
                         <div class="card-about">
                             <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <img src="{{url('theme_light/assets/image/icon/lightbulb.svg')}}" alt="" />
-                                    <div class="card-title-name">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <div class="col-2">
+                                        <img src="{{url('theme_light/assets/image/icon/lightbulb.svg')}}" alt="" />
+                                    </div>
+
+                                    <div class="col-5 card-title-name">
                                         <h6>Core</h6>
                                         <h5>Values</h5>
                                     </div>

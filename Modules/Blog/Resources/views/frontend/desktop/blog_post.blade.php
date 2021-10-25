@@ -31,7 +31,7 @@
         <div class="bottum-part-news">
             <div class="container" >
                 <h3>Related News</h3>
-                <div class="swiper-container3 swiper-container">
+                <div class="swiper-container3 swiper container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card">
