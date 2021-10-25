@@ -14,3 +14,9 @@ Route::post('tallents/store', 'TallentsController@store')->name('tallents.store'
 Route::get('tallents/edit/{id}', 'TallentsController@edit')->name('tallents.edit');
 Route::post('tallents/update', 'TallentsController@update')->name('tallents.update');
 Route::get('tallents/delete/{id}', 'TallentsController@destroy')->name('tallents.destroy');
+
+Route::get('project_leeds/index', 'ProjectLeedsController@index')->name('project_leeds.index');
+Route::get('project_leeds/getDetails', 'ProjectLeedsController@GetTableDetails')->name('project_leeds.GetTableDetails');
+Route::get('project_leeds/edit/{id}', 'ProjectLeedsController@edit')->name('project_leeds.edit');
+Route::post('project_leeds/update', 'ProjectLeedsController@update')->name('project_leeds.update');
+Route::get('project_leeds/delete/{id}', 'ProjectLeedsController@destroy')->name('project_leeds.destroy');

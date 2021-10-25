@@ -25,6 +25,20 @@
 
     </style>
 @endpush
+
+@if ( session()->has('message') )
+
+  <div class="container" style="background-color: #98FB98; padding-top:5px; margin-bottom:50px; border-radius: 50px 50px; text-align:center;">
+
+      <h1 style="margin-top:150px;" class="fs-1">Thank You!</h1><br>
+      <p class="lead mb-3"><h4>We received your application. We appreciate you taking the time to apply.<br><br>  If you are selected for an interview, our human resources department will be in contact with you.<br><br> Have a great day!</h4></p>
+      <br><hr><br>    
+      <p class="lead">
+          <a class="btn btn-secondary btn-md mt-2 mb-2" style="color:white; border:1px solid grey" href="{{url('projects/talents')}}" role="button">Go Back to Talents Page</a>
+      </p>
+      <br>
+  </div>
+@else  
     <div class="container mb-4" style="padding-top: 200px;">
 
         <div class="row">
@@ -65,65 +79,109 @@
                 </div>
 
 
-                <div class="row mt-5 align-items-center mb-5">
-                    <div class="col-1 pr-0">
-                        <img src="{{ url('theme_light/assets/projects/job_title.png') }}" alt="" class="img-fluid">
+                <form action="{{route('frontend.post_a_job.store')}}" method="post" enctype="multipart/form-data">
+                {{csrf_field()}}
+                    <div class="row mt-5 align-items-center mb-5">
+                        <div class="col-1 pr-0">
+                            <img src="{{ url('theme_light/assets/projects/job_title.png') }}" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-11 pl-0">
+                            <h5 class="mb-0 text-secondary" style="font-size: 18px;">Give your job a title</h5>
+                        </div>
+
+                        <div class="col-12">
+                            <input type="text" name="title" class="form-control mt-3 w-100" placeholder="Title" aria-label="Username" aria-describedby="basic-addon1" required>
+                        </div>
                     </div>
 
-                    <div class="col-11 pl-0">
-                        <h5 class="mb-0 text-secondary" style="font-size: 18px;">Give your job a title</h5>
+                    @if(empty( auth()->user()->id) === true )
+                    <div class="row mt-5 align-items-center mb-5">
+                        <div class="col-1 pr-0">
+                            <img src="{{ url('theme_light/assets/projects/user.png') }}" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-11 pl-0">
+                            <h5 class="mb-0 text-secondary" style="font-size: 18px;">Give your Name</h5>
+                        </div>
+
+                        <div class="col-12">
+                            <input type="text" name="name" class="form-control mt-3 w-100" placeholder="Name" aria-label="name" aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <div class="row mt-5 align-items-center mb-5">
+                        <div class="col-1 pr-0">
+                            <img src="{{ url('theme_light/assets/projects/email.png') }}" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-11 pl-0">
+                            <h5 class="mb-0 text-secondary" style="font-size: 18px;">Give your Email Address</h5>
+                        </div>
+
+                        <div class="col-12">
+                            <input type="text" name="email" class="form-control mt-3 w-100" placeholder="Email" aria-label="email" aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    @endif
+
+
+                    <div class="row align-items-center">
+                        <div class="col-1 pr-0">
+                            <img src="{{ url('theme_light/assets/projects/details.png') }}" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-11 pl-0">
+                            <h5 class="mb-0 text-secondary" style="font-size: 18px;">Describe the job in details</h5>
+                            
+                        </div>
+
+                        <div class="col-12">
+                            <p class="mt-2 text-secondary" style="font-size: 0.9rem;">Include expected deliverables, requirements and time frame for delivery</p>
+                        </div>
                     </div>
 
-                    <div class="col-12">
-                        <input type="text" class="form-control mt-3 w-100" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
 
-
-                <div class="row align-items-center">
-                    <div class="col-1 pr-0">
-                        <img src="{{ url('theme_light/assets/projects/details.png') }}" alt="" class="img-fluid">
+                    <!-- <div class="form-group w-100 position-relative mb-0">
+                        <div class="w-100" id="drag-drop-area"></div>
                     </div>
 
-                    <div class="col-11 pl-0">
-                        <h5 class="mb-0 text-secondary" style="font-size: 18px;">Describe the job in details</h5>
-                        
+                    <div class="row">
+                        <div class="col-6">
+                            <p style="font-size: 0.9rem;">Supported file types <img src="{{ url('theme_light/assets/projects/info-circle.svg') }}" alt="" class="img-fluid ml-2" style="height: 0.8rem"></p>
+                        </div>
+
+                        <div class="col-6 text-right">
+                            <p style="font-size: 0.9rem;">Using 0/10MB</p>
+                        </div>
+                    </div> -->
+
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <input type="file" name="file" class="form-control mt-3 w-100" placeholder="File Upload" aria-label="FileUpload" aria-describedby="basic-addon1" required>
+                        </div>
                     </div>
 
-                    <div class="col-12">
-                        <p class="mt-2 text-secondary" style="font-size: 0.9rem;">Include expected deliverables, requirements and time frame for delivery</p>
-                    </div>
-                </div>
-
-
-                <div class="form-group w-100 position-relative mb-0">
-                    <div class="w-100" id="drag-drop-area"></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6">
-                        <p style="font-size: 0.9rem;">Supported file types <img src="{{ url('theme_light/assets/projects/info-circle.svg') }}" alt="" class="img-fluid ml-2" style="height: 0.8rem"></p>
+                    <div class="row mt-4 mb-5">
+                        <div class="col-12">
+                            <textarea name="project_brief" rows="5" class="form-control" placeholder="Project Brief" required></textarea>
+                        </div>
                     </div>
 
-                    <div class="col-6 text-right">
-                        <p style="font-size: 0.9rem;">Using 0/10MB</p>
+                    <div class="row mb-2 justify-content-center align-items-center">
+                        <div class="div col-6 text-center">
+                            <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR" style="display: inline-block;"></div>
+                            <br>
+                            @if(session()->has('error'))
+                                <div class="alert alert-danger">
+                                    {{ session()->get('error') }}
+                                </div>
+                            @endif
+                        </div>                        
+                        <div class="col-6 text-center">
+                            <button type="submit" class="btn text-light py-3 rounded-0 w-75 fw-bold" style="background-color: #d78713; border:none; font-size: 1.2rem; position: relative; top: -0.4rem;">Submit</button>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row mt-4 mb-5">
-                    <div class="col-12">
-                        <textarea name="project_brief" rows="5" class="form-control" placeholder="Project Brief"></textarea>
-                    </div>
-                </div>
-
-                <div class="row mb-2 justify-content-center align-items-center">
-                    <div class="div col-6 text-center">
-                        <div class="g-recaptcha" data-callback="checked" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR" style="display: inline-block;"></div>
-                    </div>
-                    <div class="col-6 text-center">
-                        <button type="submit" class="btn text-light py-3 rounded-0 w-75 fw-bold" style="background-color: #d78713; border:none; font-size: 1.2rem; position: relative; top: -0.4rem;">Submit</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         
@@ -259,3 +317,5 @@
 </script>
 
 @endpush
+
+@endif
