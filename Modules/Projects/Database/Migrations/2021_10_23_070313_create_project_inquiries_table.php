@@ -14,7 +14,7 @@ class CreateProjectInquiriesTable extends Migration
     public function up()
     {
         Schema::create('project_inquiries', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
 
             $table->timestamps();
         });

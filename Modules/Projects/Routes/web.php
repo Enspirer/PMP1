@@ -59,3 +59,11 @@ Breadcrumbs::for('admin.tallents.create', function ($trail) {
 Breadcrumbs::for('admin.tallents.edit', function ($trail) {
     $trail->push('Tallents Edit', route('admin.tallents.edit',1));
 });
+
+Breadcrumbs::for('admin.project_leeds.index', function ($trail) {
+    $trail->push('Project Leeds', route('admin.project_leeds.index'));
+});
+Breadcrumbs::for('admin.project_leeds.edit', function ($trail) {
+    $trail->push('Project Leeds Status', route('admin.project_leeds.edit',1));
+});
+

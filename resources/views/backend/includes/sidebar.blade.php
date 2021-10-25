@@ -44,6 +44,11 @@
                             Tallents
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/project_leeds'))}}" href="{{ route('admin.project_leeds.index') }}">  
+                            Project Leeds
+                        </a>
+                    </li>
                 </ul>
             </li> 
 
