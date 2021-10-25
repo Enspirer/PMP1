@@ -64,6 +64,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
 
         // User Profile Specific
         Route::get('post_project', [PostProjectController::class, 'index'])->name('post_project');
+        Route::post('post_project/store', [PostProjectController::class, 'store'])->name('post_project.store');
 
 
 
