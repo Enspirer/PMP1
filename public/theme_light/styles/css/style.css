@@ -3480,33 +3480,35 @@ button {
 }
 
 #login-body .row .left-form-login {
-  padding: 20px 0 70px 0;
-  margin: auto;
+  
+  /* margin: auto; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #login-body .row .left-form-login h1 {
-  text-align: center;
+  /* text-align: center; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          /* justify-content: center; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: normal normal 700 30px/50px Poppins;
+  font: normal normal 500 21px/50px Poppins;
   letter-spacing: 0px;
   color: #0f0c29;
+  margin-bottom: 0!important;
 }
 
 #login-body .row .left-form-login p {
-  font: normal normal normal 20px/50px Poppins;
+  font: normal normal normal 16px/50px Poppins;
   letter-spacing: 0px;
   color: #303030;
   line-height: 1;
   padding: 0 0px;
+  margin-bottom: 0.5rem!important;
 }
 
 #login-body .row .left-form-login .register-paragraph {
@@ -3619,7 +3621,8 @@ button {
 #login-body .row .left-form-login .form-login {
   max-width: 350px;
   /* width: 300px; */
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 2rem;
 }
 
 #login-body .row .left-form-login .form-login form input {
@@ -3632,7 +3635,7 @@ button {
 }
 
 #login-body .row .left-form-login .form-login form button {
-  background: #0f9d58 0% 0% no-repeat padding-box;
+  background: #43D477 0% 0% no-repeat padding-box;
   border-radius: 4px;
   margin-top: 40px;
   border: transparent;
@@ -3648,10 +3651,10 @@ button {
 #login-body .row .left-form-login .form-login form .form-group label {
   float: left;
   text-align: left;
-  font: normal normal normal 13px/23px Karla;
+  font: normal normal normal 16px/23px Karla;
   letter-spacing: 0px;
   line-height: 1;
-  color: #4f4f4f;
+  color: #000000;
 }
 
 #login-body .row .left-form-login .form-login form .form-group select {
@@ -9201,15 +9204,21 @@ footer p {
 	position: relative;
 }
 #register-form .action-button {
-	width: 100px;
-	background: #27AE60!important;
+	width: 100%;
+	background: #43D477!important;
 	font-weight: bold!important;
 	color: white!important;
 	border: 0 none!important;
-	border-radius: 1px!important;
+	border-radius: 5px!important;
 	cursor: pointer;
 	padding: 10px 5px;
-	margin: 10px 5px;
+	/* margin: 10px 5px; */
+  margin-bottom: 1rem;
+}
+#register-form .previous {
+	background: white!important;
+  color: #0F9D58!important;
+  border: 1px solid #0F9D58!important;
 }
 #register-form .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;

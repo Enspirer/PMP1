@@ -4178,3 +4178,10 @@ footer p {
   color: black;
   font-size: 2rem;
 }
+
+
+
+#about-body-bottom .white-card-row-about .card-about img {
+  height: 40px!important;
+  width: 40px!important;
+}
