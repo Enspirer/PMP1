@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="col-11">
-                            <p class="mb-0" style="color: #0F9D58; font-size:0.9rem;">{{ $category }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;{{ $talent }}</p>
+                            <p class="mb-0" style="font-size:0.9rem;"><a href="" class="breadcrumb-category" style="color: #0F9D58;">{{ $category }}</a>&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;<a href="" style="color: #0F9D58;">{{ $talent }}</a></p>
                         </div>
                     </div>
                 </div>
@@ -220,8 +220,6 @@
     // Javascript to enable link to tab
     var hash = location.hash.replace(/^#/, '');  // ^ means starting, meaning only match the first hash
 
-    console.log(hash);
-
     if (hash) {
         $('.nav a[href="#' + hash + '"]').tab('show');
     } 
@@ -248,6 +246,15 @@
         else {
             $(this).find('img').css('filter', 'brightness(1)');
         }
+    });
+</script>
+
+<script>
+    var $active = jQuery(".categories a.active");
+
+    $active.each(function() {
+        let link = $(this).attr('href');
+        $('.breadcrumb-category').attr('href', link);
     });
 </script>
 
