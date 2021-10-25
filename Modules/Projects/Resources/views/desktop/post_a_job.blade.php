@@ -98,7 +98,7 @@
                     @if(empty( auth()->user()->id) === true )
                     <div class="row mt-5 align-items-center mb-5">
                         <div class="col-1 pr-0">
-                            <img src="{{ url('theme_light/assets/projects/job_title.png') }}" alt="" class="img-fluid">
+                            <img src="{{ url('theme_light/assets/projects/user.png') }}" alt="" class="img-fluid">
                         </div>
 
                         <div class="col-11 pl-0">
@@ -111,7 +111,7 @@
                     </div>
                     <div class="row mt-5 align-items-center mb-5">
                         <div class="col-1 pr-0">
-                            <img src="{{ url('theme_light/assets/projects/job_title.png') }}" alt="" class="img-fluid">
+                            <img src="{{ url('theme_light/assets/projects/email.png') }}" alt="" class="img-fluid">
                         </div>
 
                         <div class="col-11 pl-0">
