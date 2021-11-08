@@ -23,7 +23,7 @@
             <div class="col-4">
                 <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                     <div class="card" style="height: 25rem;">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=4531192260303691" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=4531192260303691" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </a>
             </div>

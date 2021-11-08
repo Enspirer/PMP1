@@ -693,29 +693,8 @@
                 <div class="col-12 mb-4 fb">
                     <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                         <div class="card" style="height: 26rem;">
-                            <img src="" id="facebook_src" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
-                            <div class="card-body">
-                                <p class="card-text mb-1" id="description_fb"></p>
-                                
-                                <div class="text-right">
-                                    <img src="{{ url('theme_light/assets/footer/fb_color.png') }}" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="col-12 mb-4 twitter">
-                    <a href="" style="color:black" target="_blank" class="twitter-link">
-                        <div class="card" style="height: 26rem;">
-                            <img src="{{ url('theme_light/assets/footer/twitter_large.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
-                            <div class="card-body">
-                                <p class="card-text mb-1" id="description_twitter"></p>
-                                
-                                <div class="text-right">
-                                    <img src="{{ url('theme_light/assets/footer/twitter_color.png') }}" alt="" class="img-fluid">
-                                </div>
-                            </div>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=4531192260303691" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </a>
                 </div>
