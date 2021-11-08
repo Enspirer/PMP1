@@ -20,40 +20,18 @@
         </div>
 
         <div class="row">
-            <div class="col-3 fb">
+            <div class="col-4">
                 <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                     <div class="card" style="height: 25rem;">
-                        <img id="facebook_src" src="" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
-                        <div class="card-body">
-                            <p class="card-text mb-1" id="description_fb"></p>
-                            
-                            <div class="text-right">
-                                <img src="{{ url('theme_light/assets/footer/fb_color.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=4531192260303691" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </a>
             </div>
 
-         
-            <div class="col-3 twitter">
-                <a href="" style="color:black" target="_blank" class="twitter-link">
-                    <div class="card" style="height: 25rem;">
-                        <img src="{{ url('theme_light/assets/footer/twitter_large.png') }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
-                        <div class="card-body">
-                            <p class="card-text mb-1" id="description_twitter"></p>
-                            
-                            <div class="text-right">
-                                <img src="{{ url('theme_light/assets/footer/twitter_color.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
             @if(count(Modules\Blog\Entities\BlogPost::get()) != 0)
                 @foreach(Modules\Blog\Entities\BlogPost::latest()->take(2)->get() as $key => $blog_posts)            
-                    <div class="col-3">
+                    <div class="col-4">
                         <a href="{{url('blog/all')}}" style="color:black">
                             <div class="card" style="height: 25rem;">
                                 <img src="{{ url($blog_posts->feature_image) }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
