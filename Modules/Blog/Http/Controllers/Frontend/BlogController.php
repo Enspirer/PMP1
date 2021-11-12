@@ -18,17 +18,20 @@ class BlogController extends Controller
     public function index($category_name)
     {
         $blogCategory = BlogCategory::where('status', 1)->get();
-        $featuresBlog = BlogPost::all()->take(4);
 
+        $featuresBlog = BlogPost::all()->take(4);
         if ($category_name == 'all')
         {
             $blogDetail = BlogPost::all();
+
+
         }else{
             $get_blog_category_selected = BlogCategory::where('name', $category_name)->first();
             if($get_blog_category_selected)
             {
                 $blogDetail = BlogPost::where('category_id',$get_blog_category_selected->id)
                     ->get();
+                $featuresBlog = BlogPost::where('category_id',$get_blog_category_selected->id)->take(4);
             }else{
                 $blogDetail = BlogPost::all();
             }
