@@ -24,42 +24,68 @@
 
 <br><br><br><br>
             <div class="type-row row">
-                @foreach($blog_category as $blog_cat)
+                
+                    @if($category_selected != null )
+                        @foreach($blog_category as $blog_cat)
 
-                    @if($blog_cat->id == $cat_check->id)
-                        <div class="single-type col-md-2">
-                            <div class="card-type" style="background-color:#d5d5d5">
-                                <div class="text-block">
-                                    <p>About</p>
-                                    <a href="{{route('frontend.blog',$blog_cat->name)}}">
-                                         <h5>{{$blog_cat->name}}</h5>
-                                    </a>
+                            @if($blog_cat->id == $category_selected->id)
+                                <div class="single-type col-md-2">
+                                    <div class="card-type" style="background-color:#d5d5d5">
+                                        <div class="text-block">
+                                            <p>About</p>
+                                            <a href="{{route('frontend.blog',$blog_cat->name)}}">
+                                                <h5>{{$blog_cat->name}}</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-round-outer">
+                                        <div class="card-circle-inner {{$blog_cat->color}}">
+                                            <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-round-outer">
-                                <div class="card-circle-inner {{$blog_cat->color}}">
-                                    <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                            @else
+                                <div class="single-type col-md-2">
+                                    <div class="card-type">
+                                        <div class="text-block">
+                                            <p>About</p>
+                                            <a href="{{route('frontend.blog',$blog_cat->name)}}">
+                                                <h5>{{$blog_cat->name}}</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-round-outer">
+                                        <div class="card-circle-inner {{$blog_cat->color}}">
+                                            <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            @endif 
+
+                        @endforeach
                     @else
-                        <div class="single-type col-md-2">
-                            <div class="card-type">
-                                <div class="text-block">
-                                    <p>About</p>
-                                    <a href="{{route('frontend.blog',$blog_cat->name)}}">
-                                         <h5>{{$blog_cat->name}}</h5>
-                                    </a>
+
+                        @foreach($blog_category as $blog_cat)
+                           
+                            <div class="single-type col-md-2">
+                                <div class="card-type">
+                                    <div class="text-block">
+                                        <p>About</p>
+                                        <a href="{{route('frontend.blog',$blog_cat->name)}}">
+                                            <h5>{{$blog_cat->name}}</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-round-outer">
+                                    <div class="card-circle-inner {{$blog_cat->color}}">
+                                        <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-round-outer">
-                                <div class="card-circle-inner {{$blog_cat->color}}">
-                                    <h3>{{substr($blog_cat->name,0,1)}}</h3>
-                                </div>
-                            </div>
-                        </div>
-                    @endif   
-                @endforeach
+
+                        @endforeach
+
+                    @endif
             </div>
 
             <div class="all-blog-post">

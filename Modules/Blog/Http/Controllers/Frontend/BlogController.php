@@ -19,8 +19,12 @@ class BlogController extends Controller
     {
         // dd($category_name);
 
-        $cat_check = BlogCategory::where('name', $category_name)->first();
-
+        if($category_name != 'all' ){
+            $category_selected = BlogCategory::where('name', $category_name)->first();
+        }else{            
+            $category_selected = null;
+        }
+        
         $blogCategory = BlogCategory::where('status', 1)->get();
 
         $featuresBlog = BlogPost::all()->take(4);
@@ -49,7 +53,7 @@ class BlogController extends Controller
             'category_name' => $category_name,
             'blog_posts' => $blogDetail,
             'featuresBlog'=>$featuresBlog,
-            'cat_check' => $cat_check
+            'category_selected' =>$category_selected
         ]);
     }
     public function blog_post($slug)
