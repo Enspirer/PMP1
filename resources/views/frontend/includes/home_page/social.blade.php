@@ -33,7 +33,7 @@
                 @foreach(Modules\Blog\Entities\BlogPost::latest()->take(2)->get() as $key => $blog_posts)            
                     <div class="col-4">
                         <a href="{{url('blog/all')}}" style="color:black">
-                            <div class="card" style="height: 25rem;">
+                            <div class="card" style="height: 25.2rem;">
                                 @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name == 'News')
                                     <div class="px-4 py-2" style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
                                         <div class="row align-items-center">
@@ -64,9 +64,9 @@
                                 <div class="card-body">
                                     <p class="card-text mb-1" style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">{{$blog_posts->short_description}}</p>
                                     
-                                    <div class="text-right">
+                                    <div class="text-right mb-1">
                                         @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first() != null)
-                                            <a href="{{url('blog/all')}}" style="color: {{Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->color}}; font-size: 1.1rem;">{{ Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name }}</a>
+                                            <a href="{{url('blog/all')}}" style="font-size: 1rem; color: #0033FF;">View More</a>
                                         @else
                                             <p style="color: Red; font-size: 1.1rem;">Category Deleted</p>   
                                         @endif
