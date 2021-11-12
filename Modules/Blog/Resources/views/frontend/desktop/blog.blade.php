@@ -2,25 +2,7 @@
         <div class="swiper-container swiper-container2">
             <div class="swiper-wrapper">
 
-                @foreach($featuresBlog as $featureblog)
-                    <div class="swiper-slide">
-                        <div class="expert-image">
-                            <img src="{{url($featureblog->feature_image)}}" style="object-position: center">
-                            <div class="expert-gradient"></div>
-                            <div class="expert-text-head">
-                                <div class="container">
-
-                                    <div class="header-title-swipper">
-                                        <p>Post 10h ago</p>
-                                        <h1>
-                                            {{$featureblog->title}}
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+                
 
             </div>
             <!-- Add Pagination -->
