@@ -17,6 +17,10 @@ class BlogController extends Controller
      */
     public function index($category_name)
     {
+        // dd($category_name);
+
+        $cat_check = BlogCategory::where('name', $category_name)->first();
+
         $blogCategory = BlogCategory::where('status', 1)->get();
 
         $featuresBlog = BlogPost::all()->take(4);
@@ -44,7 +48,8 @@ class BlogController extends Controller
             'blog_category' => $blogCategory,
             'category_name' => $category_name,
             'blog_posts' => $blogDetail,
-            'featuresBlog'=>$featuresBlog
+            'featuresBlog'=>$featuresBlog,
+            'cat_check' => $cat_check
         ]);
     }
     public function blog_post($slug)

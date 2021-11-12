@@ -26,6 +26,23 @@
             <div class="type-row row">
                 @foreach($blog_category as $blog_cat)
 
+                    @if($blog_cat->id == $cat_check->id)
+                        <div class="single-type col-md-2">
+                            <div class="card-type" style="background-color:#d5d5d5">
+                                <div class="text-block">
+                                    <p>About</p>
+                                    <a href="{{route('frontend.blog',$blog_cat->name)}}">
+                                         <h5>{{$blog_cat->name}}</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-round-outer">
+                                <div class="card-circle-inner {{$blog_cat->color}}">
+                                    <h3>{{substr($blog_cat->name,0,1)}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    @else
                         <div class="single-type col-md-2">
                             <div class="card-type">
                                 <div class="text-block">
@@ -41,6 +58,7 @@
                                 </div>
                             </div>
                         </div>
+                    @endif   
                 @endforeach
             </div>
 
