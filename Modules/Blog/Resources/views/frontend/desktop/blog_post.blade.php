@@ -1,7 +1,6 @@
-<section class="expert-section">
-        <div class="expert-image">
-            <img src="{{url($get_post->feature_image)}}" style="object-position: top" alt="" />
-            <div class="expert-gradient"></div>
+<section class="expert-section" style="padding: 90px;">
+        <div class="expert-image" style="">
+            <img src="{{url($get_post->feature_image)}}" style="margin-top: 100px;object-position: top;object-fit: contain;" alt="" />
             <div class="expert-text-head">
                 <div class="container"></div>
             </div>
