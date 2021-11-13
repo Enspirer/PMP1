@@ -32,7 +32,7 @@
             @if(count(Modules\Blog\Entities\BlogPost::get()) != 0)
                 @foreach(Modules\Blog\Entities\BlogPost::latest()->take(2)->get() as $key => $blog_posts)            
                     <div class="col-4">
-                        <a href="{{url('blog/',Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name)}}" style="color:black">
+                        <a href="{{url('blog',Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name)}}" style="color:black">
                             <div class="card" style="height: 25.2rem;">
                                 @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name == 'News')
                                     <div class="px-4 py-2" style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
