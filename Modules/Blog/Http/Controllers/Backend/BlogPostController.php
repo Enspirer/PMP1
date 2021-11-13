@@ -53,9 +53,38 @@ class BlogPostController extends Controller
      */
     public function store(Request $request)
     {
+        if($request->file('images') == null){
+            return back()->withErrors('Add atleast one image in Multiple Images');
+        }
+
+        $images = $request->file('images');
+        // dd($attribute_value);
+
+        $final_array = [];
+                    
+        foreach($images as $key => $image){
+            // dd($image);
+
+            if($image)
+            {
+                $preview_fileName2 = time().'_'.rand(1000,10000).'.'.$image->getClientOriginalExtension();
+                $fullURLsPreviewFile2 = $image->move(public_path('upload/blog/files'), $preview_fileName2);
+                $image_url2 = $preview_fileName2;
+            }else{
+                $image_url2 = null;
+            } 
+
+            $item_group = [                            
+                'image' => $image_url2
+            ];
+
+            array_push($final_array,$item_group);
+        }
+
         $BlogPost = new BlogPost();
         $BlogPost->title = $request->title;
         $BlogPost->slug = $request->slug;
+        $BlogPost->multiple_images = json_encode($final_array);
         $BlogPost->category_id = $request->category;
         $BlogPost->user_id = Auth::id();
         $BlogPost->body = $request->body;
@@ -122,6 +151,53 @@ class BlogPostController extends Controller
      */
     public function update(Request $request)
     {
+        // dd($request);
+
+        if($request->file('images') != null){
+
+            $images = $request->file('images');
+            // dd($attribute_value);
+    
+            $final_array = [];
+             
+            foreach($images as $key => $image){
+                // dd($image);
+    
+                if($image)
+                {
+                    $preview_fileName2 = time().'_'.rand(1000,10000).'.'.$image->getClientOriginalExtension();
+                    $fullURLsPreviewFile2 = $image->move(public_path('upload/blog/files'), $preview_fileName2);
+                    $image_url2 = $preview_fileName2;
+                }else{
+                    $image_url2 = null;
+                } 
+    
+                $item_group = [                            
+                    'image' => $image_url2
+                ];
+    
+                array_push($final_array,$item_group);
+            }
+
+            $data=array(
+                'multiple_images' => json_encode($final_array)
+            );
+            BlogPost::where('id',$request->id)->update($data);
+        }
+        else{
+            // dd($id);
+            $details = BlogPost::where('id',$request->id)->first();
+            $old_images = $details->multiple_images;
+            
+            // dd($old_images);
+
+            $data=array(
+                'multiple_images' => $old_images
+            );
+            BlogPost::where('id',$request->id)->update($data);
+        }
+        
+
         $id=$request->id;
         $BlogPost = new BlogPost();
         $BlogPost->title = $request->title;
@@ -153,6 +229,8 @@ class BlogPostController extends Controller
             'reference_post_ids'=>$BlogPost->reference_post_ids,
         );
         BlogPost::where('id',$id)->update($data);
+
+        // dd($BlogPost);
 
         return redirect()->route('admin.blog_post.index')->withFlashSuccess('Post Is Update Successfully');
 

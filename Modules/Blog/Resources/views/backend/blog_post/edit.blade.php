@@ -12,7 +12,7 @@
                 <div class="card-body">
                     <form action="{{route('admin.blog_post.update')}}" enctype="multipart/form-data" method="post">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-8">
                                 {{csrf_field()}}
                                 <input name="id" hidden type="text" class="form-control" value="{{$blog_post->id}}">
                                 <div class="form-group">
@@ -24,7 +24,7 @@
                                     <textarea name="body" rows="50" style="height: 500px;">{{$blog_post->body}}</textarea>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Slug</label>
                                     <input name="slug" type="text" class="form-control" value="{{$blog_post->slug}}">
@@ -50,6 +50,37 @@
                                     <label>Short Description</label>
                                     <textarea name="short_description" class="form-control" rows="10">{{$blog_post->short_description}}</textarea>
                                 </div>
+
+                                <div class="form-group">
+                                <label>Multiple Images</label>
+
+                                <div id="inputFormRow">
+                                    @foreach(json_decode($blog_post->multiple_images) as $key => $m_img)
+                                    <div class="input-group">                                    
+                                        <div class="mb-3">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <input type="text" name="images[]" class="form-control m-input" value="{{$m_img->image}}"  placeholder="Image" autocomplete="off" readonly>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="{{url('upload/blog/files',$m_img->image)}}" width="100%" />
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="input-group-append">                
+                                                        <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </div>                               
+                                        </div>                           
+                                    </div>
+                                    @endforeach
+                                </div>
+
+                                <div id="newRow"></div>
+                                <button id="addRow" type="button" class="btn btn-info mt-4">Add Row</button>
+
+
+                            </div> 
 
                                 @if($get_references != null)
                                     <div class="">
@@ -109,6 +140,30 @@
         function delete_reference(id) {
             $('#'+id).remove();
         }
+    </script>
+
+<script type="text/javascript">
+        
+        $("#addRow").click(function () {
+            var html = '';
+            html += '<div id="inputFormRow">';
+            html += '<div class="input-group mb-3">';
+            html += '<input type="file" name="images[]" class="form-control m-input" placeholder="Image" autocomplete="off" required>';
+            html += '<div class="input-group-append">';
+            html += '<button id="removeRow" type="button" class="btn btn-danger">Remove</button>';
+            html += '</div>';
+            html += '</div>';
+
+            $('#newRow').append(html);
+        });
+
+        
+        $(document).on('click', '#removeRow', function () {
+            // $(this).closest('#inputFormRow').remove();
+            $(this).parents('.input-group').remove();
+        });
+        
+        
     </script>
 
 @endsection
