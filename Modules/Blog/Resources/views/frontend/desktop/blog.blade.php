@@ -24,8 +24,18 @@
 
 <br><br><br><br>
             <div class="type-row row">
+
+
                 
                     @if($category_selected != null )
+                    <div class="container">
+                        <nav aria-label="breadcrumb" style="margin-top: 50px;background-color: white !important;">
+                            <ol class="breadcrumb" style="background-color: white !important;">
+                                <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                                <li class="breadcrumb-item"><a href="#">{{Modules\Blog\Entities\BlogCategory::where('id',$category_selected->id)->first()->name}}</a></li>
+                            </ol>
+                        </nav>
+                    </div>
                         @foreach($blog_category as $blog_cat)
 
                             @if($blog_cat->id == $category_selected->id)
