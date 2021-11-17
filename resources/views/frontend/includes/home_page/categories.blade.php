@@ -108,8 +108,10 @@ button:focus {
                                 @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                 
                                     <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                                        <a href="{{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100"></a>
+                                        <a href="{{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}" class="category-talent" type="button" data-toggle="modal" data-target="#confirmationModal"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100"></a>
                                         <p class="mt-3">{{ $talent->title }}</p>
+
+                                        <a href="{{ route('frontend.all_talents', [ $talent->category_slug, $talent->talent_slug ] ) }}" class="d-none find-talent"></a>
                                     </div>
                                 @endforeach
                             </div>
@@ -122,14 +124,37 @@ button:focus {
                                 @foreach(App\Models\Tallents::where('category_id', $category->id)->get() as $talent)
                                 
                                     <div class="col-4" data-animscroll="zoom-in" data-animscroll-duration="500">
-                                        <a href="{{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100"></a>
+                                        <a href="{{ route('frontend.post_a_job', [ $talent->category_slug, $talent->talent_slug ] ) }}" class="category-talent" type="button" data-toggle="modal" data-target="#confirmationModal"><img src="{{url('upload/projects/tallents', $talent->image)}}" alt="{{ $talent->title }}" class="img-fluid rounded w-100"></a>
                                         <p class="mt-3">{{ $talent->title }}</p>
+
+                                        <a href="{{ route('frontend.all_talents', [ $talent->category_slug, $talent->talent_slug ] ) }}" class="d-none find-talent"></a>
                                     </div>
                                 @endforeach
                             </div>
                         </div>
                     @endif 
                 @endforeach
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                If you want to find the talents for this particular talent please click "Find Talents" button. If you want to post a project under this talent please click "Post a Job" button.
+            </div>
+            <div class="modal-footer">
+                <a href="" class="btn btn-secondary" data-dismiss="modal" style="border: none; color: white;">Close</a>
+                <a href="" class="btn btn-primary find-talent-link" style="border: none; color: white;">Find Talents</a>
+                <a href="" class="btn btn-primary category-talent-link" style="border: none; color: white;">Post a Job</a>
             </div>
         </div>
     </div>
@@ -188,6 +213,18 @@ button:focus {
         window.scrollTo(scrollTop, scrollTop);
         
     })
+</script>
+
+<script>
+    $('.category-talent').on('click', function() {
+        let link = $(this).attr('href');
+
+        let url = $(this).siblings('.find-talent').attr('href');
+
+        $('.category-talent-link').attr('href', link);
+
+        $('.find-talent-link').attr('href', url);
+    });
 </script>
 
 @endpush

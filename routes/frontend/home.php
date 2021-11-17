@@ -29,6 +29,9 @@ Route::post('email-subscription/store', [HomeController::class, 'emailSubscripti
 Route::get('profile/{user_name}', [ProController::class, 'index'])->name('profile');
 
 
+Route::get('find-talents/{category_slug}/{talent_slug}', [ProController::class, 'allTalents'])->name('all_talents');
+
+
 
 
 /*

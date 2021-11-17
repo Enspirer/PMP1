@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\ProjectCategories;
+// use App\Models\ProjectCategories;
 use App\Models\Tallents;
 use Modules\SupportCenter\Entities\SubscriptionEmail;
 use Auth;
+use App\Models\ProjectCategories;
+use Modules\Projects\Entities\ProjectCategory;
 
 /**
  * Class HomeController.
