@@ -53,6 +53,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
         Route::post('my_profile/update/license',[MyProfileController::class,'profileLicenseUpdate'])->name('profile_license_update');
         Route::post('my_profile/update/awards',[MyProfileController::class,'profileAwardsUpdate'])->name('profile_awards_update');
         Route::post('my_profile/update.others',[MyProfileController::class,'profileOthersUpdate'])->name('profile_others_update');
+        Route::post('my_profile/overview',[MyProfileController::class,'overview'])->name('overview');
 
         Route::post('my_profile/portfolio/store',[MyProfileController::class,'portfolioStore'])->name('portfolio_store');
         // Route::get('my_profile/portfolio/edit/{id}',[MyProfileController::class,'portfolioEdit'])->name('portfolio_edit');

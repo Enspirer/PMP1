@@ -8,43 +8,50 @@
 
     <form action="{{ route('frontend.user.account_information_update') }}" method="POST">
         {{ csrf_field() }}
-        <div class="row mt-4 text-center">
+        <div class="row mt-4">
             
             <div class="col-12">
                 <div class="row mb-3">
                     <div class="col-6 pl-0">
+                        <label for="first_name">First Name:</label>
                         <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name" value="{{ $user->first_name}}" required>
                     </div>
                     <div class="col-6 pr-0">
+                        <label for="last_name">Last Name:</label>
                         <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name" value="{{ $user->last_name}}" required>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col-6 pl-0">
+                        <label for="email">Email:</label>
                         <input type="email" class="form-control" name="email" id="email" placeholder="Email" value="{{ $user->email}}" required>
                     </div>
                     <div class="col-6 pr-0">
+                        <label for="address">Address:</label>
                         <input type="text" class="form-control" name="address" id="address" placeholder="address" value="{{ $user->address}}" >
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col-6 pl-0">
+                        <label for="location">Country:</label>
                         <input type="text" class="form-control" name="location" id="location" placeholder="Location" value="{{ $user->location}}" >
                     </div>
                     <div class="col-6 pr-0">
+                        <label for="phone">Phone:</label>
                         <input type="number" class="form-control" name="phone" id="phone" placeholder="Contact Number" value="{{ $user->contact_number}}" >
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col-6 pl-0">
+                        <label for="company_name">Company Name:</label>
                         <input type="text" class="form-control" name="company_name" id="company_name" placeholder="Company name" value="{{ $user->company_name}}" >
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mt-4 mb-3">
                     <div class="col-12 text-center">
                         <input type="hidden" class="form-control" value="{{ $user->id}}" name="hidden_id">
                         <button type="submit" class="btn rounded-pill text-light px-5 py-2" style="background-color: #0F9D58;">Save</button>

@@ -8,11 +8,15 @@
 
         <div class="row align-items-center">
             <div class="col-3 text-center">
-                <img src="{{ url('img/user-image.jpg') }}" alt="" class="img-fluid" style="height: 130px">
+                @if($user->company_logo == null )
+                    <img src="{{ url('img/no-image.jpg') }}" alt="" class="img-fluid border" width="60%">
+                @else
+                    <img src="{{url('files/company_logo',$user->company_logo)}}" class="img-fluid" width="60%" alt="">
+                @endif
             </div>
             <div class="col-5">
-                <h4 class="font-weight-bold">Enspirer (pvt) Ltd</h4>
-                <p class="text-secondary mb-0"><i class="fas fa-map-marker-alt mr-3"></i>Nugegoda, Sri Lanka</p>
+                <h4 class="font-weight-bold">{{ $user->company_name }}</h4>
+                <p class="text-secondary mb-0"><i class="fas fa-map-marker-alt mr-3"></i>{{ $user->location }}</p>
             </div>
 
             <div class="col-4 text-right">
