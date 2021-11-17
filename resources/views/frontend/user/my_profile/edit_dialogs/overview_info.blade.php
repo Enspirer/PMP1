@@ -1,5 +1,7 @@
 <!-- profile_info -->
-<form>
+<!-- <form action=""></form> -->
+<form action="{{ route('frontend.user.overview') }}" method="POST" enctype="multipart/form-data">
+  {{ csrf_field() }}
   <div class="modal fade" id="overview_info" tabindex="-1" aria-labelledby="overview_info_Label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -8,19 +10,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name">
-              </div>
-
-              <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" aria-describedby="address">
-              </div>
-
+             
               <div class="form-group">
                   <label>Profile Picture</label>
-                  <input type="file" class="form-control" name="large_left_image">
+                  <input type="file" class="form-control" name="company_logo">
+                  <img src="{{url('files/company_logo',$user->company_logo)}}" class="img-fluid mt-4" width="50%" alt="">                 
               </div>
         </div>
 

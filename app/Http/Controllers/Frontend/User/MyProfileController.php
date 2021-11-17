@@ -33,7 +33,7 @@ class MyProfileController extends Controller
 
 
     public function portfolioStore(Request $request) {
-        dd($request);
+        // dd($request);
         
         $user_id = Auth::id();
 
@@ -384,6 +384,32 @@ class MyProfileController extends Controller
             return back()->with('error', 'error');
         }
 
+    }
+
+
+    public function overview(Request $request) 
+    {
+        // dd($request);
+
+        $user_id = Auth::id();
+
+        $image = $request->file('company_logo');
+
+        if($request->file('company_logo'))
+        {            
+            $preview_fileName = time().'_'.rand(1000,10000).'.'.$request->company_logo->getClientOriginalExtension();
+            $fullURLsPreviewFile = $request->company_logo->move(public_path('files/company_logo'), $preview_fileName);
+            $image_url = $preview_fileName;
+        }else{            
+            $detail = User::where('id',$user_id)->first();
+            $image_url = $detail->company_logo;            
+        }  
+        
+        $profile = DB::table('users')->where('id', $user_id)->update([
+            'company_logo' => $image_url
+        ]);
+
+        return back();
     }
 
 
