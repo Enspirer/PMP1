@@ -55,6 +55,7 @@
     </form>
 
     <form action="{{ route('frontend.user.account_password_update') }}" method="POST">
+    {{ csrf_field() }}
         <h4 class="mt-5 mb-3">Account Password Settings</h4>
 
         <div class="row mb-5 mt-4">

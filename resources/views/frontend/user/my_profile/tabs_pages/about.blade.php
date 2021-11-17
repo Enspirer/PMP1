@@ -52,9 +52,9 @@
 
                                                 <div class="col-2 p-0">
                                                     <div class="row">
-                                                        <div class="col-4 p-0 text-right">
+                                                        <!-- <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#specialized_edit" style="background-color:#e3dfde; padding:13px;"></i>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-trash-alt rounded-pill text-muted deleteSpecial" type="button" style="background-color:#e3dfde; padding:13px;"></i>
                                                         </div>
@@ -165,9 +165,9 @@
 
                                                 <div class="col-2 p-0">
                                                     <div class="row">
-                                                        <div class="col-4 p-0 text-right">
+                                                        <!-- <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#specialized_edit" style="background-color:#e3dfde; padding:13px;"></i>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-trash-alt rounded-pill text-muted deleteLicense" type="button" style="background-color:#e3dfde; padding:13px;"></i>
                                                         </div>
@@ -229,9 +229,9 @@
 
                                                 <div class="col-2 p-0">
                                                     <div class="row">
-                                                        <div class="col-4 p-0 text-right">
+                                                        <!-- <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#awards_edit" style="background-color:#e3dfde; padding:13px;"></i>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-trash-alt rounded-pill text-muted deleteAwards" type="button" style="background-color:#e3dfde; padding:13px;"></i>
                                                         </div>
@@ -295,9 +295,9 @@
 
                                                 <div class="col-2 p-0">
                                                     <div class="row">
-                                                        <div class="col-4 p-0 text-right">
+                                                        <!-- <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-pen rounded-pill text-muted" type="button" data-bs-toggle="modal" data-bs-target="#others_edit" style="background-color:#e3dfde; padding:13px;"></i>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="col-4 p-0 text-right">
                                                             <i class="fas fa-trash-alt rounded-pill text-muted deleteOthers" type="button" style="background-color:#e3dfde; padding:13px;"></i>
                                                         </div>

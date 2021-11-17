@@ -76,7 +76,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="profile_name">Profile Name</label>
-                            <input type="text" class="form-control" id="profile_name" aria-describedby="profile_name" name="profile_name">
+                            <input type="text" value="{{ App\Models\Auth\User::where('id',auth()->user()->id)->first()->first_name }} {{ App\Models\Auth\User::where('id',auth()->user()->id)->first()->last_name }}" class="form-control" id="profile_name" aria-describedby="profile_name" name="profile_name">
                         </div>
 
                         <div class="form-group">
