@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Frontend\Auth\RegisterRequest;
 use App\Repositories\Frontend\Auth\UserRepository;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use DB;
 
 /**
  * Class RegisterController.
@@ -59,10 +60,16 @@ class RegisterController extends Controller
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function register(RegisterRequest $request)
-    {
+    {        
         abort_unless(config('access.registration'), 404);
 
         $user = $this->userRepository->create($request->only('first_name', 'last_name', 'email', 'password','contact_number','company_name','user_type','location'));
+
+        $user_name = $request->first_name.'-'.$user->id;
+
+        $profile = DB::table('users')->where('id',$user->id)->update([
+            'user_name' => $user_name
+        ]);
 
         // If the user must confirm their email or their account requires approval,
         // create the account but don't log them in.
