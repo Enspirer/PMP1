@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ProController extends Controller
 {
-    public function index()
+    public function index($user_name)
     {
         return view('frontend.profile');
     }

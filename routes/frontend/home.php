@@ -26,7 +26,7 @@ Route::get('test', [TestController::class, 'index'])->name('test');
 Route::post('email-subscription/store', [HomeController::class, 'emailSubscriptionStore'])->name('email_subscription_store');
 
 
-Route::get('profile', [ProController::class, 'index'])->name('profile');
+Route::get('profile/{user_name}', [ProController::class, 'index'])->name('profile');
 
 
 
