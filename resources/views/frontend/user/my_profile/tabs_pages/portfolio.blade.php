@@ -1,7 +1,7 @@
 <div class="container portfolio">
     <div class="row">
         <div class="col-6">
-            <h4 class="aaa">Portfolio - 8</h4>
+            <h4 class="aaa">Portfolio</h4>
         </div>
         <div class="col-6 text-right">
             <button class="btn text-light" style="background-color: #FF6347">VIEW AS PUBLIC</button>

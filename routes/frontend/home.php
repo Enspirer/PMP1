@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\User\MyProjectController;
 use App\Http\Controllers\Frontend\User\ViewProjectController;
 use App\Http\Controllers\Frontend\User\PostProjectController;
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\ProController;
 use App\Http\Controllers\Frontend\User\MyProfileController;
 /*
  * Frontend Controllers
@@ -23,6 +24,9 @@ Route::get('test', [TestController::class, 'index'])->name('test');
 
 
 Route::post('email-subscription/store', [HomeController::class, 'emailSubscriptionStore'])->name('email_subscription_store');
+
+
+Route::get('profile', [ProController::class, 'index'])->name('profile');
 
 
 

@@ -30,9 +30,19 @@
 
     <div class="filter-part">
         <div class="row button-live-row">
-            <div class="button-live-single col" id="filters">
-                <a class="view-scope-outline" href="#" type="button">
-                    <i class="fa fa-list-alt" aria-hidden="true"></i> &nbsp; Category</a>
+            <div class="button-live-single col dropdown" id="filters">
+                <div class="view-scope-outline" href="#" type="button" data-toggle="dropdown">
+                    <i class="fa fa-list-alt" aria-hidden="true" ></i> &nbsp; Category</div>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        @foreach($blog_category as $blog_cat)
+                            <li>
+                                <a href="{{route('frontend.blog',$blog_cat->name)}}" class="dropdown-item">
+                                    <h5>{{$blog_cat->name}}</h5>
+                                    </a>
+                            </li>
+                        @endforeach
+                    </ul>
             </div>
 
 

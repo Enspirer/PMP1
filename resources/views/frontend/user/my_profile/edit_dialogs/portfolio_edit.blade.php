@@ -1,4 +1,4 @@
-<!-- profile_info -->
+
 <form action="{{ route('frontend.user.portfolio_update') }}" method="POST" enctype="multipart/form-data">
   {{ csrf_field() }}
   <div class="modal fade" id="portfolio_edit" tabindex="-1" aria-labelledby="portfolio_edit_Label" aria-hidden="true">

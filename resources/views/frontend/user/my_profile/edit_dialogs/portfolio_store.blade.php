@@ -1,4 +1,5 @@
-<!-- profile_info -->
+<!-- portfolio create -->
+<form action=""></form>
 <form action="{{ route('frontend.user.portfolio_store') }}" method="POST" enctype="multipart/form-data">
   {{ csrf_field() }}
   <div class="modal fade" id="portfolio_store" tabindex="-1" aria-labelledby="portfolio_store_Label" aria-hidden="true">
@@ -58,3 +59,4 @@
   </div>
 
 </form>
+

@@ -19,7 +19,7 @@
                     <label for="description">Description</label>
                     <textarea class="form-control" id="others_description" rows="7"></textarea>
                 </div>
-                <form>
+            <form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
