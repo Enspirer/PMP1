@@ -694,12 +694,12 @@
                     <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                         <div class="card" style="height: 26rem;">
 
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=4531192260303691" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=4531192260303691" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </a>
                 </div>
 
-                @if(count(Modules\Blog\Entities\BlogPost::get()) != 0)
+                <!-- @if(count(Modules\Blog\Entities\BlogPost::get()) != 0)
                     @foreach(Modules\Blog\Entities\BlogPost::latest()->take(2)->get() as $key => $blog_posts) 
                         <div class="col-12 mb-4">
                             <a href="{{url('blog/all')}}" style="color:black">
@@ -722,7 +722,59 @@
                             </a>
                         </div>
                     @endforeach
-                @endif
+                @endif -->
+
+                @if(count(Modules\Blog\Entities\BlogPost::get()) != 0)
+                    @foreach(Modules\Blog\Entities\BlogPost::latest()->take(2)->get() as $key => $blog_posts)            
+                        <div class="col-12 mb-4">
+                            <a href="{{url('blog',Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name)}}" style="color:black">
+                                <div class="card position-relative" style="height: 25.5rem;">
+                                    @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name == 'News')
+                                        <div class="px-4 py-2" style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 text-center">
+                                                    <img src="{{ url('theme_light/assets/footer/news.png') }}" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-9">
+                                                    <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Latest at Tallentor</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    @else
+
+                                        <div class="px-4 py-2" style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 text-center">
+                                                    <img src="{{ url('theme_light/assets/footer/club.png') }}" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-9">
+                                                    <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Tallentor Club</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endif
+
+                                    <img src="{{ url($blog_posts->feature_image) }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
+                                    <div class="card-body">
+                                        <p class="card-text mb-1" style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3; /* number of lines to show */-webkit-box-orient: vertical;">{{$blog_posts->short_description}}</p>
+                                        
+                                        <div class="text-right mb-1">
+                                            @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first() != null)
+                                            <div class="position-absolute read">
+                                                <a href="{{url('blog',Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name)}}" style="font-size: 1rem; color: #0033FF;">View More</a>
+                                            </div>
+                                            @else
+                                                <p style="color: Red; font-size: 1.1rem;">Category Deleted</p>   
+                                            @endif
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                @endforeach
+            @endif
 
                 <!-- <div class="col-12 mb-4">
                     <div class="card" style="height: 26rem;">
