@@ -14,8 +14,7 @@
               <div class="form-group">
                   <label>Profile Picture</label>
                   <input type="file" class="form-control" name="company_logo">
-                  <br>
-                  <img src="{{url('files/company_logo',$user->company_logo)}}" class="img-fluid" width="50%" alt="">                 
+                  <img src="{{url('files/company_logo',$user->company_logo)}}" class="img-fluid mt-4" width="50%" alt="">                 
               </div>
         </div>
 
