@@ -33,7 +33,7 @@ class MyProfileController extends Controller
 
 
     public function portfolioStore(Request $request) {
-        dd($request);
+        // dd($request);
         
         $user_id = Auth::id();
 

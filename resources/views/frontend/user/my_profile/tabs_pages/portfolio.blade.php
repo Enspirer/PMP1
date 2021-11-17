@@ -25,7 +25,7 @@
 
                     <div class="icons mt-2">
                         <a type="button" data-bs-toggle="modal" data-bs-target="#portfolio_edit" onclick="edit({{ $portfolio->id }})"><i class="fas fa-pen rounded-pill text-muted mr-2"></i></a>
-                        <a class="delete" href="{{ route('frontend.user.portfolio_delete', $portfolio->id) }}" type="button" data-bs-toggle="modal" data-bs-target="#portfolio_delete"><i class="fas fa-trash rounded-pill text-muted ml-2"></i></a>
+                        <a class="delete1" href="{{ route('frontend.user.portfolio_delete', $portfolio->id) }}" type="button" data-bs-toggle="modal" data-bs-target="#portfolio_delete"><i class="fas fa-trash rounded-pill text-muted ml-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
 
 
 
-    $('.delete').on('click', function() {
+    $('.delete1').on('click', function() {
         let link = $(this).attr('href');
         $('.modal-footer a').attr('href', link);
     })
