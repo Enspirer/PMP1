@@ -703,14 +703,16 @@
                     @foreach(Modules\Blog\Entities\BlogPost::latest()->take(2)->get() as $key => $blog_posts) 
                         <div class="col-12 mb-4">
                             <a href="{{url('blog/all')}}" style="color:black">
-                                <div class="card" style="height: 26rem;">
+                                <div class="card position-relative" style="height: 24.5rem;">
                                     <img src="{{ url($blog_posts->feature_image) }}" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                                     <div class="card-body">
-                                        <div class="card-text mb-1" style="text-align: justify; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;">{{$blog_posts->short_description}}</div>
+                                        <div class="card-text mb-1" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;">{{$blog_posts->short_description}}</div>
                                         
                                         <div class="text-right">
                                             @if(Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first() != null)
-                                                <a href="{{url('blog/all')}}" style="color: {{Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->color}}; font-size: 1.1rem;">{{ Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->name }}</a>
+                                            <div class="position-absolute read">
+                                                <a href="{{url('blog/all')}}" style="color: {{Modules\Blog\Entities\BlogCategory::where('id',$blog_posts->category_id)->first()->color}}; font-size: 1.1rem;">View More</a>
+                                            </div>
                                             @else
                                                 <p style="color: Red; font-size: 1.1rem;">Category Deleted</p>   
                                             @endif

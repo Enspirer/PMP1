@@ -4185,3 +4185,9 @@ footer p {
   height: 40px!important;
   width: 40px!important;
 }
+
+
+.social-banner .read {
+  right: 1rem;
+  bottom: 0.4rem;
+}
